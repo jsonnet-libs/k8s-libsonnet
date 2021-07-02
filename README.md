@@ -9,7 +9,7 @@ It is generated with `k8s-gen`, located at https://github.com/jsonnet-libs/k8s.
 
 ```bash
 # set up Tanka project, matching the Kubernetes version
-$ tk init --k8sversion=1.21
+$ tk init --k8s=1.21
 ```
 
 For more info, refer to the Tanka tutorial at https://tanka.dev/tutorial/k-lib.
