@@ -17,7 +17,7 @@ For more info, refer to the Tanka tutorial at https://tanka.dev/tutorial/k-lib.
 #### Standalone
 
 ```bash
-$ jb install github.com/jsonnet-libs/k8s-libsonnet/1.21
+$ jb install github.com/jsonnet-libs/k8s-libsonnet/1.21@main
 ```
 
 Then import it in your project:

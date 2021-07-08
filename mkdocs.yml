@@ -12,6 +12,15 @@
       "separator": "[\\s\\-\\.]+"
   - "minify":
       "minify_html": true
+  - "exclude-search":
+      "exclude":
+        - "1.20/*"
+        - "1.19/*"
+        - "1.18/*"
+        - "1.17/*"
+        - "1.16/*"
+        - "1.15/*"
+        - "1.14/*"
 "repo_name": "jsonnet-libs/k8s-libsonnet"
 "repo_url": "https://github.com/jsonnet-libs/k8s-libsonnet"
 "site_name": "k8s jsonnet library"
