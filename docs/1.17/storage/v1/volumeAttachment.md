@@ -83,6 +83,7 @@ VolumeAttachment objects are non-namespaced.
           * [`fn withName(name)`](#fn-specsourceinlinevolumespeccindersecretrefwithname)
           * [`fn withNamespace(namespace)`](#fn-specsourceinlinevolumespeccindersecretrefwithnamespace)
       * [`obj spec.source.inlineVolumeSpec.claimRef`](#obj-specsourceinlinevolumespecclaimref)
+        * [`fn withApiVersion(apiVersion)`](#fn-specsourceinlinevolumespecclaimrefwithapiversion)
         * [`fn withFieldPath(fieldPath)`](#fn-specsourceinlinevolumespecclaimrefwithfieldpath)
         * [`fn withKind(kind)`](#fn-specsourceinlinevolumespecclaimrefwithkind)
         * [`fn withName(name)`](#fn-specsourceinlinevolumespecclaimrefwithname)
@@ -212,6 +213,7 @@ VolumeAttachment objects are non-namespaced.
         * [`fn withVolumeName(volumeName)`](#fn-specsourceinlinevolumespecstorageoswithvolumename)
         * [`fn withVolumeNamespace(volumeNamespace)`](#fn-specsourceinlinevolumespecstorageoswithvolumenamespace)
         * [`obj spec.source.inlineVolumeSpec.storageos.secretRef`](#obj-specsourceinlinevolumespecstorageossecretref)
+          * [`fn withApiVersion(apiVersion)`](#fn-specsourceinlinevolumespecstorageossecretrefwithapiversion)
           * [`fn withFieldPath(fieldPath)`](#fn-specsourceinlinevolumespecstorageossecretrefwithfieldpath)
           * [`fn withKind(kind)`](#fn-specsourceinlinevolumespecstorageossecretrefwithkind)
           * [`fn withName(name)`](#fn-specsourceinlinevolumespecstorageossecretrefwithname)
@@ -793,6 +795,14 @@ Namespace defines the space within which the secret name must be unique.
 ## obj spec.source.inlineVolumeSpec.claimRef
 
 ObjectReference contains enough information to let you inspect or modify the referred object.
+
+### fn spec.source.inlineVolumeSpec.claimRef.withApiVersion
+
+```ts
+withApiVersion(apiVersion)
+```
+
+API version of the referent.
 
 ### fn spec.source.inlineVolumeSpec.claimRef.withFieldPath
 
@@ -1733,6 +1743,14 @@ VolumeNamespace specifies the scope of the volume within StorageOS.  If no names
 ## obj spec.source.inlineVolumeSpec.storageos.secretRef
 
 ObjectReference contains enough information to let you inspect or modify the referred object.
+
+### fn spec.source.inlineVolumeSpec.storageos.secretRef.withApiVersion
+
+```ts
+withApiVersion(apiVersion)
+```
+
+API version of the referent.
 
 ### fn spec.source.inlineVolumeSpec.storageos.secretRef.withFieldPath
 

@@ -3,6 +3,8 @@
   '#':: d.pkg(name='tokenRequestSpec', url='', help='TokenRequestSpec contains client provided parameters of a token request.'),
   '#boundObjectRef':: d.obj(help='BoundObjectReference is a reference to an object that a token is bound to.'),
   boundObjectRef: {
+    '#withApiVersion':: d.fn(help='API version of the referent.', args=[d.arg(name='apiVersion', type=d.T.string)]),
+    withApiVersion(apiVersion): { boundObjectRef+: { apiVersion: apiVersion } },
     '#withKind':: d.fn(help="Kind of the referent. Valid kinds are 'Pod' and 'Secret'.", args=[d.arg(name='kind', type=d.T.string)]),
     withKind(kind): { boundObjectRef+: { kind: kind } },
     '#withName':: d.fn(help='Name of the referent.', args=[d.arg(name='name', type=d.T.string)]),

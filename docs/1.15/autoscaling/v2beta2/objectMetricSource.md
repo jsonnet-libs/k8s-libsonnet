@@ -9,6 +9,7 @@ ObjectMetricSource indicates how to scale on a metric describing a kubernetes ob
 ## Index
 
 * [`obj describedObject`](#obj-describedobject)
+  * [`fn withApiVersion(apiVersion)`](#fn-describedobjectwithapiversion)
   * [`fn withKind(kind)`](#fn-describedobjectwithkind)
   * [`fn withName(name)`](#fn-describedobjectwithname)
 * [`obj metric`](#obj-metric)
@@ -29,6 +30,14 @@ ObjectMetricSource indicates how to scale on a metric describing a kubernetes ob
 ## obj describedObject
 
 CrossVersionObjectReference contains enough information to let you identify the referred resource.
+
+### fn describedObject.withApiVersion
+
+```ts
+withApiVersion(apiVersion)
+```
+
+API version of the referent
 
 ### fn describedObject.withKind
 

@@ -20,6 +20,7 @@ Event is a report of an event somewhere in the cluster.
 * [`fn withReportingInstance(reportingInstance)`](#fn-withreportinginstance)
 * [`fn withType(type)`](#fn-withtype)
 * [`obj involvedObject`](#obj-involvedobject)
+  * [`fn withApiVersion(apiVersion)`](#fn-involvedobjectwithapiversion)
   * [`fn withFieldPath(fieldPath)`](#fn-involvedobjectwithfieldpath)
   * [`fn withKind(kind)`](#fn-involvedobjectwithkind)
   * [`fn withName(name)`](#fn-involvedobjectwithname)
@@ -52,6 +53,7 @@ Event is a report of an event somewhere in the cluster.
     * [`fn withPending(pending)`](#fn-metadatainitializerswithpending)
     * [`fn withPendingMixin(pending)`](#fn-metadatainitializerswithpendingmixin)
     * [`obj metadata.initializers.result`](#obj-metadatainitializersresult)
+      * [`fn withApiVersion(apiVersion)`](#fn-metadatainitializersresultwithapiversion)
       * [`fn withCode(code)`](#fn-metadatainitializersresultwithcode)
       * [`fn withKind(kind)`](#fn-metadatainitializersresultwithkind)
       * [`fn withMessage(message)`](#fn-metadatainitializersresultwithmessage)
@@ -66,6 +68,7 @@ Event is a report of an event somewhere in the cluster.
         * [`fn withRetryAfterSeconds(retryAfterSeconds)`](#fn-metadatainitializersresultdetailswithretryafterseconds)
         * [`fn withUid(uid)`](#fn-metadatainitializersresultdetailswithuid)
 * [`obj related`](#obj-related)
+  * [`fn withApiVersion(apiVersion)`](#fn-relatedwithapiversion)
   * [`fn withFieldPath(fieldPath)`](#fn-relatedwithfieldpath)
   * [`fn withKind(kind)`](#fn-relatedwithkind)
   * [`fn withName(name)`](#fn-relatedwithname)
@@ -173,6 +176,14 @@ Type of this event (Normal, Warning), new types could be added in the future
 ## obj involvedObject
 
 ObjectReference contains enough information to let you inspect or modify the referred object.
+
+### fn involvedObject.withApiVersion
+
+```ts
+withApiVersion(apiVersion)
+```
+
+API version of the referent.
 
 ### fn involvedObject.withFieldPath
 
@@ -444,6 +455,14 @@ Pending is a list of initializers that must execute in order before this object 
 
 Status is a return value for calls that don't return other objects.
 
+### fn metadata.initializers.result.withApiVersion
+
+```ts
+withApiVersion(apiVersion)
+```
+
+APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+
 ### fn metadata.initializers.result.withCode
 
 ```ts
@@ -549,6 +568,14 @@ UID of the resource. (when there is a single resource which can be described). M
 ## obj related
 
 ObjectReference contains enough information to let you inspect or modify the referred object.
+
+### fn related.withApiVersion
+
+```ts
+withApiVersion(apiVersion)
+```
+
+API version of the referent.
 
 ### fn related.withFieldPath
 

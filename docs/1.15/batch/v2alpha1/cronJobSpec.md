@@ -41,6 +41,7 @@ CronJobSpec describes how the job execution will look like and when it will actu
       * [`fn withPending(pending)`](#fn-jobtemplatemetadatainitializerswithpending)
       * [`fn withPendingMixin(pending)`](#fn-jobtemplatemetadatainitializerswithpendingmixin)
       * [`obj jobTemplate.metadata.initializers.result`](#obj-jobtemplatemetadatainitializersresult)
+        * [`fn withApiVersion(apiVersion)`](#fn-jobtemplatemetadatainitializersresultwithapiversion)
         * [`fn withCode(code)`](#fn-jobtemplatemetadatainitializersresultwithcode)
         * [`fn withKind(kind)`](#fn-jobtemplatemetadatainitializersresultwithkind)
         * [`fn withMessage(message)`](#fn-jobtemplatemetadatainitializersresultwithmessage)
@@ -93,6 +94,7 @@ CronJobSpec describes how the job execution will look like and when it will actu
           * [`fn withPending(pending)`](#fn-jobtemplatespectemplatemetadatainitializerswithpending)
           * [`fn withPendingMixin(pending)`](#fn-jobtemplatespectemplatemetadatainitializerswithpendingmixin)
           * [`obj jobTemplate.spec.template.metadata.initializers.result`](#obj-jobtemplatespectemplatemetadatainitializersresult)
+            * [`fn withApiVersion(apiVersion)`](#fn-jobtemplatespectemplatemetadatainitializersresultwithapiversion)
             * [`fn withCode(code)`](#fn-jobtemplatespectemplatemetadatainitializersresultwithcode)
             * [`fn withKind(kind)`](#fn-jobtemplatespectemplatemetadatainitializersresultwithkind)
             * [`fn withMessage(message)`](#fn-jobtemplatespectemplatemetadatainitializersresultwithmessage)
@@ -460,6 +462,14 @@ Pending is a list of initializers that must execute in order before this object 
 ## obj jobTemplate.metadata.initializers.result
 
 Status is a return value for calls that don't return other objects.
+
+### fn jobTemplate.metadata.initializers.result.withApiVersion
+
+```ts
+withApiVersion(apiVersion)
+```
+
+APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
 
 ### fn jobTemplate.metadata.initializers.result.withCode
 
@@ -880,6 +890,14 @@ Pending is a list of initializers that must execute in order before this object 
 ## obj jobTemplate.spec.template.metadata.initializers.result
 
 Status is a return value for calls that don't return other objects.
+
+### fn jobTemplate.spec.template.metadata.initializers.result.withApiVersion
+
+```ts
+withApiVersion(apiVersion)
+```
+
+APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
 
 ### fn jobTemplate.spec.template.metadata.initializers.result.withCode
 

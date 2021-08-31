@@ -16,6 +16,7 @@ Endpoint represents a single logical "backend" implementing a service.
 * [`obj conditions`](#obj-conditions)
   * [`fn withReady(ready)`](#fn-conditionswithready)
 * [`obj targetRef`](#obj-targetref)
+  * [`fn withApiVersion(apiVersion)`](#fn-targetrefwithapiversion)
   * [`fn withFieldPath(fieldPath)`](#fn-targetrefwithfieldpath)
   * [`fn withKind(kind)`](#fn-targetrefwithkind)
   * [`fn withName(name)`](#fn-targetrefwithname)
@@ -96,6 +97,14 @@ ready indicates that this endpoint is prepared to receive traffic, according to 
 ## obj targetRef
 
 ObjectReference contains enough information to let you inspect or modify the referred object.
+
+### fn targetRef.withApiVersion
+
+```ts
+withApiVersion(apiVersion)
+```
+
+API version of the referent.
 
 ### fn targetRef.withFieldPath
 

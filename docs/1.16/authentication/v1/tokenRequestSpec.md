@@ -12,6 +12,7 @@ TokenRequestSpec contains client provided parameters of a token request.
 * [`fn withAudiencesMixin(audiences)`](#fn-withaudiencesmixin)
 * [`fn withExpirationSeconds(expirationSeconds)`](#fn-withexpirationseconds)
 * [`obj boundObjectRef`](#obj-boundobjectref)
+  * [`fn withApiVersion(apiVersion)`](#fn-boundobjectrefwithapiversion)
   * [`fn withKind(kind)`](#fn-boundobjectrefwithkind)
   * [`fn withName(name)`](#fn-boundobjectrefwithname)
   * [`fn withUid(uid)`](#fn-boundobjectrefwithuid)
@@ -47,6 +48,14 @@ ExpirationSeconds is the requested duration of validity of the request. The toke
 ## obj boundObjectRef
 
 BoundObjectReference is a reference to an object that a token is bound to.
+
+### fn boundObjectRef.withApiVersion
+
+```ts
+withApiVersion(apiVersion)
+```
+
+API version of the referent.
 
 ### fn boundObjectRef.withKind
 

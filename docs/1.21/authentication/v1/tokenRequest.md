@@ -36,6 +36,7 @@ TokenRequest requests a token for a given service account.
   * [`fn withAudiencesMixin(audiences)`](#fn-specwithaudiencesmixin)
   * [`fn withExpirationSeconds(expirationSeconds)`](#fn-specwithexpirationseconds)
   * [`obj spec.boundObjectRef`](#obj-specboundobjectref)
+    * [`fn withApiVersion(apiVersion)`](#fn-specboundobjectrefwithapiversion)
     * [`fn withKind(kind)`](#fn-specboundobjectrefwithkind)
     * [`fn withName(name)`](#fn-specboundobjectrefwithname)
     * [`fn withUid(uid)`](#fn-specboundobjectrefwithuid)
@@ -277,6 +278,14 @@ ExpirationSeconds is the requested duration of validity of the request. The toke
 ## obj spec.boundObjectRef
 
 BoundObjectReference is a reference to an object that a token is bound to.
+
+### fn spec.boundObjectRef.withApiVersion
+
+```ts
+withApiVersion(apiVersion)
+```
+
+API version of the referent.
 
 ### fn spec.boundObjectRef.withKind
 

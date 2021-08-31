@@ -32,6 +32,7 @@ MetricSpec specifies how to scale based on a single metric (only `type` and one 
     * [`fn withValue(value)`](#fn-externaltargetwithvalue)
 * [`obj object`](#obj-object)
   * [`obj object.describedObject`](#obj-objectdescribedobject)
+    * [`fn withApiVersion(apiVersion)`](#fn-objectdescribedobjectwithapiversion)
     * [`fn withKind(kind)`](#fn-objectdescribedobjectwithkind)
     * [`fn withName(name)`](#fn-objectdescribedobjectwithname)
   * [`obj object.metric`](#obj-objectmetric)
@@ -352,6 +353,14 @@ ObjectMetricSource indicates how to scale on a metric describing a kubernetes ob
 ## obj object.describedObject
 
 CrossVersionObjectReference contains enough information to let you identify the referred resource.
+
+### fn object.describedObject.withApiVersion
+
+```ts
+withApiVersion(apiVersion)
+```
+
+API version of the referent
 
 ### fn object.describedObject.withKind
 

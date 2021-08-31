@@ -13,6 +13,7 @@ HorizontalPodAutoscalerSpec describes the desired functionality of the Horizonta
 * [`fn withMetricsMixin(metrics)`](#fn-withmetricsmixin)
 * [`fn withMinReplicas(minReplicas)`](#fn-withminreplicas)
 * [`obj scaleTargetRef`](#obj-scaletargetref)
+  * [`fn withApiVersion(apiVersion)`](#fn-scaletargetrefwithapiversion)
   * [`fn withKind(kind)`](#fn-scaletargetrefwithkind)
   * [`fn withName(name)`](#fn-scaletargetrefwithname)
 
@@ -55,6 +56,14 @@ minReplicas is the lower limit for the number of replicas to which the autoscale
 ## obj scaleTargetRef
 
 CrossVersionObjectReference contains enough information to let you identify the referred resource.
+
+### fn scaleTargetRef.withApiVersion
+
+```ts
+withApiVersion(apiVersion)
+```
+
+API version of the referent
 
 ### fn scaleTargetRef.withKind
 

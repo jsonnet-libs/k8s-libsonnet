@@ -35,6 +35,7 @@ Node is a worker node in Kubernetes. Each node will have a unique identifier in 
     * [`fn withPending(pending)`](#fn-metadatainitializerswithpending)
     * [`fn withPendingMixin(pending)`](#fn-metadatainitializerswithpendingmixin)
     * [`obj metadata.initializers.result`](#obj-metadatainitializersresult)
+      * [`fn withApiVersion(apiVersion)`](#fn-metadatainitializersresultwithapiversion)
       * [`fn withCode(code)`](#fn-metadatainitializersresultwithcode)
       * [`fn withKind(kind)`](#fn-metadatainitializersresultwithkind)
       * [`fn withMessage(message)`](#fn-metadatainitializersresultwithmessage)
@@ -294,6 +295,14 @@ Pending is a list of initializers that must execute in order before this object 
 ## obj metadata.initializers.result
 
 Status is a return value for calls that don't return other objects.
+
+### fn metadata.initializers.result.withApiVersion
+
+```ts
+withApiVersion(apiVersion)
+```
+
+APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
 
 ### fn metadata.initializers.result.withCode
 

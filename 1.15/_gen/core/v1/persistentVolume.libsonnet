@@ -24,6 +24,8 @@
           '#withUid':: d.fn(help='UID of the resource. (when there is a single resource which can be described). More info: http://kubernetes.io/docs/user-guide/identifiers#uids', args=[d.arg(name='uid', type=d.T.string)]),
           withUid(uid): { metadata+: { initializers+: { result+: { details+: { uid: uid } } } } },
         },
+        '#withApiVersion':: d.fn(help='APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#resources', args=[d.arg(name='apiVersion', type=d.T.string)]),
+        withApiVersion(apiVersion): { metadata+: { initializers+: { result+: { apiVersion: apiVersion } } } },
         '#withCode':: d.fn(help='Suggested HTTP return code for this status, 0 if not set.', args=[d.arg(name='code', type=d.T.integer)]),
         withCode(code): { metadata+: { initializers+: { result+: { code: code } } } },
         '#withKind':: d.fn(help='Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds', args=[d.arg(name='kind', type=d.T.string)]),
@@ -167,6 +169,8 @@
     },
     '#claimRef':: d.obj(help='ObjectReference contains enough information to let you inspect or modify the referred object.'),
     claimRef: {
+      '#withApiVersion':: d.fn(help='API version of the referent.', args=[d.arg(name='apiVersion', type=d.T.string)]),
+      withApiVersion(apiVersion): { spec+: { claimRef+: { apiVersion: apiVersion } } },
       '#withFieldPath':: d.fn(help='If referring to a piece of an object instead of an entire object, this string should contain a valid JSON/Go field access statement, such as desiredState.manifest.containers[2]. For example, if the object reference is to a container within a pod, this would take on a value like: "spec.containers{name}" (where "name" refers to the name of the container that triggered the event) or if no container name is specified "spec.containers[2]" (container with index 2 in this pod). This syntax is chosen only to have some well-defined way of referencing a part of an object.', args=[d.arg(name='fieldPath', type=d.T.string)]),
       withFieldPath(fieldPath): { spec+: { claimRef+: { fieldPath: fieldPath } } },
       '#withKind':: d.fn(help='Kind of the referent. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds', args=[d.arg(name='kind', type=d.T.string)]),
@@ -443,6 +447,8 @@
     storageos: {
       '#secretRef':: d.obj(help='ObjectReference contains enough information to let you inspect or modify the referred object.'),
       secretRef: {
+        '#withApiVersion':: d.fn(help='API version of the referent.', args=[d.arg(name='apiVersion', type=d.T.string)]),
+        withApiVersion(apiVersion): { spec+: { storageos+: { secretRef+: { apiVersion: apiVersion } } } },
         '#withFieldPath':: d.fn(help='If referring to a piece of an object instead of an entire object, this string should contain a valid JSON/Go field access statement, such as desiredState.manifest.containers[2]. For example, if the object reference is to a container within a pod, this would take on a value like: "spec.containers{name}" (where "name" refers to the name of the container that triggered the event) or if no container name is specified "spec.containers[2]" (container with index 2 in this pod). This syntax is chosen only to have some well-defined way of referencing a part of an object.', args=[d.arg(name='fieldPath', type=d.T.string)]),
         withFieldPath(fieldPath): { spec+: { storageos+: { secretRef+: { fieldPath: fieldPath } } } },
         '#withKind':: d.fn(help='Kind of the referent. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds', args=[d.arg(name='kind', type=d.T.string)]),

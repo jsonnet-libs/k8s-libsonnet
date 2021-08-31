@@ -24,6 +24,8 @@
           '#withUid':: d.fn(help='UID of the resource. (when there is a single resource which can be described). More info: http://kubernetes.io/docs/user-guide/identifiers#uids', args=[d.arg(name='uid', type=d.T.string)]),
           withUid(uid): { metadata+: { initializers+: { result+: { details+: { uid: uid } } } } },
         },
+        '#withApiVersion':: d.fn(help='APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#resources', args=[d.arg(name='apiVersion', type=d.T.string)]),
+        withApiVersion(apiVersion): { metadata+: { initializers+: { result+: { apiVersion: apiVersion } } } },
         '#withCode':: d.fn(help='Suggested HTTP return code for this status, 0 if not set.', args=[d.arg(name='code', type=d.T.integer)]),
         withCode(code): { metadata+: { initializers+: { result+: { code: code } } } },
         '#withKind':: d.fn(help='Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds', args=[d.arg(name='kind', type=d.T.string)]),
@@ -92,6 +94,8 @@
   spec: {
     '#scaleTargetRef':: d.obj(help='CrossVersionObjectReference contains enough information to let you identify the referred resource.'),
     scaleTargetRef: {
+      '#withApiVersion':: d.fn(help='API version of the referent', args=[d.arg(name='apiVersion', type=d.T.string)]),
+      withApiVersion(apiVersion): { spec+: { scaleTargetRef+: { apiVersion: apiVersion } } },
       '#withKind':: d.fn(help='Kind of the referent; More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds"', args=[d.arg(name='kind', type=d.T.string)]),
       withKind(kind): { spec+: { scaleTargetRef+: { kind: kind } } },
       '#withName':: d.fn(help='Name of the referent; More info: http://kubernetes.io/docs/user-guide/identifiers#names', args=[d.arg(name='name', type=d.T.string)]),

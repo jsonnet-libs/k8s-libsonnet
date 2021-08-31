@@ -20,6 +20,7 @@ Event is a report of an event somewhere in the cluster.
 * [`fn withReportingInstance(reportingInstance)`](#fn-withreportinginstance)
 * [`fn withType(type)`](#fn-withtype)
 * [`obj involvedObject`](#obj-involvedobject)
+  * [`fn withApiVersion(apiVersion)`](#fn-involvedobjectwithapiversion)
   * [`fn withFieldPath(fieldPath)`](#fn-involvedobjectwithfieldpath)
   * [`fn withKind(kind)`](#fn-involvedobjectwithkind)
   * [`fn withName(name)`](#fn-involvedobjectwithname)
@@ -49,6 +50,7 @@ Event is a report of an event somewhere in the cluster.
   * [`fn withSelfLink(selfLink)`](#fn-metadatawithselflink)
   * [`fn withUid(uid)`](#fn-metadatawithuid)
 * [`obj related`](#obj-related)
+  * [`fn withApiVersion(apiVersion)`](#fn-relatedwithapiversion)
   * [`fn withFieldPath(fieldPath)`](#fn-relatedwithfieldpath)
   * [`fn withKind(kind)`](#fn-relatedwithkind)
   * [`fn withName(name)`](#fn-relatedwithname)
@@ -155,6 +157,14 @@ Type of this event (Normal, Warning), new types could be added in the future
 ## obj involvedObject
 
 ObjectReference contains enough information to let you inspect or modify the referred object.
+
+### fn involvedObject.withApiVersion
+
+```ts
+withApiVersion(apiVersion)
+```
+
+API version of the referent.
 
 ### fn involvedObject.withFieldPath
 
@@ -401,6 +411,14 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 ## obj related
 
 ObjectReference contains enough information to let you inspect or modify the referred object.
+
+### fn related.withApiVersion
+
+```ts
+withApiVersion(apiVersion)
+```
+
+API version of the referent.
 
 ### fn related.withFieldPath
 

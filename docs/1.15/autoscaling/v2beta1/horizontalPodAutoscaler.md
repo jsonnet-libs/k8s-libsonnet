@@ -35,6 +35,7 @@ HorizontalPodAutoscaler is the configuration for a horizontal pod autoscaler, wh
     * [`fn withPending(pending)`](#fn-metadatainitializerswithpending)
     * [`fn withPendingMixin(pending)`](#fn-metadatainitializerswithpendingmixin)
     * [`obj metadata.initializers.result`](#obj-metadatainitializersresult)
+      * [`fn withApiVersion(apiVersion)`](#fn-metadatainitializersresultwithapiversion)
       * [`fn withCode(code)`](#fn-metadatainitializersresultwithcode)
       * [`fn withKind(kind)`](#fn-metadatainitializersresultwithkind)
       * [`fn withMessage(message)`](#fn-metadatainitializersresultwithmessage)
@@ -54,6 +55,7 @@ HorizontalPodAutoscaler is the configuration for a horizontal pod autoscaler, wh
   * [`fn withMetricsMixin(metrics)`](#fn-specwithmetricsmixin)
   * [`fn withMinReplicas(minReplicas)`](#fn-specwithminreplicas)
   * [`obj spec.scaleTargetRef`](#obj-specscaletargetref)
+    * [`fn withApiVersion(apiVersion)`](#fn-specscaletargetrefwithapiversion)
     * [`fn withKind(kind)`](#fn-specscaletargetrefwithkind)
     * [`fn withName(name)`](#fn-specscaletargetrefwithname)
 
@@ -289,6 +291,14 @@ Pending is a list of initializers that must execute in order before this object 
 
 Status is a return value for calls that don't return other objects.
 
+### fn metadata.initializers.result.withApiVersion
+
+```ts
+withApiVersion(apiVersion)
+```
+
+APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+
 ### fn metadata.initializers.result.withCode
 
 ```ts
@@ -432,6 +442,14 @@ minReplicas is the lower limit for the number of replicas to which the autoscale
 ## obj spec.scaleTargetRef
 
 CrossVersionObjectReference contains enough information to let you identify the referred resource.
+
+### fn spec.scaleTargetRef.withApiVersion
+
+```ts
+withApiVersion(apiVersion)
+```
+
+API version of the referent
 
 ### fn spec.scaleTargetRef.withKind
 

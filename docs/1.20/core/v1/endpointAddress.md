@@ -12,6 +12,7 @@ EndpointAddress is a tuple that describes single IP address.
 * [`fn withIp(ip)`](#fn-withip)
 * [`fn withNodeName(nodeName)`](#fn-withnodename)
 * [`obj targetRef`](#obj-targetref)
+  * [`fn withApiVersion(apiVersion)`](#fn-targetrefwithapiversion)
   * [`fn withFieldPath(fieldPath)`](#fn-targetrefwithfieldpath)
   * [`fn withKind(kind)`](#fn-targetrefwithkind)
   * [`fn withName(name)`](#fn-targetrefwithname)
@@ -48,6 +49,14 @@ Optional: Node hosting this endpoint. This can be used to determine endpoints lo
 ## obj targetRef
 
 ObjectReference contains enough information to let you inspect or modify the referred object.
+
+### fn targetRef.withApiVersion
+
+```ts
+withApiVersion(apiVersion)
+```
+
+API version of the referent.
 
 ### fn targetRef.withFieldPath
 

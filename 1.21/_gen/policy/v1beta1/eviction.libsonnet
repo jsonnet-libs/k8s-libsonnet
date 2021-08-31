@@ -10,6 +10,8 @@
       '#withUid':: d.fn(help='Specifies the target UID.', args=[d.arg(name='uid', type=d.T.string)]),
       withUid(uid): { deleteOptions+: { preconditions+: { uid: uid } } },
     },
+    '#withApiVersion':: d.fn(help='APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources', args=[d.arg(name='apiVersion', type=d.T.string)]),
+    withApiVersion(apiVersion): { deleteOptions+: { apiVersion: apiVersion } },
     '#withDryRun':: d.fn(help='When present, indicates that modifications should not be persisted. An invalid or unrecognized dryRun directive will result in an error response and no further processing of the request. Valid values are: - All: all dry run stages will be processed', args=[d.arg(name='dryRun', type=d.T.array)]),
     withDryRun(dryRun): { deleteOptions+: { dryRun: if std.isArray(v=dryRun) then dryRun else [dryRun] } },
     '#withDryRunMixin':: d.fn(help='When present, indicates that modifications should not be persisted. An invalid or unrecognized dryRun directive will result in an error response and no further processing of the request. Valid values are: - All: all dry run stages will be processed\n\n**Note:** This function appends passed data to existing values', args=[d.arg(name='dryRun', type=d.T.array)]),

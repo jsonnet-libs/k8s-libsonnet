@@ -13,6 +13,7 @@ ObjectMetricStatus indicates the current value of a metric describing a kubernet
   * [`fn withAverageValue(averageValue)`](#fn-currentwithaveragevalue)
   * [`fn withValue(value)`](#fn-currentwithvalue)
 * [`obj describedObject`](#obj-describedobject)
+  * [`fn withApiVersion(apiVersion)`](#fn-describedobjectwithapiversion)
   * [`fn withKind(kind)`](#fn-describedobjectwithkind)
   * [`fn withName(name)`](#fn-describedobjectwithname)
 * [`obj metric`](#obj-metric)
@@ -116,6 +117,14 @@ This format is intended to make it difficult to use these numbers without writin
 ## obj describedObject
 
 CrossVersionObjectReference contains enough information to let you identify the referred resource.
+
+### fn describedObject.withApiVersion
+
+```ts
+withApiVersion(apiVersion)
+```
+
+API version of the referent
 
 ### fn describedObject.withKind
 

@@ -13,6 +13,7 @@ Represents a StorageOS persistent volume resource.
 * [`fn withVolumeName(volumeName)`](#fn-withvolumename)
 * [`fn withVolumeNamespace(volumeNamespace)`](#fn-withvolumenamespace)
 * [`obj secretRef`](#obj-secretref)
+  * [`fn withApiVersion(apiVersion)`](#fn-secretrefwithapiversion)
   * [`fn withFieldPath(fieldPath)`](#fn-secretrefwithfieldpath)
   * [`fn withKind(kind)`](#fn-secretrefwithkind)
   * [`fn withName(name)`](#fn-secretrefwithname)
@@ -57,6 +58,14 @@ VolumeNamespace specifies the scope of the volume within StorageOS.  If no names
 ## obj secretRef
 
 ObjectReference contains enough information to let you inspect or modify the referred object.
+
+### fn secretRef.withApiVersion
+
+```ts
+withApiVersion(apiVersion)
+```
+
+API version of the referent.
 
 ### fn secretRef.withFieldPath
 

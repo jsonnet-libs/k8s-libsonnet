@@ -48,6 +48,7 @@ HorizontalPodAutoscaler is the configuration for a horizontal pod autoscaler, wh
       * [`fn withSelectPolicy(selectPolicy)`](#fn-specbehaviorscaleupwithselectpolicy)
       * [`fn withStabilizationWindowSeconds(stabilizationWindowSeconds)`](#fn-specbehaviorscaleupwithstabilizationwindowseconds)
   * [`obj spec.scaleTargetRef`](#obj-specscaletargetref)
+    * [`fn withApiVersion(apiVersion)`](#fn-specscaletargetrefwithapiversion)
     * [`fn withKind(kind)`](#fn-specscaletargetrefwithkind)
     * [`fn withName(name)`](#fn-specscaletargetrefwithname)
 
@@ -376,6 +377,14 @@ StabilizationWindowSeconds is the number of seconds for which past recommendatio
 ## obj spec.scaleTargetRef
 
 CrossVersionObjectReference contains enough information to let you identify the referred resource.
+
+### fn spec.scaleTargetRef.withApiVersion
+
+```ts
+withApiVersion(apiVersion)
+```
+
+API version of the referent
 
 ### fn spec.scaleTargetRef.withKind
 

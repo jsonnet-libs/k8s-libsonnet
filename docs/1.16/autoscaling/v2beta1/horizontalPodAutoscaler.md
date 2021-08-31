@@ -37,6 +37,7 @@ HorizontalPodAutoscaler is the configuration for a horizontal pod autoscaler, wh
   * [`fn withMetricsMixin(metrics)`](#fn-specwithmetricsmixin)
   * [`fn withMinReplicas(minReplicas)`](#fn-specwithminreplicas)
   * [`obj spec.scaleTargetRef`](#obj-specscaletargetref)
+    * [`fn withApiVersion(apiVersion)`](#fn-specscaletargetrefwithapiversion)
     * [`fn withKind(kind)`](#fn-specscaletargetrefwithkind)
     * [`fn withName(name)`](#fn-specscaletargetrefwithname)
 
@@ -285,6 +286,14 @@ minReplicas is the lower limit for the number of replicas to which the autoscale
 ## obj spec.scaleTargetRef
 
 CrossVersionObjectReference contains enough information to let you identify the referred resource.
+
+### fn spec.scaleTargetRef.withApiVersion
+
+```ts
+withApiVersion(apiVersion)
+```
+
+API version of the referent
 
 ### fn spec.scaleTargetRef.withKind
 

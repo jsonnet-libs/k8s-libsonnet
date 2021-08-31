@@ -12,6 +12,7 @@ specification of a horizontal pod autoscaler.
 * [`fn withMinReplicas(minReplicas)`](#fn-withminreplicas)
 * [`fn withTargetCPUUtilizationPercentage(targetCPUUtilizationPercentage)`](#fn-withtargetcpuutilizationpercentage)
 * [`obj scaleTargetRef`](#obj-scaletargetref)
+  * [`fn withApiVersion(apiVersion)`](#fn-scaletargetrefwithapiversion)
   * [`fn withKind(kind)`](#fn-scaletargetrefwithkind)
   * [`fn withName(name)`](#fn-scaletargetrefwithname)
 
@@ -44,6 +45,14 @@ target average CPU utilization (represented as a percentage of requested CPU) ov
 ## obj scaleTargetRef
 
 CrossVersionObjectReference contains enough information to let you identify the referred resource.
+
+### fn scaleTargetRef.withApiVersion
+
+```ts
+withApiVersion(apiVersion)
+```
+
+API version of the referent
 
 ### fn scaleTargetRef.withKind
 

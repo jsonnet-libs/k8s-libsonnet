@@ -3,6 +3,8 @@
   '#':: d.pkg(name='event', url='', help='Event is a report of an event somewhere in the cluster.  Events have a limited retention time and triggers and messages may evolve with time.  Event consumers should not rely on the timing of an event with a given Reason reflecting a consistent underlying trigger, or the continued existence of events with that Reason.  Events should be treated as informative, best-effort, supplemental data.'),
   '#involvedObject':: d.obj(help='ObjectReference contains enough information to let you inspect or modify the referred object.'),
   involvedObject: {
+    '#withApiVersion':: d.fn(help='API version of the referent.', args=[d.arg(name='apiVersion', type=d.T.string)]),
+    withApiVersion(apiVersion): { involvedObject+: { apiVersion: apiVersion } },
     '#withFieldPath':: d.fn(help='If referring to a piece of an object instead of an entire object, this string should contain a valid JSON/Go field access statement, such as desiredState.manifest.containers[2]. For example, if the object reference is to a container within a pod, this would take on a value like: "spec.containers{name}" (where "name" refers to the name of the container that triggered the event) or if no container name is specified "spec.containers[2]" (container with index 2 in this pod). This syntax is chosen only to have some well-defined way of referencing a part of an object.', args=[d.arg(name='fieldPath', type=d.T.string)]),
     withFieldPath(fieldPath): { involvedObject+: { fieldPath: fieldPath } },
     '#withKind':: d.fn(help='Kind of the referent. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds', args=[d.arg(name='kind', type=d.T.string)]),
@@ -68,6 +70,8 @@
   } + self.metadata.withName(name=name),
   '#related':: d.obj(help='ObjectReference contains enough information to let you inspect or modify the referred object.'),
   related: {
+    '#withApiVersion':: d.fn(help='API version of the referent.', args=[d.arg(name='apiVersion', type=d.T.string)]),
+    withApiVersion(apiVersion): { related+: { apiVersion: apiVersion } },
     '#withFieldPath':: d.fn(help='If referring to a piece of an object instead of an entire object, this string should contain a valid JSON/Go field access statement, such as desiredState.manifest.containers[2]. For example, if the object reference is to a container within a pod, this would take on a value like: "spec.containers{name}" (where "name" refers to the name of the container that triggered the event) or if no container name is specified "spec.containers[2]" (container with index 2 in this pod). This syntax is chosen only to have some well-defined way of referencing a part of an object.', args=[d.arg(name='fieldPath', type=d.T.string)]),
     withFieldPath(fieldPath): { related+: { fieldPath: fieldPath } },
     '#withKind':: d.fn(help='Kind of the referent. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds', args=[d.arg(name='kind', type=d.T.string)]),

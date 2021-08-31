@@ -19,6 +19,7 @@ EnvVar represents an environment variable present in a Container.
     * [`fn withName(name)`](#fn-valuefromconfigmapkeyrefwithname)
     * [`fn withOptional(optional)`](#fn-valuefromconfigmapkeyrefwithoptional)
   * [`obj valueFrom.fieldRef`](#obj-valuefromfieldref)
+    * [`fn withApiVersion(apiVersion)`](#fn-valuefromfieldrefwithapiversion)
     * [`fn withFieldPath(fieldPath)`](#fn-valuefromfieldrefwithfieldpath)
   * [`obj valueFrom.resourceFieldRef`](#obj-valuefromresourcefieldref)
     * [`fn withContainerName(containerName)`](#fn-valuefromresourcefieldrefwithcontainername)
@@ -106,6 +107,14 @@ Specify whether the ConfigMap or its key must be defined
 ## obj valueFrom.fieldRef
 
 ObjectFieldSelector selects an APIVersioned field of an object.
+
+### fn valueFrom.fieldRef.withApiVersion
+
+```ts
+withApiVersion(apiVersion)
+```
+
+Version of the schema the FieldPath is written in terms of, defaults to "v1".
 
 ### fn valueFrom.fieldRef.withFieldPath
 

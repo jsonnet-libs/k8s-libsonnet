@@ -35,6 +35,7 @@ configuration of a horizontal pod autoscaler.
     * [`fn withPending(pending)`](#fn-metadatainitializerswithpending)
     * [`fn withPendingMixin(pending)`](#fn-metadatainitializerswithpendingmixin)
     * [`obj metadata.initializers.result`](#obj-metadatainitializersresult)
+      * [`fn withApiVersion(apiVersion)`](#fn-metadatainitializersresultwithapiversion)
       * [`fn withCode(code)`](#fn-metadatainitializersresultwithcode)
       * [`fn withKind(kind)`](#fn-metadatainitializersresultwithkind)
       * [`fn withMessage(message)`](#fn-metadatainitializersresultwithmessage)
@@ -53,6 +54,7 @@ configuration of a horizontal pod autoscaler.
   * [`fn withMinReplicas(minReplicas)`](#fn-specwithminreplicas)
   * [`fn withTargetCPUUtilizationPercentage(targetCPUUtilizationPercentage)`](#fn-specwithtargetcpuutilizationpercentage)
   * [`obj spec.scaleTargetRef`](#obj-specscaletargetref)
+    * [`fn withApiVersion(apiVersion)`](#fn-specscaletargetrefwithapiversion)
     * [`fn withKind(kind)`](#fn-specscaletargetrefwithkind)
     * [`fn withName(name)`](#fn-specscaletargetrefwithname)
 
@@ -288,6 +290,14 @@ Pending is a list of initializers that must execute in order before this object 
 
 Status is a return value for calls that don't return other objects.
 
+### fn metadata.initializers.result.withApiVersion
+
+```ts
+withApiVersion(apiVersion)
+```
+
+APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+
 ### fn metadata.initializers.result.withCode
 
 ```ts
@@ -421,6 +431,14 @@ target average CPU utilization (represented as a percentage of requested CPU) ov
 ## obj spec.scaleTargetRef
 
 CrossVersionObjectReference contains enough information to let you identify the referred resource.
+
+### fn spec.scaleTargetRef.withApiVersion
+
+```ts
+withApiVersion(apiVersion)
+```
+
+API version of the referent
 
 ### fn spec.scaleTargetRef.withKind
 

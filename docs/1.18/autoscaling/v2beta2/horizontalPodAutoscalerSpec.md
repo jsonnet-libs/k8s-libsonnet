@@ -24,6 +24,7 @@ HorizontalPodAutoscalerSpec describes the desired functionality of the Horizonta
     * [`fn withSelectPolicy(selectPolicy)`](#fn-behaviorscaleupwithselectpolicy)
     * [`fn withStabilizationWindowSeconds(stabilizationWindowSeconds)`](#fn-behaviorscaleupwithstabilizationwindowseconds)
 * [`obj scaleTargetRef`](#obj-scaletargetref)
+  * [`fn withApiVersion(apiVersion)`](#fn-scaletargetrefwithapiversion)
   * [`fn withKind(kind)`](#fn-scaletargetrefwithkind)
   * [`fn withName(name)`](#fn-scaletargetrefwithname)
 
@@ -146,6 +147,14 @@ StabilizationWindowSeconds is the number of seconds for which past recommendatio
 ## obj scaleTargetRef
 
 CrossVersionObjectReference contains enough information to let you identify the referred resource.
+
+### fn scaleTargetRef.withApiVersion
+
+```ts
+withApiVersion(apiVersion)
+```
+
+API version of the referent
 
 ### fn scaleTargetRef.withKind
 

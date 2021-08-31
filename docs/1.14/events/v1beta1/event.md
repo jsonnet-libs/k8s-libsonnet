@@ -48,6 +48,7 @@ Event is a report of an event somewhere in the cluster. It generally denotes som
     * [`fn withPending(pending)`](#fn-metadatainitializerswithpending)
     * [`fn withPendingMixin(pending)`](#fn-metadatainitializerswithpendingmixin)
     * [`obj metadata.initializers.result`](#obj-metadatainitializersresult)
+      * [`fn withApiVersion(apiVersion)`](#fn-metadatainitializersresultwithapiversion)
       * [`fn withCode(code)`](#fn-metadatainitializersresultwithcode)
       * [`fn withKind(kind)`](#fn-metadatainitializersresultwithkind)
       * [`fn withMessage(message)`](#fn-metadatainitializersresultwithmessage)
@@ -62,6 +63,7 @@ Event is a report of an event somewhere in the cluster. It generally denotes som
         * [`fn withRetryAfterSeconds(retryAfterSeconds)`](#fn-metadatainitializersresultdetailswithretryafterseconds)
         * [`fn withUid(uid)`](#fn-metadatainitializersresultdetailswithuid)
 * [`obj regarding`](#obj-regarding)
+  * [`fn withApiVersion(apiVersion)`](#fn-regardingwithapiversion)
   * [`fn withFieldPath(fieldPath)`](#fn-regardingwithfieldpath)
   * [`fn withKind(kind)`](#fn-regardingwithkind)
   * [`fn withName(name)`](#fn-regardingwithname)
@@ -69,6 +71,7 @@ Event is a report of an event somewhere in the cluster. It generally denotes som
   * [`fn withResourceVersion(resourceVersion)`](#fn-regardingwithresourceversion)
   * [`fn withUid(uid)`](#fn-regardingwithuid)
 * [`obj related`](#obj-related)
+  * [`fn withApiVersion(apiVersion)`](#fn-relatedwithapiversion)
   * [`fn withFieldPath(fieldPath)`](#fn-relatedwithfieldpath)
   * [`fn withKind(kind)`](#fn-relatedwithkind)
   * [`fn withName(name)`](#fn-relatedwithname)
@@ -412,6 +415,14 @@ Pending is a list of initializers that must execute in order before this object 
 
 Status is a return value for calls that don't return other objects.
 
+### fn metadata.initializers.result.withApiVersion
+
+```ts
+withApiVersion(apiVersion)
+```
+
+APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+
 ### fn metadata.initializers.result.withCode
 
 ```ts
@@ -518,6 +529,14 @@ UID of the resource. (when there is a single resource which can be described). M
 
 ObjectReference contains enough information to let you inspect or modify the referred object.
 
+### fn regarding.withApiVersion
+
+```ts
+withApiVersion(apiVersion)
+```
+
+API version of the referent.
+
 ### fn regarding.withFieldPath
 
 ```ts
@@ -569,6 +588,14 @@ UID of the referent. More info: https://kubernetes.io/docs/concepts/overview/wor
 ## obj related
 
 ObjectReference contains enough information to let you inspect or modify the referred object.
+
+### fn related.withApiVersion
+
+```ts
+withApiVersion(apiVersion)
+```
+
+API version of the referent.
 
 ### fn related.withFieldPath
 

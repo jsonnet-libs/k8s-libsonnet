@@ -54,6 +54,7 @@ VolumeAttachmentSource represents a volume that should be attached. Right now on
       * [`fn withName(name)`](#fn-inlinevolumespeccindersecretrefwithname)
       * [`fn withNamespace(namespace)`](#fn-inlinevolumespeccindersecretrefwithnamespace)
   * [`obj inlineVolumeSpec.claimRef`](#obj-inlinevolumespecclaimref)
+    * [`fn withApiVersion(apiVersion)`](#fn-inlinevolumespecclaimrefwithapiversion)
     * [`fn withFieldPath(fieldPath)`](#fn-inlinevolumespecclaimrefwithfieldpath)
     * [`fn withKind(kind)`](#fn-inlinevolumespecclaimrefwithkind)
     * [`fn withName(name)`](#fn-inlinevolumespecclaimrefwithname)
@@ -183,6 +184,7 @@ VolumeAttachmentSource represents a volume that should be attached. Right now on
     * [`fn withVolumeName(volumeName)`](#fn-inlinevolumespecstorageoswithvolumename)
     * [`fn withVolumeNamespace(volumeNamespace)`](#fn-inlinevolumespecstorageoswithvolumenamespace)
     * [`obj inlineVolumeSpec.storageos.secretRef`](#obj-inlinevolumespecstorageossecretref)
+      * [`fn withApiVersion(apiVersion)`](#fn-inlinevolumespecstorageossecretrefwithapiversion)
       * [`fn withFieldPath(fieldPath)`](#fn-inlinevolumespecstorageossecretrefwithfieldpath)
       * [`fn withKind(kind)`](#fn-inlinevolumespecstorageossecretrefwithkind)
       * [`fn withName(name)`](#fn-inlinevolumespecstorageossecretrefwithname)
@@ -538,6 +540,14 @@ Namespace defines the space within which the secret name must be unique.
 ## obj inlineVolumeSpec.claimRef
 
 ObjectReference contains enough information to let you inspect or modify the referred object.
+
+### fn inlineVolumeSpec.claimRef.withApiVersion
+
+```ts
+withApiVersion(apiVersion)
+```
+
+API version of the referent.
 
 ### fn inlineVolumeSpec.claimRef.withFieldPath
 
@@ -1478,6 +1488,14 @@ VolumeNamespace specifies the scope of the volume within StorageOS.  If no names
 ## obj inlineVolumeSpec.storageos.secretRef
 
 ObjectReference contains enough information to let you inspect or modify the referred object.
+
+### fn inlineVolumeSpec.storageos.secretRef.withApiVersion
+
+```ts
+withApiVersion(apiVersion)
+```
+
+API version of the referent.
 
 ### fn inlineVolumeSpec.storageos.secretRef.withFieldPath
 

@@ -11,6 +11,7 @@ DownwardAPIVolumeFile represents information to create the file containing the p
 * [`fn withMode(mode)`](#fn-withmode)
 * [`fn withPath(path)`](#fn-withpath)
 * [`obj fieldRef`](#obj-fieldref)
+  * [`fn withApiVersion(apiVersion)`](#fn-fieldrefwithapiversion)
   * [`fn withFieldPath(fieldPath)`](#fn-fieldrefwithfieldpath)
 * [`obj resourceFieldRef`](#obj-resourcefieldref)
   * [`fn withContainerName(containerName)`](#fn-resourcefieldrefwithcontainername)
@@ -38,6 +39,14 @@ Required: Path is  the relative path name of the file to be created. Must not be
 ## obj fieldRef
 
 ObjectFieldSelector selects an APIVersioned field of an object.
+
+### fn fieldRef.withApiVersion
+
+```ts
+withApiVersion(apiVersion)
+```
+
+Version of the schema the FieldPath is written in terms of, defaults to "v1".
 
 ### fn fieldRef.withFieldPath
 

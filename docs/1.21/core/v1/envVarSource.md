@@ -13,6 +13,7 @@ EnvVarSource represents a source for the value of an EnvVar.
   * [`fn withName(name)`](#fn-configmapkeyrefwithname)
   * [`fn withOptional(optional)`](#fn-configmapkeyrefwithoptional)
 * [`obj fieldRef`](#obj-fieldref)
+  * [`fn withApiVersion(apiVersion)`](#fn-fieldrefwithapiversion)
   * [`fn withFieldPath(fieldPath)`](#fn-fieldrefwithfieldpath)
 * [`obj resourceFieldRef`](#obj-resourcefieldref)
   * [`fn withContainerName(containerName)`](#fn-resourcefieldrefwithcontainername)
@@ -56,6 +57,14 @@ Specify whether the ConfigMap or its key must be defined
 ## obj fieldRef
 
 ObjectFieldSelector selects an APIVersioned field of an object.
+
+### fn fieldRef.withApiVersion
+
+```ts
+withApiVersion(apiVersion)
+```
+
+Version of the schema the FieldPath is written in terms of, defaults to "v1".
 
 ### fn fieldRef.withFieldPath
 

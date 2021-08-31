@@ -28,6 +28,7 @@ MetricSpec specifies how to scale based on a single metric (only `type` and one 
     * [`fn withMatchLabels(matchLabels)`](#fn-objectselectorwithmatchlabels)
     * [`fn withMatchLabelsMixin(matchLabels)`](#fn-objectselectorwithmatchlabelsmixin)
   * [`obj object.target`](#obj-objecttarget)
+    * [`fn withApiVersion(apiVersion)`](#fn-objecttargetwithapiversion)
     * [`fn withKind(kind)`](#fn-objecttargetwithkind)
     * [`fn withName(name)`](#fn-objecttargetwithname)
 * [`obj pods`](#obj-pods)
@@ -312,6 +313,14 @@ matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabe
 ## obj object.target
 
 CrossVersionObjectReference contains enough information to let you identify the referred resource.
+
+### fn object.target.withApiVersion
+
+```ts
+withApiVersion(apiVersion)
+```
+
+API version of the referent
 
 ### fn object.target.withKind
 

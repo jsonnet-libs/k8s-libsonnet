@@ -42,6 +42,7 @@ ReplicaSetSpec is the specification of a ReplicaSet.
       * [`fn withPending(pending)`](#fn-templatemetadatainitializerswithpending)
       * [`fn withPendingMixin(pending)`](#fn-templatemetadatainitializerswithpendingmixin)
       * [`obj template.metadata.initializers.result`](#obj-templatemetadatainitializersresult)
+        * [`fn withApiVersion(apiVersion)`](#fn-templatemetadatainitializersresultwithapiversion)
         * [`fn withCode(code)`](#fn-templatemetadatainitializersresultwithcode)
         * [`fn withKind(kind)`](#fn-templatemetadatainitializersresultwithkind)
         * [`fn withMessage(message)`](#fn-templatemetadatainitializersresultwithmessage)
@@ -417,6 +418,14 @@ Pending is a list of initializers that must execute in order before this object 
 ## obj template.metadata.initializers.result
 
 Status is a return value for calls that don't return other objects.
+
+### fn template.metadata.initializers.result.withApiVersion
+
+```ts
+withApiVersion(apiVersion)
+```
+
+APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
 
 ### fn template.metadata.initializers.result.withCode
 

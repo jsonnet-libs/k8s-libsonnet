@@ -52,6 +52,7 @@ PersistentVolumeSpec is the specification of a persistent volume.
     * [`fn withName(name)`](#fn-cindersecretrefwithname)
     * [`fn withNamespace(namespace)`](#fn-cindersecretrefwithnamespace)
 * [`obj claimRef`](#obj-claimref)
+  * [`fn withApiVersion(apiVersion)`](#fn-claimrefwithapiversion)
   * [`fn withFieldPath(fieldPath)`](#fn-claimrefwithfieldpath)
   * [`fn withKind(kind)`](#fn-claimrefwithkind)
   * [`fn withName(name)`](#fn-claimrefwithname)
@@ -181,6 +182,7 @@ PersistentVolumeSpec is the specification of a persistent volume.
   * [`fn withVolumeName(volumeName)`](#fn-storageoswithvolumename)
   * [`fn withVolumeNamespace(volumeNamespace)`](#fn-storageoswithvolumenamespace)
   * [`obj storageos.secretRef`](#obj-storageossecretref)
+    * [`fn withApiVersion(apiVersion)`](#fn-storageossecretrefwithapiversion)
     * [`fn withFieldPath(fieldPath)`](#fn-storageossecretrefwithfieldpath)
     * [`fn withKind(kind)`](#fn-storageossecretrefwithkind)
     * [`fn withName(name)`](#fn-storageossecretrefwithname)
@@ -524,6 +526,14 @@ Namespace defines the space within which the secret name must be unique.
 ## obj claimRef
 
 ObjectReference contains enough information to let you inspect or modify the referred object.
+
+### fn claimRef.withApiVersion
+
+```ts
+withApiVersion(apiVersion)
+```
+
+API version of the referent.
 
 ### fn claimRef.withFieldPath
 
@@ -1464,6 +1474,14 @@ VolumeNamespace specifies the scope of the volume within StorageOS.  If no names
 ## obj storageos.secretRef
 
 ObjectReference contains enough information to let you inspect or modify the referred object.
+
+### fn storageos.secretRef.withApiVersion
+
+```ts
+withApiVersion(apiVersion)
+```
+
+API version of the referent.
 
 ### fn storageos.secretRef.withFieldPath
 

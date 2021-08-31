@@ -35,6 +35,7 @@ CronJob represents the configuration of a single cron job.
     * [`fn withPending(pending)`](#fn-metadatainitializerswithpending)
     * [`fn withPendingMixin(pending)`](#fn-metadatainitializerswithpendingmixin)
     * [`obj metadata.initializers.result`](#obj-metadatainitializersresult)
+      * [`fn withApiVersion(apiVersion)`](#fn-metadatainitializersresultwithapiversion)
       * [`fn withCode(code)`](#fn-metadatainitializersresultwithcode)
       * [`fn withKind(kind)`](#fn-metadatainitializersresultwithkind)
       * [`fn withMessage(message)`](#fn-metadatainitializersresultwithmessage)
@@ -82,6 +83,7 @@ CronJob represents the configuration of a single cron job.
         * [`fn withPending(pending)`](#fn-specjobtemplatemetadatainitializerswithpending)
         * [`fn withPendingMixin(pending)`](#fn-specjobtemplatemetadatainitializerswithpendingmixin)
         * [`obj spec.jobTemplate.metadata.initializers.result`](#obj-specjobtemplatemetadatainitializersresult)
+          * [`fn withApiVersion(apiVersion)`](#fn-specjobtemplatemetadatainitializersresultwithapiversion)
           * [`fn withCode(code)`](#fn-specjobtemplatemetadatainitializersresultwithcode)
           * [`fn withKind(kind)`](#fn-specjobtemplatemetadatainitializersresultwithkind)
           * [`fn withMessage(message)`](#fn-specjobtemplatemetadatainitializersresultwithmessage)
@@ -134,6 +136,7 @@ CronJob represents the configuration of a single cron job.
             * [`fn withPending(pending)`](#fn-specjobtemplatespectemplatemetadatainitializerswithpending)
             * [`fn withPendingMixin(pending)`](#fn-specjobtemplatespectemplatemetadatainitializerswithpendingmixin)
             * [`obj spec.jobTemplate.spec.template.metadata.initializers.result`](#obj-specjobtemplatespectemplatemetadatainitializersresult)
+              * [`fn withApiVersion(apiVersion)`](#fn-specjobtemplatespectemplatemetadatainitializersresultwithapiversion)
               * [`fn withCode(code)`](#fn-specjobtemplatespectemplatemetadatainitializersresultwithcode)
               * [`fn withKind(kind)`](#fn-specjobtemplatespectemplatemetadatainitializersresultwithkind)
               * [`fn withMessage(message)`](#fn-specjobtemplatespectemplatemetadatainitializersresultwithmessage)
@@ -457,6 +460,14 @@ Pending is a list of initializers that must execute in order before this object 
 ## obj metadata.initializers.result
 
 Status is a return value for calls that don't return other objects.
+
+### fn metadata.initializers.result.withApiVersion
+
+```ts
+withApiVersion(apiVersion)
+```
+
+APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
 
 ### fn metadata.initializers.result.withCode
 
@@ -837,6 +848,14 @@ Pending is a list of initializers that must execute in order before this object 
 ## obj spec.jobTemplate.metadata.initializers.result
 
 Status is a return value for calls that don't return other objects.
+
+### fn spec.jobTemplate.metadata.initializers.result.withApiVersion
+
+```ts
+withApiVersion(apiVersion)
+```
+
+APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
 
 ### fn spec.jobTemplate.metadata.initializers.result.withCode
 
@@ -1257,6 +1276,14 @@ Pending is a list of initializers that must execute in order before this object 
 ## obj spec.jobTemplate.spec.template.metadata.initializers.result
 
 Status is a return value for calls that don't return other objects.
+
+### fn spec.jobTemplate.spec.template.metadata.initializers.result.withApiVersion
+
+```ts
+withApiVersion(apiVersion)
+```
+
+APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
 
 ### fn spec.jobTemplate.spec.template.metadata.initializers.result.withCode
 

@@ -14,6 +14,8 @@
     },
     '#fieldRef':: d.obj(help='ObjectFieldSelector selects an APIVersioned field of an object.'),
     fieldRef: {
+      '#withApiVersion':: d.fn(help='Version of the schema the FieldPath is written in terms of, defaults to "v1".', args=[d.arg(name='apiVersion', type=d.T.string)]),
+      withApiVersion(apiVersion): { valueFrom+: { fieldRef+: { apiVersion: apiVersion } } },
       '#withFieldPath':: d.fn(help='Path of the field to select in the specified API version.', args=[d.arg(name='fieldPath', type=d.T.string)]),
       withFieldPath(fieldPath): { valueFrom+: { fieldRef+: { fieldPath: fieldPath } } },
     },

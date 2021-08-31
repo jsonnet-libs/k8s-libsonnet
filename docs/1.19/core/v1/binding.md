@@ -32,6 +32,7 @@ Binding ties one object to another; for example, a pod is bound to a node by a s
   * [`fn withSelfLink(selfLink)`](#fn-metadatawithselflink)
   * [`fn withUid(uid)`](#fn-metadatawithuid)
 * [`obj target`](#obj-target)
+  * [`fn withApiVersion(apiVersion)`](#fn-targetwithapiversion)
   * [`fn withFieldPath(fieldPath)`](#fn-targetwithfieldpath)
   * [`fn withKind(kind)`](#fn-targetwithkind)
   * [`fn withName(name)`](#fn-targetwithname)
@@ -246,6 +247,14 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 ## obj target
 
 ObjectReference contains enough information to let you inspect or modify the referred object.
+
+### fn target.withApiVersion
+
+```ts
+withApiVersion(apiVersion)
+```
+
+API version of the referent.
 
 ### fn target.withFieldPath
 

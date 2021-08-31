@@ -10,6 +10,7 @@ Eviction evicts a pod from its node subject to certain policies and safety const
 
 * [`fn new(name)`](#fn-new)
 * [`obj deleteOptions`](#obj-deleteoptions)
+  * [`fn withApiVersion(apiVersion)`](#fn-deleteoptionswithapiversion)
   * [`fn withDryRun(dryRun)`](#fn-deleteoptionswithdryrun)
   * [`fn withDryRunMixin(dryRun)`](#fn-deleteoptionswithdryrunmixin)
   * [`fn withGracePeriodSeconds(gracePeriodSeconds)`](#fn-deleteoptionswithgraceperiodseconds)
@@ -55,6 +56,14 @@ new returns an instance of Eviction
 ## obj deleteOptions
 
 DeleteOptions may be provided when deleting an API object.
+
+### fn deleteOptions.withApiVersion
+
+```ts
+withApiVersion(apiVersion)
+```
+
+APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
 
 ### fn deleteOptions.withDryRun
 

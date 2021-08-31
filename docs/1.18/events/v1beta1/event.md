@@ -45,6 +45,7 @@ Event is a report of an event somewhere in the cluster. It generally denotes som
   * [`fn withSelfLink(selfLink)`](#fn-metadatawithselflink)
   * [`fn withUid(uid)`](#fn-metadatawithuid)
 * [`obj regarding`](#obj-regarding)
+  * [`fn withApiVersion(apiVersion)`](#fn-regardingwithapiversion)
   * [`fn withFieldPath(fieldPath)`](#fn-regardingwithfieldpath)
   * [`fn withKind(kind)`](#fn-regardingwithkind)
   * [`fn withName(name)`](#fn-regardingwithname)
@@ -52,6 +53,7 @@ Event is a report of an event somewhere in the cluster. It generally denotes som
   * [`fn withResourceVersion(resourceVersion)`](#fn-regardingwithresourceversion)
   * [`fn withUid(uid)`](#fn-regardingwithuid)
 * [`obj related`](#obj-related)
+  * [`fn withApiVersion(apiVersion)`](#fn-relatedwithapiversion)
   * [`fn withFieldPath(fieldPath)`](#fn-relatedwithfieldpath)
   * [`fn withKind(kind)`](#fn-relatedwithkind)
   * [`fn withName(name)`](#fn-relatedwithname)
@@ -371,6 +373,14 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 
 ObjectReference contains enough information to let you inspect or modify the referred object.
 
+### fn regarding.withApiVersion
+
+```ts
+withApiVersion(apiVersion)
+```
+
+API version of the referent.
+
 ### fn regarding.withFieldPath
 
 ```ts
@@ -422,6 +432,14 @@ UID of the referent. More info: https://kubernetes.io/docs/concepts/overview/wor
 ## obj related
 
 ObjectReference contains enough information to let you inspect or modify the referred object.
+
+### fn related.withApiVersion
+
+```ts
+withApiVersion(apiVersion)
+```
+
+API version of the referent.
 
 ### fn related.withFieldPath
 

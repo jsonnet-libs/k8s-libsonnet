@@ -80,6 +80,8 @@
     },
     '#scaleTargetRef':: d.obj(help='CrossVersionObjectReference contains enough information to let you identify the referred resource.'),
     scaleTargetRef: {
+      '#withApiVersion':: d.fn(help='API version of the referent', args=[d.arg(name='apiVersion', type=d.T.string)]),
+      withApiVersion(apiVersion): { spec+: { scaleTargetRef+: { apiVersion: apiVersion } } },
       '#withKind':: d.fn(help='Kind of the referent; More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds"', args=[d.arg(name='kind', type=d.T.string)]),
       withKind(kind): { spec+: { scaleTargetRef+: { kind: kind } } },
       '#withName':: d.fn(help='Name of the referent; More info: http://kubernetes.io/docs/user-guide/identifiers#names', args=[d.arg(name='name', type=d.T.string)]),

@@ -17,6 +17,7 @@ ObjectMetricStatus indicates the current value of a metric describing a kubernet
   * [`fn withMatchLabels(matchLabels)`](#fn-selectorwithmatchlabels)
   * [`fn withMatchLabelsMixin(matchLabels)`](#fn-selectorwithmatchlabelsmixin)
 * [`obj target`](#obj-target)
+  * [`fn withApiVersion(apiVersion)`](#fn-targetwithapiversion)
   * [`fn withKind(kind)`](#fn-targetwithkind)
   * [`fn withName(name)`](#fn-targetwithname)
 
@@ -149,6 +150,14 @@ matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabe
 ## obj target
 
 CrossVersionObjectReference contains enough information to let you identify the referred resource.
+
+### fn target.withApiVersion
+
+```ts
+withApiVersion(apiVersion)
+```
+
+API version of the referent
 
 ### fn target.withKind
 

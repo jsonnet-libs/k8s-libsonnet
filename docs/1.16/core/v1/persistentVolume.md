@@ -76,6 +76,7 @@ PersistentVolume (PV) is a storage resource provisioned by an administrator. It 
       * [`fn withName(name)`](#fn-speccindersecretrefwithname)
       * [`fn withNamespace(namespace)`](#fn-speccindersecretrefwithnamespace)
   * [`obj spec.claimRef`](#obj-specclaimref)
+    * [`fn withApiVersion(apiVersion)`](#fn-specclaimrefwithapiversion)
     * [`fn withFieldPath(fieldPath)`](#fn-specclaimrefwithfieldpath)
     * [`fn withKind(kind)`](#fn-specclaimrefwithkind)
     * [`fn withName(name)`](#fn-specclaimrefwithname)
@@ -205,6 +206,7 @@ PersistentVolume (PV) is a storage resource provisioned by an administrator. It 
     * [`fn withVolumeName(volumeName)`](#fn-specstorageoswithvolumename)
     * [`fn withVolumeNamespace(volumeNamespace)`](#fn-specstorageoswithvolumenamespace)
     * [`obj spec.storageos.secretRef`](#obj-specstorageossecretref)
+      * [`fn withApiVersion(apiVersion)`](#fn-specstorageossecretrefwithapiversion)
       * [`fn withFieldPath(fieldPath)`](#fn-specstorageossecretrefwithfieldpath)
       * [`fn withKind(kind)`](#fn-specstorageossecretrefwithkind)
       * [`fn withName(name)`](#fn-specstorageossecretrefwithname)
@@ -754,6 +756,14 @@ Namespace defines the space within which the secret name must be unique.
 ## obj spec.claimRef
 
 ObjectReference contains enough information to let you inspect or modify the referred object.
+
+### fn spec.claimRef.withApiVersion
+
+```ts
+withApiVersion(apiVersion)
+```
+
+API version of the referent.
 
 ### fn spec.claimRef.withFieldPath
 
@@ -1694,6 +1704,14 @@ VolumeNamespace specifies the scope of the volume within StorageOS.  If no names
 ## obj spec.storageos.secretRef
 
 ObjectReference contains enough information to let you inspect or modify the referred object.
+
+### fn spec.storageos.secretRef.withApiVersion
+
+```ts
+withApiVersion(apiVersion)
+```
+
+API version of the referent.
 
 ### fn spec.storageos.secretRef.withFieldPath
 

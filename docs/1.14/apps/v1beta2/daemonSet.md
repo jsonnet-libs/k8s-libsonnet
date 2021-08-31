@@ -35,6 +35,7 @@ DEPRECATED - This group version of DaemonSet is deprecated by apps/v1/DaemonSet.
     * [`fn withPending(pending)`](#fn-metadatainitializerswithpending)
     * [`fn withPendingMixin(pending)`](#fn-metadatainitializerswithpendingmixin)
     * [`obj metadata.initializers.result`](#obj-metadatainitializersresult)
+      * [`fn withApiVersion(apiVersion)`](#fn-metadatainitializersresultwithapiversion)
       * [`fn withCode(code)`](#fn-metadatainitializersresultwithcode)
       * [`fn withKind(kind)`](#fn-metadatainitializersresultwithkind)
       * [`fn withMessage(message)`](#fn-metadatainitializersresultwithmessage)
@@ -83,6 +84,7 @@ DEPRECATED - This group version of DaemonSet is deprecated by apps/v1/DaemonSet.
         * [`fn withPending(pending)`](#fn-spectemplatemetadatainitializerswithpending)
         * [`fn withPendingMixin(pending)`](#fn-spectemplatemetadatainitializerswithpendingmixin)
         * [`obj spec.template.metadata.initializers.result`](#obj-spectemplatemetadatainitializersresult)
+          * [`fn withApiVersion(apiVersion)`](#fn-spectemplatemetadatainitializersresultwithapiversion)
           * [`fn withCode(code)`](#fn-spectemplatemetadatainitializersresultwithcode)
           * [`fn withKind(kind)`](#fn-spectemplatemetadatainitializersresultwithkind)
           * [`fn withMessage(message)`](#fn-spectemplatemetadatainitializersresultwithmessage)
@@ -406,6 +408,14 @@ Pending is a list of initializers that must execute in order before this object 
 ## obj metadata.initializers.result
 
 Status is a return value for calls that don't return other objects.
+
+### fn metadata.initializers.result.withApiVersion
+
+```ts
+withApiVersion(apiVersion)
+```
+
+APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
 
 ### fn metadata.initializers.result.withCode
 
@@ -794,6 +804,14 @@ Pending is a list of initializers that must execute in order before this object 
 ## obj spec.template.metadata.initializers.result
 
 Status is a return value for calls that don't return other objects.
+
+### fn spec.template.metadata.initializers.result.withApiVersion
+
+```ts
+withApiVersion(apiVersion)
+```
+
+APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
 
 ### fn spec.template.metadata.initializers.result.withCode
 
