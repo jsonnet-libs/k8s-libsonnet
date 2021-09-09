@@ -11,6 +11,7 @@ local k = import "github.com/jsonnet-libs/k8s-libsonnet/1.21/main.libsonnet"
 Generated Jsonnet library for Kubernetes v1.21
 
 * [admissionregistration](admissionregistration/index.md)
+* [apiregistration](apiregistration/index.md)
 * [apiserverinternal](apiserverinternal/index.md)
 * [apps](apps/index.md)
 * [authentication](authentication/index.md)
