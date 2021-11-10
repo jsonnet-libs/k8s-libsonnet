@@ -54,6 +54,7 @@ HorizontalPodAutoscaler is the configuration for a horizontal pod autoscaler, wh
   * [`fn withMetrics(metrics)`](#fn-specwithmetrics)
   * [`fn withMetricsMixin(metrics)`](#fn-specwithmetricsmixin)
   * [`fn withMinReplicas(minReplicas)`](#fn-specwithminreplicas)
+  * [`fn withScaleTargetRef(object)`](#fn-specwithscaletargetref)
   * [`obj spec.scaleTargetRef`](#obj-specscaletargetref)
     * [`fn withApiVersion(apiVersion)`](#fn-specscaletargetrefwithapiversion)
     * [`fn withKind(kind)`](#fn-specscaletargetrefwithkind)
@@ -438,6 +439,14 @@ withMinReplicas(minReplicas)
 ```
 
 minReplicas is the lower limit for the number of replicas to which the autoscaler can scale down. It defaults to 1 pod.
+
+### fn spec.withScaleTargetRef
+
+```ts
+withScaleTargetRef(object)
+```
+
+Set spec.ScaleTargetRef to `object`
 
 ## obj spec.scaleTargetRef
 

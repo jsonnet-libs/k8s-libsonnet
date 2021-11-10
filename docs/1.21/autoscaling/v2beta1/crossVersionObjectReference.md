@@ -8,10 +8,19 @@ CrossVersionObjectReference contains enough information to let you identify the 
 
 ## Index
 
+* [`fn withApiVersion(apiversion)`](#fn-withapiversion)
 * [`fn withKind(kind)`](#fn-withkind)
 * [`fn withName(name)`](#fn-withname)
 
 ## Fields
+
+### fn withApiVersion
+
+```ts
+withApiVersion(apiversion)
+```
+
+API version of the referent
 
 ### fn withKind
 

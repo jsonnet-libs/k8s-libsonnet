@@ -52,6 +52,7 @@ configuration of a horizontal pod autoscaler.
 * [`obj spec`](#obj-spec)
   * [`fn withMaxReplicas(maxReplicas)`](#fn-specwithmaxreplicas)
   * [`fn withMinReplicas(minReplicas)`](#fn-specwithminreplicas)
+  * [`fn withScaleTargetRef(object)`](#fn-specwithscaletargetref)
   * [`fn withTargetCPUUtilizationPercentage(targetCPUUtilizationPercentage)`](#fn-specwithtargetcpuutilizationpercentage)
   * [`obj spec.scaleTargetRef`](#obj-specscaletargetref)
     * [`fn withApiVersion(apiVersion)`](#fn-specscaletargetrefwithapiversion)
@@ -419,6 +420,14 @@ withMinReplicas(minReplicas)
 ```
 
 lower limit for the number of pods that can be set by the autoscaler, default 1.
+
+### fn spec.withScaleTargetRef
+
+```ts
+withScaleTargetRef(object)
+```
+
+Set spec.ScaleTargetRef to `object`
 
 ### fn spec.withTargetCPUUtilizationPercentage
 
