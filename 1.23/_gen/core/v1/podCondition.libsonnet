@@ -1,0 +1,16 @@
+{
+  local d = (import 'doc-util/main.libsonnet'),
+  '#':: d.pkg(name='podCondition', url='', help='"PodCondition contains details for the current condition of this pod."'),
+  '#withLastProbeTime':: d.fn(help='"Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers."', args=[d.arg(name='lastProbeTime', type=d.T.string)]),
+  withLastProbeTime(lastProbeTime): { lastProbeTime: lastProbeTime },
+  '#withLastTransitionTime':: d.fn(help='"Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers."', args=[d.arg(name='lastTransitionTime', type=d.T.string)]),
+  withLastTransitionTime(lastTransitionTime): { lastTransitionTime: lastTransitionTime },
+  '#withMessage':: d.fn(help='"Human-readable message indicating details about last transition."', args=[d.arg(name='message', type=d.T.string)]),
+  withMessage(message): { message: message },
+  '#withReason':: d.fn(help="\"Unique, one-word, CamelCase reason for the condition's last transition.\"", args=[d.arg(name='reason', type=d.T.string)]),
+  withReason(reason): { reason: reason },
+  '#withType':: d.fn(help='"Type is the type of the condition. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#pod-conditions\\n\\nPossible enum values:\\n - `\\"ContainersReady\\"` indicates whether all containers in the pod are ready.\\n - `\\"Initialized\\"` means that all init containers in the pod have started successfully.\\n - `\\"PodScheduled\\"` represents status of the scheduling process for this pod.\\n - `\\"Ready\\"` means the pod is able to service requests and should be added to the load balancing pools of all matching services."', args=[d.arg(name='type', type=d.T.string)]),
+  withType(type): { type: type },
+  '#mixin': 'ignore',
+  mixin: self,
+}
