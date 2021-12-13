@@ -4,7 +4,7 @@ permalink: /1.20/apiserverinternal/v1alpha1/serverStorageVersion/
 
 # apiserverinternal.v1alpha1.serverStorageVersion
 
-An API server instance reports the version it can decode and the version it encodes objects to when persisting objects in the backend.
+"An API server instance reports the version it can decode and the version it encodes objects to when persisting objects in the backend."
 
 ## Index
 
@@ -21,7 +21,7 @@ An API server instance reports the version it can decode and the version it enco
 withApiServerID(apiServerID)
 ```
 
-The ID of the reporting API server.
+"The ID of the reporting API server."
 
 ### fn withDecodableVersions
 
@@ -29,7 +29,7 @@ The ID of the reporting API server.
 withDecodableVersions(decodableVersions)
 ```
 
-The API server can decode objects encoded in these versions. The encodingVersion must be included in the decodableVersions.
+"The API server can decode objects encoded in these versions. The encodingVersion must be included in the decodableVersions."
 
 ### fn withDecodableVersionsMixin
 
@@ -37,7 +37,7 @@ The API server can decode objects encoded in these versions. The encodingVersion
 withDecodableVersionsMixin(decodableVersions)
 ```
 
-The API server can decode objects encoded in these versions. The encodingVersion must be included in the decodableVersions.
+"The API server can decode objects encoded in these versions. The encodingVersion must be included in the decodableVersions."
 
 **Note:** This function appends passed data to existing values
 
@@ -47,4 +47,4 @@ The API server can decode objects encoded in these versions. The encodingVersion
 withEncodingVersion(encodingVersion)
 ```
 
-The API server encodes the object to this version when persisting it in the backend (e.g., etcd).
+"The API server encodes the object to this version when persisting it in the backend (e.g., etcd)."

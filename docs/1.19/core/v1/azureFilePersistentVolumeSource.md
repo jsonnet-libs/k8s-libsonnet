@@ -4,7 +4,7 @@ permalink: /1.19/core/v1/azureFilePersistentVolumeSource/
 
 # core.v1.azureFilePersistentVolumeSource
 
-AzureFile represents an Azure File Service mount on the host and bind mount to the pod.
+"AzureFile represents an Azure File Service mount on the host and bind mount to the pod."
 
 ## Index
 
@@ -21,7 +21,7 @@ AzureFile represents an Azure File Service mount on the host and bind mount to t
 withReadOnly(readOnly)
 ```
 
-Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts.
+"Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts."
 
 ### fn withSecretName
 
@@ -29,7 +29,7 @@ Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in
 withSecretName(secretName)
 ```
 
-the name of secret that contains Azure Storage Account Name and Key
+"the name of secret that contains Azure Storage Account Name and Key"
 
 ### fn withSecretNamespace
 
@@ -37,7 +37,7 @@ the name of secret that contains Azure Storage Account Name and Key
 withSecretNamespace(secretNamespace)
 ```
 
-the namespace of the secret that contains Azure Storage Account Name and Key default is the same as the Pod
+"the namespace of the secret that contains Azure Storage Account Name and Key default is the same as the Pod"
 
 ### fn withShareName
 
@@ -45,4 +45,4 @@ the namespace of the secret that contains Azure Storage Account Name and Key def
 withShareName(shareName)
 ```
 
-Share Name
+"Share Name"

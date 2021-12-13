@@ -4,7 +4,7 @@ permalink: /1.21/core/v1/httpGetAction/
 
 # core.v1.httpGetAction
 
-HTTPGetAction describes an action based on HTTP Get requests.
+"HTTPGetAction describes an action based on HTTP Get requests."
 
 ## Index
 
@@ -23,7 +23,7 @@ HTTPGetAction describes an action based on HTTP Get requests.
 withHost(host)
 ```
 
-Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
+"Host name to connect to, defaults to the pod IP. You probably want to set \"Host\" in httpHeaders instead."
 
 ### fn withHttpHeaders
 
@@ -31,7 +31,7 @@ Host name to connect to, defaults to the pod IP. You probably want to set "Host"
 withHttpHeaders(httpHeaders)
 ```
 
-Custom headers to set in the request. HTTP allows repeated headers.
+"Custom headers to set in the request. HTTP allows repeated headers."
 
 ### fn withHttpHeadersMixin
 
@@ -39,7 +39,7 @@ Custom headers to set in the request. HTTP allows repeated headers.
 withHttpHeadersMixin(httpHeaders)
 ```
 
-Custom headers to set in the request. HTTP allows repeated headers.
+"Custom headers to set in the request. HTTP allows repeated headers."
 
 **Note:** This function appends passed data to existing values
 
@@ -49,7 +49,7 @@ Custom headers to set in the request. HTTP allows repeated headers.
 withPath(path)
 ```
 
-Path to access on the HTTP server.
+"Path to access on the HTTP server."
 
 ### fn withPort
 
@@ -57,7 +57,7 @@ Path to access on the HTTP server.
 withPort(port)
 ```
 
-IntOrString is a type that can hold an int32 or a string.  When used in JSON or YAML marshalling and unmarshalling, it produces or consumes the inner type.  This allows you to have, for example, a JSON field that can accept a name or number.
+"IntOrString is a type that can hold an int32 or a string.  When used in JSON or YAML marshalling and unmarshalling, it produces or consumes the inner type.  This allows you to have, for example, a JSON field that can accept a name or number."
 
 ### fn withScheme
 
@@ -65,4 +65,4 @@ IntOrString is a type that can hold an int32 or a string.  When used in JSON or 
 withScheme(scheme)
 ```
 
-Scheme to use for connecting to the host. Defaults to HTTP.
+"Scheme to use for connecting to the host. Defaults to HTTP."

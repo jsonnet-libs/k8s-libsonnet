@@ -4,7 +4,7 @@ permalink: /1.20/flowcontrol/v1alpha1/flowSchemaSpec/
 
 # flowcontrol.v1alpha1.flowSchemaSpec
 
-FlowSchemaSpec describes how the FlowSchema's specification looks like.
+"FlowSchemaSpec describes how the FlowSchema's specification looks like."
 
 ## Index
 
@@ -24,7 +24,7 @@ FlowSchemaSpec describes how the FlowSchema's specification looks like.
 withMatchingPrecedence(matchingPrecedence)
 ```
 
-`matchingPrecedence` is used to choose among the FlowSchemas that match a given request. The chosen FlowSchema is among those with the numerically lowest (which we take to be logically highest) MatchingPrecedence.  Each MatchingPrecedence value must be ranged in [1,10000]. Note that if the precedence is not specified, it will be set to 1000 as default.
+"`matchingPrecedence` is used to choose among the FlowSchemas that match a given request. The chosen FlowSchema is among those with the numerically lowest (which we take to be logically highest) MatchingPrecedence.  Each MatchingPrecedence value must be ranged in [1,10000]. Note that if the precedence is not specified, it will be set to 1000 as default."
 
 ### fn withRules
 
@@ -32,7 +32,7 @@ withMatchingPrecedence(matchingPrecedence)
 withRules(rules)
 ```
 
-`rules` describes which requests will match this flow schema. This FlowSchema matches a request if and only if at least one member of rules matches the request. if it is an empty slice, there will be no requests matching the FlowSchema.
+"`rules` describes which requests will match this flow schema. This FlowSchema matches a request if and only if at least one member of rules matches the request. if it is an empty slice, there will be no requests matching the FlowSchema."
 
 ### fn withRulesMixin
 
@@ -40,13 +40,13 @@ withRules(rules)
 withRulesMixin(rules)
 ```
 
-`rules` describes which requests will match this flow schema. This FlowSchema matches a request if and only if at least one member of rules matches the request. if it is an empty slice, there will be no requests matching the FlowSchema.
+"`rules` describes which requests will match this flow schema. This FlowSchema matches a request if and only if at least one member of rules matches the request. if it is an empty slice, there will be no requests matching the FlowSchema."
 
 **Note:** This function appends passed data to existing values
 
 ## obj distinguisherMethod
 
-FlowDistinguisherMethod specifies the method of a flow distinguisher.
+"FlowDistinguisherMethod specifies the method of a flow distinguisher."
 
 ### fn distinguisherMethod.withType
 
@@ -54,11 +54,11 @@ FlowDistinguisherMethod specifies the method of a flow distinguisher.
 withType(type)
 ```
 
-`type` is the type of flow distinguisher method The supported types are "ByUser" and "ByNamespace". Required.
+"`type` is the type of flow distinguisher method The supported types are \"ByUser\" and \"ByNamespace\". Required."
 
 ## obj priorityLevelConfiguration
 
-PriorityLevelConfigurationReference contains information that points to the "request-priority" being used.
+"PriorityLevelConfigurationReference contains information that points to the \"request-priority\" being used."
 
 ### fn priorityLevelConfiguration.withName
 
@@ -66,4 +66,4 @@ PriorityLevelConfigurationReference contains information that points to the "req
 withName(name)
 ```
 
-`name` is the name of the priority level configuration being referenced Required.
+"`name` is the name of the priority level configuration being referenced Required."

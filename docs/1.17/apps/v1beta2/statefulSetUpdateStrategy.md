@@ -4,7 +4,7 @@ permalink: /1.17/apps/v1beta2/statefulSetUpdateStrategy/
 
 # apps.v1beta2.statefulSetUpdateStrategy
 
-StatefulSetUpdateStrategy indicates the strategy that the StatefulSet controller will use to perform updates. It includes any additional parameters necessary to perform the update for the indicated strategy.
+"StatefulSetUpdateStrategy indicates the strategy that the StatefulSet controller will use to perform updates. It includes any additional parameters necessary to perform the update for the indicated strategy."
 
 ## Index
 
@@ -20,11 +20,11 @@ StatefulSetUpdateStrategy indicates the strategy that the StatefulSet controller
 withType(type)
 ```
 
-Type indicates the type of the StatefulSetUpdateStrategy. Default is RollingUpdate.
+"Type indicates the type of the StatefulSetUpdateStrategy. Default is RollingUpdate."
 
 ## obj rollingUpdate
 
-RollingUpdateStatefulSetStrategy is used to communicate parameter for RollingUpdateStatefulSetStrategyType.
+"RollingUpdateStatefulSetStrategy is used to communicate parameter for RollingUpdateStatefulSetStrategyType."
 
 ### fn rollingUpdate.withPartition
 
@@ -32,4 +32,4 @@ RollingUpdateStatefulSetStrategy is used to communicate parameter for RollingUpd
 withPartition(partition)
 ```
 
-Partition indicates the ordinal at which the StatefulSet should be partitioned. Default value is 0.
+"Partition indicates the ordinal at which the StatefulSet should be partitioned. Default value is 0."

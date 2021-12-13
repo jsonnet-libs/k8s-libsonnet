@@ -4,7 +4,7 @@ permalink: /1.18/authorization/v1/selfSubjectAccessReviewSpec/
 
 # authorization.v1.selfSubjectAccessReviewSpec
 
-SelfSubjectAccessReviewSpec is a description of the access request.  Exactly one of ResourceAuthorizationAttributes and NonResourceAuthorizationAttributes must be set
+"SelfSubjectAccessReviewSpec is a description of the access request.  Exactly one of ResourceAuthorizationAttributes and NonResourceAuthorizationAttributes must be set"
 
 ## Index
 
@@ -24,7 +24,7 @@ SelfSubjectAccessReviewSpec is a description of the access request.  Exactly one
 
 ## obj nonResourceAttributes
 
-NonResourceAttributes includes the authorization attributes available for non-resource requests to the Authorizer interface
+"NonResourceAttributes includes the authorization attributes available for non-resource requests to the Authorizer interface"
 
 ### fn nonResourceAttributes.withPath
 
@@ -32,7 +32,7 @@ NonResourceAttributes includes the authorization attributes available for non-re
 withPath(path)
 ```
 
-Path is the URL path of the request
+"Path is the URL path of the request"
 
 ### fn nonResourceAttributes.withVerb
 
@@ -40,11 +40,11 @@ Path is the URL path of the request
 withVerb(verb)
 ```
 
-Verb is the standard HTTP verb
+"Verb is the standard HTTP verb"
 
 ## obj resourceAttributes
 
-ResourceAttributes includes the authorization attributes available for resource requests to the Authorizer interface
+"ResourceAttributes includes the authorization attributes available for resource requests to the Authorizer interface"
 
 ### fn resourceAttributes.withGroup
 
@@ -52,7 +52,7 @@ ResourceAttributes includes the authorization attributes available for resource 
 withGroup(group)
 ```
 
-Group is the API Group of the Resource.  "*" means all.
+"Group is the API Group of the Resource.  \"*\" means all."
 
 ### fn resourceAttributes.withName
 
@@ -60,7 +60,7 @@ Group is the API Group of the Resource.  "*" means all.
 withName(name)
 ```
 
-Name is the name of the resource being requested for a "get" or deleted for a "delete". "" (empty) means all.
+"Name is the name of the resource being requested for a \"get\" or deleted for a \"delete\". \"\" (empty) means all."
 
 ### fn resourceAttributes.withNamespace
 
@@ -68,7 +68,7 @@ Name is the name of the resource being requested for a "get" or deleted for a "d
 withNamespace(namespace)
 ```
 
-Namespace is the namespace of the action being requested.  Currently, there is no distinction between no namespace and all namespaces "" (empty) is defaulted for LocalSubjectAccessReviews "" (empty) is empty for cluster-scoped resources "" (empty) means "all" for namespace scoped resources from a SubjectAccessReview or SelfSubjectAccessReview
+"Namespace is the namespace of the action being requested.  Currently, there is no distinction between no namespace and all namespaces \"\" (empty) is defaulted for LocalSubjectAccessReviews \"\" (empty) is empty for cluster-scoped resources \"\" (empty) means \"all\" for namespace scoped resources from a SubjectAccessReview or SelfSubjectAccessReview"
 
 ### fn resourceAttributes.withResource
 
@@ -76,7 +76,7 @@ Namespace is the namespace of the action being requested.  Currently, there is n
 withResource(resource)
 ```
 
-Resource is one of the existing resource types.  "*" means all.
+"Resource is one of the existing resource types.  \"*\" means all."
 
 ### fn resourceAttributes.withSubresource
 
@@ -84,7 +84,7 @@ Resource is one of the existing resource types.  "*" means all.
 withSubresource(subresource)
 ```
 
-Subresource is one of the existing resource types.  "" means none.
+"Subresource is one of the existing resource types.  \"\" means none."
 
 ### fn resourceAttributes.withVerb
 
@@ -92,7 +92,7 @@ Subresource is one of the existing resource types.  "" means none.
 withVerb(verb)
 ```
 
-Verb is a kubernetes resource API verb, like: get, list, watch, create, update, delete, proxy.  "*" means all.
+"Verb is a kubernetes resource API verb, like: get, list, watch, create, update, delete, proxy.  \"*\" means all."
 
 ### fn resourceAttributes.withVersion
 
@@ -100,4 +100,4 @@ Verb is a kubernetes resource API verb, like: get, list, watch, create, update, 
 withVersion(version)
 ```
 
-Version is the API Version of the Resource.  "*" means all.
+"Version is the API Version of the Resource.  \"*\" means all."

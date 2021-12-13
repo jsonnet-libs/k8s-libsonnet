@@ -4,7 +4,7 @@ permalink: /1.18/autoscaling/v1/horizontalPodAutoscalerStatus/
 
 # autoscaling.v1.horizontalPodAutoscalerStatus
 
-current status of a horizontal pod autoscaler
+"current status of a horizontal pod autoscaler"
 
 ## Index
 
@@ -22,7 +22,7 @@ current status of a horizontal pod autoscaler
 withCurrentCPUUtilizationPercentage(currentCPUUtilizationPercentage)
 ```
 
-current average CPU utilization over all pods, represented as a percentage of requested CPU, e.g. 70 means that an average pod is using now 70% of its requested CPU.
+"current average CPU utilization over all pods, represented as a percentage of requested CPU, e.g. 70 means that an average pod is using now 70% of its requested CPU."
 
 ### fn withCurrentReplicas
 
@@ -30,7 +30,7 @@ current average CPU utilization over all pods, represented as a percentage of re
 withCurrentReplicas(currentReplicas)
 ```
 
-current number of replicas of pods managed by this autoscaler.
+"current number of replicas of pods managed by this autoscaler."
 
 ### fn withDesiredReplicas
 
@@ -38,7 +38,7 @@ current number of replicas of pods managed by this autoscaler.
 withDesiredReplicas(desiredReplicas)
 ```
 
-desired number of replicas of pods managed by this autoscaler.
+"desired number of replicas of pods managed by this autoscaler."
 
 ### fn withLastScaleTime
 
@@ -46,7 +46,7 @@ desired number of replicas of pods managed by this autoscaler.
 withLastScaleTime(lastScaleTime)
 ```
 
-Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.
+"Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers."
 
 ### fn withObservedGeneration
 
@@ -54,4 +54,4 @@ Time is a wrapper around time.Time which supports correct marshaling to YAML and
 withObservedGeneration(observedGeneration)
 ```
 
-most recent generation observed by this autoscaler.
+"most recent generation observed by this autoscaler."

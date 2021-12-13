@@ -4,7 +4,7 @@ permalink: /1.21/networking/v1/serviceBackendPort/
 
 # networking.v1.serviceBackendPort
 
-ServiceBackendPort is the service port being referenced.
+"ServiceBackendPort is the service port being referenced."
 
 ## Index
 
@@ -19,7 +19,7 @@ ServiceBackendPort is the service port being referenced.
 withName(name)
 ```
 
-Name is the name of the port on the Service. This is a mutually exclusive setting with "Number".
+"Name is the name of the port on the Service. This is a mutually exclusive setting with \"Number\"."
 
 ### fn withNumber
 
@@ -27,4 +27,4 @@ Name is the name of the port on the Service. This is a mutually exclusive settin
 withNumber(number)
 ```
 
-Number is the numerical port number (e.g. 80) on the Service. This is a mutually exclusive setting with "Name".
+"Number is the numerical port number (e.g. 80) on the Service. This is a mutually exclusive setting with \"Name\"."

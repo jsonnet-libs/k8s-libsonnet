@@ -4,7 +4,7 @@ permalink: /1.17/batch/v1/jobStatus/
 
 # batch.v1.jobStatus
 
-JobStatus represents the current state of a Job.
+"JobStatus represents the current state of a Job."
 
 ## Index
 
@@ -24,7 +24,7 @@ JobStatus represents the current state of a Job.
 withActive(active)
 ```
 
-The number of actively running pods.
+"The number of actively running pods."
 
 ### fn withCompletionTime
 
@@ -32,7 +32,7 @@ The number of actively running pods.
 withCompletionTime(completionTime)
 ```
 
-Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.
+"Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers."
 
 ### fn withConditions
 
@@ -40,7 +40,7 @@ Time is a wrapper around time.Time which supports correct marshaling to YAML and
 withConditions(conditions)
 ```
 
-The latest available observations of an object's current state. More info: https://kubernetes.io/docs/concepts/workloads/controllers/jobs-run-to-completion/
+"The latest available observations of an object's current state. More info: https://kubernetes.io/docs/concepts/workloads/controllers/jobs-run-to-completion/"
 
 ### fn withConditionsMixin
 
@@ -48,7 +48,7 @@ The latest available observations of an object's current state. More info: https
 withConditionsMixin(conditions)
 ```
 
-The latest available observations of an object's current state. More info: https://kubernetes.io/docs/concepts/workloads/controllers/jobs-run-to-completion/
+"The latest available observations of an object's current state. More info: https://kubernetes.io/docs/concepts/workloads/controllers/jobs-run-to-completion/"
 
 **Note:** This function appends passed data to existing values
 
@@ -58,7 +58,7 @@ The latest available observations of an object's current state. More info: https
 withFailed(failed)
 ```
 
-The number of pods which reached phase Failed.
+"The number of pods which reached phase Failed."
 
 ### fn withStartTime
 
@@ -66,7 +66,7 @@ The number of pods which reached phase Failed.
 withStartTime(startTime)
 ```
 
-Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.
+"Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers."
 
 ### fn withSucceeded
 
@@ -74,4 +74,4 @@ Time is a wrapper around time.Time which supports correct marshaling to YAML and
 withSucceeded(succeeded)
 ```
 
-The number of pods which reached phase Succeeded.
+"The number of pods which reached phase Succeeded."

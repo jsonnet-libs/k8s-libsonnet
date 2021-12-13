@@ -4,7 +4,7 @@ permalink: /1.19/networking/v1/ingressSpec/
 
 # networking.v1.ingressSpec
 
-IngressSpec describes the Ingress the user wishes to exist.
+"IngressSpec describes the Ingress the user wishes to exist."
 
 ## Index
 
@@ -32,7 +32,7 @@ IngressSpec describes the Ingress the user wishes to exist.
 withIngressClassName(ingressClassName)
 ```
 
-IngressClassName is the name of the IngressClass cluster resource. The associated IngressClass defines which controller will implement the resource. This replaces the deprecated `kubernetes.io/ingress.class` annotation. For backwards compatibility, when that annotation is set, it must be given precedence over this field. The controller may emit a warning if the field and annotation have different values. Implementations of this API should ignore Ingresses without a class specified. An IngressClass resource may be marked as default, which can be used to set a default value for this field. For more information, refer to the IngressClass documentation.
+"IngressClassName is the name of the IngressClass cluster resource. The associated IngressClass defines which controller will implement the resource. This replaces the deprecated `kubernetes.io/ingress.class` annotation. For backwards compatibility, when that annotation is set, it must be given precedence over this field. The controller may emit a warning if the field and annotation have different values. Implementations of this API should ignore Ingresses without a class specified. An IngressClass resource may be marked as default, which can be used to set a default value for this field. For more information, refer to the IngressClass documentation."
 
 ### fn withRules
 
@@ -40,7 +40,7 @@ IngressClassName is the name of the IngressClass cluster resource. The associate
 withRules(rules)
 ```
 
-A list of host rules used to configure the Ingress. If unspecified, or no rule matches, all traffic is sent to the default backend.
+"A list of host rules used to configure the Ingress. If unspecified, or no rule matches, all traffic is sent to the default backend."
 
 ### fn withRulesMixin
 
@@ -48,7 +48,7 @@ A list of host rules used to configure the Ingress. If unspecified, or no rule m
 withRulesMixin(rules)
 ```
 
-A list of host rules used to configure the Ingress. If unspecified, or no rule matches, all traffic is sent to the default backend.
+"A list of host rules used to configure the Ingress. If unspecified, or no rule matches, all traffic is sent to the default backend."
 
 **Note:** This function appends passed data to existing values
 
@@ -58,7 +58,7 @@ A list of host rules used to configure the Ingress. If unspecified, or no rule m
 withTls(tls)
 ```
 
-TLS configuration. Currently the Ingress only supports a single TLS port, 443. If multiple members of this list specify different hosts, they will be multiplexed on the same port according to the hostname specified through the SNI TLS extension, if the ingress controller fulfilling the ingress supports SNI.
+"TLS configuration. Currently the Ingress only supports a single TLS port, 443. If multiple members of this list specify different hosts, they will be multiplexed on the same port according to the hostname specified through the SNI TLS extension, if the ingress controller fulfilling the ingress supports SNI."
 
 ### fn withTlsMixin
 
@@ -66,17 +66,17 @@ TLS configuration. Currently the Ingress only supports a single TLS port, 443. I
 withTlsMixin(tls)
 ```
 
-TLS configuration. Currently the Ingress only supports a single TLS port, 443. If multiple members of this list specify different hosts, they will be multiplexed on the same port according to the hostname specified through the SNI TLS extension, if the ingress controller fulfilling the ingress supports SNI.
+"TLS configuration. Currently the Ingress only supports a single TLS port, 443. If multiple members of this list specify different hosts, they will be multiplexed on the same port according to the hostname specified through the SNI TLS extension, if the ingress controller fulfilling the ingress supports SNI."
 
 **Note:** This function appends passed data to existing values
 
 ## obj defaultBackend
 
-IngressBackend describes all endpoints for a given service and port.
+"IngressBackend describes all endpoints for a given service and port."
 
 ## obj defaultBackend.resource
 
-TypedLocalObjectReference contains enough information to let you locate the typed referenced object inside the same namespace.
+"TypedLocalObjectReference contains enough information to let you locate the typed referenced object inside the same namespace."
 
 ### fn defaultBackend.resource.withApiGroup
 
@@ -84,7 +84,7 @@ TypedLocalObjectReference contains enough information to let you locate the type
 withApiGroup(apiGroup)
 ```
 
-APIGroup is the group for the resource being referenced. If APIGroup is not specified, the specified Kind must be in the core API group. For any other third-party types, APIGroup is required.
+"APIGroup is the group for the resource being referenced. If APIGroup is not specified, the specified Kind must be in the core API group. For any other third-party types, APIGroup is required."
 
 ### fn defaultBackend.resource.withKind
 
@@ -92,7 +92,7 @@ APIGroup is the group for the resource being referenced. If APIGroup is not spec
 withKind(kind)
 ```
 
-Kind is the type of resource being referenced
+"Kind is the type of resource being referenced"
 
 ### fn defaultBackend.resource.withName
 
@@ -100,11 +100,11 @@ Kind is the type of resource being referenced
 withName(name)
 ```
 
-Name is the name of resource being referenced
+"Name is the name of resource being referenced"
 
 ## obj defaultBackend.service
 
-IngressServiceBackend references a Kubernetes Service as a Backend.
+"IngressServiceBackend references a Kubernetes Service as a Backend."
 
 ### fn defaultBackend.service.withName
 
@@ -112,11 +112,11 @@ IngressServiceBackend references a Kubernetes Service as a Backend.
 withName(name)
 ```
 
-Name is the referenced service. The service must exist in the same namespace as the Ingress object.
+"Name is the referenced service. The service must exist in the same namespace as the Ingress object."
 
 ## obj defaultBackend.service.port
 
-ServiceBackendPort is the service port being referenced.
+"ServiceBackendPort is the service port being referenced."
 
 ### fn defaultBackend.service.port.withName
 
@@ -124,7 +124,7 @@ ServiceBackendPort is the service port being referenced.
 withName(name)
 ```
 
-Name is the name of the port on the Service. This is a mutually exclusive setting with "Number".
+"Name is the name of the port on the Service. This is a mutually exclusive setting with \"Number\"."
 
 ### fn defaultBackend.service.port.withNumber
 
@@ -132,4 +132,4 @@ Name is the name of the port on the Service. This is a mutually exclusive settin
 withNumber(number)
 ```
 
-Number is the numerical port number (e.g. 80) on the Service. This is a mutually exclusive setting with "Name".
+"Number is the numerical port number (e.g. 80) on the Service. This is a mutually exclusive setting with \"Name\"."

@@ -4,7 +4,7 @@ permalink: /1.18/core/v1/nodeDaemonEndpoints/
 
 # core.v1.nodeDaemonEndpoints
 
-NodeDaemonEndpoints lists ports opened by daemons running on the Node.
+"NodeDaemonEndpoints lists ports opened by daemons running on the Node."
 
 ## Index
 
@@ -15,7 +15,7 @@ NodeDaemonEndpoints lists ports opened by daemons running on the Node.
 
 ## obj kubeletEndpoint
 
-DaemonEndpoint contains information about a single Daemon endpoint.
+"DaemonEndpoint contains information about a single Daemon endpoint."
 
 ### fn kubeletEndpoint.withPort
 
@@ -23,4 +23,4 @@ DaemonEndpoint contains information about a single Daemon endpoint.
 withPort(port)
 ```
 
-Port number of the given endpoint.
+"Port number of the given endpoint."

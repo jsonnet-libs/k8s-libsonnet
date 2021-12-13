@@ -4,9 +4,7 @@ permalink: /1.20/core/v1/secretEnvSource/
 
 # core.v1.secretEnvSource
 
-SecretEnvSource selects a Secret to populate the environment variables with.
-
-The contents of the target Secret's Data field will represent the key-value pairs as environment variables.
+"SecretEnvSource selects a Secret to populate the environment variables with.\n\nThe contents of the target Secret's Data field will represent the key-value pairs as environment variables."
 
 ## Index
 
@@ -21,7 +19,7 @@ The contents of the target Secret's Data field will represent the key-value pair
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn withOptional
 
@@ -29,4 +27,4 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret must be defined
+"Specify whether the Secret must be defined"

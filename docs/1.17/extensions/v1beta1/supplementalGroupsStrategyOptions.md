@@ -4,7 +4,7 @@ permalink: /1.17/extensions/v1beta1/supplementalGroupsStrategyOptions/
 
 # extensions.v1beta1.supplementalGroupsStrategyOptions
 
-SupplementalGroupsStrategyOptions defines the strategy type and options used to create the strategy. Deprecated: use SupplementalGroupsStrategyOptions from policy API Group instead.
+"SupplementalGroupsStrategyOptions defines the strategy type and options used to create the strategy. Deprecated: use SupplementalGroupsStrategyOptions from policy API Group instead."
 
 ## Index
 
@@ -20,7 +20,7 @@ SupplementalGroupsStrategyOptions defines the strategy type and options used to 
 withRanges(ranges)
 ```
 
-ranges are the allowed ranges of supplemental groups.  If you would like to force a single supplemental group then supply a single range with the same start and end. Required for MustRunAs.
+"ranges are the allowed ranges of supplemental groups.  If you would like to force a single supplemental group then supply a single range with the same start and end. Required for MustRunAs."
 
 ### fn withRangesMixin
 
@@ -28,7 +28,7 @@ ranges are the allowed ranges of supplemental groups.  If you would like to forc
 withRangesMixin(ranges)
 ```
 
-ranges are the allowed ranges of supplemental groups.  If you would like to force a single supplemental group then supply a single range with the same start and end. Required for MustRunAs.
+"ranges are the allowed ranges of supplemental groups.  If you would like to force a single supplemental group then supply a single range with the same start and end. Required for MustRunAs."
 
 **Note:** This function appends passed data to existing values
 
@@ -38,4 +38,4 @@ ranges are the allowed ranges of supplemental groups.  If you would like to forc
 withRule(rule)
 ```
 
-rule is the strategy that will dictate what supplemental groups is used in the SecurityContext.
+"rule is the strategy that will dictate what supplemental groups is used in the SecurityContext."

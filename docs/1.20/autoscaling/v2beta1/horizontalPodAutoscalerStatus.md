@@ -4,7 +4,7 @@ permalink: /1.20/autoscaling/v2beta1/horizontalPodAutoscalerStatus/
 
 # autoscaling.v2beta1.horizontalPodAutoscalerStatus
 
-HorizontalPodAutoscalerStatus describes the current status of a horizontal pod autoscaler.
+"HorizontalPodAutoscalerStatus describes the current status of a horizontal pod autoscaler."
 
 ## Index
 
@@ -25,7 +25,7 @@ HorizontalPodAutoscalerStatus describes the current status of a horizontal pod a
 withConditions(conditions)
 ```
 
-conditions is the set of conditions required for this autoscaler to scale its target, and indicates whether or not those conditions are met.
+"conditions is the set of conditions required for this autoscaler to scale its target, and indicates whether or not those conditions are met."
 
 ### fn withConditionsMixin
 
@@ -33,7 +33,7 @@ conditions is the set of conditions required for this autoscaler to scale its ta
 withConditionsMixin(conditions)
 ```
 
-conditions is the set of conditions required for this autoscaler to scale its target, and indicates whether or not those conditions are met.
+"conditions is the set of conditions required for this autoscaler to scale its target, and indicates whether or not those conditions are met."
 
 **Note:** This function appends passed data to existing values
 
@@ -43,7 +43,7 @@ conditions is the set of conditions required for this autoscaler to scale its ta
 withCurrentMetrics(currentMetrics)
 ```
 
-currentMetrics is the last read state of the metrics used by this autoscaler.
+"currentMetrics is the last read state of the metrics used by this autoscaler."
 
 ### fn withCurrentMetricsMixin
 
@@ -51,7 +51,7 @@ currentMetrics is the last read state of the metrics used by this autoscaler.
 withCurrentMetricsMixin(currentMetrics)
 ```
 
-currentMetrics is the last read state of the metrics used by this autoscaler.
+"currentMetrics is the last read state of the metrics used by this autoscaler."
 
 **Note:** This function appends passed data to existing values
 
@@ -61,7 +61,7 @@ currentMetrics is the last read state of the metrics used by this autoscaler.
 withCurrentReplicas(currentReplicas)
 ```
 
-currentReplicas is current number of replicas of pods managed by this autoscaler, as last seen by the autoscaler.
+"currentReplicas is current number of replicas of pods managed by this autoscaler, as last seen by the autoscaler."
 
 ### fn withDesiredReplicas
 
@@ -69,7 +69,7 @@ currentReplicas is current number of replicas of pods managed by this autoscaler
 withDesiredReplicas(desiredReplicas)
 ```
 
-desiredReplicas is the desired number of replicas of pods managed by this autoscaler, as last calculated by the autoscaler.
+"desiredReplicas is the desired number of replicas of pods managed by this autoscaler, as last calculated by the autoscaler."
 
 ### fn withLastScaleTime
 
@@ -77,7 +77,7 @@ desiredReplicas is the desired number of replicas of pods managed by this autosc
 withLastScaleTime(lastScaleTime)
 ```
 
-Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.
+"Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers."
 
 ### fn withObservedGeneration
 
@@ -85,4 +85,4 @@ Time is a wrapper around time.Time which supports correct marshaling to YAML and
 withObservedGeneration(observedGeneration)
 ```
 
-observedGeneration is the most recent generation observed by this autoscaler.
+"observedGeneration is the most recent generation observed by this autoscaler."

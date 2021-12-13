@@ -4,7 +4,7 @@ permalink: /1.21/networking/v1/ingressClassSpec/
 
 # networking.v1.ingressClassSpec
 
-IngressClassSpec provides information about the class of an Ingress.
+"IngressClassSpec provides information about the class of an Ingress."
 
 ## Index
 
@@ -24,11 +24,11 @@ IngressClassSpec provides information about the class of an Ingress.
 withController(controller)
 ```
 
-Controller refers to the name of the controller that should handle this class. This allows for different "flavors" that are controlled by the same controller. For example, you may have different Parameters for the same implementing controller. This should be specified as a domain-prefixed path no more than 250 characters in length, e.g. "acme.io/ingress-controller". This field is immutable.
+"Controller refers to the name of the controller that should handle this class. This allows for different \"flavors\" that are controlled by the same controller. For example, you may have different Parameters for the same implementing controller. This should be specified as a domain-prefixed path no more than 250 characters in length, e.g. \"acme.io/ingress-controller\". This field is immutable."
 
 ## obj parameters
 
-IngressClassParametersReference identifies an API object. This can be used to specify a cluster or namespace-scoped resource.
+"IngressClassParametersReference identifies an API object. This can be used to specify a cluster or namespace-scoped resource."
 
 ### fn parameters.withApiGroup
 
@@ -36,7 +36,7 @@ IngressClassParametersReference identifies an API object. This can be used to sp
 withApiGroup(apiGroup)
 ```
 
-APIGroup is the group for the resource being referenced. If APIGroup is not specified, the specified Kind must be in the core API group. For any other third-party types, APIGroup is required.
+"APIGroup is the group for the resource being referenced. If APIGroup is not specified, the specified Kind must be in the core API group. For any other third-party types, APIGroup is required."
 
 ### fn parameters.withKind
 
@@ -44,7 +44,7 @@ APIGroup is the group for the resource being referenced. If APIGroup is not spec
 withKind(kind)
 ```
 
-Kind is the type of resource being referenced.
+"Kind is the type of resource being referenced."
 
 ### fn parameters.withName
 
@@ -52,7 +52,7 @@ Kind is the type of resource being referenced.
 withName(name)
 ```
 
-Name is the name of resource being referenced.
+"Name is the name of resource being referenced."
 
 ### fn parameters.withNamespace
 
@@ -60,7 +60,7 @@ Name is the name of resource being referenced.
 withNamespace(namespace)
 ```
 
-Namespace is the namespace of the resource being referenced. This field is required when scope is set to "Namespace" and must be unset when scope is set to "Cluster".
+"Namespace is the namespace of the resource being referenced. This field is required when scope is set to \"Namespace\" and must be unset when scope is set to \"Cluster\"."
 
 ### fn parameters.withScope
 
@@ -68,4 +68,4 @@ Namespace is the namespace of the resource being referenced. This field is requi
 withScope(scope)
 ```
 
-Scope represents if this refers to a cluster or namespace scoped resource. This may be set to "Cluster" (default) or "Namespace". Field can be enabled with IngressClassNamespacedParams feature gate.
+"Scope represents if this refers to a cluster or namespace scoped resource. This may be set to \"Cluster\" (default) or \"Namespace\". Field can be enabled with IngressClassNamespacedParams feature gate."

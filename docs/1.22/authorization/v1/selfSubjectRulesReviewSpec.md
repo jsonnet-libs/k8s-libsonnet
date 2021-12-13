@@ -4,7 +4,7 @@ permalink: /1.22/authorization/v1/selfSubjectRulesReviewSpec/
 
 # authorization.v1.selfSubjectRulesReviewSpec
 
-SelfSubjectRulesReviewSpec defines the specification for SelfSubjectRulesReview.
+"SelfSubjectRulesReviewSpec defines the specification for SelfSubjectRulesReview."
 
 ## Index
 
@@ -18,4 +18,4 @@ SelfSubjectRulesReviewSpec defines the specification for SelfSubjectRulesReview.
 withNamespace(namespace)
 ```
 
-Namespace to evaluate rules for. Required.
+"Namespace to evaluate rules for. Required."

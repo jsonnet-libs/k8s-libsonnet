@@ -4,7 +4,7 @@ permalink: /1.20/autoscaling/v2beta2/hpaScalingPolicy/
 
 # autoscaling.v2beta2.hpaScalingPolicy
 
-HPAScalingPolicy is a single policy which must hold true for a specified past interval.
+"HPAScalingPolicy is a single policy which must hold true for a specified past interval."
 
 ## Index
 
@@ -20,7 +20,7 @@ HPAScalingPolicy is a single policy which must hold true for a specified past in
 withPeriodSeconds(periodSeconds)
 ```
 
-PeriodSeconds specifies the window of time for which the policy should hold true. PeriodSeconds must be greater than zero and less than or equal to 1800 (30 min).
+"PeriodSeconds specifies the window of time for which the policy should hold true. PeriodSeconds must be greater than zero and less than or equal to 1800 (30 min)."
 
 ### fn withType
 
@@ -28,7 +28,7 @@ PeriodSeconds specifies the window of time for which the policy should hold true
 withType(type)
 ```
 
-Type is used to specify the scaling policy.
+"Type is used to specify the scaling policy."
 
 ### fn withValue
 
@@ -36,4 +36,4 @@ Type is used to specify the scaling policy.
 withValue(value)
 ```
 
-Value contains the amount of change which is permitted by the policy. It must be greater than zero
+"Value contains the amount of change which is permitted by the policy. It must be greater than zero"

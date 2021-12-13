@@ -4,7 +4,7 @@ permalink: /1.17/core/v1/portworxVolumeSource/
 
 # core.v1.portworxVolumeSource
 
-PortworxVolumeSource represents a Portworx volume resource.
+"PortworxVolumeSource represents a Portworx volume resource."
 
 ## Index
 
@@ -20,7 +20,7 @@ PortworxVolumeSource represents a Portworx volume resource.
 withFsType(fsType)
 ```
 
-FSType represents the filesystem type to mount Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs". Implicitly inferred to be "ext4" if unspecified.
+"FSType represents the filesystem type to mount Must be a filesystem type supported by the host operating system. Ex. \"ext4\", \"xfs\". Implicitly inferred to be \"ext4\" if unspecified."
 
 ### fn withReadOnly
 
@@ -28,7 +28,7 @@ FSType represents the filesystem type to mount Must be a filesystem type support
 withReadOnly(readOnly)
 ```
 
-Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts.
+"Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts."
 
 ### fn withVolumeID
 
@@ -36,4 +36,4 @@ Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in
 withVolumeID(volumeID)
 ```
 
-VolumeID uniquely identifies a Portworx volume
+"VolumeID uniquely identifies a Portworx volume"

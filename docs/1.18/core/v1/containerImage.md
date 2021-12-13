@@ -4,7 +4,7 @@ permalink: /1.18/core/v1/containerImage/
 
 # core.v1.containerImage
 
-Describe a container image
+"Describe a container image"
 
 ## Index
 
@@ -20,7 +20,7 @@ Describe a container image
 withNames(names)
 ```
 
-Names by which this image is known. e.g. ["k8s.gcr.io/hyperkube:v1.0.7", "dockerhub.io/google_containers/hyperkube:v1.0.7"]
+"Names by which this image is known. e.g. [\"k8s.gcr.io/hyperkube:v1.0.7\", \"dockerhub.io/google_containers/hyperkube:v1.0.7\"]"
 
 ### fn withNamesMixin
 
@@ -28,7 +28,7 @@ Names by which this image is known. e.g. ["k8s.gcr.io/hyperkube:v1.0.7", "docker
 withNamesMixin(names)
 ```
 
-Names by which this image is known. e.g. ["k8s.gcr.io/hyperkube:v1.0.7", "dockerhub.io/google_containers/hyperkube:v1.0.7"]
+"Names by which this image is known. e.g. [\"k8s.gcr.io/hyperkube:v1.0.7\", \"dockerhub.io/google_containers/hyperkube:v1.0.7\"]"
 
 **Note:** This function appends passed data to existing values
 
@@ -38,4 +38,4 @@ Names by which this image is known. e.g. ["k8s.gcr.io/hyperkube:v1.0.7", "docker
 withSizeBytes(sizeBytes)
 ```
 
-The size of the image in bytes.
+"The size of the image in bytes."

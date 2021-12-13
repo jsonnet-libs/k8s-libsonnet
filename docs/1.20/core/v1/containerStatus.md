@@ -4,7 +4,7 @@ permalink: /1.20/core/v1/containerStatus/
 
 # core.v1.containerStatus
 
-ContainerStatus contains details for the current status of this container.
+"ContainerStatus contains details for the current status of this container."
 
 ## Index
 
@@ -52,7 +52,7 @@ ContainerStatus contains details for the current status of this container.
 withContainerID(containerID)
 ```
 
-Container's ID in the format 'docker://<container_id>'.
+"Container's ID in the format 'docker://<container_id>'."
 
 ### fn withImage
 
@@ -60,7 +60,7 @@ Container's ID in the format 'docker://<container_id>'.
 withImage(image)
 ```
 
-The image the container is running. More info: https://kubernetes.io/docs/concepts/containers/images
+"The image the container is running. More info: https://kubernetes.io/docs/concepts/containers/images"
 
 ### fn withImageID
 
@@ -68,7 +68,7 @@ The image the container is running. More info: https://kubernetes.io/docs/concep
 withImageID(imageID)
 ```
 
-ImageID of the container's image.
+"ImageID of the container's image."
 
 ### fn withName
 
@@ -76,7 +76,7 @@ ImageID of the container's image.
 withName(name)
 ```
 
-This must be a DNS_LABEL. Each container in a pod must have a unique name. Cannot be updated.
+"This must be a DNS_LABEL. Each container in a pod must have a unique name. Cannot be updated."
 
 ### fn withReady
 
@@ -84,7 +84,7 @@ This must be a DNS_LABEL. Each container in a pod must have a unique name. Canno
 withReady(ready)
 ```
 
-Specifies whether the container has passed its readiness probe.
+"Specifies whether the container has passed its readiness probe."
 
 ### fn withRestartCount
 
@@ -92,7 +92,7 @@ Specifies whether the container has passed its readiness probe.
 withRestartCount(restartCount)
 ```
 
-The number of times the container has been restarted, currently based on the number of dead containers that have not yet been removed. Note that this is calculated from dead containers. But those containers are subject to garbage collection. This value will get capped at 5 by GC.
+"The number of times the container has been restarted, currently based on the number of dead containers that have not yet been removed. Note that this is calculated from dead containers. But those containers are subject to garbage collection. This value will get capped at 5 by GC."
 
 ### fn withStarted
 
@@ -100,15 +100,15 @@ The number of times the container has been restarted, currently based on the num
 withStarted(started)
 ```
 
-Specifies whether the container has passed its startup probe. Initialized as false, becomes true after startupProbe is considered successful. Resets to false when the container is restarted, or if kubelet loses state temporarily. Is always true when no startupProbe is defined.
+"Specifies whether the container has passed its startup probe. Initialized as false, becomes true after startupProbe is considered successful. Resets to false when the container is restarted, or if kubelet loses state temporarily. Is always true when no startupProbe is defined."
 
 ## obj lastState
 
-ContainerState holds a possible state of container. Only one of its members may be specified. If none of them is specified, the default one is ContainerStateWaiting.
+"ContainerState holds a possible state of container. Only one of its members may be specified. If none of them is specified, the default one is ContainerStateWaiting."
 
 ## obj lastState.running
 
-ContainerStateRunning is a running state of a container.
+"ContainerStateRunning is a running state of a container."
 
 ### fn lastState.running.withStartedAt
 
@@ -116,11 +116,11 @@ ContainerStateRunning is a running state of a container.
 withStartedAt(startedAt)
 ```
 
-Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.
+"Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers."
 
 ## obj lastState.terminated
 
-ContainerStateTerminated is a terminated state of a container.
+"ContainerStateTerminated is a terminated state of a container."
 
 ### fn lastState.terminated.withContainerID
 
@@ -128,7 +128,7 @@ ContainerStateTerminated is a terminated state of a container.
 withContainerID(containerID)
 ```
 
-Container's ID in the format 'docker://<container_id>'
+"Container's ID in the format 'docker://<container_id>'"
 
 ### fn lastState.terminated.withExitCode
 
@@ -136,7 +136,7 @@ Container's ID in the format 'docker://<container_id>'
 withExitCode(exitCode)
 ```
 
-Exit status from the last termination of the container
+"Exit status from the last termination of the container"
 
 ### fn lastState.terminated.withFinishedAt
 
@@ -144,7 +144,7 @@ Exit status from the last termination of the container
 withFinishedAt(finishedAt)
 ```
 
-Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.
+"Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers."
 
 ### fn lastState.terminated.withMessage
 
@@ -152,7 +152,7 @@ Time is a wrapper around time.Time which supports correct marshaling to YAML and
 withMessage(message)
 ```
 
-Message regarding the last termination of the container
+"Message regarding the last termination of the container"
 
 ### fn lastState.terminated.withReason
 
@@ -160,7 +160,7 @@ Message regarding the last termination of the container
 withReason(reason)
 ```
 
-(brief) reason from the last termination of the container
+"(brief) reason from the last termination of the container"
 
 ### fn lastState.terminated.withSignal
 
@@ -168,7 +168,7 @@ withReason(reason)
 withSignal(signal)
 ```
 
-Signal from the last termination of the container
+"Signal from the last termination of the container"
 
 ### fn lastState.terminated.withStartedAt
 
@@ -176,11 +176,11 @@ Signal from the last termination of the container
 withStartedAt(startedAt)
 ```
 
-Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.
+"Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers."
 
 ## obj lastState.waiting
 
-ContainerStateWaiting is a waiting state of a container.
+"ContainerStateWaiting is a waiting state of a container."
 
 ### fn lastState.waiting.withMessage
 
@@ -188,7 +188,7 @@ ContainerStateWaiting is a waiting state of a container.
 withMessage(message)
 ```
 
-Message regarding why the container is not yet running.
+"Message regarding why the container is not yet running."
 
 ### fn lastState.waiting.withReason
 
@@ -196,15 +196,15 @@ Message regarding why the container is not yet running.
 withReason(reason)
 ```
 
-(brief) reason the container is not yet running.
+"(brief) reason the container is not yet running."
 
 ## obj state
 
-ContainerState holds a possible state of container. Only one of its members may be specified. If none of them is specified, the default one is ContainerStateWaiting.
+"ContainerState holds a possible state of container. Only one of its members may be specified. If none of them is specified, the default one is ContainerStateWaiting."
 
 ## obj state.running
 
-ContainerStateRunning is a running state of a container.
+"ContainerStateRunning is a running state of a container."
 
 ### fn state.running.withStartedAt
 
@@ -212,11 +212,11 @@ ContainerStateRunning is a running state of a container.
 withStartedAt(startedAt)
 ```
 
-Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.
+"Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers."
 
 ## obj state.terminated
 
-ContainerStateTerminated is a terminated state of a container.
+"ContainerStateTerminated is a terminated state of a container."
 
 ### fn state.terminated.withContainerID
 
@@ -224,7 +224,7 @@ ContainerStateTerminated is a terminated state of a container.
 withContainerID(containerID)
 ```
 
-Container's ID in the format 'docker://<container_id>'
+"Container's ID in the format 'docker://<container_id>'"
 
 ### fn state.terminated.withExitCode
 
@@ -232,7 +232,7 @@ Container's ID in the format 'docker://<container_id>'
 withExitCode(exitCode)
 ```
 
-Exit status from the last termination of the container
+"Exit status from the last termination of the container"
 
 ### fn state.terminated.withFinishedAt
 
@@ -240,7 +240,7 @@ Exit status from the last termination of the container
 withFinishedAt(finishedAt)
 ```
 
-Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.
+"Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers."
 
 ### fn state.terminated.withMessage
 
@@ -248,7 +248,7 @@ Time is a wrapper around time.Time which supports correct marshaling to YAML and
 withMessage(message)
 ```
 
-Message regarding the last termination of the container
+"Message regarding the last termination of the container"
 
 ### fn state.terminated.withReason
 
@@ -256,7 +256,7 @@ Message regarding the last termination of the container
 withReason(reason)
 ```
 
-(brief) reason from the last termination of the container
+"(brief) reason from the last termination of the container"
 
 ### fn state.terminated.withSignal
 
@@ -264,7 +264,7 @@ withReason(reason)
 withSignal(signal)
 ```
 
-Signal from the last termination of the container
+"Signal from the last termination of the container"
 
 ### fn state.terminated.withStartedAt
 
@@ -272,11 +272,11 @@ Signal from the last termination of the container
 withStartedAt(startedAt)
 ```
 
-Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.
+"Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers."
 
 ## obj state.waiting
 
-ContainerStateWaiting is a waiting state of a container.
+"ContainerStateWaiting is a waiting state of a container."
 
 ### fn state.waiting.withMessage
 
@@ -284,7 +284,7 @@ ContainerStateWaiting is a waiting state of a container.
 withMessage(message)
 ```
 
-Message regarding why the container is not yet running.
+"Message regarding why the container is not yet running."
 
 ### fn state.waiting.withReason
 
@@ -292,4 +292,4 @@ Message regarding why the container is not yet running.
 withReason(reason)
 ```
 
-(brief) reason the container is not yet running.
+"(brief) reason the container is not yet running."

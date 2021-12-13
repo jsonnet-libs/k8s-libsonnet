@@ -4,7 +4,7 @@ permalink: /1.21/core/v1/containerStateRunning/
 
 # core.v1.containerStateRunning
 
-ContainerStateRunning is a running state of a container.
+"ContainerStateRunning is a running state of a container."
 
 ## Index
 
@@ -18,4 +18,4 @@ ContainerStateRunning is a running state of a container.
 withStartedAt(startedAt)
 ```
 
-Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.
+"Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers."

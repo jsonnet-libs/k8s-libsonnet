@@ -4,7 +4,7 @@ permalink: /1.18/core/v1/limitRangeSpec/
 
 # core.v1.limitRangeSpec
 
-LimitRangeSpec defines a min/max usage limit for resources that match on kind.
+"LimitRangeSpec defines a min/max usage limit for resources that match on kind."
 
 ## Index
 
@@ -19,7 +19,7 @@ LimitRangeSpec defines a min/max usage limit for resources that match on kind.
 withLimits(limits)
 ```
 
-Limits is the list of LimitRangeItem objects that are enforced.
+"Limits is the list of LimitRangeItem objects that are enforced."
 
 ### fn withLimitsMixin
 
@@ -27,6 +27,6 @@ Limits is the list of LimitRangeItem objects that are enforced.
 withLimitsMixin(limits)
 ```
 
-Limits is the list of LimitRangeItem objects that are enforced.
+"Limits is the list of LimitRangeItem objects that are enforced."
 
 **Note:** This function appends passed data to existing values

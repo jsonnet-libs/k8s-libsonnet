@@ -4,7 +4,7 @@ permalink: /1.17/extensions/v1beta1/scaleSpec/
 
 # extensions.v1beta1.scaleSpec
 
-describes the attributes of a scale subresource
+"describes the attributes of a scale subresource"
 
 ## Index
 
@@ -18,4 +18,4 @@ describes the attributes of a scale subresource
 withReplicas(replicas)
 ```
 
-desired number of instances for the scaled object.
+"desired number of instances for the scaled object."

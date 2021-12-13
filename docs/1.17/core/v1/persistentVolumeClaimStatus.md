@@ -4,7 +4,7 @@ permalink: /1.17/core/v1/persistentVolumeClaimStatus/
 
 # core.v1.persistentVolumeClaimStatus
 
-PersistentVolumeClaimStatus is the current status of a persistent volume claim.
+"PersistentVolumeClaimStatus is the current status of a persistent volume claim."
 
 ## Index
 
@@ -24,7 +24,7 @@ PersistentVolumeClaimStatus is the current status of a persistent volume claim.
 withAccessModes(accessModes)
 ```
 
-AccessModes contains the actual access modes the volume backing the PVC has. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#access-modes-1
+"AccessModes contains the actual access modes the volume backing the PVC has. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#access-modes-1"
 
 ### fn withAccessModesMixin
 
@@ -32,7 +32,7 @@ AccessModes contains the actual access modes the volume backing the PVC has. Mor
 withAccessModesMixin(accessModes)
 ```
 
-AccessModes contains the actual access modes the volume backing the PVC has. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#access-modes-1
+"AccessModes contains the actual access modes the volume backing the PVC has. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#access-modes-1"
 
 **Note:** This function appends passed data to existing values
 
@@ -42,7 +42,7 @@ AccessModes contains the actual access modes the volume backing the PVC has. Mor
 withCapacity(capacity)
 ```
 
-Represents the actual resources of the underlying volume.
+"Represents the actual resources of the underlying volume."
 
 ### fn withCapacityMixin
 
@@ -50,7 +50,7 @@ Represents the actual resources of the underlying volume.
 withCapacityMixin(capacity)
 ```
 
-Represents the actual resources of the underlying volume.
+"Represents the actual resources of the underlying volume."
 
 **Note:** This function appends passed data to existing values
 
@@ -60,7 +60,7 @@ Represents the actual resources of the underlying volume.
 withConditions(conditions)
 ```
 
-Current Condition of persistent volume claim. If underlying persistent volume is being resized then the Condition will be set to 'ResizeStarted'.
+"Current Condition of persistent volume claim. If underlying persistent volume is being resized then the Condition will be set to 'ResizeStarted'."
 
 ### fn withConditionsMixin
 
@@ -68,7 +68,7 @@ Current Condition of persistent volume claim. If underlying persistent volume is
 withConditionsMixin(conditions)
 ```
 
-Current Condition of persistent volume claim. If underlying persistent volume is being resized then the Condition will be set to 'ResizeStarted'.
+"Current Condition of persistent volume claim. If underlying persistent volume is being resized then the Condition will be set to 'ResizeStarted'."
 
 **Note:** This function appends passed data to existing values
 
@@ -78,4 +78,4 @@ Current Condition of persistent volume claim. If underlying persistent volume is
 withPhase(phase)
 ```
 
-Phase represents the current phase of PersistentVolumeClaim.
+"Phase represents the current phase of PersistentVolumeClaim."

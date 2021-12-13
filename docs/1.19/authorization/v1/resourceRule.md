@@ -4,7 +4,7 @@ permalink: /1.19/authorization/v1/resourceRule/
 
 # authorization.v1.resourceRule
 
-ResourceRule is the list of actions the subject is allowed to perform on resources. The list ordering isn't significant, may contain duplicates, and possibly be incomplete.
+"ResourceRule is the list of actions the subject is allowed to perform on resources. The list ordering isn't significant, may contain duplicates, and possibly be incomplete."
 
 ## Index
 
@@ -25,7 +25,7 @@ ResourceRule is the list of actions the subject is allowed to perform on resourc
 withApiGroups(apiGroups)
 ```
 
-APIGroups is the name of the APIGroup that contains the resources.  If multiple API groups are specified, any action requested against one of the enumerated resources in any API group will be allowed.  "*" means all.
+"APIGroups is the name of the APIGroup that contains the resources.  If multiple API groups are specified, any action requested against one of the enumerated resources in any API group will be allowed.  \"*\" means all."
 
 ### fn withApiGroupsMixin
 
@@ -33,7 +33,7 @@ APIGroups is the name of the APIGroup that contains the resources.  If multiple 
 withApiGroupsMixin(apiGroups)
 ```
 
-APIGroups is the name of the APIGroup that contains the resources.  If multiple API groups are specified, any action requested against one of the enumerated resources in any API group will be allowed.  "*" means all.
+"APIGroups is the name of the APIGroup that contains the resources.  If multiple API groups are specified, any action requested against one of the enumerated resources in any API group will be allowed.  \"*\" means all."
 
 **Note:** This function appends passed data to existing values
 
@@ -43,7 +43,7 @@ APIGroups is the name of the APIGroup that contains the resources.  If multiple 
 withResourceNames(resourceNames)
 ```
 
-ResourceNames is an optional white list of names that the rule applies to.  An empty set means that everything is allowed.  "*" means all.
+"ResourceNames is an optional white list of names that the rule applies to.  An empty set means that everything is allowed.  \"*\" means all."
 
 ### fn withResourceNamesMixin
 
@@ -51,7 +51,7 @@ ResourceNames is an optional white list of names that the rule applies to.  An e
 withResourceNamesMixin(resourceNames)
 ```
 
-ResourceNames is an optional white list of names that the rule applies to.  An empty set means that everything is allowed.  "*" means all.
+"ResourceNames is an optional white list of names that the rule applies to.  An empty set means that everything is allowed.  \"*\" means all."
 
 **Note:** This function appends passed data to existing values
 
@@ -61,8 +61,7 @@ ResourceNames is an optional white list of names that the rule applies to.  An e
 withResources(resources)
 ```
 
-Resources is a list of resources this rule applies to.  '*' means all in the specified apiGroups.
- '*/foo' represents the subresource 'foo' for all resources in the specified apiGroups.
+"Resources is a list of resources this rule applies to.  \"*\" means all in the specified apiGroups.\n \"*/foo\" represents the subresource 'foo' for all resources in the specified apiGroups."
 
 ### fn withResourcesMixin
 
@@ -70,8 +69,7 @@ Resources is a list of resources this rule applies to.  '*' means all in the spe
 withResourcesMixin(resources)
 ```
 
-Resources is a list of resources this rule applies to.  '*' means all in the specified apiGroups.
- '*/foo' represents the subresource 'foo' for all resources in the specified apiGroups.
+"Resources is a list of resources this rule applies to.  \"*\" means all in the specified apiGroups.\n \"*/foo\" represents the subresource 'foo' for all resources in the specified apiGroups."
 
 **Note:** This function appends passed data to existing values
 
@@ -81,7 +79,7 @@ Resources is a list of resources this rule applies to.  '*' means all in the spe
 withVerbs(verbs)
 ```
 
-Verb is a list of kubernetes resource API verbs, like: get, list, watch, create, update, delete, proxy.  "*" means all.
+"Verb is a list of kubernetes resource API verbs, like: get, list, watch, create, update, delete, proxy.  \"*\" means all."
 
 ### fn withVerbsMixin
 
@@ -89,6 +87,6 @@ Verb is a list of kubernetes resource API verbs, like: get, list, watch, create,
 withVerbsMixin(verbs)
 ```
 
-Verb is a list of kubernetes resource API verbs, like: get, list, watch, create, update, delete, proxy.  "*" means all.
+"Verb is a list of kubernetes resource API verbs, like: get, list, watch, create, update, delete, proxy.  \"*\" means all."
 
 **Note:** This function appends passed data to existing values

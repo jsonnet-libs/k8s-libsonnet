@@ -4,7 +4,7 @@ permalink: /1.19/core/v1/cinderPersistentVolumeSource/
 
 # core.v1.cinderPersistentVolumeSource
 
-Represents a cinder volume resource in Openstack. A Cinder volume must exist before mounting to a container. The volume must also be in the same region as the kubelet. Cinder volumes support ownership management and SELinux relabeling.
+"Represents a cinder volume resource in Openstack. A Cinder volume must exist before mounting to a container. The volume must also be in the same region as the kubelet. Cinder volumes support ownership management and SELinux relabeling."
 
 ## Index
 
@@ -23,7 +23,7 @@ Represents a cinder volume resource in Openstack. A Cinder volume must exist bef
 withFsType(fsType)
 ```
 
-Filesystem type to mount. Must be a filesystem type supported by the host operating system. Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. More info: https://examples.k8s.io/mysql-cinder-pd/README.md
+"Filesystem type to mount. Must be a filesystem type supported by the host operating system. Examples: \"ext4\", \"xfs\", \"ntfs\". Implicitly inferred to be \"ext4\" if unspecified. More info: https://examples.k8s.io/mysql-cinder-pd/README.md"
 
 ### fn withReadOnly
 
@@ -31,7 +31,7 @@ Filesystem type to mount. Must be a filesystem type supported by the host operat
 withReadOnly(readOnly)
 ```
 
-Optional: Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts. More info: https://examples.k8s.io/mysql-cinder-pd/README.md
+"Optional: Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts. More info: https://examples.k8s.io/mysql-cinder-pd/README.md"
 
 ### fn withVolumeID
 
@@ -39,11 +39,11 @@ Optional: Defaults to false (read/write). ReadOnly here will force the ReadOnly 
 withVolumeID(volumeID)
 ```
 
-volume id used to identify the volume in cinder. More info: https://examples.k8s.io/mysql-cinder-pd/README.md
+"volume id used to identify the volume in cinder. More info: https://examples.k8s.io/mysql-cinder-pd/README.md"
 
 ## obj secretRef
 
-SecretReference represents a Secret Reference. It has enough information to retrieve secret in any namespace
+"SecretReference represents a Secret Reference. It has enough information to retrieve secret in any namespace"
 
 ### fn secretRef.withName
 
@@ -51,7 +51,7 @@ SecretReference represents a Secret Reference. It has enough information to retr
 withName(name)
 ```
 
-Name is unique within a namespace to reference a secret resource.
+"Name is unique within a namespace to reference a secret resource."
 
 ### fn secretRef.withNamespace
 
@@ -59,4 +59,4 @@ Name is unique within a namespace to reference a secret resource.
 withNamespace(namespace)
 ```
 
-Namespace defines the space within which the secret name must be unique.
+"Namespace defines the space within which the secret name must be unique."

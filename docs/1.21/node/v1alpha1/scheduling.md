@@ -4,7 +4,7 @@ permalink: /1.21/node/v1alpha1/scheduling/
 
 # node.v1alpha1.scheduling
 
-Scheduling specifies the scheduling constraints for nodes supporting a RuntimeClass.
+"Scheduling specifies the scheduling constraints for nodes supporting a RuntimeClass."
 
 ## Index
 
@@ -21,7 +21,7 @@ Scheduling specifies the scheduling constraints for nodes supporting a RuntimeCl
 withNodeSelector(nodeSelector)
 ```
 
-nodeSelector lists labels that must be present on nodes that support this RuntimeClass. Pods using this RuntimeClass can only be scheduled to a node matched by this selector. The RuntimeClass nodeSelector is merged with a pod's existing nodeSelector. Any conflicts will cause the pod to be rejected in admission.
+"nodeSelector lists labels that must be present on nodes that support this RuntimeClass. Pods using this RuntimeClass can only be scheduled to a node matched by this selector. The RuntimeClass nodeSelector is merged with a pod's existing nodeSelector. Any conflicts will cause the pod to be rejected in admission."
 
 ### fn withNodeSelectorMixin
 
@@ -29,7 +29,7 @@ nodeSelector lists labels that must be present on nodes that support this Runtim
 withNodeSelectorMixin(nodeSelector)
 ```
 
-nodeSelector lists labels that must be present on nodes that support this RuntimeClass. Pods using this RuntimeClass can only be scheduled to a node matched by this selector. The RuntimeClass nodeSelector is merged with a pod's existing nodeSelector. Any conflicts will cause the pod to be rejected in admission.
+"nodeSelector lists labels that must be present on nodes that support this RuntimeClass. Pods using this RuntimeClass can only be scheduled to a node matched by this selector. The RuntimeClass nodeSelector is merged with a pod's existing nodeSelector. Any conflicts will cause the pod to be rejected in admission."
 
 **Note:** This function appends passed data to existing values
 
@@ -39,7 +39,7 @@ nodeSelector lists labels that must be present on nodes that support this Runtim
 withTolerations(tolerations)
 ```
 
-tolerations are appended (excluding duplicates) to pods running with this RuntimeClass during admission, effectively unioning the set of nodes tolerated by the pod and the RuntimeClass.
+"tolerations are appended (excluding duplicates) to pods running with this RuntimeClass during admission, effectively unioning the set of nodes tolerated by the pod and the RuntimeClass."
 
 ### fn withTolerationsMixin
 
@@ -47,6 +47,6 @@ tolerations are appended (excluding duplicates) to pods running with this Runtim
 withTolerationsMixin(tolerations)
 ```
 
-tolerations are appended (excluding duplicates) to pods running with this RuntimeClass during admission, effectively unioning the set of nodes tolerated by the pod and the RuntimeClass.
+"tolerations are appended (excluding duplicates) to pods running with this RuntimeClass during admission, effectively unioning the set of nodes tolerated by the pod and the RuntimeClass."
 
 **Note:** This function appends passed data to existing values

@@ -4,7 +4,7 @@ permalink: /1.17/apps/v1beta1/deploymentRollback/
 
 # apps.v1beta1.deploymentRollback
 
-DEPRECATED. DeploymentRollback stores the information required to rollback a deployment.
+"DEPRECATED. DeploymentRollback stores the information required to rollback a deployment."
 
 ## Index
 
@@ -23,7 +23,7 @@ DEPRECATED. DeploymentRollback stores the information required to rollback a dep
 new(name)
 ```
 
-new returns an instance of Deploymentrollback
+new returns an instance of DeploymentRollback
 
 ### fn withName
 
@@ -31,7 +31,7 @@ new returns an instance of Deploymentrollback
 withName(name)
 ```
 
-Required: This must match the Name of a deployment.
+"Required: This must match the Name of a deployment."
 
 ### fn withUpdatedAnnotations
 
@@ -39,7 +39,7 @@ Required: This must match the Name of a deployment.
 withUpdatedAnnotations(updatedAnnotations)
 ```
 
-The annotations to be updated to a deployment
+"The annotations to be updated to a deployment"
 
 ### fn withUpdatedAnnotationsMixin
 
@@ -47,13 +47,13 @@ The annotations to be updated to a deployment
 withUpdatedAnnotationsMixin(updatedAnnotations)
 ```
 
-The annotations to be updated to a deployment
+"The annotations to be updated to a deployment"
 
 **Note:** This function appends passed data to existing values
 
 ## obj rollbackTo
 
-DEPRECATED.
+"DEPRECATED."
 
 ### fn rollbackTo.withRevision
 
@@ -61,4 +61,4 @@ DEPRECATED.
 withRevision(revision)
 ```
 
-The revision to rollback to. If set to 0, rollback to the last revision.
+"The revision to rollback to. If set to 0, rollback to the last revision."

@@ -18,4 +18,4 @@ permalink: /1.19/authorization/v1beta1/selfSubjectRulesReviewSpec/
 withNamespace(namespace)
 ```
 
-Namespace to evaluate rules for. Required.
+"Namespace to evaluate rules for. Required."

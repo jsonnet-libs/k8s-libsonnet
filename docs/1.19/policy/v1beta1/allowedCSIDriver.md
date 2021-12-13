@@ -4,7 +4,7 @@ permalink: /1.19/policy/v1beta1/allowedCSIDriver/
 
 # policy.v1beta1.allowedCSIDriver
 
-AllowedCSIDriver represents a single inline CSI Driver that is allowed to be used.
+"AllowedCSIDriver represents a single inline CSI Driver that is allowed to be used."
 
 ## Index
 
@@ -18,4 +18,4 @@ AllowedCSIDriver represents a single inline CSI Driver that is allowed to be use
 withName(name)
 ```
 
-Name is the registered name of the CSI driver
+"Name is the registered name of the CSI driver"

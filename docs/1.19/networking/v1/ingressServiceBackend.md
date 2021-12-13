@@ -4,7 +4,7 @@ permalink: /1.19/networking/v1/ingressServiceBackend/
 
 # networking.v1.ingressServiceBackend
 
-IngressServiceBackend references a Kubernetes Service as a Backend.
+"IngressServiceBackend references a Kubernetes Service as a Backend."
 
 ## Index
 
@@ -21,11 +21,11 @@ IngressServiceBackend references a Kubernetes Service as a Backend.
 withName(name)
 ```
 
-Name is the referenced service. The service must exist in the same namespace as the Ingress object.
+"Name is the referenced service. The service must exist in the same namespace as the Ingress object."
 
 ## obj port
 
-ServiceBackendPort is the service port being referenced.
+"ServiceBackendPort is the service port being referenced."
 
 ### fn port.withName
 
@@ -33,7 +33,7 @@ ServiceBackendPort is the service port being referenced.
 withName(name)
 ```
 
-Name is the name of the port on the Service. This is a mutually exclusive setting with "Number".
+"Name is the name of the port on the Service. This is a mutually exclusive setting with \"Number\"."
 
 ### fn port.withNumber
 
@@ -41,4 +41,4 @@ Name is the name of the port on the Service. This is a mutually exclusive settin
 withNumber(number)
 ```
 
-Number is the numerical port number (e.g. 80) on the Service. This is a mutually exclusive setting with "Name".
+"Number is the numerical port number (e.g. 80) on the Service. This is a mutually exclusive setting with \"Name\"."

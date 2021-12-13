@@ -4,7 +4,7 @@ permalink: /1.17/authentication/v1/boundObjectReference/
 
 # authentication.v1.boundObjectReference
 
-BoundObjectReference is a reference to an object that a token is bound to.
+"BoundObjectReference is a reference to an object that a token is bound to."
 
 ## Index
 
@@ -20,7 +20,7 @@ BoundObjectReference is a reference to an object that a token is bound to.
 withKind(kind)
 ```
 
-Kind of the referent. Valid kinds are 'Pod' and 'Secret'.
+"Kind of the referent. Valid kinds are 'Pod' and 'Secret'."
 
 ### fn withName
 
@@ -28,7 +28,7 @@ Kind of the referent. Valid kinds are 'Pod' and 'Secret'.
 withName(name)
 ```
 
-Name of the referent.
+"Name of the referent."
 
 ### fn withUid
 
@@ -36,4 +36,4 @@ Name of the referent.
 withUid(uid)
 ```
 
-UID of the referent.
+"UID of the referent."

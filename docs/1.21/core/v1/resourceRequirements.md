@@ -4,7 +4,7 @@ permalink: /1.21/core/v1/resourceRequirements/
 
 # core.v1.resourceRequirements
 
-ResourceRequirements describes the compute resource requirements.
+"ResourceRequirements describes the compute resource requirements."
 
 ## Index
 
@@ -21,7 +21,7 @@ ResourceRequirements describes the compute resource requirements.
 withLimits(limits)
 ```
 
-Limits describes the maximum amount of compute resources allowed. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/
+"Limits describes the maximum amount of compute resources allowed. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/"
 
 ### fn withLimitsMixin
 
@@ -29,7 +29,7 @@ Limits describes the maximum amount of compute resources allowed. More info: htt
 withLimitsMixin(limits)
 ```
 
-Limits describes the maximum amount of compute resources allowed. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/
+"Limits describes the maximum amount of compute resources allowed. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/"
 
 **Note:** This function appends passed data to existing values
 
@@ -39,7 +39,7 @@ Limits describes the maximum amount of compute resources allowed. More info: htt
 withRequests(requests)
 ```
 
-Requests describes the minimum amount of compute resources required. If Requests is omitted for a container, it defaults to Limits if that is explicitly specified, otherwise to an implementation-defined value. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/
+"Requests describes the minimum amount of compute resources required. If Requests is omitted for a container, it defaults to Limits if that is explicitly specified, otherwise to an implementation-defined value. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/"
 
 ### fn withRequestsMixin
 
@@ -47,6 +47,6 @@ Requests describes the minimum amount of compute resources required. If Requests
 withRequestsMixin(requests)
 ```
 
-Requests describes the minimum amount of compute resources required. If Requests is omitted for a container, it defaults to Limits if that is explicitly specified, otherwise to an implementation-defined value. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/
+"Requests describes the minimum amount of compute resources required. If Requests is omitted for a container, it defaults to Limits if that is explicitly specified, otherwise to an implementation-defined value. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/"
 
 **Note:** This function appends passed data to existing values

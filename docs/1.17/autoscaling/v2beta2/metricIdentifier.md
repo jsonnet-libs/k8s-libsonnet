@@ -4,7 +4,7 @@ permalink: /1.17/autoscaling/v2beta2/metricIdentifier/
 
 # autoscaling.v2beta2.metricIdentifier
 
-MetricIdentifier defines the name and optionally selector for a metric
+"MetricIdentifier defines the name and optionally selector for a metric"
 
 ## Index
 
@@ -23,11 +23,11 @@ MetricIdentifier defines the name and optionally selector for a metric
 withName(name)
 ```
 
-name is the name of the given metric
+"name is the name of the given metric"
 
 ## obj selector
 
-A label selector is a label query over a set of resources. The result of matchLabels and matchExpressions are ANDed. An empty label selector matches all objects. A null label selector matches no objects.
+"A label selector is a label query over a set of resources. The result of matchLabels and matchExpressions are ANDed. An empty label selector matches all objects. A null label selector matches no objects."
 
 ### fn selector.withMatchExpressions
 
@@ -35,7 +35,7 @@ A label selector is a label query over a set of resources. The result of matchLa
 withMatchExpressions(matchExpressions)
 ```
 
-matchExpressions is a list of label selector requirements. The requirements are ANDed.
+"matchExpressions is a list of label selector requirements. The requirements are ANDed."
 
 ### fn selector.withMatchExpressionsMixin
 
@@ -43,7 +43,7 @@ matchExpressions is a list of label selector requirements. The requirements are 
 withMatchExpressionsMixin(matchExpressions)
 ```
 
-matchExpressions is a list of label selector requirements. The requirements are ANDed.
+"matchExpressions is a list of label selector requirements. The requirements are ANDed."
 
 **Note:** This function appends passed data to existing values
 
@@ -53,7 +53,7 @@ matchExpressions is a list of label selector requirements. The requirements are 
 withMatchLabels(matchLabels)
 ```
 
-matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
+"matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is \"key\", the operator is \"In\", and the values array contains only \"value\". The requirements are ANDed."
 
 ### fn selector.withMatchLabelsMixin
 
@@ -61,6 +61,6 @@ matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabe
 withMatchLabelsMixin(matchLabels)
 ```
 
-matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
+"matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is \"key\", the operator is \"In\", and the values array contains only \"value\". The requirements are ANDed."
 
 **Note:** This function appends passed data to existing values

@@ -4,7 +4,7 @@ permalink: /1.21/networking/v1beta1/ingressClassParametersReference/
 
 # networking.v1beta1.ingressClassParametersReference
 
-IngressClassParametersReference identifies an API object. This can be used to specify a cluster or namespace-scoped resource.
+"IngressClassParametersReference identifies an API object. This can be used to specify a cluster or namespace-scoped resource."
 
 ## Index
 
@@ -22,7 +22,7 @@ IngressClassParametersReference identifies an API object. This can be used to sp
 withApiGroup(apiGroup)
 ```
 
-APIGroup is the group for the resource being referenced. If APIGroup is not specified, the specified Kind must be in the core API group. For any other third-party types, APIGroup is required.
+"APIGroup is the group for the resource being referenced. If APIGroup is not specified, the specified Kind must be in the core API group. For any other third-party types, APIGroup is required."
 
 ### fn withKind
 
@@ -30,7 +30,7 @@ APIGroup is the group for the resource being referenced. If APIGroup is not spec
 withKind(kind)
 ```
 
-Kind is the type of resource being referenced.
+"Kind is the type of resource being referenced."
 
 ### fn withName
 
@@ -38,7 +38,7 @@ Kind is the type of resource being referenced.
 withName(name)
 ```
 
-Name is the name of resource being referenced.
+"Name is the name of resource being referenced."
 
 ### fn withNamespace
 
@@ -46,7 +46,7 @@ Name is the name of resource being referenced.
 withNamespace(namespace)
 ```
 
-Namespace is the namespace of the resource being referenced. This field is required when scope is set to "Namespace" and must be unset when scope is set to "Cluster".
+"Namespace is the namespace of the resource being referenced. This field is required when scope is set to \"Namespace\" and must be unset when scope is set to \"Cluster\"."
 
 ### fn withScope
 
@@ -54,4 +54,4 @@ Namespace is the namespace of the resource being referenced. This field is requi
 withScope(scope)
 ```
 
-Scope represents if this refers to a cluster or namespace scoped resource. This may be set to "Cluster" (default) or "Namespace". Field can be enabled with IngressClassNamespacedParams feature gate.
+"Scope represents if this refers to a cluster or namespace scoped resource. This may be set to \"Cluster\" (default) or \"Namespace\". Field can be enabled with IngressClassNamespacedParams feature gate."

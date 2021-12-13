@@ -4,7 +4,7 @@ permalink: /1.17/apps/v1beta2/scaleSpec/
 
 # apps.v1beta2.scaleSpec
 
-ScaleSpec describes the attributes of a scale subresource
+"ScaleSpec describes the attributes of a scale subresource"
 
 ## Index
 
@@ -18,4 +18,4 @@ ScaleSpec describes the attributes of a scale subresource
 withReplicas(replicas)
 ```
 
-desired number of instances for the scaled object.
+"desired number of instances for the scaled object."

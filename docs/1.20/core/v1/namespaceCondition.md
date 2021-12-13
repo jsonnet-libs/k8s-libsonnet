@@ -4,7 +4,7 @@ permalink: /1.20/core/v1/namespaceCondition/
 
 # core.v1.namespaceCondition
 
-NamespaceCondition contains details about state of namespace.
+"NamespaceCondition contains details about state of namespace."
 
 ## Index
 
@@ -21,7 +21,7 @@ NamespaceCondition contains details about state of namespace.
 withLastTransitionTime(lastTransitionTime)
 ```
 
-Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.
+"Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers."
 
 ### fn withMessage
 
@@ -45,4 +45,4 @@ withReason(reason)
 withType(type)
 ```
 
-Type of namespace controller condition.
+"Type of namespace controller condition."

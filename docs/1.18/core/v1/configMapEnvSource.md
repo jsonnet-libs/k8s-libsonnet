@@ -4,9 +4,7 @@ permalink: /1.18/core/v1/configMapEnvSource/
 
 # core.v1.configMapEnvSource
 
-ConfigMapEnvSource selects a ConfigMap to populate the environment variables with.
-
-The contents of the target ConfigMap's Data field will represent the key-value pairs as environment variables.
+"ConfigMapEnvSource selects a ConfigMap to populate the environment variables with.\n\nThe contents of the target ConfigMap's Data field will represent the key-value pairs as environment variables."
 
 ## Index
 
@@ -21,7 +19,7 @@ The contents of the target ConfigMap's Data field will represent the key-value p
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn withOptional
 
@@ -29,4 +27,4 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the ConfigMap must be defined
+"Specify whether the ConfigMap must be defined"

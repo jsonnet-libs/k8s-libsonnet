@@ -4,7 +4,7 @@ permalink: /1.21/storage/v1beta1/tokenRequest/
 
 # storage.v1beta1.tokenRequest
 
-TokenRequest contains parameters of a service account token.
+"TokenRequest contains parameters of a service account token."
 
 ## Index
 
@@ -19,7 +19,7 @@ TokenRequest contains parameters of a service account token.
 withAudience(audience)
 ```
 
-Audience is the intended audience of the token in "TokenRequestSpec". It will default to the audiences of kube apiserver.
+"Audience is the intended audience of the token in \"TokenRequestSpec\". It will default to the audiences of kube apiserver."
 
 ### fn withExpirationSeconds
 
@@ -27,4 +27,4 @@ Audience is the intended audience of the token in "TokenRequestSpec". It will de
 withExpirationSeconds(expirationSeconds)
 ```
 
-ExpirationSeconds is the duration of validity of the token in "TokenRequestSpec". It has the same default value of "ExpirationSeconds" in "TokenRequestSpec"
+"ExpirationSeconds is the duration of validity of the token in \"TokenRequestSpec\". It has the same default value of \"ExpirationSeconds\" in \"TokenRequestSpec\

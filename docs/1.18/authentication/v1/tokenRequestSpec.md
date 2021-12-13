@@ -4,7 +4,7 @@ permalink: /1.18/authentication/v1/tokenRequestSpec/
 
 # authentication.v1.tokenRequestSpec
 
-TokenRequestSpec contains client provided parameters of a token request.
+"TokenRequestSpec contains client provided parameters of a token request."
 
 ## Index
 
@@ -25,7 +25,7 @@ TokenRequestSpec contains client provided parameters of a token request.
 withAudiences(audiences)
 ```
 
-Audiences are the intendend audiences of the token. A recipient of a token must identitfy themself with an identifier in the list of audiences of the token, and otherwise should reject the token. A token issued for multiple audiences may be used to authenticate against any of the audiences listed but implies a high degree of trust between the target audiences.
+"Audiences are the intendend audiences of the token. A recipient of a token must identitfy themself with an identifier in the list of audiences of the token, and otherwise should reject the token. A token issued for multiple audiences may be used to authenticate against any of the audiences listed but implies a high degree of trust between the target audiences."
 
 ### fn withAudiencesMixin
 
@@ -33,7 +33,7 @@ Audiences are the intendend audiences of the token. A recipient of a token must 
 withAudiencesMixin(audiences)
 ```
 
-Audiences are the intendend audiences of the token. A recipient of a token must identitfy themself with an identifier in the list of audiences of the token, and otherwise should reject the token. A token issued for multiple audiences may be used to authenticate against any of the audiences listed but implies a high degree of trust between the target audiences.
+"Audiences are the intendend audiences of the token. A recipient of a token must identitfy themself with an identifier in the list of audiences of the token, and otherwise should reject the token. A token issued for multiple audiences may be used to authenticate against any of the audiences listed but implies a high degree of trust between the target audiences."
 
 **Note:** This function appends passed data to existing values
 
@@ -43,11 +43,11 @@ Audiences are the intendend audiences of the token. A recipient of a token must 
 withExpirationSeconds(expirationSeconds)
 ```
 
-ExpirationSeconds is the requested duration of validity of the request. The token issuer may return a token with a different validity duration so a client needs to check the 'expiration' field in a response.
+"ExpirationSeconds is the requested duration of validity of the request. The token issuer may return a token with a different validity duration so a client needs to check the 'expiration' field in a response."
 
 ## obj boundObjectRef
 
-BoundObjectReference is a reference to an object that a token is bound to.
+"BoundObjectReference is a reference to an object that a token is bound to."
 
 ### fn boundObjectRef.withApiVersion
 
@@ -55,7 +55,7 @@ BoundObjectReference is a reference to an object that a token is bound to.
 withApiVersion(apiVersion)
 ```
 
-API version of the referent.
+"API version of the referent."
 
 ### fn boundObjectRef.withKind
 
@@ -63,7 +63,7 @@ API version of the referent.
 withKind(kind)
 ```
 
-Kind of the referent. Valid kinds are 'Pod' and 'Secret'.
+"Kind of the referent. Valid kinds are 'Pod' and 'Secret'."
 
 ### fn boundObjectRef.withName
 
@@ -71,7 +71,7 @@ Kind of the referent. Valid kinds are 'Pod' and 'Secret'.
 withName(name)
 ```
 
-Name of the referent.
+"Name of the referent."
 
 ### fn boundObjectRef.withUid
 
@@ -79,4 +79,4 @@ Name of the referent.
 withUid(uid)
 ```
 
-UID of the referent.
+"UID of the referent."

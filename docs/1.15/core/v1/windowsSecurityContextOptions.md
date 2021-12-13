@@ -4,7 +4,7 @@ permalink: /1.15/core/v1/windowsSecurityContextOptions/
 
 # core.v1.windowsSecurityContextOptions
 
-WindowsSecurityContextOptions contain Windows-specific options and credentials.
+"WindowsSecurityContextOptions contain Windows-specific options and credentials."
 
 ## Index
 
@@ -19,7 +19,7 @@ WindowsSecurityContextOptions contain Windows-specific options and credentials.
 withGmsaCredentialSpec(gmsaCredentialSpec)
 ```
 
-GMSACredentialSpec is where the GMSA admission webhook (https://github.com/kubernetes-sigs/windows-gmsa) inlines the contents of the GMSA credential spec named by the GMSACredentialSpecName field. This field is alpha-level and is only honored by servers that enable the WindowsGMSA feature flag.
+"GMSACredentialSpec is where the GMSA admission webhook (https://github.com/kubernetes-sigs/windows-gmsa) inlines the contents of the GMSA credential spec named by the GMSACredentialSpecName field. This field is alpha-level and is only honored by servers that enable the WindowsGMSA feature flag."
 
 ### fn withGmsaCredentialSpecName
 
@@ -27,4 +27,4 @@ GMSACredentialSpec is where the GMSA admission webhook (https://github.com/kuber
 withGmsaCredentialSpecName(gmsaCredentialSpecName)
 ```
 
-GMSACredentialSpecName is the name of the GMSA credential spec to use. This field is alpha-level and is only honored by servers that enable the WindowsGMSA feature flag.
+"GMSACredentialSpecName is the name of the GMSA credential spec to use. This field is alpha-level and is only honored by servers that enable the WindowsGMSA feature flag."

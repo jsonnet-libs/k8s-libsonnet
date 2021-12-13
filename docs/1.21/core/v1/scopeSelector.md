@@ -4,7 +4,7 @@ permalink: /1.21/core/v1/scopeSelector/
 
 # core.v1.scopeSelector
 
-A scope selector represents the AND of the selectors represented by the scoped-resource selector requirements.
+"A scope selector represents the AND of the selectors represented by the scoped-resource selector requirements."
 
 ## Index
 
@@ -19,7 +19,7 @@ A scope selector represents the AND of the selectors represented by the scoped-r
 withMatchExpressions(matchExpressions)
 ```
 
-A list of scope selector requirements by scope of the resources.
+"A list of scope selector requirements by scope of the resources."
 
 ### fn withMatchExpressionsMixin
 
@@ -27,6 +27,6 @@ A list of scope selector requirements by scope of the resources.
 withMatchExpressionsMixin(matchExpressions)
 ```
 
-A list of scope selector requirements by scope of the resources.
+"A list of scope selector requirements by scope of the resources."
 
 **Note:** This function appends passed data to existing values

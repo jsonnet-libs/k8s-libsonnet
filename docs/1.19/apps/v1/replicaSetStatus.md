@@ -4,7 +4,7 @@ permalink: /1.19/apps/v1/replicaSetStatus/
 
 # apps.v1.replicaSetStatus
 
-ReplicaSetStatus represents the current status of a ReplicaSet.
+"ReplicaSetStatus represents the current status of a ReplicaSet."
 
 ## Index
 
@@ -24,7 +24,7 @@ ReplicaSetStatus represents the current status of a ReplicaSet.
 withAvailableReplicas(availableReplicas)
 ```
 
-The number of available replicas (ready for at least minReadySeconds) for this replica set.
+"The number of available replicas (ready for at least minReadySeconds) for this replica set."
 
 ### fn withConditions
 
@@ -32,7 +32,7 @@ The number of available replicas (ready for at least minReadySeconds) for this r
 withConditions(conditions)
 ```
 
-Represents the latest available observations of a replica set's current state.
+"Represents the latest available observations of a replica set's current state."
 
 ### fn withConditionsMixin
 
@@ -40,7 +40,7 @@ Represents the latest available observations of a replica set's current state.
 withConditionsMixin(conditions)
 ```
 
-Represents the latest available observations of a replica set's current state.
+"Represents the latest available observations of a replica set's current state."
 
 **Note:** This function appends passed data to existing values
 
@@ -50,7 +50,7 @@ Represents the latest available observations of a replica set's current state.
 withFullyLabeledReplicas(fullyLabeledReplicas)
 ```
 
-The number of pods that have labels matching the labels of the pod template of the replicaset.
+"The number of pods that have labels matching the labels of the pod template of the replicaset."
 
 ### fn withObservedGeneration
 
@@ -58,7 +58,7 @@ The number of pods that have labels matching the labels of the pod template of t
 withObservedGeneration(observedGeneration)
 ```
 
-ObservedGeneration reflects the generation of the most recently observed ReplicaSet.
+"ObservedGeneration reflects the generation of the most recently observed ReplicaSet."
 
 ### fn withReadyReplicas
 
@@ -66,7 +66,7 @@ ObservedGeneration reflects the generation of the most recently observed Replica
 withReadyReplicas(readyReplicas)
 ```
 
-The number of ready replicas for this replica set.
+"The number of ready replicas for this replica set."
 
 ### fn withReplicas
 
@@ -74,4 +74,4 @@ The number of ready replicas for this replica set.
 withReplicas(replicas)
 ```
 
-Replicas is the most recently oberved number of replicas. More info: https://kubernetes.io/docs/concepts/workloads/controllers/replicationcontroller/#what-is-a-replicationcontroller
+"Replicas is the most recently oberved number of replicas. More info: https://kubernetes.io/docs/concepts/workloads/controllers/replicationcontroller/#what-is-a-replicationcontroller"

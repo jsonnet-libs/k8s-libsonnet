@@ -4,7 +4,7 @@ permalink: /1.19/core/v1/limitRangeItem/
 
 # core.v1.limitRangeItem
 
-LimitRangeItem defines a min/max usage limit for any resource that matches on kind.
+"LimitRangeItem defines a min/max usage limit for any resource that matches on kind."
 
 ## Index
 
@@ -28,7 +28,7 @@ LimitRangeItem defines a min/max usage limit for any resource that matches on ki
 withDefault(default)
 ```
 
-Default resource requirement limit value by resource name if resource limit is omitted.
+"Default resource requirement limit value by resource name if resource limit is omitted."
 
 ### fn withDefaultMixin
 
@@ -36,7 +36,7 @@ Default resource requirement limit value by resource name if resource limit is o
 withDefaultMixin(default)
 ```
 
-Default resource requirement limit value by resource name if resource limit is omitted.
+"Default resource requirement limit value by resource name if resource limit is omitted."
 
 **Note:** This function appends passed data to existing values
 
@@ -46,7 +46,7 @@ Default resource requirement limit value by resource name if resource limit is o
 withDefaultRequest(defaultRequest)
 ```
 
-DefaultRequest is the default resource requirement request value by resource name if resource request is omitted.
+"DefaultRequest is the default resource requirement request value by resource name if resource request is omitted."
 
 ### fn withDefaultRequestMixin
 
@@ -54,7 +54,7 @@ DefaultRequest is the default resource requirement request value by resource nam
 withDefaultRequestMixin(defaultRequest)
 ```
 
-DefaultRequest is the default resource requirement request value by resource name if resource request is omitted.
+"DefaultRequest is the default resource requirement request value by resource name if resource request is omitted."
 
 **Note:** This function appends passed data to existing values
 
@@ -64,7 +64,7 @@ DefaultRequest is the default resource requirement request value by resource nam
 withMax(max)
 ```
 
-Max usage constraints on this kind by resource name.
+"Max usage constraints on this kind by resource name."
 
 ### fn withMaxLimitRequestRatio
 
@@ -72,7 +72,7 @@ Max usage constraints on this kind by resource name.
 withMaxLimitRequestRatio(maxLimitRequestRatio)
 ```
 
-MaxLimitRequestRatio if specified, the named resource must have a request and limit that are both non-zero where limit divided by request is less than or equal to the enumerated value; this represents the max burst for the named resource.
+"MaxLimitRequestRatio if specified, the named resource must have a request and limit that are both non-zero where limit divided by request is less than or equal to the enumerated value; this represents the max burst for the named resource."
 
 ### fn withMaxLimitRequestRatioMixin
 
@@ -80,7 +80,7 @@ MaxLimitRequestRatio if specified, the named resource must have a request and li
 withMaxLimitRequestRatioMixin(maxLimitRequestRatio)
 ```
 
-MaxLimitRequestRatio if specified, the named resource must have a request and limit that are both non-zero where limit divided by request is less than or equal to the enumerated value; this represents the max burst for the named resource.
+"MaxLimitRequestRatio if specified, the named resource must have a request and limit that are both non-zero where limit divided by request is less than or equal to the enumerated value; this represents the max burst for the named resource."
 
 **Note:** This function appends passed data to existing values
 
@@ -90,7 +90,7 @@ MaxLimitRequestRatio if specified, the named resource must have a request and li
 withMaxMixin(max)
 ```
 
-Max usage constraints on this kind by resource name.
+"Max usage constraints on this kind by resource name."
 
 **Note:** This function appends passed data to existing values
 
@@ -100,7 +100,7 @@ Max usage constraints on this kind by resource name.
 withMin(min)
 ```
 
-Min usage constraints on this kind by resource name.
+"Min usage constraints on this kind by resource name."
 
 ### fn withMinMixin
 
@@ -108,7 +108,7 @@ Min usage constraints on this kind by resource name.
 withMinMixin(min)
 ```
 
-Min usage constraints on this kind by resource name.
+"Min usage constraints on this kind by resource name."
 
 **Note:** This function appends passed data to existing values
 
@@ -118,4 +118,4 @@ Min usage constraints on this kind by resource name.
 withType(type)
 ```
 
-Type of resource that this limit applies to.
+"Type of resource that this limit applies to."

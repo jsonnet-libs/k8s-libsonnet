@@ -4,7 +4,7 @@ permalink: /1.20/core/v1/sysctl/
 
 # core.v1.sysctl
 
-Sysctl defines a kernel parameter to be set
+"Sysctl defines a kernel parameter to be set"
 
 ## Index
 
@@ -19,7 +19,7 @@ Sysctl defines a kernel parameter to be set
 withName(name)
 ```
 
-Name of a property to set
+"Name of a property to set"
 
 ### fn withValue
 
@@ -27,4 +27,4 @@ Name of a property to set
 withValue(value)
 ```
 
-Value of a property to set
+"Value of a property to set"

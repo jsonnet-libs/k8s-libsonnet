@@ -4,7 +4,7 @@ permalink: /1.17/events/v1beta1/eventSeries/
 
 # events.v1beta1.eventSeries
 
-EventSeries contain information on series of events, i.e. thing that was/is happening continuously for some time.
+"EventSeries contain information on series of events, i.e. thing that was/is happening continuously for some time."
 
 ## Index
 
@@ -20,7 +20,7 @@ EventSeries contain information on series of events, i.e. thing that was/is happ
 withCount(count)
 ```
 
-Number of occurrences in this series up to the last heartbeat time
+"Number of occurrences in this series up to the last heartbeat time"
 
 ### fn withLastObservedTime
 
@@ -28,7 +28,7 @@ Number of occurrences in this series up to the last heartbeat time
 withLastObservedTime(lastObservedTime)
 ```
 
-MicroTime is version of Time with microsecond level precision.
+"MicroTime is version of Time with microsecond level precision."
 
 ### fn withState
 
@@ -36,4 +36,4 @@ MicroTime is version of Time with microsecond level precision.
 withState(state)
 ```
 
-Information whether this series is ongoing or finished. Deprecated. Planned removal for 1.18
+"Information whether this series is ongoing or finished. Deprecated. Planned removal for 1.18"

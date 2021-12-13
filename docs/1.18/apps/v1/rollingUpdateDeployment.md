@@ -4,7 +4,7 @@ permalink: /1.18/apps/v1/rollingUpdateDeployment/
 
 # apps.v1.rollingUpdateDeployment
 
-Spec to control the desired behavior of rolling update.
+"Spec to control the desired behavior of rolling update."
 
 ## Index
 
@@ -19,7 +19,7 @@ Spec to control the desired behavior of rolling update.
 withMaxSurge(maxSurge)
 ```
 
-IntOrString is a type that can hold an int32 or a string.  When used in JSON or YAML marshalling and unmarshalling, it produces or consumes the inner type.  This allows you to have, for example, a JSON field that can accept a name or number.
+"IntOrString is a type that can hold an int32 or a string.  When used in JSON or YAML marshalling and unmarshalling, it produces or consumes the inner type.  This allows you to have, for example, a JSON field that can accept a name or number."
 
 ### fn withMaxUnavailable
 
@@ -27,4 +27,4 @@ IntOrString is a type that can hold an int32 or a string.  When used in JSON or 
 withMaxUnavailable(maxUnavailable)
 ```
 
-IntOrString is a type that can hold an int32 or a string.  When used in JSON or YAML marshalling and unmarshalling, it produces or consumes the inner type.  This allows you to have, for example, a JSON field that can accept a name or number.
+"IntOrString is a type that can hold an int32 or a string.  When used in JSON or YAML marshalling and unmarshalling, it produces or consumes the inner type.  This allows you to have, for example, a JSON field that can accept a name or number."

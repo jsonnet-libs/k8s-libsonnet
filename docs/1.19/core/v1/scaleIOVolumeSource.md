@@ -4,7 +4,7 @@ permalink: /1.19/core/v1/scaleIOVolumeSource/
 
 # core.v1.scaleIOVolumeSource
 
-ScaleIOVolumeSource represents a persistent ScaleIO volume
+"ScaleIOVolumeSource represents a persistent ScaleIO volume"
 
 ## Index
 
@@ -28,7 +28,7 @@ ScaleIOVolumeSource represents a persistent ScaleIO volume
 withFsType(fsType)
 ```
 
-Filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Default is "xfs".
+"Filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. \"ext4\", \"xfs\", \"ntfs\". Default is \"xfs\"."
 
 ### fn withGateway
 
@@ -36,7 +36,7 @@ Filesystem type to mount. Must be a filesystem type supported by the host operat
 withGateway(gateway)
 ```
 
-The host address of the ScaleIO API Gateway.
+"The host address of the ScaleIO API Gateway."
 
 ### fn withProtectionDomain
 
@@ -44,7 +44,7 @@ The host address of the ScaleIO API Gateway.
 withProtectionDomain(protectionDomain)
 ```
 
-The name of the ScaleIO Protection Domain for the configured storage.
+"The name of the ScaleIO Protection Domain for the configured storage."
 
 ### fn withReadOnly
 
@@ -52,7 +52,7 @@ The name of the ScaleIO Protection Domain for the configured storage.
 withReadOnly(readOnly)
 ```
 
-Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts.
+"Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts."
 
 ### fn withSslEnabled
 
@@ -60,7 +60,7 @@ Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in
 withSslEnabled(sslEnabled)
 ```
 
-Flag to enable/disable SSL communication with Gateway, default false
+"Flag to enable/disable SSL communication with Gateway, default false"
 
 ### fn withStorageMode
 
@@ -68,7 +68,7 @@ Flag to enable/disable SSL communication with Gateway, default false
 withStorageMode(storageMode)
 ```
 
-Indicates whether the storage for a volume should be ThickProvisioned or ThinProvisioned. Default is ThinProvisioned.
+"Indicates whether the storage for a volume should be ThickProvisioned or ThinProvisioned. Default is ThinProvisioned."
 
 ### fn withStoragePool
 
@@ -76,7 +76,7 @@ Indicates whether the storage for a volume should be ThickProvisioned or ThinPro
 withStoragePool(storagePool)
 ```
 
-The ScaleIO Storage Pool associated with the protection domain.
+"The ScaleIO Storage Pool associated with the protection domain."
 
 ### fn withSystem
 
@@ -84,7 +84,7 @@ The ScaleIO Storage Pool associated with the protection domain.
 withSystem(system)
 ```
 
-The name of the storage system as configured in ScaleIO.
+"The name of the storage system as configured in ScaleIO."
 
 ### fn withVolumeName
 
@@ -92,11 +92,11 @@ The name of the storage system as configured in ScaleIO.
 withVolumeName(volumeName)
 ```
 
-The name of a volume already created in the ScaleIO system that is associated with this volume source.
+"The name of a volume already created in the ScaleIO system that is associated with this volume source."
 
 ## obj secretRef
 
-LocalObjectReference contains enough information to let you locate the referenced object inside the same namespace.
+"LocalObjectReference contains enough information to let you locate the referenced object inside the same namespace."
 
 ### fn secretRef.withName
 
@@ -104,4 +104,4 @@ LocalObjectReference contains enough information to let you locate the reference
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"

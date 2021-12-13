@@ -4,7 +4,7 @@ permalink: /1.19/networking/v1/ipBlock/
 
 # networking.v1.ipBlock
 
-IPBlock describes a particular CIDR (Ex. '192.168.1.1/24','2001:db9::/64') that is allowed to the pods matched by a NetworkPolicySpec's podSelector. The except entry describes CIDRs that should not be included within this rule.
+"IPBlock describes a particular CIDR (Ex. \"192.168.1.1/24\",\"2001:db9::/64\") that is allowed to the pods matched by a NetworkPolicySpec's podSelector. The except entry describes CIDRs that should not be included within this rule."
 
 ## Index
 
@@ -20,7 +20,7 @@ IPBlock describes a particular CIDR (Ex. '192.168.1.1/24','2001:db9::/64') that 
 withCidr(cidr)
 ```
 
-CIDR is a string representing the IP Block Valid examples are "192.168.1.1/24" or "2001:db9::/64"
+"CIDR is a string representing the IP Block Valid examples are \"192.168.1.1/24\" or \"2001:db9::/64\
 
 ### fn withExcept
 
@@ -28,7 +28,7 @@ CIDR is a string representing the IP Block Valid examples are "192.168.1.1/24" o
 withExcept(except)
 ```
 
-Except is a slice of CIDRs that should not be included within an IP Block Valid examples are "192.168.1.1/24" or "2001:db9::/64" Except values will be rejected if they are outside the CIDR range
+"Except is a slice of CIDRs that should not be included within an IP Block Valid examples are \"192.168.1.1/24\" or \"2001:db9::/64\" Except values will be rejected if they are outside the CIDR range"
 
 ### fn withExceptMixin
 
@@ -36,6 +36,6 @@ Except is a slice of CIDRs that should not be included within an IP Block Valid 
 withExceptMixin(except)
 ```
 
-Except is a slice of CIDRs that should not be included within an IP Block Valid examples are "192.168.1.1/24" or "2001:db9::/64" Except values will be rejected if they are outside the CIDR range
+"Except is a slice of CIDRs that should not be included within an IP Block Valid examples are \"192.168.1.1/24\" or \"2001:db9::/64\" Except values will be rejected if they are outside the CIDR range"
 
 **Note:** This function appends passed data to existing values

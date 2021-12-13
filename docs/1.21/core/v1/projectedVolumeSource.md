@@ -4,7 +4,7 @@ permalink: /1.21/core/v1/projectedVolumeSource/
 
 # core.v1.projectedVolumeSource
 
-Represents a projected volume source
+"Represents a projected volume source"
 
 ## Index
 
@@ -20,7 +20,7 @@ Represents a projected volume source
 withDefaultMode(defaultMode)
 ```
 
-Mode bits used to set permissions on created files by default. Must be an octal value between 0000 and 0777 or a decimal value between 0 and 511. YAML accepts both octal and decimal values, JSON requires decimal values for mode bits. Directories within the path are not affected by this setting. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
+"Mode bits used to set permissions on created files by default. Must be an octal value between 0000 and 0777 or a decimal value between 0 and 511. YAML accepts both octal and decimal values, JSON requires decimal values for mode bits. Directories within the path are not affected by this setting. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set."
 
 ### fn withSources
 
@@ -28,7 +28,7 @@ Mode bits used to set permissions on created files by default. Must be an octal 
 withSources(sources)
 ```
 
-list of volume projections
+"list of volume projections"
 
 ### fn withSourcesMixin
 
@@ -36,6 +36,6 @@ list of volume projections
 withSourcesMixin(sources)
 ```
 
-list of volume projections
+"list of volume projections"
 
 **Note:** This function appends passed data to existing values

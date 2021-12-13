@@ -4,7 +4,7 @@ permalink: /1.19/authorization/v1/nonResourceRule/
 
 # authorization.v1.nonResourceRule
 
-NonResourceRule holds information that describes a rule for the non-resource
+"NonResourceRule holds information that describes a rule for the non-resource"
 
 ## Index
 
@@ -21,7 +21,7 @@ NonResourceRule holds information that describes a rule for the non-resource
 withNonResourceURLs(nonResourceURLs)
 ```
 
-NonResourceURLs is a set of partial urls that a user should have access to.  *s are allowed, but only as the full, final step in the path.  "*" means all.
+"NonResourceURLs is a set of partial urls that a user should have access to.  *s are allowed, but only as the full, final step in the path.  \"*\" means all."
 
 ### fn withNonResourceURLsMixin
 
@@ -29,7 +29,7 @@ NonResourceURLs is a set of partial urls that a user should have access to.  *s 
 withNonResourceURLsMixin(nonResourceURLs)
 ```
 
-NonResourceURLs is a set of partial urls that a user should have access to.  *s are allowed, but only as the full, final step in the path.  "*" means all.
+"NonResourceURLs is a set of partial urls that a user should have access to.  *s are allowed, but only as the full, final step in the path.  \"*\" means all."
 
 **Note:** This function appends passed data to existing values
 
@@ -39,7 +39,7 @@ NonResourceURLs is a set of partial urls that a user should have access to.  *s 
 withVerbs(verbs)
 ```
 
-Verb is a list of kubernetes non-resource API verbs, like: get, post, put, delete, patch, head, options.  "*" means all.
+"Verb is a list of kubernetes non-resource API verbs, like: get, post, put, delete, patch, head, options.  \"*\" means all."
 
 ### fn withVerbsMixin
 
@@ -47,6 +47,6 @@ Verb is a list of kubernetes non-resource API verbs, like: get, post, put, delet
 withVerbsMixin(verbs)
 ```
 
-Verb is a list of kubernetes non-resource API verbs, like: get, post, put, delete, patch, head, options.  "*" means all.
+"Verb is a list of kubernetes non-resource API verbs, like: get, post, put, delete, patch, head, options.  \"*\" means all."
 
 **Note:** This function appends passed data to existing values

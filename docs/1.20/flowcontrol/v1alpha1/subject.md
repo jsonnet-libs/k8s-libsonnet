@@ -4,7 +4,7 @@ permalink: /1.20/flowcontrol/v1alpha1/subject/
 
 # flowcontrol.v1alpha1.subject
 
-Subject matches the originator of a request, as identified by the request authentication system. There are three ways of matching an originator; by user, group, or service account.
+"Subject matches the originator of a request, as identified by the request authentication system. There are three ways of matching an originator; by user, group, or service account."
 
 ## Index
 
@@ -25,11 +25,11 @@ Subject matches the originator of a request, as identified by the request authen
 withKind(kind)
 ```
 
-Required
+"Required"
 
 ## obj group
 
-GroupSubject holds detailed information for group-kind subject.
+"GroupSubject holds detailed information for group-kind subject."
 
 ### fn group.withName
 
@@ -37,11 +37,11 @@ GroupSubject holds detailed information for group-kind subject.
 withName(name)
 ```
 
-name is the user group that matches, or "*" to match all user groups. See https://github.com/kubernetes/apiserver/blob/master/pkg/authentication/user/user.go for some well-known group names. Required.
+"name is the user group that matches, or \"*\" to match all user groups. See https://github.com/kubernetes/apiserver/blob/master/pkg/authentication/user/user.go for some well-known group names. Required."
 
 ## obj serviceAccount
 
-ServiceAccountSubject holds detailed information for service-account-kind subject.
+"ServiceAccountSubject holds detailed information for service-account-kind subject."
 
 ### fn serviceAccount.withName
 
@@ -49,7 +49,7 @@ ServiceAccountSubject holds detailed information for service-account-kind subjec
 withName(name)
 ```
 
-`name` is the name of matching ServiceAccount objects, or "*" to match regardless of name. Required.
+"`name` is the name of matching ServiceAccount objects, or \"*\" to match regardless of name. Required."
 
 ### fn serviceAccount.withNamespace
 
@@ -57,11 +57,11 @@ withName(name)
 withNamespace(namespace)
 ```
 
-`namespace` is the namespace of matching ServiceAccount objects. Required.
+"`namespace` is the namespace of matching ServiceAccount objects. Required."
 
 ## obj user
 
-UserSubject holds detailed information for user-kind subject.
+"UserSubject holds detailed information for user-kind subject."
 
 ### fn user.withName
 
@@ -69,4 +69,4 @@ UserSubject holds detailed information for user-kind subject.
 withName(name)
 ```
 
-`name` is the username that matches, or "*" to match all usernames. Required.
+"`name` is the username that matches, or \"*\" to match all usernames. Required."

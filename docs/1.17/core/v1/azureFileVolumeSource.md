@@ -4,7 +4,7 @@ permalink: /1.17/core/v1/azureFileVolumeSource/
 
 # core.v1.azureFileVolumeSource
 
-AzureFile represents an Azure File Service mount on the host and bind mount to the pod.
+"AzureFile represents an Azure File Service mount on the host and bind mount to the pod."
 
 ## Index
 
@@ -20,7 +20,7 @@ AzureFile represents an Azure File Service mount on the host and bind mount to t
 withReadOnly(readOnly)
 ```
 
-Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts.
+"Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts."
 
 ### fn withSecretName
 
@@ -28,7 +28,7 @@ Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in
 withSecretName(secretName)
 ```
 
-the name of secret that contains Azure Storage Account Name and Key
+"the name of secret that contains Azure Storage Account Name and Key"
 
 ### fn withShareName
 
@@ -36,4 +36,4 @@ the name of secret that contains Azure Storage Account Name and Key
 withShareName(shareName)
 ```
 
-Share Name
+"Share Name"

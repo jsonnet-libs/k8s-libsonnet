@@ -4,7 +4,7 @@ permalink: /1.20/apiserverinternal/v1alpha1/storageVersionCondition/
 
 # apiserverinternal.v1alpha1.storageVersionCondition
 
-Describes the state of the storageVersion at a certain point.
+"Describes the state of the storageVersion at a certain point."
 
 ## Index
 
@@ -22,7 +22,7 @@ Describes the state of the storageVersion at a certain point.
 withLastTransitionTime(lastTransitionTime)
 ```
 
-Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.
+"Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers."
 
 ### fn withMessage
 
@@ -30,7 +30,7 @@ Time is a wrapper around time.Time which supports correct marshaling to YAML and
 withMessage(message)
 ```
 
-A human readable message indicating details about the transition.
+"A human readable message indicating details about the transition."
 
 ### fn withObservedGeneration
 
@@ -38,7 +38,7 @@ A human readable message indicating details about the transition.
 withObservedGeneration(observedGeneration)
 ```
 
-If set, this represents the .metadata.generation that the condition was set based upon.
+"If set, this represents the .metadata.generation that the condition was set based upon."
 
 ### fn withReason
 
@@ -46,7 +46,7 @@ If set, this represents the .metadata.generation that the condition was set base
 withReason(reason)
 ```
 
-The reason for the condition's last transition.
+"The reason for the condition's last transition."
 
 ### fn withType
 
@@ -54,4 +54,4 @@ The reason for the condition's last transition.
 withType(type)
 ```
 
-Type of the condition.
+"Type of the condition."

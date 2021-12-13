@@ -4,7 +4,7 @@ permalink: /1.21/core/v1/seLinuxOptions/
 
 # core.v1.seLinuxOptions
 
-SELinuxOptions are the labels to be applied to the container
+"SELinuxOptions are the labels to be applied to the container"
 
 ## Index
 
@@ -21,7 +21,7 @@ SELinuxOptions are the labels to be applied to the container
 withLevel(level)
 ```
 
-Level is SELinux level label that applies to the container.
+"Level is SELinux level label that applies to the container."
 
 ### fn withRole
 
@@ -29,7 +29,7 @@ Level is SELinux level label that applies to the container.
 withRole(role)
 ```
 
-Role is a SELinux role label that applies to the container.
+"Role is a SELinux role label that applies to the container."
 
 ### fn withType
 
@@ -37,7 +37,7 @@ Role is a SELinux role label that applies to the container.
 withType(type)
 ```
 
-Type is a SELinux type label that applies to the container.
+"Type is a SELinux type label that applies to the container."
 
 ### fn withUser
 
@@ -45,4 +45,4 @@ Type is a SELinux type label that applies to the container.
 withUser(user)
 ```
 
-User is a SELinux user label that applies to the container.
+"User is a SELinux user label that applies to the container."

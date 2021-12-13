@@ -4,7 +4,7 @@ permalink: /1.14/storage/v1beta1/volumeAttachmentSpec/
 
 # storage.v1beta1.volumeAttachmentSpec
 
-VolumeAttachmentSpec is the specification of a VolumeAttachment request.
+"VolumeAttachmentSpec is the specification of a VolumeAttachment request."
 
 ## Index
 
@@ -21,7 +21,7 @@ VolumeAttachmentSpec is the specification of a VolumeAttachment request.
 withAttacher(attacher)
 ```
 
-Attacher indicates the name of the volume driver that MUST handle this request. This is the name returned by GetPluginName().
+"Attacher indicates the name of the volume driver that MUST handle this request. This is the name returned by GetPluginName()."
 
 ### fn withNodeName
 
@@ -29,11 +29,11 @@ Attacher indicates the name of the volume driver that MUST handle this request. 
 withNodeName(nodeName)
 ```
 
-The node that the volume should be attached to.
+"The node that the volume should be attached to."
 
 ## obj source
 
-VolumeAttachmentSource represents a volume that should be attached. Right now only PersistenVolumes can be attached via external attacher, in future we may allow also inline volumes in pods. Exactly one member can be set.
+"VolumeAttachmentSource represents a volume that should be attached. Right now only PersistenVolumes can be attached via external attacher, in future we may allow also inline volumes in pods. Exactly one member can be set."
 
 ### fn source.withPersistentVolumeName
 
@@ -41,4 +41,4 @@ VolumeAttachmentSource represents a volume that should be attached. Right now on
 withPersistentVolumeName(persistentVolumeName)
 ```
 
-Name of the persistent volume to attach.
+"Name of the persistent volume to attach."

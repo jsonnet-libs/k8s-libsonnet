@@ -4,7 +4,7 @@ permalink: /1.21/core/v1/cinderVolumeSource/
 
 # core.v1.cinderVolumeSource
 
-Represents a cinder volume resource in Openstack. A Cinder volume must exist before mounting to a container. The volume must also be in the same region as the kubelet. Cinder volumes support ownership management and SELinux relabeling.
+"Represents a cinder volume resource in Openstack. A Cinder volume must exist before mounting to a container. The volume must also be in the same region as the kubelet. Cinder volumes support ownership management and SELinux relabeling."
 
 ## Index
 
@@ -22,7 +22,7 @@ Represents a cinder volume resource in Openstack. A Cinder volume must exist bef
 withFsType(fsType)
 ```
 
-Filesystem type to mount. Must be a filesystem type supported by the host operating system. Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. More info: https://examples.k8s.io/mysql-cinder-pd/README.md
+"Filesystem type to mount. Must be a filesystem type supported by the host operating system. Examples: \"ext4\", \"xfs\", \"ntfs\". Implicitly inferred to be \"ext4\" if unspecified. More info: https://examples.k8s.io/mysql-cinder-pd/README.md"
 
 ### fn withReadOnly
 
@@ -30,7 +30,7 @@ Filesystem type to mount. Must be a filesystem type supported by the host operat
 withReadOnly(readOnly)
 ```
 
-Optional: Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts. More info: https://examples.k8s.io/mysql-cinder-pd/README.md
+"Optional: Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts. More info: https://examples.k8s.io/mysql-cinder-pd/README.md"
 
 ### fn withVolumeID
 
@@ -38,11 +38,11 @@ Optional: Defaults to false (read/write). ReadOnly here will force the ReadOnly 
 withVolumeID(volumeID)
 ```
 
-volume id used to identify the volume in cinder. More info: https://examples.k8s.io/mysql-cinder-pd/README.md
+"volume id used to identify the volume in cinder. More info: https://examples.k8s.io/mysql-cinder-pd/README.md"
 
 ## obj secretRef
 
-LocalObjectReference contains enough information to let you locate the referenced object inside the same namespace.
+"LocalObjectReference contains enough information to let you locate the referenced object inside the same namespace."
 
 ### fn secretRef.withName
 
@@ -50,4 +50,4 @@ LocalObjectReference contains enough information to let you locate the reference
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"

@@ -4,7 +4,7 @@ permalink: /1.21/authentication/v1/tokenReviewStatus/
 
 # authentication.v1.tokenReviewStatus
 
-TokenReviewStatus is the result of the token authentication request.
+"TokenReviewStatus is the result of the token authentication request."
 
 ## Index
 
@@ -28,7 +28,7 @@ TokenReviewStatus is the result of the token authentication request.
 withAudiences(audiences)
 ```
 
-Audiences are audience identifiers chosen by the authenticator that are compatible with both the TokenReview and token. An identifier is any identifier in the intersection of the TokenReviewSpec audiences and the token's audiences. A client of the TokenReview API that sets the spec.audiences field should validate that a compatible audience identifier is returned in the status.audiences field to ensure that the TokenReview server is audience aware. If a TokenReview returns an empty status.audience field where status.authenticated is 'true', the token is valid against the audience of the Kubernetes API server.
+"Audiences are audience identifiers chosen by the authenticator that are compatible with both the TokenReview and token. An identifier is any identifier in the intersection of the TokenReviewSpec audiences and the token's audiences. A client of the TokenReview API that sets the spec.audiences field should validate that a compatible audience identifier is returned in the status.audiences field to ensure that the TokenReview server is audience aware. If a TokenReview returns an empty status.audience field where status.authenticated is \"true\", the token is valid against the audience of the Kubernetes API server."
 
 ### fn withAudiencesMixin
 
@@ -36,7 +36,7 @@ Audiences are audience identifiers chosen by the authenticator that are compatib
 withAudiencesMixin(audiences)
 ```
 
-Audiences are audience identifiers chosen by the authenticator that are compatible with both the TokenReview and token. An identifier is any identifier in the intersection of the TokenReviewSpec audiences and the token's audiences. A client of the TokenReview API that sets the spec.audiences field should validate that a compatible audience identifier is returned in the status.audiences field to ensure that the TokenReview server is audience aware. If a TokenReview returns an empty status.audience field where status.authenticated is 'true', the token is valid against the audience of the Kubernetes API server.
+"Audiences are audience identifiers chosen by the authenticator that are compatible with both the TokenReview and token. An identifier is any identifier in the intersection of the TokenReviewSpec audiences and the token's audiences. A client of the TokenReview API that sets the spec.audiences field should validate that a compatible audience identifier is returned in the status.audiences field to ensure that the TokenReview server is audience aware. If a TokenReview returns an empty status.audience field where status.authenticated is \"true\", the token is valid against the audience of the Kubernetes API server."
 
 **Note:** This function appends passed data to existing values
 
@@ -46,7 +46,7 @@ Audiences are audience identifiers chosen by the authenticator that are compatib
 withAuthenticated(authenticated)
 ```
 
-Authenticated indicates that the token was associated with a known user.
+"Authenticated indicates that the token was associated with a known user."
 
 ### fn withError
 
@@ -54,11 +54,11 @@ Authenticated indicates that the token was associated with a known user.
 withError(err)
 ```
 
-Error indicates that the token couldn't be checked
+"Error indicates that the token couldn't be checked"
 
 ## obj user
 
-UserInfo holds the information about the user needed to implement the user.Info interface.
+"UserInfo holds the information about the user needed to implement the user.Info interface."
 
 ### fn user.withExtra
 
@@ -66,7 +66,7 @@ UserInfo holds the information about the user needed to implement the user.Info 
 withExtra(extra)
 ```
 
-Any additional information provided by the authenticator.
+"Any additional information provided by the authenticator."
 
 ### fn user.withExtraMixin
 
@@ -74,7 +74,7 @@ Any additional information provided by the authenticator.
 withExtraMixin(extra)
 ```
 
-Any additional information provided by the authenticator.
+"Any additional information provided by the authenticator."
 
 **Note:** This function appends passed data to existing values
 
@@ -84,7 +84,7 @@ Any additional information provided by the authenticator.
 withGroups(groups)
 ```
 
-The names of groups this user is a part of.
+"The names of groups this user is a part of."
 
 ### fn user.withGroupsMixin
 
@@ -92,7 +92,7 @@ The names of groups this user is a part of.
 withGroupsMixin(groups)
 ```
 
-The names of groups this user is a part of.
+"The names of groups this user is a part of."
 
 **Note:** This function appends passed data to existing values
 
@@ -102,7 +102,7 @@ The names of groups this user is a part of.
 withUid(uid)
 ```
 
-A unique value that identifies this user across time. If this user is deleted and another user by the same name is added, they will have different UIDs.
+"A unique value that identifies this user across time. If this user is deleted and another user by the same name is added, they will have different UIDs."
 
 ### fn user.withUsername
 
@@ -110,4 +110,4 @@ A unique value that identifies this user across time. If this user is deleted an
 withUsername(username)
 ```
 
-The name that uniquely identifies this user among all active users.
+"The name that uniquely identifies this user among all active users."

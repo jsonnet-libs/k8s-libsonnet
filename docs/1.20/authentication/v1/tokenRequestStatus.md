@@ -4,7 +4,7 @@ permalink: /1.20/authentication/v1/tokenRequestStatus/
 
 # authentication.v1.tokenRequestStatus
 
-TokenRequestStatus is the result of a token request.
+"TokenRequestStatus is the result of a token request."
 
 ## Index
 
@@ -19,7 +19,7 @@ TokenRequestStatus is the result of a token request.
 withExpirationTimestamp(expirationTimestamp)
 ```
 
-Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.
+"Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers."
 
 ### fn withToken
 
@@ -27,4 +27,4 @@ Time is a wrapper around time.Time which supports correct marshaling to YAML and
 withToken(token)
 ```
 
-Token is the opaque bearer token.
+"Token is the opaque bearer token."

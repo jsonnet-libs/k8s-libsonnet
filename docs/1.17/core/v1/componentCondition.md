@@ -4,7 +4,7 @@ permalink: /1.17/core/v1/componentCondition/
 
 # core.v1.componentCondition
 
-Information about the condition of a component.
+"Information about the condition of a component."
 
 ## Index
 
@@ -20,7 +20,7 @@ Information about the condition of a component.
 withError(err)
 ```
 
-Condition error code for a component. For example, a health check error code.
+"Condition error code for a component. For example, a health check error code."
 
 ### fn withMessage
 
@@ -28,7 +28,7 @@ Condition error code for a component. For example, a health check error code.
 withMessage(message)
 ```
 
-Message about the condition for a component. For example, information about a health check.
+"Message about the condition for a component. For example, information about a health check."
 
 ### fn withType
 
@@ -36,4 +36,4 @@ Message about the condition for a component. For example, information about a he
 withType(type)
 ```
 
-Type of condition for a component. Valid value: "Healthy"
+"Type of condition for a component. Valid value: \"Healthy\

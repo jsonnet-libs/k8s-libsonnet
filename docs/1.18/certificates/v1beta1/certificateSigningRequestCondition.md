@@ -21,7 +21,7 @@ permalink: /1.18/certificates/v1beta1/certificateSigningRequestCondition/
 withLastUpdateTime(lastUpdateTime)
 ```
 
-Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.
+"Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers."
 
 ### fn withMessage
 
@@ -29,7 +29,7 @@ Time is a wrapper around time.Time which supports correct marshaling to YAML and
 withMessage(message)
 ```
 
-human readable message with details about the request state
+"human readable message with details about the request state"
 
 ### fn withReason
 
@@ -37,7 +37,7 @@ human readable message with details about the request state
 withReason(reason)
 ```
 
-brief reason for the request state
+"brief reason for the request state"
 
 ### fn withType
 
@@ -45,4 +45,4 @@ brief reason for the request state
 withType(type)
 ```
 
-request approval state, currently Approved or Denied.
+"request approval state, currently Approved or Denied."

@@ -4,7 +4,7 @@ permalink: /1.19/core/v1/volumeDevice/
 
 # core.v1.volumeDevice
 
-volumeDevice describes a mapping of a raw block device within a container.
+"volumeDevice describes a mapping of a raw block device within a container."
 
 ## Index
 
@@ -19,7 +19,7 @@ volumeDevice describes a mapping of a raw block device within a container.
 withDevicePath(devicePath)
 ```
 
-devicePath is the path inside of the container that the device will be mapped to.
+"devicePath is the path inside of the container that the device will be mapped to."
 
 ### fn withName
 
@@ -27,4 +27,4 @@ devicePath is the path inside of the container that the device will be mapped to
 withName(name)
 ```
 
-name must match the name of a persistentVolumeClaim in the pod
+"name must match the name of a persistentVolumeClaim in the pod"

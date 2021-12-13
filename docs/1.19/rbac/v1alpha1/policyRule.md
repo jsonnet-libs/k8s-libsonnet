@@ -4,7 +4,7 @@ permalink: /1.19/rbac/v1alpha1/policyRule/
 
 # rbac.v1alpha1.policyRule
 
-PolicyRule holds information that describes a policy rule, but does not contain information about who the rule applies to or which namespace the rule applies to.
+"PolicyRule holds information that describes a policy rule, but does not contain information about who the rule applies to or which namespace the rule applies to."
 
 ## Index
 
@@ -27,7 +27,7 @@ PolicyRule holds information that describes a policy rule, but does not contain 
 withApiGroups(apiGroups)
 ```
 
-APIGroups is the name of the APIGroup that contains the resources.  If multiple API groups are specified, any action requested against one of the enumerated resources in any API group will be allowed.
+"APIGroups is the name of the APIGroup that contains the resources.  If multiple API groups are specified, any action requested against one of the enumerated resources in any API group will be allowed."
 
 ### fn withApiGroupsMixin
 
@@ -35,7 +35,7 @@ APIGroups is the name of the APIGroup that contains the resources.  If multiple 
 withApiGroupsMixin(apiGroups)
 ```
 
-APIGroups is the name of the APIGroup that contains the resources.  If multiple API groups are specified, any action requested against one of the enumerated resources in any API group will be allowed.
+"APIGroups is the name of the APIGroup that contains the resources.  If multiple API groups are specified, any action requested against one of the enumerated resources in any API group will be allowed."
 
 **Note:** This function appends passed data to existing values
 
@@ -45,7 +45,7 @@ APIGroups is the name of the APIGroup that contains the resources.  If multiple 
 withNonResourceURLs(nonResourceURLs)
 ```
 
-NonResourceURLs is a set of partial urls that a user should have access to.  *s are allowed, but only as the full, final step in the path Since non-resource URLs are not namespaced, this field is only applicable for ClusterRoles referenced from a ClusterRoleBinding. Rules can either apply to API resources (such as "pods" or "secrets") or non-resource URL paths (such as "/api"),  but not both.
+"NonResourceURLs is a set of partial urls that a user should have access to.  *s are allowed, but only as the full, final step in the path Since non-resource URLs are not namespaced, this field is only applicable for ClusterRoles referenced from a ClusterRoleBinding. Rules can either apply to API resources (such as \"pods\" or \"secrets\") or non-resource URL paths (such as \"/api\"),  but not both."
 
 ### fn withNonResourceURLsMixin
 
@@ -53,7 +53,7 @@ NonResourceURLs is a set of partial urls that a user should have access to.  *s 
 withNonResourceURLsMixin(nonResourceURLs)
 ```
 
-NonResourceURLs is a set of partial urls that a user should have access to.  *s are allowed, but only as the full, final step in the path Since non-resource URLs are not namespaced, this field is only applicable for ClusterRoles referenced from a ClusterRoleBinding. Rules can either apply to API resources (such as "pods" or "secrets") or non-resource URL paths (such as "/api"),  but not both.
+"NonResourceURLs is a set of partial urls that a user should have access to.  *s are allowed, but only as the full, final step in the path Since non-resource URLs are not namespaced, this field is only applicable for ClusterRoles referenced from a ClusterRoleBinding. Rules can either apply to API resources (such as \"pods\" or \"secrets\") or non-resource URL paths (such as \"/api\"),  but not both."
 
 **Note:** This function appends passed data to existing values
 
@@ -63,7 +63,7 @@ NonResourceURLs is a set of partial urls that a user should have access to.  *s 
 withResourceNames(resourceNames)
 ```
 
-ResourceNames is an optional white list of names that the rule applies to.  An empty set means that everything is allowed.
+"ResourceNames is an optional white list of names that the rule applies to.  An empty set means that everything is allowed."
 
 ### fn withResourceNamesMixin
 
@@ -71,7 +71,7 @@ ResourceNames is an optional white list of names that the rule applies to.  An e
 withResourceNamesMixin(resourceNames)
 ```
 
-ResourceNames is an optional white list of names that the rule applies to.  An empty set means that everything is allowed.
+"ResourceNames is an optional white list of names that the rule applies to.  An empty set means that everything is allowed."
 
 **Note:** This function appends passed data to existing values
 
@@ -81,7 +81,7 @@ ResourceNames is an optional white list of names that the rule applies to.  An e
 withResources(resources)
 ```
 
-Resources is a list of resources this rule applies to.  ResourceAll represents all resources.
+"Resources is a list of resources this rule applies to.  ResourceAll represents all resources."
 
 ### fn withResourcesMixin
 
@@ -89,7 +89,7 @@ Resources is a list of resources this rule applies to.  ResourceAll represents a
 withResourcesMixin(resources)
 ```
 
-Resources is a list of resources this rule applies to.  ResourceAll represents all resources.
+"Resources is a list of resources this rule applies to.  ResourceAll represents all resources."
 
 **Note:** This function appends passed data to existing values
 
@@ -99,7 +99,7 @@ Resources is a list of resources this rule applies to.  ResourceAll represents a
 withVerbs(verbs)
 ```
 
-Verbs is a list of Verbs that apply to ALL the ResourceKinds and AttributeRestrictions contained in this rule.  VerbAll represents all kinds.
+"Verbs is a list of Verbs that apply to ALL the ResourceKinds and AttributeRestrictions contained in this rule.  VerbAll represents all kinds."
 
 ### fn withVerbsMixin
 
@@ -107,6 +107,6 @@ Verbs is a list of Verbs that apply to ALL the ResourceKinds and AttributeRestri
 withVerbsMixin(verbs)
 ```
 
-Verbs is a list of Verbs that apply to ALL the ResourceKinds and AttributeRestrictions contained in this rule.  VerbAll represents all kinds.
+"Verbs is a list of Verbs that apply to ALL the ResourceKinds and AttributeRestrictions contained in this rule.  VerbAll represents all kinds."
 
 **Note:** This function appends passed data to existing values

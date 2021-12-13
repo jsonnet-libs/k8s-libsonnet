@@ -4,7 +4,7 @@ permalink: /1.14/core/v1/podSecurityContext/
 
 # core.v1.podSecurityContext
 
-PodSecurityContext holds pod-level security attributes and common container settings. Some fields are also present in container.securityContext.  Field values of container.securityContext take precedence over field values of PodSecurityContext.
+"PodSecurityContext holds pod-level security attributes and common container settings. Some fields are also present in container.securityContext.  Field values of container.securityContext take precedence over field values of PodSecurityContext."
 
 ## Index
 
@@ -30,11 +30,7 @@ PodSecurityContext holds pod-level security attributes and common container sett
 withFsGroup(fsGroup)
 ```
 
-A special supplemental group that applies to all containers in a pod. Some volume types allow the Kubelet to change the ownership of that volume to be owned by the pod:
-
-1. The owning GID will be the FSGroup 2. The setgid bit is set (new files created in the volume will be owned by FSGroup) 3. The permission bits are OR'd with rw-rw----
-
-If unset, the Kubelet will not modify the ownership and permissions of any volume.
+"A special supplemental group that applies to all containers in a pod. Some volume types allow the Kubelet to change the ownership of that volume to be owned by the pod:\n\n1. The owning GID will be the FSGroup 2. The setgid bit is set (new files created in the volume will be owned by FSGroup) 3. The permission bits are OR'd with rw-rw----\n\nIf unset, the Kubelet will not modify the ownership and permissions of any volume."
 
 ### fn withRunAsGroup
 
@@ -42,7 +38,7 @@ If unset, the Kubelet will not modify the ownership and permissions of any volum
 withRunAsGroup(runAsGroup)
 ```
 
-The GID to run the entrypoint of the container process. Uses runtime default if unset. May also be set in SecurityContext.  If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence for that container.
+"The GID to run the entrypoint of the container process. Uses runtime default if unset. May also be set in SecurityContext.  If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence for that container."
 
 ### fn withRunAsNonRoot
 
@@ -50,7 +46,7 @@ The GID to run the entrypoint of the container process. Uses runtime default if 
 withRunAsNonRoot(runAsNonRoot)
 ```
 
-Indicates that the container must run as a non-root user. If true, the Kubelet will validate the image at runtime to ensure that it does not run as UID 0 (root) and fail to start the container if it does. If unset or false, no such validation will be performed. May also be set in SecurityContext.  If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
+"Indicates that the container must run as a non-root user. If true, the Kubelet will validate the image at runtime to ensure that it does not run as UID 0 (root) and fail to start the container if it does. If unset or false, no such validation will be performed. May also be set in SecurityContext.  If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence."
 
 ### fn withRunAsUser
 
@@ -58,7 +54,7 @@ Indicates that the container must run as a non-root user. If true, the Kubelet w
 withRunAsUser(runAsUser)
 ```
 
-The UID to run the entrypoint of the container process. Defaults to user specified in image metadata if unspecified. May also be set in SecurityContext.  If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence for that container.
+"The UID to run the entrypoint of the container process. Defaults to user specified in image metadata if unspecified. May also be set in SecurityContext.  If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence for that container."
 
 ### fn withSupplementalGroups
 
@@ -66,7 +62,7 @@ The UID to run the entrypoint of the container process. Defaults to user specifi
 withSupplementalGroups(supplementalGroups)
 ```
 
-A list of groups applied to the first process run in each container, in addition to the container's primary GID.  If unspecified, no groups will be added to any container.
+"A list of groups applied to the first process run in each container, in addition to the container's primary GID.  If unspecified, no groups will be added to any container."
 
 ### fn withSupplementalGroupsMixin
 
@@ -74,7 +70,7 @@ A list of groups applied to the first process run in each container, in addition
 withSupplementalGroupsMixin(supplementalGroups)
 ```
 
-A list of groups applied to the first process run in each container, in addition to the container's primary GID.  If unspecified, no groups will be added to any container.
+"A list of groups applied to the first process run in each container, in addition to the container's primary GID.  If unspecified, no groups will be added to any container."
 
 **Note:** This function appends passed data to existing values
 
@@ -84,7 +80,7 @@ A list of groups applied to the first process run in each container, in addition
 withSysctls(sysctls)
 ```
 
-Sysctls hold a list of namespaced sysctls used for the pod. Pods with unsupported sysctls (by the container runtime) might fail to launch.
+"Sysctls hold a list of namespaced sysctls used for the pod. Pods with unsupported sysctls (by the container runtime) might fail to launch."
 
 ### fn withSysctlsMixin
 
@@ -92,13 +88,13 @@ Sysctls hold a list of namespaced sysctls used for the pod. Pods with unsupporte
 withSysctlsMixin(sysctls)
 ```
 
-Sysctls hold a list of namespaced sysctls used for the pod. Pods with unsupported sysctls (by the container runtime) might fail to launch.
+"Sysctls hold a list of namespaced sysctls used for the pod. Pods with unsupported sysctls (by the container runtime) might fail to launch."
 
 **Note:** This function appends passed data to existing values
 
 ## obj seLinuxOptions
 
-SELinuxOptions are the labels to be applied to the container
+"SELinuxOptions are the labels to be applied to the container"
 
 ### fn seLinuxOptions.withLevel
 
@@ -106,7 +102,7 @@ SELinuxOptions are the labels to be applied to the container
 withLevel(level)
 ```
 
-Level is SELinux level label that applies to the container.
+"Level is SELinux level label that applies to the container."
 
 ### fn seLinuxOptions.withRole
 
@@ -114,7 +110,7 @@ Level is SELinux level label that applies to the container.
 withRole(role)
 ```
 
-Role is a SELinux role label that applies to the container.
+"Role is a SELinux role label that applies to the container."
 
 ### fn seLinuxOptions.withType
 
@@ -122,7 +118,7 @@ Role is a SELinux role label that applies to the container.
 withType(type)
 ```
 
-Type is a SELinux type label that applies to the container.
+"Type is a SELinux type label that applies to the container."
 
 ### fn seLinuxOptions.withUser
 
@@ -130,4 +126,4 @@ Type is a SELinux type label that applies to the container.
 withUser(user)
 ```
 
-User is a SELinux user label that applies to the container.
+"User is a SELinux user label that applies to the container."

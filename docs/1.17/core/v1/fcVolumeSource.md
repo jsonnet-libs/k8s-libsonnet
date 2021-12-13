@@ -4,7 +4,7 @@ permalink: /1.17/core/v1/fcVolumeSource/
 
 # core.v1.fcVolumeSource
 
-Represents a Fibre Channel volume. Fibre Channel volumes can only be mounted as read/write once. Fibre Channel volumes support ownership management and SELinux relabeling.
+"Represents a Fibre Channel volume. Fibre Channel volumes can only be mounted as read/write once. Fibre Channel volumes support ownership management and SELinux relabeling."
 
 ## Index
 
@@ -24,7 +24,7 @@ Represents a Fibre Channel volume. Fibre Channel volumes can only be mounted as 
 withFsType(fsType)
 ```
 
-Filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
+"Filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. \"ext4\", \"xfs\", \"ntfs\". Implicitly inferred to be \"ext4\" if unspecified."
 
 ### fn withLun
 
@@ -32,7 +32,7 @@ Filesystem type to mount. Must be a filesystem type supported by the host operat
 withLun(lun)
 ```
 
-Optional: FC target lun number
+"Optional: FC target lun number"
 
 ### fn withReadOnly
 
@@ -40,7 +40,7 @@ Optional: FC target lun number
 withReadOnly(readOnly)
 ```
 
-Optional: Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts.
+"Optional: Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts."
 
 ### fn withTargetWWNs
 
@@ -48,7 +48,7 @@ Optional: Defaults to false (read/write). ReadOnly here will force the ReadOnly 
 withTargetWWNs(targetWWNs)
 ```
 
-Optional: FC target worldwide names (WWNs)
+"Optional: FC target worldwide names (WWNs)"
 
 ### fn withTargetWWNsMixin
 
@@ -56,7 +56,7 @@ Optional: FC target worldwide names (WWNs)
 withTargetWWNsMixin(targetWWNs)
 ```
 
-Optional: FC target worldwide names (WWNs)
+"Optional: FC target worldwide names (WWNs)"
 
 **Note:** This function appends passed data to existing values
 
@@ -66,7 +66,7 @@ Optional: FC target worldwide names (WWNs)
 withWwids(wwids)
 ```
 
-Optional: FC volume world wide identifiers (wwids) Either wwids or combination of targetWWNs and lun must be set, but not both simultaneously.
+"Optional: FC volume world wide identifiers (wwids) Either wwids or combination of targetWWNs and lun must be set, but not both simultaneously."
 
 ### fn withWwidsMixin
 
@@ -74,6 +74,6 @@ Optional: FC volume world wide identifiers (wwids) Either wwids or combination o
 withWwidsMixin(wwids)
 ```
 
-Optional: FC volume world wide identifiers (wwids) Either wwids or combination of targetWWNs and lun must be set, but not both simultaneously.
+"Optional: FC volume world wide identifiers (wwids) Either wwids or combination of targetWWNs and lun must be set, but not both simultaneously."
 
 **Note:** This function appends passed data to existing values

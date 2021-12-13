@@ -4,7 +4,7 @@ permalink: /1.20/core/v1/podDNSConfigOption/
 
 # core.v1.podDNSConfigOption
 
-PodDNSConfigOption defines DNS resolver options of a pod.
+"PodDNSConfigOption defines DNS resolver options of a pod."
 
 ## Index
 
@@ -19,7 +19,7 @@ PodDNSConfigOption defines DNS resolver options of a pod.
 withName(name)
 ```
 
-Required.
+"Required."
 
 ### fn withValue
 

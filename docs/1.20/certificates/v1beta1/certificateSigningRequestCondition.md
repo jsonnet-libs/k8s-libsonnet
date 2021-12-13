@@ -22,7 +22,7 @@ permalink: /1.20/certificates/v1beta1/certificateSigningRequestCondition/
 withLastTransitionTime(lastTransitionTime)
 ```
 
-Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.
+"Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers."
 
 ### fn withLastUpdateTime
 
@@ -30,7 +30,7 @@ Time is a wrapper around time.Time which supports correct marshaling to YAML and
 withLastUpdateTime(lastUpdateTime)
 ```
 
-Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.
+"Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers."
 
 ### fn withMessage
 
@@ -38,7 +38,7 @@ Time is a wrapper around time.Time which supports correct marshaling to YAML and
 withMessage(message)
 ```
 
-human readable message with details about the request state
+"human readable message with details about the request state"
 
 ### fn withReason
 
@@ -46,7 +46,7 @@ human readable message with details about the request state
 withReason(reason)
 ```
 
-brief reason for the request state
+"brief reason for the request state"
 
 ### fn withType
 
@@ -54,4 +54,4 @@ brief reason for the request state
 withType(type)
 ```
 
-type of the condition. Known conditions include "Approved", "Denied", and "Failed".
+"type of the condition. Known conditions include \"Approved\", \"Denied\", and \"Failed\"."

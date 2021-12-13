@@ -4,7 +4,7 @@ permalink: /1.17/settings/v1alpha1/podPresetSpec/
 
 # settings.v1alpha1.podPresetSpec
 
-PodPresetSpec is a description of a pod preset.
+"PodPresetSpec is a description of a pod preset."
 
 ## Index
 
@@ -30,7 +30,7 @@ PodPresetSpec is a description of a pod preset.
 withEnv(env)
 ```
 
-Env defines the collection of EnvVar to inject into containers.
+"Env defines the collection of EnvVar to inject into containers."
 
 ### fn withEnvFrom
 
@@ -38,7 +38,7 @@ Env defines the collection of EnvVar to inject into containers.
 withEnvFrom(envFrom)
 ```
 
-EnvFrom defines the collection of EnvFromSource to inject into containers.
+"EnvFrom defines the collection of EnvFromSource to inject into containers."
 
 ### fn withEnvFromMixin
 
@@ -46,7 +46,7 @@ EnvFrom defines the collection of EnvFromSource to inject into containers.
 withEnvFromMixin(envFrom)
 ```
 
-EnvFrom defines the collection of EnvFromSource to inject into containers.
+"EnvFrom defines the collection of EnvFromSource to inject into containers."
 
 **Note:** This function appends passed data to existing values
 
@@ -56,7 +56,7 @@ EnvFrom defines the collection of EnvFromSource to inject into containers.
 withEnvMixin(env)
 ```
 
-Env defines the collection of EnvVar to inject into containers.
+"Env defines the collection of EnvVar to inject into containers."
 
 **Note:** This function appends passed data to existing values
 
@@ -66,7 +66,7 @@ Env defines the collection of EnvVar to inject into containers.
 withVolumeMounts(volumeMounts)
 ```
 
-VolumeMounts defines the collection of VolumeMount to inject into containers.
+"VolumeMounts defines the collection of VolumeMount to inject into containers."
 
 ### fn withVolumeMountsMixin
 
@@ -74,7 +74,7 @@ VolumeMounts defines the collection of VolumeMount to inject into containers.
 withVolumeMountsMixin(volumeMounts)
 ```
 
-VolumeMounts defines the collection of VolumeMount to inject into containers.
+"VolumeMounts defines the collection of VolumeMount to inject into containers."
 
 **Note:** This function appends passed data to existing values
 
@@ -84,7 +84,7 @@ VolumeMounts defines the collection of VolumeMount to inject into containers.
 withVolumes(volumes)
 ```
 
-Volumes defines the collection of Volume to inject into the pod.
+"Volumes defines the collection of Volume to inject into the pod."
 
 ### fn withVolumesMixin
 
@@ -92,13 +92,13 @@ Volumes defines the collection of Volume to inject into the pod.
 withVolumesMixin(volumes)
 ```
 
-Volumes defines the collection of Volume to inject into the pod.
+"Volumes defines the collection of Volume to inject into the pod."
 
 **Note:** This function appends passed data to existing values
 
 ## obj selector
 
-A label selector is a label query over a set of resources. The result of matchLabels and matchExpressions are ANDed. An empty label selector matches all objects. A null label selector matches no objects.
+"A label selector is a label query over a set of resources. The result of matchLabels and matchExpressions are ANDed. An empty label selector matches all objects. A null label selector matches no objects."
 
 ### fn selector.withMatchExpressions
 
@@ -106,7 +106,7 @@ A label selector is a label query over a set of resources. The result of matchLa
 withMatchExpressions(matchExpressions)
 ```
 
-matchExpressions is a list of label selector requirements. The requirements are ANDed.
+"matchExpressions is a list of label selector requirements. The requirements are ANDed."
 
 ### fn selector.withMatchExpressionsMixin
 
@@ -114,7 +114,7 @@ matchExpressions is a list of label selector requirements. The requirements are 
 withMatchExpressionsMixin(matchExpressions)
 ```
 
-matchExpressions is a list of label selector requirements. The requirements are ANDed.
+"matchExpressions is a list of label selector requirements. The requirements are ANDed."
 
 **Note:** This function appends passed data to existing values
 
@@ -124,7 +124,7 @@ matchExpressions is a list of label selector requirements. The requirements are 
 withMatchLabels(matchLabels)
 ```
 
-matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
+"matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is \"key\", the operator is \"In\", and the values array contains only \"value\". The requirements are ANDed."
 
 ### fn selector.withMatchLabelsMixin
 
@@ -132,6 +132,6 @@ matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabe
 withMatchLabelsMixin(matchLabels)
 ```
 
-matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
+"matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is \"key\", the operator is \"In\", and the values array contains only \"value\". The requirements are ANDed."
 
 **Note:** This function appends passed data to existing values

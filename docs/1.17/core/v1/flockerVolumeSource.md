@@ -4,7 +4,7 @@ permalink: /1.17/core/v1/flockerVolumeSource/
 
 # core.v1.flockerVolumeSource
 
-Represents a Flocker volume mounted by the Flocker agent. One and only one of datasetName and datasetUUID should be set. Flocker volumes do not support ownership management or SELinux relabeling.
+"Represents a Flocker volume mounted by the Flocker agent. One and only one of datasetName and datasetUUID should be set. Flocker volumes do not support ownership management or SELinux relabeling."
 
 ## Index
 
@@ -19,7 +19,7 @@ Represents a Flocker volume mounted by the Flocker agent. One and only one of da
 withDatasetName(datasetName)
 ```
 
-Name of the dataset stored as metadata -> name on the dataset for Flocker should be considered as deprecated
+"Name of the dataset stored as metadata -> name on the dataset for Flocker should be considered as deprecated"
 
 ### fn withDatasetUUID
 
@@ -27,4 +27,4 @@ Name of the dataset stored as metadata -> name on the dataset for Flocker should
 withDatasetUUID(datasetUUID)
 ```
 
-UUID of the dataset. This is unique identifier of a Flocker dataset
+"UUID of the dataset. This is unique identifier of a Flocker dataset"

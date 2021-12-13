@@ -4,7 +4,7 @@ permalink: /1.19/core/v1/taint/
 
 # core.v1.taint
 
-The node this Taint is attached to has the "effect" on any pod that does not tolerate the Taint.
+"The node this Taint is attached to has the \"effect\" on any pod that does not tolerate the Taint."
 
 ## Index
 
@@ -21,7 +21,7 @@ The node this Taint is attached to has the "effect" on any pod that does not tol
 withEffect(effect)
 ```
 
-Required. The effect of the taint on pods that do not tolerate the taint. Valid effects are NoSchedule, PreferNoSchedule and NoExecute.
+"Required. The effect of the taint on pods that do not tolerate the taint. Valid effects are NoSchedule, PreferNoSchedule and NoExecute."
 
 ### fn withKey
 
@@ -29,7 +29,7 @@ Required. The effect of the taint on pods that do not tolerate the taint. Valid 
 withKey(key)
 ```
 
-Required. The taint key to be applied to a node.
+"Required. The taint key to be applied to a node."
 
 ### fn withTimeAdded
 
@@ -37,7 +37,7 @@ Required. The taint key to be applied to a node.
 withTimeAdded(timeAdded)
 ```
 
-Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.
+"Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers."
 
 ### fn withValue
 
@@ -45,4 +45,4 @@ Time is a wrapper around time.Time which supports correct marshaling to YAML and
 withValue(value)
 ```
 
-The taint value corresponding to the taint key.
+"The taint value corresponding to the taint key."

@@ -4,7 +4,7 @@ permalink: /1.21/core/v1/envFromSource/
 
 # core.v1.envFromSource
 
-EnvFromSource represents the source of a set of ConfigMaps
+"EnvFromSource represents the source of a set of ConfigMaps"
 
 ## Index
 
@@ -24,13 +24,11 @@ EnvFromSource represents the source of a set of ConfigMaps
 withPrefix(prefix)
 ```
 
-An optional identifier to prepend to each key in the ConfigMap. Must be a C_IDENTIFIER.
+"An optional identifier to prepend to each key in the ConfigMap. Must be a C_IDENTIFIER."
 
 ## obj configMapRef
 
-ConfigMapEnvSource selects a ConfigMap to populate the environment variables with.
-
-The contents of the target ConfigMap's Data field will represent the key-value pairs as environment variables.
+"ConfigMapEnvSource selects a ConfigMap to populate the environment variables with.\n\nThe contents of the target ConfigMap's Data field will represent the key-value pairs as environment variables."
 
 ### fn configMapRef.withName
 
@@ -38,7 +36,7 @@ The contents of the target ConfigMap's Data field will represent the key-value p
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn configMapRef.withOptional
 
@@ -46,13 +44,11 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the ConfigMap must be defined
+"Specify whether the ConfigMap must be defined"
 
 ## obj secretRef
 
-SecretEnvSource selects a Secret to populate the environment variables with.
-
-The contents of the target Secret's Data field will represent the key-value pairs as environment variables.
+"SecretEnvSource selects a Secret to populate the environment variables with.\n\nThe contents of the target Secret's Data field will represent the key-value pairs as environment variables."
 
 ### fn secretRef.withName
 
@@ -60,7 +56,7 @@ The contents of the target Secret's Data field will represent the key-value pair
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn secretRef.withOptional
 
@@ -68,4 +64,4 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret must be defined
+"Specify whether the Secret must be defined"

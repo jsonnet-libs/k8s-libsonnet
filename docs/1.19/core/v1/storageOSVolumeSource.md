@@ -4,7 +4,7 @@ permalink: /1.19/core/v1/storageOSVolumeSource/
 
 # core.v1.storageOSVolumeSource
 
-Represents a StorageOS persistent volume resource.
+"Represents a StorageOS persistent volume resource."
 
 ## Index
 
@@ -23,7 +23,7 @@ Represents a StorageOS persistent volume resource.
 withFsType(fsType)
 ```
 
-Filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
+"Filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. \"ext4\", \"xfs\", \"ntfs\". Implicitly inferred to be \"ext4\" if unspecified."
 
 ### fn withReadOnly
 
@@ -31,7 +31,7 @@ Filesystem type to mount. Must be a filesystem type supported by the host operat
 withReadOnly(readOnly)
 ```
 
-Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts.
+"Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts."
 
 ### fn withVolumeName
 
@@ -39,7 +39,7 @@ Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in
 withVolumeName(volumeName)
 ```
 
-VolumeName is the human-readable name of the StorageOS volume.  Volume names are only unique within a namespace.
+"VolumeName is the human-readable name of the StorageOS volume.  Volume names are only unique within a namespace."
 
 ### fn withVolumeNamespace
 
@@ -47,11 +47,11 @@ VolumeName is the human-readable name of the StorageOS volume.  Volume names are
 withVolumeNamespace(volumeNamespace)
 ```
 
-VolumeNamespace specifies the scope of the volume within StorageOS.  If no namespace is specified then the Pod's namespace will be used.  This allows the Kubernetes name scoping to be mirrored within StorageOS for tighter integration. Set VolumeName to any name to override the default behaviour. Set to 'default' if you are not using namespaces within StorageOS. Namespaces that do not pre-exist within StorageOS will be created.
+"VolumeNamespace specifies the scope of the volume within StorageOS.  If no namespace is specified then the Pod's namespace will be used.  This allows the Kubernetes name scoping to be mirrored within StorageOS for tighter integration. Set VolumeName to any name to override the default behaviour. Set to \"default\" if you are not using namespaces within StorageOS. Namespaces that do not pre-exist within StorageOS will be created."
 
 ## obj secretRef
 
-LocalObjectReference contains enough information to let you locate the referenced object inside the same namespace.
+"LocalObjectReference contains enough information to let you locate the referenced object inside the same namespace."
 
 ### fn secretRef.withName
 
@@ -59,4 +59,4 @@ LocalObjectReference contains enough information to let you locate the reference
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"

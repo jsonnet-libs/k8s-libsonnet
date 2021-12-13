@@ -4,7 +4,7 @@ permalink: /1.17/core/v1/nodeAddress/
 
 # core.v1.nodeAddress
 
-NodeAddress contains information for the node's address.
+"NodeAddress contains information for the node's address."
 
 ## Index
 
@@ -19,7 +19,7 @@ NodeAddress contains information for the node's address.
 withAddress(address)
 ```
 
-The node address.
+"The node address."
 
 ### fn withType
 
@@ -27,4 +27,4 @@ The node address.
 withType(type)
 ```
 
-Node address type, one of Hostname, ExternalIP or InternalIP.
+"Node address type, one of Hostname, ExternalIP or InternalIP."

@@ -4,7 +4,7 @@ permalink: /1.19/apps/v1/daemonSetCondition/
 
 # apps.v1.daemonSetCondition
 
-DaemonSetCondition describes the state of a DaemonSet at a certain point.
+"DaemonSetCondition describes the state of a DaemonSet at a certain point."
 
 ## Index
 
@@ -21,7 +21,7 @@ DaemonSetCondition describes the state of a DaemonSet at a certain point.
 withLastTransitionTime(lastTransitionTime)
 ```
 
-Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.
+"Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers."
 
 ### fn withMessage
 
@@ -29,7 +29,7 @@ Time is a wrapper around time.Time which supports correct marshaling to YAML and
 withMessage(message)
 ```
 
-A human readable message indicating details about the transition.
+"A human readable message indicating details about the transition."
 
 ### fn withReason
 
@@ -37,7 +37,7 @@ A human readable message indicating details about the transition.
 withReason(reason)
 ```
 
-The reason for the condition's last transition.
+"The reason for the condition's last transition."
 
 ### fn withType
 
@@ -45,4 +45,4 @@ The reason for the condition's last transition.
 withType(type)
 ```
 
-Type of DaemonSet condition.
+"Type of DaemonSet condition."

@@ -4,7 +4,7 @@ permalink: /1.21/apiserverinternal/v1alpha1/storageVersionStatus/
 
 # apiserverinternal.v1alpha1.storageVersionStatus
 
-API server instances report the versions they can decode and the version they encode objects to when persisting objects in the backend.
+"API server instances report the versions they can decode and the version they encode objects to when persisting objects in the backend."
 
 ## Index
 
@@ -22,7 +22,7 @@ API server instances report the versions they can decode and the version they en
 withCommonEncodingVersion(commonEncodingVersion)
 ```
 
-If all API server instances agree on the same encoding storage version, then this field is set to that version. Otherwise this field is left empty. API servers should finish updating its storageVersionStatus entry before serving write operations, so that this field will be in sync with the reality.
+"If all API server instances agree on the same encoding storage version, then this field is set to that version. Otherwise this field is left empty. API servers should finish updating its storageVersionStatus entry before serving write operations, so that this field will be in sync with the reality."
 
 ### fn withConditions
 
@@ -30,7 +30,7 @@ If all API server instances agree on the same encoding storage version, then thi
 withConditions(conditions)
 ```
 
-The latest available observations of the storageVersion's state.
+"The latest available observations of the storageVersion's state."
 
 ### fn withConditionsMixin
 
@@ -38,7 +38,7 @@ The latest available observations of the storageVersion's state.
 withConditionsMixin(conditions)
 ```
 
-The latest available observations of the storageVersion's state.
+"The latest available observations of the storageVersion's state."
 
 **Note:** This function appends passed data to existing values
 
@@ -48,7 +48,7 @@ The latest available observations of the storageVersion's state.
 withStorageVersions(storageVersions)
 ```
 
-The reported versions per API server instance.
+"The reported versions per API server instance."
 
 ### fn withStorageVersionsMixin
 
@@ -56,6 +56,6 @@ The reported versions per API server instance.
 withStorageVersionsMixin(storageVersions)
 ```
 
-The reported versions per API server instance.
+"The reported versions per API server instance."
 
 **Note:** This function appends passed data to existing values

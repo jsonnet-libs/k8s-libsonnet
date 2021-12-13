@@ -4,7 +4,7 @@ permalink: /1.17/autoscaling/v1/scaleSpec/
 
 # autoscaling.v1.scaleSpec
 
-ScaleSpec describes the attributes of a scale subresource.
+"ScaleSpec describes the attributes of a scale subresource."
 
 ## Index
 
@@ -18,4 +18,4 @@ ScaleSpec describes the attributes of a scale subresource.
 withReplicas(replicas)
 ```
 
-desired number of instances for the scaled object.
+"desired number of instances for the scaled object."

@@ -4,7 +4,7 @@ permalink: /1.19/core/v1/loadBalancerStatus/
 
 # core.v1.loadBalancerStatus
 
-LoadBalancerStatus represents the status of a load-balancer.
+"LoadBalancerStatus represents the status of a load-balancer."
 
 ## Index
 
@@ -19,7 +19,7 @@ LoadBalancerStatus represents the status of a load-balancer.
 withIngress(ingress)
 ```
 
-Ingress is a list containing ingress points for the load-balancer. Traffic intended for the service should be sent to these ingress points.
+"Ingress is a list containing ingress points for the load-balancer. Traffic intended for the service should be sent to these ingress points."
 
 ### fn withIngressMixin
 
@@ -27,6 +27,6 @@ Ingress is a list containing ingress points for the load-balancer. Traffic inten
 withIngressMixin(ingress)
 ```
 
-Ingress is a list containing ingress points for the load-balancer. Traffic intended for the service should be sent to these ingress points.
+"Ingress is a list containing ingress points for the load-balancer. Traffic intended for the service should be sent to these ingress points."
 
 **Note:** This function appends passed data to existing values

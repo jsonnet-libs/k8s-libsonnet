@@ -4,7 +4,7 @@ permalink: /1.20/core/v1/podDNSConfig/
 
 # core.v1.podDNSConfig
 
-PodDNSConfig defines the DNS parameters of a pod in addition to those generated from DNSPolicy.
+"PodDNSConfig defines the DNS parameters of a pod in addition to those generated from DNSPolicy."
 
 ## Index
 
@@ -23,7 +23,7 @@ PodDNSConfig defines the DNS parameters of a pod in addition to those generated 
 withNameservers(nameservers)
 ```
 
-A list of DNS name server IP addresses. This will be appended to the base nameservers generated from DNSPolicy. Duplicated nameservers will be removed.
+"A list of DNS name server IP addresses. This will be appended to the base nameservers generated from DNSPolicy. Duplicated nameservers will be removed."
 
 ### fn withNameserversMixin
 
@@ -31,7 +31,7 @@ A list of DNS name server IP addresses. This will be appended to the base namese
 withNameserversMixin(nameservers)
 ```
 
-A list of DNS name server IP addresses. This will be appended to the base nameservers generated from DNSPolicy. Duplicated nameservers will be removed.
+"A list of DNS name server IP addresses. This will be appended to the base nameservers generated from DNSPolicy. Duplicated nameservers will be removed."
 
 **Note:** This function appends passed data to existing values
 
@@ -41,7 +41,7 @@ A list of DNS name server IP addresses. This will be appended to the base namese
 withOptions(options)
 ```
 
-A list of DNS resolver options. This will be merged with the base options generated from DNSPolicy. Duplicated entries will be removed. Resolution options given in Options will override those that appear in the base DNSPolicy.
+"A list of DNS resolver options. This will be merged with the base options generated from DNSPolicy. Duplicated entries will be removed. Resolution options given in Options will override those that appear in the base DNSPolicy."
 
 ### fn withOptionsMixin
 
@@ -49,7 +49,7 @@ A list of DNS resolver options. This will be merged with the base options genera
 withOptionsMixin(options)
 ```
 
-A list of DNS resolver options. This will be merged with the base options generated from DNSPolicy. Duplicated entries will be removed. Resolution options given in Options will override those that appear in the base DNSPolicy.
+"A list of DNS resolver options. This will be merged with the base options generated from DNSPolicy. Duplicated entries will be removed. Resolution options given in Options will override those that appear in the base DNSPolicy."
 
 **Note:** This function appends passed data to existing values
 
@@ -59,7 +59,7 @@ A list of DNS resolver options. This will be merged with the base options genera
 withSearches(searches)
 ```
 
-A list of DNS search domains for host-name lookup. This will be appended to the base search paths generated from DNSPolicy. Duplicated search paths will be removed.
+"A list of DNS search domains for host-name lookup. This will be appended to the base search paths generated from DNSPolicy. Duplicated search paths will be removed."
 
 ### fn withSearchesMixin
 
@@ -67,6 +67,6 @@ A list of DNS search domains for host-name lookup. This will be appended to the 
 withSearchesMixin(searches)
 ```
 
-A list of DNS search domains for host-name lookup. This will be appended to the base search paths generated from DNSPolicy. Duplicated search paths will be removed.
+"A list of DNS search domains for host-name lookup. This will be appended to the base search paths generated from DNSPolicy. Duplicated search paths will be removed."
 
 **Note:** This function appends passed data to existing values

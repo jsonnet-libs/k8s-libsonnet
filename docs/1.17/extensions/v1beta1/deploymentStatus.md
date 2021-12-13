@@ -4,7 +4,7 @@ permalink: /1.17/extensions/v1beta1/deploymentStatus/
 
 # extensions.v1beta1.deploymentStatus
 
-DeploymentStatus is the most recently observed status of the Deployment.
+"DeploymentStatus is the most recently observed status of the Deployment."
 
 ## Index
 
@@ -26,7 +26,7 @@ DeploymentStatus is the most recently observed status of the Deployment.
 withAvailableReplicas(availableReplicas)
 ```
 
-Total number of available pods (ready for at least minReadySeconds) targeted by this deployment.
+"Total number of available pods (ready for at least minReadySeconds) targeted by this deployment."
 
 ### fn withCollisionCount
 
@@ -34,7 +34,7 @@ Total number of available pods (ready for at least minReadySeconds) targeted by 
 withCollisionCount(collisionCount)
 ```
 
-Count of hash collisions for the Deployment. The Deployment controller uses this field as a collision avoidance mechanism when it needs to create the name for the newest ReplicaSet.
+"Count of hash collisions for the Deployment. The Deployment controller uses this field as a collision avoidance mechanism when it needs to create the name for the newest ReplicaSet."
 
 ### fn withConditions
 
@@ -42,7 +42,7 @@ Count of hash collisions for the Deployment. The Deployment controller uses this
 withConditions(conditions)
 ```
 
-Represents the latest available observations of a deployment's current state.
+"Represents the latest available observations of a deployment's current state."
 
 ### fn withConditionsMixin
 
@@ -50,7 +50,7 @@ Represents the latest available observations of a deployment's current state.
 withConditionsMixin(conditions)
 ```
 
-Represents the latest available observations of a deployment's current state.
+"Represents the latest available observations of a deployment's current state."
 
 **Note:** This function appends passed data to existing values
 
@@ -60,7 +60,7 @@ Represents the latest available observations of a deployment's current state.
 withObservedGeneration(observedGeneration)
 ```
 
-The generation observed by the deployment controller.
+"The generation observed by the deployment controller."
 
 ### fn withReadyReplicas
 
@@ -68,7 +68,7 @@ The generation observed by the deployment controller.
 withReadyReplicas(readyReplicas)
 ```
 
-Total number of ready pods targeted by this deployment.
+"Total number of ready pods targeted by this deployment."
 
 ### fn withReplicas
 
@@ -76,7 +76,7 @@ Total number of ready pods targeted by this deployment.
 withReplicas(replicas)
 ```
 
-Total number of non-terminated pods targeted by this deployment (their labels match the selector).
+"Total number of non-terminated pods targeted by this deployment (their labels match the selector)."
 
 ### fn withUnavailableReplicas
 
@@ -84,7 +84,7 @@ Total number of non-terminated pods targeted by this deployment (their labels ma
 withUnavailableReplicas(unavailableReplicas)
 ```
 
-Total number of unavailable pods targeted by this deployment. This is the total number of pods that are still required for the deployment to have 100% available capacity. They may either be pods that are running but not yet available or pods that still have not been created.
+"Total number of unavailable pods targeted by this deployment. This is the total number of pods that are still required for the deployment to have 100% available capacity. They may either be pods that are running but not yet available or pods that still have not been created."
 
 ### fn withUpdatedReplicas
 
@@ -92,4 +92,4 @@ Total number of unavailable pods targeted by this deployment. This is the total 
 withUpdatedReplicas(updatedReplicas)
 ```
 
-Total number of non-terminated pods targeted by this deployment that have the desired template spec.
+"Total number of non-terminated pods targeted by this deployment that have the desired template spec."

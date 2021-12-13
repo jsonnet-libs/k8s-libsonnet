@@ -4,7 +4,7 @@ permalink: /1.17/autoscaling/v1/scaleStatus/
 
 # autoscaling.v1.scaleStatus
 
-ScaleStatus represents the current status of a scale subresource.
+"ScaleStatus represents the current status of a scale subresource."
 
 ## Index
 
@@ -19,7 +19,7 @@ ScaleStatus represents the current status of a scale subresource.
 withReplicas(replicas)
 ```
 
-actual number of observed instances of the scaled object.
+"actual number of observed instances of the scaled object."
 
 ### fn withSelector
 
@@ -27,4 +27,4 @@ actual number of observed instances of the scaled object.
 withSelector(selector)
 ```
 
-label query over pods that should match the replicas count. This is same as the label selector but in the string format to avoid introspection by clients. The string will be in the same format as the query-param syntax. More info about label selectors: http://kubernetes.io/docs/user-guide/labels#label-selectors
+"label query over pods that should match the replicas count. This is same as the label selector but in the string format to avoid introspection by clients. The string will be in the same format as the query-param syntax. More info about label selectors: http://kubernetes.io/docs/user-guide/labels#label-selectors"

@@ -4,7 +4,7 @@ permalink: /1.17/core/v1/capabilities/
 
 # core.v1.capabilities
 
-Adds and removes POSIX capabilities from running containers.
+"Adds and removes POSIX capabilities from running containers."
 
 ## Index
 
@@ -21,7 +21,7 @@ Adds and removes POSIX capabilities from running containers.
 withAdd(add)
 ```
 
-Added capabilities
+"Added capabilities"
 
 ### fn withAddMixin
 
@@ -29,7 +29,7 @@ Added capabilities
 withAddMixin(add)
 ```
 
-Added capabilities
+"Added capabilities"
 
 **Note:** This function appends passed data to existing values
 
@@ -39,7 +39,7 @@ Added capabilities
 withDrop(drop)
 ```
 
-Removed capabilities
+"Removed capabilities"
 
 ### fn withDropMixin
 
@@ -47,6 +47,6 @@ Removed capabilities
 withDropMixin(drop)
 ```
 
-Removed capabilities
+"Removed capabilities"
 
 **Note:** This function appends passed data to existing values

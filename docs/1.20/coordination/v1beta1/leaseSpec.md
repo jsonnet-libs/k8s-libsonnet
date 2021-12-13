@@ -4,7 +4,7 @@ permalink: /1.20/coordination/v1beta1/leaseSpec/
 
 # coordination.v1beta1.leaseSpec
 
-LeaseSpec is a specification of a Lease.
+"LeaseSpec is a specification of a Lease."
 
 ## Index
 
@@ -22,7 +22,7 @@ LeaseSpec is a specification of a Lease.
 withAcquireTime(acquireTime)
 ```
 
-MicroTime is version of Time with microsecond level precision.
+"MicroTime is version of Time with microsecond level precision."
 
 ### fn withHolderIdentity
 
@@ -30,7 +30,7 @@ MicroTime is version of Time with microsecond level precision.
 withHolderIdentity(holderIdentity)
 ```
 
-holderIdentity contains the identity of the holder of a current lease.
+"holderIdentity contains the identity of the holder of a current lease."
 
 ### fn withLeaseDurationSeconds
 
@@ -38,7 +38,7 @@ holderIdentity contains the identity of the holder of a current lease.
 withLeaseDurationSeconds(leaseDurationSeconds)
 ```
 
-leaseDurationSeconds is a duration that candidates for a lease need to wait to force acquire it. This is measure against time of last observed RenewTime.
+"leaseDurationSeconds is a duration that candidates for a lease need to wait to force acquire it. This is measure against time of last observed RenewTime."
 
 ### fn withLeaseTransitions
 
@@ -46,7 +46,7 @@ leaseDurationSeconds is a duration that candidates for a lease need to wait to f
 withLeaseTransitions(leaseTransitions)
 ```
 
-leaseTransitions is the number of transitions of a lease between holders.
+"leaseTransitions is the number of transitions of a lease between holders."
 
 ### fn withRenewTime
 
@@ -54,4 +54,4 @@ leaseTransitions is the number of transitions of a lease between holders.
 withRenewTime(renewTime)
 ```
 
-MicroTime is version of Time with microsecond level precision.
+"MicroTime is version of Time with microsecond level precision."

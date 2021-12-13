@@ -4,7 +4,7 @@ permalink: /1.14/policy/v1beta1/podSecurityPolicySpec/
 
 # policy.v1beta1.podSecurityPolicySpec
 
-PodSecurityPolicySpec defines the policy enforced.
+"PodSecurityPolicySpec defines the policy enforced."
 
 ## Index
 
@@ -69,7 +69,7 @@ PodSecurityPolicySpec defines the policy enforced.
 withAllowPrivilegeEscalation(allowPrivilegeEscalation)
 ```
 
-allowPrivilegeEscalation determines if a pod can request to allow privilege escalation. If unspecified, defaults to true.
+"allowPrivilegeEscalation determines if a pod can request to allow privilege escalation. If unspecified, defaults to true."
 
 ### fn withAllowedCSIDrivers
 
@@ -77,7 +77,7 @@ allowPrivilegeEscalation determines if a pod can request to allow privilege esca
 withAllowedCSIDrivers(allowedCSIDrivers)
 ```
 
-AllowedCSIDrivers is a whitelist of inline CSI drivers that must be explicitly set to be embedded within a pod spec. An empty value means no CSI drivers can run inline within a pod spec.
+"AllowedCSIDrivers is a whitelist of inline CSI drivers that must be explicitly set to be embedded within a pod spec. An empty value means no CSI drivers can run inline within a pod spec."
 
 ### fn withAllowedCSIDriversMixin
 
@@ -85,7 +85,7 @@ AllowedCSIDrivers is a whitelist of inline CSI drivers that must be explicitly s
 withAllowedCSIDriversMixin(allowedCSIDrivers)
 ```
 
-AllowedCSIDrivers is a whitelist of inline CSI drivers that must be explicitly set to be embedded within a pod spec. An empty value means no CSI drivers can run inline within a pod spec.
+"AllowedCSIDrivers is a whitelist of inline CSI drivers that must be explicitly set to be embedded within a pod spec. An empty value means no CSI drivers can run inline within a pod spec."
 
 **Note:** This function appends passed data to existing values
 
@@ -95,7 +95,7 @@ AllowedCSIDrivers is a whitelist of inline CSI drivers that must be explicitly s
 withAllowedCapabilities(allowedCapabilities)
 ```
 
-allowedCapabilities is a list of capabilities that can be requested to add to the container. Capabilities in this field may be added at the pod author's discretion. You must not list a capability in both allowedCapabilities and requiredDropCapabilities.
+"allowedCapabilities is a list of capabilities that can be requested to add to the container. Capabilities in this field may be added at the pod author's discretion. You must not list a capability in both allowedCapabilities and requiredDropCapabilities."
 
 ### fn withAllowedCapabilitiesMixin
 
@@ -103,7 +103,7 @@ allowedCapabilities is a list of capabilities that can be requested to add to th
 withAllowedCapabilitiesMixin(allowedCapabilities)
 ```
 
-allowedCapabilities is a list of capabilities that can be requested to add to the container. Capabilities in this field may be added at the pod author's discretion. You must not list a capability in both allowedCapabilities and requiredDropCapabilities.
+"allowedCapabilities is a list of capabilities that can be requested to add to the container. Capabilities in this field may be added at the pod author's discretion. You must not list a capability in both allowedCapabilities and requiredDropCapabilities."
 
 **Note:** This function appends passed data to existing values
 
@@ -113,7 +113,7 @@ allowedCapabilities is a list of capabilities that can be requested to add to th
 withAllowedFlexVolumes(allowedFlexVolumes)
 ```
 
-allowedFlexVolumes is a whitelist of allowed Flexvolumes.  Empty or nil indicates that all Flexvolumes may be used.  This parameter is effective only when the usage of the Flexvolumes is allowed in the "volumes" field.
+"allowedFlexVolumes is a whitelist of allowed Flexvolumes.  Empty or nil indicates that all Flexvolumes may be used.  This parameter is effective only when the usage of the Flexvolumes is allowed in the \"volumes\" field."
 
 ### fn withAllowedFlexVolumesMixin
 
@@ -121,7 +121,7 @@ allowedFlexVolumes is a whitelist of allowed Flexvolumes.  Empty or nil indicate
 withAllowedFlexVolumesMixin(allowedFlexVolumes)
 ```
 
-allowedFlexVolumes is a whitelist of allowed Flexvolumes.  Empty or nil indicates that all Flexvolumes may be used.  This parameter is effective only when the usage of the Flexvolumes is allowed in the "volumes" field.
+"allowedFlexVolumes is a whitelist of allowed Flexvolumes.  Empty or nil indicates that all Flexvolumes may be used.  This parameter is effective only when the usage of the Flexvolumes is allowed in the \"volumes\" field."
 
 **Note:** This function appends passed data to existing values
 
@@ -131,7 +131,7 @@ allowedFlexVolumes is a whitelist of allowed Flexvolumes.  Empty or nil indicate
 withAllowedHostPaths(allowedHostPaths)
 ```
 
-allowedHostPaths is a white list of allowed host paths. Empty indicates that all host paths may be used.
+"allowedHostPaths is a white list of allowed host paths. Empty indicates that all host paths may be used."
 
 ### fn withAllowedHostPathsMixin
 
@@ -139,7 +139,7 @@ allowedHostPaths is a white list of allowed host paths. Empty indicates that all
 withAllowedHostPathsMixin(allowedHostPaths)
 ```
 
-allowedHostPaths is a white list of allowed host paths. Empty indicates that all host paths may be used.
+"allowedHostPaths is a white list of allowed host paths. Empty indicates that all host paths may be used."
 
 **Note:** This function appends passed data to existing values
 
@@ -149,7 +149,7 @@ allowedHostPaths is a white list of allowed host paths. Empty indicates that all
 withAllowedProcMountTypes(allowedProcMountTypes)
 ```
 
-AllowedProcMountTypes is a whitelist of allowed ProcMountTypes. Empty or nil indicates that only the DefaultProcMountType may be used. This requires the ProcMountType feature flag to be enabled.
+"AllowedProcMountTypes is a whitelist of allowed ProcMountTypes. Empty or nil indicates that only the DefaultProcMountType may be used. This requires the ProcMountType feature flag to be enabled."
 
 ### fn withAllowedProcMountTypesMixin
 
@@ -157,7 +157,7 @@ AllowedProcMountTypes is a whitelist of allowed ProcMountTypes. Empty or nil ind
 withAllowedProcMountTypesMixin(allowedProcMountTypes)
 ```
 
-AllowedProcMountTypes is a whitelist of allowed ProcMountTypes. Empty or nil indicates that only the DefaultProcMountType may be used. This requires the ProcMountType feature flag to be enabled.
+"AllowedProcMountTypes is a whitelist of allowed ProcMountTypes. Empty or nil indicates that only the DefaultProcMountType may be used. This requires the ProcMountType feature flag to be enabled."
 
 **Note:** This function appends passed data to existing values
 
@@ -167,9 +167,7 @@ AllowedProcMountTypes is a whitelist of allowed ProcMountTypes. Empty or nil ind
 withAllowedUnsafeSysctls(allowedUnsafeSysctls)
 ```
 
-allowedUnsafeSysctls is a list of explicitly allowed unsafe sysctls, defaults to none. Each entry is either a plain sysctl name or ends in "*" in which case it is considered as a prefix of allowed sysctls. Single * means all unsafe sysctls are allowed. Kubelet has to whitelist all allowed unsafe sysctls explicitly to avoid rejection.
-
-Examples: e.g. "foo/*" allows "foo/bar", "foo/baz", etc. e.g. "foo.*" allows "foo.bar", "foo.baz", etc.
+"allowedUnsafeSysctls is a list of explicitly allowed unsafe sysctls, defaults to none. Each entry is either a plain sysctl name or ends in \"*\" in which case it is considered as a prefix of allowed sysctls. Single * means all unsafe sysctls are allowed. Kubelet has to whitelist all allowed unsafe sysctls explicitly to avoid rejection.\n\nExamples: e.g. \"foo/*\" allows \"foo/bar\", \"foo/baz\", etc. e.g. \"foo.*\" allows \"foo.bar\", \"foo.baz\", etc."
 
 ### fn withAllowedUnsafeSysctlsMixin
 
@@ -177,9 +175,7 @@ Examples: e.g. "foo/*" allows "foo/bar", "foo/baz", etc. e.g. "foo.*" allows "fo
 withAllowedUnsafeSysctlsMixin(allowedUnsafeSysctls)
 ```
 
-allowedUnsafeSysctls is a list of explicitly allowed unsafe sysctls, defaults to none. Each entry is either a plain sysctl name or ends in "*" in which case it is considered as a prefix of allowed sysctls. Single * means all unsafe sysctls are allowed. Kubelet has to whitelist all allowed unsafe sysctls explicitly to avoid rejection.
-
-Examples: e.g. "foo/*" allows "foo/bar", "foo/baz", etc. e.g. "foo.*" allows "foo.bar", "foo.baz", etc.
+"allowedUnsafeSysctls is a list of explicitly allowed unsafe sysctls, defaults to none. Each entry is either a plain sysctl name or ends in \"*\" in which case it is considered as a prefix of allowed sysctls. Single * means all unsafe sysctls are allowed. Kubelet has to whitelist all allowed unsafe sysctls explicitly to avoid rejection.\n\nExamples: e.g. \"foo/*\" allows \"foo/bar\", \"foo/baz\", etc. e.g. \"foo.*\" allows \"foo.bar\", \"foo.baz\", etc."
 
 **Note:** This function appends passed data to existing values
 
@@ -189,7 +185,7 @@ Examples: e.g. "foo/*" allows "foo/bar", "foo/baz", etc. e.g. "foo.*" allows "fo
 withDefaultAddCapabilities(defaultAddCapabilities)
 ```
 
-defaultAddCapabilities is the default set of capabilities that will be added to the container unless the pod spec specifically drops the capability.  You may not list a capability in both defaultAddCapabilities and requiredDropCapabilities. Capabilities added here are implicitly allowed, and need not be included in the allowedCapabilities list.
+"defaultAddCapabilities is the default set of capabilities that will be added to the container unless the pod spec specifically drops the capability.  You may not list a capability in both defaultAddCapabilities and requiredDropCapabilities. Capabilities added here are implicitly allowed, and need not be included in the allowedCapabilities list."
 
 ### fn withDefaultAddCapabilitiesMixin
 
@@ -197,7 +193,7 @@ defaultAddCapabilities is the default set of capabilities that will be added to 
 withDefaultAddCapabilitiesMixin(defaultAddCapabilities)
 ```
 
-defaultAddCapabilities is the default set of capabilities that will be added to the container unless the pod spec specifically drops the capability.  You may not list a capability in both defaultAddCapabilities and requiredDropCapabilities. Capabilities added here are implicitly allowed, and need not be included in the allowedCapabilities list.
+"defaultAddCapabilities is the default set of capabilities that will be added to the container unless the pod spec specifically drops the capability.  You may not list a capability in both defaultAddCapabilities and requiredDropCapabilities. Capabilities added here are implicitly allowed, and need not be included in the allowedCapabilities list."
 
 **Note:** This function appends passed data to existing values
 
@@ -207,7 +203,7 @@ defaultAddCapabilities is the default set of capabilities that will be added to 
 withDefaultAllowPrivilegeEscalation(defaultAllowPrivilegeEscalation)
 ```
 
-defaultAllowPrivilegeEscalation controls the default setting for whether a process can gain more privileges than its parent process.
+"defaultAllowPrivilegeEscalation controls the default setting for whether a process can gain more privileges than its parent process."
 
 ### fn withForbiddenSysctls
 
@@ -215,9 +211,7 @@ defaultAllowPrivilegeEscalation controls the default setting for whether a proce
 withForbiddenSysctls(forbiddenSysctls)
 ```
 
-forbiddenSysctls is a list of explicitly forbidden sysctls, defaults to none. Each entry is either a plain sysctl name or ends in "*" in which case it is considered as a prefix of forbidden sysctls. Single * means all sysctls are forbidden.
-
-Examples: e.g. "foo/*" forbids "foo/bar", "foo/baz", etc. e.g. "foo.*" forbids "foo.bar", "foo.baz", etc.
+"forbiddenSysctls is a list of explicitly forbidden sysctls, defaults to none. Each entry is either a plain sysctl name or ends in \"*\" in which case it is considered as a prefix of forbidden sysctls. Single * means all sysctls are forbidden.\n\nExamples: e.g. \"foo/*\" forbids \"foo/bar\", \"foo/baz\", etc. e.g. \"foo.*\" forbids \"foo.bar\", \"foo.baz\", etc."
 
 ### fn withForbiddenSysctlsMixin
 
@@ -225,9 +219,7 @@ Examples: e.g. "foo/*" forbids "foo/bar", "foo/baz", etc. e.g. "foo.*" forbids "
 withForbiddenSysctlsMixin(forbiddenSysctls)
 ```
 
-forbiddenSysctls is a list of explicitly forbidden sysctls, defaults to none. Each entry is either a plain sysctl name or ends in "*" in which case it is considered as a prefix of forbidden sysctls. Single * means all sysctls are forbidden.
-
-Examples: e.g. "foo/*" forbids "foo/bar", "foo/baz", etc. e.g. "foo.*" forbids "foo.bar", "foo.baz", etc.
+"forbiddenSysctls is a list of explicitly forbidden sysctls, defaults to none. Each entry is either a plain sysctl name or ends in \"*\" in which case it is considered as a prefix of forbidden sysctls. Single * means all sysctls are forbidden.\n\nExamples: e.g. \"foo/*\" forbids \"foo/bar\", \"foo/baz\", etc. e.g. \"foo.*\" forbids \"foo.bar\", \"foo.baz\", etc."
 
 **Note:** This function appends passed data to existing values
 
@@ -237,7 +229,7 @@ Examples: e.g. "foo/*" forbids "foo/bar", "foo/baz", etc. e.g. "foo.*" forbids "
 withHostIPC(hostIPC)
 ```
 
-hostIPC determines if the policy allows the use of HostIPC in the pod spec.
+"hostIPC determines if the policy allows the use of HostIPC in the pod spec."
 
 ### fn withHostNetwork
 
@@ -245,7 +237,7 @@ hostIPC determines if the policy allows the use of HostIPC in the pod spec.
 withHostNetwork(hostNetwork)
 ```
 
-hostNetwork determines if the policy allows the use of HostNetwork in the pod spec.
+"hostNetwork determines if the policy allows the use of HostNetwork in the pod spec."
 
 ### fn withHostPID
 
@@ -253,7 +245,7 @@ hostNetwork determines if the policy allows the use of HostNetwork in the pod sp
 withHostPID(hostPID)
 ```
 
-hostPID determines if the policy allows the use of HostPID in the pod spec.
+"hostPID determines if the policy allows the use of HostPID in the pod spec."
 
 ### fn withHostPorts
 
@@ -261,7 +253,7 @@ hostPID determines if the policy allows the use of HostPID in the pod spec.
 withHostPorts(hostPorts)
 ```
 
-hostPorts determines which host port ranges are allowed to be exposed.
+"hostPorts determines which host port ranges are allowed to be exposed."
 
 ### fn withHostPortsMixin
 
@@ -269,7 +261,7 @@ hostPorts determines which host port ranges are allowed to be exposed.
 withHostPortsMixin(hostPorts)
 ```
 
-hostPorts determines which host port ranges are allowed to be exposed.
+"hostPorts determines which host port ranges are allowed to be exposed."
 
 **Note:** This function appends passed data to existing values
 
@@ -279,7 +271,7 @@ hostPorts determines which host port ranges are allowed to be exposed.
 withPrivileged(privileged)
 ```
 
-privileged determines if a pod can request to be run as privileged.
+"privileged determines if a pod can request to be run as privileged."
 
 ### fn withReadOnlyRootFilesystem
 
@@ -287,7 +279,7 @@ privileged determines if a pod can request to be run as privileged.
 withReadOnlyRootFilesystem(readOnlyRootFilesystem)
 ```
 
-readOnlyRootFilesystem when set to true will force containers to run with a read only root file system.  If the container specifically requests to run with a non-read only root file system the PSP should deny the pod. If set to false the container may run with a read only root file system if it wishes but it will not be forced to.
+"readOnlyRootFilesystem when set to true will force containers to run with a read only root file system.  If the container specifically requests to run with a non-read only root file system the PSP should deny the pod. If set to false the container may run with a read only root file system if it wishes but it will not be forced to."
 
 ### fn withRequiredDropCapabilities
 
@@ -295,7 +287,7 @@ readOnlyRootFilesystem when set to true will force containers to run with a read
 withRequiredDropCapabilities(requiredDropCapabilities)
 ```
 
-requiredDropCapabilities are the capabilities that will be dropped from the container.  These are required to be dropped and cannot be added.
+"requiredDropCapabilities are the capabilities that will be dropped from the container.  These are required to be dropped and cannot be added."
 
 ### fn withRequiredDropCapabilitiesMixin
 
@@ -303,7 +295,7 @@ requiredDropCapabilities are the capabilities that will be dropped from the cont
 withRequiredDropCapabilitiesMixin(requiredDropCapabilities)
 ```
 
-requiredDropCapabilities are the capabilities that will be dropped from the container.  These are required to be dropped and cannot be added.
+"requiredDropCapabilities are the capabilities that will be dropped from the container.  These are required to be dropped and cannot be added."
 
 **Note:** This function appends passed data to existing values
 
@@ -313,7 +305,7 @@ requiredDropCapabilities are the capabilities that will be dropped from the cont
 withVolumes(volumes)
 ```
 
-volumes is a white list of allowed volume plugins. Empty indicates that no volumes may be used. To allow all volumes you may use '*'.
+"volumes is a white list of allowed volume plugins. Empty indicates that no volumes may be used. To allow all volumes you may use '*'."
 
 ### fn withVolumesMixin
 
@@ -321,13 +313,13 @@ volumes is a white list of allowed volume plugins. Empty indicates that no volum
 withVolumesMixin(volumes)
 ```
 
-volumes is a white list of allowed volume plugins. Empty indicates that no volumes may be used. To allow all volumes you may use '*'.
+"volumes is a white list of allowed volume plugins. Empty indicates that no volumes may be used. To allow all volumes you may use '*'."
 
 **Note:** This function appends passed data to existing values
 
 ## obj fsGroup
 
-FSGroupStrategyOptions defines the strategy type and options used to create the strategy.
+"FSGroupStrategyOptions defines the strategy type and options used to create the strategy."
 
 ### fn fsGroup.withRanges
 
@@ -335,7 +327,7 @@ FSGroupStrategyOptions defines the strategy type and options used to create the 
 withRanges(ranges)
 ```
 
-ranges are the allowed ranges of fs groups.  If you would like to force a single fs group then supply a single range with the same start and end. Required for MustRunAs.
+"ranges are the allowed ranges of fs groups.  If you would like to force a single fs group then supply a single range with the same start and end. Required for MustRunAs."
 
 ### fn fsGroup.withRangesMixin
 
@@ -343,7 +335,7 @@ ranges are the allowed ranges of fs groups.  If you would like to force a single
 withRangesMixin(ranges)
 ```
 
-ranges are the allowed ranges of fs groups.  If you would like to force a single fs group then supply a single range with the same start and end. Required for MustRunAs.
+"ranges are the allowed ranges of fs groups.  If you would like to force a single fs group then supply a single range with the same start and end. Required for MustRunAs."
 
 **Note:** This function appends passed data to existing values
 
@@ -353,11 +345,11 @@ ranges are the allowed ranges of fs groups.  If you would like to force a single
 withRule(rule)
 ```
 
-rule is the strategy that will dictate what FSGroup is used in the SecurityContext.
+"rule is the strategy that will dictate what FSGroup is used in the SecurityContext."
 
 ## obj runAsGroup
 
-RunAsGroupStrategyOptions defines the strategy type and any options used to create the strategy.
+"RunAsGroupStrategyOptions defines the strategy type and any options used to create the strategy."
 
 ### fn runAsGroup.withRanges
 
@@ -365,7 +357,7 @@ RunAsGroupStrategyOptions defines the strategy type and any options used to crea
 withRanges(ranges)
 ```
 
-ranges are the allowed ranges of gids that may be used. If you would like to force a single gid then supply a single range with the same start and end. Required for MustRunAs.
+"ranges are the allowed ranges of gids that may be used. If you would like to force a single gid then supply a single range with the same start and end. Required for MustRunAs."
 
 ### fn runAsGroup.withRangesMixin
 
@@ -373,7 +365,7 @@ ranges are the allowed ranges of gids that may be used. If you would like to for
 withRangesMixin(ranges)
 ```
 
-ranges are the allowed ranges of gids that may be used. If you would like to force a single gid then supply a single range with the same start and end. Required for MustRunAs.
+"ranges are the allowed ranges of gids that may be used. If you would like to force a single gid then supply a single range with the same start and end. Required for MustRunAs."
 
 **Note:** This function appends passed data to existing values
 
@@ -383,11 +375,11 @@ ranges are the allowed ranges of gids that may be used. If you would like to for
 withRule(rule)
 ```
 
-rule is the strategy that will dictate the allowable RunAsGroup values that may be set.
+"rule is the strategy that will dictate the allowable RunAsGroup values that may be set."
 
 ## obj runAsUser
 
-RunAsUserStrategyOptions defines the strategy type and any options used to create the strategy.
+"RunAsUserStrategyOptions defines the strategy type and any options used to create the strategy."
 
 ### fn runAsUser.withRanges
 
@@ -395,7 +387,7 @@ RunAsUserStrategyOptions defines the strategy type and any options used to creat
 withRanges(ranges)
 ```
 
-ranges are the allowed ranges of uids that may be used. If you would like to force a single uid then supply a single range with the same start and end. Required for MustRunAs.
+"ranges are the allowed ranges of uids that may be used. If you would like to force a single uid then supply a single range with the same start and end. Required for MustRunAs."
 
 ### fn runAsUser.withRangesMixin
 
@@ -403,7 +395,7 @@ ranges are the allowed ranges of uids that may be used. If you would like to for
 withRangesMixin(ranges)
 ```
 
-ranges are the allowed ranges of uids that may be used. If you would like to force a single uid then supply a single range with the same start and end. Required for MustRunAs.
+"ranges are the allowed ranges of uids that may be used. If you would like to force a single uid then supply a single range with the same start and end. Required for MustRunAs."
 
 **Note:** This function appends passed data to existing values
 
@@ -413,11 +405,11 @@ ranges are the allowed ranges of uids that may be used. If you would like to for
 withRule(rule)
 ```
 
-rule is the strategy that will dictate the allowable RunAsUser values that may be set.
+"rule is the strategy that will dictate the allowable RunAsUser values that may be set."
 
 ## obj seLinux
 
-SELinuxStrategyOptions defines the strategy type and any options used to create the strategy.
+"SELinuxStrategyOptions defines the strategy type and any options used to create the strategy."
 
 ### fn seLinux.withRule
 
@@ -425,11 +417,11 @@ SELinuxStrategyOptions defines the strategy type and any options used to create 
 withRule(rule)
 ```
 
-rule is the strategy that will dictate the allowable labels that may be set.
+"rule is the strategy that will dictate the allowable labels that may be set."
 
 ## obj seLinux.seLinuxOptions
 
-SELinuxOptions are the labels to be applied to the container
+"SELinuxOptions are the labels to be applied to the container"
 
 ### fn seLinux.seLinuxOptions.withLevel
 
@@ -437,7 +429,7 @@ SELinuxOptions are the labels to be applied to the container
 withLevel(level)
 ```
 
-Level is SELinux level label that applies to the container.
+"Level is SELinux level label that applies to the container."
 
 ### fn seLinux.seLinuxOptions.withRole
 
@@ -445,7 +437,7 @@ Level is SELinux level label that applies to the container.
 withRole(role)
 ```
 
-Role is a SELinux role label that applies to the container.
+"Role is a SELinux role label that applies to the container."
 
 ### fn seLinux.seLinuxOptions.withType
 
@@ -453,7 +445,7 @@ Role is a SELinux role label that applies to the container.
 withType(type)
 ```
 
-Type is a SELinux type label that applies to the container.
+"Type is a SELinux type label that applies to the container."
 
 ### fn seLinux.seLinuxOptions.withUser
 
@@ -461,11 +453,11 @@ Type is a SELinux type label that applies to the container.
 withUser(user)
 ```
 
-User is a SELinux user label that applies to the container.
+"User is a SELinux user label that applies to the container."
 
 ## obj supplementalGroups
 
-SupplementalGroupsStrategyOptions defines the strategy type and options used to create the strategy.
+"SupplementalGroupsStrategyOptions defines the strategy type and options used to create the strategy."
 
 ### fn supplementalGroups.withRanges
 
@@ -473,7 +465,7 @@ SupplementalGroupsStrategyOptions defines the strategy type and options used to 
 withRanges(ranges)
 ```
 
-ranges are the allowed ranges of supplemental groups.  If you would like to force a single supplemental group then supply a single range with the same start and end. Required for MustRunAs.
+"ranges are the allowed ranges of supplemental groups.  If you would like to force a single supplemental group then supply a single range with the same start and end. Required for MustRunAs."
 
 ### fn supplementalGroups.withRangesMixin
 
@@ -481,7 +473,7 @@ ranges are the allowed ranges of supplemental groups.  If you would like to forc
 withRangesMixin(ranges)
 ```
 
-ranges are the allowed ranges of supplemental groups.  If you would like to force a single supplemental group then supply a single range with the same start and end. Required for MustRunAs.
+"ranges are the allowed ranges of supplemental groups.  If you would like to force a single supplemental group then supply a single range with the same start and end. Required for MustRunAs."
 
 **Note:** This function appends passed data to existing values
 
@@ -491,4 +483,4 @@ ranges are the allowed ranges of supplemental groups.  If you would like to forc
 withRule(rule)
 ```
 
-rule is the strategy that will dictate what supplemental groups is used in the SecurityContext.
+"rule is the strategy that will dictate what supplemental groups is used in the SecurityContext."

@@ -4,7 +4,7 @@ permalink: /1.19/core/v1/persistentVolumeStatus/
 
 # core.v1.persistentVolumeStatus
 
-PersistentVolumeStatus is the current status of a persistent volume.
+"PersistentVolumeStatus is the current status of a persistent volume."
 
 ## Index
 
@@ -20,7 +20,7 @@ PersistentVolumeStatus is the current status of a persistent volume.
 withMessage(message)
 ```
 
-A human-readable message indicating details about why the volume is in this state.
+"A human-readable message indicating details about why the volume is in this state."
 
 ### fn withPhase
 
@@ -28,7 +28,7 @@ A human-readable message indicating details about why the volume is in this stat
 withPhase(phase)
 ```
 
-Phase indicates if a volume is available, bound to a claim, or released by a claim. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#phase
+"Phase indicates if a volume is available, bound to a claim, or released by a claim. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#phase"
 
 ### fn withReason
 
@@ -36,4 +36,4 @@ Phase indicates if a volume is available, bound to a claim, or released by a cla
 withReason(reason)
 ```
 
-Reason is a brief CamelCase string that describes any failure and is meant for machine parsing and tidy display in the CLI.
+"Reason is a brief CamelCase string that describes any failure and is meant for machine parsing and tidy display in the CLI."

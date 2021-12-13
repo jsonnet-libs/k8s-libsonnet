@@ -4,7 +4,7 @@ permalink: /1.21/core/v1/nodeSelectorTerm/
 
 # core.v1.nodeSelectorTerm
 
-A null or empty node selector term matches no objects. The requirements of them are ANDed. The TopologySelectorTerm type implements a subset of the NodeSelectorTerm.
+"A null or empty node selector term matches no objects. The requirements of them are ANDed. The TopologySelectorTerm type implements a subset of the NodeSelectorTerm."
 
 ## Index
 
@@ -21,7 +21,7 @@ A null or empty node selector term matches no objects. The requirements of them 
 withMatchExpressions(matchExpressions)
 ```
 
-A list of node selector requirements by node's labels.
+"A list of node selector requirements by node's labels."
 
 ### fn withMatchExpressionsMixin
 
@@ -29,7 +29,7 @@ A list of node selector requirements by node's labels.
 withMatchExpressionsMixin(matchExpressions)
 ```
 
-A list of node selector requirements by node's labels.
+"A list of node selector requirements by node's labels."
 
 **Note:** This function appends passed data to existing values
 
@@ -39,7 +39,7 @@ A list of node selector requirements by node's labels.
 withMatchFields(matchFields)
 ```
 
-A list of node selector requirements by node's fields.
+"A list of node selector requirements by node's fields."
 
 ### fn withMatchFieldsMixin
 
@@ -47,6 +47,6 @@ A list of node selector requirements by node's fields.
 withMatchFieldsMixin(matchFields)
 ```
 
-A list of node selector requirements by node's fields.
+"A list of node selector requirements by node's fields."
 
 **Note:** This function appends passed data to existing values

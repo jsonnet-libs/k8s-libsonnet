@@ -4,7 +4,7 @@ permalink: /1.17/batch/v1/jobCondition/
 
 # batch.v1.jobCondition
 
-JobCondition describes current state of a job.
+"JobCondition describes current state of a job."
 
 ## Index
 
@@ -22,7 +22,7 @@ JobCondition describes current state of a job.
 withLastProbeTime(lastProbeTime)
 ```
 
-Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.
+"Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers."
 
 ### fn withLastTransitionTime
 
@@ -30,7 +30,7 @@ Time is a wrapper around time.Time which supports correct marshaling to YAML and
 withLastTransitionTime(lastTransitionTime)
 ```
 
-Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.
+"Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers."
 
 ### fn withMessage
 
@@ -38,7 +38,7 @@ Time is a wrapper around time.Time which supports correct marshaling to YAML and
 withMessage(message)
 ```
 
-Human readable message indicating details about last transition.
+"Human readable message indicating details about last transition."
 
 ### fn withReason
 
@@ -46,7 +46,7 @@ Human readable message indicating details about last transition.
 withReason(reason)
 ```
 
-(brief) reason for the condition's last transition.
+"(brief) reason for the condition's last transition."
 
 ### fn withType
 
@@ -54,4 +54,4 @@ withReason(reason)
 withType(type)
 ```
 
-Type of job condition, Complete or Failed.
+"Type of job condition, Complete or Failed."

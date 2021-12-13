@@ -4,7 +4,7 @@ permalink: /1.17/extensions/v1beta1/seLinuxStrategyOptions/
 
 # extensions.v1beta1.seLinuxStrategyOptions
 
-SELinuxStrategyOptions defines the strategy type and any options used to create the strategy. Deprecated: use SELinuxStrategyOptions from policy API Group instead.
+"SELinuxStrategyOptions defines the strategy type and any options used to create the strategy. Deprecated: use SELinuxStrategyOptions from policy API Group instead."
 
 ## Index
 
@@ -23,11 +23,11 @@ SELinuxStrategyOptions defines the strategy type and any options used to create 
 withRule(rule)
 ```
 
-rule is the strategy that will dictate the allowable labels that may be set.
+"rule is the strategy that will dictate the allowable labels that may be set."
 
 ## obj seLinuxOptions
 
-SELinuxOptions are the labels to be applied to the container
+"SELinuxOptions are the labels to be applied to the container"
 
 ### fn seLinuxOptions.withLevel
 
@@ -35,7 +35,7 @@ SELinuxOptions are the labels to be applied to the container
 withLevel(level)
 ```
 
-Level is SELinux level label that applies to the container.
+"Level is SELinux level label that applies to the container."
 
 ### fn seLinuxOptions.withRole
 
@@ -43,7 +43,7 @@ Level is SELinux level label that applies to the container.
 withRole(role)
 ```
 
-Role is a SELinux role label that applies to the container.
+"Role is a SELinux role label that applies to the container."
 
 ### fn seLinuxOptions.withType
 
@@ -51,7 +51,7 @@ Role is a SELinux role label that applies to the container.
 withType(type)
 ```
 
-Type is a SELinux type label that applies to the container.
+"Type is a SELinux type label that applies to the container."
 
 ### fn seLinuxOptions.withUser
 
@@ -59,4 +59,4 @@ Type is a SELinux type label that applies to the container.
 withUser(user)
 ```
 
-User is a SELinux user label that applies to the container.
+"User is a SELinux user label that applies to the container."

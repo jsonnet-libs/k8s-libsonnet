@@ -4,7 +4,7 @@ permalink: /1.19/apiregistration/v1beta1/apiServiceStatus/
 
 # apiregistration.v1beta1.apiServiceStatus
 
-APIServiceStatus contains derived information about an API server
+"APIServiceStatus contains derived information about an API server"
 
 ## Index
 
@@ -19,7 +19,7 @@ APIServiceStatus contains derived information about an API server
 withConditions(conditions)
 ```
 
-Current service state of apiService.
+"Current service state of apiService."
 
 ### fn withConditionsMixin
 
@@ -27,6 +27,6 @@ Current service state of apiService.
 withConditionsMixin(conditions)
 ```
 
-Current service state of apiService.
+"Current service state of apiService."
 
 **Note:** This function appends passed data to existing values

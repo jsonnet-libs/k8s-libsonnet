@@ -4,7 +4,7 @@ permalink: /1.15/apps/v1/deployment/
 
 # apps.v1.deployment
 
-Deployment enables declarative updates for Pods and ReplicaSets.
+"Deployment enables declarative updates for Pods and ReplicaSets."
 
 ## Index
 
@@ -297,7 +297,7 @@ mixin.
 
 ## obj metadata
 
-ObjectMeta is metadata that all persisted resources must have, which includes all objects users must create.
+"ObjectMeta is metadata that all persisted resources must have, which includes all objects users must create."
 
 ### fn metadata.withAnnotations
 
@@ -305,7 +305,7 @@ ObjectMeta is metadata that all persisted resources must have, which includes al
 withAnnotations(annotations)
 ```
 
-Annotations is an unstructured key value map stored with a resource that may be set by external tools to store and retrieve arbitrary metadata. They are not queryable and should be preserved when modifying objects. More info: http://kubernetes.io/docs/user-guide/annotations
+"Annotations is an unstructured key value map stored with a resource that may be set by external tools to store and retrieve arbitrary metadata. They are not queryable and should be preserved when modifying objects. More info: http://kubernetes.io/docs/user-guide/annotations"
 
 ### fn metadata.withAnnotationsMixin
 
@@ -313,7 +313,7 @@ Annotations is an unstructured key value map stored with a resource that may be 
 withAnnotationsMixin(annotations)
 ```
 
-Annotations is an unstructured key value map stored with a resource that may be set by external tools to store and retrieve arbitrary metadata. They are not queryable and should be preserved when modifying objects. More info: http://kubernetes.io/docs/user-guide/annotations
+"Annotations is an unstructured key value map stored with a resource that may be set by external tools to store and retrieve arbitrary metadata. They are not queryable and should be preserved when modifying objects. More info: http://kubernetes.io/docs/user-guide/annotations"
 
 **Note:** This function appends passed data to existing values
 
@@ -323,7 +323,7 @@ Annotations is an unstructured key value map stored with a resource that may be 
 withClusterName(clusterName)
 ```
 
-The name of the cluster which the object belongs to. This is used to distinguish resources with same name and namespace in different clusters. This field is not set anywhere right now and apiserver is going to ignore it if set in create or update request.
+"The name of the cluster which the object belongs to. This is used to distinguish resources with same name and namespace in different clusters. This field is not set anywhere right now and apiserver is going to ignore it if set in create or update request."
 
 ### fn metadata.withCreationTimestamp
 
@@ -331,7 +331,7 @@ The name of the cluster which the object belongs to. This is used to distinguish
 withCreationTimestamp(creationTimestamp)
 ```
 
-Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.
+"Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers."
 
 ### fn metadata.withDeletionGracePeriodSeconds
 
@@ -339,7 +339,7 @@ Time is a wrapper around time.Time which supports correct marshaling to YAML and
 withDeletionGracePeriodSeconds(deletionGracePeriodSeconds)
 ```
 
-Number of seconds allowed for this object to gracefully terminate before it will be removed from the system. Only set when deletionTimestamp is also set. May only be shortened. Read-only.
+"Number of seconds allowed for this object to gracefully terminate before it will be removed from the system. Only set when deletionTimestamp is also set. May only be shortened. Read-only."
 
 ### fn metadata.withDeletionTimestamp
 
@@ -347,7 +347,7 @@ Number of seconds allowed for this object to gracefully terminate before it will
 withDeletionTimestamp(deletionTimestamp)
 ```
 
-Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.
+"Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers."
 
 ### fn metadata.withFinalizers
 
@@ -355,7 +355,7 @@ Time is a wrapper around time.Time which supports correct marshaling to YAML and
 withFinalizers(finalizers)
 ```
 
-Must be empty before the object is deleted from the registry. Each entry is an identifier for the responsible component that will remove the entry from the list. If the deletionTimestamp of the object is non-nil, entries in this list can only be removed.
+"Must be empty before the object is deleted from the registry. Each entry is an identifier for the responsible component that will remove the entry from the list. If the deletionTimestamp of the object is non-nil, entries in this list can only be removed."
 
 ### fn metadata.withFinalizersMixin
 
@@ -363,7 +363,7 @@ Must be empty before the object is deleted from the registry. Each entry is an i
 withFinalizersMixin(finalizers)
 ```
 
-Must be empty before the object is deleted from the registry. Each entry is an identifier for the responsible component that will remove the entry from the list. If the deletionTimestamp of the object is non-nil, entries in this list can only be removed.
+"Must be empty before the object is deleted from the registry. Each entry is an identifier for the responsible component that will remove the entry from the list. If the deletionTimestamp of the object is non-nil, entries in this list can only be removed."
 
 **Note:** This function appends passed data to existing values
 
@@ -373,11 +373,7 @@ Must be empty before the object is deleted from the registry. Each entry is an i
 withGenerateName(generateName)
 ```
 
-GenerateName is an optional prefix, used by the server, to generate a unique name ONLY IF the Name field has not been provided. If this field is used, the name returned to the client will be different than the name passed. This value will also be combined with a unique suffix. The provided value has the same validation rules as the Name field, and may be truncated by the length of the suffix required to make the value unique on the server.
-
-If this field is specified and the generated name exists, the server will NOT return a 409 - instead, it will either return 201 Created or 500 with Reason ServerTimeout indicating a unique name could not be found in the time allotted, and the client should retry (optionally after the time indicated in the Retry-After header).
-
-Applied only if Name is not specified. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#idempotency
+"GenerateName is an optional prefix, used by the server, to generate a unique name ONLY IF the Name field has not been provided. If this field is used, the name returned to the client will be different than the name passed. This value will also be combined with a unique suffix. The provided value has the same validation rules as the Name field, and may be truncated by the length of the suffix required to make the value unique on the server.\n\nIf this field is specified and the generated name exists, the server will NOT return a 409 - instead, it will either return 201 Created or 500 with Reason ServerTimeout indicating a unique name could not be found in the time allotted, and the client should retry (optionally after the time indicated in the Retry-After header).\n\nApplied only if Name is not specified. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#idempotency"
 
 ### fn metadata.withGeneration
 
@@ -385,7 +381,7 @@ Applied only if Name is not specified. More info: https://git.k8s.io/community/c
 withGeneration(generation)
 ```
 
-A sequence number representing a specific generation of the desired state. Populated by the system. Read-only.
+"A sequence number representing a specific generation of the desired state. Populated by the system. Read-only."
 
 ### fn metadata.withLabels
 
@@ -393,7 +389,7 @@ A sequence number representing a specific generation of the desired state. Popul
 withLabels(labels)
 ```
 
-Map of string keys and values that can be used to organize and categorize (scope and select) objects. May match selectors of replication controllers and services. More info: http://kubernetes.io/docs/user-guide/labels
+"Map of string keys and values that can be used to organize and categorize (scope and select) objects. May match selectors of replication controllers and services. More info: http://kubernetes.io/docs/user-guide/labels"
 
 ### fn metadata.withLabelsMixin
 
@@ -401,7 +397,7 @@ Map of string keys and values that can be used to organize and categorize (scope
 withLabelsMixin(labels)
 ```
 
-Map of string keys and values that can be used to organize and categorize (scope and select) objects. May match selectors of replication controllers and services. More info: http://kubernetes.io/docs/user-guide/labels
+"Map of string keys and values that can be used to organize and categorize (scope and select) objects. May match selectors of replication controllers and services. More info: http://kubernetes.io/docs/user-guide/labels"
 
 **Note:** This function appends passed data to existing values
 
@@ -411,9 +407,7 @@ Map of string keys and values that can be used to organize and categorize (scope
 withManagedFields(managedFields)
 ```
 
-ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like 'ci-cd'. The set of fields is always in the version that the workflow used when modifying the object.
-
-This field is alpha and can be changed or removed without notice.
+"ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like \"ci-cd\". The set of fields is always in the version that the workflow used when modifying the object.\n\nThis field is alpha and can be changed or removed without notice."
 
 ### fn metadata.withManagedFieldsMixin
 
@@ -421,9 +415,7 @@ This field is alpha and can be changed or removed without notice.
 withManagedFieldsMixin(managedFields)
 ```
 
-ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like 'ci-cd'. The set of fields is always in the version that the workflow used when modifying the object.
-
-This field is alpha and can be changed or removed without notice.
+"ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like \"ci-cd\". The set of fields is always in the version that the workflow used when modifying the object.\n\nThis field is alpha and can be changed or removed without notice."
 
 **Note:** This function appends passed data to existing values
 
@@ -433,7 +425,7 @@ This field is alpha and can be changed or removed without notice.
 withName(name)
 ```
 
-Name must be unique within a namespace. Is required when creating resources, although some resources may allow a client to request the generation of an appropriate name automatically. Name is primarily intended for creation idempotence and configuration definition. Cannot be updated. More info: http://kubernetes.io/docs/user-guide/identifiers#names
+"Name must be unique within a namespace. Is required when creating resources, although some resources may allow a client to request the generation of an appropriate name automatically. Name is primarily intended for creation idempotence and configuration definition. Cannot be updated. More info: http://kubernetes.io/docs/user-guide/identifiers#names"
 
 ### fn metadata.withNamespace
 
@@ -441,9 +433,7 @@ Name must be unique within a namespace. Is required when creating resources, alt
 withNamespace(namespace)
 ```
 
-Namespace defines the space within each name must be unique. An empty namespace is equivalent to the "default" namespace, but "default" is the canonical representation. Not all objects are required to be scoped to a namespace - the value of this field for those objects will be empty.
-
-Must be a DNS_LABEL. Cannot be updated. More info: http://kubernetes.io/docs/user-guide/namespaces
+"Namespace defines the space within each name must be unique. An empty namespace is equivalent to the \"default\" namespace, but \"default\" is the canonical representation. Not all objects are required to be scoped to a namespace - the value of this field for those objects will be empty.\n\nMust be a DNS_LABEL. Cannot be updated. More info: http://kubernetes.io/docs/user-guide/namespaces"
 
 ### fn metadata.withOwnerReferences
 
@@ -451,7 +441,7 @@ Must be a DNS_LABEL. Cannot be updated. More info: http://kubernetes.io/docs/use
 withOwnerReferences(ownerReferences)
 ```
 
-List of objects depended by this object. If ALL objects in the list have been deleted, this object will be garbage collected. If this object is managed by a controller, then an entry in this list will point to this controller, with the controller field set to true. There cannot be more than one managing controller.
+"List of objects depended by this object. If ALL objects in the list have been deleted, this object will be garbage collected. If this object is managed by a controller, then an entry in this list will point to this controller, with the controller field set to true. There cannot be more than one managing controller."
 
 ### fn metadata.withOwnerReferencesMixin
 
@@ -459,7 +449,7 @@ List of objects depended by this object. If ALL objects in the list have been de
 withOwnerReferencesMixin(ownerReferences)
 ```
 
-List of objects depended by this object. If ALL objects in the list have been deleted, this object will be garbage collected. If this object is managed by a controller, then an entry in this list will point to this controller, with the controller field set to true. There cannot be more than one managing controller.
+"List of objects depended by this object. If ALL objects in the list have been deleted, this object will be garbage collected. If this object is managed by a controller, then an entry in this list will point to this controller, with the controller field set to true. There cannot be more than one managing controller."
 
 **Note:** This function appends passed data to existing values
 
@@ -469,9 +459,7 @@ List of objects depended by this object. If ALL objects in the list have been de
 withResourceVersion(resourceVersion)
 ```
 
-An opaque value that represents the internal version of this object that can be used by clients to determine when objects have changed. May be used for optimistic concurrency, change detection, and the watch operation on a resource or set of resources. Clients must treat these values as opaque and passed unmodified back to the server. They may only be valid for a particular resource or set of resources.
-
-Populated by the system. Read-only. Value must be treated as opaque by clients and . More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#concurrency-control-and-consistency
+"An opaque value that represents the internal version of this object that can be used by clients to determine when objects have changed. May be used for optimistic concurrency, change detection, and the watch operation on a resource or set of resources. Clients must treat these values as opaque and passed unmodified back to the server. They may only be valid for a particular resource or set of resources.\n\nPopulated by the system. Read-only. Value must be treated as opaque by clients and . More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#concurrency-control-and-consistency"
 
 ### fn metadata.withSelfLink
 
@@ -479,7 +467,7 @@ Populated by the system. Read-only. Value must be treated as opaque by clients a
 withSelfLink(selfLink)
 ```
 
-SelfLink is a URL representing this object. Populated by the system. Read-only.
+"SelfLink is a URL representing this object. Populated by the system. Read-only."
 
 ### fn metadata.withUid
 
@@ -487,13 +475,11 @@ SelfLink is a URL representing this object. Populated by the system. Read-only.
 withUid(uid)
 ```
 
-UID is the unique in time and space value for this object. It is typically generated by the server on successful creation of a resource and is not allowed to change on PUT operations.
-
-Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-guide/identifiers#uids
+"UID is the unique in time and space value for this object. It is typically generated by the server on successful creation of a resource and is not allowed to change on PUT operations.\n\nPopulated by the system. Read-only. More info: http://kubernetes.io/docs/user-guide/identifiers#uids"
 
 ## obj metadata.initializers
 
-Initializers tracks the progress of initialization.
+"Initializers tracks the progress of initialization."
 
 ### fn metadata.initializers.withPending
 
@@ -501,7 +487,7 @@ Initializers tracks the progress of initialization.
 withPending(pending)
 ```
 
-Pending is a list of initializers that must execute in order before this object is visible. When the last pending initializer is removed, and no failing result is set, the initializers struct will be set to nil and the object is considered as initialized and visible to all clients.
+"Pending is a list of initializers that must execute in order before this object is visible. When the last pending initializer is removed, and no failing result is set, the initializers struct will be set to nil and the object is considered as initialized and visible to all clients."
 
 ### fn metadata.initializers.withPendingMixin
 
@@ -509,13 +495,13 @@ Pending is a list of initializers that must execute in order before this object 
 withPendingMixin(pending)
 ```
 
-Pending is a list of initializers that must execute in order before this object is visible. When the last pending initializer is removed, and no failing result is set, the initializers struct will be set to nil and the object is considered as initialized and visible to all clients.
+"Pending is a list of initializers that must execute in order before this object is visible. When the last pending initializer is removed, and no failing result is set, the initializers struct will be set to nil and the object is considered as initialized and visible to all clients."
 
 **Note:** This function appends passed data to existing values
 
 ## obj metadata.initializers.result
 
-Status is a return value for calls that don't return other objects.
+"Status is a return value for calls that don't return other objects."
 
 ### fn metadata.initializers.result.withApiVersion
 
@@ -523,7 +509,7 @@ Status is a return value for calls that don't return other objects.
 withApiVersion(apiVersion)
 ```
 
-APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+"APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#resources"
 
 ### fn metadata.initializers.result.withCode
 
@@ -531,7 +517,7 @@ APIVersion defines the versioned schema of this representation of an object. Ser
 withCode(code)
 ```
 
-Suggested HTTP return code for this status, 0 if not set.
+"Suggested HTTP return code for this status, 0 if not set."
 
 ### fn metadata.initializers.result.withKind
 
@@ -539,7 +525,7 @@ Suggested HTTP return code for this status, 0 if not set.
 withKind(kind)
 ```
 
-Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+"Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds"
 
 ### fn metadata.initializers.result.withMessage
 
@@ -547,7 +533,7 @@ Kind is a string value representing the REST resource this object represents. Se
 withMessage(message)
 ```
 
-A human-readable description of the status of this operation.
+"A human-readable description of the status of this operation."
 
 ### fn metadata.initializers.result.withMetadata
 
@@ -555,7 +541,7 @@ A human-readable description of the status of this operation.
 withMetadata(metadata)
 ```
 
-Standard list metadata. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+"Standard list metadata. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds"
 
 ### fn metadata.initializers.result.withReason
 
@@ -563,11 +549,11 @@ Standard list metadata. More info: https://git.k8s.io/community/contributors/dev
 withReason(reason)
 ```
 
-A machine-readable description of why this operation is in the "Failure" status. If this value is empty there is no information available. A Reason clarifies an HTTP status code but does not override it.
+"A machine-readable description of why this operation is in the \"Failure\" status. If this value is empty there is no information available. A Reason clarifies an HTTP status code but does not override it."
 
 ## obj metadata.initializers.result.details
 
-StatusDetails is a set of additional properties that MAY be set by the server to provide additional information about a response. The Reason field of a Status object defines what attributes will be set. Clients must ignore fields that do not match the defined type of each attribute, and should assume that any attribute may be empty, invalid, or under defined.
+"StatusDetails is a set of additional properties that MAY be set by the server to provide additional information about a response. The Reason field of a Status object defines what attributes will be set. Clients must ignore fields that do not match the defined type of each attribute, and should assume that any attribute may be empty, invalid, or under defined."
 
 ### fn metadata.initializers.result.details.withCauses
 
@@ -575,7 +561,7 @@ StatusDetails is a set of additional properties that MAY be set by the server to
 withCauses(causes)
 ```
 
-The Causes array includes more details associated with the StatusReason failure. Not all StatusReasons may provide detailed causes.
+"The Causes array includes more details associated with the StatusReason failure. Not all StatusReasons may provide detailed causes."
 
 ### fn metadata.initializers.result.details.withCausesMixin
 
@@ -583,7 +569,7 @@ The Causes array includes more details associated with the StatusReason failure.
 withCausesMixin(causes)
 ```
 
-The Causes array includes more details associated with the StatusReason failure. Not all StatusReasons may provide detailed causes.
+"The Causes array includes more details associated with the StatusReason failure. Not all StatusReasons may provide detailed causes."
 
 **Note:** This function appends passed data to existing values
 
@@ -593,7 +579,7 @@ The Causes array includes more details associated with the StatusReason failure.
 withGroup(group)
 ```
 
-The group attribute of the resource associated with the status StatusReason.
+"The group attribute of the resource associated with the status StatusReason."
 
 ### fn metadata.initializers.result.details.withKind
 
@@ -601,7 +587,7 @@ The group attribute of the resource associated with the status StatusReason.
 withKind(kind)
 ```
 
-The kind attribute of the resource associated with the status StatusReason. On some operations may differ from the requested resource Kind. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+"The kind attribute of the resource associated with the status StatusReason. On some operations may differ from the requested resource Kind. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds"
 
 ### fn metadata.initializers.result.details.withName
 
@@ -609,7 +595,7 @@ The kind attribute of the resource associated with the status StatusReason. On s
 withName(name)
 ```
 
-The name attribute of the resource associated with the status StatusReason (when there is a single name which can be described).
+"The name attribute of the resource associated with the status StatusReason (when there is a single name which can be described)."
 
 ### fn metadata.initializers.result.details.withRetryAfterSeconds
 
@@ -617,7 +603,7 @@ The name attribute of the resource associated with the status StatusReason (when
 withRetryAfterSeconds(retryAfterSeconds)
 ```
 
-If specified, the time in seconds before the operation should be retried. Some errors may indicate the client must take an alternate action - for those errors this field may indicate how long to wait before taking the alternate action.
+"If specified, the time in seconds before the operation should be retried. Some errors may indicate the client must take an alternate action - for those errors this field may indicate how long to wait before taking the alternate action."
 
 ### fn metadata.initializers.result.details.withUid
 
@@ -625,11 +611,11 @@ If specified, the time in seconds before the operation should be retried. Some e
 withUid(uid)
 ```
 
-UID of the resource. (when there is a single resource which can be described). More info: http://kubernetes.io/docs/user-guide/identifiers#uids
+"UID of the resource. (when there is a single resource which can be described). More info: http://kubernetes.io/docs/user-guide/identifiers#uids"
 
 ## obj spec
 
-DeploymentSpec is the specification of the desired behavior of the Deployment.
+"DeploymentSpec is the specification of the desired behavior of the Deployment."
 
 ### fn spec.withMinReadySeconds
 
@@ -637,7 +623,7 @@ DeploymentSpec is the specification of the desired behavior of the Deployment.
 withMinReadySeconds(minReadySeconds)
 ```
 
-Minimum number of seconds for which a newly created pod should be ready without any of its container crashing, for it to be considered available. Defaults to 0 (pod will be considered available as soon as it is ready)
+"Minimum number of seconds for which a newly created pod should be ready without any of its container crashing, for it to be considered available. Defaults to 0 (pod will be considered available as soon as it is ready)"
 
 ### fn spec.withPaused
 
@@ -645,7 +631,7 @@ Minimum number of seconds for which a newly created pod should be ready without 
 withPaused(paused)
 ```
 
-Indicates that the deployment is paused.
+"Indicates that the deployment is paused."
 
 ### fn spec.withProgressDeadlineSeconds
 
@@ -653,7 +639,7 @@ Indicates that the deployment is paused.
 withProgressDeadlineSeconds(progressDeadlineSeconds)
 ```
 
-The maximum time in seconds for a deployment to make progress before it is considered to be failed. The deployment controller will continue to process failed deployments and a condition with a ProgressDeadlineExceeded reason will be surfaced in the deployment status. Note that progress will not be estimated during the time a deployment is paused. Defaults to 600s.
+"The maximum time in seconds for a deployment to make progress before it is considered to be failed. The deployment controller will continue to process failed deployments and a condition with a ProgressDeadlineExceeded reason will be surfaced in the deployment status. Note that progress will not be estimated during the time a deployment is paused. Defaults to 600s."
 
 ### fn spec.withReplicas
 
@@ -661,7 +647,7 @@ The maximum time in seconds for a deployment to make progress before it is consi
 withReplicas(replicas)
 ```
 
-Number of desired pods. This is a pointer to distinguish between explicit zero and not specified. Defaults to 1.
+"Number of desired pods. This is a pointer to distinguish between explicit zero and not specified. Defaults to 1."
 
 ### fn spec.withRevisionHistoryLimit
 
@@ -669,11 +655,11 @@ Number of desired pods. This is a pointer to distinguish between explicit zero a
 withRevisionHistoryLimit(revisionHistoryLimit)
 ```
 
-The number of old ReplicaSets to retain to allow rollback. This is a pointer to distinguish between explicit zero and not specified. Defaults to 10.
+"The number of old ReplicaSets to retain to allow rollback. This is a pointer to distinguish between explicit zero and not specified. Defaults to 10."
 
 ## obj spec.selector
 
-A label selector is a label query over a set of resources. The result of matchLabels and matchExpressions are ANDed. An empty label selector matches all objects. A null label selector matches no objects.
+"A label selector is a label query over a set of resources. The result of matchLabels and matchExpressions are ANDed. An empty label selector matches all objects. A null label selector matches no objects."
 
 ### fn spec.selector.withMatchExpressions
 
@@ -681,7 +667,7 @@ A label selector is a label query over a set of resources. The result of matchLa
 withMatchExpressions(matchExpressions)
 ```
 
-matchExpressions is a list of label selector requirements. The requirements are ANDed.
+"matchExpressions is a list of label selector requirements. The requirements are ANDed."
 
 ### fn spec.selector.withMatchExpressionsMixin
 
@@ -689,7 +675,7 @@ matchExpressions is a list of label selector requirements. The requirements are 
 withMatchExpressionsMixin(matchExpressions)
 ```
 
-matchExpressions is a list of label selector requirements. The requirements are ANDed.
+"matchExpressions is a list of label selector requirements. The requirements are ANDed."
 
 **Note:** This function appends passed data to existing values
 
@@ -699,7 +685,7 @@ matchExpressions is a list of label selector requirements. The requirements are 
 withMatchLabels(matchLabels)
 ```
 
-matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
+"matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is \"key\", the operator is \"In\", and the values array contains only \"value\". The requirements are ANDed."
 
 ### fn spec.selector.withMatchLabelsMixin
 
@@ -707,13 +693,13 @@ matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabe
 withMatchLabelsMixin(matchLabels)
 ```
 
-matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
+"matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is \"key\", the operator is \"In\", and the values array contains only \"value\". The requirements are ANDed."
 
 **Note:** This function appends passed data to existing values
 
 ## obj spec.strategy
 
-DeploymentStrategy describes how to replace existing pods with new ones.
+"DeploymentStrategy describes how to replace existing pods with new ones."
 
 ### fn spec.strategy.withType
 
@@ -721,11 +707,11 @@ DeploymentStrategy describes how to replace existing pods with new ones.
 withType(type)
 ```
 
-Type of deployment. Can be "Recreate" or "RollingUpdate". Default is RollingUpdate.
+"Type of deployment. Can be \"Recreate\" or \"RollingUpdate\". Default is RollingUpdate."
 
 ## obj spec.strategy.rollingUpdate
 
-Spec to control the desired behavior of rolling update.
+"Spec to control the desired behavior of rolling update."
 
 ### fn spec.strategy.rollingUpdate.withMaxSurge
 
@@ -733,7 +719,7 @@ Spec to control the desired behavior of rolling update.
 withMaxSurge(maxSurge)
 ```
 
-IntOrString is a type that can hold an int32 or a string.  When used in JSON or YAML marshalling and unmarshalling, it produces or consumes the inner type.  This allows you to have, for example, a JSON field that can accept a name or number.
+"IntOrString is a type that can hold an int32 or a string.  When used in JSON or YAML marshalling and unmarshalling, it produces or consumes the inner type.  This allows you to have, for example, a JSON field that can accept a name or number."
 
 ### fn spec.strategy.rollingUpdate.withMaxUnavailable
 
@@ -741,15 +727,15 @@ IntOrString is a type that can hold an int32 or a string.  When used in JSON or 
 withMaxUnavailable(maxUnavailable)
 ```
 
-IntOrString is a type that can hold an int32 or a string.  When used in JSON or YAML marshalling and unmarshalling, it produces or consumes the inner type.  This allows you to have, for example, a JSON field that can accept a name or number.
+"IntOrString is a type that can hold an int32 or a string.  When used in JSON or YAML marshalling and unmarshalling, it produces or consumes the inner type.  This allows you to have, for example, a JSON field that can accept a name or number."
 
 ## obj spec.template
 
-PodTemplateSpec describes the data a pod should have when created from a template
+"PodTemplateSpec describes the data a pod should have when created from a template"
 
 ## obj spec.template.metadata
 
-ObjectMeta is metadata that all persisted resources must have, which includes all objects users must create.
+"ObjectMeta is metadata that all persisted resources must have, which includes all objects users must create."
 
 ### fn spec.template.metadata.withAnnotations
 
@@ -757,7 +743,7 @@ ObjectMeta is metadata that all persisted resources must have, which includes al
 withAnnotations(annotations)
 ```
 
-Annotations is an unstructured key value map stored with a resource that may be set by external tools to store and retrieve arbitrary metadata. They are not queryable and should be preserved when modifying objects. More info: http://kubernetes.io/docs/user-guide/annotations
+"Annotations is an unstructured key value map stored with a resource that may be set by external tools to store and retrieve arbitrary metadata. They are not queryable and should be preserved when modifying objects. More info: http://kubernetes.io/docs/user-guide/annotations"
 
 ### fn spec.template.metadata.withAnnotationsMixin
 
@@ -765,7 +751,7 @@ Annotations is an unstructured key value map stored with a resource that may be 
 withAnnotationsMixin(annotations)
 ```
 
-Annotations is an unstructured key value map stored with a resource that may be set by external tools to store and retrieve arbitrary metadata. They are not queryable and should be preserved when modifying objects. More info: http://kubernetes.io/docs/user-guide/annotations
+"Annotations is an unstructured key value map stored with a resource that may be set by external tools to store and retrieve arbitrary metadata. They are not queryable and should be preserved when modifying objects. More info: http://kubernetes.io/docs/user-guide/annotations"
 
 **Note:** This function appends passed data to existing values
 
@@ -775,7 +761,7 @@ Annotations is an unstructured key value map stored with a resource that may be 
 withClusterName(clusterName)
 ```
 
-The name of the cluster which the object belongs to. This is used to distinguish resources with same name and namespace in different clusters. This field is not set anywhere right now and apiserver is going to ignore it if set in create or update request.
+"The name of the cluster which the object belongs to. This is used to distinguish resources with same name and namespace in different clusters. This field is not set anywhere right now and apiserver is going to ignore it if set in create or update request."
 
 ### fn spec.template.metadata.withCreationTimestamp
 
@@ -783,7 +769,7 @@ The name of the cluster which the object belongs to. This is used to distinguish
 withCreationTimestamp(creationTimestamp)
 ```
 
-Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.
+"Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers."
 
 ### fn spec.template.metadata.withDeletionGracePeriodSeconds
 
@@ -791,7 +777,7 @@ Time is a wrapper around time.Time which supports correct marshaling to YAML and
 withDeletionGracePeriodSeconds(deletionGracePeriodSeconds)
 ```
 
-Number of seconds allowed for this object to gracefully terminate before it will be removed from the system. Only set when deletionTimestamp is also set. May only be shortened. Read-only.
+"Number of seconds allowed for this object to gracefully terminate before it will be removed from the system. Only set when deletionTimestamp is also set. May only be shortened. Read-only."
 
 ### fn spec.template.metadata.withDeletionTimestamp
 
@@ -799,7 +785,7 @@ Number of seconds allowed for this object to gracefully terminate before it will
 withDeletionTimestamp(deletionTimestamp)
 ```
 
-Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.
+"Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers."
 
 ### fn spec.template.metadata.withFinalizers
 
@@ -807,7 +793,7 @@ Time is a wrapper around time.Time which supports correct marshaling to YAML and
 withFinalizers(finalizers)
 ```
 
-Must be empty before the object is deleted from the registry. Each entry is an identifier for the responsible component that will remove the entry from the list. If the deletionTimestamp of the object is non-nil, entries in this list can only be removed.
+"Must be empty before the object is deleted from the registry. Each entry is an identifier for the responsible component that will remove the entry from the list. If the deletionTimestamp of the object is non-nil, entries in this list can only be removed."
 
 ### fn spec.template.metadata.withFinalizersMixin
 
@@ -815,7 +801,7 @@ Must be empty before the object is deleted from the registry. Each entry is an i
 withFinalizersMixin(finalizers)
 ```
 
-Must be empty before the object is deleted from the registry. Each entry is an identifier for the responsible component that will remove the entry from the list. If the deletionTimestamp of the object is non-nil, entries in this list can only be removed.
+"Must be empty before the object is deleted from the registry. Each entry is an identifier for the responsible component that will remove the entry from the list. If the deletionTimestamp of the object is non-nil, entries in this list can only be removed."
 
 **Note:** This function appends passed data to existing values
 
@@ -825,11 +811,7 @@ Must be empty before the object is deleted from the registry. Each entry is an i
 withGenerateName(generateName)
 ```
 
-GenerateName is an optional prefix, used by the server, to generate a unique name ONLY IF the Name field has not been provided. If this field is used, the name returned to the client will be different than the name passed. This value will also be combined with a unique suffix. The provided value has the same validation rules as the Name field, and may be truncated by the length of the suffix required to make the value unique on the server.
-
-If this field is specified and the generated name exists, the server will NOT return a 409 - instead, it will either return 201 Created or 500 with Reason ServerTimeout indicating a unique name could not be found in the time allotted, and the client should retry (optionally after the time indicated in the Retry-After header).
-
-Applied only if Name is not specified. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#idempotency
+"GenerateName is an optional prefix, used by the server, to generate a unique name ONLY IF the Name field has not been provided. If this field is used, the name returned to the client will be different than the name passed. This value will also be combined with a unique suffix. The provided value has the same validation rules as the Name field, and may be truncated by the length of the suffix required to make the value unique on the server.\n\nIf this field is specified and the generated name exists, the server will NOT return a 409 - instead, it will either return 201 Created or 500 with Reason ServerTimeout indicating a unique name could not be found in the time allotted, and the client should retry (optionally after the time indicated in the Retry-After header).\n\nApplied only if Name is not specified. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#idempotency"
 
 ### fn spec.template.metadata.withGeneration
 
@@ -837,7 +819,7 @@ Applied only if Name is not specified. More info: https://git.k8s.io/community/c
 withGeneration(generation)
 ```
 
-A sequence number representing a specific generation of the desired state. Populated by the system. Read-only.
+"A sequence number representing a specific generation of the desired state. Populated by the system. Read-only."
 
 ### fn spec.template.metadata.withLabels
 
@@ -845,7 +827,7 @@ A sequence number representing a specific generation of the desired state. Popul
 withLabels(labels)
 ```
 
-Map of string keys and values that can be used to organize and categorize (scope and select) objects. May match selectors of replication controllers and services. More info: http://kubernetes.io/docs/user-guide/labels
+"Map of string keys and values that can be used to organize and categorize (scope and select) objects. May match selectors of replication controllers and services. More info: http://kubernetes.io/docs/user-guide/labels"
 
 ### fn spec.template.metadata.withLabelsMixin
 
@@ -853,7 +835,7 @@ Map of string keys and values that can be used to organize and categorize (scope
 withLabelsMixin(labels)
 ```
 
-Map of string keys and values that can be used to organize and categorize (scope and select) objects. May match selectors of replication controllers and services. More info: http://kubernetes.io/docs/user-guide/labels
+"Map of string keys and values that can be used to organize and categorize (scope and select) objects. May match selectors of replication controllers and services. More info: http://kubernetes.io/docs/user-guide/labels"
 
 **Note:** This function appends passed data to existing values
 
@@ -863,9 +845,7 @@ Map of string keys and values that can be used to organize and categorize (scope
 withManagedFields(managedFields)
 ```
 
-ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like 'ci-cd'. The set of fields is always in the version that the workflow used when modifying the object.
-
-This field is alpha and can be changed or removed without notice.
+"ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like \"ci-cd\". The set of fields is always in the version that the workflow used when modifying the object.\n\nThis field is alpha and can be changed or removed without notice."
 
 ### fn spec.template.metadata.withManagedFieldsMixin
 
@@ -873,9 +853,7 @@ This field is alpha and can be changed or removed without notice.
 withManagedFieldsMixin(managedFields)
 ```
 
-ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like 'ci-cd'. The set of fields is always in the version that the workflow used when modifying the object.
-
-This field is alpha and can be changed or removed without notice.
+"ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like \"ci-cd\". The set of fields is always in the version that the workflow used when modifying the object.\n\nThis field is alpha and can be changed or removed without notice."
 
 **Note:** This function appends passed data to existing values
 
@@ -885,7 +863,7 @@ This field is alpha and can be changed or removed without notice.
 withName(name)
 ```
 
-Name must be unique within a namespace. Is required when creating resources, although some resources may allow a client to request the generation of an appropriate name automatically. Name is primarily intended for creation idempotence and configuration definition. Cannot be updated. More info: http://kubernetes.io/docs/user-guide/identifiers#names
+"Name must be unique within a namespace. Is required when creating resources, although some resources may allow a client to request the generation of an appropriate name automatically. Name is primarily intended for creation idempotence and configuration definition. Cannot be updated. More info: http://kubernetes.io/docs/user-guide/identifiers#names"
 
 ### fn spec.template.metadata.withNamespace
 
@@ -893,9 +871,7 @@ Name must be unique within a namespace. Is required when creating resources, alt
 withNamespace(namespace)
 ```
 
-Namespace defines the space within each name must be unique. An empty namespace is equivalent to the "default" namespace, but "default" is the canonical representation. Not all objects are required to be scoped to a namespace - the value of this field for those objects will be empty.
-
-Must be a DNS_LABEL. Cannot be updated. More info: http://kubernetes.io/docs/user-guide/namespaces
+"Namespace defines the space within each name must be unique. An empty namespace is equivalent to the \"default\" namespace, but \"default\" is the canonical representation. Not all objects are required to be scoped to a namespace - the value of this field for those objects will be empty.\n\nMust be a DNS_LABEL. Cannot be updated. More info: http://kubernetes.io/docs/user-guide/namespaces"
 
 ### fn spec.template.metadata.withOwnerReferences
 
@@ -903,7 +879,7 @@ Must be a DNS_LABEL. Cannot be updated. More info: http://kubernetes.io/docs/use
 withOwnerReferences(ownerReferences)
 ```
 
-List of objects depended by this object. If ALL objects in the list have been deleted, this object will be garbage collected. If this object is managed by a controller, then an entry in this list will point to this controller, with the controller field set to true. There cannot be more than one managing controller.
+"List of objects depended by this object. If ALL objects in the list have been deleted, this object will be garbage collected. If this object is managed by a controller, then an entry in this list will point to this controller, with the controller field set to true. There cannot be more than one managing controller."
 
 ### fn spec.template.metadata.withOwnerReferencesMixin
 
@@ -911,7 +887,7 @@ List of objects depended by this object. If ALL objects in the list have been de
 withOwnerReferencesMixin(ownerReferences)
 ```
 
-List of objects depended by this object. If ALL objects in the list have been deleted, this object will be garbage collected. If this object is managed by a controller, then an entry in this list will point to this controller, with the controller field set to true. There cannot be more than one managing controller.
+"List of objects depended by this object. If ALL objects in the list have been deleted, this object will be garbage collected. If this object is managed by a controller, then an entry in this list will point to this controller, with the controller field set to true. There cannot be more than one managing controller."
 
 **Note:** This function appends passed data to existing values
 
@@ -921,9 +897,7 @@ List of objects depended by this object. If ALL objects in the list have been de
 withResourceVersion(resourceVersion)
 ```
 
-An opaque value that represents the internal version of this object that can be used by clients to determine when objects have changed. May be used for optimistic concurrency, change detection, and the watch operation on a resource or set of resources. Clients must treat these values as opaque and passed unmodified back to the server. They may only be valid for a particular resource or set of resources.
-
-Populated by the system. Read-only. Value must be treated as opaque by clients and . More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#concurrency-control-and-consistency
+"An opaque value that represents the internal version of this object that can be used by clients to determine when objects have changed. May be used for optimistic concurrency, change detection, and the watch operation on a resource or set of resources. Clients must treat these values as opaque and passed unmodified back to the server. They may only be valid for a particular resource or set of resources.\n\nPopulated by the system. Read-only. Value must be treated as opaque by clients and . More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#concurrency-control-and-consistency"
 
 ### fn spec.template.metadata.withSelfLink
 
@@ -931,7 +905,7 @@ Populated by the system. Read-only. Value must be treated as opaque by clients a
 withSelfLink(selfLink)
 ```
 
-SelfLink is a URL representing this object. Populated by the system. Read-only.
+"SelfLink is a URL representing this object. Populated by the system. Read-only."
 
 ### fn spec.template.metadata.withUid
 
@@ -939,13 +913,11 @@ SelfLink is a URL representing this object. Populated by the system. Read-only.
 withUid(uid)
 ```
 
-UID is the unique in time and space value for this object. It is typically generated by the server on successful creation of a resource and is not allowed to change on PUT operations.
-
-Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-guide/identifiers#uids
+"UID is the unique in time and space value for this object. It is typically generated by the server on successful creation of a resource and is not allowed to change on PUT operations.\n\nPopulated by the system. Read-only. More info: http://kubernetes.io/docs/user-guide/identifiers#uids"
 
 ## obj spec.template.metadata.initializers
 
-Initializers tracks the progress of initialization.
+"Initializers tracks the progress of initialization."
 
 ### fn spec.template.metadata.initializers.withPending
 
@@ -953,7 +925,7 @@ Initializers tracks the progress of initialization.
 withPending(pending)
 ```
 
-Pending is a list of initializers that must execute in order before this object is visible. When the last pending initializer is removed, and no failing result is set, the initializers struct will be set to nil and the object is considered as initialized and visible to all clients.
+"Pending is a list of initializers that must execute in order before this object is visible. When the last pending initializer is removed, and no failing result is set, the initializers struct will be set to nil and the object is considered as initialized and visible to all clients."
 
 ### fn spec.template.metadata.initializers.withPendingMixin
 
@@ -961,13 +933,13 @@ Pending is a list of initializers that must execute in order before this object 
 withPendingMixin(pending)
 ```
 
-Pending is a list of initializers that must execute in order before this object is visible. When the last pending initializer is removed, and no failing result is set, the initializers struct will be set to nil and the object is considered as initialized and visible to all clients.
+"Pending is a list of initializers that must execute in order before this object is visible. When the last pending initializer is removed, and no failing result is set, the initializers struct will be set to nil and the object is considered as initialized and visible to all clients."
 
 **Note:** This function appends passed data to existing values
 
 ## obj spec.template.metadata.initializers.result
 
-Status is a return value for calls that don't return other objects.
+"Status is a return value for calls that don't return other objects."
 
 ### fn spec.template.metadata.initializers.result.withApiVersion
 
@@ -975,7 +947,7 @@ Status is a return value for calls that don't return other objects.
 withApiVersion(apiVersion)
 ```
 
-APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+"APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#resources"
 
 ### fn spec.template.metadata.initializers.result.withCode
 
@@ -983,7 +955,7 @@ APIVersion defines the versioned schema of this representation of an object. Ser
 withCode(code)
 ```
 
-Suggested HTTP return code for this status, 0 if not set.
+"Suggested HTTP return code for this status, 0 if not set."
 
 ### fn spec.template.metadata.initializers.result.withKind
 
@@ -991,7 +963,7 @@ Suggested HTTP return code for this status, 0 if not set.
 withKind(kind)
 ```
 
-Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+"Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds"
 
 ### fn spec.template.metadata.initializers.result.withMessage
 
@@ -999,7 +971,7 @@ Kind is a string value representing the REST resource this object represents. Se
 withMessage(message)
 ```
 
-A human-readable description of the status of this operation.
+"A human-readable description of the status of this operation."
 
 ### fn spec.template.metadata.initializers.result.withMetadata
 
@@ -1007,7 +979,7 @@ A human-readable description of the status of this operation.
 withMetadata(metadata)
 ```
 
-Standard list metadata. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+"Standard list metadata. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds"
 
 ### fn spec.template.metadata.initializers.result.withReason
 
@@ -1015,11 +987,11 @@ Standard list metadata. More info: https://git.k8s.io/community/contributors/dev
 withReason(reason)
 ```
 
-A machine-readable description of why this operation is in the "Failure" status. If this value is empty there is no information available. A Reason clarifies an HTTP status code but does not override it.
+"A machine-readable description of why this operation is in the \"Failure\" status. If this value is empty there is no information available. A Reason clarifies an HTTP status code but does not override it."
 
 ## obj spec.template.metadata.initializers.result.details
 
-StatusDetails is a set of additional properties that MAY be set by the server to provide additional information about a response. The Reason field of a Status object defines what attributes will be set. Clients must ignore fields that do not match the defined type of each attribute, and should assume that any attribute may be empty, invalid, or under defined.
+"StatusDetails is a set of additional properties that MAY be set by the server to provide additional information about a response. The Reason field of a Status object defines what attributes will be set. Clients must ignore fields that do not match the defined type of each attribute, and should assume that any attribute may be empty, invalid, or under defined."
 
 ### fn spec.template.metadata.initializers.result.details.withCauses
 
@@ -1027,7 +999,7 @@ StatusDetails is a set of additional properties that MAY be set by the server to
 withCauses(causes)
 ```
 
-The Causes array includes more details associated with the StatusReason failure. Not all StatusReasons may provide detailed causes.
+"The Causes array includes more details associated with the StatusReason failure. Not all StatusReasons may provide detailed causes."
 
 ### fn spec.template.metadata.initializers.result.details.withCausesMixin
 
@@ -1035,7 +1007,7 @@ The Causes array includes more details associated with the StatusReason failure.
 withCausesMixin(causes)
 ```
 
-The Causes array includes more details associated with the StatusReason failure. Not all StatusReasons may provide detailed causes.
+"The Causes array includes more details associated with the StatusReason failure. Not all StatusReasons may provide detailed causes."
 
 **Note:** This function appends passed data to existing values
 
@@ -1045,7 +1017,7 @@ The Causes array includes more details associated with the StatusReason failure.
 withGroup(group)
 ```
 
-The group attribute of the resource associated with the status StatusReason.
+"The group attribute of the resource associated with the status StatusReason."
 
 ### fn spec.template.metadata.initializers.result.details.withKind
 
@@ -1053,7 +1025,7 @@ The group attribute of the resource associated with the status StatusReason.
 withKind(kind)
 ```
 
-The kind attribute of the resource associated with the status StatusReason. On some operations may differ from the requested resource Kind. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+"The kind attribute of the resource associated with the status StatusReason. On some operations may differ from the requested resource Kind. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds"
 
 ### fn spec.template.metadata.initializers.result.details.withName
 
@@ -1061,7 +1033,7 @@ The kind attribute of the resource associated with the status StatusReason. On s
 withName(name)
 ```
 
-The name attribute of the resource associated with the status StatusReason (when there is a single name which can be described).
+"The name attribute of the resource associated with the status StatusReason (when there is a single name which can be described)."
 
 ### fn spec.template.metadata.initializers.result.details.withRetryAfterSeconds
 
@@ -1069,7 +1041,7 @@ The name attribute of the resource associated with the status StatusReason (when
 withRetryAfterSeconds(retryAfterSeconds)
 ```
 
-If specified, the time in seconds before the operation should be retried. Some errors may indicate the client must take an alternate action - for those errors this field may indicate how long to wait before taking the alternate action.
+"If specified, the time in seconds before the operation should be retried. Some errors may indicate the client must take an alternate action - for those errors this field may indicate how long to wait before taking the alternate action."
 
 ### fn spec.template.metadata.initializers.result.details.withUid
 
@@ -1077,11 +1049,11 @@ If specified, the time in seconds before the operation should be retried. Some e
 withUid(uid)
 ```
 
-UID of the resource. (when there is a single resource which can be described). More info: http://kubernetes.io/docs/user-guide/identifiers#uids
+"UID of the resource. (when there is a single resource which can be described). More info: http://kubernetes.io/docs/user-guide/identifiers#uids"
 
 ## obj spec.template.spec
 
-PodSpec is a description of a pod.
+"PodSpec is a description of a pod."
 
 ### fn spec.template.spec.withActiveDeadlineSeconds
 
@@ -1089,7 +1061,7 @@ PodSpec is a description of a pod.
 withActiveDeadlineSeconds(activeDeadlineSeconds)
 ```
 
-Optional duration in seconds the pod may be active on the node relative to StartTime before the system will actively try to mark it failed and kill associated containers. Value must be a positive integer.
+"Optional duration in seconds the pod may be active on the node relative to StartTime before the system will actively try to mark it failed and kill associated containers. Value must be a positive integer."
 
 ### fn spec.template.spec.withAutomountServiceAccountToken
 
@@ -1097,7 +1069,7 @@ Optional duration in seconds the pod may be active on the node relative to Start
 withAutomountServiceAccountToken(automountServiceAccountToken)
 ```
 
-AutomountServiceAccountToken indicates whether a service account token should be automatically mounted.
+"AutomountServiceAccountToken indicates whether a service account token should be automatically mounted."
 
 ### fn spec.template.spec.withContainers
 
@@ -1105,7 +1077,7 @@ AutomountServiceAccountToken indicates whether a service account token should be
 withContainers(containers)
 ```
 
-List of containers belonging to the pod. Containers cannot currently be added or removed. There must be at least one container in a Pod. Cannot be updated.
+"List of containers belonging to the pod. Containers cannot currently be added or removed. There must be at least one container in a Pod. Cannot be updated."
 
 ### fn spec.template.spec.withContainersMixin
 
@@ -1113,7 +1085,7 @@ List of containers belonging to the pod. Containers cannot currently be added or
 withContainersMixin(containers)
 ```
 
-List of containers belonging to the pod. Containers cannot currently be added or removed. There must be at least one container in a Pod. Cannot be updated.
+"List of containers belonging to the pod. Containers cannot currently be added or removed. There must be at least one container in a Pod. Cannot be updated."
 
 **Note:** This function appends passed data to existing values
 
@@ -1123,7 +1095,7 @@ List of containers belonging to the pod. Containers cannot currently be added or
 withDnsPolicy(dnsPolicy)
 ```
 
-Set DNS policy for the pod. Defaults to 'ClusterFirst'. Valid values are 'ClusterFirstWithHostNet', 'ClusterFirst', 'Default' or 'None'. DNS parameters given in DNSConfig will be merged with the policy selected with DNSPolicy. To have DNS options set along with hostNetwork, you have to specify DNS policy explicitly to 'ClusterFirstWithHostNet'.
+"Set DNS policy for the pod. Defaults to \"ClusterFirst\". Valid values are 'ClusterFirstWithHostNet', 'ClusterFirst', 'Default' or 'None'. DNS parameters given in DNSConfig will be merged with the policy selected with DNSPolicy. To have DNS options set along with hostNetwork, you have to specify DNS policy explicitly to 'ClusterFirstWithHostNet'."
 
 ### fn spec.template.spec.withEnableServiceLinks
 
@@ -1131,7 +1103,7 @@ Set DNS policy for the pod. Defaults to 'ClusterFirst'. Valid values are 'Cluste
 withEnableServiceLinks(enableServiceLinks)
 ```
 
-EnableServiceLinks indicates whether information about services should be injected into pod's environment variables, matching the syntax of Docker links. Optional: Defaults to true.
+"EnableServiceLinks indicates whether information about services should be injected into pod's environment variables, matching the syntax of Docker links. Optional: Defaults to true."
 
 ### fn spec.template.spec.withHostAliases
 
@@ -1139,7 +1111,7 @@ EnableServiceLinks indicates whether information about services should be inject
 withHostAliases(hostAliases)
 ```
 
-HostAliases is an optional list of hosts and IPs that will be injected into the pod's hosts file if specified. This is only valid for non-hostNetwork pods.
+"HostAliases is an optional list of hosts and IPs that will be injected into the pod's hosts file if specified. This is only valid for non-hostNetwork pods."
 
 ### fn spec.template.spec.withHostAliasesMixin
 
@@ -1147,7 +1119,7 @@ HostAliases is an optional list of hosts and IPs that will be injected into the 
 withHostAliasesMixin(hostAliases)
 ```
 
-HostAliases is an optional list of hosts and IPs that will be injected into the pod's hosts file if specified. This is only valid for non-hostNetwork pods.
+"HostAliases is an optional list of hosts and IPs that will be injected into the pod's hosts file if specified. This is only valid for non-hostNetwork pods."
 
 **Note:** This function appends passed data to existing values
 
@@ -1157,7 +1129,7 @@ HostAliases is an optional list of hosts and IPs that will be injected into the 
 withHostIPC(hostIPC)
 ```
 
-Use the host's ipc namespace. Optional: Default to false.
+"Use the host's ipc namespace. Optional: Default to false."
 
 ### fn spec.template.spec.withHostNetwork
 
@@ -1165,7 +1137,7 @@ Use the host's ipc namespace. Optional: Default to false.
 withHostNetwork(hostNetwork)
 ```
 
-Host networking requested for this pod. Use the host's network namespace. If this option is set, the ports that will be used must be specified. Default to false.
+"Host networking requested for this pod. Use the host's network namespace. If this option is set, the ports that will be used must be specified. Default to false."
 
 ### fn spec.template.spec.withHostPID
 
@@ -1173,7 +1145,7 @@ Host networking requested for this pod. Use the host's network namespace. If thi
 withHostPID(hostPID)
 ```
 
-Use the host's pid namespace. Optional: Default to false.
+"Use the host's pid namespace. Optional: Default to false."
 
 ### fn spec.template.spec.withHostname
 
@@ -1181,7 +1153,7 @@ Use the host's pid namespace. Optional: Default to false.
 withHostname(hostname)
 ```
 
-Specifies the hostname of the Pod If not specified, the pod's hostname will be set to a system-defined value.
+"Specifies the hostname of the Pod If not specified, the pod's hostname will be set to a system-defined value."
 
 ### fn spec.template.spec.withImagePullSecrets
 
@@ -1189,7 +1161,7 @@ Specifies the hostname of the Pod If not specified, the pod's hostname will be s
 withImagePullSecrets(imagePullSecrets)
 ```
 
-ImagePullSecrets is an optional list of references to secrets in the same namespace to use for pulling any of the images used by this PodSpec. If specified, these secrets will be passed to individual puller implementations for them to use. For example, in the case of docker, only DockerConfig type secrets are honored. More info: https://kubernetes.io/docs/concepts/containers/images#specifying-imagepullsecrets-on-a-pod
+"ImagePullSecrets is an optional list of references to secrets in the same namespace to use for pulling any of the images used by this PodSpec. If specified, these secrets will be passed to individual puller implementations for them to use. For example, in the case of docker, only DockerConfig type secrets are honored. More info: https://kubernetes.io/docs/concepts/containers/images#specifying-imagepullsecrets-on-a-pod"
 
 ### fn spec.template.spec.withImagePullSecretsMixin
 
@@ -1197,7 +1169,7 @@ ImagePullSecrets is an optional list of references to secrets in the same namesp
 withImagePullSecretsMixin(imagePullSecrets)
 ```
 
-ImagePullSecrets is an optional list of references to secrets in the same namespace to use for pulling any of the images used by this PodSpec. If specified, these secrets will be passed to individual puller implementations for them to use. For example, in the case of docker, only DockerConfig type secrets are honored. More info: https://kubernetes.io/docs/concepts/containers/images#specifying-imagepullsecrets-on-a-pod
+"ImagePullSecrets is an optional list of references to secrets in the same namespace to use for pulling any of the images used by this PodSpec. If specified, these secrets will be passed to individual puller implementations for them to use. For example, in the case of docker, only DockerConfig type secrets are honored. More info: https://kubernetes.io/docs/concepts/containers/images#specifying-imagepullsecrets-on-a-pod"
 
 **Note:** This function appends passed data to existing values
 
@@ -1207,7 +1179,7 @@ ImagePullSecrets is an optional list of references to secrets in the same namesp
 withInitContainers(initContainers)
 ```
 
-List of initialization containers belonging to the pod. Init containers are executed in order prior to containers being started. If any init container fails, the pod is considered to have failed and is handled according to its restartPolicy. The name for an init container or normal container must be unique among all containers. Init containers may not have Lifecycle actions, Readiness probes, or Liveness probes. The resourceRequirements of an init container are taken into account during scheduling by finding the highest request/limit for each resource type, and then using the max of of that value or the sum of the normal containers. Limits are applied to init containers in a similar fashion. Init containers cannot currently be added or removed. Cannot be updated. More info: https://kubernetes.io/docs/concepts/workloads/pods/init-containers/
+"List of initialization containers belonging to the pod. Init containers are executed in order prior to containers being started. If any init container fails, the pod is considered to have failed and is handled according to its restartPolicy. The name for an init container or normal container must be unique among all containers. Init containers may not have Lifecycle actions, Readiness probes, or Liveness probes. The resourceRequirements of an init container are taken into account during scheduling by finding the highest request/limit for each resource type, and then using the max of of that value or the sum of the normal containers. Limits are applied to init containers in a similar fashion. Init containers cannot currently be added or removed. Cannot be updated. More info: https://kubernetes.io/docs/concepts/workloads/pods/init-containers/"
 
 ### fn spec.template.spec.withInitContainersMixin
 
@@ -1215,7 +1187,7 @@ List of initialization containers belonging to the pod. Init containers are exec
 withInitContainersMixin(initContainers)
 ```
 
-List of initialization containers belonging to the pod. Init containers are executed in order prior to containers being started. If any init container fails, the pod is considered to have failed and is handled according to its restartPolicy. The name for an init container or normal container must be unique among all containers. Init containers may not have Lifecycle actions, Readiness probes, or Liveness probes. The resourceRequirements of an init container are taken into account during scheduling by finding the highest request/limit for each resource type, and then using the max of of that value or the sum of the normal containers. Limits are applied to init containers in a similar fashion. Init containers cannot currently be added or removed. Cannot be updated. More info: https://kubernetes.io/docs/concepts/workloads/pods/init-containers/
+"List of initialization containers belonging to the pod. Init containers are executed in order prior to containers being started. If any init container fails, the pod is considered to have failed and is handled according to its restartPolicy. The name for an init container or normal container must be unique among all containers. Init containers may not have Lifecycle actions, Readiness probes, or Liveness probes. The resourceRequirements of an init container are taken into account during scheduling by finding the highest request/limit for each resource type, and then using the max of of that value or the sum of the normal containers. Limits are applied to init containers in a similar fashion. Init containers cannot currently be added or removed. Cannot be updated. More info: https://kubernetes.io/docs/concepts/workloads/pods/init-containers/"
 
 **Note:** This function appends passed data to existing values
 
@@ -1225,7 +1197,7 @@ List of initialization containers belonging to the pod. Init containers are exec
 withNodeName(nodeName)
 ```
 
-NodeName is a request to schedule this pod onto a specific node. If it is non-empty, the scheduler simply schedules this pod onto that node, assuming that it fits resource requirements.
+"NodeName is a request to schedule this pod onto a specific node. If it is non-empty, the scheduler simply schedules this pod onto that node, assuming that it fits resource requirements."
 
 ### fn spec.template.spec.withNodeSelector
 
@@ -1233,7 +1205,7 @@ NodeName is a request to schedule this pod onto a specific node. If it is non-em
 withNodeSelector(nodeSelector)
 ```
 
-NodeSelector is a selector which must be true for the pod to fit on a node. Selector which must match a node's labels for the pod to be scheduled on that node. More info: https://kubernetes.io/docs/concepts/configuration/assign-pod-node/
+"NodeSelector is a selector which must be true for the pod to fit on a node. Selector which must match a node's labels for the pod to be scheduled on that node. More info: https://kubernetes.io/docs/concepts/configuration/assign-pod-node/"
 
 ### fn spec.template.spec.withNodeSelectorMixin
 
@@ -1241,7 +1213,7 @@ NodeSelector is a selector which must be true for the pod to fit on a node. Sele
 withNodeSelectorMixin(nodeSelector)
 ```
 
-NodeSelector is a selector which must be true for the pod to fit on a node. Selector which must match a node's labels for the pod to be scheduled on that node. More info: https://kubernetes.io/docs/concepts/configuration/assign-pod-node/
+"NodeSelector is a selector which must be true for the pod to fit on a node. Selector which must match a node's labels for the pod to be scheduled on that node. More info: https://kubernetes.io/docs/concepts/configuration/assign-pod-node/"
 
 **Note:** This function appends passed data to existing values
 
@@ -1251,7 +1223,7 @@ NodeSelector is a selector which must be true for the pod to fit on a node. Sele
 withPreemptionPolicy(preemptionPolicy)
 ```
 
-PreemptionPolicy is the Policy for preempting pods with lower priority. One of Never, PreemptLowerPriority. Defaults to PreemptLowerPriority if unset. This field is alpha-level and is only honored by servers that enable the NonPreemptingPriority feature.
+"PreemptionPolicy is the Policy for preempting pods with lower priority. One of Never, PreemptLowerPriority. Defaults to PreemptLowerPriority if unset. This field is alpha-level and is only honored by servers that enable the NonPreemptingPriority feature."
 
 ### fn spec.template.spec.withPriority
 
@@ -1259,7 +1231,7 @@ PreemptionPolicy is the Policy for preempting pods with lower priority. One of N
 withPriority(priority)
 ```
 
-The priority value. Various system components use this field to find the priority of the pod. When Priority Admission Controller is enabled, it prevents users from setting this field. The admission controller populates this field from PriorityClassName. The higher the value, the higher the priority.
+"The priority value. Various system components use this field to find the priority of the pod. When Priority Admission Controller is enabled, it prevents users from setting this field. The admission controller populates this field from PriorityClassName. The higher the value, the higher the priority."
 
 ### fn spec.template.spec.withPriorityClassName
 
@@ -1267,7 +1239,7 @@ The priority value. Various system components use this field to find the priorit
 withPriorityClassName(priorityClassName)
 ```
 
-If specified, indicates the pod's priority. 'system-node-critical' and 'system-cluster-critical' are two special keywords which indicate the highest priorities with the former being the highest priority. Any other name must be defined by creating a PriorityClass object with that name. If not specified, the pod priority will be default or zero if there is no default.
+"If specified, indicates the pod's priority. \"system-node-critical\" and \"system-cluster-critical\" are two special keywords which indicate the highest priorities with the former being the highest priority. Any other name must be defined by creating a PriorityClass object with that name. If not specified, the pod priority will be default or zero if there is no default."
 
 ### fn spec.template.spec.withReadinessGates
 
@@ -1275,7 +1247,7 @@ If specified, indicates the pod's priority. 'system-node-critical' and 'system-c
 withReadinessGates(readinessGates)
 ```
 
-If specified, all readiness gates will be evaluated for pod readiness. A pod is ready when all its containers are ready AND all conditions specified in the readiness gates have status equal to "True" More info: https://git.k8s.io/enhancements/keps/sig-network/0007-pod-ready%2B%2B.md
+"If specified, all readiness gates will be evaluated for pod readiness. A pod is ready when all its containers are ready AND all conditions specified in the readiness gates have status equal to \"True\" More info: https://git.k8s.io/enhancements/keps/sig-network/0007-pod-ready%2B%2B.md"
 
 ### fn spec.template.spec.withReadinessGatesMixin
 
@@ -1283,7 +1255,7 @@ If specified, all readiness gates will be evaluated for pod readiness. A pod is 
 withReadinessGatesMixin(readinessGates)
 ```
 
-If specified, all readiness gates will be evaluated for pod readiness. A pod is ready when all its containers are ready AND all conditions specified in the readiness gates have status equal to "True" More info: https://git.k8s.io/enhancements/keps/sig-network/0007-pod-ready%2B%2B.md
+"If specified, all readiness gates will be evaluated for pod readiness. A pod is ready when all its containers are ready AND all conditions specified in the readiness gates have status equal to \"True\" More info: https://git.k8s.io/enhancements/keps/sig-network/0007-pod-ready%2B%2B.md"
 
 **Note:** This function appends passed data to existing values
 
@@ -1293,7 +1265,7 @@ If specified, all readiness gates will be evaluated for pod readiness. A pod is 
 withRestartPolicy(restartPolicy)
 ```
 
-Restart policy for all containers within the pod. One of Always, OnFailure, Never. Default to Always. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#restart-policy
+"Restart policy for all containers within the pod. One of Always, OnFailure, Never. Default to Always. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#restart-policy"
 
 ### fn spec.template.spec.withRuntimeClassName
 
@@ -1301,7 +1273,7 @@ Restart policy for all containers within the pod. One of Always, OnFailure, Neve
 withRuntimeClassName(runtimeClassName)
 ```
 
-RuntimeClassName refers to a RuntimeClass object in the node.k8s.io group, which should be used to run this pod.  If no RuntimeClass resource matches the named class, the pod will not be run. If unset or empty, the "legacy" RuntimeClass will be used, which is an implicit class with an empty definition that uses the default runtime handler. More info: https://git.k8s.io/enhancements/keps/sig-node/runtime-class.md This is a beta feature as of Kubernetes v1.14.
+"RuntimeClassName refers to a RuntimeClass object in the node.k8s.io group, which should be used to run this pod.  If no RuntimeClass resource matches the named class, the pod will not be run. If unset or empty, the \"legacy\" RuntimeClass will be used, which is an implicit class with an empty definition that uses the default runtime handler. More info: https://git.k8s.io/enhancements/keps/sig-node/runtime-class.md This is a beta feature as of Kubernetes v1.14."
 
 ### fn spec.template.spec.withSchedulerName
 
@@ -1309,7 +1281,7 @@ RuntimeClassName refers to a RuntimeClass object in the node.k8s.io group, which
 withSchedulerName(schedulerName)
 ```
 
-If specified, the pod will be dispatched by specified scheduler. If not specified, the pod will be dispatched by default scheduler.
+"If specified, the pod will be dispatched by specified scheduler. If not specified, the pod will be dispatched by default scheduler."
 
 ### fn spec.template.spec.withServiceAccount
 
@@ -1317,7 +1289,7 @@ If specified, the pod will be dispatched by specified scheduler. If not specifie
 withServiceAccount(serviceAccount)
 ```
 
-DeprecatedServiceAccount is a depreciated alias for ServiceAccountName. Deprecated: Use serviceAccountName instead.
+"DeprecatedServiceAccount is a depreciated alias for ServiceAccountName. Deprecated: Use serviceAccountName instead."
 
 ### fn spec.template.spec.withServiceAccountName
 
@@ -1325,7 +1297,7 @@ DeprecatedServiceAccount is a depreciated alias for ServiceAccountName. Deprecat
 withServiceAccountName(serviceAccountName)
 ```
 
-ServiceAccountName is the name of the ServiceAccount to use to run this pod. More info: https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/
+"ServiceAccountName is the name of the ServiceAccount to use to run this pod. More info: https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/"
 
 ### fn spec.template.spec.withShareProcessNamespace
 
@@ -1333,7 +1305,7 @@ ServiceAccountName is the name of the ServiceAccount to use to run this pod. Mor
 withShareProcessNamespace(shareProcessNamespace)
 ```
 
-Share a single process namespace between all of the containers in a pod. When this is set containers will be able to view and signal processes from other containers in the same pod, and the first process in each container will not be assigned PID 1. HostPID and ShareProcessNamespace cannot both be set. Optional: Default to false. This field is beta-level and may be disabled with the PodShareProcessNamespace feature.
+"Share a single process namespace between all of the containers in a pod. When this is set containers will be able to view and signal processes from other containers in the same pod, and the first process in each container will not be assigned PID 1. HostPID and ShareProcessNamespace cannot both be set. Optional: Default to false. This field is beta-level and may be disabled with the PodShareProcessNamespace feature."
 
 ### fn spec.template.spec.withSubdomain
 
@@ -1341,7 +1313,7 @@ Share a single process namespace between all of the containers in a pod. When th
 withSubdomain(subdomain)
 ```
 
-If specified, the fully qualified Pod hostname will be "<hostname>.<subdomain>.<pod namespace>.svc.<cluster domain>". If not specified, the pod will not have a domainname at all.
+"If specified, the fully qualified Pod hostname will be \"<hostname>.<subdomain>.<pod namespace>.svc.<cluster domain>\". If not specified, the pod will not have a domainname at all."
 
 ### fn spec.template.spec.withTerminationGracePeriodSeconds
 
@@ -1349,7 +1321,7 @@ If specified, the fully qualified Pod hostname will be "<hostname>.<subdomain>.<
 withTerminationGracePeriodSeconds(terminationGracePeriodSeconds)
 ```
 
-Optional duration in seconds the pod needs to terminate gracefully. May be decreased in delete request. Value must be non-negative integer. The value zero indicates delete immediately. If this value is nil, the default grace period will be used instead. The grace period is the duration in seconds after the processes running in the pod are sent a termination signal and the time when the processes are forcibly halted with a kill signal. Set this value longer than the expected cleanup time for your process. Defaults to 30 seconds.
+"Optional duration in seconds the pod needs to terminate gracefully. May be decreased in delete request. Value must be non-negative integer. The value zero indicates delete immediately. If this value is nil, the default grace period will be used instead. The grace period is the duration in seconds after the processes running in the pod are sent a termination signal and the time when the processes are forcibly halted with a kill signal. Set this value longer than the expected cleanup time for your process. Defaults to 30 seconds."
 
 ### fn spec.template.spec.withTolerations
 
@@ -1357,7 +1329,7 @@ Optional duration in seconds the pod needs to terminate gracefully. May be decre
 withTolerations(tolerations)
 ```
 
-If specified, the pod's tolerations.
+"If specified, the pod's tolerations."
 
 ### fn spec.template.spec.withTolerationsMixin
 
@@ -1365,7 +1337,7 @@ If specified, the pod's tolerations.
 withTolerationsMixin(tolerations)
 ```
 
-If specified, the pod's tolerations.
+"If specified, the pod's tolerations."
 
 **Note:** This function appends passed data to existing values
 
@@ -1375,7 +1347,7 @@ If specified, the pod's tolerations.
 withVolumes(volumes)
 ```
 
-List of volumes that can be mounted by containers belonging to the pod. More info: https://kubernetes.io/docs/concepts/storage/volumes
+"List of volumes that can be mounted by containers belonging to the pod. More info: https://kubernetes.io/docs/concepts/storage/volumes"
 
 ### fn spec.template.spec.withVolumesMixin
 
@@ -1383,17 +1355,17 @@ List of volumes that can be mounted by containers belonging to the pod. More inf
 withVolumesMixin(volumes)
 ```
 
-List of volumes that can be mounted by containers belonging to the pod. More info: https://kubernetes.io/docs/concepts/storage/volumes
+"List of volumes that can be mounted by containers belonging to the pod. More info: https://kubernetes.io/docs/concepts/storage/volumes"
 
 **Note:** This function appends passed data to existing values
 
 ## obj spec.template.spec.affinity
 
-Affinity is a group of affinity scheduling rules.
+"Affinity is a group of affinity scheduling rules."
 
 ## obj spec.template.spec.affinity.nodeAffinity
 
-Node affinity is a group of node affinity scheduling rules.
+"Node affinity is a group of node affinity scheduling rules."
 
 ### fn spec.template.spec.affinity.nodeAffinity.withPreferredDuringSchedulingIgnoredDuringExecution
 
@@ -1401,7 +1373,7 @@ Node affinity is a group of node affinity scheduling rules.
 withPreferredDuringSchedulingIgnoredDuringExecution(preferredDuringSchedulingIgnoredDuringExecution)
 ```
 
-The scheduler will prefer to schedule pods to nodes that satisfy the affinity expressions specified by this field, but it may choose a node that violates one or more of the expressions. The node that is most preferred is the one with the greatest sum of weights, i.e. for each node that meets all of the scheduling requirements (resource request, requiredDuringScheduling affinity expressions, etc.), compute a sum by iterating through the elements of this field and adding "weight" to the sum if the node matches the corresponding matchExpressions; the node(s) with the highest sum are the most preferred.
+"The scheduler will prefer to schedule pods to nodes that satisfy the affinity expressions specified by this field, but it may choose a node that violates one or more of the expressions. The node that is most preferred is the one with the greatest sum of weights, i.e. for each node that meets all of the scheduling requirements (resource request, requiredDuringScheduling affinity expressions, etc.), compute a sum by iterating through the elements of this field and adding \"weight\" to the sum if the node matches the corresponding matchExpressions; the node(s) with the highest sum are the most preferred."
 
 ### fn spec.template.spec.affinity.nodeAffinity.withPreferredDuringSchedulingIgnoredDuringExecutionMixin
 
@@ -1409,13 +1381,13 @@ The scheduler will prefer to schedule pods to nodes that satisfy the affinity ex
 withPreferredDuringSchedulingIgnoredDuringExecutionMixin(preferredDuringSchedulingIgnoredDuringExecution)
 ```
 
-The scheduler will prefer to schedule pods to nodes that satisfy the affinity expressions specified by this field, but it may choose a node that violates one or more of the expressions. The node that is most preferred is the one with the greatest sum of weights, i.e. for each node that meets all of the scheduling requirements (resource request, requiredDuringScheduling affinity expressions, etc.), compute a sum by iterating through the elements of this field and adding "weight" to the sum if the node matches the corresponding matchExpressions; the node(s) with the highest sum are the most preferred.
+"The scheduler will prefer to schedule pods to nodes that satisfy the affinity expressions specified by this field, but it may choose a node that violates one or more of the expressions. The node that is most preferred is the one with the greatest sum of weights, i.e. for each node that meets all of the scheduling requirements (resource request, requiredDuringScheduling affinity expressions, etc.), compute a sum by iterating through the elements of this field and adding \"weight\" to the sum if the node matches the corresponding matchExpressions; the node(s) with the highest sum are the most preferred."
 
 **Note:** This function appends passed data to existing values
 
 ## obj spec.template.spec.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution
 
-A node selector represents the union of the results of one or more label queries over a set of nodes; that is, it represents the OR of the selectors represented by the node selector terms.
+"A node selector represents the union of the results of one or more label queries over a set of nodes; that is, it represents the OR of the selectors represented by the node selector terms."
 
 ### fn spec.template.spec.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.withNodeSelectorTerms
 
@@ -1423,7 +1395,7 @@ A node selector represents the union of the results of one or more label queries
 withNodeSelectorTerms(nodeSelectorTerms)
 ```
 
-Required. A list of node selector terms. The terms are ORed.
+"Required. A list of node selector terms. The terms are ORed."
 
 ### fn spec.template.spec.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.withNodeSelectorTermsMixin
 
@@ -1431,13 +1403,13 @@ Required. A list of node selector terms. The terms are ORed.
 withNodeSelectorTermsMixin(nodeSelectorTerms)
 ```
 
-Required. A list of node selector terms. The terms are ORed.
+"Required. A list of node selector terms. The terms are ORed."
 
 **Note:** This function appends passed data to existing values
 
 ## obj spec.template.spec.affinity.podAffinity
 
-Pod affinity is a group of inter pod affinity scheduling rules.
+"Pod affinity is a group of inter pod affinity scheduling rules."
 
 ### fn spec.template.spec.affinity.podAffinity.withPreferredDuringSchedulingIgnoredDuringExecution
 
@@ -1445,7 +1417,7 @@ Pod affinity is a group of inter pod affinity scheduling rules.
 withPreferredDuringSchedulingIgnoredDuringExecution(preferredDuringSchedulingIgnoredDuringExecution)
 ```
 
-The scheduler will prefer to schedule pods to nodes that satisfy the affinity expressions specified by this field, but it may choose a node that violates one or more of the expressions. The node that is most preferred is the one with the greatest sum of weights, i.e. for each node that meets all of the scheduling requirements (resource request, requiredDuringScheduling affinity expressions, etc.), compute a sum by iterating through the elements of this field and adding "weight" to the sum if the node has pods which matches the corresponding podAffinityTerm; the node(s) with the highest sum are the most preferred.
+"The scheduler will prefer to schedule pods to nodes that satisfy the affinity expressions specified by this field, but it may choose a node that violates one or more of the expressions. The node that is most preferred is the one with the greatest sum of weights, i.e. for each node that meets all of the scheduling requirements (resource request, requiredDuringScheduling affinity expressions, etc.), compute a sum by iterating through the elements of this field and adding \"weight\" to the sum if the node has pods which matches the corresponding podAffinityTerm; the node(s) with the highest sum are the most preferred."
 
 ### fn spec.template.spec.affinity.podAffinity.withPreferredDuringSchedulingIgnoredDuringExecutionMixin
 
@@ -1453,7 +1425,7 @@ The scheduler will prefer to schedule pods to nodes that satisfy the affinity ex
 withPreferredDuringSchedulingIgnoredDuringExecutionMixin(preferredDuringSchedulingIgnoredDuringExecution)
 ```
 
-The scheduler will prefer to schedule pods to nodes that satisfy the affinity expressions specified by this field, but it may choose a node that violates one or more of the expressions. The node that is most preferred is the one with the greatest sum of weights, i.e. for each node that meets all of the scheduling requirements (resource request, requiredDuringScheduling affinity expressions, etc.), compute a sum by iterating through the elements of this field and adding "weight" to the sum if the node has pods which matches the corresponding podAffinityTerm; the node(s) with the highest sum are the most preferred.
+"The scheduler will prefer to schedule pods to nodes that satisfy the affinity expressions specified by this field, but it may choose a node that violates one or more of the expressions. The node that is most preferred is the one with the greatest sum of weights, i.e. for each node that meets all of the scheduling requirements (resource request, requiredDuringScheduling affinity expressions, etc.), compute a sum by iterating through the elements of this field and adding \"weight\" to the sum if the node has pods which matches the corresponding podAffinityTerm; the node(s) with the highest sum are the most preferred."
 
 **Note:** This function appends passed data to existing values
 
@@ -1463,7 +1435,7 @@ The scheduler will prefer to schedule pods to nodes that satisfy the affinity ex
 withRequiredDuringSchedulingIgnoredDuringExecution(requiredDuringSchedulingIgnoredDuringExecution)
 ```
 
-If the affinity requirements specified by this field are not met at scheduling time, the pod will not be scheduled onto the node. If the affinity requirements specified by this field cease to be met at some point during pod execution (e.g. due to a pod label update), the system may or may not try to eventually evict the pod from its node. When there are multiple elements, the lists of nodes corresponding to each podAffinityTerm are intersected, i.e. all terms must be satisfied.
+"If the affinity requirements specified by this field are not met at scheduling time, the pod will not be scheduled onto the node. If the affinity requirements specified by this field cease to be met at some point during pod execution (e.g. due to a pod label update), the system may or may not try to eventually evict the pod from its node. When there are multiple elements, the lists of nodes corresponding to each podAffinityTerm are intersected, i.e. all terms must be satisfied."
 
 ### fn spec.template.spec.affinity.podAffinity.withRequiredDuringSchedulingIgnoredDuringExecutionMixin
 
@@ -1471,13 +1443,13 @@ If the affinity requirements specified by this field are not met at scheduling t
 withRequiredDuringSchedulingIgnoredDuringExecutionMixin(requiredDuringSchedulingIgnoredDuringExecution)
 ```
 
-If the affinity requirements specified by this field are not met at scheduling time, the pod will not be scheduled onto the node. If the affinity requirements specified by this field cease to be met at some point during pod execution (e.g. due to a pod label update), the system may or may not try to eventually evict the pod from its node. When there are multiple elements, the lists of nodes corresponding to each podAffinityTerm are intersected, i.e. all terms must be satisfied.
+"If the affinity requirements specified by this field are not met at scheduling time, the pod will not be scheduled onto the node. If the affinity requirements specified by this field cease to be met at some point during pod execution (e.g. due to a pod label update), the system may or may not try to eventually evict the pod from its node. When there are multiple elements, the lists of nodes corresponding to each podAffinityTerm are intersected, i.e. all terms must be satisfied."
 
 **Note:** This function appends passed data to existing values
 
 ## obj spec.template.spec.affinity.podAntiAffinity
 
-Pod anti affinity is a group of inter pod anti affinity scheduling rules.
+"Pod anti affinity is a group of inter pod anti affinity scheduling rules."
 
 ### fn spec.template.spec.affinity.podAntiAffinity.withPreferredDuringSchedulingIgnoredDuringExecution
 
@@ -1485,7 +1457,7 @@ Pod anti affinity is a group of inter pod anti affinity scheduling rules.
 withPreferredDuringSchedulingIgnoredDuringExecution(preferredDuringSchedulingIgnoredDuringExecution)
 ```
 
-The scheduler will prefer to schedule pods to nodes that satisfy the anti-affinity expressions specified by this field, but it may choose a node that violates one or more of the expressions. The node that is most preferred is the one with the greatest sum of weights, i.e. for each node that meets all of the scheduling requirements (resource request, requiredDuringScheduling anti-affinity expressions, etc.), compute a sum by iterating through the elements of this field and adding "weight" to the sum if the node has pods which matches the corresponding podAffinityTerm; the node(s) with the highest sum are the most preferred.
+"The scheduler will prefer to schedule pods to nodes that satisfy the anti-affinity expressions specified by this field, but it may choose a node that violates one or more of the expressions. The node that is most preferred is the one with the greatest sum of weights, i.e. for each node that meets all of the scheduling requirements (resource request, requiredDuringScheduling anti-affinity expressions, etc.), compute a sum by iterating through the elements of this field and adding \"weight\" to the sum if the node has pods which matches the corresponding podAffinityTerm; the node(s) with the highest sum are the most preferred."
 
 ### fn spec.template.spec.affinity.podAntiAffinity.withPreferredDuringSchedulingIgnoredDuringExecutionMixin
 
@@ -1493,7 +1465,7 @@ The scheduler will prefer to schedule pods to nodes that satisfy the anti-affini
 withPreferredDuringSchedulingIgnoredDuringExecutionMixin(preferredDuringSchedulingIgnoredDuringExecution)
 ```
 
-The scheduler will prefer to schedule pods to nodes that satisfy the anti-affinity expressions specified by this field, but it may choose a node that violates one or more of the expressions. The node that is most preferred is the one with the greatest sum of weights, i.e. for each node that meets all of the scheduling requirements (resource request, requiredDuringScheduling anti-affinity expressions, etc.), compute a sum by iterating through the elements of this field and adding "weight" to the sum if the node has pods which matches the corresponding podAffinityTerm; the node(s) with the highest sum are the most preferred.
+"The scheduler will prefer to schedule pods to nodes that satisfy the anti-affinity expressions specified by this field, but it may choose a node that violates one or more of the expressions. The node that is most preferred is the one with the greatest sum of weights, i.e. for each node that meets all of the scheduling requirements (resource request, requiredDuringScheduling anti-affinity expressions, etc.), compute a sum by iterating through the elements of this field and adding \"weight\" to the sum if the node has pods which matches the corresponding podAffinityTerm; the node(s) with the highest sum are the most preferred."
 
 **Note:** This function appends passed data to existing values
 
@@ -1503,7 +1475,7 @@ The scheduler will prefer to schedule pods to nodes that satisfy the anti-affini
 withRequiredDuringSchedulingIgnoredDuringExecution(requiredDuringSchedulingIgnoredDuringExecution)
 ```
 
-If the anti-affinity requirements specified by this field are not met at scheduling time, the pod will not be scheduled onto the node. If the anti-affinity requirements specified by this field cease to be met at some point during pod execution (e.g. due to a pod label update), the system may or may not try to eventually evict the pod from its node. When there are multiple elements, the lists of nodes corresponding to each podAffinityTerm are intersected, i.e. all terms must be satisfied.
+"If the anti-affinity requirements specified by this field are not met at scheduling time, the pod will not be scheduled onto the node. If the anti-affinity requirements specified by this field cease to be met at some point during pod execution (e.g. due to a pod label update), the system may or may not try to eventually evict the pod from its node. When there are multiple elements, the lists of nodes corresponding to each podAffinityTerm are intersected, i.e. all terms must be satisfied."
 
 ### fn spec.template.spec.affinity.podAntiAffinity.withRequiredDuringSchedulingIgnoredDuringExecutionMixin
 
@@ -1511,13 +1483,13 @@ If the anti-affinity requirements specified by this field are not met at schedul
 withRequiredDuringSchedulingIgnoredDuringExecutionMixin(requiredDuringSchedulingIgnoredDuringExecution)
 ```
 
-If the anti-affinity requirements specified by this field are not met at scheduling time, the pod will not be scheduled onto the node. If the anti-affinity requirements specified by this field cease to be met at some point during pod execution (e.g. due to a pod label update), the system may or may not try to eventually evict the pod from its node. When there are multiple elements, the lists of nodes corresponding to each podAffinityTerm are intersected, i.e. all terms must be satisfied.
+"If the anti-affinity requirements specified by this field are not met at scheduling time, the pod will not be scheduled onto the node. If the anti-affinity requirements specified by this field cease to be met at some point during pod execution (e.g. due to a pod label update), the system may or may not try to eventually evict the pod from its node. When there are multiple elements, the lists of nodes corresponding to each podAffinityTerm are intersected, i.e. all terms must be satisfied."
 
 **Note:** This function appends passed data to existing values
 
 ## obj spec.template.spec.dnsConfig
 
-PodDNSConfig defines the DNS parameters of a pod in addition to those generated from DNSPolicy.
+"PodDNSConfig defines the DNS parameters of a pod in addition to those generated from DNSPolicy."
 
 ### fn spec.template.spec.dnsConfig.withNameservers
 
@@ -1525,7 +1497,7 @@ PodDNSConfig defines the DNS parameters of a pod in addition to those generated 
 withNameservers(nameservers)
 ```
 
-A list of DNS name server IP addresses. This will be appended to the base nameservers generated from DNSPolicy. Duplicated nameservers will be removed.
+"A list of DNS name server IP addresses. This will be appended to the base nameservers generated from DNSPolicy. Duplicated nameservers will be removed."
 
 ### fn spec.template.spec.dnsConfig.withNameserversMixin
 
@@ -1533,7 +1505,7 @@ A list of DNS name server IP addresses. This will be appended to the base namese
 withNameserversMixin(nameservers)
 ```
 
-A list of DNS name server IP addresses. This will be appended to the base nameservers generated from DNSPolicy. Duplicated nameservers will be removed.
+"A list of DNS name server IP addresses. This will be appended to the base nameservers generated from DNSPolicy. Duplicated nameservers will be removed."
 
 **Note:** This function appends passed data to existing values
 
@@ -1543,7 +1515,7 @@ A list of DNS name server IP addresses. This will be appended to the base namese
 withOptions(options)
 ```
 
-A list of DNS resolver options. This will be merged with the base options generated from DNSPolicy. Duplicated entries will be removed. Resolution options given in Options will override those that appear in the base DNSPolicy.
+"A list of DNS resolver options. This will be merged with the base options generated from DNSPolicy. Duplicated entries will be removed. Resolution options given in Options will override those that appear in the base DNSPolicy."
 
 ### fn spec.template.spec.dnsConfig.withOptionsMixin
 
@@ -1551,7 +1523,7 @@ A list of DNS resolver options. This will be merged with the base options genera
 withOptionsMixin(options)
 ```
 
-A list of DNS resolver options. This will be merged with the base options generated from DNSPolicy. Duplicated entries will be removed. Resolution options given in Options will override those that appear in the base DNSPolicy.
+"A list of DNS resolver options. This will be merged with the base options generated from DNSPolicy. Duplicated entries will be removed. Resolution options given in Options will override those that appear in the base DNSPolicy."
 
 **Note:** This function appends passed data to existing values
 
@@ -1561,7 +1533,7 @@ A list of DNS resolver options. This will be merged with the base options genera
 withSearches(searches)
 ```
 
-A list of DNS search domains for host-name lookup. This will be appended to the base search paths generated from DNSPolicy. Duplicated search paths will be removed.
+"A list of DNS search domains for host-name lookup. This will be appended to the base search paths generated from DNSPolicy. Duplicated search paths will be removed."
 
 ### fn spec.template.spec.dnsConfig.withSearchesMixin
 
@@ -1569,13 +1541,13 @@ A list of DNS search domains for host-name lookup. This will be appended to the 
 withSearchesMixin(searches)
 ```
 
-A list of DNS search domains for host-name lookup. This will be appended to the base search paths generated from DNSPolicy. Duplicated search paths will be removed.
+"A list of DNS search domains for host-name lookup. This will be appended to the base search paths generated from DNSPolicy. Duplicated search paths will be removed."
 
 **Note:** This function appends passed data to existing values
 
 ## obj spec.template.spec.securityContext
 
-PodSecurityContext holds pod-level security attributes and common container settings. Some fields are also present in container.securityContext.  Field values of container.securityContext take precedence over field values of PodSecurityContext.
+"PodSecurityContext holds pod-level security attributes and common container settings. Some fields are also present in container.securityContext.  Field values of container.securityContext take precedence over field values of PodSecurityContext."
 
 ### fn spec.template.spec.securityContext.withFsGroup
 
@@ -1583,11 +1555,7 @@ PodSecurityContext holds pod-level security attributes and common container sett
 withFsGroup(fsGroup)
 ```
 
-A special supplemental group that applies to all containers in a pod. Some volume types allow the Kubelet to change the ownership of that volume to be owned by the pod:
-
-1. The owning GID will be the FSGroup 2. The setgid bit is set (new files created in the volume will be owned by FSGroup) 3. The permission bits are OR'd with rw-rw----
-
-If unset, the Kubelet will not modify the ownership and permissions of any volume.
+"A special supplemental group that applies to all containers in a pod. Some volume types allow the Kubelet to change the ownership of that volume to be owned by the pod:\n\n1. The owning GID will be the FSGroup 2. The setgid bit is set (new files created in the volume will be owned by FSGroup) 3. The permission bits are OR'd with rw-rw----\n\nIf unset, the Kubelet will not modify the ownership and permissions of any volume."
 
 ### fn spec.template.spec.securityContext.withRunAsGroup
 
@@ -1595,7 +1563,7 @@ If unset, the Kubelet will not modify the ownership and permissions of any volum
 withRunAsGroup(runAsGroup)
 ```
 
-The GID to run the entrypoint of the container process. Uses runtime default if unset. May also be set in SecurityContext.  If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence for that container.
+"The GID to run the entrypoint of the container process. Uses runtime default if unset. May also be set in SecurityContext.  If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence for that container."
 
 ### fn spec.template.spec.securityContext.withRunAsNonRoot
 
@@ -1603,7 +1571,7 @@ The GID to run the entrypoint of the container process. Uses runtime default if 
 withRunAsNonRoot(runAsNonRoot)
 ```
 
-Indicates that the container must run as a non-root user. If true, the Kubelet will validate the image at runtime to ensure that it does not run as UID 0 (root) and fail to start the container if it does. If unset or false, no such validation will be performed. May also be set in SecurityContext.  If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
+"Indicates that the container must run as a non-root user. If true, the Kubelet will validate the image at runtime to ensure that it does not run as UID 0 (root) and fail to start the container if it does. If unset or false, no such validation will be performed. May also be set in SecurityContext.  If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence."
 
 ### fn spec.template.spec.securityContext.withRunAsUser
 
@@ -1611,7 +1579,7 @@ Indicates that the container must run as a non-root user. If true, the Kubelet w
 withRunAsUser(runAsUser)
 ```
 
-The UID to run the entrypoint of the container process. Defaults to user specified in image metadata if unspecified. May also be set in SecurityContext.  If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence for that container.
+"The UID to run the entrypoint of the container process. Defaults to user specified in image metadata if unspecified. May also be set in SecurityContext.  If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence for that container."
 
 ### fn spec.template.spec.securityContext.withSupplementalGroups
 
@@ -1619,7 +1587,7 @@ The UID to run the entrypoint of the container process. Defaults to user specifi
 withSupplementalGroups(supplementalGroups)
 ```
 
-A list of groups applied to the first process run in each container, in addition to the container's primary GID.  If unspecified, no groups will be added to any container.
+"A list of groups applied to the first process run in each container, in addition to the container's primary GID.  If unspecified, no groups will be added to any container."
 
 ### fn spec.template.spec.securityContext.withSupplementalGroupsMixin
 
@@ -1627,7 +1595,7 @@ A list of groups applied to the first process run in each container, in addition
 withSupplementalGroupsMixin(supplementalGroups)
 ```
 
-A list of groups applied to the first process run in each container, in addition to the container's primary GID.  If unspecified, no groups will be added to any container.
+"A list of groups applied to the first process run in each container, in addition to the container's primary GID.  If unspecified, no groups will be added to any container."
 
 **Note:** This function appends passed data to existing values
 
@@ -1637,7 +1605,7 @@ A list of groups applied to the first process run in each container, in addition
 withSysctls(sysctls)
 ```
 
-Sysctls hold a list of namespaced sysctls used for the pod. Pods with unsupported sysctls (by the container runtime) might fail to launch.
+"Sysctls hold a list of namespaced sysctls used for the pod. Pods with unsupported sysctls (by the container runtime) might fail to launch."
 
 ### fn spec.template.spec.securityContext.withSysctlsMixin
 
@@ -1645,13 +1613,13 @@ Sysctls hold a list of namespaced sysctls used for the pod. Pods with unsupporte
 withSysctlsMixin(sysctls)
 ```
 
-Sysctls hold a list of namespaced sysctls used for the pod. Pods with unsupported sysctls (by the container runtime) might fail to launch.
+"Sysctls hold a list of namespaced sysctls used for the pod. Pods with unsupported sysctls (by the container runtime) might fail to launch."
 
 **Note:** This function appends passed data to existing values
 
 ## obj spec.template.spec.securityContext.seLinuxOptions
 
-SELinuxOptions are the labels to be applied to the container
+"SELinuxOptions are the labels to be applied to the container"
 
 ### fn spec.template.spec.securityContext.seLinuxOptions.withLevel
 
@@ -1659,7 +1627,7 @@ SELinuxOptions are the labels to be applied to the container
 withLevel(level)
 ```
 
-Level is SELinux level label that applies to the container.
+"Level is SELinux level label that applies to the container."
 
 ### fn spec.template.spec.securityContext.seLinuxOptions.withRole
 
@@ -1667,7 +1635,7 @@ Level is SELinux level label that applies to the container.
 withRole(role)
 ```
 
-Role is a SELinux role label that applies to the container.
+"Role is a SELinux role label that applies to the container."
 
 ### fn spec.template.spec.securityContext.seLinuxOptions.withType
 
@@ -1675,7 +1643,7 @@ Role is a SELinux role label that applies to the container.
 withType(type)
 ```
 
-Type is a SELinux type label that applies to the container.
+"Type is a SELinux type label that applies to the container."
 
 ### fn spec.template.spec.securityContext.seLinuxOptions.withUser
 
@@ -1683,11 +1651,11 @@ Type is a SELinux type label that applies to the container.
 withUser(user)
 ```
 
-User is a SELinux user label that applies to the container.
+"User is a SELinux user label that applies to the container."
 
 ## obj spec.template.spec.securityContext.windowsOptions
 
-WindowsSecurityContextOptions contain Windows-specific options and credentials.
+"WindowsSecurityContextOptions contain Windows-specific options and credentials."
 
 ### fn spec.template.spec.securityContext.windowsOptions.withGmsaCredentialSpec
 
@@ -1695,7 +1663,7 @@ WindowsSecurityContextOptions contain Windows-specific options and credentials.
 withGmsaCredentialSpec(gmsaCredentialSpec)
 ```
 
-GMSACredentialSpec is where the GMSA admission webhook (https://github.com/kubernetes-sigs/windows-gmsa) inlines the contents of the GMSA credential spec named by the GMSACredentialSpecName field. This field is alpha-level and is only honored by servers that enable the WindowsGMSA feature flag.
+"GMSACredentialSpec is where the GMSA admission webhook (https://github.com/kubernetes-sigs/windows-gmsa) inlines the contents of the GMSA credential spec named by the GMSACredentialSpecName field. This field is alpha-level and is only honored by servers that enable the WindowsGMSA feature flag."
 
 ### fn spec.template.spec.securityContext.windowsOptions.withGmsaCredentialSpecName
 
@@ -1703,4 +1671,4 @@ GMSACredentialSpec is where the GMSA admission webhook (https://github.com/kuber
 withGmsaCredentialSpecName(gmsaCredentialSpecName)
 ```
 
-GMSACredentialSpecName is the name of the GMSA credential spec to use. This field is alpha-level and is only honored by servers that enable the WindowsGMSA feature flag.
+"GMSACredentialSpecName is the name of the GMSA credential spec to use. This field is alpha-level and is only honored by servers that enable the WindowsGMSA feature flag."

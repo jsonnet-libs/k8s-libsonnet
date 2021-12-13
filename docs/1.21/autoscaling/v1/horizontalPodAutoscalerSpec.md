@@ -4,7 +4,7 @@ permalink: /1.21/autoscaling/v1/horizontalPodAutoscalerSpec/
 
 # autoscaling.v1.horizontalPodAutoscalerSpec
 
-specification of a horizontal pod autoscaler.
+"specification of a horizontal pod autoscaler."
 
 ## Index
 
@@ -24,7 +24,7 @@ specification of a horizontal pod autoscaler.
 withMaxReplicas(maxReplicas)
 ```
 
-upper limit for the number of pods that can be set by the autoscaler; cannot be smaller than MinReplicas.
+"upper limit for the number of pods that can be set by the autoscaler; cannot be smaller than MinReplicas."
 
 ### fn withMinReplicas
 
@@ -32,7 +32,7 @@ upper limit for the number of pods that can be set by the autoscaler; cannot be 
 withMinReplicas(minReplicas)
 ```
 
-minReplicas is the lower limit for the number of replicas to which the autoscaler can scale down.  It defaults to 1 pod.  minReplicas is allowed to be 0 if the alpha feature gate HPAScaleToZero is enabled and at least one Object or External metric is configured.  Scaling is active as long as at least one metric value is available.
+"minReplicas is the lower limit for the number of replicas to which the autoscaler can scale down.  It defaults to 1 pod.  minReplicas is allowed to be 0 if the alpha feature gate HPAScaleToZero is enabled and at least one Object or External metric is configured.  Scaling is active as long as at least one metric value is available."
 
 ### fn withTargetCPUUtilizationPercentage
 
@@ -40,11 +40,11 @@ minReplicas is the lower limit for the number of replicas to which the autoscale
 withTargetCPUUtilizationPercentage(targetCPUUtilizationPercentage)
 ```
 
-target average CPU utilization (represented as a percentage of requested CPU) over all the pods; if not specified the default autoscaling policy will be used.
+"target average CPU utilization (represented as a percentage of requested CPU) over all the pods; if not specified the default autoscaling policy will be used."
 
 ## obj scaleTargetRef
 
-CrossVersionObjectReference contains enough information to let you identify the referred resource.
+"CrossVersionObjectReference contains enough information to let you identify the referred resource."
 
 ### fn scaleTargetRef.withApiVersion
 
@@ -52,7 +52,7 @@ CrossVersionObjectReference contains enough information to let you identify the 
 withApiVersion(apiVersion)
 ```
 
-API version of the referent
+"API version of the referent"
 
 ### fn scaleTargetRef.withKind
 
@@ -60,7 +60,7 @@ API version of the referent
 withKind(kind)
 ```
 
-Kind of the referent; More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds"
+"Kind of the referent; More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds\
 
 ### fn scaleTargetRef.withName
 
@@ -68,4 +68,4 @@ Kind of the referent; More info: https://git.k8s.io/community/contributors/devel
 withName(name)
 ```
 
-Name of the referent; More info: http://kubernetes.io/docs/user-guide/identifiers#names
+"Name of the referent; More info: http://kubernetes.io/docs/user-guide/identifiers#names"

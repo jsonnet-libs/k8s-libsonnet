@@ -4,7 +4,7 @@ permalink: /1.20/core/v1/serviceStatus/
 
 # core.v1.serviceStatus
 
-ServiceStatus represents the current status of a service.
+"ServiceStatus represents the current status of a service."
 
 ## Index
 
@@ -22,7 +22,7 @@ ServiceStatus represents the current status of a service.
 withConditions(conditions)
 ```
 
-Current service state
+"Current service state"
 
 ### fn withConditionsMixin
 
@@ -30,13 +30,13 @@ Current service state
 withConditionsMixin(conditions)
 ```
 
-Current service state
+"Current service state"
 
 **Note:** This function appends passed data to existing values
 
 ## obj loadBalancer
 
-LoadBalancerStatus represents the status of a load-balancer.
+"LoadBalancerStatus represents the status of a load-balancer."
 
 ### fn loadBalancer.withIngress
 
@@ -44,7 +44,7 @@ LoadBalancerStatus represents the status of a load-balancer.
 withIngress(ingress)
 ```
 
-Ingress is a list containing ingress points for the load-balancer. Traffic intended for the service should be sent to these ingress points.
+"Ingress is a list containing ingress points for the load-balancer. Traffic intended for the service should be sent to these ingress points."
 
 ### fn loadBalancer.withIngressMixin
 
@@ -52,6 +52,6 @@ Ingress is a list containing ingress points for the load-balancer. Traffic inten
 withIngressMixin(ingress)
 ```
 
-Ingress is a list containing ingress points for the load-balancer. Traffic intended for the service should be sent to these ingress points.
+"Ingress is a list containing ingress points for the load-balancer. Traffic intended for the service should be sent to these ingress points."
 
 **Note:** This function appends passed data to existing values

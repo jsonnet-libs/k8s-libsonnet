@@ -4,7 +4,7 @@ permalink: /1.19/core/v1/containerStateWaiting/
 
 # core.v1.containerStateWaiting
 
-ContainerStateWaiting is a waiting state of a container.
+"ContainerStateWaiting is a waiting state of a container."
 
 ## Index
 
@@ -19,7 +19,7 @@ ContainerStateWaiting is a waiting state of a container.
 withMessage(message)
 ```
 
-Message regarding why the container is not yet running.
+"Message regarding why the container is not yet running."
 
 ### fn withReason
 
@@ -27,4 +27,4 @@ Message regarding why the container is not yet running.
 withReason(reason)
 ```
 
-(brief) reason the container is not yet running.
+"(brief) reason the container is not yet running."

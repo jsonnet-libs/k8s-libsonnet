@@ -4,7 +4,7 @@ permalink: /1.17/authentication/v1beta1/userInfo/
 
 # authentication.v1beta1.userInfo
 
-UserInfo holds the information about the user needed to implement the user.Info interface.
+"UserInfo holds the information about the user needed to implement the user.Info interface."
 
 ## Index
 
@@ -23,7 +23,7 @@ UserInfo holds the information about the user needed to implement the user.Info 
 withExtra(extra)
 ```
 
-Any additional information provided by the authenticator.
+"Any additional information provided by the authenticator."
 
 ### fn withExtraMixin
 
@@ -31,7 +31,7 @@ Any additional information provided by the authenticator.
 withExtraMixin(extra)
 ```
 
-Any additional information provided by the authenticator.
+"Any additional information provided by the authenticator."
 
 **Note:** This function appends passed data to existing values
 
@@ -41,7 +41,7 @@ Any additional information provided by the authenticator.
 withGroups(groups)
 ```
 
-The names of groups this user is a part of.
+"The names of groups this user is a part of."
 
 ### fn withGroupsMixin
 
@@ -49,7 +49,7 @@ The names of groups this user is a part of.
 withGroupsMixin(groups)
 ```
 
-The names of groups this user is a part of.
+"The names of groups this user is a part of."
 
 **Note:** This function appends passed data to existing values
 
@@ -59,7 +59,7 @@ The names of groups this user is a part of.
 withUid(uid)
 ```
 
-A unique value that identifies this user across time. If this user is deleted and another user by the same name is added, they will have different UIDs.
+"A unique value that identifies this user across time. If this user is deleted and another user by the same name is added, they will have different UIDs."
 
 ### fn withUsername
 
@@ -67,4 +67,4 @@ A unique value that identifies this user across time. If this user is deleted an
 withUsername(username)
 ```
 
-The name that uniquely identifies this user among all active users.
+"The name that uniquely identifies this user among all active users."

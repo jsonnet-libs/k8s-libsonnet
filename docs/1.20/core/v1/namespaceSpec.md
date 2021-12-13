@@ -4,7 +4,7 @@ permalink: /1.20/core/v1/namespaceSpec/
 
 # core.v1.namespaceSpec
 
-NamespaceSpec describes the attributes on a Namespace.
+"NamespaceSpec describes the attributes on a Namespace."
 
 ## Index
 
@@ -19,7 +19,7 @@ NamespaceSpec describes the attributes on a Namespace.
 withFinalizers(finalizers)
 ```
 
-Finalizers is an opaque list of values that must be empty to permanently remove object from storage. More info: https://kubernetes.io/docs/tasks/administer-cluster/namespaces/
+"Finalizers is an opaque list of values that must be empty to permanently remove object from storage. More info: https://kubernetes.io/docs/tasks/administer-cluster/namespaces/"
 
 ### fn withFinalizersMixin
 
@@ -27,6 +27,6 @@ Finalizers is an opaque list of values that must be empty to permanently remove 
 withFinalizersMixin(finalizers)
 ```
 
-Finalizers is an opaque list of values that must be empty to permanently remove object from storage. More info: https://kubernetes.io/docs/tasks/administer-cluster/namespaces/
+"Finalizers is an opaque list of values that must be empty to permanently remove object from storage. More info: https://kubernetes.io/docs/tasks/administer-cluster/namespaces/"
 
 **Note:** This function appends passed data to existing values

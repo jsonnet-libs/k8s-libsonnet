@@ -4,7 +4,7 @@ permalink: /1.21/core/v1/rbdPersistentVolumeSource/
 
 # core.v1.rbdPersistentVolumeSource
 
-Represents a Rados Block Device mount that lasts the lifetime of a pod. RBD volumes support ownership management and SELinux relabeling.
+"Represents a Rados Block Device mount that lasts the lifetime of a pod. RBD volumes support ownership management and SELinux relabeling."
 
 ## Index
 
@@ -28,7 +28,7 @@ Represents a Rados Block Device mount that lasts the lifetime of a pod. RBD volu
 withFsType(fsType)
 ```
 
-Filesystem type of the volume that you want to mount. Tip: Ensure that the filesystem type is supported by the host operating system. Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. More info: https://kubernetes.io/docs/concepts/storage/volumes#rbd
+"Filesystem type of the volume that you want to mount. Tip: Ensure that the filesystem type is supported by the host operating system. Examples: \"ext4\", \"xfs\", \"ntfs\". Implicitly inferred to be \"ext4\" if unspecified. More info: https://kubernetes.io/docs/concepts/storage/volumes#rbd"
 
 ### fn withImage
 
@@ -36,7 +36,7 @@ Filesystem type of the volume that you want to mount. Tip: Ensure that the files
 withImage(image)
 ```
 
-The rados image name. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it
+"The rados image name. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it"
 
 ### fn withKeyring
 
@@ -44,7 +44,7 @@ The rados image name. More info: https://examples.k8s.io/volumes/rbd/README.md#h
 withKeyring(keyring)
 ```
 
-Keyring is the path to key ring for RBDUser. Default is /etc/ceph/keyring. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it
+"Keyring is the path to key ring for RBDUser. Default is /etc/ceph/keyring. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it"
 
 ### fn withMonitors
 
@@ -52,7 +52,7 @@ Keyring is the path to key ring for RBDUser. Default is /etc/ceph/keyring. More 
 withMonitors(monitors)
 ```
 
-A collection of Ceph monitors. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it
+"A collection of Ceph monitors. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it"
 
 ### fn withMonitorsMixin
 
@@ -60,7 +60,7 @@ A collection of Ceph monitors. More info: https://examples.k8s.io/volumes/rbd/RE
 withMonitorsMixin(monitors)
 ```
 
-A collection of Ceph monitors. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it
+"A collection of Ceph monitors. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it"
 
 **Note:** This function appends passed data to existing values
 
@@ -70,7 +70,7 @@ A collection of Ceph monitors. More info: https://examples.k8s.io/volumes/rbd/RE
 withPool(pool)
 ```
 
-The rados pool name. Default is rbd. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it
+"The rados pool name. Default is rbd. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it"
 
 ### fn withReadOnly
 
@@ -78,7 +78,7 @@ The rados pool name. Default is rbd. More info: https://examples.k8s.io/volumes/
 withReadOnly(readOnly)
 ```
 
-ReadOnly here will force the ReadOnly setting in VolumeMounts. Defaults to false. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it
+"ReadOnly here will force the ReadOnly setting in VolumeMounts. Defaults to false. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it"
 
 ### fn withUser
 
@@ -86,11 +86,11 @@ ReadOnly here will force the ReadOnly setting in VolumeMounts. Defaults to false
 withUser(user)
 ```
 
-The rados user name. Default is admin. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it
+"The rados user name. Default is admin. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it"
 
 ## obj secretRef
 
-SecretReference represents a Secret Reference. It has enough information to retrieve secret in any namespace
+"SecretReference represents a Secret Reference. It has enough information to retrieve secret in any namespace"
 
 ### fn secretRef.withName
 
@@ -98,7 +98,7 @@ SecretReference represents a Secret Reference. It has enough information to retr
 withName(name)
 ```
 
-Name is unique within a namespace to reference a secret resource.
+"Name is unique within a namespace to reference a secret resource."
 
 ### fn secretRef.withNamespace
 
@@ -106,4 +106,4 @@ Name is unique within a namespace to reference a secret resource.
 withNamespace(namespace)
 ```
 
-Namespace defines the space within which the secret name must be unique.
+"Namespace defines the space within which the secret name must be unique."

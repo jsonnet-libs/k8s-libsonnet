@@ -4,7 +4,7 @@ permalink: /1.20/networking/v1/ingressBackend/
 
 # networking.v1.ingressBackend
 
-IngressBackend describes all endpoints for a given service and port.
+"IngressBackend describes all endpoints for a given service and port."
 
 ## Index
 
@@ -22,7 +22,7 @@ IngressBackend describes all endpoints for a given service and port.
 
 ## obj resource
 
-TypedLocalObjectReference contains enough information to let you locate the typed referenced object inside the same namespace.
+"TypedLocalObjectReference contains enough information to let you locate the typed referenced object inside the same namespace."
 
 ### fn resource.withApiGroup
 
@@ -30,7 +30,7 @@ TypedLocalObjectReference contains enough information to let you locate the type
 withApiGroup(apiGroup)
 ```
 
-APIGroup is the group for the resource being referenced. If APIGroup is not specified, the specified Kind must be in the core API group. For any other third-party types, APIGroup is required.
+"APIGroup is the group for the resource being referenced. If APIGroup is not specified, the specified Kind must be in the core API group. For any other third-party types, APIGroup is required."
 
 ### fn resource.withKind
 
@@ -38,7 +38,7 @@ APIGroup is the group for the resource being referenced. If APIGroup is not spec
 withKind(kind)
 ```
 
-Kind is the type of resource being referenced
+"Kind is the type of resource being referenced"
 
 ### fn resource.withName
 
@@ -46,11 +46,11 @@ Kind is the type of resource being referenced
 withName(name)
 ```
 
-Name is the name of resource being referenced
+"Name is the name of resource being referenced"
 
 ## obj service
 
-IngressServiceBackend references a Kubernetes Service as a Backend.
+"IngressServiceBackend references a Kubernetes Service as a Backend."
 
 ### fn service.withName
 
@@ -58,11 +58,11 @@ IngressServiceBackend references a Kubernetes Service as a Backend.
 withName(name)
 ```
 
-Name is the referenced service. The service must exist in the same namespace as the Ingress object.
+"Name is the referenced service. The service must exist in the same namespace as the Ingress object."
 
 ## obj service.port
 
-ServiceBackendPort is the service port being referenced.
+"ServiceBackendPort is the service port being referenced."
 
 ### fn service.port.withName
 
@@ -70,7 +70,7 @@ ServiceBackendPort is the service port being referenced.
 withName(name)
 ```
 
-Name is the name of the port on the Service. This is a mutually exclusive setting with "Number".
+"Name is the name of the port on the Service. This is a mutually exclusive setting with \"Number\"."
 
 ### fn service.port.withNumber
 
@@ -78,4 +78,4 @@ Name is the name of the port on the Service. This is a mutually exclusive settin
 withNumber(number)
 ```
 
-Number is the numerical port number (e.g. 80) on the Service. This is a mutually exclusive setting with "Name".
+"Number is the numerical port number (e.g. 80) on the Service. This is a mutually exclusive setting with \"Name\"."

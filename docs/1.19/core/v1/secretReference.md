@@ -4,7 +4,7 @@ permalink: /1.19/core/v1/secretReference/
 
 # core.v1.secretReference
 
-SecretReference represents a Secret Reference. It has enough information to retrieve secret in any namespace
+"SecretReference represents a Secret Reference. It has enough information to retrieve secret in any namespace"
 
 ## Index
 
@@ -19,7 +19,7 @@ SecretReference represents a Secret Reference. It has enough information to retr
 withName(name)
 ```
 
-Name is unique within a namespace to reference a secret resource.
+"Name is unique within a namespace to reference a secret resource."
 
 ### fn withNamespace
 
@@ -27,4 +27,4 @@ Name is unique within a namespace to reference a secret resource.
 withNamespace(namespace)
 ```
 
-Namespace defines the space within which the secret name must be unique.
+"Namespace defines the space within which the secret name must be unique."

@@ -4,7 +4,7 @@ permalink: /1.20/flowcontrol/v1beta1/flowSchemaStatus/
 
 # flowcontrol.v1beta1.flowSchemaStatus
 
-FlowSchemaStatus represents the current state of a FlowSchema.
+"FlowSchemaStatus represents the current state of a FlowSchema."
 
 ## Index
 
@@ -19,7 +19,7 @@ FlowSchemaStatus represents the current state of a FlowSchema.
 withConditions(conditions)
 ```
 
-`conditions` is a list of the current states of FlowSchema.
+"`conditions` is a list of the current states of FlowSchema."
 
 ### fn withConditionsMixin
 
@@ -27,6 +27,6 @@ withConditions(conditions)
 withConditionsMixin(conditions)
 ```
 
-`conditions` is a list of the current states of FlowSchema.
+"`conditions` is a list of the current states of FlowSchema."
 
 **Note:** This function appends passed data to existing values

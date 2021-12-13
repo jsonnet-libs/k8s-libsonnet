@@ -4,7 +4,7 @@ permalink: /1.21/core/v1/daemonEndpoint/
 
 # core.v1.daemonEndpoint
 
-DaemonEndpoint contains information about a single Daemon endpoint.
+"DaemonEndpoint contains information about a single Daemon endpoint."
 
 ## Index
 
@@ -18,4 +18,4 @@ DaemonEndpoint contains information about a single Daemon endpoint.
 withPort(port)
 ```
 
-Port number of the given endpoint.
+"Port number of the given endpoint."

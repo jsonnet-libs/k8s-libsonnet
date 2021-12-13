@@ -4,7 +4,7 @@ permalink: /1.21/core/v1/containerState/
 
 # core.v1.containerState
 
-ContainerState holds a possible state of container. Only one of its members may be specified. If none of them is specified, the default one is ContainerStateWaiting.
+"ContainerState holds a possible state of container. Only one of its members may be specified. If none of them is specified, the default one is ContainerStateWaiting."
 
 ## Index
 
@@ -26,7 +26,7 @@ ContainerState holds a possible state of container. Only one of its members may 
 
 ## obj running
 
-ContainerStateRunning is a running state of a container.
+"ContainerStateRunning is a running state of a container."
 
 ### fn running.withStartedAt
 
@@ -34,11 +34,11 @@ ContainerStateRunning is a running state of a container.
 withStartedAt(startedAt)
 ```
 
-Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.
+"Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers."
 
 ## obj terminated
 
-ContainerStateTerminated is a terminated state of a container.
+"ContainerStateTerminated is a terminated state of a container."
 
 ### fn terminated.withContainerID
 
@@ -46,7 +46,7 @@ ContainerStateTerminated is a terminated state of a container.
 withContainerID(containerID)
 ```
 
-Container's ID in the format 'docker://<container_id>'
+"Container's ID in the format 'docker://<container_id>'"
 
 ### fn terminated.withExitCode
 
@@ -54,7 +54,7 @@ Container's ID in the format 'docker://<container_id>'
 withExitCode(exitCode)
 ```
 
-Exit status from the last termination of the container
+"Exit status from the last termination of the container"
 
 ### fn terminated.withFinishedAt
 
@@ -62,7 +62,7 @@ Exit status from the last termination of the container
 withFinishedAt(finishedAt)
 ```
 
-Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.
+"Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers."
 
 ### fn terminated.withMessage
 
@@ -70,7 +70,7 @@ Time is a wrapper around time.Time which supports correct marshaling to YAML and
 withMessage(message)
 ```
 
-Message regarding the last termination of the container
+"Message regarding the last termination of the container"
 
 ### fn terminated.withReason
 
@@ -78,7 +78,7 @@ Message regarding the last termination of the container
 withReason(reason)
 ```
 
-(brief) reason from the last termination of the container
+"(brief) reason from the last termination of the container"
 
 ### fn terminated.withSignal
 
@@ -86,7 +86,7 @@ withReason(reason)
 withSignal(signal)
 ```
 
-Signal from the last termination of the container
+"Signal from the last termination of the container"
 
 ### fn terminated.withStartedAt
 
@@ -94,11 +94,11 @@ Signal from the last termination of the container
 withStartedAt(startedAt)
 ```
 
-Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.
+"Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers."
 
 ## obj waiting
 
-ContainerStateWaiting is a waiting state of a container.
+"ContainerStateWaiting is a waiting state of a container."
 
 ### fn waiting.withMessage
 
@@ -106,7 +106,7 @@ ContainerStateWaiting is a waiting state of a container.
 withMessage(message)
 ```
 
-Message regarding why the container is not yet running.
+"Message regarding why the container is not yet running."
 
 ### fn waiting.withReason
 
@@ -114,4 +114,4 @@ Message regarding why the container is not yet running.
 withReason(reason)
 ```
 
-(brief) reason the container is not yet running.
+"(brief) reason the container is not yet running."

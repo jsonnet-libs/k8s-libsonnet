@@ -20,11 +20,11 @@ permalink: /1.17/extensions/v1beta1/daemonSetUpdateStrategy/
 withType(type)
 ```
 
-Type of daemon set update. Can be "RollingUpdate" or "OnDelete". Default is OnDelete.
+"Type of daemon set update. Can be \"RollingUpdate\" or \"OnDelete\". Default is OnDelete."
 
 ## obj rollingUpdate
 
-Spec to control the desired behavior of daemon set rolling update.
+"Spec to control the desired behavior of daemon set rolling update."
 
 ### fn rollingUpdate.withMaxUnavailable
 
@@ -32,4 +32,4 @@ Spec to control the desired behavior of daemon set rolling update.
 withMaxUnavailable(maxUnavailable)
 ```
 
-IntOrString is a type that can hold an int32 or a string.  When used in JSON or YAML marshalling and unmarshalling, it produces or consumes the inner type.  This allows you to have, for example, a JSON field that can accept a name or number.
+"IntOrString is a type that can hold an int32 or a string.  When used in JSON or YAML marshalling and unmarshalling, it produces or consumes the inner type.  This allows you to have, for example, a JSON field that can accept a name or number."

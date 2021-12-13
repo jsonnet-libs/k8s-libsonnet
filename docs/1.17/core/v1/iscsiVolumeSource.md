@@ -4,7 +4,7 @@ permalink: /1.17/core/v1/iscsiVolumeSource/
 
 # core.v1.iscsiVolumeSource
 
-Represents an ISCSI disk. ISCSI volumes can only be mounted as read/write once. ISCSI volumes support ownership management and SELinux relabeling.
+"Represents an ISCSI disk. ISCSI volumes can only be mounted as read/write once. ISCSI volumes support ownership management and SELinux relabeling."
 
 ## Index
 
@@ -30,7 +30,7 @@ Represents an ISCSI disk. ISCSI volumes can only be mounted as read/write once. 
 withChapAuthDiscovery(chapAuthDiscovery)
 ```
 
-whether support iSCSI Discovery CHAP authentication
+"whether support iSCSI Discovery CHAP authentication"
 
 ### fn withChapAuthSession
 
@@ -38,7 +38,7 @@ whether support iSCSI Discovery CHAP authentication
 withChapAuthSession(chapAuthSession)
 ```
 
-whether support iSCSI Session CHAP authentication
+"whether support iSCSI Session CHAP authentication"
 
 ### fn withFsType
 
@@ -46,7 +46,7 @@ whether support iSCSI Session CHAP authentication
 withFsType(fsType)
 ```
 
-Filesystem type of the volume that you want to mount. Tip: Ensure that the filesystem type is supported by the host operating system. Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. More info: https://kubernetes.io/docs/concepts/storage/volumes#iscsi
+"Filesystem type of the volume that you want to mount. Tip: Ensure that the filesystem type is supported by the host operating system. Examples: \"ext4\", \"xfs\", \"ntfs\". Implicitly inferred to be \"ext4\" if unspecified. More info: https://kubernetes.io/docs/concepts/storage/volumes#iscsi"
 
 ### fn withInitiatorName
 
@@ -54,7 +54,7 @@ Filesystem type of the volume that you want to mount. Tip: Ensure that the files
 withInitiatorName(initiatorName)
 ```
 
-Custom iSCSI Initiator Name. If initiatorName is specified with iscsiInterface simultaneously, new iSCSI interface <target portal>:<volume name> will be created for the connection.
+"Custom iSCSI Initiator Name. If initiatorName is specified with iscsiInterface simultaneously, new iSCSI interface <target portal>:<volume name> will be created for the connection."
 
 ### fn withIqn
 
@@ -62,7 +62,7 @@ Custom iSCSI Initiator Name. If initiatorName is specified with iscsiInterface s
 withIqn(iqn)
 ```
 
-Target iSCSI Qualified Name.
+"Target iSCSI Qualified Name."
 
 ### fn withIscsiInterface
 
@@ -70,7 +70,7 @@ Target iSCSI Qualified Name.
 withIscsiInterface(iscsiInterface)
 ```
 
-iSCSI Interface Name that uses an iSCSI transport. Defaults to 'default' (tcp).
+"iSCSI Interface Name that uses an iSCSI transport. Defaults to 'default' (tcp)."
 
 ### fn withLun
 
@@ -78,7 +78,7 @@ iSCSI Interface Name that uses an iSCSI transport. Defaults to 'default' (tcp).
 withLun(lun)
 ```
 
-iSCSI Target Lun number.
+"iSCSI Target Lun number."
 
 ### fn withPortals
 
@@ -86,7 +86,7 @@ iSCSI Target Lun number.
 withPortals(portals)
 ```
 
-iSCSI Target Portal List. The portal is either an IP or ip_addr:port if the port is other than default (typically TCP ports 860 and 3260).
+"iSCSI Target Portal List. The portal is either an IP or ip_addr:port if the port is other than default (typically TCP ports 860 and 3260)."
 
 ### fn withPortalsMixin
 
@@ -94,7 +94,7 @@ iSCSI Target Portal List. The portal is either an IP or ip_addr:port if the port
 withPortalsMixin(portals)
 ```
 
-iSCSI Target Portal List. The portal is either an IP or ip_addr:port if the port is other than default (typically TCP ports 860 and 3260).
+"iSCSI Target Portal List. The portal is either an IP or ip_addr:port if the port is other than default (typically TCP ports 860 and 3260)."
 
 **Note:** This function appends passed data to existing values
 
@@ -104,7 +104,7 @@ iSCSI Target Portal List. The portal is either an IP or ip_addr:port if the port
 withReadOnly(readOnly)
 ```
 
-ReadOnly here will force the ReadOnly setting in VolumeMounts. Defaults to false.
+"ReadOnly here will force the ReadOnly setting in VolumeMounts. Defaults to false."
 
 ### fn withTargetPortal
 
@@ -112,11 +112,11 @@ ReadOnly here will force the ReadOnly setting in VolumeMounts. Defaults to false
 withTargetPortal(targetPortal)
 ```
 
-iSCSI Target Portal. The Portal is either an IP or ip_addr:port if the port is other than default (typically TCP ports 860 and 3260).
+"iSCSI Target Portal. The Portal is either an IP or ip_addr:port if the port is other than default (typically TCP ports 860 and 3260)."
 
 ## obj secretRef
 
-LocalObjectReference contains enough information to let you locate the referenced object inside the same namespace.
+"LocalObjectReference contains enough information to let you locate the referenced object inside the same namespace."
 
 ### fn secretRef.withName
 
@@ -124,4 +124,4 @@ LocalObjectReference contains enough information to let you locate the reference
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"

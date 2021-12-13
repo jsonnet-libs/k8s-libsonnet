@@ -4,7 +4,7 @@ permalink: /1.19/core/v1/persistentVolumeClaimSpec/
 
 # core.v1.persistentVolumeClaimSpec
 
-PersistentVolumeClaimSpec describes the common attributes of storage devices and allows a Source for provider-specific attributes
+"PersistentVolumeClaimSpec describes the common attributes of storage devices and allows a Source for provider-specific attributes"
 
 ## Index
 
@@ -36,7 +36,7 @@ PersistentVolumeClaimSpec describes the common attributes of storage devices and
 withAccessModes(accessModes)
 ```
 
-AccessModes contains the desired access modes the volume should have. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#access-modes-1
+"AccessModes contains the desired access modes the volume should have. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#access-modes-1"
 
 ### fn withAccessModesMixin
 
@@ -44,7 +44,7 @@ AccessModes contains the desired access modes the volume should have. More info:
 withAccessModesMixin(accessModes)
 ```
 
-AccessModes contains the desired access modes the volume should have. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#access-modes-1
+"AccessModes contains the desired access modes the volume should have. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#access-modes-1"
 
 **Note:** This function appends passed data to existing values
 
@@ -54,7 +54,7 @@ AccessModes contains the desired access modes the volume should have. More info:
 withStorageClassName(storageClassName)
 ```
 
-Name of the StorageClass required by the claim. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#class-1
+"Name of the StorageClass required by the claim. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#class-1"
 
 ### fn withVolumeMode
 
@@ -62,7 +62,7 @@ Name of the StorageClass required by the claim. More info: https://kubernetes.io
 withVolumeMode(volumeMode)
 ```
 
-volumeMode defines what type of volume is required by the claim. Value of Filesystem is implied when not included in claim spec.
+"volumeMode defines what type of volume is required by the claim. Value of Filesystem is implied when not included in claim spec."
 
 ### fn withVolumeName
 
@@ -70,11 +70,11 @@ volumeMode defines what type of volume is required by the claim. Value of Filesy
 withVolumeName(volumeName)
 ```
 
-VolumeName is the binding reference to the PersistentVolume backing this claim.
+"VolumeName is the binding reference to the PersistentVolume backing this claim."
 
 ## obj dataSource
 
-TypedLocalObjectReference contains enough information to let you locate the typed referenced object inside the same namespace.
+"TypedLocalObjectReference contains enough information to let you locate the typed referenced object inside the same namespace."
 
 ### fn dataSource.withApiGroup
 
@@ -82,7 +82,7 @@ TypedLocalObjectReference contains enough information to let you locate the type
 withApiGroup(apiGroup)
 ```
 
-APIGroup is the group for the resource being referenced. If APIGroup is not specified, the specified Kind must be in the core API group. For any other third-party types, APIGroup is required.
+"APIGroup is the group for the resource being referenced. If APIGroup is not specified, the specified Kind must be in the core API group. For any other third-party types, APIGroup is required."
 
 ### fn dataSource.withKind
 
@@ -90,7 +90,7 @@ APIGroup is the group for the resource being referenced. If APIGroup is not spec
 withKind(kind)
 ```
 
-Kind is the type of resource being referenced
+"Kind is the type of resource being referenced"
 
 ### fn dataSource.withName
 
@@ -98,11 +98,11 @@ Kind is the type of resource being referenced
 withName(name)
 ```
 
-Name is the name of resource being referenced
+"Name is the name of resource being referenced"
 
 ## obj resources
 
-ResourceRequirements describes the compute resource requirements.
+"ResourceRequirements describes the compute resource requirements."
 
 ### fn resources.withLimits
 
@@ -110,7 +110,7 @@ ResourceRequirements describes the compute resource requirements.
 withLimits(limits)
 ```
 
-Limits describes the maximum amount of compute resources allowed. More info: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
+"Limits describes the maximum amount of compute resources allowed. More info: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/"
 
 ### fn resources.withLimitsMixin
 
@@ -118,7 +118,7 @@ Limits describes the maximum amount of compute resources allowed. More info: htt
 withLimitsMixin(limits)
 ```
 
-Limits describes the maximum amount of compute resources allowed. More info: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
+"Limits describes the maximum amount of compute resources allowed. More info: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/"
 
 **Note:** This function appends passed data to existing values
 
@@ -128,7 +128,7 @@ Limits describes the maximum amount of compute resources allowed. More info: htt
 withRequests(requests)
 ```
 
-Requests describes the minimum amount of compute resources required. If Requests is omitted for a container, it defaults to Limits if that is explicitly specified, otherwise to an implementation-defined value. More info: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
+"Requests describes the minimum amount of compute resources required. If Requests is omitted for a container, it defaults to Limits if that is explicitly specified, otherwise to an implementation-defined value. More info: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/"
 
 ### fn resources.withRequestsMixin
 
@@ -136,13 +136,13 @@ Requests describes the minimum amount of compute resources required. If Requests
 withRequestsMixin(requests)
 ```
 
-Requests describes the minimum amount of compute resources required. If Requests is omitted for a container, it defaults to Limits if that is explicitly specified, otherwise to an implementation-defined value. More info: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
+"Requests describes the minimum amount of compute resources required. If Requests is omitted for a container, it defaults to Limits if that is explicitly specified, otherwise to an implementation-defined value. More info: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/"
 
 **Note:** This function appends passed data to existing values
 
 ## obj selector
 
-A label selector is a label query over a set of resources. The result of matchLabels and matchExpressions are ANDed. An empty label selector matches all objects. A null label selector matches no objects.
+"A label selector is a label query over a set of resources. The result of matchLabels and matchExpressions are ANDed. An empty label selector matches all objects. A null label selector matches no objects."
 
 ### fn selector.withMatchExpressions
 
@@ -150,7 +150,7 @@ A label selector is a label query over a set of resources. The result of matchLa
 withMatchExpressions(matchExpressions)
 ```
 
-matchExpressions is a list of label selector requirements. The requirements are ANDed.
+"matchExpressions is a list of label selector requirements. The requirements are ANDed."
 
 ### fn selector.withMatchExpressionsMixin
 
@@ -158,7 +158,7 @@ matchExpressions is a list of label selector requirements. The requirements are 
 withMatchExpressionsMixin(matchExpressions)
 ```
 
-matchExpressions is a list of label selector requirements. The requirements are ANDed.
+"matchExpressions is a list of label selector requirements. The requirements are ANDed."
 
 **Note:** This function appends passed data to existing values
 
@@ -168,7 +168,7 @@ matchExpressions is a list of label selector requirements. The requirements are 
 withMatchLabels(matchLabels)
 ```
 
-matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
+"matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is \"key\", the operator is \"In\", and the values array contains only \"value\". The requirements are ANDed."
 
 ### fn selector.withMatchLabelsMixin
 
@@ -176,6 +176,6 @@ matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabe
 withMatchLabelsMixin(matchLabels)
 ```
 
-matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
+"matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is \"key\", the operator is \"In\", and the values array contains only \"value\". The requirements are ANDed."
 
 **Note:** This function appends passed data to existing values

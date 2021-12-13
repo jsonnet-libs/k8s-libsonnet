@@ -4,7 +4,7 @@ permalink: /1.17/authorization/v1beta1/nonResourceAttributes/
 
 # authorization.v1beta1.nonResourceAttributes
 
-NonResourceAttributes includes the authorization attributes available for non-resource requests to the Authorizer interface
+"NonResourceAttributes includes the authorization attributes available for non-resource requests to the Authorizer interface"
 
 ## Index
 
@@ -19,7 +19,7 @@ NonResourceAttributes includes the authorization attributes available for non-re
 withPath(path)
 ```
 
-Path is the URL path of the request
+"Path is the URL path of the request"
 
 ### fn withVerb
 
@@ -27,4 +27,4 @@ Path is the URL path of the request
 withVerb(verb)
 ```
 
-Verb is the standard HTTP verb
+"Verb is the standard HTTP verb"

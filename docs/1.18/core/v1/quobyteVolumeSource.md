@@ -4,7 +4,7 @@ permalink: /1.18/core/v1/quobyteVolumeSource/
 
 # core.v1.quobyteVolumeSource
 
-Represents a Quobyte mount that lasts the lifetime of a pod. Quobyte volumes do not support ownership management or SELinux relabeling.
+"Represents a Quobyte mount that lasts the lifetime of a pod. Quobyte volumes do not support ownership management or SELinux relabeling."
 
 ## Index
 
@@ -23,7 +23,7 @@ Represents a Quobyte mount that lasts the lifetime of a pod. Quobyte volumes do 
 withGroup(group)
 ```
 
-Group to map volume access to Default is no group
+"Group to map volume access to Default is no group"
 
 ### fn withReadOnly
 
@@ -31,7 +31,7 @@ Group to map volume access to Default is no group
 withReadOnly(readOnly)
 ```
 
-ReadOnly here will force the Quobyte volume to be mounted with read-only permissions. Defaults to false.
+"ReadOnly here will force the Quobyte volume to be mounted with read-only permissions. Defaults to false."
 
 ### fn withRegistry
 
@@ -39,7 +39,7 @@ ReadOnly here will force the Quobyte volume to be mounted with read-only permiss
 withRegistry(registry)
 ```
 
-Registry represents a single or multiple Quobyte Registry services specified as a string as host:port pair (multiple entries are separated with commas) which acts as the central registry for volumes
+"Registry represents a single or multiple Quobyte Registry services specified as a string as host:port pair (multiple entries are separated with commas) which acts as the central registry for volumes"
 
 ### fn withTenant
 
@@ -47,7 +47,7 @@ Registry represents a single or multiple Quobyte Registry services specified as 
 withTenant(tenant)
 ```
 
-Tenant owning the given Quobyte volume in the Backend Used with dynamically provisioned Quobyte volumes, value is set by the plugin
+"Tenant owning the given Quobyte volume in the Backend Used with dynamically provisioned Quobyte volumes, value is set by the plugin"
 
 ### fn withUser
 
@@ -55,7 +55,7 @@ Tenant owning the given Quobyte volume in the Backend Used with dynamically prov
 withUser(user)
 ```
 
-User to map volume access to Defaults to serivceaccount user
+"User to map volume access to Defaults to serivceaccount user"
 
 ### fn withVolume
 
@@ -63,4 +63,4 @@ User to map volume access to Defaults to serivceaccount user
 withVolume(volume)
 ```
 
-Volume is a string that references an already created Quobyte volume by name.
+"Volume is a string that references an already created Quobyte volume by name."

@@ -4,7 +4,7 @@ permalink: /1.14/storage/v1beta1/volumeAttachmentSource/
 
 # storage.v1beta1.volumeAttachmentSource
 
-VolumeAttachmentSource represents a volume that should be attached. Right now only PersistenVolumes can be attached via external attacher, in future we may allow also inline volumes in pods. Exactly one member can be set.
+"VolumeAttachmentSource represents a volume that should be attached. Right now only PersistenVolumes can be attached via external attacher, in future we may allow also inline volumes in pods. Exactly one member can be set."
 
 ## Index
 
@@ -18,4 +18,4 @@ VolumeAttachmentSource represents a volume that should be attached. Right now on
 withPersistentVolumeName(persistentVolumeName)
 ```
 
-Name of the persistent volume to attach.
+"Name of the persistent volume to attach."

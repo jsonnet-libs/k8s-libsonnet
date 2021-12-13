@@ -4,7 +4,7 @@ permalink: /1.20/apps/v1/daemonSetStatus/
 
 # apps.v1.daemonSetStatus
 
-DaemonSetStatus represents the current status of a daemon set.
+"DaemonSetStatus represents the current status of a daemon set."
 
 ## Index
 
@@ -28,7 +28,7 @@ DaemonSetStatus represents the current status of a daemon set.
 withCollisionCount(collisionCount)
 ```
 
-Count of hash collisions for the DaemonSet. The DaemonSet controller uses this field as a collision avoidance mechanism when it needs to create the name for the newest ControllerRevision.
+"Count of hash collisions for the DaemonSet. The DaemonSet controller uses this field as a collision avoidance mechanism when it needs to create the name for the newest ControllerRevision."
 
 ### fn withConditions
 
@@ -36,7 +36,7 @@ Count of hash collisions for the DaemonSet. The DaemonSet controller uses this f
 withConditions(conditions)
 ```
 
-Represents the latest available observations of a DaemonSet's current state.
+"Represents the latest available observations of a DaemonSet's current state."
 
 ### fn withConditionsMixin
 
@@ -44,7 +44,7 @@ Represents the latest available observations of a DaemonSet's current state.
 withConditionsMixin(conditions)
 ```
 
-Represents the latest available observations of a DaemonSet's current state.
+"Represents the latest available observations of a DaemonSet's current state."
 
 **Note:** This function appends passed data to existing values
 
@@ -54,7 +54,7 @@ Represents the latest available observations of a DaemonSet's current state.
 withCurrentNumberScheduled(currentNumberScheduled)
 ```
 
-The number of nodes that are running at least 1 daemon pod and are supposed to run the daemon pod. More info: https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/
+"The number of nodes that are running at least 1 daemon pod and are supposed to run the daemon pod. More info: https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/"
 
 ### fn withDesiredNumberScheduled
 
@@ -62,7 +62,7 @@ The number of nodes that are running at least 1 daemon pod and are supposed to r
 withDesiredNumberScheduled(desiredNumberScheduled)
 ```
 
-The total number of nodes that should be running the daemon pod (including nodes correctly running the daemon pod). More info: https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/
+"The total number of nodes that should be running the daemon pod (including nodes correctly running the daemon pod). More info: https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/"
 
 ### fn withNumberAvailable
 
@@ -70,7 +70,7 @@ The total number of nodes that should be running the daemon pod (including nodes
 withNumberAvailable(numberAvailable)
 ```
 
-The number of nodes that should be running the daemon pod and have one or more of the daemon pod running and available (ready for at least spec.minReadySeconds)
+"The number of nodes that should be running the daemon pod and have one or more of the daemon pod running and available (ready for at least spec.minReadySeconds)"
 
 ### fn withNumberMisscheduled
 
@@ -78,7 +78,7 @@ The number of nodes that should be running the daemon pod and have one or more o
 withNumberMisscheduled(numberMisscheduled)
 ```
 
-The number of nodes that are running the daemon pod, but are not supposed to run the daemon pod. More info: https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/
+"The number of nodes that are running the daemon pod, but are not supposed to run the daemon pod. More info: https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/"
 
 ### fn withNumberReady
 
@@ -86,7 +86,7 @@ The number of nodes that are running the daemon pod, but are not supposed to run
 withNumberReady(numberReady)
 ```
 
-The number of nodes that should be running the daemon pod and have one or more of the daemon pod running and ready.
+"The number of nodes that should be running the daemon pod and have one or more of the daemon pod running and ready."
 
 ### fn withNumberUnavailable
 
@@ -94,7 +94,7 @@ The number of nodes that should be running the daemon pod and have one or more o
 withNumberUnavailable(numberUnavailable)
 ```
 
-The number of nodes that should be running the daemon pod and have none of the daemon pod running and available (ready for at least spec.minReadySeconds)
+"The number of nodes that should be running the daemon pod and have none of the daemon pod running and available (ready for at least spec.minReadySeconds)"
 
 ### fn withObservedGeneration
 
@@ -102,7 +102,7 @@ The number of nodes that should be running the daemon pod and have none of the d
 withObservedGeneration(observedGeneration)
 ```
 
-The most recent generation observed by the daemon set controller.
+"The most recent generation observed by the daemon set controller."
 
 ### fn withUpdatedNumberScheduled
 
@@ -110,4 +110,4 @@ The most recent generation observed by the daemon set controller.
 withUpdatedNumberScheduled(updatedNumberScheduled)
 ```
 
-The total number of nodes that are running updated daemon pod
+"The total number of nodes that are running updated daemon pod"

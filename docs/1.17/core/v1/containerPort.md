@@ -4,7 +4,7 @@ permalink: /1.17/core/v1/containerPort/
 
 # core.v1.containerPort
 
-ContainerPort represents a network port in a single container.
+"ContainerPort represents a network port in a single container."
 
 ## Index
 
@@ -58,7 +58,7 @@ newUDP works like `new`, but also sets protocal to UDP
 withContainerPort(containerPort)
 ```
 
-Number of port to expose on the pod's IP address. This must be a valid port number, 0 < x < 65536.
+"Number of port to expose on the pod's IP address. This must be a valid port number, 0 < x < 65536."
 
 ### fn withHostIP
 
@@ -66,7 +66,7 @@ Number of port to expose on the pod's IP address. This must be a valid port numb
 withHostIP(hostIP)
 ```
 
-What host IP to bind the external port to.
+"What host IP to bind the external port to."
 
 ### fn withHostPort
 
@@ -74,7 +74,7 @@ What host IP to bind the external port to.
 withHostPort(hostPort)
 ```
 
-Number of port to expose on the host. If specified, this must be a valid port number, 0 < x < 65536. If HostNetwork is specified, this must match ContainerPort. Most containers do not need this.
+"Number of port to expose on the host. If specified, this must be a valid port number, 0 < x < 65536. If HostNetwork is specified, this must match ContainerPort. Most containers do not need this."
 
 ### fn withName
 
@@ -82,7 +82,7 @@ Number of port to expose on the host. If specified, this must be a valid port nu
 withName(name)
 ```
 
-If specified, this must be an IANA_SVC_NAME and unique within the pod. Each named port in a pod must have a unique name. Name for the port that can be referred to by services.
+"If specified, this must be an IANA_SVC_NAME and unique within the pod. Each named port in a pod must have a unique name. Name for the port that can be referred to by services."
 
 ### fn withProtocol
 
@@ -90,4 +90,4 @@ If specified, this must be an IANA_SVC_NAME and unique within the pod. Each name
 withProtocol(protocol)
 ```
 
-Protocol for port. Must be UDP, TCP, or SCTP. Defaults to "TCP".
+"Protocol for port. Must be UDP, TCP, or SCTP. Defaults to \"TCP\"."

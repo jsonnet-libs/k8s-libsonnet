@@ -4,7 +4,7 @@ permalink: /1.21/apiregistration/v1beta1/apiServiceCondition/
 
 # apiregistration.v1beta1.apiServiceCondition
 
-APIServiceCondition describes the state of an APIService at a particular point
+"APIServiceCondition describes the state of an APIService at a particular point"
 
 ## Index
 
@@ -21,7 +21,7 @@ APIServiceCondition describes the state of an APIService at a particular point
 withLastTransitionTime(lastTransitionTime)
 ```
 
-Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.
+"Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers."
 
 ### fn withMessage
 
@@ -29,7 +29,7 @@ Time is a wrapper around time.Time which supports correct marshaling to YAML and
 withMessage(message)
 ```
 
-Human-readable message indicating details about last transition.
+"Human-readable message indicating details about last transition."
 
 ### fn withReason
 
@@ -37,7 +37,7 @@ Human-readable message indicating details about last transition.
 withReason(reason)
 ```
 
-Unique, one-word, CamelCase reason for the condition's last transition.
+"Unique, one-word, CamelCase reason for the condition's last transition."
 
 ### fn withType
 
@@ -45,4 +45,4 @@ Unique, one-word, CamelCase reason for the condition's last transition.
 withType(type)
 ```
 
-Type is the type of the condition.
+"Type is the type of the condition."

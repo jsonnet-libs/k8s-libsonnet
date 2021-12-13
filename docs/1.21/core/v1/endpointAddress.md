@@ -4,7 +4,7 @@ permalink: /1.21/core/v1/endpointAddress/
 
 # core.v1.endpointAddress
 
-EndpointAddress is a tuple that describes single IP address.
+"EndpointAddress is a tuple that describes single IP address."
 
 ## Index
 
@@ -28,7 +28,7 @@ EndpointAddress is a tuple that describes single IP address.
 withHostname(hostname)
 ```
 
-The Hostname of this endpoint
+"The Hostname of this endpoint"
 
 ### fn withIp
 
@@ -36,7 +36,7 @@ The Hostname of this endpoint
 withIp(ip)
 ```
 
-The IP of this endpoint. May not be loopback (127.0.0.0/8), link-local (169.254.0.0/16), or link-local multicast ((224.0.0.0/24). IPv6 is also accepted but not fully supported on all platforms. Also, certain kubernetes components, like kube-proxy, are not IPv6 ready.
+"The IP of this endpoint. May not be loopback (127.0.0.0/8), link-local (169.254.0.0/16), or link-local multicast ((224.0.0.0/24). IPv6 is also accepted but not fully supported on all platforms. Also, certain kubernetes components, like kube-proxy, are not IPv6 ready."
 
 ### fn withNodeName
 
@@ -44,11 +44,11 @@ The IP of this endpoint. May not be loopback (127.0.0.0/8), link-local (169.254.
 withNodeName(nodeName)
 ```
 
-Optional: Node hosting this endpoint. This can be used to determine endpoints local to a node.
+"Optional: Node hosting this endpoint. This can be used to determine endpoints local to a node."
 
 ## obj targetRef
 
-ObjectReference contains enough information to let you inspect or modify the referred object.
+"ObjectReference contains enough information to let you inspect or modify the referred object."
 
 ### fn targetRef.withApiVersion
 
@@ -56,7 +56,7 @@ ObjectReference contains enough information to let you inspect or modify the ref
 withApiVersion(apiVersion)
 ```
 
-API version of the referent.
+"API version of the referent."
 
 ### fn targetRef.withFieldPath
 
@@ -64,7 +64,7 @@ API version of the referent.
 withFieldPath(fieldPath)
 ```
 
-If referring to a piece of an object instead of an entire object, this string should contain a valid JSON/Go field access statement, such as desiredState.manifest.containers[2]. For example, if the object reference is to a container within a pod, this would take on a value like: "spec.containers{name}" (where "name" refers to the name of the container that triggered the event) or if no container name is specified "spec.containers[2]" (container with index 2 in this pod). This syntax is chosen only to have some well-defined way of referencing a part of an object.
+"If referring to a piece of an object instead of an entire object, this string should contain a valid JSON/Go field access statement, such as desiredState.manifest.containers[2]. For example, if the object reference is to a container within a pod, this would take on a value like: \"spec.containers{name}\" (where \"name\" refers to the name of the container that triggered the event) or if no container name is specified \"spec.containers[2]\" (container with index 2 in this pod). This syntax is chosen only to have some well-defined way of referencing a part of an object."
 
 ### fn targetRef.withKind
 
@@ -72,7 +72,7 @@ If referring to a piece of an object instead of an entire object, this string sh
 withKind(kind)
 ```
 
-Kind of the referent. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
+"Kind of the referent. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds"
 
 ### fn targetRef.withName
 
@@ -80,7 +80,7 @@ Kind of the referent. More info: https://git.k8s.io/community/contributors/devel
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn targetRef.withNamespace
 
@@ -88,7 +88,7 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withNamespace(namespace)
 ```
 
-Namespace of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/
+"Namespace of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/"
 
 ### fn targetRef.withResourceVersion
 
@@ -96,7 +96,7 @@ Namespace of the referent. More info: https://kubernetes.io/docs/concepts/overvi
 withResourceVersion(resourceVersion)
 ```
 
-Specific resourceVersion to which this reference is made, if any. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#concurrency-control-and-consistency
+"Specific resourceVersion to which this reference is made, if any. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#concurrency-control-and-consistency"
 
 ### fn targetRef.withUid
 
@@ -104,4 +104,4 @@ Specific resourceVersion to which this reference is made, if any. More info: htt
 withUid(uid)
 ```
 
-UID of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#uids
+"UID of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#uids"

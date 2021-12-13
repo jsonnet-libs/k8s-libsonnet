@@ -4,7 +4,7 @@ permalink: /1.21/core/v1/cephFSVolumeSource/
 
 # core.v1.cephFSVolumeSource
 
-Represents a Ceph Filesystem mount that lasts the lifetime of a pod Cephfs volumes do not support ownership management or SELinux relabeling.
+"Represents a Ceph Filesystem mount that lasts the lifetime of a pod Cephfs volumes do not support ownership management or SELinux relabeling."
 
 ## Index
 
@@ -25,7 +25,7 @@ Represents a Ceph Filesystem mount that lasts the lifetime of a pod Cephfs volum
 withMonitors(monitors)
 ```
 
-Required: Monitors is a collection of Ceph monitors More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it
+"Required: Monitors is a collection of Ceph monitors More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it"
 
 ### fn withMonitorsMixin
 
@@ -33,7 +33,7 @@ Required: Monitors is a collection of Ceph monitors More info: https://examples.
 withMonitorsMixin(monitors)
 ```
 
-Required: Monitors is a collection of Ceph monitors More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it
+"Required: Monitors is a collection of Ceph monitors More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it"
 
 **Note:** This function appends passed data to existing values
 
@@ -43,7 +43,7 @@ Required: Monitors is a collection of Ceph monitors More info: https://examples.
 withPath(path)
 ```
 
-Optional: Used as the mounted root, rather than the full Ceph tree, default is /
+"Optional: Used as the mounted root, rather than the full Ceph tree, default is /"
 
 ### fn withReadOnly
 
@@ -51,7 +51,7 @@ Optional: Used as the mounted root, rather than the full Ceph tree, default is /
 withReadOnly(readOnly)
 ```
 
-Optional: Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts. More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it
+"Optional: Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts. More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it"
 
 ### fn withSecretFile
 
@@ -59,7 +59,7 @@ Optional: Defaults to false (read/write). ReadOnly here will force the ReadOnly 
 withSecretFile(secretFile)
 ```
 
-Optional: SecretFile is the path to key ring for User, default is /etc/ceph/user.secret More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it
+"Optional: SecretFile is the path to key ring for User, default is /etc/ceph/user.secret More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it"
 
 ### fn withUser
 
@@ -67,11 +67,11 @@ Optional: SecretFile is the path to key ring for User, default is /etc/ceph/user
 withUser(user)
 ```
 
-Optional: User is the rados user name, default is admin More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it
+"Optional: User is the rados user name, default is admin More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it"
 
 ## obj secretRef
 
-LocalObjectReference contains enough information to let you locate the referenced object inside the same namespace.
+"LocalObjectReference contains enough information to let you locate the referenced object inside the same namespace."
 
 ### fn secretRef.withName
 
@@ -79,4 +79,4 @@ LocalObjectReference contains enough information to let you locate the reference
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"

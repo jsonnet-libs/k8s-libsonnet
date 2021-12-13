@@ -4,7 +4,7 @@ permalink: /1.21/core/v1/resourceQuotaSpec/
 
 # core.v1.resourceQuotaSpec
 
-ResourceQuotaSpec defines the desired hard limits to enforce for Quota.
+"ResourceQuotaSpec defines the desired hard limits to enforce for Quota."
 
 ## Index
 
@@ -24,7 +24,7 @@ ResourceQuotaSpec defines the desired hard limits to enforce for Quota.
 withHard(hard)
 ```
 
-hard is the set of desired hard limits for each named resource. More info: https://kubernetes.io/docs/concepts/policy/resource-quotas/
+"hard is the set of desired hard limits for each named resource. More info: https://kubernetes.io/docs/concepts/policy/resource-quotas/"
 
 ### fn withHardMixin
 
@@ -32,7 +32,7 @@ hard is the set of desired hard limits for each named resource. More info: https
 withHardMixin(hard)
 ```
 
-hard is the set of desired hard limits for each named resource. More info: https://kubernetes.io/docs/concepts/policy/resource-quotas/
+"hard is the set of desired hard limits for each named resource. More info: https://kubernetes.io/docs/concepts/policy/resource-quotas/"
 
 **Note:** This function appends passed data to existing values
 
@@ -42,7 +42,7 @@ hard is the set of desired hard limits for each named resource. More info: https
 withScopes(scopes)
 ```
 
-A collection of filters that must match each object tracked by a quota. If not specified, the quota matches all objects.
+"A collection of filters that must match each object tracked by a quota. If not specified, the quota matches all objects."
 
 ### fn withScopesMixin
 
@@ -50,13 +50,13 @@ A collection of filters that must match each object tracked by a quota. If not s
 withScopesMixin(scopes)
 ```
 
-A collection of filters that must match each object tracked by a quota. If not specified, the quota matches all objects.
+"A collection of filters that must match each object tracked by a quota. If not specified, the quota matches all objects."
 
 **Note:** This function appends passed data to existing values
 
 ## obj scopeSelector
 
-A scope selector represents the AND of the selectors represented by the scoped-resource selector requirements.
+"A scope selector represents the AND of the selectors represented by the scoped-resource selector requirements."
 
 ### fn scopeSelector.withMatchExpressions
 
@@ -64,7 +64,7 @@ A scope selector represents the AND of the selectors represented by the scoped-r
 withMatchExpressions(matchExpressions)
 ```
 
-A list of scope selector requirements by scope of the resources.
+"A list of scope selector requirements by scope of the resources."
 
 ### fn scopeSelector.withMatchExpressionsMixin
 
@@ -72,6 +72,6 @@ A list of scope selector requirements by scope of the resources.
 withMatchExpressionsMixin(matchExpressions)
 ```
 
-A list of scope selector requirements by scope of the resources.
+"A list of scope selector requirements by scope of the resources."
 
 **Note:** This function appends passed data to existing values

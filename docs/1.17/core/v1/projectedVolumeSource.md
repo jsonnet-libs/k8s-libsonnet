@@ -4,7 +4,7 @@ permalink: /1.17/core/v1/projectedVolumeSource/
 
 # core.v1.projectedVolumeSource
 
-Represents a projected volume source
+"Represents a projected volume source"
 
 ## Index
 
@@ -20,7 +20,7 @@ Represents a projected volume source
 withDefaultMode(defaultMode)
 ```
 
-Mode bits to use on created files by default. Must be a value between 0 and 0777. Directories within the path are not affected by this setting. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
+"Mode bits to use on created files by default. Must be a value between 0 and 0777. Directories within the path are not affected by this setting. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set."
 
 ### fn withSources
 
@@ -28,7 +28,7 @@ Mode bits to use on created files by default. Must be a value between 0 and 0777
 withSources(sources)
 ```
 
-list of volume projections
+"list of volume projections"
 
 ### fn withSourcesMixin
 
@@ -36,6 +36,6 @@ list of volume projections
 withSourcesMixin(sources)
 ```
 
-list of volume projections
+"list of volume projections"
 
 **Note:** This function appends passed data to existing values

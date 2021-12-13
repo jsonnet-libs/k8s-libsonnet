@@ -4,7 +4,7 @@ permalink: /1.17/discovery/v1beta1/endpointPort/
 
 # discovery.v1beta1.endpointPort
 
-EndpointPort represents a Port used by an EndpointSlice
+"EndpointPort represents a Port used by an EndpointSlice"
 
 ## Index
 
@@ -21,7 +21,7 @@ EndpointPort represents a Port used by an EndpointSlice
 withAppProtocol(appProtocol)
 ```
 
-The application protocol for this port. This field follows standard Kubernetes label syntax. Un-prefixed names are reserved for IANA standard service names (as per RFC-6335 and http://www.iana.org/assignments/service-names). Non-standard protocols should use prefixed names. Default is empty string.
+"The application protocol for this port. This field follows standard Kubernetes label syntax. Un-prefixed names are reserved for IANA standard service names (as per RFC-6335 and http://www.iana.org/assignments/service-names). Non-standard protocols should use prefixed names. Default is empty string."
 
 ### fn withName
 
@@ -29,7 +29,7 @@ The application protocol for this port. This field follows standard Kubernetes l
 withName(name)
 ```
 
-The name of this port. All ports in an EndpointSlice must have a unique name. If the EndpointSlice is dervied from a Kubernetes service, this corresponds to the Service.ports[].name. Name must either be an empty string or pass DNS_LABEL validation: * must be no more than 63 characters long. * must consist of lower case alphanumeric characters or '-'. * must start and end with an alphanumeric character. Default is empty string.
+"The name of this port. All ports in an EndpointSlice must have a unique name. If the EndpointSlice is dervied from a Kubernetes service, this corresponds to the Service.ports[].name. Name must either be an empty string or pass DNS_LABEL validation: * must be no more than 63 characters long. * must consist of lower case alphanumeric characters or '-'. * must start and end with an alphanumeric character. Default is empty string."
 
 ### fn withPort
 
@@ -37,7 +37,7 @@ The name of this port. All ports in an EndpointSlice must have a unique name. If
 withPort(port)
 ```
 
-The port number of the endpoint. If this is not specified, ports are not restricted and must be interpreted in the context of the specific consumer.
+"The port number of the endpoint. If this is not specified, ports are not restricted and must be interpreted in the context of the specific consumer."
 
 ### fn withProtocol
 
@@ -45,4 +45,4 @@ The port number of the endpoint. If this is not specified, ports are not restric
 withProtocol(protocol)
 ```
 
-The IP protocol for this port. Must be UDP, TCP, or SCTP. Default is TCP.
+"The IP protocol for this port. Must be UDP, TCP, or SCTP. Default is TCP."

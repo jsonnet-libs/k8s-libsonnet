@@ -4,7 +4,7 @@ permalink: /1.17/batch/v1beta1/cronJobStatus/
 
 # batch.v1beta1.cronJobStatus
 
-CronJobStatus represents the current state of a cron job.
+"CronJobStatus represents the current state of a cron job."
 
 ## Index
 
@@ -20,7 +20,7 @@ CronJobStatus represents the current state of a cron job.
 withActive(active)
 ```
 
-A list of pointers to currently running jobs.
+"A list of pointers to currently running jobs."
 
 ### fn withActiveMixin
 
@@ -28,7 +28,7 @@ A list of pointers to currently running jobs.
 withActiveMixin(active)
 ```
 
-A list of pointers to currently running jobs.
+"A list of pointers to currently running jobs."
 
 **Note:** This function appends passed data to existing values
 
@@ -38,4 +38,4 @@ A list of pointers to currently running jobs.
 withLastScheduleTime(lastScheduleTime)
 ```
 
-Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.
+"Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers."

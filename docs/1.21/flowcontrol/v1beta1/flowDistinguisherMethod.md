@@ -4,7 +4,7 @@ permalink: /1.21/flowcontrol/v1beta1/flowDistinguisherMethod/
 
 # flowcontrol.v1beta1.flowDistinguisherMethod
 
-FlowDistinguisherMethod specifies the method of a flow distinguisher.
+"FlowDistinguisherMethod specifies the method of a flow distinguisher."
 
 ## Index
 
@@ -18,4 +18,4 @@ FlowDistinguisherMethod specifies the method of a flow distinguisher.
 withType(type)
 ```
 
-`type` is the type of flow distinguisher method The supported types are "ByUser" and "ByNamespace". Required.
+"`type` is the type of flow distinguisher method The supported types are \"ByUser\" and \"ByNamespace\". Required."

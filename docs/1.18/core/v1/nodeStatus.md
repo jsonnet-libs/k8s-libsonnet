@@ -4,7 +4,7 @@ permalink: /1.18/core/v1/nodeStatus/
 
 # core.v1.nodeStatus
 
-NodeStatus is information about the current status of a node.
+"NodeStatus is information about the current status of a node."
 
 ## Index
 
@@ -69,7 +69,7 @@ NodeStatus is information about the current status of a node.
 withAddresses(addresses)
 ```
 
-List of addresses reachable to the node. Queried from cloud provider, if available. More info: https://kubernetes.io/docs/concepts/nodes/node/#addresses Note: This field is declared as mergeable, but the merge key is not sufficiently unique, which can cause data corruption when it is merged. Callers should instead use a full-replacement patch. See http://pr.k8s.io/79391 for an example.
+"List of addresses reachable to the node. Queried from cloud provider, if available. More info: https://kubernetes.io/docs/concepts/nodes/node/#addresses Note: This field is declared as mergeable, but the merge key is not sufficiently unique, which can cause data corruption when it is merged. Callers should instead use a full-replacement patch. See http://pr.k8s.io/79391 for an example."
 
 ### fn withAddressesMixin
 
@@ -77,7 +77,7 @@ List of addresses reachable to the node. Queried from cloud provider, if availab
 withAddressesMixin(addresses)
 ```
 
-List of addresses reachable to the node. Queried from cloud provider, if available. More info: https://kubernetes.io/docs/concepts/nodes/node/#addresses Note: This field is declared as mergeable, but the merge key is not sufficiently unique, which can cause data corruption when it is merged. Callers should instead use a full-replacement patch. See http://pr.k8s.io/79391 for an example.
+"List of addresses reachable to the node. Queried from cloud provider, if available. More info: https://kubernetes.io/docs/concepts/nodes/node/#addresses Note: This field is declared as mergeable, but the merge key is not sufficiently unique, which can cause data corruption when it is merged. Callers should instead use a full-replacement patch. See http://pr.k8s.io/79391 for an example."
 
 **Note:** This function appends passed data to existing values
 
@@ -87,7 +87,7 @@ List of addresses reachable to the node. Queried from cloud provider, if availab
 withAllocatable(allocatable)
 ```
 
-Allocatable represents the resources of a node that are available for scheduling. Defaults to Capacity.
+"Allocatable represents the resources of a node that are available for scheduling. Defaults to Capacity."
 
 ### fn withAllocatableMixin
 
@@ -95,7 +95,7 @@ Allocatable represents the resources of a node that are available for scheduling
 withAllocatableMixin(allocatable)
 ```
 
-Allocatable represents the resources of a node that are available for scheduling. Defaults to Capacity.
+"Allocatable represents the resources of a node that are available for scheduling. Defaults to Capacity."
 
 **Note:** This function appends passed data to existing values
 
@@ -105,7 +105,7 @@ Allocatable represents the resources of a node that are available for scheduling
 withCapacity(capacity)
 ```
 
-Capacity represents the total resources of a node. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#capacity
+"Capacity represents the total resources of a node. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#capacity"
 
 ### fn withCapacityMixin
 
@@ -113,7 +113,7 @@ Capacity represents the total resources of a node. More info: https://kubernetes
 withCapacityMixin(capacity)
 ```
 
-Capacity represents the total resources of a node. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#capacity
+"Capacity represents the total resources of a node. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#capacity"
 
 **Note:** This function appends passed data to existing values
 
@@ -123,7 +123,7 @@ Capacity represents the total resources of a node. More info: https://kubernetes
 withConditions(conditions)
 ```
 
-Conditions is an array of current observed node conditions. More info: https://kubernetes.io/docs/concepts/nodes/node/#condition
+"Conditions is an array of current observed node conditions. More info: https://kubernetes.io/docs/concepts/nodes/node/#condition"
 
 ### fn withConditionsMixin
 
@@ -131,7 +131,7 @@ Conditions is an array of current observed node conditions. More info: https://k
 withConditionsMixin(conditions)
 ```
 
-Conditions is an array of current observed node conditions. More info: https://kubernetes.io/docs/concepts/nodes/node/#condition
+"Conditions is an array of current observed node conditions. More info: https://kubernetes.io/docs/concepts/nodes/node/#condition"
 
 **Note:** This function appends passed data to existing values
 
@@ -141,7 +141,7 @@ Conditions is an array of current observed node conditions. More info: https://k
 withImages(images)
 ```
 
-List of container images on this node
+"List of container images on this node"
 
 ### fn withImagesMixin
 
@@ -149,7 +149,7 @@ List of container images on this node
 withImagesMixin(images)
 ```
 
-List of container images on this node
+"List of container images on this node"
 
 **Note:** This function appends passed data to existing values
 
@@ -159,7 +159,7 @@ List of container images on this node
 withPhase(phase)
 ```
 
-NodePhase is the recently observed lifecycle phase of the node. More info: https://kubernetes.io/docs/concepts/nodes/node/#phase The field is never populated, and now is deprecated.
+"NodePhase is the recently observed lifecycle phase of the node. More info: https://kubernetes.io/docs/concepts/nodes/node/#phase The field is never populated, and now is deprecated."
 
 ### fn withVolumesAttached
 
@@ -167,7 +167,7 @@ NodePhase is the recently observed lifecycle phase of the node. More info: https
 withVolumesAttached(volumesAttached)
 ```
 
-List of volumes that are attached to the node.
+"List of volumes that are attached to the node."
 
 ### fn withVolumesAttachedMixin
 
@@ -175,7 +175,7 @@ List of volumes that are attached to the node.
 withVolumesAttachedMixin(volumesAttached)
 ```
 
-List of volumes that are attached to the node.
+"List of volumes that are attached to the node."
 
 **Note:** This function appends passed data to existing values
 
@@ -185,7 +185,7 @@ List of volumes that are attached to the node.
 withVolumesInUse(volumesInUse)
 ```
 
-List of attachable volumes in use (mounted) by the node.
+"List of attachable volumes in use (mounted) by the node."
 
 ### fn withVolumesInUseMixin
 
@@ -193,13 +193,13 @@ List of attachable volumes in use (mounted) by the node.
 withVolumesInUseMixin(volumesInUse)
 ```
 
-List of attachable volumes in use (mounted) by the node.
+"List of attachable volumes in use (mounted) by the node."
 
 **Note:** This function appends passed data to existing values
 
 ## obj config
 
-NodeConfigStatus describes the status of the config assigned by Node.Spec.ConfigSource.
+"NodeConfigStatus describes the status of the config assigned by Node.Spec.ConfigSource."
 
 ### fn config.withError
 
@@ -207,15 +207,15 @@ NodeConfigStatus describes the status of the config assigned by Node.Spec.Config
 withError(err)
 ```
 
-Error describes any problems reconciling the Spec.ConfigSource to the Active config. Errors may occur, for example, attempting to checkpoint Spec.ConfigSource to the local Assigned record, attempting to checkpoint the payload associated with Spec.ConfigSource, attempting to load or validate the Assigned config, etc. Errors may occur at different points while syncing config. Earlier errors (e.g. download or checkpointing errors) will not result in a rollback to LastKnownGood, and may resolve across Kubelet retries. Later errors (e.g. loading or validating a checkpointed config) will result in a rollback to LastKnownGood. In the latter case, it is usually possible to resolve the error by fixing the config assigned in Spec.ConfigSource. You can find additional information for debugging by searching the error message in the Kubelet log. Error is a human-readable description of the error state; machines can check whether or not Error is empty, but should not rely on the stability of the Error text across Kubelet versions.
+"Error describes any problems reconciling the Spec.ConfigSource to the Active config. Errors may occur, for example, attempting to checkpoint Spec.ConfigSource to the local Assigned record, attempting to checkpoint the payload associated with Spec.ConfigSource, attempting to load or validate the Assigned config, etc. Errors may occur at different points while syncing config. Earlier errors (e.g. download or checkpointing errors) will not result in a rollback to LastKnownGood, and may resolve across Kubelet retries. Later errors (e.g. loading or validating a checkpointed config) will result in a rollback to LastKnownGood. In the latter case, it is usually possible to resolve the error by fixing the config assigned in Spec.ConfigSource. You can find additional information for debugging by searching the error message in the Kubelet log. Error is a human-readable description of the error state; machines can check whether or not Error is empty, but should not rely on the stability of the Error text across Kubelet versions."
 
 ## obj config.active
 
-NodeConfigSource specifies a source of node configuration. Exactly one subfield (excluding metadata) must be non-nil.
+"NodeConfigSource specifies a source of node configuration. Exactly one subfield (excluding metadata) must be non-nil."
 
 ## obj config.active.configMap
 
-ConfigMapNodeConfigSource contains the information to reference a ConfigMap as a config source for the Node.
+"ConfigMapNodeConfigSource contains the information to reference a ConfigMap as a config source for the Node."
 
 ### fn config.active.configMap.withKubeletConfigKey
 
@@ -223,7 +223,7 @@ ConfigMapNodeConfigSource contains the information to reference a ConfigMap as a
 withKubeletConfigKey(kubeletConfigKey)
 ```
 
-KubeletConfigKey declares which key of the referenced ConfigMap corresponds to the KubeletConfiguration structure This field is required in all cases.
+"KubeletConfigKey declares which key of the referenced ConfigMap corresponds to the KubeletConfiguration structure This field is required in all cases."
 
 ### fn config.active.configMap.withName
 
@@ -231,7 +231,7 @@ KubeletConfigKey declares which key of the referenced ConfigMap corresponds to t
 withName(name)
 ```
 
-Name is the metadata.name of the referenced ConfigMap. This field is required in all cases.
+"Name is the metadata.name of the referenced ConfigMap. This field is required in all cases."
 
 ### fn config.active.configMap.withNamespace
 
@@ -239,7 +239,7 @@ Name is the metadata.name of the referenced ConfigMap. This field is required in
 withNamespace(namespace)
 ```
 
-Namespace is the metadata.namespace of the referenced ConfigMap. This field is required in all cases.
+"Namespace is the metadata.namespace of the referenced ConfigMap. This field is required in all cases."
 
 ### fn config.active.configMap.withResourceVersion
 
@@ -247,7 +247,7 @@ Namespace is the metadata.namespace of the referenced ConfigMap. This field is r
 withResourceVersion(resourceVersion)
 ```
 
-ResourceVersion is the metadata.ResourceVersion of the referenced ConfigMap. This field is forbidden in Node.Spec, and required in Node.Status.
+"ResourceVersion is the metadata.ResourceVersion of the referenced ConfigMap. This field is forbidden in Node.Spec, and required in Node.Status."
 
 ### fn config.active.configMap.withUid
 
@@ -255,15 +255,15 @@ ResourceVersion is the metadata.ResourceVersion of the referenced ConfigMap. Thi
 withUid(uid)
 ```
 
-UID is the metadata.UID of the referenced ConfigMap. This field is forbidden in Node.Spec, and required in Node.Status.
+"UID is the metadata.UID of the referenced ConfigMap. This field is forbidden in Node.Spec, and required in Node.Status."
 
 ## obj config.assigned
 
-NodeConfigSource specifies a source of node configuration. Exactly one subfield (excluding metadata) must be non-nil.
+"NodeConfigSource specifies a source of node configuration. Exactly one subfield (excluding metadata) must be non-nil."
 
 ## obj config.assigned.configMap
 
-ConfigMapNodeConfigSource contains the information to reference a ConfigMap as a config source for the Node.
+"ConfigMapNodeConfigSource contains the information to reference a ConfigMap as a config source for the Node."
 
 ### fn config.assigned.configMap.withKubeletConfigKey
 
@@ -271,7 +271,7 @@ ConfigMapNodeConfigSource contains the information to reference a ConfigMap as a
 withKubeletConfigKey(kubeletConfigKey)
 ```
 
-KubeletConfigKey declares which key of the referenced ConfigMap corresponds to the KubeletConfiguration structure This field is required in all cases.
+"KubeletConfigKey declares which key of the referenced ConfigMap corresponds to the KubeletConfiguration structure This field is required in all cases."
 
 ### fn config.assigned.configMap.withName
 
@@ -279,7 +279,7 @@ KubeletConfigKey declares which key of the referenced ConfigMap corresponds to t
 withName(name)
 ```
 
-Name is the metadata.name of the referenced ConfigMap. This field is required in all cases.
+"Name is the metadata.name of the referenced ConfigMap. This field is required in all cases."
 
 ### fn config.assigned.configMap.withNamespace
 
@@ -287,7 +287,7 @@ Name is the metadata.name of the referenced ConfigMap. This field is required in
 withNamespace(namespace)
 ```
 
-Namespace is the metadata.namespace of the referenced ConfigMap. This field is required in all cases.
+"Namespace is the metadata.namespace of the referenced ConfigMap. This field is required in all cases."
 
 ### fn config.assigned.configMap.withResourceVersion
 
@@ -295,7 +295,7 @@ Namespace is the metadata.namespace of the referenced ConfigMap. This field is r
 withResourceVersion(resourceVersion)
 ```
 
-ResourceVersion is the metadata.ResourceVersion of the referenced ConfigMap. This field is forbidden in Node.Spec, and required in Node.Status.
+"ResourceVersion is the metadata.ResourceVersion of the referenced ConfigMap. This field is forbidden in Node.Spec, and required in Node.Status."
 
 ### fn config.assigned.configMap.withUid
 
@@ -303,15 +303,15 @@ ResourceVersion is the metadata.ResourceVersion of the referenced ConfigMap. Thi
 withUid(uid)
 ```
 
-UID is the metadata.UID of the referenced ConfigMap. This field is forbidden in Node.Spec, and required in Node.Status.
+"UID is the metadata.UID of the referenced ConfigMap. This field is forbidden in Node.Spec, and required in Node.Status."
 
 ## obj config.lastKnownGood
 
-NodeConfigSource specifies a source of node configuration. Exactly one subfield (excluding metadata) must be non-nil.
+"NodeConfigSource specifies a source of node configuration. Exactly one subfield (excluding metadata) must be non-nil."
 
 ## obj config.lastKnownGood.configMap
 
-ConfigMapNodeConfigSource contains the information to reference a ConfigMap as a config source for the Node.
+"ConfigMapNodeConfigSource contains the information to reference a ConfigMap as a config source for the Node."
 
 ### fn config.lastKnownGood.configMap.withKubeletConfigKey
 
@@ -319,7 +319,7 @@ ConfigMapNodeConfigSource contains the information to reference a ConfigMap as a
 withKubeletConfigKey(kubeletConfigKey)
 ```
 
-KubeletConfigKey declares which key of the referenced ConfigMap corresponds to the KubeletConfiguration structure This field is required in all cases.
+"KubeletConfigKey declares which key of the referenced ConfigMap corresponds to the KubeletConfiguration structure This field is required in all cases."
 
 ### fn config.lastKnownGood.configMap.withName
 
@@ -327,7 +327,7 @@ KubeletConfigKey declares which key of the referenced ConfigMap corresponds to t
 withName(name)
 ```
 
-Name is the metadata.name of the referenced ConfigMap. This field is required in all cases.
+"Name is the metadata.name of the referenced ConfigMap. This field is required in all cases."
 
 ### fn config.lastKnownGood.configMap.withNamespace
 
@@ -335,7 +335,7 @@ Name is the metadata.name of the referenced ConfigMap. This field is required in
 withNamespace(namespace)
 ```
 
-Namespace is the metadata.namespace of the referenced ConfigMap. This field is required in all cases.
+"Namespace is the metadata.namespace of the referenced ConfigMap. This field is required in all cases."
 
 ### fn config.lastKnownGood.configMap.withResourceVersion
 
@@ -343,7 +343,7 @@ Namespace is the metadata.namespace of the referenced ConfigMap. This field is r
 withResourceVersion(resourceVersion)
 ```
 
-ResourceVersion is the metadata.ResourceVersion of the referenced ConfigMap. This field is forbidden in Node.Spec, and required in Node.Status.
+"ResourceVersion is the metadata.ResourceVersion of the referenced ConfigMap. This field is forbidden in Node.Spec, and required in Node.Status."
 
 ### fn config.lastKnownGood.configMap.withUid
 
@@ -351,15 +351,15 @@ ResourceVersion is the metadata.ResourceVersion of the referenced ConfigMap. Thi
 withUid(uid)
 ```
 
-UID is the metadata.UID of the referenced ConfigMap. This field is forbidden in Node.Spec, and required in Node.Status.
+"UID is the metadata.UID of the referenced ConfigMap. This field is forbidden in Node.Spec, and required in Node.Status."
 
 ## obj daemonEndpoints
 
-NodeDaemonEndpoints lists ports opened by daemons running on the Node.
+"NodeDaemonEndpoints lists ports opened by daemons running on the Node."
 
 ## obj daemonEndpoints.kubeletEndpoint
 
-DaemonEndpoint contains information about a single Daemon endpoint.
+"DaemonEndpoint contains information about a single Daemon endpoint."
 
 ### fn daemonEndpoints.kubeletEndpoint.withPort
 
@@ -367,11 +367,11 @@ DaemonEndpoint contains information about a single Daemon endpoint.
 withPort(port)
 ```
 
-Port number of the given endpoint.
+"Port number of the given endpoint."
 
 ## obj nodeInfo
 
-NodeSystemInfo is a set of ids/uuids to uniquely identify the node.
+"NodeSystemInfo is a set of ids/uuids to uniquely identify the node."
 
 ### fn nodeInfo.withArchitecture
 
@@ -379,7 +379,7 @@ NodeSystemInfo is a set of ids/uuids to uniquely identify the node.
 withArchitecture(architecture)
 ```
 
-The Architecture reported by the node
+"The Architecture reported by the node"
 
 ### fn nodeInfo.withBootID
 
@@ -387,7 +387,7 @@ The Architecture reported by the node
 withBootID(bootID)
 ```
 
-Boot ID reported by the node.
+"Boot ID reported by the node."
 
 ### fn nodeInfo.withContainerRuntimeVersion
 
@@ -395,7 +395,7 @@ Boot ID reported by the node.
 withContainerRuntimeVersion(containerRuntimeVersion)
 ```
 
-ContainerRuntime Version reported by the node through runtime remote API (e.g. docker://1.5.0).
+"ContainerRuntime Version reported by the node through runtime remote API (e.g. docker://1.5.0)."
 
 ### fn nodeInfo.withKernelVersion
 
@@ -403,7 +403,7 @@ ContainerRuntime Version reported by the node through runtime remote API (e.g. d
 withKernelVersion(kernelVersion)
 ```
 
-Kernel Version reported by the node from 'uname -r' (e.g. 3.16.0-0.bpo.4-amd64).
+"Kernel Version reported by the node from 'uname -r' (e.g. 3.16.0-0.bpo.4-amd64)."
 
 ### fn nodeInfo.withKubeProxyVersion
 
@@ -411,7 +411,7 @@ Kernel Version reported by the node from 'uname -r' (e.g. 3.16.0-0.bpo.4-amd64).
 withKubeProxyVersion(kubeProxyVersion)
 ```
 
-KubeProxy Version reported by the node.
+"KubeProxy Version reported by the node."
 
 ### fn nodeInfo.withKubeletVersion
 
@@ -419,7 +419,7 @@ KubeProxy Version reported by the node.
 withKubeletVersion(kubeletVersion)
 ```
 
-Kubelet Version reported by the node.
+"Kubelet Version reported by the node."
 
 ### fn nodeInfo.withMachineID
 
@@ -427,7 +427,7 @@ Kubelet Version reported by the node.
 withMachineID(machineID)
 ```
 
-MachineID reported by the node. For unique machine identification in the cluster this field is preferred. Learn more from man(5) machine-id: http://man7.org/linux/man-pages/man5/machine-id.5.html
+"MachineID reported by the node. For unique machine identification in the cluster this field is preferred. Learn more from man(5) machine-id: http://man7.org/linux/man-pages/man5/machine-id.5.html"
 
 ### fn nodeInfo.withOperatingSystem
 
@@ -435,7 +435,7 @@ MachineID reported by the node. For unique machine identification in the cluster
 withOperatingSystem(operatingSystem)
 ```
 
-The Operating System reported by the node
+"The Operating System reported by the node"
 
 ### fn nodeInfo.withOsImage
 
@@ -443,7 +443,7 @@ The Operating System reported by the node
 withOsImage(osImage)
 ```
 
-OS Image reported by the node from /etc/os-release (e.g. Debian GNU/Linux 7 (wheezy)).
+"OS Image reported by the node from /etc/os-release (e.g. Debian GNU/Linux 7 (wheezy))."
 
 ### fn nodeInfo.withSystemUUID
 
@@ -451,4 +451,4 @@ OS Image reported by the node from /etc/os-release (e.g. Debian GNU/Linux 7 (whe
 withSystemUUID(systemUUID)
 ```
 
-SystemUUID reported by the node. For unique machine identification MachineID is preferred. This field is specific to Red Hat hosts https://access.redhat.com/documentation/en-US/Red_Hat_Subscription_Management/1/html/RHSM/getting-system-uuid.html
+"SystemUUID reported by the node. For unique machine identification MachineID is preferred. This field is specific to Red Hat hosts https://access.redhat.com/documentation/en-US/Red_Hat_Subscription_Management/1/html/RHSM/getting-system-uuid.html"

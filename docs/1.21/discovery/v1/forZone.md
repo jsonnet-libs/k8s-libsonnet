@@ -4,7 +4,7 @@ permalink: /1.21/discovery/v1/forZone/
 
 # discovery.v1.forZone
 
-ForZone provides information about which zones should consume this endpoint.
+"ForZone provides information about which zones should consume this endpoint."
 
 ## Index
 
@@ -18,4 +18,4 @@ ForZone provides information about which zones should consume this endpoint.
 withName(name)
 ```
 
-name represents the name of the zone.
+"name represents the name of the zone."

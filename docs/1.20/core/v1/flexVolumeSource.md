@@ -4,7 +4,7 @@ permalink: /1.20/core/v1/flexVolumeSource/
 
 # core.v1.flexVolumeSource
 
-FlexVolume represents a generic volume resource that is provisioned/attached using an exec based plugin.
+"FlexVolume represents a generic volume resource that is provisioned/attached using an exec based plugin."
 
 ## Index
 
@@ -24,7 +24,7 @@ FlexVolume represents a generic volume resource that is provisioned/attached usi
 withDriver(driver)
 ```
 
-Driver is the name of the driver to use for this volume.
+"Driver is the name of the driver to use for this volume."
 
 ### fn withFsType
 
@@ -32,7 +32,7 @@ Driver is the name of the driver to use for this volume.
 withFsType(fsType)
 ```
 
-Filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". The default filesystem depends on FlexVolume script.
+"Filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. \"ext4\", \"xfs\", \"ntfs\". The default filesystem depends on FlexVolume script."
 
 ### fn withOptions
 
@@ -40,7 +40,7 @@ Filesystem type to mount. Must be a filesystem type supported by the host operat
 withOptions(options)
 ```
 
-Optional: Extra command options if any.
+"Optional: Extra command options if any."
 
 ### fn withOptionsMixin
 
@@ -48,7 +48,7 @@ Optional: Extra command options if any.
 withOptionsMixin(options)
 ```
 
-Optional: Extra command options if any.
+"Optional: Extra command options if any."
 
 **Note:** This function appends passed data to existing values
 
@@ -58,11 +58,11 @@ Optional: Extra command options if any.
 withReadOnly(readOnly)
 ```
 
-Optional: Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts.
+"Optional: Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts."
 
 ## obj secretRef
 
-LocalObjectReference contains enough information to let you locate the referenced object inside the same namespace.
+"LocalObjectReference contains enough information to let you locate the referenced object inside the same namespace."
 
 ### fn secretRef.withName
 
@@ -70,4 +70,4 @@ LocalObjectReference contains enough information to let you locate the reference
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"

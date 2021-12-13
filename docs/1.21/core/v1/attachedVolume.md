@@ -4,7 +4,7 @@ permalink: /1.21/core/v1/attachedVolume/
 
 # core.v1.attachedVolume
 
-AttachedVolume describes a volume attached to a node
+"AttachedVolume describes a volume attached to a node"
 
 ## Index
 
@@ -19,7 +19,7 @@ AttachedVolume describes a volume attached to a node
 withDevicePath(devicePath)
 ```
 
-DevicePath represents the device path where the volume should be available
+"DevicePath represents the device path where the volume should be available"
 
 ### fn withName
 
@@ -27,4 +27,4 @@ DevicePath represents the device path where the volume should be available
 withName(name)
 ```
 
-Name of the attached volume
+"Name of the attached volume"

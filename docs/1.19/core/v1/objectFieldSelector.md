@@ -4,7 +4,7 @@ permalink: /1.19/core/v1/objectFieldSelector/
 
 # core.v1.objectFieldSelector
 
-ObjectFieldSelector selects an APIVersioned field of an object.
+"ObjectFieldSelector selects an APIVersioned field of an object."
 
 ## Index
 
@@ -18,4 +18,4 @@ ObjectFieldSelector selects an APIVersioned field of an object.
 withFieldPath(fieldPath)
 ```
 
-Path of the field to select in the specified API version.
+"Path of the field to select in the specified API version."

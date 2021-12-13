@@ -4,7 +4,7 @@ permalink: /1.18/authorization/v1beta1/subjectAccessReviewSpec/
 
 # authorization.v1beta1.subjectAccessReviewSpec
 
-SubjectAccessReviewSpec is a description of the access request.  Exactly one of ResourceAuthorizationAttributes and NonResourceAuthorizationAttributes must be set
+"SubjectAccessReviewSpec is a description of the access request.  Exactly one of ResourceAuthorizationAttributes and NonResourceAuthorizationAttributes must be set"
 
 ## Index
 
@@ -34,7 +34,7 @@ SubjectAccessReviewSpec is a description of the access request.  Exactly one of 
 withExtra(extra)
 ```
 
-Extra corresponds to the user.Info.GetExtra() method from the authenticator.  Since that is input to the authorizer it needs a reflection here.
+"Extra corresponds to the user.Info.GetExtra() method from the authenticator.  Since that is input to the authorizer it needs a reflection here."
 
 ### fn withExtraMixin
 
@@ -42,7 +42,7 @@ Extra corresponds to the user.Info.GetExtra() method from the authenticator.  Si
 withExtraMixin(extra)
 ```
 
-Extra corresponds to the user.Info.GetExtra() method from the authenticator.  Since that is input to the authorizer it needs a reflection here.
+"Extra corresponds to the user.Info.GetExtra() method from the authenticator.  Since that is input to the authorizer it needs a reflection here."
 
 **Note:** This function appends passed data to existing values
 
@@ -52,7 +52,7 @@ Extra corresponds to the user.Info.GetExtra() method from the authenticator.  Si
 withGroup(group)
 ```
 
-Groups is the groups you're testing for.
+"Groups is the groups you're testing for."
 
 ### fn withGroupMixin
 
@@ -60,7 +60,7 @@ Groups is the groups you're testing for.
 withGroupMixin(group)
 ```
 
-Groups is the groups you're testing for.
+"Groups is the groups you're testing for."
 
 **Note:** This function appends passed data to existing values
 
@@ -70,7 +70,7 @@ Groups is the groups you're testing for.
 withUid(uid)
 ```
 
-UID information about the requesting user.
+"UID information about the requesting user."
 
 ### fn withUser
 
@@ -78,11 +78,11 @@ UID information about the requesting user.
 withUser(user)
 ```
 
-User is the user you're testing for. If you specify 'User' but not 'Group', then is it interpreted as 'What if User were not a member of any groups
+"User is the user you're testing for. If you specify \"User\" but not \"Group\", then is it interpreted as \"What if User were not a member of any groups"
 
 ## obj nonResourceAttributes
 
-NonResourceAttributes includes the authorization attributes available for non-resource requests to the Authorizer interface
+"NonResourceAttributes includes the authorization attributes available for non-resource requests to the Authorizer interface"
 
 ### fn nonResourceAttributes.withPath
 
@@ -90,7 +90,7 @@ NonResourceAttributes includes the authorization attributes available for non-re
 withPath(path)
 ```
 
-Path is the URL path of the request
+"Path is the URL path of the request"
 
 ### fn nonResourceAttributes.withVerb
 
@@ -98,11 +98,11 @@ Path is the URL path of the request
 withVerb(verb)
 ```
 
-Verb is the standard HTTP verb
+"Verb is the standard HTTP verb"
 
 ## obj resourceAttributes
 
-ResourceAttributes includes the authorization attributes available for resource requests to the Authorizer interface
+"ResourceAttributes includes the authorization attributes available for resource requests to the Authorizer interface"
 
 ### fn resourceAttributes.withGroup
 
@@ -110,7 +110,7 @@ ResourceAttributes includes the authorization attributes available for resource 
 withGroup(group)
 ```
 
-Group is the API Group of the Resource.  "*" means all.
+"Group is the API Group of the Resource.  \"*\" means all."
 
 ### fn resourceAttributes.withName
 
@@ -118,7 +118,7 @@ Group is the API Group of the Resource.  "*" means all.
 withName(name)
 ```
 
-Name is the name of the resource being requested for a "get" or deleted for a "delete". "" (empty) means all.
+"Name is the name of the resource being requested for a \"get\" or deleted for a \"delete\". \"\" (empty) means all."
 
 ### fn resourceAttributes.withNamespace
 
@@ -126,7 +126,7 @@ Name is the name of the resource being requested for a "get" or deleted for a "d
 withNamespace(namespace)
 ```
 
-Namespace is the namespace of the action being requested.  Currently, there is no distinction between no namespace and all namespaces "" (empty) is defaulted for LocalSubjectAccessReviews "" (empty) is empty for cluster-scoped resources "" (empty) means "all" for namespace scoped resources from a SubjectAccessReview or SelfSubjectAccessReview
+"Namespace is the namespace of the action being requested.  Currently, there is no distinction between no namespace and all namespaces \"\" (empty) is defaulted for LocalSubjectAccessReviews \"\" (empty) is empty for cluster-scoped resources \"\" (empty) means \"all\" for namespace scoped resources from a SubjectAccessReview or SelfSubjectAccessReview"
 
 ### fn resourceAttributes.withResource
 
@@ -134,7 +134,7 @@ Namespace is the namespace of the action being requested.  Currently, there is n
 withResource(resource)
 ```
 
-Resource is one of the existing resource types.  "*" means all.
+"Resource is one of the existing resource types.  \"*\" means all."
 
 ### fn resourceAttributes.withSubresource
 
@@ -142,7 +142,7 @@ Resource is one of the existing resource types.  "*" means all.
 withSubresource(subresource)
 ```
 
-Subresource is one of the existing resource types.  "" means none.
+"Subresource is one of the existing resource types.  \"\" means none."
 
 ### fn resourceAttributes.withVerb
 
@@ -150,7 +150,7 @@ Subresource is one of the existing resource types.  "" means none.
 withVerb(verb)
 ```
 
-Verb is a kubernetes resource API verb, like: get, list, watch, create, update, delete, proxy.  "*" means all.
+"Verb is a kubernetes resource API verb, like: get, list, watch, create, update, delete, proxy.  \"*\" means all."
 
 ### fn resourceAttributes.withVersion
 
@@ -158,4 +158,4 @@ Verb is a kubernetes resource API verb, like: get, list, watch, create, update, 
 withVersion(version)
 ```
 
-Version is the API Version of the Resource.  "*" means all.
+"Version is the API Version of the Resource.  \"*\" means all."

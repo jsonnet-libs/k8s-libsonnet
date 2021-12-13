@@ -4,7 +4,7 @@ permalink: /1.19/core/v1/persistentVolumeClaimCondition/
 
 # core.v1.persistentVolumeClaimCondition
 
-PersistentVolumeClaimCondition contails details about state of pvc
+"PersistentVolumeClaimCondition contails details about state of pvc"
 
 ## Index
 
@@ -22,7 +22,7 @@ PersistentVolumeClaimCondition contails details about state of pvc
 withLastProbeTime(lastProbeTime)
 ```
 
-Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.
+"Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers."
 
 ### fn withLastTransitionTime
 
@@ -30,7 +30,7 @@ Time is a wrapper around time.Time which supports correct marshaling to YAML and
 withLastTransitionTime(lastTransitionTime)
 ```
 
-Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.
+"Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers."
 
 ### fn withMessage
 
@@ -38,7 +38,7 @@ Time is a wrapper around time.Time which supports correct marshaling to YAML and
 withMessage(message)
 ```
 
-Human-readable message indicating details about last transition.
+"Human-readable message indicating details about last transition."
 
 ### fn withReason
 
@@ -46,7 +46,7 @@ Human-readable message indicating details about last transition.
 withReason(reason)
 ```
 
-Unique, this should be a short, machine understandable string that gives the reason for condition's last transition. If it reports 'ResizeStarted' that means the underlying persistent volume is being resized.
+"Unique, this should be a short, machine understandable string that gives the reason for condition's last transition. If it reports \"ResizeStarted\" that means the underlying persistent volume is being resized."
 
 ### fn withType
 

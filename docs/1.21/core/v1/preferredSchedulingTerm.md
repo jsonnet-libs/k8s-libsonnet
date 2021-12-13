@@ -4,7 +4,7 @@ permalink: /1.21/core/v1/preferredSchedulingTerm/
 
 # core.v1.preferredSchedulingTerm
 
-An empty preferred scheduling term matches all objects with implicit weight 0 (i.e. it's a no-op). A null preferred scheduling term matches no objects (i.e. is also a no-op).
+"An empty preferred scheduling term matches all objects with implicit weight 0 (i.e. it's a no-op). A null preferred scheduling term matches no objects (i.e. is also a no-op)."
 
 ## Index
 
@@ -23,11 +23,11 @@ An empty preferred scheduling term matches all objects with implicit weight 0 (i
 withWeight(weight)
 ```
 
-Weight associated with matching the corresponding nodeSelectorTerm, in the range 1-100.
+"Weight associated with matching the corresponding nodeSelectorTerm, in the range 1-100."
 
 ## obj preference
 
-A null or empty node selector term matches no objects. The requirements of them are ANDed. The TopologySelectorTerm type implements a subset of the NodeSelectorTerm.
+"A null or empty node selector term matches no objects. The requirements of them are ANDed. The TopologySelectorTerm type implements a subset of the NodeSelectorTerm."
 
 ### fn preference.withMatchExpressions
 
@@ -35,7 +35,7 @@ A null or empty node selector term matches no objects. The requirements of them 
 withMatchExpressions(matchExpressions)
 ```
 
-A list of node selector requirements by node's labels.
+"A list of node selector requirements by node's labels."
 
 ### fn preference.withMatchExpressionsMixin
 
@@ -43,7 +43,7 @@ A list of node selector requirements by node's labels.
 withMatchExpressionsMixin(matchExpressions)
 ```
 
-A list of node selector requirements by node's labels.
+"A list of node selector requirements by node's labels."
 
 **Note:** This function appends passed data to existing values
 
@@ -53,7 +53,7 @@ A list of node selector requirements by node's labels.
 withMatchFields(matchFields)
 ```
 
-A list of node selector requirements by node's fields.
+"A list of node selector requirements by node's fields."
 
 ### fn preference.withMatchFieldsMixin
 
@@ -61,6 +61,6 @@ A list of node selector requirements by node's fields.
 withMatchFieldsMixin(matchFields)
 ```
 
-A list of node selector requirements by node's fields.
+"A list of node selector requirements by node's fields."
 
 **Note:** This function appends passed data to existing values

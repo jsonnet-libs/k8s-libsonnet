@@ -4,7 +4,7 @@ permalink: /1.21/core/v1/namespaceStatus/
 
 # core.v1.namespaceStatus
 
-NamespaceStatus is information about the current status of a Namespace.
+"NamespaceStatus is information about the current status of a Namespace."
 
 ## Index
 
@@ -20,7 +20,7 @@ NamespaceStatus is information about the current status of a Namespace.
 withConditions(conditions)
 ```
 
-Represents the latest available observations of a namespace's current state.
+"Represents the latest available observations of a namespace's current state."
 
 ### fn withConditionsMixin
 
@@ -28,7 +28,7 @@ Represents the latest available observations of a namespace's current state.
 withConditionsMixin(conditions)
 ```
 
-Represents the latest available observations of a namespace's current state.
+"Represents the latest available observations of a namespace's current state."
 
 **Note:** This function appends passed data to existing values
 
@@ -38,4 +38,4 @@ Represents the latest available observations of a namespace's current state.
 withPhase(phase)
 ```
 
-Phase is the current lifecycle phase of the namespace. More info: https://kubernetes.io/docs/tasks/administer-cluster/namespaces/
+"Phase is the current lifecycle phase of the namespace. More info: https://kubernetes.io/docs/tasks/administer-cluster/namespaces/"

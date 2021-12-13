@@ -4,7 +4,7 @@ permalink: /1.19/networking/v1/ingressStatus/
 
 # networking.v1.ingressStatus
 
-IngressStatus describe the current state of the Ingress.
+"IngressStatus describe the current state of the Ingress."
 
 ## Index
 
@@ -16,7 +16,7 @@ IngressStatus describe the current state of the Ingress.
 
 ## obj loadBalancer
 
-LoadBalancerStatus represents the status of a load-balancer.
+"LoadBalancerStatus represents the status of a load-balancer."
 
 ### fn loadBalancer.withIngress
 
@@ -24,7 +24,7 @@ LoadBalancerStatus represents the status of a load-balancer.
 withIngress(ingress)
 ```
 
-Ingress is a list containing ingress points for the load-balancer. Traffic intended for the service should be sent to these ingress points.
+"Ingress is a list containing ingress points for the load-balancer. Traffic intended for the service should be sent to these ingress points."
 
 ### fn loadBalancer.withIngressMixin
 
@@ -32,6 +32,6 @@ Ingress is a list containing ingress points for the load-balancer. Traffic inten
 withIngressMixin(ingress)
 ```
 
-Ingress is a list containing ingress points for the load-balancer. Traffic intended for the service should be sent to these ingress points.
+"Ingress is a list containing ingress points for the load-balancer. Traffic intended for the service should be sent to these ingress points."
 
 **Note:** This function appends passed data to existing values

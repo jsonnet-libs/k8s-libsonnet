@@ -4,7 +4,7 @@ permalink: /1.21/core/v1/httpHeader/
 
 # core.v1.httpHeader
 
-HTTPHeader describes a custom header to be used in HTTP probes
+"HTTPHeader describes a custom header to be used in HTTP probes"
 
 ## Index
 
@@ -19,7 +19,7 @@ HTTPHeader describes a custom header to be used in HTTP probes
 withName(name)
 ```
 
-The header field name
+"The header field name"
 
 ### fn withValue
 
@@ -27,4 +27,4 @@ The header field name
 withValue(value)
 ```
 
-The header field value
+"The header field value"

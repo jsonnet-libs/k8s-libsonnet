@@ -4,7 +4,7 @@ permalink: /1.21/core/v1/vsphereVirtualDiskVolumeSource/
 
 # core.v1.vsphereVirtualDiskVolumeSource
 
-Represents a vSphere volume resource.
+"Represents a vSphere volume resource."
 
 ## Index
 
@@ -21,7 +21,7 @@ Represents a vSphere volume resource.
 withFsType(fsType)
 ```
 
-Filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
+"Filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. \"ext4\", \"xfs\", \"ntfs\". Implicitly inferred to be \"ext4\" if unspecified."
 
 ### fn withStoragePolicyID
 
@@ -29,7 +29,7 @@ Filesystem type to mount. Must be a filesystem type supported by the host operat
 withStoragePolicyID(storagePolicyID)
 ```
 
-Storage Policy Based Management (SPBM) profile ID associated with the StoragePolicyName.
+"Storage Policy Based Management (SPBM) profile ID associated with the StoragePolicyName."
 
 ### fn withStoragePolicyName
 
@@ -37,7 +37,7 @@ Storage Policy Based Management (SPBM) profile ID associated with the StoragePol
 withStoragePolicyName(storagePolicyName)
 ```
 
-Storage Policy Based Management (SPBM) profile name.
+"Storage Policy Based Management (SPBM) profile name."
 
 ### fn withVolumePath
 
@@ -45,4 +45,4 @@ Storage Policy Based Management (SPBM) profile name.
 withVolumePath(volumePath)
 ```
 
-Path that identifies vSphere volume vmdk
+"Path that identifies vSphere volume vmdk"

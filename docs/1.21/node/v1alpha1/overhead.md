@@ -4,7 +4,7 @@ permalink: /1.21/node/v1alpha1/overhead/
 
 # node.v1alpha1.overhead
 
-Overhead structure represents the resource overhead associated with running a pod.
+"Overhead structure represents the resource overhead associated with running a pod."
 
 ## Index
 
@@ -19,7 +19,7 @@ Overhead structure represents the resource overhead associated with running a po
 withPodFixed(podFixed)
 ```
 
-PodFixed represents the fixed resource overhead associated with running a pod.
+"PodFixed represents the fixed resource overhead associated with running a pod."
 
 ### fn withPodFixedMixin
 
@@ -27,6 +27,6 @@ PodFixed represents the fixed resource overhead associated with running a pod.
 withPodFixedMixin(podFixed)
 ```
 
-PodFixed represents the fixed resource overhead associated with running a pod.
+"PodFixed represents the fixed resource overhead associated with running a pod."
 
 **Note:** This function appends passed data to existing values

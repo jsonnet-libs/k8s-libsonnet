@@ -4,7 +4,7 @@ permalink: /1.19/networking/v1beta1/ingressClassSpec/
 
 # networking.v1beta1.ingressClassSpec
 
-IngressClassSpec provides information about the class of an Ingress.
+"IngressClassSpec provides information about the class of an Ingress."
 
 ## Index
 
@@ -22,11 +22,11 @@ IngressClassSpec provides information about the class of an Ingress.
 withController(controller)
 ```
 
-Controller refers to the name of the controller that should handle this class. This allows for different "flavors" that are controlled by the same controller. For example, you may have different Parameters for the same implementing controller. This should be specified as a domain-prefixed path no more than 250 characters in length, e.g. "acme.io/ingress-controller". This field is immutable.
+"Controller refers to the name of the controller that should handle this class. This allows for different \"flavors\" that are controlled by the same controller. For example, you may have different Parameters for the same implementing controller. This should be specified as a domain-prefixed path no more than 250 characters in length, e.g. \"acme.io/ingress-controller\". This field is immutable."
 
 ## obj parameters
 
-TypedLocalObjectReference contains enough information to let you locate the typed referenced object inside the same namespace.
+"TypedLocalObjectReference contains enough information to let you locate the typed referenced object inside the same namespace."
 
 ### fn parameters.withApiGroup
 
@@ -34,7 +34,7 @@ TypedLocalObjectReference contains enough information to let you locate the type
 withApiGroup(apiGroup)
 ```
 
-APIGroup is the group for the resource being referenced. If APIGroup is not specified, the specified Kind must be in the core API group. For any other third-party types, APIGroup is required.
+"APIGroup is the group for the resource being referenced. If APIGroup is not specified, the specified Kind must be in the core API group. For any other third-party types, APIGroup is required."
 
 ### fn parameters.withKind
 
@@ -42,7 +42,7 @@ APIGroup is the group for the resource being referenced. If APIGroup is not spec
 withKind(kind)
 ```
 
-Kind is the type of resource being referenced
+"Kind is the type of resource being referenced"
 
 ### fn parameters.withName
 
@@ -50,4 +50,4 @@ Kind is the type of resource being referenced
 withName(name)
 ```
 
-Name is the name of resource being referenced
+"Name is the name of resource being referenced"

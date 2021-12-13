@@ -4,7 +4,7 @@ permalink: /1.21/core/v1/lifecycle/
 
 # core.v1.lifecycle
 
-Lifecycle describes actions that the management system should take in response to container lifecycle events. For the PostStart and PreStop lifecycle handlers, management of the container blocks until the action is complete, unless the container process fails, in which case the handler is aborted.
+"Lifecycle describes actions that the management system should take in response to container lifecycle events. For the PostStart and PreStop lifecycle handlers, management of the container blocks until the action is complete, unless the container process fails, in which case the handler is aborted."
 
 ## Index
 
@@ -41,11 +41,11 @@ Lifecycle describes actions that the management system should take in response t
 
 ## obj postStart
 
-Handler defines a specific action that should be taken
+"Handler defines a specific action that should be taken"
 
 ## obj postStart.exec
 
-ExecAction describes a "run in container" action.
+"ExecAction describes a \"run in container\" action."
 
 ### fn postStart.exec.withCommand
 
@@ -53,7 +53,7 @@ ExecAction describes a "run in container" action.
 withCommand(command)
 ```
 
-Command is the command line to execute inside the container, the working directory for the command  is root ('/') in the container's filesystem. The command is simply exec'd, it is not run inside a shell, so traditional shell instructions ('|', etc) won't work. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
+"Command is the command line to execute inside the container, the working directory for the command  is root ('/') in the container's filesystem. The command is simply exec'd, it is not run inside a shell, so traditional shell instructions ('|', etc) won't work. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy."
 
 ### fn postStart.exec.withCommandMixin
 
@@ -61,13 +61,13 @@ Command is the command line to execute inside the container, the working directo
 withCommandMixin(command)
 ```
 
-Command is the command line to execute inside the container, the working directory for the command  is root ('/') in the container's filesystem. The command is simply exec'd, it is not run inside a shell, so traditional shell instructions ('|', etc) won't work. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
+"Command is the command line to execute inside the container, the working directory for the command  is root ('/') in the container's filesystem. The command is simply exec'd, it is not run inside a shell, so traditional shell instructions ('|', etc) won't work. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy."
 
 **Note:** This function appends passed data to existing values
 
 ## obj postStart.httpGet
 
-HTTPGetAction describes an action based on HTTP Get requests.
+"HTTPGetAction describes an action based on HTTP Get requests."
 
 ### fn postStart.httpGet.withHost
 
@@ -75,7 +75,7 @@ HTTPGetAction describes an action based on HTTP Get requests.
 withHost(host)
 ```
 
-Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
+"Host name to connect to, defaults to the pod IP. You probably want to set \"Host\" in httpHeaders instead."
 
 ### fn postStart.httpGet.withHttpHeaders
 
@@ -83,7 +83,7 @@ Host name to connect to, defaults to the pod IP. You probably want to set "Host"
 withHttpHeaders(httpHeaders)
 ```
 
-Custom headers to set in the request. HTTP allows repeated headers.
+"Custom headers to set in the request. HTTP allows repeated headers."
 
 ### fn postStart.httpGet.withHttpHeadersMixin
 
@@ -91,7 +91,7 @@ Custom headers to set in the request. HTTP allows repeated headers.
 withHttpHeadersMixin(httpHeaders)
 ```
 
-Custom headers to set in the request. HTTP allows repeated headers.
+"Custom headers to set in the request. HTTP allows repeated headers."
 
 **Note:** This function appends passed data to existing values
 
@@ -101,7 +101,7 @@ Custom headers to set in the request. HTTP allows repeated headers.
 withPath(path)
 ```
 
-Path to access on the HTTP server.
+"Path to access on the HTTP server."
 
 ### fn postStart.httpGet.withPort
 
@@ -109,7 +109,7 @@ Path to access on the HTTP server.
 withPort(port)
 ```
 
-IntOrString is a type that can hold an int32 or a string.  When used in JSON or YAML marshalling and unmarshalling, it produces or consumes the inner type.  This allows you to have, for example, a JSON field that can accept a name or number.
+"IntOrString is a type that can hold an int32 or a string.  When used in JSON or YAML marshalling and unmarshalling, it produces or consumes the inner type.  This allows you to have, for example, a JSON field that can accept a name or number."
 
 ### fn postStart.httpGet.withScheme
 
@@ -117,11 +117,11 @@ IntOrString is a type that can hold an int32 or a string.  When used in JSON or 
 withScheme(scheme)
 ```
 
-Scheme to use for connecting to the host. Defaults to HTTP.
+"Scheme to use for connecting to the host. Defaults to HTTP."
 
 ## obj postStart.tcpSocket
 
-TCPSocketAction describes an action based on opening a socket
+"TCPSocketAction describes an action based on opening a socket"
 
 ### fn postStart.tcpSocket.withHost
 
@@ -129,7 +129,7 @@ TCPSocketAction describes an action based on opening a socket
 withHost(host)
 ```
 
-Optional: Host name to connect to, defaults to the pod IP.
+"Optional: Host name to connect to, defaults to the pod IP."
 
 ### fn postStart.tcpSocket.withPort
 
@@ -137,15 +137,15 @@ Optional: Host name to connect to, defaults to the pod IP.
 withPort(port)
 ```
 
-IntOrString is a type that can hold an int32 or a string.  When used in JSON or YAML marshalling and unmarshalling, it produces or consumes the inner type.  This allows you to have, for example, a JSON field that can accept a name or number.
+"IntOrString is a type that can hold an int32 or a string.  When used in JSON or YAML marshalling and unmarshalling, it produces or consumes the inner type.  This allows you to have, for example, a JSON field that can accept a name or number."
 
 ## obj preStop
 
-Handler defines a specific action that should be taken
+"Handler defines a specific action that should be taken"
 
 ## obj preStop.exec
 
-ExecAction describes a "run in container" action.
+"ExecAction describes a \"run in container\" action."
 
 ### fn preStop.exec.withCommand
 
@@ -153,7 +153,7 @@ ExecAction describes a "run in container" action.
 withCommand(command)
 ```
 
-Command is the command line to execute inside the container, the working directory for the command  is root ('/') in the container's filesystem. The command is simply exec'd, it is not run inside a shell, so traditional shell instructions ('|', etc) won't work. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
+"Command is the command line to execute inside the container, the working directory for the command  is root ('/') in the container's filesystem. The command is simply exec'd, it is not run inside a shell, so traditional shell instructions ('|', etc) won't work. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy."
 
 ### fn preStop.exec.withCommandMixin
 
@@ -161,13 +161,13 @@ Command is the command line to execute inside the container, the working directo
 withCommandMixin(command)
 ```
 
-Command is the command line to execute inside the container, the working directory for the command  is root ('/') in the container's filesystem. The command is simply exec'd, it is not run inside a shell, so traditional shell instructions ('|', etc) won't work. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
+"Command is the command line to execute inside the container, the working directory for the command  is root ('/') in the container's filesystem. The command is simply exec'd, it is not run inside a shell, so traditional shell instructions ('|', etc) won't work. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy."
 
 **Note:** This function appends passed data to existing values
 
 ## obj preStop.httpGet
 
-HTTPGetAction describes an action based on HTTP Get requests.
+"HTTPGetAction describes an action based on HTTP Get requests."
 
 ### fn preStop.httpGet.withHost
 
@@ -175,7 +175,7 @@ HTTPGetAction describes an action based on HTTP Get requests.
 withHost(host)
 ```
 
-Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
+"Host name to connect to, defaults to the pod IP. You probably want to set \"Host\" in httpHeaders instead."
 
 ### fn preStop.httpGet.withHttpHeaders
 
@@ -183,7 +183,7 @@ Host name to connect to, defaults to the pod IP. You probably want to set "Host"
 withHttpHeaders(httpHeaders)
 ```
 
-Custom headers to set in the request. HTTP allows repeated headers.
+"Custom headers to set in the request. HTTP allows repeated headers."
 
 ### fn preStop.httpGet.withHttpHeadersMixin
 
@@ -191,7 +191,7 @@ Custom headers to set in the request. HTTP allows repeated headers.
 withHttpHeadersMixin(httpHeaders)
 ```
 
-Custom headers to set in the request. HTTP allows repeated headers.
+"Custom headers to set in the request. HTTP allows repeated headers."
 
 **Note:** This function appends passed data to existing values
 
@@ -201,7 +201,7 @@ Custom headers to set in the request. HTTP allows repeated headers.
 withPath(path)
 ```
 
-Path to access on the HTTP server.
+"Path to access on the HTTP server."
 
 ### fn preStop.httpGet.withPort
 
@@ -209,7 +209,7 @@ Path to access on the HTTP server.
 withPort(port)
 ```
 
-IntOrString is a type that can hold an int32 or a string.  When used in JSON or YAML marshalling and unmarshalling, it produces or consumes the inner type.  This allows you to have, for example, a JSON field that can accept a name or number.
+"IntOrString is a type that can hold an int32 or a string.  When used in JSON or YAML marshalling and unmarshalling, it produces or consumes the inner type.  This allows you to have, for example, a JSON field that can accept a name or number."
 
 ### fn preStop.httpGet.withScheme
 
@@ -217,11 +217,11 @@ IntOrString is a type that can hold an int32 or a string.  When used in JSON or 
 withScheme(scheme)
 ```
 
-Scheme to use for connecting to the host. Defaults to HTTP.
+"Scheme to use for connecting to the host. Defaults to HTTP."
 
 ## obj preStop.tcpSocket
 
-TCPSocketAction describes an action based on opening a socket
+"TCPSocketAction describes an action based on opening a socket"
 
 ### fn preStop.tcpSocket.withHost
 
@@ -229,7 +229,7 @@ TCPSocketAction describes an action based on opening a socket
 withHost(host)
 ```
 
-Optional: Host name to connect to, defaults to the pod IP.
+"Optional: Host name to connect to, defaults to the pod IP."
 
 ### fn preStop.tcpSocket.withPort
 
@@ -237,4 +237,4 @@ Optional: Host name to connect to, defaults to the pod IP.
 withPort(port)
 ```
 
-IntOrString is a type that can hold an int32 or a string.  When used in JSON or YAML marshalling and unmarshalling, it produces or consumes the inner type.  This allows you to have, for example, a JSON field that can accept a name or number.
+"IntOrString is a type that can hold an int32 or a string.  When used in JSON or YAML marshalling and unmarshalling, it produces or consumes the inner type.  This allows you to have, for example, a JSON field that can accept a name or number."

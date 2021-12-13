@@ -4,7 +4,7 @@ permalink: /1.19/flowcontrol/v1alpha1/priorityLevelConfigurationCondition/
 
 # flowcontrol.v1alpha1.priorityLevelConfigurationCondition
 
-PriorityLevelConfigurationCondition defines the condition of priority level.
+"PriorityLevelConfigurationCondition defines the condition of priority level."
 
 ## Index
 
@@ -21,7 +21,7 @@ PriorityLevelConfigurationCondition defines the condition of priority level.
 withLastTransitionTime(lastTransitionTime)
 ```
 
-Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.
+"Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers."
 
 ### fn withMessage
 
@@ -29,7 +29,7 @@ Time is a wrapper around time.Time which supports correct marshaling to YAML and
 withMessage(message)
 ```
 
-`message` is a human-readable message indicating details about last transition.
+"`message` is a human-readable message indicating details about last transition."
 
 ### fn withReason
 
@@ -37,7 +37,7 @@ withMessage(message)
 withReason(reason)
 ```
 
-`reason` is a unique, one-word, CamelCase reason for the condition's last transition.
+"`reason` is a unique, one-word, CamelCase reason for the condition's last transition."
 
 ### fn withType
 
@@ -45,4 +45,4 @@ withReason(reason)
 withType(type)
 ```
 
-`type` is the type of the condition. Required.
+"`type` is the type of the condition. Required."

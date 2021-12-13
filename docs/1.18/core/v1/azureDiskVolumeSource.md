@@ -4,7 +4,7 @@ permalink: /1.18/core/v1/azureDiskVolumeSource/
 
 # core.v1.azureDiskVolumeSource
 
-AzureDisk represents an Azure Data Disk mount on the host and bind mount to the pod.
+"AzureDisk represents an Azure Data Disk mount on the host and bind mount to the pod."
 
 ## Index
 
@@ -23,7 +23,7 @@ AzureDisk represents an Azure Data Disk mount on the host and bind mount to the 
 withCachingMode(cachingMode)
 ```
 
-Host Caching mode: None, Read Only, Read Write.
+"Host Caching mode: None, Read Only, Read Write."
 
 ### fn withDiskName
 
@@ -31,7 +31,7 @@ Host Caching mode: None, Read Only, Read Write.
 withDiskName(diskName)
 ```
 
-The Name of the data disk in the blob storage
+"The Name of the data disk in the blob storage"
 
 ### fn withDiskURI
 
@@ -39,7 +39,7 @@ The Name of the data disk in the blob storage
 withDiskURI(diskURI)
 ```
 
-The URI the data disk in the blob storage
+"The URI the data disk in the blob storage"
 
 ### fn withFsType
 
@@ -47,7 +47,7 @@ The URI the data disk in the blob storage
 withFsType(fsType)
 ```
 
-Filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
+"Filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. \"ext4\", \"xfs\", \"ntfs\". Implicitly inferred to be \"ext4\" if unspecified."
 
 ### fn withKind
 
@@ -55,7 +55,7 @@ Filesystem type to mount. Must be a filesystem type supported by the host operat
 withKind(kind)
 ```
 
-Expected values Shared: multiple blob disks per storage account  Dedicated: single blob disk per storage account  Managed: azure managed data disk (only in managed availability set). defaults to shared
+"Expected values Shared: multiple blob disks per storage account  Dedicated: single blob disk per storage account  Managed: azure managed data disk (only in managed availability set). defaults to shared"
 
 ### fn withReadOnly
 
@@ -63,4 +63,4 @@ Expected values Shared: multiple blob disks per storage account  Dedicated: sing
 withReadOnly(readOnly)
 ```
 
-Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts.
+"Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts."

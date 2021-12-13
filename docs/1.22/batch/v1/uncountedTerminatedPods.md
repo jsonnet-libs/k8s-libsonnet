@@ -4,7 +4,7 @@ permalink: /1.22/batch/v1/uncountedTerminatedPods/
 
 # batch.v1.uncountedTerminatedPods
 
-UncountedTerminatedPods holds UIDs of Pods that have terminated but haven't been accounted in Job status counters.
+"UncountedTerminatedPods holds UIDs of Pods that have terminated but haven't been accounted in Job status counters."
 
 ## Index
 
@@ -21,7 +21,7 @@ UncountedTerminatedPods holds UIDs of Pods that have terminated but haven't been
 withFailed(failed)
 ```
 
-Failed holds UIDs of failed Pods.
+"Failed holds UIDs of failed Pods."
 
 ### fn withFailedMixin
 
@@ -29,7 +29,7 @@ Failed holds UIDs of failed Pods.
 withFailedMixin(failed)
 ```
 
-Failed holds UIDs of failed Pods.
+"Failed holds UIDs of failed Pods."
 
 **Note:** This function appends passed data to existing values
 
@@ -39,7 +39,7 @@ Failed holds UIDs of failed Pods.
 withSucceeded(succeeded)
 ```
 
-Succeeded holds UIDs of succeeded Pods.
+"Succeeded holds UIDs of succeeded Pods."
 
 ### fn withSucceededMixin
 
@@ -47,6 +47,6 @@ Succeeded holds UIDs of succeeded Pods.
 withSucceededMixin(succeeded)
 ```
 
-Succeeded holds UIDs of succeeded Pods.
+"Succeeded holds UIDs of succeeded Pods."
 
 **Note:** This function appends passed data to existing values

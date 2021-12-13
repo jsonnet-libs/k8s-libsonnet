@@ -4,7 +4,7 @@ permalink: /1.22/apps/v1/statefulSetStatus/
 
 # apps.v1.statefulSetStatus
 
-StatefulSetStatus represents the current state of a StatefulSet.
+"StatefulSetStatus represents the current state of a StatefulSet."
 
 ## Index
 
@@ -28,7 +28,7 @@ StatefulSetStatus represents the current state of a StatefulSet.
 withAvailableReplicas(availableReplicas)
 ```
 
-Total number of available pods (ready for at least minReadySeconds) targeted by this statefulset. This is an alpha field and requires enabling StatefulSetMinReadySeconds feature gate. Remove omitempty when graduating to beta
+"Total number of available pods (ready for at least minReadySeconds) targeted by this statefulset. This is an alpha field and requires enabling StatefulSetMinReadySeconds feature gate. Remove omitempty when graduating to beta"
 
 ### fn withCollisionCount
 
@@ -36,7 +36,7 @@ Total number of available pods (ready for at least minReadySeconds) targeted by 
 withCollisionCount(collisionCount)
 ```
 
-collisionCount is the count of hash collisions for the StatefulSet. The StatefulSet controller uses this field as a collision avoidance mechanism when it needs to create the name for the newest ControllerRevision.
+"collisionCount is the count of hash collisions for the StatefulSet. The StatefulSet controller uses this field as a collision avoidance mechanism when it needs to create the name for the newest ControllerRevision."
 
 ### fn withConditions
 
@@ -44,7 +44,7 @@ collisionCount is the count of hash collisions for the StatefulSet. The Stateful
 withConditions(conditions)
 ```
 
-Represents the latest available observations of a statefulset's current state.
+"Represents the latest available observations of a statefulset's current state."
 
 ### fn withConditionsMixin
 
@@ -52,7 +52,7 @@ Represents the latest available observations of a statefulset's current state.
 withConditionsMixin(conditions)
 ```
 
-Represents the latest available observations of a statefulset's current state.
+"Represents the latest available observations of a statefulset's current state."
 
 **Note:** This function appends passed data to existing values
 
@@ -62,7 +62,7 @@ Represents the latest available observations of a statefulset's current state.
 withCurrentReplicas(currentReplicas)
 ```
 
-currentReplicas is the number of Pods created by the StatefulSet controller from the StatefulSet version indicated by currentRevision.
+"currentReplicas is the number of Pods created by the StatefulSet controller from the StatefulSet version indicated by currentRevision."
 
 ### fn withCurrentRevision
 
@@ -70,7 +70,7 @@ currentReplicas is the number of Pods created by the StatefulSet controller from
 withCurrentRevision(currentRevision)
 ```
 
-currentRevision, if not empty, indicates the version of the StatefulSet used to generate Pods in the sequence [0,currentReplicas).
+"currentRevision, if not empty, indicates the version of the StatefulSet used to generate Pods in the sequence [0,currentReplicas)."
 
 ### fn withObservedGeneration
 
@@ -78,7 +78,7 @@ currentRevision, if not empty, indicates the version of the StatefulSet used to 
 withObservedGeneration(observedGeneration)
 ```
 
-observedGeneration is the most recent generation observed for this StatefulSet. It corresponds to the StatefulSet's generation, which is updated on mutation by the API Server.
+"observedGeneration is the most recent generation observed for this StatefulSet. It corresponds to the StatefulSet's generation, which is updated on mutation by the API Server."
 
 ### fn withReadyReplicas
 
@@ -86,7 +86,7 @@ observedGeneration is the most recent generation observed for this StatefulSet. 
 withReadyReplicas(readyReplicas)
 ```
 
-readyReplicas is the number of Pods created by the StatefulSet controller that have a Ready Condition.
+"readyReplicas is the number of Pods created by the StatefulSet controller that have a Ready Condition."
 
 ### fn withReplicas
 
@@ -94,7 +94,7 @@ readyReplicas is the number of Pods created by the StatefulSet controller that h
 withReplicas(replicas)
 ```
 
-replicas is the number of Pods created by the StatefulSet controller.
+"replicas is the number of Pods created by the StatefulSet controller."
 
 ### fn withUpdateRevision
 
@@ -102,7 +102,7 @@ replicas is the number of Pods created by the StatefulSet controller.
 withUpdateRevision(updateRevision)
 ```
 
-updateRevision, if not empty, indicates the version of the StatefulSet used to generate Pods in the sequence [replicas-updatedReplicas,replicas)
+"updateRevision, if not empty, indicates the version of the StatefulSet used to generate Pods in the sequence [replicas-updatedReplicas,replicas)"
 
 ### fn withUpdatedReplicas
 
@@ -110,4 +110,4 @@ updateRevision, if not empty, indicates the version of the StatefulSet used to g
 withUpdatedReplicas(updatedReplicas)
 ```
 
-updatedReplicas is the number of Pods created by the StatefulSet controller from the StatefulSet version indicated by updateRevision.
+"updatedReplicas is the number of Pods created by the StatefulSet controller from the StatefulSet version indicated by updateRevision."

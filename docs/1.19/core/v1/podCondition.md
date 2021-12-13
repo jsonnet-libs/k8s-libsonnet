@@ -4,7 +4,7 @@ permalink: /1.19/core/v1/podCondition/
 
 # core.v1.podCondition
 
-PodCondition contains details for the current condition of this pod.
+"PodCondition contains details for the current condition of this pod."
 
 ## Index
 
@@ -22,7 +22,7 @@ PodCondition contains details for the current condition of this pod.
 withLastProbeTime(lastProbeTime)
 ```
 
-Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.
+"Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers."
 
 ### fn withLastTransitionTime
 
@@ -30,7 +30,7 @@ Time is a wrapper around time.Time which supports correct marshaling to YAML and
 withLastTransitionTime(lastTransitionTime)
 ```
 
-Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.
+"Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers."
 
 ### fn withMessage
 
@@ -38,7 +38,7 @@ Time is a wrapper around time.Time which supports correct marshaling to YAML and
 withMessage(message)
 ```
 
-Human-readable message indicating details about last transition.
+"Human-readable message indicating details about last transition."
 
 ### fn withReason
 
@@ -46,7 +46,7 @@ Human-readable message indicating details about last transition.
 withReason(reason)
 ```
 
-Unique, one-word, CamelCase reason for the condition's last transition.
+"Unique, one-word, CamelCase reason for the condition's last transition."
 
 ### fn withType
 
@@ -54,4 +54,4 @@ Unique, one-word, CamelCase reason for the condition's last transition.
 withType(type)
 ```
 
-Type is the type of the condition. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#pod-conditions
+"Type is the type of the condition. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#pod-conditions"

@@ -4,7 +4,7 @@ permalink: /1.17/policy/v1beta1/allowedFlexVolume/
 
 # policy.v1beta1.allowedFlexVolume
 
-AllowedFlexVolume represents a single Flexvolume that is allowed to be used.
+"AllowedFlexVolume represents a single Flexvolume that is allowed to be used."
 
 ## Index
 
@@ -18,4 +18,4 @@ AllowedFlexVolume represents a single Flexvolume that is allowed to be used.
 withDriver(driver)
 ```
 
-driver is the name of the Flexvolume driver.
+"driver is the name of the Flexvolume driver."

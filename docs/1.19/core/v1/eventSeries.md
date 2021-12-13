@@ -4,7 +4,7 @@ permalink: /1.19/core/v1/eventSeries/
 
 # core.v1.eventSeries
 
-EventSeries contain information on series of events, i.e. thing that was/is happening continuously for some time.
+"EventSeries contain information on series of events, i.e. thing that was/is happening continuously for some time."
 
 ## Index
 
@@ -19,7 +19,7 @@ EventSeries contain information on series of events, i.e. thing that was/is happ
 withCount(count)
 ```
 
-Number of occurrences in this series up to the last heartbeat time
+"Number of occurrences in this series up to the last heartbeat time"
 
 ### fn withLastObservedTime
 
@@ -27,4 +27,4 @@ Number of occurrences in this series up to the last heartbeat time
 withLastObservedTime(lastObservedTime)
 ```
 
-MicroTime is version of Time with microsecond level precision.
+"MicroTime is version of Time with microsecond level precision."

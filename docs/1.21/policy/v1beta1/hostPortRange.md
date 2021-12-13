@@ -4,7 +4,7 @@ permalink: /1.21/policy/v1beta1/hostPortRange/
 
 # policy.v1beta1.hostPortRange
 
-HostPortRange defines a range of host ports that will be enabled by a policy for pods to use.  It requires both the start and end to be defined.
+"HostPortRange defines a range of host ports that will be enabled by a policy for pods to use.  It requires both the start and end to be defined."
 
 ## Index
 
@@ -19,7 +19,7 @@ HostPortRange defines a range of host ports that will be enabled by a policy for
 withMax(max)
 ```
 
-max is the end of the range, inclusive.
+"max is the end of the range, inclusive."
 
 ### fn withMin
 
@@ -27,4 +27,4 @@ max is the end of the range, inclusive.
 withMin(min)
 ```
 
-min is the start of the range, inclusive.
+"min is the start of the range, inclusive."

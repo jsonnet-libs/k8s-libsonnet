@@ -20,7 +20,7 @@ permalink: /1.20/certificates/v1beta1/certificateSigningRequestStatus/
 withCertificate(certificate)
 ```
 
-If request was approved, the controller will place the issued certificate here.
+"If request was approved, the controller will place the issued certificate here."
 
 ### fn withConditions
 
@@ -28,7 +28,7 @@ If request was approved, the controller will place the issued certificate here.
 withConditions(conditions)
 ```
 
-Conditions applied to the request, such as approval or denial.
+"Conditions applied to the request, such as approval or denial."
 
 ### fn withConditionsMixin
 
@@ -36,6 +36,6 @@ Conditions applied to the request, such as approval or denial.
 withConditionsMixin(conditions)
 ```
 
-Conditions applied to the request, such as approval or denial.
+"Conditions applied to the request, such as approval or denial."
 
 **Note:** This function appends passed data to existing values

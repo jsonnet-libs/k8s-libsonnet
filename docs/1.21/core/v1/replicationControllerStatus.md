@@ -4,7 +4,7 @@ permalink: /1.21/core/v1/replicationControllerStatus/
 
 # core.v1.replicationControllerStatus
 
-ReplicationControllerStatus represents the current status of a replication controller.
+"ReplicationControllerStatus represents the current status of a replication controller."
 
 ## Index
 
@@ -24,7 +24,7 @@ ReplicationControllerStatus represents the current status of a replication contr
 withAvailableReplicas(availableReplicas)
 ```
 
-The number of available replicas (ready for at least minReadySeconds) for this replication controller.
+"The number of available replicas (ready for at least minReadySeconds) for this replication controller."
 
 ### fn withConditions
 
@@ -32,7 +32,7 @@ The number of available replicas (ready for at least minReadySeconds) for this r
 withConditions(conditions)
 ```
 
-Represents the latest available observations of a replication controller's current state.
+"Represents the latest available observations of a replication controller's current state."
 
 ### fn withConditionsMixin
 
@@ -40,7 +40,7 @@ Represents the latest available observations of a replication controller's curre
 withConditionsMixin(conditions)
 ```
 
-Represents the latest available observations of a replication controller's current state.
+"Represents the latest available observations of a replication controller's current state."
 
 **Note:** This function appends passed data to existing values
 
@@ -50,7 +50,7 @@ Represents the latest available observations of a replication controller's curre
 withFullyLabeledReplicas(fullyLabeledReplicas)
 ```
 
-The number of pods that have labels matching the labels of the pod template of the replication controller.
+"The number of pods that have labels matching the labels of the pod template of the replication controller."
 
 ### fn withObservedGeneration
 
@@ -58,7 +58,7 @@ The number of pods that have labels matching the labels of the pod template of t
 withObservedGeneration(observedGeneration)
 ```
 
-ObservedGeneration reflects the generation of the most recently observed replication controller.
+"ObservedGeneration reflects the generation of the most recently observed replication controller."
 
 ### fn withReadyReplicas
 
@@ -66,7 +66,7 @@ ObservedGeneration reflects the generation of the most recently observed replica
 withReadyReplicas(readyReplicas)
 ```
 
-The number of ready replicas for this replication controller.
+"The number of ready replicas for this replication controller."
 
 ### fn withReplicas
 
@@ -74,4 +74,4 @@ The number of ready replicas for this replication controller.
 withReplicas(replicas)
 ```
 
-Replicas is the most recently oberved number of replicas. More info: https://kubernetes.io/docs/concepts/workloads/controllers/replicationcontroller#what-is-a-replicationcontroller
+"Replicas is the most recently oberved number of replicas. More info: https://kubernetes.io/docs/concepts/workloads/controllers/replicationcontroller#what-is-a-replicationcontroller"

@@ -4,7 +4,7 @@ permalink: /1.21/core/v1/nodeConfigSource/
 
 # core.v1.nodeConfigSource
 
-NodeConfigSource specifies a source of node configuration. Exactly one subfield (excluding metadata) must be non-nil.
+"NodeConfigSource specifies a source of node configuration. Exactly one subfield (excluding metadata) must be non-nil."
 
 ## Index
 
@@ -19,7 +19,7 @@ NodeConfigSource specifies a source of node configuration. Exactly one subfield 
 
 ## obj configMap
 
-ConfigMapNodeConfigSource contains the information to reference a ConfigMap as a config source for the Node.
+"ConfigMapNodeConfigSource contains the information to reference a ConfigMap as a config source for the Node."
 
 ### fn configMap.withKubeletConfigKey
 
@@ -27,7 +27,7 @@ ConfigMapNodeConfigSource contains the information to reference a ConfigMap as a
 withKubeletConfigKey(kubeletConfigKey)
 ```
 
-KubeletConfigKey declares which key of the referenced ConfigMap corresponds to the KubeletConfiguration structure This field is required in all cases.
+"KubeletConfigKey declares which key of the referenced ConfigMap corresponds to the KubeletConfiguration structure This field is required in all cases."
 
 ### fn configMap.withName
 
@@ -35,7 +35,7 @@ KubeletConfigKey declares which key of the referenced ConfigMap corresponds to t
 withName(name)
 ```
 
-Name is the metadata.name of the referenced ConfigMap. This field is required in all cases.
+"Name is the metadata.name of the referenced ConfigMap. This field is required in all cases."
 
 ### fn configMap.withNamespace
 
@@ -43,7 +43,7 @@ Name is the metadata.name of the referenced ConfigMap. This field is required in
 withNamespace(namespace)
 ```
 
-Namespace is the metadata.namespace of the referenced ConfigMap. This field is required in all cases.
+"Namespace is the metadata.namespace of the referenced ConfigMap. This field is required in all cases."
 
 ### fn configMap.withResourceVersion
 
@@ -51,7 +51,7 @@ Namespace is the metadata.namespace of the referenced ConfigMap. This field is r
 withResourceVersion(resourceVersion)
 ```
 
-ResourceVersion is the metadata.ResourceVersion of the referenced ConfigMap. This field is forbidden in Node.Spec, and required in Node.Status.
+"ResourceVersion is the metadata.ResourceVersion of the referenced ConfigMap. This field is forbidden in Node.Spec, and required in Node.Status."
 
 ### fn configMap.withUid
 
@@ -59,4 +59,4 @@ ResourceVersion is the metadata.ResourceVersion of the referenced ConfigMap. Thi
 withUid(uid)
 ```
 
-UID is the metadata.UID of the referenced ConfigMap. This field is forbidden in Node.Spec, and required in Node.Status.
+"UID is the metadata.UID of the referenced ConfigMap. This field is forbidden in Node.Spec, and required in Node.Status."

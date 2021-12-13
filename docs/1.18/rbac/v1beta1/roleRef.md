@@ -4,7 +4,7 @@ permalink: /1.18/rbac/v1beta1/roleRef/
 
 # rbac.v1beta1.roleRef
 
-RoleRef contains information that points to the role being used
+"RoleRef contains information that points to the role being used"
 
 ## Index
 
@@ -20,7 +20,7 @@ RoleRef contains information that points to the role being used
 withApiGroup(apiGroup)
 ```
 
-APIGroup is the group for the resource being referenced
+"APIGroup is the group for the resource being referenced"
 
 ### fn withKind
 
@@ -28,7 +28,7 @@ APIGroup is the group for the resource being referenced
 withKind(kind)
 ```
 
-Kind is the type of resource being referenced
+"Kind is the type of resource being referenced"
 
 ### fn withName
 
@@ -36,4 +36,4 @@ Kind is the type of resource being referenced
 withName(name)
 ```
 
-Name is the name of resource being referenced
+"Name is the name of resource being referenced"

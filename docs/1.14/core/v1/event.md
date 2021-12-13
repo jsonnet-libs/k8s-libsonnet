@@ -4,7 +4,7 @@ permalink: /1.14/core/v1/event/
 
 # core.v1.event
 
-Event is a report of an event somewhere in the cluster.
+"Event is a report of an event somewhere in the cluster."
 
 ## Index
 
@@ -99,7 +99,7 @@ new returns an instance of Event
 withAction(action)
 ```
 
-What action was taken/failed regarding to the Regarding object.
+"What action was taken/failed regarding to the Regarding object."
 
 ### fn withCount
 
@@ -107,7 +107,7 @@ What action was taken/failed regarding to the Regarding object.
 withCount(count)
 ```
 
-The number of times this event has occurred.
+"The number of times this event has occurred."
 
 ### fn withEventTime
 
@@ -115,7 +115,7 @@ The number of times this event has occurred.
 withEventTime(eventTime)
 ```
 
-MicroTime is version of Time with microsecond level precision.
+"MicroTime is version of Time with microsecond level precision."
 
 ### fn withFirstTimestamp
 
@@ -123,7 +123,7 @@ MicroTime is version of Time with microsecond level precision.
 withFirstTimestamp(firstTimestamp)
 ```
 
-Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.
+"Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers."
 
 ### fn withLastTimestamp
 
@@ -131,7 +131,7 @@ Time is a wrapper around time.Time which supports correct marshaling to YAML and
 withLastTimestamp(lastTimestamp)
 ```
 
-Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.
+"Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers."
 
 ### fn withMessage
 
@@ -139,7 +139,7 @@ Time is a wrapper around time.Time which supports correct marshaling to YAML and
 withMessage(message)
 ```
 
-A human-readable description of the status of this operation.
+"A human-readable description of the status of this operation."
 
 ### fn withReason
 
@@ -147,7 +147,7 @@ A human-readable description of the status of this operation.
 withReason(reason)
 ```
 
-This should be a short, machine understandable string that gives the reason for the transition into the object's current status.
+"This should be a short, machine understandable string that gives the reason for the transition into the object's current status."
 
 ### fn withReportingComponent
 
@@ -155,7 +155,7 @@ This should be a short, machine understandable string that gives the reason for 
 withReportingComponent(reportingComponent)
 ```
 
-Name of the controller that emitted this Event, e.g. `kubernetes.io/kubelet`.
+"Name of the controller that emitted this Event, e.g. `kubernetes.io/kubelet`."
 
 ### fn withReportingInstance
 
@@ -163,7 +163,7 @@ Name of the controller that emitted this Event, e.g. `kubernetes.io/kubelet`.
 withReportingInstance(reportingInstance)
 ```
 
-ID of the controller instance, e.g. `kubelet-xyzf`.
+"ID of the controller instance, e.g. `kubelet-xyzf`."
 
 ### fn withType
 
@@ -171,11 +171,11 @@ ID of the controller instance, e.g. `kubelet-xyzf`.
 withType(type)
 ```
 
-Type of this event (Normal, Warning), new types could be added in the future
+"Type of this event (Normal, Warning), new types could be added in the future"
 
 ## obj involvedObject
 
-ObjectReference contains enough information to let you inspect or modify the referred object.
+"ObjectReference contains enough information to let you inspect or modify the referred object."
 
 ### fn involvedObject.withApiVersion
 
@@ -183,7 +183,7 @@ ObjectReference contains enough information to let you inspect or modify the ref
 withApiVersion(apiVersion)
 ```
 
-API version of the referent.
+"API version of the referent."
 
 ### fn involvedObject.withFieldPath
 
@@ -191,7 +191,7 @@ API version of the referent.
 withFieldPath(fieldPath)
 ```
 
-If referring to a piece of an object instead of an entire object, this string should contain a valid JSON/Go field access statement, such as desiredState.manifest.containers[2]. For example, if the object reference is to a container within a pod, this would take on a value like: "spec.containers{name}" (where "name" refers to the name of the container that triggered the event) or if no container name is specified "spec.containers[2]" (container with index 2 in this pod). This syntax is chosen only to have some well-defined way of referencing a part of an object.
+"If referring to a piece of an object instead of an entire object, this string should contain a valid JSON/Go field access statement, such as desiredState.manifest.containers[2]. For example, if the object reference is to a container within a pod, this would take on a value like: \"spec.containers{name}\" (where \"name\" refers to the name of the container that triggered the event) or if no container name is specified \"spec.containers[2]\" (container with index 2 in this pod). This syntax is chosen only to have some well-defined way of referencing a part of an object."
 
 ### fn involvedObject.withKind
 
@@ -199,7 +199,7 @@ If referring to a piece of an object instead of an entire object, this string sh
 withKind(kind)
 ```
 
-Kind of the referent. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+"Kind of the referent. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds"
 
 ### fn involvedObject.withName
 
@@ -207,7 +207,7 @@ Kind of the referent. More info: https://git.k8s.io/community/contributors/devel
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn involvedObject.withNamespace
 
@@ -215,7 +215,7 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withNamespace(namespace)
 ```
 
-Namespace of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/
+"Namespace of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/"
 
 ### fn involvedObject.withResourceVersion
 
@@ -223,7 +223,7 @@ Namespace of the referent. More info: https://kubernetes.io/docs/concepts/overvi
 withResourceVersion(resourceVersion)
 ```
 
-Specific resourceVersion to which this reference is made, if any. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#concurrency-control-and-consistency
+"Specific resourceVersion to which this reference is made, if any. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#concurrency-control-and-consistency"
 
 ### fn involvedObject.withUid
 
@@ -231,11 +231,11 @@ Specific resourceVersion to which this reference is made, if any. More info: htt
 withUid(uid)
 ```
 
-UID of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#uids
+"UID of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#uids"
 
 ## obj metadata
 
-ObjectMeta is metadata that all persisted resources must have, which includes all objects users must create.
+"ObjectMeta is metadata that all persisted resources must have, which includes all objects users must create."
 
 ### fn metadata.withAnnotations
 
@@ -243,7 +243,7 @@ ObjectMeta is metadata that all persisted resources must have, which includes al
 withAnnotations(annotations)
 ```
 
-Annotations is an unstructured key value map stored with a resource that may be set by external tools to store and retrieve arbitrary metadata. They are not queryable and should be preserved when modifying objects. More info: http://kubernetes.io/docs/user-guide/annotations
+"Annotations is an unstructured key value map stored with a resource that may be set by external tools to store and retrieve arbitrary metadata. They are not queryable and should be preserved when modifying objects. More info: http://kubernetes.io/docs/user-guide/annotations"
 
 ### fn metadata.withAnnotationsMixin
 
@@ -251,7 +251,7 @@ Annotations is an unstructured key value map stored with a resource that may be 
 withAnnotationsMixin(annotations)
 ```
 
-Annotations is an unstructured key value map stored with a resource that may be set by external tools to store and retrieve arbitrary metadata. They are not queryable and should be preserved when modifying objects. More info: http://kubernetes.io/docs/user-guide/annotations
+"Annotations is an unstructured key value map stored with a resource that may be set by external tools to store and retrieve arbitrary metadata. They are not queryable and should be preserved when modifying objects. More info: http://kubernetes.io/docs/user-guide/annotations"
 
 **Note:** This function appends passed data to existing values
 
@@ -261,7 +261,7 @@ Annotations is an unstructured key value map stored with a resource that may be 
 withClusterName(clusterName)
 ```
 
-The name of the cluster which the object belongs to. This is used to distinguish resources with same name and namespace in different clusters. This field is not set anywhere right now and apiserver is going to ignore it if set in create or update request.
+"The name of the cluster which the object belongs to. This is used to distinguish resources with same name and namespace in different clusters. This field is not set anywhere right now and apiserver is going to ignore it if set in create or update request."
 
 ### fn metadata.withCreationTimestamp
 
@@ -269,7 +269,7 @@ The name of the cluster which the object belongs to. This is used to distinguish
 withCreationTimestamp(creationTimestamp)
 ```
 
-Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.
+"Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers."
 
 ### fn metadata.withDeletionGracePeriodSeconds
 
@@ -277,7 +277,7 @@ Time is a wrapper around time.Time which supports correct marshaling to YAML and
 withDeletionGracePeriodSeconds(deletionGracePeriodSeconds)
 ```
 
-Number of seconds allowed for this object to gracefully terminate before it will be removed from the system. Only set when deletionTimestamp is also set. May only be shortened. Read-only.
+"Number of seconds allowed for this object to gracefully terminate before it will be removed from the system. Only set when deletionTimestamp is also set. May only be shortened. Read-only."
 
 ### fn metadata.withDeletionTimestamp
 
@@ -285,7 +285,7 @@ Number of seconds allowed for this object to gracefully terminate before it will
 withDeletionTimestamp(deletionTimestamp)
 ```
 
-Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.
+"Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers."
 
 ### fn metadata.withFinalizers
 
@@ -293,7 +293,7 @@ Time is a wrapper around time.Time which supports correct marshaling to YAML and
 withFinalizers(finalizers)
 ```
 
-Must be empty before the object is deleted from the registry. Each entry is an identifier for the responsible component that will remove the entry from the list. If the deletionTimestamp of the object is non-nil, entries in this list can only be removed.
+"Must be empty before the object is deleted from the registry. Each entry is an identifier for the responsible component that will remove the entry from the list. If the deletionTimestamp of the object is non-nil, entries in this list can only be removed."
 
 ### fn metadata.withFinalizersMixin
 
@@ -301,7 +301,7 @@ Must be empty before the object is deleted from the registry. Each entry is an i
 withFinalizersMixin(finalizers)
 ```
 
-Must be empty before the object is deleted from the registry. Each entry is an identifier for the responsible component that will remove the entry from the list. If the deletionTimestamp of the object is non-nil, entries in this list can only be removed.
+"Must be empty before the object is deleted from the registry. Each entry is an identifier for the responsible component that will remove the entry from the list. If the deletionTimestamp of the object is non-nil, entries in this list can only be removed."
 
 **Note:** This function appends passed data to existing values
 
@@ -311,11 +311,7 @@ Must be empty before the object is deleted from the registry. Each entry is an i
 withGenerateName(generateName)
 ```
 
-GenerateName is an optional prefix, used by the server, to generate a unique name ONLY IF the Name field has not been provided. If this field is used, the name returned to the client will be different than the name passed. This value will also be combined with a unique suffix. The provided value has the same validation rules as the Name field, and may be truncated by the length of the suffix required to make the value unique on the server.
-
-If this field is specified and the generated name exists, the server will NOT return a 409 - instead, it will either return 201 Created or 500 with Reason ServerTimeout indicating a unique name could not be found in the time allotted, and the client should retry (optionally after the time indicated in the Retry-After header).
-
-Applied only if Name is not specified. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#idempotency
+"GenerateName is an optional prefix, used by the server, to generate a unique name ONLY IF the Name field has not been provided. If this field is used, the name returned to the client will be different than the name passed. This value will also be combined with a unique suffix. The provided value has the same validation rules as the Name field, and may be truncated by the length of the suffix required to make the value unique on the server.\n\nIf this field is specified and the generated name exists, the server will NOT return a 409 - instead, it will either return 201 Created or 500 with Reason ServerTimeout indicating a unique name could not be found in the time allotted, and the client should retry (optionally after the time indicated in the Retry-After header).\n\nApplied only if Name is not specified. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#idempotency"
 
 ### fn metadata.withGeneration
 
@@ -323,7 +319,7 @@ Applied only if Name is not specified. More info: https://git.k8s.io/community/c
 withGeneration(generation)
 ```
 
-A sequence number representing a specific generation of the desired state. Populated by the system. Read-only.
+"A sequence number representing a specific generation of the desired state. Populated by the system. Read-only."
 
 ### fn metadata.withLabels
 
@@ -331,7 +327,7 @@ A sequence number representing a specific generation of the desired state. Popul
 withLabels(labels)
 ```
 
-Map of string keys and values that can be used to organize and categorize (scope and select) objects. May match selectors of replication controllers and services. More info: http://kubernetes.io/docs/user-guide/labels
+"Map of string keys and values that can be used to organize and categorize (scope and select) objects. May match selectors of replication controllers and services. More info: http://kubernetes.io/docs/user-guide/labels"
 
 ### fn metadata.withLabelsMixin
 
@@ -339,7 +335,7 @@ Map of string keys and values that can be used to organize and categorize (scope
 withLabelsMixin(labels)
 ```
 
-Map of string keys and values that can be used to organize and categorize (scope and select) objects. May match selectors of replication controllers and services. More info: http://kubernetes.io/docs/user-guide/labels
+"Map of string keys and values that can be used to organize and categorize (scope and select) objects. May match selectors of replication controllers and services. More info: http://kubernetes.io/docs/user-guide/labels"
 
 **Note:** This function appends passed data to existing values
 
@@ -349,9 +345,7 @@ Map of string keys and values that can be used to organize and categorize (scope
 withManagedFields(managedFields)
 ```
 
-ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like 'ci-cd'. The set of fields is always in the version that the workflow used when modifying the object.
-
-This field is alpha and can be changed or removed without notice.
+"ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like \"ci-cd\". The set of fields is always in the version that the workflow used when modifying the object.\n\nThis field is alpha and can be changed or removed without notice."
 
 ### fn metadata.withManagedFieldsMixin
 
@@ -359,9 +353,7 @@ This field is alpha and can be changed or removed without notice.
 withManagedFieldsMixin(managedFields)
 ```
 
-ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like 'ci-cd'. The set of fields is always in the version that the workflow used when modifying the object.
-
-This field is alpha and can be changed or removed without notice.
+"ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like \"ci-cd\". The set of fields is always in the version that the workflow used when modifying the object.\n\nThis field is alpha and can be changed or removed without notice."
 
 **Note:** This function appends passed data to existing values
 
@@ -371,7 +363,7 @@ This field is alpha and can be changed or removed without notice.
 withName(name)
 ```
 
-Name must be unique within a namespace. Is required when creating resources, although some resources may allow a client to request the generation of an appropriate name automatically. Name is primarily intended for creation idempotence and configuration definition. Cannot be updated. More info: http://kubernetes.io/docs/user-guide/identifiers#names
+"Name must be unique within a namespace. Is required when creating resources, although some resources may allow a client to request the generation of an appropriate name automatically. Name is primarily intended for creation idempotence and configuration definition. Cannot be updated. More info: http://kubernetes.io/docs/user-guide/identifiers#names"
 
 ### fn metadata.withNamespace
 
@@ -379,9 +371,7 @@ Name must be unique within a namespace. Is required when creating resources, alt
 withNamespace(namespace)
 ```
 
-Namespace defines the space within each name must be unique. An empty namespace is equivalent to the "default" namespace, but "default" is the canonical representation. Not all objects are required to be scoped to a namespace - the value of this field for those objects will be empty.
-
-Must be a DNS_LABEL. Cannot be updated. More info: http://kubernetes.io/docs/user-guide/namespaces
+"Namespace defines the space within each name must be unique. An empty namespace is equivalent to the \"default\" namespace, but \"default\" is the canonical representation. Not all objects are required to be scoped to a namespace - the value of this field for those objects will be empty.\n\nMust be a DNS_LABEL. Cannot be updated. More info: http://kubernetes.io/docs/user-guide/namespaces"
 
 ### fn metadata.withOwnerReferences
 
@@ -389,7 +379,7 @@ Must be a DNS_LABEL. Cannot be updated. More info: http://kubernetes.io/docs/use
 withOwnerReferences(ownerReferences)
 ```
 
-List of objects depended by this object. If ALL objects in the list have been deleted, this object will be garbage collected. If this object is managed by a controller, then an entry in this list will point to this controller, with the controller field set to true. There cannot be more than one managing controller.
+"List of objects depended by this object. If ALL objects in the list have been deleted, this object will be garbage collected. If this object is managed by a controller, then an entry in this list will point to this controller, with the controller field set to true. There cannot be more than one managing controller."
 
 ### fn metadata.withOwnerReferencesMixin
 
@@ -397,7 +387,7 @@ List of objects depended by this object. If ALL objects in the list have been de
 withOwnerReferencesMixin(ownerReferences)
 ```
 
-List of objects depended by this object. If ALL objects in the list have been deleted, this object will be garbage collected. If this object is managed by a controller, then an entry in this list will point to this controller, with the controller field set to true. There cannot be more than one managing controller.
+"List of objects depended by this object. If ALL objects in the list have been deleted, this object will be garbage collected. If this object is managed by a controller, then an entry in this list will point to this controller, with the controller field set to true. There cannot be more than one managing controller."
 
 **Note:** This function appends passed data to existing values
 
@@ -407,9 +397,7 @@ List of objects depended by this object. If ALL objects in the list have been de
 withResourceVersion(resourceVersion)
 ```
 
-An opaque value that represents the internal version of this object that can be used by clients to determine when objects have changed. May be used for optimistic concurrency, change detection, and the watch operation on a resource or set of resources. Clients must treat these values as opaque and passed unmodified back to the server. They may only be valid for a particular resource or set of resources.
-
-Populated by the system. Read-only. Value must be treated as opaque by clients and . More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#concurrency-control-and-consistency
+"An opaque value that represents the internal version of this object that can be used by clients to determine when objects have changed. May be used for optimistic concurrency, change detection, and the watch operation on a resource or set of resources. Clients must treat these values as opaque and passed unmodified back to the server. They may only be valid for a particular resource or set of resources.\n\nPopulated by the system. Read-only. Value must be treated as opaque by clients and . More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#concurrency-control-and-consistency"
 
 ### fn metadata.withSelfLink
 
@@ -417,7 +405,7 @@ Populated by the system. Read-only. Value must be treated as opaque by clients a
 withSelfLink(selfLink)
 ```
 
-SelfLink is a URL representing this object. Populated by the system. Read-only.
+"SelfLink is a URL representing this object. Populated by the system. Read-only."
 
 ### fn metadata.withUid
 
@@ -425,13 +413,11 @@ SelfLink is a URL representing this object. Populated by the system. Read-only.
 withUid(uid)
 ```
 
-UID is the unique in time and space value for this object. It is typically generated by the server on successful creation of a resource and is not allowed to change on PUT operations.
-
-Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-guide/identifiers#uids
+"UID is the unique in time and space value for this object. It is typically generated by the server on successful creation of a resource and is not allowed to change on PUT operations.\n\nPopulated by the system. Read-only. More info: http://kubernetes.io/docs/user-guide/identifiers#uids"
 
 ## obj metadata.initializers
 
-Initializers tracks the progress of initialization.
+"Initializers tracks the progress of initialization."
 
 ### fn metadata.initializers.withPending
 
@@ -439,7 +425,7 @@ Initializers tracks the progress of initialization.
 withPending(pending)
 ```
 
-Pending is a list of initializers that must execute in order before this object is visible. When the last pending initializer is removed, and no failing result is set, the initializers struct will be set to nil and the object is considered as initialized and visible to all clients.
+"Pending is a list of initializers that must execute in order before this object is visible. When the last pending initializer is removed, and no failing result is set, the initializers struct will be set to nil and the object is considered as initialized and visible to all clients."
 
 ### fn metadata.initializers.withPendingMixin
 
@@ -447,13 +433,13 @@ Pending is a list of initializers that must execute in order before this object 
 withPendingMixin(pending)
 ```
 
-Pending is a list of initializers that must execute in order before this object is visible. When the last pending initializer is removed, and no failing result is set, the initializers struct will be set to nil and the object is considered as initialized and visible to all clients.
+"Pending is a list of initializers that must execute in order before this object is visible. When the last pending initializer is removed, and no failing result is set, the initializers struct will be set to nil and the object is considered as initialized and visible to all clients."
 
 **Note:** This function appends passed data to existing values
 
 ## obj metadata.initializers.result
 
-Status is a return value for calls that don't return other objects.
+"Status is a return value for calls that don't return other objects."
 
 ### fn metadata.initializers.result.withApiVersion
 
@@ -461,7 +447,7 @@ Status is a return value for calls that don't return other objects.
 withApiVersion(apiVersion)
 ```
 
-APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+"APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#resources"
 
 ### fn metadata.initializers.result.withCode
 
@@ -469,7 +455,7 @@ APIVersion defines the versioned schema of this representation of an object. Ser
 withCode(code)
 ```
 
-Suggested HTTP return code for this status, 0 if not set.
+"Suggested HTTP return code for this status, 0 if not set."
 
 ### fn metadata.initializers.result.withKind
 
@@ -477,7 +463,7 @@ Suggested HTTP return code for this status, 0 if not set.
 withKind(kind)
 ```
 
-Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+"Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds"
 
 ### fn metadata.initializers.result.withMessage
 
@@ -485,7 +471,7 @@ Kind is a string value representing the REST resource this object represents. Se
 withMessage(message)
 ```
 
-A human-readable description of the status of this operation.
+"A human-readable description of the status of this operation."
 
 ### fn metadata.initializers.result.withMetadata
 
@@ -493,7 +479,7 @@ A human-readable description of the status of this operation.
 withMetadata(metadata)
 ```
 
-Standard list metadata. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+"Standard list metadata. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds"
 
 ### fn metadata.initializers.result.withReason
 
@@ -501,11 +487,11 @@ Standard list metadata. More info: https://git.k8s.io/community/contributors/dev
 withReason(reason)
 ```
 
-A machine-readable description of why this operation is in the "Failure" status. If this value is empty there is no information available. A Reason clarifies an HTTP status code but does not override it.
+"A machine-readable description of why this operation is in the \"Failure\" status. If this value is empty there is no information available. A Reason clarifies an HTTP status code but does not override it."
 
 ## obj metadata.initializers.result.details
 
-StatusDetails is a set of additional properties that MAY be set by the server to provide additional information about a response. The Reason field of a Status object defines what attributes will be set. Clients must ignore fields that do not match the defined type of each attribute, and should assume that any attribute may be empty, invalid, or under defined.
+"StatusDetails is a set of additional properties that MAY be set by the server to provide additional information about a response. The Reason field of a Status object defines what attributes will be set. Clients must ignore fields that do not match the defined type of each attribute, and should assume that any attribute may be empty, invalid, or under defined."
 
 ### fn metadata.initializers.result.details.withCauses
 
@@ -513,7 +499,7 @@ StatusDetails is a set of additional properties that MAY be set by the server to
 withCauses(causes)
 ```
 
-The Causes array includes more details associated with the StatusReason failure. Not all StatusReasons may provide detailed causes.
+"The Causes array includes more details associated with the StatusReason failure. Not all StatusReasons may provide detailed causes."
 
 ### fn metadata.initializers.result.details.withCausesMixin
 
@@ -521,7 +507,7 @@ The Causes array includes more details associated with the StatusReason failure.
 withCausesMixin(causes)
 ```
 
-The Causes array includes more details associated with the StatusReason failure. Not all StatusReasons may provide detailed causes.
+"The Causes array includes more details associated with the StatusReason failure. Not all StatusReasons may provide detailed causes."
 
 **Note:** This function appends passed data to existing values
 
@@ -531,7 +517,7 @@ The Causes array includes more details associated with the StatusReason failure.
 withGroup(group)
 ```
 
-The group attribute of the resource associated with the status StatusReason.
+"The group attribute of the resource associated with the status StatusReason."
 
 ### fn metadata.initializers.result.details.withKind
 
@@ -539,7 +525,7 @@ The group attribute of the resource associated with the status StatusReason.
 withKind(kind)
 ```
 
-The kind attribute of the resource associated with the status StatusReason. On some operations may differ from the requested resource Kind. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+"The kind attribute of the resource associated with the status StatusReason. On some operations may differ from the requested resource Kind. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds"
 
 ### fn metadata.initializers.result.details.withName
 
@@ -547,7 +533,7 @@ The kind attribute of the resource associated with the status StatusReason. On s
 withName(name)
 ```
 
-The name attribute of the resource associated with the status StatusReason (when there is a single name which can be described).
+"The name attribute of the resource associated with the status StatusReason (when there is a single name which can be described)."
 
 ### fn metadata.initializers.result.details.withRetryAfterSeconds
 
@@ -555,7 +541,7 @@ The name attribute of the resource associated with the status StatusReason (when
 withRetryAfterSeconds(retryAfterSeconds)
 ```
 
-If specified, the time in seconds before the operation should be retried. Some errors may indicate the client must take an alternate action - for those errors this field may indicate how long to wait before taking the alternate action.
+"If specified, the time in seconds before the operation should be retried. Some errors may indicate the client must take an alternate action - for those errors this field may indicate how long to wait before taking the alternate action."
 
 ### fn metadata.initializers.result.details.withUid
 
@@ -563,11 +549,11 @@ If specified, the time in seconds before the operation should be retried. Some e
 withUid(uid)
 ```
 
-UID of the resource. (when there is a single resource which can be described). More info: http://kubernetes.io/docs/user-guide/identifiers#uids
+"UID of the resource. (when there is a single resource which can be described). More info: http://kubernetes.io/docs/user-guide/identifiers#uids"
 
 ## obj related
 
-ObjectReference contains enough information to let you inspect or modify the referred object.
+"ObjectReference contains enough information to let you inspect or modify the referred object."
 
 ### fn related.withApiVersion
 
@@ -575,7 +561,7 @@ ObjectReference contains enough information to let you inspect or modify the ref
 withApiVersion(apiVersion)
 ```
 
-API version of the referent.
+"API version of the referent."
 
 ### fn related.withFieldPath
 
@@ -583,7 +569,7 @@ API version of the referent.
 withFieldPath(fieldPath)
 ```
 
-If referring to a piece of an object instead of an entire object, this string should contain a valid JSON/Go field access statement, such as desiredState.manifest.containers[2]. For example, if the object reference is to a container within a pod, this would take on a value like: "spec.containers{name}" (where "name" refers to the name of the container that triggered the event) or if no container name is specified "spec.containers[2]" (container with index 2 in this pod). This syntax is chosen only to have some well-defined way of referencing a part of an object.
+"If referring to a piece of an object instead of an entire object, this string should contain a valid JSON/Go field access statement, such as desiredState.manifest.containers[2]. For example, if the object reference is to a container within a pod, this would take on a value like: \"spec.containers{name}\" (where \"name\" refers to the name of the container that triggered the event) or if no container name is specified \"spec.containers[2]\" (container with index 2 in this pod). This syntax is chosen only to have some well-defined way of referencing a part of an object."
 
 ### fn related.withKind
 
@@ -591,7 +577,7 @@ If referring to a piece of an object instead of an entire object, this string sh
 withKind(kind)
 ```
 
-Kind of the referent. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+"Kind of the referent. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds"
 
 ### fn related.withName
 
@@ -599,7 +585,7 @@ Kind of the referent. More info: https://git.k8s.io/community/contributors/devel
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn related.withNamespace
 
@@ -607,7 +593,7 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withNamespace(namespace)
 ```
 
-Namespace of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/
+"Namespace of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/"
 
 ### fn related.withResourceVersion
 
@@ -615,7 +601,7 @@ Namespace of the referent. More info: https://kubernetes.io/docs/concepts/overvi
 withResourceVersion(resourceVersion)
 ```
 
-Specific resourceVersion to which this reference is made, if any. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#concurrency-control-and-consistency
+"Specific resourceVersion to which this reference is made, if any. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#concurrency-control-and-consistency"
 
 ### fn related.withUid
 
@@ -623,11 +609,11 @@ Specific resourceVersion to which this reference is made, if any. More info: htt
 withUid(uid)
 ```
 
-UID of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#uids
+"UID of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#uids"
 
 ## obj series
 
-EventSeries contain information on series of events, i.e. thing that was/is happening continuously for some time.
+"EventSeries contain information on series of events, i.e. thing that was/is happening continuously for some time."
 
 ### fn series.withCount
 
@@ -635,7 +621,7 @@ EventSeries contain information on series of events, i.e. thing that was/is happ
 withCount(count)
 ```
 
-Number of occurrences in this series up to the last heartbeat time
+"Number of occurrences in this series up to the last heartbeat time"
 
 ### fn series.withLastObservedTime
 
@@ -643,7 +629,7 @@ Number of occurrences in this series up to the last heartbeat time
 withLastObservedTime(lastObservedTime)
 ```
 
-MicroTime is version of Time with microsecond level precision.
+"MicroTime is version of Time with microsecond level precision."
 
 ### fn series.withState
 
@@ -651,11 +637,11 @@ MicroTime is version of Time with microsecond level precision.
 withState(state)
 ```
 
-State of this Series: Ongoing or Finished
+"State of this Series: Ongoing or Finished"
 
 ## obj source
 
-EventSource contains information for an event.
+"EventSource contains information for an event."
 
 ### fn source.withComponent
 
@@ -663,7 +649,7 @@ EventSource contains information for an event.
 withComponent(component)
 ```
 
-Component from which the event is generated.
+"Component from which the event is generated."
 
 ### fn source.withHost
 
@@ -671,4 +657,4 @@ Component from which the event is generated.
 withHost(host)
 ```
 
-Node name on which the event is generated.
+"Node name on which the event is generated."

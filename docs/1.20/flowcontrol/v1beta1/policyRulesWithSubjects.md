@@ -4,7 +4,7 @@ permalink: /1.20/flowcontrol/v1beta1/policyRulesWithSubjects/
 
 # flowcontrol.v1beta1.policyRulesWithSubjects
 
-PolicyRulesWithSubjects prescribes a test that applies to a request to an apiserver. The test considers the subject making the request, the verb being requested, and the resource to be acted upon. This PolicyRulesWithSubjects matches a request if and only if both (a) at least one member of subjects matches the request and (b) at least one member of resourceRules or nonResourceRules matches the request.
+"PolicyRulesWithSubjects prescribes a test that applies to a request to an apiserver. The test considers the subject making the request, the verb being requested, and the resource to be acted upon. This PolicyRulesWithSubjects matches a request if and only if both (a) at least one member of subjects matches the request and (b) at least one member of resourceRules or nonResourceRules matches the request."
 
 ## Index
 
@@ -23,7 +23,7 @@ PolicyRulesWithSubjects prescribes a test that applies to a request to an apiser
 withNonResourceRules(nonResourceRules)
 ```
 
-`nonResourceRules` is a list of NonResourcePolicyRules that identify matching requests according to their verb and the target non-resource URL.
+"`nonResourceRules` is a list of NonResourcePolicyRules that identify matching requests according to their verb and the target non-resource URL."
 
 ### fn withNonResourceRulesMixin
 
@@ -31,7 +31,7 @@ withNonResourceRules(nonResourceRules)
 withNonResourceRulesMixin(nonResourceRules)
 ```
 
-`nonResourceRules` is a list of NonResourcePolicyRules that identify matching requests according to their verb and the target non-resource URL.
+"`nonResourceRules` is a list of NonResourcePolicyRules that identify matching requests according to their verb and the target non-resource URL."
 
 **Note:** This function appends passed data to existing values
 
@@ -41,7 +41,7 @@ withNonResourceRulesMixin(nonResourceRules)
 withResourceRules(resourceRules)
 ```
 
-`resourceRules` is a slice of ResourcePolicyRules that identify matching requests according to their verb and the target resource. At least one of `resourceRules` and `nonResourceRules` has to be non-empty.
+"`resourceRules` is a slice of ResourcePolicyRules that identify matching requests according to their verb and the target resource. At least one of `resourceRules` and `nonResourceRules` has to be non-empty."
 
 ### fn withResourceRulesMixin
 
@@ -49,7 +49,7 @@ withResourceRules(resourceRules)
 withResourceRulesMixin(resourceRules)
 ```
 
-`resourceRules` is a slice of ResourcePolicyRules that identify matching requests according to their verb and the target resource. At least one of `resourceRules` and `nonResourceRules` has to be non-empty.
+"`resourceRules` is a slice of ResourcePolicyRules that identify matching requests according to their verb and the target resource. At least one of `resourceRules` and `nonResourceRules` has to be non-empty."
 
 **Note:** This function appends passed data to existing values
 
@@ -59,7 +59,7 @@ withResourceRulesMixin(resourceRules)
 withSubjects(subjects)
 ```
 
-subjects is the list of normal user, serviceaccount, or group that this rule cares about. There must be at least one member in this slice. A slice that includes both the system:authenticated and system:unauthenticated user groups matches every request. Required.
+"subjects is the list of normal user, serviceaccount, or group that this rule cares about. There must be at least one member in this slice. A slice that includes both the system:authenticated and system:unauthenticated user groups matches every request. Required."
 
 ### fn withSubjectsMixin
 
@@ -67,6 +67,6 @@ subjects is the list of normal user, serviceaccount, or group that this rule car
 withSubjectsMixin(subjects)
 ```
 
-subjects is the list of normal user, serviceaccount, or group that this rule cares about. There must be at least one member in this slice. A slice that includes both the system:authenticated and system:unauthenticated user groups matches every request. Required.
+"subjects is the list of normal user, serviceaccount, or group that this rule cares about. There must be at least one member in this slice. A slice that includes both the system:authenticated and system:unauthenticated user groups matches every request. Required."
 
 **Note:** This function appends passed data to existing values

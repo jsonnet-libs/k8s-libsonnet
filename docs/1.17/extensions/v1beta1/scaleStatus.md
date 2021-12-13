@@ -4,7 +4,7 @@ permalink: /1.17/extensions/v1beta1/scaleStatus/
 
 # extensions.v1beta1.scaleStatus
 
-represents the current status of a scale subresource.
+"represents the current status of a scale subresource."
 
 ## Index
 
@@ -21,7 +21,7 @@ represents the current status of a scale subresource.
 withReplicas(replicas)
 ```
 
-actual number of observed instances of the scaled object.
+"actual number of observed instances of the scaled object."
 
 ### fn withSelector
 
@@ -29,7 +29,7 @@ actual number of observed instances of the scaled object.
 withSelector(selector)
 ```
 
-label query over pods that should match the replicas count. More info: http://kubernetes.io/docs/user-guide/labels#label-selectors
+"label query over pods that should match the replicas count. More info: http://kubernetes.io/docs/user-guide/labels#label-selectors"
 
 ### fn withSelectorMixin
 
@@ -37,7 +37,7 @@ label query over pods that should match the replicas count. More info: http://ku
 withSelectorMixin(selector)
 ```
 
-label query over pods that should match the replicas count. More info: http://kubernetes.io/docs/user-guide/labels#label-selectors
+"label query over pods that should match the replicas count. More info: http://kubernetes.io/docs/user-guide/labels#label-selectors"
 
 **Note:** This function appends passed data to existing values
 
@@ -47,4 +47,4 @@ label query over pods that should match the replicas count. More info: http://ku
 withTargetSelector(targetSelector)
 ```
 
-label selector for pods that should match the replicas count. This is a serializated version of both map-based and more expressive set-based selectors. This is done to avoid introspection in the clients. The string will be in the same format as the query-param syntax. If the target type only supports map-based selectors, both this field and map-based selector field are populated. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/#label-selectors
+"label selector for pods that should match the replicas count. This is a serializated version of both map-based and more expressive set-based selectors. This is done to avoid introspection in the clients. The string will be in the same format as the query-param syntax. If the target type only supports map-based selectors, both this field and map-based selector field are populated. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/#label-selectors"

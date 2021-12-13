@@ -4,7 +4,7 @@ permalink: /1.20/autoscaling/v2beta2/crossVersionObjectReference/
 
 # autoscaling.v2beta2.crossVersionObjectReference
 
-CrossVersionObjectReference contains enough information to let you identify the referred resource.
+"CrossVersionObjectReference contains enough information to let you identify the referred resource."
 
 ## Index
 
@@ -28,7 +28,7 @@ API version of the referent
 withKind(kind)
 ```
 
-Kind of the referent; More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds"
+"Kind of the referent; More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds\
 
 ### fn withName
 
@@ -36,4 +36,4 @@ Kind of the referent; More info: https://git.k8s.io/community/contributors/devel
 withName(name)
 ```
 
-Name of the referent; More info: http://kubernetes.io/docs/user-guide/identifiers#names
+"Name of the referent; More info: http://kubernetes.io/docs/user-guide/identifiers#names"

@@ -4,7 +4,7 @@ permalink: /1.19/core/v1/csiPersistentVolumeSource/
 
 # core.v1.csiPersistentVolumeSource
 
-Represents storage that is managed by an external CSI volume driver (Beta feature)
+"Represents storage that is managed by an external CSI volume driver (Beta feature)"
 
 ## Index
 
@@ -35,7 +35,7 @@ Represents storage that is managed by an external CSI volume driver (Beta featur
 withDriver(driver)
 ```
 
-Driver is the name of the driver to use for this volume. Required.
+"Driver is the name of the driver to use for this volume. Required."
 
 ### fn withFsType
 
@@ -43,7 +43,7 @@ Driver is the name of the driver to use for this volume. Required.
 withFsType(fsType)
 ```
 
-Filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs".
+"Filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. \"ext4\", \"xfs\", \"ntfs\"."
 
 ### fn withReadOnly
 
@@ -51,7 +51,7 @@ Filesystem type to mount. Must be a filesystem type supported by the host operat
 withReadOnly(readOnly)
 ```
 
-Optional: The value to pass to ControllerPublishVolumeRequest. Defaults to false (read/write).
+"Optional: The value to pass to ControllerPublishVolumeRequest. Defaults to false (read/write)."
 
 ### fn withVolumeAttributes
 
@@ -59,7 +59,7 @@ Optional: The value to pass to ControllerPublishVolumeRequest. Defaults to false
 withVolumeAttributes(volumeAttributes)
 ```
 
-Attributes of the volume to publish.
+"Attributes of the volume to publish."
 
 ### fn withVolumeAttributesMixin
 
@@ -67,7 +67,7 @@ Attributes of the volume to publish.
 withVolumeAttributesMixin(volumeAttributes)
 ```
 
-Attributes of the volume to publish.
+"Attributes of the volume to publish."
 
 **Note:** This function appends passed data to existing values
 
@@ -77,11 +77,11 @@ Attributes of the volume to publish.
 withVolumeHandle(volumeHandle)
 ```
 
-VolumeHandle is the unique volume name returned by the CSI volume plugin’s CreateVolume to refer to the volume on all subsequent calls. Required.
+"VolumeHandle is the unique volume name returned by the CSI volume plugin’s CreateVolume to refer to the volume on all subsequent calls. Required."
 
 ## obj controllerExpandSecretRef
 
-SecretReference represents a Secret Reference. It has enough information to retrieve secret in any namespace
+"SecretReference represents a Secret Reference. It has enough information to retrieve secret in any namespace"
 
 ### fn controllerExpandSecretRef.withName
 
@@ -89,7 +89,7 @@ SecretReference represents a Secret Reference. It has enough information to retr
 withName(name)
 ```
 
-Name is unique within a namespace to reference a secret resource.
+"Name is unique within a namespace to reference a secret resource."
 
 ### fn controllerExpandSecretRef.withNamespace
 
@@ -97,11 +97,11 @@ Name is unique within a namespace to reference a secret resource.
 withNamespace(namespace)
 ```
 
-Namespace defines the space within which the secret name must be unique.
+"Namespace defines the space within which the secret name must be unique."
 
 ## obj controllerPublishSecretRef
 
-SecretReference represents a Secret Reference. It has enough information to retrieve secret in any namespace
+"SecretReference represents a Secret Reference. It has enough information to retrieve secret in any namespace"
 
 ### fn controllerPublishSecretRef.withName
 
@@ -109,7 +109,7 @@ SecretReference represents a Secret Reference. It has enough information to retr
 withName(name)
 ```
 
-Name is unique within a namespace to reference a secret resource.
+"Name is unique within a namespace to reference a secret resource."
 
 ### fn controllerPublishSecretRef.withNamespace
 
@@ -117,11 +117,11 @@ Name is unique within a namespace to reference a secret resource.
 withNamespace(namespace)
 ```
 
-Namespace defines the space within which the secret name must be unique.
+"Namespace defines the space within which the secret name must be unique."
 
 ## obj nodePublishSecretRef
 
-SecretReference represents a Secret Reference. It has enough information to retrieve secret in any namespace
+"SecretReference represents a Secret Reference. It has enough information to retrieve secret in any namespace"
 
 ### fn nodePublishSecretRef.withName
 
@@ -129,7 +129,7 @@ SecretReference represents a Secret Reference. It has enough information to retr
 withName(name)
 ```
 
-Name is unique within a namespace to reference a secret resource.
+"Name is unique within a namespace to reference a secret resource."
 
 ### fn nodePublishSecretRef.withNamespace
 
@@ -137,11 +137,11 @@ Name is unique within a namespace to reference a secret resource.
 withNamespace(namespace)
 ```
 
-Namespace defines the space within which the secret name must be unique.
+"Namespace defines the space within which the secret name must be unique."
 
 ## obj nodeStageSecretRef
 
-SecretReference represents a Secret Reference. It has enough information to retrieve secret in any namespace
+"SecretReference represents a Secret Reference. It has enough information to retrieve secret in any namespace"
 
 ### fn nodeStageSecretRef.withName
 
@@ -149,7 +149,7 @@ SecretReference represents a Secret Reference. It has enough information to retr
 withName(name)
 ```
 
-Name is unique within a namespace to reference a secret resource.
+"Name is unique within a namespace to reference a secret resource."
 
 ### fn nodeStageSecretRef.withNamespace
 
@@ -157,4 +157,4 @@ Name is unique within a namespace to reference a secret resource.
 withNamespace(namespace)
 ```
 
-Namespace defines the space within which the secret name must be unique.
+"Namespace defines the space within which the secret name must be unique."

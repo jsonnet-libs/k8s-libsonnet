@@ -4,7 +4,7 @@ permalink: /1.20/core/v1/photonPersistentDiskVolumeSource/
 
 # core.v1.photonPersistentDiskVolumeSource
 
-Represents a Photon Controller persistent disk resource.
+"Represents a Photon Controller persistent disk resource."
 
 ## Index
 
@@ -19,7 +19,7 @@ Represents a Photon Controller persistent disk resource.
 withFsType(fsType)
 ```
 
-Filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
+"Filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. \"ext4\", \"xfs\", \"ntfs\". Implicitly inferred to be \"ext4\" if unspecified."
 
 ### fn withPdID
 
@@ -27,4 +27,4 @@ Filesystem type to mount. Must be a filesystem type supported by the host operat
 withPdID(pdID)
 ```
 
-ID that identifies Photon Controller persistent disk
+"ID that identifies Photon Controller persistent disk"

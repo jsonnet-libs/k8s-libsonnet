@@ -4,7 +4,7 @@ permalink: /1.21/storage/v1alpha1/volumeAttachmentStatus/
 
 # storage.v1alpha1.volumeAttachmentStatus
 
-VolumeAttachmentStatus is the status of a VolumeAttachment request.
+"VolumeAttachmentStatus is the status of a VolumeAttachment request."
 
 ## Index
 
@@ -26,7 +26,7 @@ VolumeAttachmentStatus is the status of a VolumeAttachment request.
 withAttached(attached)
 ```
 
-Indicates the volume is successfully attached. This field must only be set by the entity completing the attach operation, i.e. the external-attacher.
+"Indicates the volume is successfully attached. This field must only be set by the entity completing the attach operation, i.e. the external-attacher."
 
 ### fn withAttachmentMetadata
 
@@ -34,7 +34,7 @@ Indicates the volume is successfully attached. This field must only be set by th
 withAttachmentMetadata(attachmentMetadata)
 ```
 
-Upon successful attach, this field is populated with any information returned by the attach operation that must be passed into subsequent WaitForAttach or Mount calls. This field must only be set by the entity completing the attach operation, i.e. the external-attacher.
+"Upon successful attach, this field is populated with any information returned by the attach operation that must be passed into subsequent WaitForAttach or Mount calls. This field must only be set by the entity completing the attach operation, i.e. the external-attacher."
 
 ### fn withAttachmentMetadataMixin
 
@@ -42,13 +42,13 @@ Upon successful attach, this field is populated with any information returned by
 withAttachmentMetadataMixin(attachmentMetadata)
 ```
 
-Upon successful attach, this field is populated with any information returned by the attach operation that must be passed into subsequent WaitForAttach or Mount calls. This field must only be set by the entity completing the attach operation, i.e. the external-attacher.
+"Upon successful attach, this field is populated with any information returned by the attach operation that must be passed into subsequent WaitForAttach or Mount calls. This field must only be set by the entity completing the attach operation, i.e. the external-attacher."
 
 **Note:** This function appends passed data to existing values
 
 ## obj attachError
 
-VolumeError captures an error encountered during a volume operation.
+"VolumeError captures an error encountered during a volume operation."
 
 ### fn attachError.withMessage
 
@@ -56,7 +56,7 @@ VolumeError captures an error encountered during a volume operation.
 withMessage(message)
 ```
 
-String detailing the error encountered during Attach or Detach operation. This string maybe logged, so it should not contain sensitive information.
+"String detailing the error encountered during Attach or Detach operation. This string maybe logged, so it should not contain sensitive information."
 
 ### fn attachError.withTime
 
@@ -64,11 +64,11 @@ String detailing the error encountered during Attach or Detach operation. This s
 withTime(time)
 ```
 
-Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.
+"Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers."
 
 ## obj detachError
 
-VolumeError captures an error encountered during a volume operation.
+"VolumeError captures an error encountered during a volume operation."
 
 ### fn detachError.withMessage
 
@@ -76,7 +76,7 @@ VolumeError captures an error encountered during a volume operation.
 withMessage(message)
 ```
 
-String detailing the error encountered during Attach or Detach operation. This string maybe logged, so it should not contain sensitive information.
+"String detailing the error encountered during Attach or Detach operation. This string maybe logged, so it should not contain sensitive information."
 
 ### fn detachError.withTime
 
@@ -84,4 +84,4 @@ String detailing the error encountered during Attach or Detach operation. This s
 withTime(time)
 ```
 
-Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.
+"Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers."

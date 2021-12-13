@@ -4,7 +4,7 @@ permalink: /1.17/auditregistration/v1alpha1/policy/
 
 # auditregistration.v1alpha1.policy
 
-Policy defines the configuration of how audit events are logged
+"Policy defines the configuration of how audit events are logged"
 
 ## Index
 
@@ -20,7 +20,7 @@ Policy defines the configuration of how audit events are logged
 withLevel(level)
 ```
 
-The Level that all requests are recorded at. available options: None, Metadata, Request, RequestResponse required
+"The Level that all requests are recorded at. available options: None, Metadata, Request, RequestResponse required"
 
 ### fn withStages
 
@@ -28,7 +28,7 @@ The Level that all requests are recorded at. available options: None, Metadata, 
 withStages(stages)
 ```
 
-Stages is a list of stages for which events are created.
+"Stages is a list of stages for which events are created."
 
 ### fn withStagesMixin
 
@@ -36,6 +36,6 @@ Stages is a list of stages for which events are created.
 withStagesMixin(stages)
 ```
 
-Stages is a list of stages for which events are created.
+"Stages is a list of stages for which events are created."
 
 **Note:** This function appends passed data to existing values

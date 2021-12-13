@@ -4,7 +4,7 @@ permalink: /1.19/policy/v1beta1/idRange/
 
 # policy.v1beta1.idRange
 
-IDRange provides a min/max of an allowed range of IDs.
+"IDRange provides a min/max of an allowed range of IDs."
 
 ## Index
 
@@ -19,7 +19,7 @@ IDRange provides a min/max of an allowed range of IDs.
 withMax(max)
 ```
 
-max is the end of the range, inclusive.
+"max is the end of the range, inclusive."
 
 ### fn withMin
 
@@ -27,4 +27,4 @@ max is the end of the range, inclusive.
 withMin(min)
 ```
 
-min is the start of the range, inclusive.
+"min is the start of the range, inclusive."

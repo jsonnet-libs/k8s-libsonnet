@@ -4,7 +4,7 @@ permalink: /1.19/flowcontrol/v1alpha1/groupSubject/
 
 # flowcontrol.v1alpha1.groupSubject
 
-GroupSubject holds detailed information for group-kind subject.
+"GroupSubject holds detailed information for group-kind subject."
 
 ## Index
 
@@ -18,4 +18,4 @@ GroupSubject holds detailed information for group-kind subject.
 withName(name)
 ```
 
-name is the user group that matches, or "*" to match all user groups. See https://github.com/kubernetes/apiserver/blob/master/pkg/authentication/user/user.go for some well-known group names. Required.
+"name is the user group that matches, or \"*\" to match all user groups. See https://github.com/kubernetes/apiserver/blob/master/pkg/authentication/user/user.go for some well-known group names. Required."

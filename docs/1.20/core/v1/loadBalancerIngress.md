@@ -4,7 +4,7 @@ permalink: /1.20/core/v1/loadBalancerIngress/
 
 # core.v1.loadBalancerIngress
 
-LoadBalancerIngress represents the status of a load-balancer ingress point: traffic intended for the service should be sent to an ingress point.
+"LoadBalancerIngress represents the status of a load-balancer ingress point: traffic intended for the service should be sent to an ingress point."
 
 ## Index
 
@@ -21,7 +21,7 @@ LoadBalancerIngress represents the status of a load-balancer ingress point: traf
 withHostname(hostname)
 ```
 
-Hostname is set for load-balancer ingress points that are DNS based (typically AWS load-balancers)
+"Hostname is set for load-balancer ingress points that are DNS based (typically AWS load-balancers)"
 
 ### fn withIp
 
@@ -29,7 +29,7 @@ Hostname is set for load-balancer ingress points that are DNS based (typically A
 withIp(ip)
 ```
 
-IP is set for load-balancer ingress points that are IP based (typically GCE or OpenStack load-balancers)
+"IP is set for load-balancer ingress points that are IP based (typically GCE or OpenStack load-balancers)"
 
 ### fn withPorts
 
@@ -37,7 +37,7 @@ IP is set for load-balancer ingress points that are IP based (typically GCE or O
 withPorts(ports)
 ```
 
-Ports is a list of records of service ports If used, every port defined in the service should have an entry in it
+"Ports is a list of records of service ports If used, every port defined in the service should have an entry in it"
 
 ### fn withPortsMixin
 
@@ -45,6 +45,6 @@ Ports is a list of records of service ports If used, every port defined in the s
 withPortsMixin(ports)
 ```
 
-Ports is a list of records of service ports If used, every port defined in the service should have an entry in it
+"Ports is a list of records of service ports If used, every port defined in the service should have an entry in it"
 
 **Note:** This function appends passed data to existing values

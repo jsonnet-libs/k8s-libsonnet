@@ -4,7 +4,7 @@ permalink: /1.21/core/v1/csiVolumeSource/
 
 # core.v1.csiVolumeSource
 
-Represents a source location of a volume to mount, managed by an external CSI driver
+"Represents a source location of a volume to mount, managed by an external CSI driver"
 
 ## Index
 
@@ -24,7 +24,7 @@ Represents a source location of a volume to mount, managed by an external CSI dr
 withDriver(driver)
 ```
 
-Driver is the name of the CSI driver that handles this volume. Consult with your admin for the correct name as registered in the cluster.
+"Driver is the name of the CSI driver that handles this volume. Consult with your admin for the correct name as registered in the cluster."
 
 ### fn withFsType
 
@@ -32,7 +32,7 @@ Driver is the name of the CSI driver that handles this volume. Consult with your
 withFsType(fsType)
 ```
 
-Filesystem type to mount. Ex. "ext4", "xfs", "ntfs". If not provided, the empty value is passed to the associated CSI driver which will determine the default filesystem to apply.
+"Filesystem type to mount. Ex. \"ext4\", \"xfs\", \"ntfs\". If not provided, the empty value is passed to the associated CSI driver which will determine the default filesystem to apply."
 
 ### fn withReadOnly
 
@@ -40,7 +40,7 @@ Filesystem type to mount. Ex. "ext4", "xfs", "ntfs". If not provided, the empty 
 withReadOnly(readOnly)
 ```
 
-Specifies a read-only configuration for the volume. Defaults to false (read/write).
+"Specifies a read-only configuration for the volume. Defaults to false (read/write)."
 
 ### fn withVolumeAttributes
 
@@ -48,7 +48,7 @@ Specifies a read-only configuration for the volume. Defaults to false (read/writ
 withVolumeAttributes(volumeAttributes)
 ```
 
-VolumeAttributes stores driver-specific properties that are passed to the CSI driver. Consult your driver's documentation for supported values.
+"VolumeAttributes stores driver-specific properties that are passed to the CSI driver. Consult your driver's documentation for supported values."
 
 ### fn withVolumeAttributesMixin
 
@@ -56,13 +56,13 @@ VolumeAttributes stores driver-specific properties that are passed to the CSI dr
 withVolumeAttributesMixin(volumeAttributes)
 ```
 
-VolumeAttributes stores driver-specific properties that are passed to the CSI driver. Consult your driver's documentation for supported values.
+"VolumeAttributes stores driver-specific properties that are passed to the CSI driver. Consult your driver's documentation for supported values."
 
 **Note:** This function appends passed data to existing values
 
 ## obj nodePublishSecretRef
 
-LocalObjectReference contains enough information to let you locate the referenced object inside the same namespace.
+"LocalObjectReference contains enough information to let you locate the referenced object inside the same namespace."
 
 ### fn nodePublishSecretRef.withName
 
@@ -70,4 +70,4 @@ LocalObjectReference contains enough information to let you locate the reference
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"

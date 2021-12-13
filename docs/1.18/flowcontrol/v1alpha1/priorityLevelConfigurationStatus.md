@@ -4,7 +4,7 @@ permalink: /1.18/flowcontrol/v1alpha1/priorityLevelConfigurationStatus/
 
 # flowcontrol.v1alpha1.priorityLevelConfigurationStatus
 
-PriorityLevelConfigurationStatus represents the current state of a "request-priority".
+"PriorityLevelConfigurationStatus represents the current state of a \"request-priority\"."
 
 ## Index
 
@@ -19,7 +19,7 @@ PriorityLevelConfigurationStatus represents the current state of a "request-prio
 withConditions(conditions)
 ```
 
-`conditions` is the current state of "request-priority".
+"`conditions` is the current state of \"request-priority\"."
 
 ### fn withConditionsMixin
 
@@ -27,6 +27,6 @@ withConditions(conditions)
 withConditionsMixin(conditions)
 ```
 
-`conditions` is the current state of "request-priority".
+"`conditions` is the current state of \"request-priority\"."
 
 **Note:** This function appends passed data to existing values

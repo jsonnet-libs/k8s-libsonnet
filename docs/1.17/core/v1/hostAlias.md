@@ -4,7 +4,7 @@ permalink: /1.17/core/v1/hostAlias/
 
 # core.v1.hostAlias
 
-HostAlias holds the mapping between IP and hostnames that will be injected as an entry in the pod's hosts file.
+"HostAlias holds the mapping between IP and hostnames that will be injected as an entry in the pod's hosts file."
 
 ## Index
 
@@ -20,7 +20,7 @@ HostAlias holds the mapping between IP and hostnames that will be injected as an
 withHostnames(hostnames)
 ```
 
-Hostnames for the above IP address.
+"Hostnames for the above IP address."
 
 ### fn withHostnamesMixin
 
@@ -28,7 +28,7 @@ Hostnames for the above IP address.
 withHostnamesMixin(hostnames)
 ```
 
-Hostnames for the above IP address.
+"Hostnames for the above IP address."
 
 **Note:** This function appends passed data to existing values
 
@@ -38,4 +38,4 @@ Hostnames for the above IP address.
 withIp(ip)
 ```
 
-IP address of the host file entry.
+"IP address of the host file entry."

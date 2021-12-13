@@ -4,7 +4,7 @@ permalink: /1.17/autoscaling/v2beta1/horizontalPodAutoscalerCondition/
 
 # autoscaling.v2beta1.horizontalPodAutoscalerCondition
 
-HorizontalPodAutoscalerCondition describes the state of a HorizontalPodAutoscaler at a certain point.
+"HorizontalPodAutoscalerCondition describes the state of a HorizontalPodAutoscaler at a certain point."
 
 ## Index
 
@@ -21,7 +21,7 @@ HorizontalPodAutoscalerCondition describes the state of a HorizontalPodAutoscale
 withLastTransitionTime(lastTransitionTime)
 ```
 
-Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.
+"Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers."
 
 ### fn withMessage
 
@@ -29,7 +29,7 @@ Time is a wrapper around time.Time which supports correct marshaling to YAML and
 withMessage(message)
 ```
 
-message is a human-readable explanation containing details about the transition
+"message is a human-readable explanation containing details about the transition"
 
 ### fn withReason
 
@@ -37,7 +37,7 @@ message is a human-readable explanation containing details about the transition
 withReason(reason)
 ```
 
-reason is the reason for the condition's last transition.
+"reason is the reason for the condition's last transition."
 
 ### fn withType
 
@@ -45,4 +45,4 @@ reason is the reason for the condition's last transition.
 withType(type)
 ```
 
-type describes the current condition
+"type describes the current condition"

@@ -4,7 +4,7 @@ permalink: /1.18/core/v1/volumeMount/
 
 # core.v1.volumeMount
 
-VolumeMount describes a mounting of a Volume within a container.
+"VolumeMount describes a mounting of a Volume within a container."
 
 ## Index
 
@@ -32,7 +32,7 @@ new creates a new `volumeMount`
 withMountPath(mountPath)
 ```
 
-Path within the container at which the volume should be mounted.  Must not contain ':'.
+"Path within the container at which the volume should be mounted.  Must not contain ':'."
 
 ### fn withMountPropagation
 
@@ -40,7 +40,7 @@ Path within the container at which the volume should be mounted.  Must not conta
 withMountPropagation(mountPropagation)
 ```
 
-mountPropagation determines how mounts are propagated from the host to container and the other way around. When not set, MountPropagationNone is used. This field is beta in 1.10.
+"mountPropagation determines how mounts are propagated from the host to container and the other way around. When not set, MountPropagationNone is used. This field is beta in 1.10."
 
 ### fn withName
 
@@ -48,7 +48,7 @@ mountPropagation determines how mounts are propagated from the host to container
 withName(name)
 ```
 
-This must match the Name of a Volume.
+"This must match the Name of a Volume."
 
 ### fn withReadOnly
 
@@ -56,7 +56,7 @@ This must match the Name of a Volume.
 withReadOnly(readOnly)
 ```
 
-Mounted read-only if true, read-write otherwise (false or unspecified). Defaults to false.
+"Mounted read-only if true, read-write otherwise (false or unspecified). Defaults to false."
 
 ### fn withSubPath
 
@@ -64,7 +64,7 @@ Mounted read-only if true, read-write otherwise (false or unspecified). Defaults
 withSubPath(subPath)
 ```
 
-Path within the volume from which the container's volume should be mounted. Defaults to '' (volume's root).
+"Path within the volume from which the container's volume should be mounted. Defaults to \"\" (volume's root)."
 
 ### fn withSubPathExpr
 
@@ -72,4 +72,4 @@ Path within the volume from which the container's volume should be mounted. Defa
 withSubPathExpr(subPathExpr)
 ```
 
-Expanded path within the volume from which the container's volume should be mounted. Behaves similarly to SubPath but environment variable references $(VAR_NAME) are expanded using the container's environment. Defaults to '' (volume's root). SubPathExpr and SubPath are mutually exclusive.
+"Expanded path within the volume from which the container's volume should be mounted. Behaves similarly to SubPath but environment variable references $(VAR_NAME) are expanded using the container's environment. Defaults to \"\" (volume's root). SubPathExpr and SubPath are mutually exclusive."

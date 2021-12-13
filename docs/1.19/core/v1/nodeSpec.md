@@ -4,7 +4,7 @@ permalink: /1.19/core/v1/nodeSpec/
 
 # core.v1.nodeSpec
 
-NodeSpec describes the attributes that a node is created with.
+"NodeSpec describes the attributes that a node is created with."
 
 ## Index
 
@@ -32,7 +32,7 @@ NodeSpec describes the attributes that a node is created with.
 withExternalID(externalID)
 ```
 
-Deprecated. Not all kubelets will set this field. Remove field after 1.13. see: https://issues.k8s.io/61966
+"Deprecated. Not all kubelets will set this field. Remove field after 1.13. see: https://issues.k8s.io/61966"
 
 ### fn withPodCIDR
 
@@ -40,7 +40,7 @@ Deprecated. Not all kubelets will set this field. Remove field after 1.13. see: 
 withPodCIDR(podCIDR)
 ```
 
-PodCIDR represents the pod IP range assigned to the node.
+"PodCIDR represents the pod IP range assigned to the node."
 
 ### fn withPodCIDRs
 
@@ -48,7 +48,7 @@ PodCIDR represents the pod IP range assigned to the node.
 withPodCIDRs(podCIDRs)
 ```
 
-podCIDRs represents the IP ranges assigned to the node for usage by Pods on that node. If this field is specified, the 0th entry must match the podCIDR field. It may contain at most 1 value for each of IPv4 and IPv6.
+"podCIDRs represents the IP ranges assigned to the node for usage by Pods on that node. If this field is specified, the 0th entry must match the podCIDR field. It may contain at most 1 value for each of IPv4 and IPv6."
 
 ### fn withPodCIDRsMixin
 
@@ -56,7 +56,7 @@ podCIDRs represents the IP ranges assigned to the node for usage by Pods on that
 withPodCIDRsMixin(podCIDRs)
 ```
 
-podCIDRs represents the IP ranges assigned to the node for usage by Pods on that node. If this field is specified, the 0th entry must match the podCIDR field. It may contain at most 1 value for each of IPv4 and IPv6.
+"podCIDRs represents the IP ranges assigned to the node for usage by Pods on that node. If this field is specified, the 0th entry must match the podCIDR field. It may contain at most 1 value for each of IPv4 and IPv6."
 
 **Note:** This function appends passed data to existing values
 
@@ -66,7 +66,7 @@ podCIDRs represents the IP ranges assigned to the node for usage by Pods on that
 withProviderID(providerID)
 ```
 
-ID of the node assigned by the cloud provider in the format: <ProviderName>://<ProviderSpecificNodeID>
+"ID of the node assigned by the cloud provider in the format: <ProviderName>://<ProviderSpecificNodeID>"
 
 ### fn withTaints
 
@@ -74,7 +74,7 @@ ID of the node assigned by the cloud provider in the format: <ProviderName>://<P
 withTaints(taints)
 ```
 
-If specified, the node's taints.
+"If specified, the node's taints."
 
 ### fn withTaintsMixin
 
@@ -82,7 +82,7 @@ If specified, the node's taints.
 withTaintsMixin(taints)
 ```
 
-If specified, the node's taints.
+"If specified, the node's taints."
 
 **Note:** This function appends passed data to existing values
 
@@ -92,15 +92,15 @@ If specified, the node's taints.
 withUnschedulable(unschedulable)
 ```
 
-Unschedulable controls node schedulability of new pods. By default, node is schedulable. More info: https://kubernetes.io/docs/concepts/nodes/node/#manual-node-administration
+"Unschedulable controls node schedulability of new pods. By default, node is schedulable. More info: https://kubernetes.io/docs/concepts/nodes/node/#manual-node-administration"
 
 ## obj configSource
 
-NodeConfigSource specifies a source of node configuration. Exactly one subfield (excluding metadata) must be non-nil.
+"NodeConfigSource specifies a source of node configuration. Exactly one subfield (excluding metadata) must be non-nil."
 
 ## obj configSource.configMap
 
-ConfigMapNodeConfigSource contains the information to reference a ConfigMap as a config source for the Node.
+"ConfigMapNodeConfigSource contains the information to reference a ConfigMap as a config source for the Node."
 
 ### fn configSource.configMap.withKubeletConfigKey
 
@@ -108,7 +108,7 @@ ConfigMapNodeConfigSource contains the information to reference a ConfigMap as a
 withKubeletConfigKey(kubeletConfigKey)
 ```
 
-KubeletConfigKey declares which key of the referenced ConfigMap corresponds to the KubeletConfiguration structure This field is required in all cases.
+"KubeletConfigKey declares which key of the referenced ConfigMap corresponds to the KubeletConfiguration structure This field is required in all cases."
 
 ### fn configSource.configMap.withName
 
@@ -116,7 +116,7 @@ KubeletConfigKey declares which key of the referenced ConfigMap corresponds to t
 withName(name)
 ```
 
-Name is the metadata.name of the referenced ConfigMap. This field is required in all cases.
+"Name is the metadata.name of the referenced ConfigMap. This field is required in all cases."
 
 ### fn configSource.configMap.withNamespace
 
@@ -124,7 +124,7 @@ Name is the metadata.name of the referenced ConfigMap. This field is required in
 withNamespace(namespace)
 ```
 
-Namespace is the metadata.namespace of the referenced ConfigMap. This field is required in all cases.
+"Namespace is the metadata.namespace of the referenced ConfigMap. This field is required in all cases."
 
 ### fn configSource.configMap.withResourceVersion
 
@@ -132,7 +132,7 @@ Namespace is the metadata.namespace of the referenced ConfigMap. This field is r
 withResourceVersion(resourceVersion)
 ```
 
-ResourceVersion is the metadata.ResourceVersion of the referenced ConfigMap. This field is forbidden in Node.Spec, and required in Node.Status.
+"ResourceVersion is the metadata.ResourceVersion of the referenced ConfigMap. This field is forbidden in Node.Spec, and required in Node.Status."
 
 ### fn configSource.configMap.withUid
 
@@ -140,4 +140,4 @@ ResourceVersion is the metadata.ResourceVersion of the referenced ConfigMap. Thi
 withUid(uid)
 ```
 
-UID is the metadata.UID of the referenced ConfigMap. This field is forbidden in Node.Spec, and required in Node.Status.
+"UID is the metadata.UID of the referenced ConfigMap. This field is forbidden in Node.Spec, and required in Node.Status."

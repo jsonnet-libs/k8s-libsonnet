@@ -4,7 +4,7 @@ permalink: /1.17/apps/v1beta2/rollingUpdateStatefulSetStrategy/
 
 # apps.v1beta2.rollingUpdateStatefulSetStrategy
 
-RollingUpdateStatefulSetStrategy is used to communicate parameter for RollingUpdateStatefulSetStrategyType.
+"RollingUpdateStatefulSetStrategy is used to communicate parameter for RollingUpdateStatefulSetStrategyType."
 
 ## Index
 
@@ -18,4 +18,4 @@ RollingUpdateStatefulSetStrategy is used to communicate parameter for RollingUpd
 withPartition(partition)
 ```
 
-Partition indicates the ordinal at which the StatefulSet should be partitioned. Default value is 0.
+"Partition indicates the ordinal at which the StatefulSet should be partitioned. Default value is 0."

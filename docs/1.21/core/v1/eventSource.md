@@ -4,7 +4,7 @@ permalink: /1.21/core/v1/eventSource/
 
 # core.v1.eventSource
 
-EventSource contains information for an event.
+"EventSource contains information for an event."
 
 ## Index
 
@@ -19,7 +19,7 @@ EventSource contains information for an event.
 withComponent(component)
 ```
 
-Component from which the event is generated.
+"Component from which the event is generated."
 
 ### fn withHost
 
@@ -27,4 +27,4 @@ Component from which the event is generated.
 withHost(host)
 ```
 
-Node name on which the event is generated.
+"Node name on which the event is generated."

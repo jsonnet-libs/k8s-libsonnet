@@ -4,7 +4,7 @@ permalink: /1.18/core/v1/topologySelectorLabelRequirement/
 
 # core.v1.topologySelectorLabelRequirement
 
-A topology selector requirement is a selector that matches given label. This is an alpha feature and may change in the future.
+"A topology selector requirement is a selector that matches given label. This is an alpha feature and may change in the future."
 
 ## Index
 
@@ -20,7 +20,7 @@ A topology selector requirement is a selector that matches given label. This is 
 withKey(key)
 ```
 
-The label key that the selector applies to.
+"The label key that the selector applies to."
 
 ### fn withValues
 
@@ -28,7 +28,7 @@ The label key that the selector applies to.
 withValues(values)
 ```
 
-An array of string values. One value must match the label to be selected. Each entry in Values is ORed.
+"An array of string values. One value must match the label to be selected. Each entry in Values is ORed."
 
 ### fn withValuesMixin
 
@@ -36,6 +36,6 @@ An array of string values. One value must match the label to be selected. Each e
 withValuesMixin(values)
 ```
 
-An array of string values. One value must match the label to be selected. Each entry in Values is ORed.
+"An array of string values. One value must match the label to be selected. Each entry in Values is ORed."
 
 **Note:** This function appends passed data to existing values

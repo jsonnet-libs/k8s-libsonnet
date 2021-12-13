@@ -4,7 +4,7 @@ permalink: /1.17/networking/v1beta1/ingressBackend/
 
 # networking.v1beta1.ingressBackend
 
-IngressBackend describes all endpoints for a given service and port.
+"IngressBackend describes all endpoints for a given service and port."
 
 ## Index
 
@@ -19,7 +19,7 @@ IngressBackend describes all endpoints for a given service and port.
 withServiceName(serviceName)
 ```
 
-Specifies the name of the referenced service.
+"Specifies the name of the referenced service."
 
 ### fn withServicePort
 
@@ -27,4 +27,4 @@ Specifies the name of the referenced service.
 withServicePort(servicePort)
 ```
 
-IntOrString is a type that can hold an int32 or a string.  When used in JSON or YAML marshalling and unmarshalling, it produces or consumes the inner type.  This allows you to have, for example, a JSON field that can accept a name or number.
+"IntOrString is a type that can hold an int32 or a string.  When used in JSON or YAML marshalling and unmarshalling, it produces or consumes the inner type.  This allows you to have, for example, a JSON field that can accept a name or number."

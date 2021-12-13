@@ -4,9 +4,7 @@ permalink: /1.17/storage/v1beta1/volumeAttachment/
 
 # storage.v1beta1.volumeAttachment
 
-VolumeAttachment captures the intent to attach or detach the specified volume to/from the specified node.
-
-VolumeAttachment objects are non-namespaced.
+"VolumeAttachment captures the intent to attach or detach the specified volume to/from the specified node.\n\nVolumeAttachment objects are non-namespaced."
 
 ## Index
 
@@ -234,11 +232,11 @@ VolumeAttachment objects are non-namespaced.
 new(name)
 ```
 
-new returns an instance of Volumeattachment
+new returns an instance of VolumeAttachment
 
 ## obj metadata
 
-ObjectMeta is metadata that all persisted resources must have, which includes all objects users must create.
+"ObjectMeta is metadata that all persisted resources must have, which includes all objects users must create."
 
 ### fn metadata.withAnnotations
 
@@ -246,7 +244,7 @@ ObjectMeta is metadata that all persisted resources must have, which includes al
 withAnnotations(annotations)
 ```
 
-Annotations is an unstructured key value map stored with a resource that may be set by external tools to store and retrieve arbitrary metadata. They are not queryable and should be preserved when modifying objects. More info: http://kubernetes.io/docs/user-guide/annotations
+"Annotations is an unstructured key value map stored with a resource that may be set by external tools to store and retrieve arbitrary metadata. They are not queryable and should be preserved when modifying objects. More info: http://kubernetes.io/docs/user-guide/annotations"
 
 ### fn metadata.withAnnotationsMixin
 
@@ -254,7 +252,7 @@ Annotations is an unstructured key value map stored with a resource that may be 
 withAnnotationsMixin(annotations)
 ```
 
-Annotations is an unstructured key value map stored with a resource that may be set by external tools to store and retrieve arbitrary metadata. They are not queryable and should be preserved when modifying objects. More info: http://kubernetes.io/docs/user-guide/annotations
+"Annotations is an unstructured key value map stored with a resource that may be set by external tools to store and retrieve arbitrary metadata. They are not queryable and should be preserved when modifying objects. More info: http://kubernetes.io/docs/user-guide/annotations"
 
 **Note:** This function appends passed data to existing values
 
@@ -264,7 +262,7 @@ Annotations is an unstructured key value map stored with a resource that may be 
 withClusterName(clusterName)
 ```
 
-The name of the cluster which the object belongs to. This is used to distinguish resources with same name and namespace in different clusters. This field is not set anywhere right now and apiserver is going to ignore it if set in create or update request.
+"The name of the cluster which the object belongs to. This is used to distinguish resources with same name and namespace in different clusters. This field is not set anywhere right now and apiserver is going to ignore it if set in create or update request."
 
 ### fn metadata.withCreationTimestamp
 
@@ -272,7 +270,7 @@ The name of the cluster which the object belongs to. This is used to distinguish
 withCreationTimestamp(creationTimestamp)
 ```
 
-Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.
+"Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers."
 
 ### fn metadata.withDeletionGracePeriodSeconds
 
@@ -280,7 +278,7 @@ Time is a wrapper around time.Time which supports correct marshaling to YAML and
 withDeletionGracePeriodSeconds(deletionGracePeriodSeconds)
 ```
 
-Number of seconds allowed for this object to gracefully terminate before it will be removed from the system. Only set when deletionTimestamp is also set. May only be shortened. Read-only.
+"Number of seconds allowed for this object to gracefully terminate before it will be removed from the system. Only set when deletionTimestamp is also set. May only be shortened. Read-only."
 
 ### fn metadata.withDeletionTimestamp
 
@@ -288,7 +286,7 @@ Number of seconds allowed for this object to gracefully terminate before it will
 withDeletionTimestamp(deletionTimestamp)
 ```
 
-Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.
+"Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers."
 
 ### fn metadata.withFinalizers
 
@@ -296,7 +294,7 @@ Time is a wrapper around time.Time which supports correct marshaling to YAML and
 withFinalizers(finalizers)
 ```
 
-Must be empty before the object is deleted from the registry. Each entry is an identifier for the responsible component that will remove the entry from the list. If the deletionTimestamp of the object is non-nil, entries in this list can only be removed. Finalizers may be processed and removed in any order.  Order is NOT enforced because it introduces significant risk of stuck finalizers. finalizers is a shared field, any actor with permission can reorder it. If the finalizer list is processed in order, then this can lead to a situation in which the component responsible for the first finalizer in the list is waiting for a signal (field value, external system, or other) produced by a component responsible for a finalizer later in the list, resulting in a deadlock. Without enforced ordering finalizers are free to order amongst themselves and are not vulnerable to ordering changes in the list.
+"Must be empty before the object is deleted from the registry. Each entry is an identifier for the responsible component that will remove the entry from the list. If the deletionTimestamp of the object is non-nil, entries in this list can only be removed. Finalizers may be processed and removed in any order.  Order is NOT enforced because it introduces significant risk of stuck finalizers. finalizers is a shared field, any actor with permission can reorder it. If the finalizer list is processed in order, then this can lead to a situation in which the component responsible for the first finalizer in the list is waiting for a signal (field value, external system, or other) produced by a component responsible for a finalizer later in the list, resulting in a deadlock. Without enforced ordering finalizers are free to order amongst themselves and are not vulnerable to ordering changes in the list."
 
 ### fn metadata.withFinalizersMixin
 
@@ -304,7 +302,7 @@ Must be empty before the object is deleted from the registry. Each entry is an i
 withFinalizersMixin(finalizers)
 ```
 
-Must be empty before the object is deleted from the registry. Each entry is an identifier for the responsible component that will remove the entry from the list. If the deletionTimestamp of the object is non-nil, entries in this list can only be removed. Finalizers may be processed and removed in any order.  Order is NOT enforced because it introduces significant risk of stuck finalizers. finalizers is a shared field, any actor with permission can reorder it. If the finalizer list is processed in order, then this can lead to a situation in which the component responsible for the first finalizer in the list is waiting for a signal (field value, external system, or other) produced by a component responsible for a finalizer later in the list, resulting in a deadlock. Without enforced ordering finalizers are free to order amongst themselves and are not vulnerable to ordering changes in the list.
+"Must be empty before the object is deleted from the registry. Each entry is an identifier for the responsible component that will remove the entry from the list. If the deletionTimestamp of the object is non-nil, entries in this list can only be removed. Finalizers may be processed and removed in any order.  Order is NOT enforced because it introduces significant risk of stuck finalizers. finalizers is a shared field, any actor with permission can reorder it. If the finalizer list is processed in order, then this can lead to a situation in which the component responsible for the first finalizer in the list is waiting for a signal (field value, external system, or other) produced by a component responsible for a finalizer later in the list, resulting in a deadlock. Without enforced ordering finalizers are free to order amongst themselves and are not vulnerable to ordering changes in the list."
 
 **Note:** This function appends passed data to existing values
 
@@ -314,11 +312,7 @@ Must be empty before the object is deleted from the registry. Each entry is an i
 withGenerateName(generateName)
 ```
 
-GenerateName is an optional prefix, used by the server, to generate a unique name ONLY IF the Name field has not been provided. If this field is used, the name returned to the client will be different than the name passed. This value will also be combined with a unique suffix. The provided value has the same validation rules as the Name field, and may be truncated by the length of the suffix required to make the value unique on the server.
-
-If this field is specified and the generated name exists, the server will NOT return a 409 - instead, it will either return 201 Created or 500 with Reason ServerTimeout indicating a unique name could not be found in the time allotted, and the client should retry (optionally after the time indicated in the Retry-After header).
-
-Applied only if Name is not specified. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#idempotency
+"GenerateName is an optional prefix, used by the server, to generate a unique name ONLY IF the Name field has not been provided. If this field is used, the name returned to the client will be different than the name passed. This value will also be combined with a unique suffix. The provided value has the same validation rules as the Name field, and may be truncated by the length of the suffix required to make the value unique on the server.\n\nIf this field is specified and the generated name exists, the server will NOT return a 409 - instead, it will either return 201 Created or 500 with Reason ServerTimeout indicating a unique name could not be found in the time allotted, and the client should retry (optionally after the time indicated in the Retry-After header).\n\nApplied only if Name is not specified. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#idempotency"
 
 ### fn metadata.withGeneration
 
@@ -326,7 +320,7 @@ Applied only if Name is not specified. More info: https://git.k8s.io/community/c
 withGeneration(generation)
 ```
 
-A sequence number representing a specific generation of the desired state. Populated by the system. Read-only.
+"A sequence number representing a specific generation of the desired state. Populated by the system. Read-only."
 
 ### fn metadata.withLabels
 
@@ -334,7 +328,7 @@ A sequence number representing a specific generation of the desired state. Popul
 withLabels(labels)
 ```
 
-Map of string keys and values that can be used to organize and categorize (scope and select) objects. May match selectors of replication controllers and services. More info: http://kubernetes.io/docs/user-guide/labels
+"Map of string keys and values that can be used to organize and categorize (scope and select) objects. May match selectors of replication controllers and services. More info: http://kubernetes.io/docs/user-guide/labels"
 
 ### fn metadata.withLabelsMixin
 
@@ -342,7 +336,7 @@ Map of string keys and values that can be used to organize and categorize (scope
 withLabelsMixin(labels)
 ```
 
-Map of string keys and values that can be used to organize and categorize (scope and select) objects. May match selectors of replication controllers and services. More info: http://kubernetes.io/docs/user-guide/labels
+"Map of string keys and values that can be used to organize and categorize (scope and select) objects. May match selectors of replication controllers and services. More info: http://kubernetes.io/docs/user-guide/labels"
 
 **Note:** This function appends passed data to existing values
 
@@ -352,7 +346,7 @@ Map of string keys and values that can be used to organize and categorize (scope
 withManagedFields(managedFields)
 ```
 
-ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like 'ci-cd'. The set of fields is always in the version that the workflow used when modifying the object.
+"ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like \"ci-cd\". The set of fields is always in the version that the workflow used when modifying the object."
 
 ### fn metadata.withManagedFieldsMixin
 
@@ -360,7 +354,7 @@ ManagedFields maps workflow-id and version to the set of fields that are managed
 withManagedFieldsMixin(managedFields)
 ```
 
-ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like 'ci-cd'. The set of fields is always in the version that the workflow used when modifying the object.
+"ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like \"ci-cd\". The set of fields is always in the version that the workflow used when modifying the object."
 
 **Note:** This function appends passed data to existing values
 
@@ -370,7 +364,7 @@ ManagedFields maps workflow-id and version to the set of fields that are managed
 withName(name)
 ```
 
-Name must be unique within a namespace. Is required when creating resources, although some resources may allow a client to request the generation of an appropriate name automatically. Name is primarily intended for creation idempotence and configuration definition. Cannot be updated. More info: http://kubernetes.io/docs/user-guide/identifiers#names
+"Name must be unique within a namespace. Is required when creating resources, although some resources may allow a client to request the generation of an appropriate name automatically. Name is primarily intended for creation idempotence and configuration definition. Cannot be updated. More info: http://kubernetes.io/docs/user-guide/identifiers#names"
 
 ### fn metadata.withNamespace
 
@@ -378,9 +372,7 @@ Name must be unique within a namespace. Is required when creating resources, alt
 withNamespace(namespace)
 ```
 
-Namespace defines the space within each name must be unique. An empty namespace is equivalent to the "default" namespace, but "default" is the canonical representation. Not all objects are required to be scoped to a namespace - the value of this field for those objects will be empty.
-
-Must be a DNS_LABEL. Cannot be updated. More info: http://kubernetes.io/docs/user-guide/namespaces
+"Namespace defines the space within each name must be unique. An empty namespace is equivalent to the \"default\" namespace, but \"default\" is the canonical representation. Not all objects are required to be scoped to a namespace - the value of this field for those objects will be empty.\n\nMust be a DNS_LABEL. Cannot be updated. More info: http://kubernetes.io/docs/user-guide/namespaces"
 
 ### fn metadata.withOwnerReferences
 
@@ -388,7 +380,7 @@ Must be a DNS_LABEL. Cannot be updated. More info: http://kubernetes.io/docs/use
 withOwnerReferences(ownerReferences)
 ```
 
-List of objects depended by this object. If ALL objects in the list have been deleted, this object will be garbage collected. If this object is managed by a controller, then an entry in this list will point to this controller, with the controller field set to true. There cannot be more than one managing controller.
+"List of objects depended by this object. If ALL objects in the list have been deleted, this object will be garbage collected. If this object is managed by a controller, then an entry in this list will point to this controller, with the controller field set to true. There cannot be more than one managing controller."
 
 ### fn metadata.withOwnerReferencesMixin
 
@@ -396,7 +388,7 @@ List of objects depended by this object. If ALL objects in the list have been de
 withOwnerReferencesMixin(ownerReferences)
 ```
 
-List of objects depended by this object. If ALL objects in the list have been deleted, this object will be garbage collected. If this object is managed by a controller, then an entry in this list will point to this controller, with the controller field set to true. There cannot be more than one managing controller.
+"List of objects depended by this object. If ALL objects in the list have been deleted, this object will be garbage collected. If this object is managed by a controller, then an entry in this list will point to this controller, with the controller field set to true. There cannot be more than one managing controller."
 
 **Note:** This function appends passed data to existing values
 
@@ -406,9 +398,7 @@ List of objects depended by this object. If ALL objects in the list have been de
 withResourceVersion(resourceVersion)
 ```
 
-An opaque value that represents the internal version of this object that can be used by clients to determine when objects have changed. May be used for optimistic concurrency, change detection, and the watch operation on a resource or set of resources. Clients must treat these values as opaque and passed unmodified back to the server. They may only be valid for a particular resource or set of resources.
-
-Populated by the system. Read-only. Value must be treated as opaque by clients and . More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#concurrency-control-and-consistency
+"An opaque value that represents the internal version of this object that can be used by clients to determine when objects have changed. May be used for optimistic concurrency, change detection, and the watch operation on a resource or set of resources. Clients must treat these values as opaque and passed unmodified back to the server. They may only be valid for a particular resource or set of resources.\n\nPopulated by the system. Read-only. Value must be treated as opaque by clients and . More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#concurrency-control-and-consistency"
 
 ### fn metadata.withSelfLink
 
@@ -416,9 +406,7 @@ Populated by the system. Read-only. Value must be treated as opaque by clients a
 withSelfLink(selfLink)
 ```
 
-SelfLink is a URL representing this object. Populated by the system. Read-only.
-
-DEPRECATED Kubernetes will stop propagating this field in 1.20 release and the field is planned to be removed in 1.21 release.
+"SelfLink is a URL representing this object. Populated by the system. Read-only.\n\nDEPRECATED Kubernetes will stop propagating this field in 1.20 release and the field is planned to be removed in 1.21 release."
 
 ### fn metadata.withUid
 
@@ -426,13 +414,11 @@ DEPRECATED Kubernetes will stop propagating this field in 1.20 release and the f
 withUid(uid)
 ```
 
-UID is the unique in time and space value for this object. It is typically generated by the server on successful creation of a resource and is not allowed to change on PUT operations.
-
-Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-guide/identifiers#uids
+"UID is the unique in time and space value for this object. It is typically generated by the server on successful creation of a resource and is not allowed to change on PUT operations.\n\nPopulated by the system. Read-only. More info: http://kubernetes.io/docs/user-guide/identifiers#uids"
 
 ## obj spec
 
-VolumeAttachmentSpec is the specification of a VolumeAttachment request.
+"VolumeAttachmentSpec is the specification of a VolumeAttachment request."
 
 ### fn spec.withAttacher
 
@@ -440,7 +426,7 @@ VolumeAttachmentSpec is the specification of a VolumeAttachment request.
 withAttacher(attacher)
 ```
 
-Attacher indicates the name of the volume driver that MUST handle this request. This is the name returned by GetPluginName().
+"Attacher indicates the name of the volume driver that MUST handle this request. This is the name returned by GetPluginName()."
 
 ### fn spec.withNodeName
 
@@ -448,11 +434,11 @@ Attacher indicates the name of the volume driver that MUST handle this request. 
 withNodeName(nodeName)
 ```
 
-The node that the volume should be attached to.
+"The node that the volume should be attached to."
 
 ## obj spec.source
 
-VolumeAttachmentSource represents a volume that should be attached. Right now only PersistenVolumes can be attached via external attacher, in future we may allow also inline volumes in pods. Exactly one member can be set.
+"VolumeAttachmentSource represents a volume that should be attached. Right now only PersistenVolumes can be attached via external attacher, in future we may allow also inline volumes in pods. Exactly one member can be set."
 
 ### fn spec.source.withPersistentVolumeName
 
@@ -460,11 +446,11 @@ VolumeAttachmentSource represents a volume that should be attached. Right now on
 withPersistentVolumeName(persistentVolumeName)
 ```
 
-Name of the persistent volume to attach.
+"Name of the persistent volume to attach."
 
 ## obj spec.source.inlineVolumeSpec
 
-PersistentVolumeSpec is the specification of a persistent volume.
+"PersistentVolumeSpec is the specification of a persistent volume."
 
 ### fn spec.source.inlineVolumeSpec.withAccessModes
 
@@ -472,7 +458,7 @@ PersistentVolumeSpec is the specification of a persistent volume.
 withAccessModes(accessModes)
 ```
 
-AccessModes contains all ways the volume can be mounted. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#access-modes
+"AccessModes contains all ways the volume can be mounted. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#access-modes"
 
 ### fn spec.source.inlineVolumeSpec.withAccessModesMixin
 
@@ -480,7 +466,7 @@ AccessModes contains all ways the volume can be mounted. More info: https://kube
 withAccessModesMixin(accessModes)
 ```
 
-AccessModes contains all ways the volume can be mounted. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#access-modes
+"AccessModes contains all ways the volume can be mounted. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#access-modes"
 
 **Note:** This function appends passed data to existing values
 
@@ -490,7 +476,7 @@ AccessModes contains all ways the volume can be mounted. More info: https://kube
 withCapacity(capacity)
 ```
 
-A description of the persistent volume's resources and capacity. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#capacity
+"A description of the persistent volume's resources and capacity. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#capacity"
 
 ### fn spec.source.inlineVolumeSpec.withCapacityMixin
 
@@ -498,7 +484,7 @@ A description of the persistent volume's resources and capacity. More info: http
 withCapacityMixin(capacity)
 ```
 
-A description of the persistent volume's resources and capacity. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#capacity
+"A description of the persistent volume's resources and capacity. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#capacity"
 
 **Note:** This function appends passed data to existing values
 
@@ -508,7 +494,7 @@ A description of the persistent volume's resources and capacity. More info: http
 withMountOptions(mountOptions)
 ```
 
-A list of mount options, e.g. ["ro", "soft"]. Not validated - mount will simply fail if one is invalid. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes/#mount-options
+"A list of mount options, e.g. [\"ro\", \"soft\"]. Not validated - mount will simply fail if one is invalid. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes/#mount-options"
 
 ### fn spec.source.inlineVolumeSpec.withMountOptionsMixin
 
@@ -516,7 +502,7 @@ A list of mount options, e.g. ["ro", "soft"]. Not validated - mount will simply 
 withMountOptionsMixin(mountOptions)
 ```
 
-A list of mount options, e.g. ["ro", "soft"]. Not validated - mount will simply fail if one is invalid. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes/#mount-options
+"A list of mount options, e.g. [\"ro\", \"soft\"]. Not validated - mount will simply fail if one is invalid. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes/#mount-options"
 
 **Note:** This function appends passed data to existing values
 
@@ -526,7 +512,7 @@ A list of mount options, e.g. ["ro", "soft"]. Not validated - mount will simply 
 withPersistentVolumeReclaimPolicy(persistentVolumeReclaimPolicy)
 ```
 
-What happens to a persistent volume when released from its claim. Valid options are Retain (default for manually created PersistentVolumes), Delete (default for dynamically provisioned PersistentVolumes), and Recycle (deprecated). Recycle must be supported by the volume plugin underlying this PersistentVolume. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#reclaiming
+"What happens to a persistent volume when released from its claim. Valid options are Retain (default for manually created PersistentVolumes), Delete (default for dynamically provisioned PersistentVolumes), and Recycle (deprecated). Recycle must be supported by the volume plugin underlying this PersistentVolume. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#reclaiming"
 
 ### fn spec.source.inlineVolumeSpec.withStorageClassName
 
@@ -534,7 +520,7 @@ What happens to a persistent volume when released from its claim. Valid options 
 withStorageClassName(storageClassName)
 ```
 
-Name of StorageClass to which this persistent volume belongs. Empty value means that this volume does not belong to any StorageClass.
+"Name of StorageClass to which this persistent volume belongs. Empty value means that this volume does not belong to any StorageClass."
 
 ### fn spec.source.inlineVolumeSpec.withVolumeMode
 
@@ -542,13 +528,11 @@ Name of StorageClass to which this persistent volume belongs. Empty value means 
 withVolumeMode(volumeMode)
 ```
 
-volumeMode defines if a volume is intended to be used with a formatted filesystem or to remain in raw block state. Value of Filesystem is implied when not included in spec. This is a beta feature.
+"volumeMode defines if a volume is intended to be used with a formatted filesystem or to remain in raw block state. Value of Filesystem is implied when not included in spec. This is a beta feature."
 
 ## obj spec.source.inlineVolumeSpec.awsElasticBlockStore
 
-Represents a Persistent Disk resource in AWS.
-
-An AWS EBS disk must exist before mounting to a container. The disk must also be in the same AWS zone as the kubelet. An AWS EBS disk can only be mounted as read/write once. AWS EBS volumes support ownership management and SELinux relabeling.
+"Represents a Persistent Disk resource in AWS.\n\nAn AWS EBS disk must exist before mounting to a container. The disk must also be in the same AWS zone as the kubelet. An AWS EBS disk can only be mounted as read/write once. AWS EBS volumes support ownership management and SELinux relabeling."
 
 ### fn spec.source.inlineVolumeSpec.awsElasticBlockStore.withFsType
 
@@ -556,7 +540,7 @@ An AWS EBS disk must exist before mounting to a container. The disk must also be
 withFsType(fsType)
 ```
 
-Filesystem type of the volume that you want to mount. Tip: Ensure that the filesystem type is supported by the host operating system. Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. More info: https://kubernetes.io/docs/concepts/storage/volumes#awselasticblockstore
+"Filesystem type of the volume that you want to mount. Tip: Ensure that the filesystem type is supported by the host operating system. Examples: \"ext4\", \"xfs\", \"ntfs\". Implicitly inferred to be \"ext4\" if unspecified. More info: https://kubernetes.io/docs/concepts/storage/volumes#awselasticblockstore"
 
 ### fn spec.source.inlineVolumeSpec.awsElasticBlockStore.withPartition
 
@@ -564,7 +548,7 @@ Filesystem type of the volume that you want to mount. Tip: Ensure that the files
 withPartition(partition)
 ```
 
-The partition in the volume that you want to mount. If omitted, the default is to mount by volume name. Examples: For volume /dev/sda1, you specify the partition as "1". Similarly, the volume partition for /dev/sda is "0" (or you can leave the property empty).
+"The partition in the volume that you want to mount. If omitted, the default is to mount by volume name. Examples: For volume /dev/sda1, you specify the partition as \"1\". Similarly, the volume partition for /dev/sda is \"0\" (or you can leave the property empty)."
 
 ### fn spec.source.inlineVolumeSpec.awsElasticBlockStore.withReadOnly
 
@@ -572,7 +556,7 @@ The partition in the volume that you want to mount. If omitted, the default is t
 withReadOnly(readOnly)
 ```
 
-Specify "true" to force and set the ReadOnly property in VolumeMounts to "true". If omitted, the default is "false". More info: https://kubernetes.io/docs/concepts/storage/volumes#awselasticblockstore
+"Specify \"true\" to force and set the ReadOnly property in VolumeMounts to \"true\". If omitted, the default is \"false\". More info: https://kubernetes.io/docs/concepts/storage/volumes#awselasticblockstore"
 
 ### fn spec.source.inlineVolumeSpec.awsElasticBlockStore.withVolumeID
 
@@ -580,11 +564,11 @@ Specify "true" to force and set the ReadOnly property in VolumeMounts to "true".
 withVolumeID(volumeID)
 ```
 
-Unique ID of the persistent disk resource in AWS (Amazon EBS volume). More info: https://kubernetes.io/docs/concepts/storage/volumes#awselasticblockstore
+"Unique ID of the persistent disk resource in AWS (Amazon EBS volume). More info: https://kubernetes.io/docs/concepts/storage/volumes#awselasticblockstore"
 
 ## obj spec.source.inlineVolumeSpec.azureDisk
 
-AzureDisk represents an Azure Data Disk mount on the host and bind mount to the pod.
+"AzureDisk represents an Azure Data Disk mount on the host and bind mount to the pod."
 
 ### fn spec.source.inlineVolumeSpec.azureDisk.withCachingMode
 
@@ -592,7 +576,7 @@ AzureDisk represents an Azure Data Disk mount on the host and bind mount to the 
 withCachingMode(cachingMode)
 ```
 
-Host Caching mode: None, Read Only, Read Write.
+"Host Caching mode: None, Read Only, Read Write."
 
 ### fn spec.source.inlineVolumeSpec.azureDisk.withDiskName
 
@@ -600,7 +584,7 @@ Host Caching mode: None, Read Only, Read Write.
 withDiskName(diskName)
 ```
 
-The Name of the data disk in the blob storage
+"The Name of the data disk in the blob storage"
 
 ### fn spec.source.inlineVolumeSpec.azureDisk.withDiskURI
 
@@ -608,7 +592,7 @@ The Name of the data disk in the blob storage
 withDiskURI(diskURI)
 ```
 
-The URI the data disk in the blob storage
+"The URI the data disk in the blob storage"
 
 ### fn spec.source.inlineVolumeSpec.azureDisk.withFsType
 
@@ -616,7 +600,7 @@ The URI the data disk in the blob storage
 withFsType(fsType)
 ```
 
-Filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
+"Filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. \"ext4\", \"xfs\", \"ntfs\". Implicitly inferred to be \"ext4\" if unspecified."
 
 ### fn spec.source.inlineVolumeSpec.azureDisk.withKind
 
@@ -624,7 +608,7 @@ Filesystem type to mount. Must be a filesystem type supported by the host operat
 withKind(kind)
 ```
 
-Expected values Shared: multiple blob disks per storage account  Dedicated: single blob disk per storage account  Managed: azure managed data disk (only in managed availability set). defaults to shared
+"Expected values Shared: multiple blob disks per storage account  Dedicated: single blob disk per storage account  Managed: azure managed data disk (only in managed availability set). defaults to shared"
 
 ### fn spec.source.inlineVolumeSpec.azureDisk.withReadOnly
 
@@ -632,11 +616,11 @@ Expected values Shared: multiple blob disks per storage account  Dedicated: sing
 withReadOnly(readOnly)
 ```
 
-Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts.
+"Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts."
 
 ## obj spec.source.inlineVolumeSpec.azureFile
 
-AzureFile represents an Azure File Service mount on the host and bind mount to the pod.
+"AzureFile represents an Azure File Service mount on the host and bind mount to the pod."
 
 ### fn spec.source.inlineVolumeSpec.azureFile.withReadOnly
 
@@ -644,7 +628,7 @@ AzureFile represents an Azure File Service mount on the host and bind mount to t
 withReadOnly(readOnly)
 ```
 
-Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts.
+"Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts."
 
 ### fn spec.source.inlineVolumeSpec.azureFile.withSecretName
 
@@ -652,7 +636,7 @@ Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in
 withSecretName(secretName)
 ```
 
-the name of secret that contains Azure Storage Account Name and Key
+"the name of secret that contains Azure Storage Account Name and Key"
 
 ### fn spec.source.inlineVolumeSpec.azureFile.withSecretNamespace
 
@@ -660,7 +644,7 @@ the name of secret that contains Azure Storage Account Name and Key
 withSecretNamespace(secretNamespace)
 ```
 
-the namespace of the secret that contains Azure Storage Account Name and Key default is the same as the Pod
+"the namespace of the secret that contains Azure Storage Account Name and Key default is the same as the Pod"
 
 ### fn spec.source.inlineVolumeSpec.azureFile.withShareName
 
@@ -668,11 +652,11 @@ the namespace of the secret that contains Azure Storage Account Name and Key def
 withShareName(shareName)
 ```
 
-Share Name
+"Share Name"
 
 ## obj spec.source.inlineVolumeSpec.cephfs
 
-Represents a Ceph Filesystem mount that lasts the lifetime of a pod Cephfs volumes do not support ownership management or SELinux relabeling.
+"Represents a Ceph Filesystem mount that lasts the lifetime of a pod Cephfs volumes do not support ownership management or SELinux relabeling."
 
 ### fn spec.source.inlineVolumeSpec.cephfs.withMonitors
 
@@ -680,7 +664,7 @@ Represents a Ceph Filesystem mount that lasts the lifetime of a pod Cephfs volum
 withMonitors(monitors)
 ```
 
-Required: Monitors is a collection of Ceph monitors More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it
+"Required: Monitors is a collection of Ceph monitors More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it"
 
 ### fn spec.source.inlineVolumeSpec.cephfs.withMonitorsMixin
 
@@ -688,7 +672,7 @@ Required: Monitors is a collection of Ceph monitors More info: https://examples.
 withMonitorsMixin(monitors)
 ```
 
-Required: Monitors is a collection of Ceph monitors More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it
+"Required: Monitors is a collection of Ceph monitors More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it"
 
 **Note:** This function appends passed data to existing values
 
@@ -698,7 +682,7 @@ Required: Monitors is a collection of Ceph monitors More info: https://examples.
 withPath(path)
 ```
 
-Optional: Used as the mounted root, rather than the full Ceph tree, default is /
+"Optional: Used as the mounted root, rather than the full Ceph tree, default is /"
 
 ### fn spec.source.inlineVolumeSpec.cephfs.withReadOnly
 
@@ -706,7 +690,7 @@ Optional: Used as the mounted root, rather than the full Ceph tree, default is /
 withReadOnly(readOnly)
 ```
 
-Optional: Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts. More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it
+"Optional: Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts. More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it"
 
 ### fn spec.source.inlineVolumeSpec.cephfs.withSecretFile
 
@@ -714,7 +698,7 @@ Optional: Defaults to false (read/write). ReadOnly here will force the ReadOnly 
 withSecretFile(secretFile)
 ```
 
-Optional: SecretFile is the path to key ring for User, default is /etc/ceph/user.secret More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it
+"Optional: SecretFile is the path to key ring for User, default is /etc/ceph/user.secret More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it"
 
 ### fn spec.source.inlineVolumeSpec.cephfs.withUser
 
@@ -722,11 +706,11 @@ Optional: SecretFile is the path to key ring for User, default is /etc/ceph/user
 withUser(user)
 ```
 
-Optional: User is the rados user name, default is admin More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it
+"Optional: User is the rados user name, default is admin More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it"
 
 ## obj spec.source.inlineVolumeSpec.cephfs.secretRef
 
-SecretReference represents a Secret Reference. It has enough information to retrieve secret in any namespace
+"SecretReference represents a Secret Reference. It has enough information to retrieve secret in any namespace"
 
 ### fn spec.source.inlineVolumeSpec.cephfs.secretRef.withName
 
@@ -734,7 +718,7 @@ SecretReference represents a Secret Reference. It has enough information to retr
 withName(name)
 ```
 
-Name is unique within a namespace to reference a secret resource.
+"Name is unique within a namespace to reference a secret resource."
 
 ### fn spec.source.inlineVolumeSpec.cephfs.secretRef.withNamespace
 
@@ -742,11 +726,11 @@ Name is unique within a namespace to reference a secret resource.
 withNamespace(namespace)
 ```
 
-Namespace defines the space within which the secret name must be unique.
+"Namespace defines the space within which the secret name must be unique."
 
 ## obj spec.source.inlineVolumeSpec.cinder
 
-Represents a cinder volume resource in Openstack. A Cinder volume must exist before mounting to a container. The volume must also be in the same region as the kubelet. Cinder volumes support ownership management and SELinux relabeling.
+"Represents a cinder volume resource in Openstack. A Cinder volume must exist before mounting to a container. The volume must also be in the same region as the kubelet. Cinder volumes support ownership management and SELinux relabeling."
 
 ### fn spec.source.inlineVolumeSpec.cinder.withFsType
 
@@ -754,7 +738,7 @@ Represents a cinder volume resource in Openstack. A Cinder volume must exist bef
 withFsType(fsType)
 ```
 
-Filesystem type to mount. Must be a filesystem type supported by the host operating system. Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. More info: https://examples.k8s.io/mysql-cinder-pd/README.md
+"Filesystem type to mount. Must be a filesystem type supported by the host operating system. Examples: \"ext4\", \"xfs\", \"ntfs\". Implicitly inferred to be \"ext4\" if unspecified. More info: https://examples.k8s.io/mysql-cinder-pd/README.md"
 
 ### fn spec.source.inlineVolumeSpec.cinder.withReadOnly
 
@@ -762,7 +746,7 @@ Filesystem type to mount. Must be a filesystem type supported by the host operat
 withReadOnly(readOnly)
 ```
 
-Optional: Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts. More info: https://examples.k8s.io/mysql-cinder-pd/README.md
+"Optional: Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts. More info: https://examples.k8s.io/mysql-cinder-pd/README.md"
 
 ### fn spec.source.inlineVolumeSpec.cinder.withVolumeID
 
@@ -770,11 +754,11 @@ Optional: Defaults to false (read/write). ReadOnly here will force the ReadOnly 
 withVolumeID(volumeID)
 ```
 
-volume id used to identify the volume in cinder. More info: https://examples.k8s.io/mysql-cinder-pd/README.md
+"volume id used to identify the volume in cinder. More info: https://examples.k8s.io/mysql-cinder-pd/README.md"
 
 ## obj spec.source.inlineVolumeSpec.cinder.secretRef
 
-SecretReference represents a Secret Reference. It has enough information to retrieve secret in any namespace
+"SecretReference represents a Secret Reference. It has enough information to retrieve secret in any namespace"
 
 ### fn spec.source.inlineVolumeSpec.cinder.secretRef.withName
 
@@ -782,7 +766,7 @@ SecretReference represents a Secret Reference. It has enough information to retr
 withName(name)
 ```
 
-Name is unique within a namespace to reference a secret resource.
+"Name is unique within a namespace to reference a secret resource."
 
 ### fn spec.source.inlineVolumeSpec.cinder.secretRef.withNamespace
 
@@ -790,11 +774,11 @@ Name is unique within a namespace to reference a secret resource.
 withNamespace(namespace)
 ```
 
-Namespace defines the space within which the secret name must be unique.
+"Namespace defines the space within which the secret name must be unique."
 
 ## obj spec.source.inlineVolumeSpec.claimRef
 
-ObjectReference contains enough information to let you inspect or modify the referred object.
+"ObjectReference contains enough information to let you inspect or modify the referred object."
 
 ### fn spec.source.inlineVolumeSpec.claimRef.withApiVersion
 
@@ -802,7 +786,7 @@ ObjectReference contains enough information to let you inspect or modify the ref
 withApiVersion(apiVersion)
 ```
 
-API version of the referent.
+"API version of the referent."
 
 ### fn spec.source.inlineVolumeSpec.claimRef.withFieldPath
 
@@ -810,7 +794,7 @@ API version of the referent.
 withFieldPath(fieldPath)
 ```
 
-If referring to a piece of an object instead of an entire object, this string should contain a valid JSON/Go field access statement, such as desiredState.manifest.containers[2]. For example, if the object reference is to a container within a pod, this would take on a value like: "spec.containers{name}" (where "name" refers to the name of the container that triggered the event) or if no container name is specified "spec.containers[2]" (container with index 2 in this pod). This syntax is chosen only to have some well-defined way of referencing a part of an object.
+"If referring to a piece of an object instead of an entire object, this string should contain a valid JSON/Go field access statement, such as desiredState.manifest.containers[2]. For example, if the object reference is to a container within a pod, this would take on a value like: \"spec.containers{name}\" (where \"name\" refers to the name of the container that triggered the event) or if no container name is specified \"spec.containers[2]\" (container with index 2 in this pod). This syntax is chosen only to have some well-defined way of referencing a part of an object."
 
 ### fn spec.source.inlineVolumeSpec.claimRef.withKind
 
@@ -818,7 +802,7 @@ If referring to a piece of an object instead of an entire object, this string sh
 withKind(kind)
 ```
 
-Kind of the referent. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
+"Kind of the referent. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds"
 
 ### fn spec.source.inlineVolumeSpec.claimRef.withName
 
@@ -826,7 +810,7 @@ Kind of the referent. More info: https://git.k8s.io/community/contributors/devel
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn spec.source.inlineVolumeSpec.claimRef.withNamespace
 
@@ -834,7 +818,7 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withNamespace(namespace)
 ```
 
-Namespace of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/
+"Namespace of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/"
 
 ### fn spec.source.inlineVolumeSpec.claimRef.withResourceVersion
 
@@ -842,7 +826,7 @@ Namespace of the referent. More info: https://kubernetes.io/docs/concepts/overvi
 withResourceVersion(resourceVersion)
 ```
 
-Specific resourceVersion to which this reference is made, if any. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#concurrency-control-and-consistency
+"Specific resourceVersion to which this reference is made, if any. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#concurrency-control-and-consistency"
 
 ### fn spec.source.inlineVolumeSpec.claimRef.withUid
 
@@ -850,11 +834,11 @@ Specific resourceVersion to which this reference is made, if any. More info: htt
 withUid(uid)
 ```
 
-UID of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#uids
+"UID of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#uids"
 
 ## obj spec.source.inlineVolumeSpec.csi
 
-Represents storage that is managed by an external CSI volume driver (Beta feature)
+"Represents storage that is managed by an external CSI volume driver (Beta feature)"
 
 ### fn spec.source.inlineVolumeSpec.csi.withDriver
 
@@ -862,7 +846,7 @@ Represents storage that is managed by an external CSI volume driver (Beta featur
 withDriver(driver)
 ```
 
-Driver is the name of the driver to use for this volume. Required.
+"Driver is the name of the driver to use for this volume. Required."
 
 ### fn spec.source.inlineVolumeSpec.csi.withFsType
 
@@ -870,7 +854,7 @@ Driver is the name of the driver to use for this volume. Required.
 withFsType(fsType)
 ```
 
-Filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs".
+"Filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. \"ext4\", \"xfs\", \"ntfs\"."
 
 ### fn spec.source.inlineVolumeSpec.csi.withReadOnly
 
@@ -878,7 +862,7 @@ Filesystem type to mount. Must be a filesystem type supported by the host operat
 withReadOnly(readOnly)
 ```
 
-Optional: The value to pass to ControllerPublishVolumeRequest. Defaults to false (read/write).
+"Optional: The value to pass to ControllerPublishVolumeRequest. Defaults to false (read/write)."
 
 ### fn spec.source.inlineVolumeSpec.csi.withVolumeAttributes
 
@@ -886,7 +870,7 @@ Optional: The value to pass to ControllerPublishVolumeRequest. Defaults to false
 withVolumeAttributes(volumeAttributes)
 ```
 
-Attributes of the volume to publish.
+"Attributes of the volume to publish."
 
 ### fn spec.source.inlineVolumeSpec.csi.withVolumeAttributesMixin
 
@@ -894,7 +878,7 @@ Attributes of the volume to publish.
 withVolumeAttributesMixin(volumeAttributes)
 ```
 
-Attributes of the volume to publish.
+"Attributes of the volume to publish."
 
 **Note:** This function appends passed data to existing values
 
@@ -904,11 +888,11 @@ Attributes of the volume to publish.
 withVolumeHandle(volumeHandle)
 ```
 
-VolumeHandle is the unique volume name returned by the CSI volume plugin’s CreateVolume to refer to the volume on all subsequent calls. Required.
+"VolumeHandle is the unique volume name returned by the CSI volume plugin’s CreateVolume to refer to the volume on all subsequent calls. Required."
 
 ## obj spec.source.inlineVolumeSpec.csi.controllerExpandSecretRef
 
-SecretReference represents a Secret Reference. It has enough information to retrieve secret in any namespace
+"SecretReference represents a Secret Reference. It has enough information to retrieve secret in any namespace"
 
 ### fn spec.source.inlineVolumeSpec.csi.controllerExpandSecretRef.withName
 
@@ -916,7 +900,7 @@ SecretReference represents a Secret Reference. It has enough information to retr
 withName(name)
 ```
 
-Name is unique within a namespace to reference a secret resource.
+"Name is unique within a namespace to reference a secret resource."
 
 ### fn spec.source.inlineVolumeSpec.csi.controllerExpandSecretRef.withNamespace
 
@@ -924,11 +908,11 @@ Name is unique within a namespace to reference a secret resource.
 withNamespace(namespace)
 ```
 
-Namespace defines the space within which the secret name must be unique.
+"Namespace defines the space within which the secret name must be unique."
 
 ## obj spec.source.inlineVolumeSpec.csi.controllerPublishSecretRef
 
-SecretReference represents a Secret Reference. It has enough information to retrieve secret in any namespace
+"SecretReference represents a Secret Reference. It has enough information to retrieve secret in any namespace"
 
 ### fn spec.source.inlineVolumeSpec.csi.controllerPublishSecretRef.withName
 
@@ -936,7 +920,7 @@ SecretReference represents a Secret Reference. It has enough information to retr
 withName(name)
 ```
 
-Name is unique within a namespace to reference a secret resource.
+"Name is unique within a namespace to reference a secret resource."
 
 ### fn spec.source.inlineVolumeSpec.csi.controllerPublishSecretRef.withNamespace
 
@@ -944,11 +928,11 @@ Name is unique within a namespace to reference a secret resource.
 withNamespace(namespace)
 ```
 
-Namespace defines the space within which the secret name must be unique.
+"Namespace defines the space within which the secret name must be unique."
 
 ## obj spec.source.inlineVolumeSpec.csi.nodePublishSecretRef
 
-SecretReference represents a Secret Reference. It has enough information to retrieve secret in any namespace
+"SecretReference represents a Secret Reference. It has enough information to retrieve secret in any namespace"
 
 ### fn spec.source.inlineVolumeSpec.csi.nodePublishSecretRef.withName
 
@@ -956,7 +940,7 @@ SecretReference represents a Secret Reference. It has enough information to retr
 withName(name)
 ```
 
-Name is unique within a namespace to reference a secret resource.
+"Name is unique within a namespace to reference a secret resource."
 
 ### fn spec.source.inlineVolumeSpec.csi.nodePublishSecretRef.withNamespace
 
@@ -964,11 +948,11 @@ Name is unique within a namespace to reference a secret resource.
 withNamespace(namespace)
 ```
 
-Namespace defines the space within which the secret name must be unique.
+"Namespace defines the space within which the secret name must be unique."
 
 ## obj spec.source.inlineVolumeSpec.csi.nodeStageSecretRef
 
-SecretReference represents a Secret Reference. It has enough information to retrieve secret in any namespace
+"SecretReference represents a Secret Reference. It has enough information to retrieve secret in any namespace"
 
 ### fn spec.source.inlineVolumeSpec.csi.nodeStageSecretRef.withName
 
@@ -976,7 +960,7 @@ SecretReference represents a Secret Reference. It has enough information to retr
 withName(name)
 ```
 
-Name is unique within a namespace to reference a secret resource.
+"Name is unique within a namespace to reference a secret resource."
 
 ### fn spec.source.inlineVolumeSpec.csi.nodeStageSecretRef.withNamespace
 
@@ -984,11 +968,11 @@ Name is unique within a namespace to reference a secret resource.
 withNamespace(namespace)
 ```
 
-Namespace defines the space within which the secret name must be unique.
+"Namespace defines the space within which the secret name must be unique."
 
 ## obj spec.source.inlineVolumeSpec.fc
 
-Represents a Fibre Channel volume. Fibre Channel volumes can only be mounted as read/write once. Fibre Channel volumes support ownership management and SELinux relabeling.
+"Represents a Fibre Channel volume. Fibre Channel volumes can only be mounted as read/write once. Fibre Channel volumes support ownership management and SELinux relabeling."
 
 ### fn spec.source.inlineVolumeSpec.fc.withFsType
 
@@ -996,7 +980,7 @@ Represents a Fibre Channel volume. Fibre Channel volumes can only be mounted as 
 withFsType(fsType)
 ```
 
-Filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
+"Filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. \"ext4\", \"xfs\", \"ntfs\". Implicitly inferred to be \"ext4\" if unspecified."
 
 ### fn spec.source.inlineVolumeSpec.fc.withLun
 
@@ -1004,7 +988,7 @@ Filesystem type to mount. Must be a filesystem type supported by the host operat
 withLun(lun)
 ```
 
-Optional: FC target lun number
+"Optional: FC target lun number"
 
 ### fn spec.source.inlineVolumeSpec.fc.withReadOnly
 
@@ -1012,7 +996,7 @@ Optional: FC target lun number
 withReadOnly(readOnly)
 ```
 
-Optional: Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts.
+"Optional: Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts."
 
 ### fn spec.source.inlineVolumeSpec.fc.withTargetWWNs
 
@@ -1020,7 +1004,7 @@ Optional: Defaults to false (read/write). ReadOnly here will force the ReadOnly 
 withTargetWWNs(targetWWNs)
 ```
 
-Optional: FC target worldwide names (WWNs)
+"Optional: FC target worldwide names (WWNs)"
 
 ### fn spec.source.inlineVolumeSpec.fc.withTargetWWNsMixin
 
@@ -1028,7 +1012,7 @@ Optional: FC target worldwide names (WWNs)
 withTargetWWNsMixin(targetWWNs)
 ```
 
-Optional: FC target worldwide names (WWNs)
+"Optional: FC target worldwide names (WWNs)"
 
 **Note:** This function appends passed data to existing values
 
@@ -1038,7 +1022,7 @@ Optional: FC target worldwide names (WWNs)
 withWwids(wwids)
 ```
 
-Optional: FC volume world wide identifiers (wwids) Either wwids or combination of targetWWNs and lun must be set, but not both simultaneously.
+"Optional: FC volume world wide identifiers (wwids) Either wwids or combination of targetWWNs and lun must be set, but not both simultaneously."
 
 ### fn spec.source.inlineVolumeSpec.fc.withWwidsMixin
 
@@ -1046,13 +1030,13 @@ Optional: FC volume world wide identifiers (wwids) Either wwids or combination o
 withWwidsMixin(wwids)
 ```
 
-Optional: FC volume world wide identifiers (wwids) Either wwids or combination of targetWWNs and lun must be set, but not both simultaneously.
+"Optional: FC volume world wide identifiers (wwids) Either wwids or combination of targetWWNs and lun must be set, but not both simultaneously."
 
 **Note:** This function appends passed data to existing values
 
 ## obj spec.source.inlineVolumeSpec.flexVolume
 
-FlexPersistentVolumeSource represents a generic persistent volume resource that is provisioned/attached using an exec based plugin.
+"FlexPersistentVolumeSource represents a generic persistent volume resource that is provisioned/attached using an exec based plugin."
 
 ### fn spec.source.inlineVolumeSpec.flexVolume.withDriver
 
@@ -1060,7 +1044,7 @@ FlexPersistentVolumeSource represents a generic persistent volume resource that 
 withDriver(driver)
 ```
 
-Driver is the name of the driver to use for this volume.
+"Driver is the name of the driver to use for this volume."
 
 ### fn spec.source.inlineVolumeSpec.flexVolume.withFsType
 
@@ -1068,7 +1052,7 @@ Driver is the name of the driver to use for this volume.
 withFsType(fsType)
 ```
 
-Filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". The default filesystem depends on FlexVolume script.
+"Filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. \"ext4\", \"xfs\", \"ntfs\". The default filesystem depends on FlexVolume script."
 
 ### fn spec.source.inlineVolumeSpec.flexVolume.withOptions
 
@@ -1076,7 +1060,7 @@ Filesystem type to mount. Must be a filesystem type supported by the host operat
 withOptions(options)
 ```
 
-Optional: Extra command options if any.
+"Optional: Extra command options if any."
 
 ### fn spec.source.inlineVolumeSpec.flexVolume.withOptionsMixin
 
@@ -1084,7 +1068,7 @@ Optional: Extra command options if any.
 withOptionsMixin(options)
 ```
 
-Optional: Extra command options if any.
+"Optional: Extra command options if any."
 
 **Note:** This function appends passed data to existing values
 
@@ -1094,11 +1078,11 @@ Optional: Extra command options if any.
 withReadOnly(readOnly)
 ```
 
-Optional: Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts.
+"Optional: Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts."
 
 ## obj spec.source.inlineVolumeSpec.flexVolume.secretRef
 
-SecretReference represents a Secret Reference. It has enough information to retrieve secret in any namespace
+"SecretReference represents a Secret Reference. It has enough information to retrieve secret in any namespace"
 
 ### fn spec.source.inlineVolumeSpec.flexVolume.secretRef.withName
 
@@ -1106,7 +1090,7 @@ SecretReference represents a Secret Reference. It has enough information to retr
 withName(name)
 ```
 
-Name is unique within a namespace to reference a secret resource.
+"Name is unique within a namespace to reference a secret resource."
 
 ### fn spec.source.inlineVolumeSpec.flexVolume.secretRef.withNamespace
 
@@ -1114,11 +1098,11 @@ Name is unique within a namespace to reference a secret resource.
 withNamespace(namespace)
 ```
 
-Namespace defines the space within which the secret name must be unique.
+"Namespace defines the space within which the secret name must be unique."
 
 ## obj spec.source.inlineVolumeSpec.flocker
 
-Represents a Flocker volume mounted by the Flocker agent. One and only one of datasetName and datasetUUID should be set. Flocker volumes do not support ownership management or SELinux relabeling.
+"Represents a Flocker volume mounted by the Flocker agent. One and only one of datasetName and datasetUUID should be set. Flocker volumes do not support ownership management or SELinux relabeling."
 
 ### fn spec.source.inlineVolumeSpec.flocker.withDatasetName
 
@@ -1126,7 +1110,7 @@ Represents a Flocker volume mounted by the Flocker agent. One and only one of da
 withDatasetName(datasetName)
 ```
 
-Name of the dataset stored as metadata -> name on the dataset for Flocker should be considered as deprecated
+"Name of the dataset stored as metadata -> name on the dataset for Flocker should be considered as deprecated"
 
 ### fn spec.source.inlineVolumeSpec.flocker.withDatasetUUID
 
@@ -1134,13 +1118,11 @@ Name of the dataset stored as metadata -> name on the dataset for Flocker should
 withDatasetUUID(datasetUUID)
 ```
 
-UUID of the dataset. This is unique identifier of a Flocker dataset
+"UUID of the dataset. This is unique identifier of a Flocker dataset"
 
 ## obj spec.source.inlineVolumeSpec.gcePersistentDisk
 
-Represents a Persistent Disk resource in Google Compute Engine.
-
-A GCE PD must exist before mounting to a container. The disk must also be in the same GCE project and zone as the kubelet. A GCE PD can only be mounted as read/write once or read-only many times. GCE PDs support ownership management and SELinux relabeling.
+"Represents a Persistent Disk resource in Google Compute Engine.\n\nA GCE PD must exist before mounting to a container. The disk must also be in the same GCE project and zone as the kubelet. A GCE PD can only be mounted as read/write once or read-only many times. GCE PDs support ownership management and SELinux relabeling."
 
 ### fn spec.source.inlineVolumeSpec.gcePersistentDisk.withFsType
 
@@ -1148,7 +1130,7 @@ A GCE PD must exist before mounting to a container. The disk must also be in the
 withFsType(fsType)
 ```
 
-Filesystem type of the volume that you want to mount. Tip: Ensure that the filesystem type is supported by the host operating system. Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. More info: https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk
+"Filesystem type of the volume that you want to mount. Tip: Ensure that the filesystem type is supported by the host operating system. Examples: \"ext4\", \"xfs\", \"ntfs\". Implicitly inferred to be \"ext4\" if unspecified. More info: https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk"
 
 ### fn spec.source.inlineVolumeSpec.gcePersistentDisk.withPartition
 
@@ -1156,7 +1138,7 @@ Filesystem type of the volume that you want to mount. Tip: Ensure that the files
 withPartition(partition)
 ```
 
-The partition in the volume that you want to mount. If omitted, the default is to mount by volume name. Examples: For volume /dev/sda1, you specify the partition as "1". Similarly, the volume partition for /dev/sda is "0" (or you can leave the property empty). More info: https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk
+"The partition in the volume that you want to mount. If omitted, the default is to mount by volume name. Examples: For volume /dev/sda1, you specify the partition as \"1\". Similarly, the volume partition for /dev/sda is \"0\" (or you can leave the property empty). More info: https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk"
 
 ### fn spec.source.inlineVolumeSpec.gcePersistentDisk.withPdName
 
@@ -1164,7 +1146,7 @@ The partition in the volume that you want to mount. If omitted, the default is t
 withPdName(pdName)
 ```
 
-Unique name of the PD resource in GCE. Used to identify the disk in GCE. More info: https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk
+"Unique name of the PD resource in GCE. Used to identify the disk in GCE. More info: https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk"
 
 ### fn spec.source.inlineVolumeSpec.gcePersistentDisk.withReadOnly
 
@@ -1172,11 +1154,11 @@ Unique name of the PD resource in GCE. Used to identify the disk in GCE. More in
 withReadOnly(readOnly)
 ```
 
-ReadOnly here will force the ReadOnly setting in VolumeMounts. Defaults to false. More info: https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk
+"ReadOnly here will force the ReadOnly setting in VolumeMounts. Defaults to false. More info: https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk"
 
 ## obj spec.source.inlineVolumeSpec.glusterfs
 
-Represents a Glusterfs mount that lasts the lifetime of a pod. Glusterfs volumes do not support ownership management or SELinux relabeling.
+"Represents a Glusterfs mount that lasts the lifetime of a pod. Glusterfs volumes do not support ownership management or SELinux relabeling."
 
 ### fn spec.source.inlineVolumeSpec.glusterfs.withEndpoints
 
@@ -1184,7 +1166,7 @@ Represents a Glusterfs mount that lasts the lifetime of a pod. Glusterfs volumes
 withEndpoints(endpoints)
 ```
 
-EndpointsName is the endpoint name that details Glusterfs topology. More info: https://examples.k8s.io/volumes/glusterfs/README.md#create-a-pod
+"EndpointsName is the endpoint name that details Glusterfs topology. More info: https://examples.k8s.io/volumes/glusterfs/README.md#create-a-pod"
 
 ### fn spec.source.inlineVolumeSpec.glusterfs.withEndpointsNamespace
 
@@ -1192,7 +1174,7 @@ EndpointsName is the endpoint name that details Glusterfs topology. More info: h
 withEndpointsNamespace(endpointsNamespace)
 ```
 
-EndpointsNamespace is the namespace that contains Glusterfs endpoint. If this field is empty, the EndpointNamespace defaults to the same namespace as the bound PVC. More info: https://examples.k8s.io/volumes/glusterfs/README.md#create-a-pod
+"EndpointsNamespace is the namespace that contains Glusterfs endpoint. If this field is empty, the EndpointNamespace defaults to the same namespace as the bound PVC. More info: https://examples.k8s.io/volumes/glusterfs/README.md#create-a-pod"
 
 ### fn spec.source.inlineVolumeSpec.glusterfs.withPath
 
@@ -1200,7 +1182,7 @@ EndpointsNamespace is the namespace that contains Glusterfs endpoint. If this fi
 withPath(path)
 ```
 
-Path is the Glusterfs volume path. More info: https://examples.k8s.io/volumes/glusterfs/README.md#create-a-pod
+"Path is the Glusterfs volume path. More info: https://examples.k8s.io/volumes/glusterfs/README.md#create-a-pod"
 
 ### fn spec.source.inlineVolumeSpec.glusterfs.withReadOnly
 
@@ -1208,11 +1190,11 @@ Path is the Glusterfs volume path. More info: https://examples.k8s.io/volumes/gl
 withReadOnly(readOnly)
 ```
 
-ReadOnly here will force the Glusterfs volume to be mounted with read-only permissions. Defaults to false. More info: https://examples.k8s.io/volumes/glusterfs/README.md#create-a-pod
+"ReadOnly here will force the Glusterfs volume to be mounted with read-only permissions. Defaults to false. More info: https://examples.k8s.io/volumes/glusterfs/README.md#create-a-pod"
 
 ## obj spec.source.inlineVolumeSpec.hostPath
 
-Represents a host path mapped into a pod. Host path volumes do not support ownership management or SELinux relabeling.
+"Represents a host path mapped into a pod. Host path volumes do not support ownership management or SELinux relabeling."
 
 ### fn spec.source.inlineVolumeSpec.hostPath.withPath
 
@@ -1220,7 +1202,7 @@ Represents a host path mapped into a pod. Host path volumes do not support owner
 withPath(path)
 ```
 
-Path of the directory on the host. If the path is a symlink, it will follow the link to the real path. More info: https://kubernetes.io/docs/concepts/storage/volumes#hostpath
+"Path of the directory on the host. If the path is a symlink, it will follow the link to the real path. More info: https://kubernetes.io/docs/concepts/storage/volumes#hostpath"
 
 ### fn spec.source.inlineVolumeSpec.hostPath.withType
 
@@ -1228,11 +1210,11 @@ Path of the directory on the host. If the path is a symlink, it will follow the 
 withType(type)
 ```
 
-Type for HostPath Volume Defaults to "" More info: https://kubernetes.io/docs/concepts/storage/volumes#hostpath
+"Type for HostPath Volume Defaults to \"\" More info: https://kubernetes.io/docs/concepts/storage/volumes#hostpath"
 
 ## obj spec.source.inlineVolumeSpec.iscsi
 
-ISCSIPersistentVolumeSource represents an ISCSI disk. ISCSI volumes can only be mounted as read/write once. ISCSI volumes support ownership management and SELinux relabeling.
+"ISCSIPersistentVolumeSource represents an ISCSI disk. ISCSI volumes can only be mounted as read/write once. ISCSI volumes support ownership management and SELinux relabeling."
 
 ### fn spec.source.inlineVolumeSpec.iscsi.withChapAuthDiscovery
 
@@ -1240,7 +1222,7 @@ ISCSIPersistentVolumeSource represents an ISCSI disk. ISCSI volumes can only be 
 withChapAuthDiscovery(chapAuthDiscovery)
 ```
 
-whether support iSCSI Discovery CHAP authentication
+"whether support iSCSI Discovery CHAP authentication"
 
 ### fn spec.source.inlineVolumeSpec.iscsi.withChapAuthSession
 
@@ -1248,7 +1230,7 @@ whether support iSCSI Discovery CHAP authentication
 withChapAuthSession(chapAuthSession)
 ```
 
-whether support iSCSI Session CHAP authentication
+"whether support iSCSI Session CHAP authentication"
 
 ### fn spec.source.inlineVolumeSpec.iscsi.withFsType
 
@@ -1256,7 +1238,7 @@ whether support iSCSI Session CHAP authentication
 withFsType(fsType)
 ```
 
-Filesystem type of the volume that you want to mount. Tip: Ensure that the filesystem type is supported by the host operating system. Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. More info: https://kubernetes.io/docs/concepts/storage/volumes#iscsi
+"Filesystem type of the volume that you want to mount. Tip: Ensure that the filesystem type is supported by the host operating system. Examples: \"ext4\", \"xfs\", \"ntfs\". Implicitly inferred to be \"ext4\" if unspecified. More info: https://kubernetes.io/docs/concepts/storage/volumes#iscsi"
 
 ### fn spec.source.inlineVolumeSpec.iscsi.withInitiatorName
 
@@ -1264,7 +1246,7 @@ Filesystem type of the volume that you want to mount. Tip: Ensure that the files
 withInitiatorName(initiatorName)
 ```
 
-Custom iSCSI Initiator Name. If initiatorName is specified with iscsiInterface simultaneously, new iSCSI interface <target portal>:<volume name> will be created for the connection.
+"Custom iSCSI Initiator Name. If initiatorName is specified with iscsiInterface simultaneously, new iSCSI interface <target portal>:<volume name> will be created for the connection."
 
 ### fn spec.source.inlineVolumeSpec.iscsi.withIqn
 
@@ -1272,7 +1254,7 @@ Custom iSCSI Initiator Name. If initiatorName is specified with iscsiInterface s
 withIqn(iqn)
 ```
 
-Target iSCSI Qualified Name.
+"Target iSCSI Qualified Name."
 
 ### fn spec.source.inlineVolumeSpec.iscsi.withIscsiInterface
 
@@ -1280,7 +1262,7 @@ Target iSCSI Qualified Name.
 withIscsiInterface(iscsiInterface)
 ```
 
-iSCSI Interface Name that uses an iSCSI transport. Defaults to 'default' (tcp).
+"iSCSI Interface Name that uses an iSCSI transport. Defaults to 'default' (tcp)."
 
 ### fn spec.source.inlineVolumeSpec.iscsi.withLun
 
@@ -1288,7 +1270,7 @@ iSCSI Interface Name that uses an iSCSI transport. Defaults to 'default' (tcp).
 withLun(lun)
 ```
 
-iSCSI Target Lun number.
+"iSCSI Target Lun number."
 
 ### fn spec.source.inlineVolumeSpec.iscsi.withPortals
 
@@ -1296,7 +1278,7 @@ iSCSI Target Lun number.
 withPortals(portals)
 ```
 
-iSCSI Target Portal List. The Portal is either an IP or ip_addr:port if the port is other than default (typically TCP ports 860 and 3260).
+"iSCSI Target Portal List. The Portal is either an IP or ip_addr:port if the port is other than default (typically TCP ports 860 and 3260)."
 
 ### fn spec.source.inlineVolumeSpec.iscsi.withPortalsMixin
 
@@ -1304,7 +1286,7 @@ iSCSI Target Portal List. The Portal is either an IP or ip_addr:port if the port
 withPortalsMixin(portals)
 ```
 
-iSCSI Target Portal List. The Portal is either an IP or ip_addr:port if the port is other than default (typically TCP ports 860 and 3260).
+"iSCSI Target Portal List. The Portal is either an IP or ip_addr:port if the port is other than default (typically TCP ports 860 and 3260)."
 
 **Note:** This function appends passed data to existing values
 
@@ -1314,7 +1296,7 @@ iSCSI Target Portal List. The Portal is either an IP or ip_addr:port if the port
 withReadOnly(readOnly)
 ```
 
-ReadOnly here will force the ReadOnly setting in VolumeMounts. Defaults to false.
+"ReadOnly here will force the ReadOnly setting in VolumeMounts. Defaults to false."
 
 ### fn spec.source.inlineVolumeSpec.iscsi.withTargetPortal
 
@@ -1322,11 +1304,11 @@ ReadOnly here will force the ReadOnly setting in VolumeMounts. Defaults to false
 withTargetPortal(targetPortal)
 ```
 
-iSCSI Target Portal. The Portal is either an IP or ip_addr:port if the port is other than default (typically TCP ports 860 and 3260).
+"iSCSI Target Portal. The Portal is either an IP or ip_addr:port if the port is other than default (typically TCP ports 860 and 3260)."
 
 ## obj spec.source.inlineVolumeSpec.iscsi.secretRef
 
-SecretReference represents a Secret Reference. It has enough information to retrieve secret in any namespace
+"SecretReference represents a Secret Reference. It has enough information to retrieve secret in any namespace"
 
 ### fn spec.source.inlineVolumeSpec.iscsi.secretRef.withName
 
@@ -1334,7 +1316,7 @@ SecretReference represents a Secret Reference. It has enough information to retr
 withName(name)
 ```
 
-Name is unique within a namespace to reference a secret resource.
+"Name is unique within a namespace to reference a secret resource."
 
 ### fn spec.source.inlineVolumeSpec.iscsi.secretRef.withNamespace
 
@@ -1342,11 +1324,11 @@ Name is unique within a namespace to reference a secret resource.
 withNamespace(namespace)
 ```
 
-Namespace defines the space within which the secret name must be unique.
+"Namespace defines the space within which the secret name must be unique."
 
 ## obj spec.source.inlineVolumeSpec.local
 
-Local represents directly-attached storage with node affinity (Beta feature)
+"Local represents directly-attached storage with node affinity (Beta feature)"
 
 ### fn spec.source.inlineVolumeSpec.local.withFsType
 
@@ -1354,7 +1336,7 @@ Local represents directly-attached storage with node affinity (Beta feature)
 withFsType(fsType)
 ```
 
-Filesystem type to mount. It applies only when the Path is a block device. Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". The default value is to auto-select a fileystem if unspecified.
+"Filesystem type to mount. It applies only when the Path is a block device. Must be a filesystem type supported by the host operating system. Ex. \"ext4\", \"xfs\", \"ntfs\". The default value is to auto-select a fileystem if unspecified."
 
 ### fn spec.source.inlineVolumeSpec.local.withPath
 
@@ -1362,11 +1344,11 @@ Filesystem type to mount. It applies only when the Path is a block device. Must 
 withPath(path)
 ```
 
-The full path to the volume on the node. It can be either a directory or block device (disk, partition, ...).
+"The full path to the volume on the node. It can be either a directory or block device (disk, partition, ...)."
 
 ## obj spec.source.inlineVolumeSpec.nfs
 
-Represents an NFS mount that lasts the lifetime of a pod. NFS volumes do not support ownership management or SELinux relabeling.
+"Represents an NFS mount that lasts the lifetime of a pod. NFS volumes do not support ownership management or SELinux relabeling."
 
 ### fn spec.source.inlineVolumeSpec.nfs.withPath
 
@@ -1374,7 +1356,7 @@ Represents an NFS mount that lasts the lifetime of a pod. NFS volumes do not sup
 withPath(path)
 ```
 
-Path that is exported by the NFS server. More info: https://kubernetes.io/docs/concepts/storage/volumes#nfs
+"Path that is exported by the NFS server. More info: https://kubernetes.io/docs/concepts/storage/volumes#nfs"
 
 ### fn spec.source.inlineVolumeSpec.nfs.withReadOnly
 
@@ -1382,7 +1364,7 @@ Path that is exported by the NFS server. More info: https://kubernetes.io/docs/c
 withReadOnly(readOnly)
 ```
 
-ReadOnly here will force the NFS export to be mounted with read-only permissions. Defaults to false. More info: https://kubernetes.io/docs/concepts/storage/volumes#nfs
+"ReadOnly here will force the NFS export to be mounted with read-only permissions. Defaults to false. More info: https://kubernetes.io/docs/concepts/storage/volumes#nfs"
 
 ### fn spec.source.inlineVolumeSpec.nfs.withServer
 
@@ -1390,15 +1372,15 @@ ReadOnly here will force the NFS export to be mounted with read-only permissions
 withServer(server)
 ```
 
-Server is the hostname or IP address of the NFS server. More info: https://kubernetes.io/docs/concepts/storage/volumes#nfs
+"Server is the hostname or IP address of the NFS server. More info: https://kubernetes.io/docs/concepts/storage/volumes#nfs"
 
 ## obj spec.source.inlineVolumeSpec.nodeAffinity
 
-VolumeNodeAffinity defines constraints that limit what nodes this volume can be accessed from.
+"VolumeNodeAffinity defines constraints that limit what nodes this volume can be accessed from."
 
 ## obj spec.source.inlineVolumeSpec.nodeAffinity.required
 
-A node selector represents the union of the results of one or more label queries over a set of nodes; that is, it represents the OR of the selectors represented by the node selector terms.
+"A node selector represents the union of the results of one or more label queries over a set of nodes; that is, it represents the OR of the selectors represented by the node selector terms."
 
 ### fn spec.source.inlineVolumeSpec.nodeAffinity.required.withNodeSelectorTerms
 
@@ -1406,7 +1388,7 @@ A node selector represents the union of the results of one or more label queries
 withNodeSelectorTerms(nodeSelectorTerms)
 ```
 
-Required. A list of node selector terms. The terms are ORed.
+"Required. A list of node selector terms. The terms are ORed."
 
 ### fn spec.source.inlineVolumeSpec.nodeAffinity.required.withNodeSelectorTermsMixin
 
@@ -1414,13 +1396,13 @@ Required. A list of node selector terms. The terms are ORed.
 withNodeSelectorTermsMixin(nodeSelectorTerms)
 ```
 
-Required. A list of node selector terms. The terms are ORed.
+"Required. A list of node selector terms. The terms are ORed."
 
 **Note:** This function appends passed data to existing values
 
 ## obj spec.source.inlineVolumeSpec.photonPersistentDisk
 
-Represents a Photon Controller persistent disk resource.
+"Represents a Photon Controller persistent disk resource."
 
 ### fn spec.source.inlineVolumeSpec.photonPersistentDisk.withFsType
 
@@ -1428,7 +1410,7 @@ Represents a Photon Controller persistent disk resource.
 withFsType(fsType)
 ```
 
-Filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
+"Filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. \"ext4\", \"xfs\", \"ntfs\". Implicitly inferred to be \"ext4\" if unspecified."
 
 ### fn spec.source.inlineVolumeSpec.photonPersistentDisk.withPdID
 
@@ -1436,11 +1418,11 @@ Filesystem type to mount. Must be a filesystem type supported by the host operat
 withPdID(pdID)
 ```
 
-ID that identifies Photon Controller persistent disk
+"ID that identifies Photon Controller persistent disk"
 
 ## obj spec.source.inlineVolumeSpec.portworxVolume
 
-PortworxVolumeSource represents a Portworx volume resource.
+"PortworxVolumeSource represents a Portworx volume resource."
 
 ### fn spec.source.inlineVolumeSpec.portworxVolume.withFsType
 
@@ -1448,7 +1430,7 @@ PortworxVolumeSource represents a Portworx volume resource.
 withFsType(fsType)
 ```
 
-FSType represents the filesystem type to mount Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs". Implicitly inferred to be "ext4" if unspecified.
+"FSType represents the filesystem type to mount Must be a filesystem type supported by the host operating system. Ex. \"ext4\", \"xfs\". Implicitly inferred to be \"ext4\" if unspecified."
 
 ### fn spec.source.inlineVolumeSpec.portworxVolume.withReadOnly
 
@@ -1456,7 +1438,7 @@ FSType represents the filesystem type to mount Must be a filesystem type support
 withReadOnly(readOnly)
 ```
 
-Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts.
+"Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts."
 
 ### fn spec.source.inlineVolumeSpec.portworxVolume.withVolumeID
 
@@ -1464,11 +1446,11 @@ Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in
 withVolumeID(volumeID)
 ```
 
-VolumeID uniquely identifies a Portworx volume
+"VolumeID uniquely identifies a Portworx volume"
 
 ## obj spec.source.inlineVolumeSpec.quobyte
 
-Represents a Quobyte mount that lasts the lifetime of a pod. Quobyte volumes do not support ownership management or SELinux relabeling.
+"Represents a Quobyte mount that lasts the lifetime of a pod. Quobyte volumes do not support ownership management or SELinux relabeling."
 
 ### fn spec.source.inlineVolumeSpec.quobyte.withGroup
 
@@ -1476,7 +1458,7 @@ Represents a Quobyte mount that lasts the lifetime of a pod. Quobyte volumes do 
 withGroup(group)
 ```
 
-Group to map volume access to Default is no group
+"Group to map volume access to Default is no group"
 
 ### fn spec.source.inlineVolumeSpec.quobyte.withReadOnly
 
@@ -1484,7 +1466,7 @@ Group to map volume access to Default is no group
 withReadOnly(readOnly)
 ```
 
-ReadOnly here will force the Quobyte volume to be mounted with read-only permissions. Defaults to false.
+"ReadOnly here will force the Quobyte volume to be mounted with read-only permissions. Defaults to false."
 
 ### fn spec.source.inlineVolumeSpec.quobyte.withRegistry
 
@@ -1492,7 +1474,7 @@ ReadOnly here will force the Quobyte volume to be mounted with read-only permiss
 withRegistry(registry)
 ```
 
-Registry represents a single or multiple Quobyte Registry services specified as a string as host:port pair (multiple entries are separated with commas) which acts as the central registry for volumes
+"Registry represents a single or multiple Quobyte Registry services specified as a string as host:port pair (multiple entries are separated with commas) which acts as the central registry for volumes"
 
 ### fn spec.source.inlineVolumeSpec.quobyte.withTenant
 
@@ -1500,7 +1482,7 @@ Registry represents a single or multiple Quobyte Registry services specified as 
 withTenant(tenant)
 ```
 
-Tenant owning the given Quobyte volume in the Backend Used with dynamically provisioned Quobyte volumes, value is set by the plugin
+"Tenant owning the given Quobyte volume in the Backend Used with dynamically provisioned Quobyte volumes, value is set by the plugin"
 
 ### fn spec.source.inlineVolumeSpec.quobyte.withUser
 
@@ -1508,7 +1490,7 @@ Tenant owning the given Quobyte volume in the Backend Used with dynamically prov
 withUser(user)
 ```
 
-User to map volume access to Defaults to serivceaccount user
+"User to map volume access to Defaults to serivceaccount user"
 
 ### fn spec.source.inlineVolumeSpec.quobyte.withVolume
 
@@ -1516,11 +1498,11 @@ User to map volume access to Defaults to serivceaccount user
 withVolume(volume)
 ```
 
-Volume is a string that references an already created Quobyte volume by name.
+"Volume is a string that references an already created Quobyte volume by name."
 
 ## obj spec.source.inlineVolumeSpec.rbd
 
-Represents a Rados Block Device mount that lasts the lifetime of a pod. RBD volumes support ownership management and SELinux relabeling.
+"Represents a Rados Block Device mount that lasts the lifetime of a pod. RBD volumes support ownership management and SELinux relabeling."
 
 ### fn spec.source.inlineVolumeSpec.rbd.withFsType
 
@@ -1528,7 +1510,7 @@ Represents a Rados Block Device mount that lasts the lifetime of a pod. RBD volu
 withFsType(fsType)
 ```
 
-Filesystem type of the volume that you want to mount. Tip: Ensure that the filesystem type is supported by the host operating system. Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. More info: https://kubernetes.io/docs/concepts/storage/volumes#rbd
+"Filesystem type of the volume that you want to mount. Tip: Ensure that the filesystem type is supported by the host operating system. Examples: \"ext4\", \"xfs\", \"ntfs\". Implicitly inferred to be \"ext4\" if unspecified. More info: https://kubernetes.io/docs/concepts/storage/volumes#rbd"
 
 ### fn spec.source.inlineVolumeSpec.rbd.withImage
 
@@ -1536,7 +1518,7 @@ Filesystem type of the volume that you want to mount. Tip: Ensure that the files
 withImage(image)
 ```
 
-The rados image name. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it
+"The rados image name. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it"
 
 ### fn spec.source.inlineVolumeSpec.rbd.withKeyring
 
@@ -1544,7 +1526,7 @@ The rados image name. More info: https://examples.k8s.io/volumes/rbd/README.md#h
 withKeyring(keyring)
 ```
 
-Keyring is the path to key ring for RBDUser. Default is /etc/ceph/keyring. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it
+"Keyring is the path to key ring for RBDUser. Default is /etc/ceph/keyring. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it"
 
 ### fn spec.source.inlineVolumeSpec.rbd.withMonitors
 
@@ -1552,7 +1534,7 @@ Keyring is the path to key ring for RBDUser. Default is /etc/ceph/keyring. More 
 withMonitors(monitors)
 ```
 
-A collection of Ceph monitors. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it
+"A collection of Ceph monitors. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it"
 
 ### fn spec.source.inlineVolumeSpec.rbd.withMonitorsMixin
 
@@ -1560,7 +1542,7 @@ A collection of Ceph monitors. More info: https://examples.k8s.io/volumes/rbd/RE
 withMonitorsMixin(monitors)
 ```
 
-A collection of Ceph monitors. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it
+"A collection of Ceph monitors. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it"
 
 **Note:** This function appends passed data to existing values
 
@@ -1570,7 +1552,7 @@ A collection of Ceph monitors. More info: https://examples.k8s.io/volumes/rbd/RE
 withPool(pool)
 ```
 
-The rados pool name. Default is rbd. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it
+"The rados pool name. Default is rbd. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it"
 
 ### fn spec.source.inlineVolumeSpec.rbd.withReadOnly
 
@@ -1578,7 +1560,7 @@ The rados pool name. Default is rbd. More info: https://examples.k8s.io/volumes/
 withReadOnly(readOnly)
 ```
 
-ReadOnly here will force the ReadOnly setting in VolumeMounts. Defaults to false. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it
+"ReadOnly here will force the ReadOnly setting in VolumeMounts. Defaults to false. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it"
 
 ### fn spec.source.inlineVolumeSpec.rbd.withUser
 
@@ -1586,11 +1568,11 @@ ReadOnly here will force the ReadOnly setting in VolumeMounts. Defaults to false
 withUser(user)
 ```
 
-The rados user name. Default is admin. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it
+"The rados user name. Default is admin. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it"
 
 ## obj spec.source.inlineVolumeSpec.rbd.secretRef
 
-SecretReference represents a Secret Reference. It has enough information to retrieve secret in any namespace
+"SecretReference represents a Secret Reference. It has enough information to retrieve secret in any namespace"
 
 ### fn spec.source.inlineVolumeSpec.rbd.secretRef.withName
 
@@ -1598,7 +1580,7 @@ SecretReference represents a Secret Reference. It has enough information to retr
 withName(name)
 ```
 
-Name is unique within a namespace to reference a secret resource.
+"Name is unique within a namespace to reference a secret resource."
 
 ### fn spec.source.inlineVolumeSpec.rbd.secretRef.withNamespace
 
@@ -1606,11 +1588,11 @@ Name is unique within a namespace to reference a secret resource.
 withNamespace(namespace)
 ```
 
-Namespace defines the space within which the secret name must be unique.
+"Namespace defines the space within which the secret name must be unique."
 
 ## obj spec.source.inlineVolumeSpec.scaleIO
 
-ScaleIOPersistentVolumeSource represents a persistent ScaleIO volume
+"ScaleIOPersistentVolumeSource represents a persistent ScaleIO volume"
 
 ### fn spec.source.inlineVolumeSpec.scaleIO.withFsType
 
@@ -1618,7 +1600,7 @@ ScaleIOPersistentVolumeSource represents a persistent ScaleIO volume
 withFsType(fsType)
 ```
 
-Filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Default is "xfs"
+"Filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. \"ext4\", \"xfs\", \"ntfs\". Default is \"xfs\
 
 ### fn spec.source.inlineVolumeSpec.scaleIO.withGateway
 
@@ -1626,7 +1608,7 @@ Filesystem type to mount. Must be a filesystem type supported by the host operat
 withGateway(gateway)
 ```
 
-The host address of the ScaleIO API Gateway.
+"The host address of the ScaleIO API Gateway."
 
 ### fn spec.source.inlineVolumeSpec.scaleIO.withProtectionDomain
 
@@ -1634,7 +1616,7 @@ The host address of the ScaleIO API Gateway.
 withProtectionDomain(protectionDomain)
 ```
 
-The name of the ScaleIO Protection Domain for the configured storage.
+"The name of the ScaleIO Protection Domain for the configured storage."
 
 ### fn spec.source.inlineVolumeSpec.scaleIO.withReadOnly
 
@@ -1642,7 +1624,7 @@ The name of the ScaleIO Protection Domain for the configured storage.
 withReadOnly(readOnly)
 ```
 
-Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts.
+"Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts."
 
 ### fn spec.source.inlineVolumeSpec.scaleIO.withSslEnabled
 
@@ -1650,7 +1632,7 @@ Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in
 withSslEnabled(sslEnabled)
 ```
 
-Flag to enable/disable SSL communication with Gateway, default false
+"Flag to enable/disable SSL communication with Gateway, default false"
 
 ### fn spec.source.inlineVolumeSpec.scaleIO.withStorageMode
 
@@ -1658,7 +1640,7 @@ Flag to enable/disable SSL communication with Gateway, default false
 withStorageMode(storageMode)
 ```
 
-Indicates whether the storage for a volume should be ThickProvisioned or ThinProvisioned. Default is ThinProvisioned.
+"Indicates whether the storage for a volume should be ThickProvisioned or ThinProvisioned. Default is ThinProvisioned."
 
 ### fn spec.source.inlineVolumeSpec.scaleIO.withStoragePool
 
@@ -1666,7 +1648,7 @@ Indicates whether the storage for a volume should be ThickProvisioned or ThinPro
 withStoragePool(storagePool)
 ```
 
-The ScaleIO Storage Pool associated with the protection domain.
+"The ScaleIO Storage Pool associated with the protection domain."
 
 ### fn spec.source.inlineVolumeSpec.scaleIO.withSystem
 
@@ -1674,7 +1656,7 @@ The ScaleIO Storage Pool associated with the protection domain.
 withSystem(system)
 ```
 
-The name of the storage system as configured in ScaleIO.
+"The name of the storage system as configured in ScaleIO."
 
 ### fn spec.source.inlineVolumeSpec.scaleIO.withVolumeName
 
@@ -1682,11 +1664,11 @@ The name of the storage system as configured in ScaleIO.
 withVolumeName(volumeName)
 ```
 
-The name of a volume already created in the ScaleIO system that is associated with this volume source.
+"The name of a volume already created in the ScaleIO system that is associated with this volume source."
 
 ## obj spec.source.inlineVolumeSpec.scaleIO.secretRef
 
-SecretReference represents a Secret Reference. It has enough information to retrieve secret in any namespace
+"SecretReference represents a Secret Reference. It has enough information to retrieve secret in any namespace"
 
 ### fn spec.source.inlineVolumeSpec.scaleIO.secretRef.withName
 
@@ -1694,7 +1676,7 @@ SecretReference represents a Secret Reference. It has enough information to retr
 withName(name)
 ```
 
-Name is unique within a namespace to reference a secret resource.
+"Name is unique within a namespace to reference a secret resource."
 
 ### fn spec.source.inlineVolumeSpec.scaleIO.secretRef.withNamespace
 
@@ -1702,11 +1684,11 @@ Name is unique within a namespace to reference a secret resource.
 withNamespace(namespace)
 ```
 
-Namespace defines the space within which the secret name must be unique.
+"Namespace defines the space within which the secret name must be unique."
 
 ## obj spec.source.inlineVolumeSpec.storageos
 
-Represents a StorageOS persistent volume resource.
+"Represents a StorageOS persistent volume resource."
 
 ### fn spec.source.inlineVolumeSpec.storageos.withFsType
 
@@ -1714,7 +1696,7 @@ Represents a StorageOS persistent volume resource.
 withFsType(fsType)
 ```
 
-Filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
+"Filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. \"ext4\", \"xfs\", \"ntfs\". Implicitly inferred to be \"ext4\" if unspecified."
 
 ### fn spec.source.inlineVolumeSpec.storageos.withReadOnly
 
@@ -1722,7 +1704,7 @@ Filesystem type to mount. Must be a filesystem type supported by the host operat
 withReadOnly(readOnly)
 ```
 
-Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts.
+"Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts."
 
 ### fn spec.source.inlineVolumeSpec.storageos.withVolumeName
 
@@ -1730,7 +1712,7 @@ Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in
 withVolumeName(volumeName)
 ```
 
-VolumeName is the human-readable name of the StorageOS volume.  Volume names are only unique within a namespace.
+"VolumeName is the human-readable name of the StorageOS volume.  Volume names are only unique within a namespace."
 
 ### fn spec.source.inlineVolumeSpec.storageos.withVolumeNamespace
 
@@ -1738,11 +1720,11 @@ VolumeName is the human-readable name of the StorageOS volume.  Volume names are
 withVolumeNamespace(volumeNamespace)
 ```
 
-VolumeNamespace specifies the scope of the volume within StorageOS.  If no namespace is specified then the Pod's namespace will be used.  This allows the Kubernetes name scoping to be mirrored within StorageOS for tighter integration. Set VolumeName to any name to override the default behaviour. Set to 'default' if you are not using namespaces within StorageOS. Namespaces that do not pre-exist within StorageOS will be created.
+"VolumeNamespace specifies the scope of the volume within StorageOS.  If no namespace is specified then the Pod's namespace will be used.  This allows the Kubernetes name scoping to be mirrored within StorageOS for tighter integration. Set VolumeName to any name to override the default behaviour. Set to \"default\" if you are not using namespaces within StorageOS. Namespaces that do not pre-exist within StorageOS will be created."
 
 ## obj spec.source.inlineVolumeSpec.storageos.secretRef
 
-ObjectReference contains enough information to let you inspect or modify the referred object.
+"ObjectReference contains enough information to let you inspect or modify the referred object."
 
 ### fn spec.source.inlineVolumeSpec.storageos.secretRef.withApiVersion
 
@@ -1750,7 +1732,7 @@ ObjectReference contains enough information to let you inspect or modify the ref
 withApiVersion(apiVersion)
 ```
 
-API version of the referent.
+"API version of the referent."
 
 ### fn spec.source.inlineVolumeSpec.storageos.secretRef.withFieldPath
 
@@ -1758,7 +1740,7 @@ API version of the referent.
 withFieldPath(fieldPath)
 ```
 
-If referring to a piece of an object instead of an entire object, this string should contain a valid JSON/Go field access statement, such as desiredState.manifest.containers[2]. For example, if the object reference is to a container within a pod, this would take on a value like: "spec.containers{name}" (where "name" refers to the name of the container that triggered the event) or if no container name is specified "spec.containers[2]" (container with index 2 in this pod). This syntax is chosen only to have some well-defined way of referencing a part of an object.
+"If referring to a piece of an object instead of an entire object, this string should contain a valid JSON/Go field access statement, such as desiredState.manifest.containers[2]. For example, if the object reference is to a container within a pod, this would take on a value like: \"spec.containers{name}\" (where \"name\" refers to the name of the container that triggered the event) or if no container name is specified \"spec.containers[2]\" (container with index 2 in this pod). This syntax is chosen only to have some well-defined way of referencing a part of an object."
 
 ### fn spec.source.inlineVolumeSpec.storageos.secretRef.withKind
 
@@ -1766,7 +1748,7 @@ If referring to a piece of an object instead of an entire object, this string sh
 withKind(kind)
 ```
 
-Kind of the referent. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
+"Kind of the referent. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds"
 
 ### fn spec.source.inlineVolumeSpec.storageos.secretRef.withName
 
@@ -1774,7 +1756,7 @@ Kind of the referent. More info: https://git.k8s.io/community/contributors/devel
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn spec.source.inlineVolumeSpec.storageos.secretRef.withNamespace
 
@@ -1782,7 +1764,7 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withNamespace(namespace)
 ```
 
-Namespace of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/
+"Namespace of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/"
 
 ### fn spec.source.inlineVolumeSpec.storageos.secretRef.withResourceVersion
 
@@ -1790,7 +1772,7 @@ Namespace of the referent. More info: https://kubernetes.io/docs/concepts/overvi
 withResourceVersion(resourceVersion)
 ```
 
-Specific resourceVersion to which this reference is made, if any. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#concurrency-control-and-consistency
+"Specific resourceVersion to which this reference is made, if any. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#concurrency-control-and-consistency"
 
 ### fn spec.source.inlineVolumeSpec.storageos.secretRef.withUid
 
@@ -1798,11 +1780,11 @@ Specific resourceVersion to which this reference is made, if any. More info: htt
 withUid(uid)
 ```
 
-UID of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#uids
+"UID of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#uids"
 
 ## obj spec.source.inlineVolumeSpec.vsphereVolume
 
-Represents a vSphere volume resource.
+"Represents a vSphere volume resource."
 
 ### fn spec.source.inlineVolumeSpec.vsphereVolume.withFsType
 
@@ -1810,7 +1792,7 @@ Represents a vSphere volume resource.
 withFsType(fsType)
 ```
 
-Filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
+"Filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. \"ext4\", \"xfs\", \"ntfs\". Implicitly inferred to be \"ext4\" if unspecified."
 
 ### fn spec.source.inlineVolumeSpec.vsphereVolume.withStoragePolicyID
 
@@ -1818,7 +1800,7 @@ Filesystem type to mount. Must be a filesystem type supported by the host operat
 withStoragePolicyID(storagePolicyID)
 ```
 
-Storage Policy Based Management (SPBM) profile ID associated with the StoragePolicyName.
+"Storage Policy Based Management (SPBM) profile ID associated with the StoragePolicyName."
 
 ### fn spec.source.inlineVolumeSpec.vsphereVolume.withStoragePolicyName
 
@@ -1826,7 +1808,7 @@ Storage Policy Based Management (SPBM) profile ID associated with the StoragePol
 withStoragePolicyName(storagePolicyName)
 ```
 
-Storage Policy Based Management (SPBM) profile name.
+"Storage Policy Based Management (SPBM) profile name."
 
 ### fn spec.source.inlineVolumeSpec.vsphereVolume.withVolumePath
 
@@ -1834,4 +1816,4 @@ Storage Policy Based Management (SPBM) profile name.
 withVolumePath(volumePath)
 ```
 
-Path that identifies vSphere volume vmdk
+"Path that identifies vSphere volume vmdk"

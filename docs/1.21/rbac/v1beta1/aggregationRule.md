@@ -4,7 +4,7 @@ permalink: /1.21/rbac/v1beta1/aggregationRule/
 
 # rbac.v1beta1.aggregationRule
 
-AggregationRule describes how to locate ClusterRoles to aggregate into the ClusterRole
+"AggregationRule describes how to locate ClusterRoles to aggregate into the ClusterRole"
 
 ## Index
 
@@ -19,7 +19,7 @@ AggregationRule describes how to locate ClusterRoles to aggregate into the Clust
 withClusterRoleSelectors(clusterRoleSelectors)
 ```
 
-ClusterRoleSelectors holds a list of selectors which will be used to find ClusterRoles and create the rules. If any of the selectors match, then the ClusterRole's permissions will be added
+"ClusterRoleSelectors holds a list of selectors which will be used to find ClusterRoles and create the rules. If any of the selectors match, then the ClusterRole's permissions will be added"
 
 ### fn withClusterRoleSelectorsMixin
 
@@ -27,6 +27,6 @@ ClusterRoleSelectors holds a list of selectors which will be used to find Cluste
 withClusterRoleSelectorsMixin(clusterRoleSelectors)
 ```
 
-ClusterRoleSelectors holds a list of selectors which will be used to find ClusterRoles and create the rules. If any of the selectors match, then the ClusterRole's permissions will be added
+"ClusterRoleSelectors holds a list of selectors which will be used to find ClusterRoles and create the rules. If any of the selectors match, then the ClusterRole's permissions will be added"
 
 **Note:** This function appends passed data to existing values

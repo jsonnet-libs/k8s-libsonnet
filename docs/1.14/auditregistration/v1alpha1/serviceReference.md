@@ -4,7 +4,7 @@ permalink: /1.14/auditregistration/v1alpha1/serviceReference/
 
 # auditregistration.v1alpha1.serviceReference
 
-ServiceReference holds a reference to Service.legacy.k8s.io
+"ServiceReference holds a reference to Service.legacy.k8s.io"
 
 ## Index
 
@@ -20,7 +20,7 @@ ServiceReference holds a reference to Service.legacy.k8s.io
 withName(name)
 ```
 
-`name` is the name of the service. Required
+"`name` is the name of the service. Required"
 
 ### fn withNamespace
 
@@ -28,7 +28,7 @@ withName(name)
 withNamespace(namespace)
 ```
 
-`namespace` is the namespace of the service. Required
+"`namespace` is the namespace of the service. Required"
 
 ### fn withPath
 
@@ -36,4 +36,4 @@ withNamespace(namespace)
 withPath(path)
 ```
 
-`path` is an optional URL path which will be sent in any request to this service.
+"`path` is an optional URL path which will be sent in any request to this service."

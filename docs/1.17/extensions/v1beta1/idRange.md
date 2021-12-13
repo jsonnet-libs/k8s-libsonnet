@@ -4,7 +4,7 @@ permalink: /1.17/extensions/v1beta1/idRange/
 
 # extensions.v1beta1.idRange
 
-IDRange provides a min/max of an allowed range of IDs. Deprecated: use IDRange from policy API Group instead.
+"IDRange provides a min/max of an allowed range of IDs. Deprecated: use IDRange from policy API Group instead."
 
 ## Index
 
@@ -19,7 +19,7 @@ IDRange provides a min/max of an allowed range of IDs. Deprecated: use IDRange f
 withMax(max)
 ```
 
-max is the end of the range, inclusive.
+"max is the end of the range, inclusive."
 
 ### fn withMin
 
@@ -27,4 +27,4 @@ max is the end of the range, inclusive.
 withMin(min)
 ```
 
-min is the start of the range, inclusive.
+"min is the start of the range, inclusive."

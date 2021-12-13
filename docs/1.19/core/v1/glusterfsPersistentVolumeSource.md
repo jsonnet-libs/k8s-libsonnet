@@ -4,7 +4,7 @@ permalink: /1.19/core/v1/glusterfsPersistentVolumeSource/
 
 # core.v1.glusterfsPersistentVolumeSource
 
-Represents a Glusterfs mount that lasts the lifetime of a pod. Glusterfs volumes do not support ownership management or SELinux relabeling.
+"Represents a Glusterfs mount that lasts the lifetime of a pod. Glusterfs volumes do not support ownership management or SELinux relabeling."
 
 ## Index
 
@@ -21,7 +21,7 @@ Represents a Glusterfs mount that lasts the lifetime of a pod. Glusterfs volumes
 withEndpoints(endpoints)
 ```
 
-EndpointsName is the endpoint name that details Glusterfs topology. More info: https://examples.k8s.io/volumes/glusterfs/README.md#create-a-pod
+"EndpointsName is the endpoint name that details Glusterfs topology. More info: https://examples.k8s.io/volumes/glusterfs/README.md#create-a-pod"
 
 ### fn withEndpointsNamespace
 
@@ -29,7 +29,7 @@ EndpointsName is the endpoint name that details Glusterfs topology. More info: h
 withEndpointsNamespace(endpointsNamespace)
 ```
 
-EndpointsNamespace is the namespace that contains Glusterfs endpoint. If this field is empty, the EndpointNamespace defaults to the same namespace as the bound PVC. More info: https://examples.k8s.io/volumes/glusterfs/README.md#create-a-pod
+"EndpointsNamespace is the namespace that contains Glusterfs endpoint. If this field is empty, the EndpointNamespace defaults to the same namespace as the bound PVC. More info: https://examples.k8s.io/volumes/glusterfs/README.md#create-a-pod"
 
 ### fn withPath
 
@@ -37,7 +37,7 @@ EndpointsNamespace is the namespace that contains Glusterfs endpoint. If this fi
 withPath(path)
 ```
 
-Path is the Glusterfs volume path. More info: https://examples.k8s.io/volumes/glusterfs/README.md#create-a-pod
+"Path is the Glusterfs volume path. More info: https://examples.k8s.io/volumes/glusterfs/README.md#create-a-pod"
 
 ### fn withReadOnly
 
@@ -45,4 +45,4 @@ Path is the Glusterfs volume path. More info: https://examples.k8s.io/volumes/gl
 withReadOnly(readOnly)
 ```
 
-ReadOnly here will force the Glusterfs volume to be mounted with read-only permissions. Defaults to false. More info: https://examples.k8s.io/volumes/glusterfs/README.md#create-a-pod
+"ReadOnly here will force the Glusterfs volume to be mounted with read-only permissions. Defaults to false. More info: https://examples.k8s.io/volumes/glusterfs/README.md#create-a-pod"

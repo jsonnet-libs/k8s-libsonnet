@@ -4,7 +4,7 @@ permalink: /1.18/core/v1/glusterfsVolumeSource/
 
 # core.v1.glusterfsVolumeSource
 
-Represents a Glusterfs mount that lasts the lifetime of a pod. Glusterfs volumes do not support ownership management or SELinux relabeling.
+"Represents a Glusterfs mount that lasts the lifetime of a pod. Glusterfs volumes do not support ownership management or SELinux relabeling."
 
 ## Index
 
@@ -20,7 +20,7 @@ Represents a Glusterfs mount that lasts the lifetime of a pod. Glusterfs volumes
 withEndpoints(endpoints)
 ```
 
-EndpointsName is the endpoint name that details Glusterfs topology. More info: https://examples.k8s.io/volumes/glusterfs/README.md#create-a-pod
+"EndpointsName is the endpoint name that details Glusterfs topology. More info: https://examples.k8s.io/volumes/glusterfs/README.md#create-a-pod"
 
 ### fn withPath
 
@@ -28,7 +28,7 @@ EndpointsName is the endpoint name that details Glusterfs topology. More info: h
 withPath(path)
 ```
 
-Path is the Glusterfs volume path. More info: https://examples.k8s.io/volumes/glusterfs/README.md#create-a-pod
+"Path is the Glusterfs volume path. More info: https://examples.k8s.io/volumes/glusterfs/README.md#create-a-pod"
 
 ### fn withReadOnly
 
@@ -36,4 +36,4 @@ Path is the Glusterfs volume path. More info: https://examples.k8s.io/volumes/gl
 withReadOnly(readOnly)
 ```
 
-ReadOnly here will force the Glusterfs volume to be mounted with read-only permissions. Defaults to false. More info: https://examples.k8s.io/volumes/glusterfs/README.md#create-a-pod
+"ReadOnly here will force the Glusterfs volume to be mounted with read-only permissions. Defaults to false. More info: https://examples.k8s.io/volumes/glusterfs/README.md#create-a-pod"

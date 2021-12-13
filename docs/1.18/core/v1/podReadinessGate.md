@@ -4,7 +4,7 @@ permalink: /1.18/core/v1/podReadinessGate/
 
 # core.v1.podReadinessGate
 
-PodReadinessGate contains the reference to a pod condition
+"PodReadinessGate contains the reference to a pod condition"
 
 ## Index
 
@@ -18,4 +18,4 @@ PodReadinessGate contains the reference to a pod condition
 withConditionType(conditionType)
 ```
 
-ConditionType refers to a condition in the pod's condition list with matching type.
+"ConditionType refers to a condition in the pod's condition list with matching type."

@@ -4,7 +4,7 @@ permalink: /1.14/core/v1/persistentVolume/
 
 # core.v1.persistentVolume
 
-PersistentVolume (PV) is a storage resource provisioned by an administrator. It is analogous to a node. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes
+"PersistentVolume (PV) is a storage resource provisioned by an administrator. It is analogous to a node. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes"
 
 ## Index
 
@@ -246,7 +246,7 @@ new returns an instance of Persistentvolume
 
 ## obj metadata
 
-ObjectMeta is metadata that all persisted resources must have, which includes all objects users must create.
+"ObjectMeta is metadata that all persisted resources must have, which includes all objects users must create."
 
 ### fn metadata.withAnnotations
 
@@ -254,7 +254,7 @@ ObjectMeta is metadata that all persisted resources must have, which includes al
 withAnnotations(annotations)
 ```
 
-Annotations is an unstructured key value map stored with a resource that may be set by external tools to store and retrieve arbitrary metadata. They are not queryable and should be preserved when modifying objects. More info: http://kubernetes.io/docs/user-guide/annotations
+"Annotations is an unstructured key value map stored with a resource that may be set by external tools to store and retrieve arbitrary metadata. They are not queryable and should be preserved when modifying objects. More info: http://kubernetes.io/docs/user-guide/annotations"
 
 ### fn metadata.withAnnotationsMixin
 
@@ -262,7 +262,7 @@ Annotations is an unstructured key value map stored with a resource that may be 
 withAnnotationsMixin(annotations)
 ```
 
-Annotations is an unstructured key value map stored with a resource that may be set by external tools to store and retrieve arbitrary metadata. They are not queryable and should be preserved when modifying objects. More info: http://kubernetes.io/docs/user-guide/annotations
+"Annotations is an unstructured key value map stored with a resource that may be set by external tools to store and retrieve arbitrary metadata. They are not queryable and should be preserved when modifying objects. More info: http://kubernetes.io/docs/user-guide/annotations"
 
 **Note:** This function appends passed data to existing values
 
@@ -272,7 +272,7 @@ Annotations is an unstructured key value map stored with a resource that may be 
 withClusterName(clusterName)
 ```
 
-The name of the cluster which the object belongs to. This is used to distinguish resources with same name and namespace in different clusters. This field is not set anywhere right now and apiserver is going to ignore it if set in create or update request.
+"The name of the cluster which the object belongs to. This is used to distinguish resources with same name and namespace in different clusters. This field is not set anywhere right now and apiserver is going to ignore it if set in create or update request."
 
 ### fn metadata.withCreationTimestamp
 
@@ -280,7 +280,7 @@ The name of the cluster which the object belongs to. This is used to distinguish
 withCreationTimestamp(creationTimestamp)
 ```
 
-Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.
+"Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers."
 
 ### fn metadata.withDeletionGracePeriodSeconds
 
@@ -288,7 +288,7 @@ Time is a wrapper around time.Time which supports correct marshaling to YAML and
 withDeletionGracePeriodSeconds(deletionGracePeriodSeconds)
 ```
 
-Number of seconds allowed for this object to gracefully terminate before it will be removed from the system. Only set when deletionTimestamp is also set. May only be shortened. Read-only.
+"Number of seconds allowed for this object to gracefully terminate before it will be removed from the system. Only set when deletionTimestamp is also set. May only be shortened. Read-only."
 
 ### fn metadata.withDeletionTimestamp
 
@@ -296,7 +296,7 @@ Number of seconds allowed for this object to gracefully terminate before it will
 withDeletionTimestamp(deletionTimestamp)
 ```
 
-Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.
+"Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers."
 
 ### fn metadata.withFinalizers
 
@@ -304,7 +304,7 @@ Time is a wrapper around time.Time which supports correct marshaling to YAML and
 withFinalizers(finalizers)
 ```
 
-Must be empty before the object is deleted from the registry. Each entry is an identifier for the responsible component that will remove the entry from the list. If the deletionTimestamp of the object is non-nil, entries in this list can only be removed.
+"Must be empty before the object is deleted from the registry. Each entry is an identifier for the responsible component that will remove the entry from the list. If the deletionTimestamp of the object is non-nil, entries in this list can only be removed."
 
 ### fn metadata.withFinalizersMixin
 
@@ -312,7 +312,7 @@ Must be empty before the object is deleted from the registry. Each entry is an i
 withFinalizersMixin(finalizers)
 ```
 
-Must be empty before the object is deleted from the registry. Each entry is an identifier for the responsible component that will remove the entry from the list. If the deletionTimestamp of the object is non-nil, entries in this list can only be removed.
+"Must be empty before the object is deleted from the registry. Each entry is an identifier for the responsible component that will remove the entry from the list. If the deletionTimestamp of the object is non-nil, entries in this list can only be removed."
 
 **Note:** This function appends passed data to existing values
 
@@ -322,11 +322,7 @@ Must be empty before the object is deleted from the registry. Each entry is an i
 withGenerateName(generateName)
 ```
 
-GenerateName is an optional prefix, used by the server, to generate a unique name ONLY IF the Name field has not been provided. If this field is used, the name returned to the client will be different than the name passed. This value will also be combined with a unique suffix. The provided value has the same validation rules as the Name field, and may be truncated by the length of the suffix required to make the value unique on the server.
-
-If this field is specified and the generated name exists, the server will NOT return a 409 - instead, it will either return 201 Created or 500 with Reason ServerTimeout indicating a unique name could not be found in the time allotted, and the client should retry (optionally after the time indicated in the Retry-After header).
-
-Applied only if Name is not specified. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#idempotency
+"GenerateName is an optional prefix, used by the server, to generate a unique name ONLY IF the Name field has not been provided. If this field is used, the name returned to the client will be different than the name passed. This value will also be combined with a unique suffix. The provided value has the same validation rules as the Name field, and may be truncated by the length of the suffix required to make the value unique on the server.\n\nIf this field is specified and the generated name exists, the server will NOT return a 409 - instead, it will either return 201 Created or 500 with Reason ServerTimeout indicating a unique name could not be found in the time allotted, and the client should retry (optionally after the time indicated in the Retry-After header).\n\nApplied only if Name is not specified. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#idempotency"
 
 ### fn metadata.withGeneration
 
@@ -334,7 +330,7 @@ Applied only if Name is not specified. More info: https://git.k8s.io/community/c
 withGeneration(generation)
 ```
 
-A sequence number representing a specific generation of the desired state. Populated by the system. Read-only.
+"A sequence number representing a specific generation of the desired state. Populated by the system. Read-only."
 
 ### fn metadata.withLabels
 
@@ -342,7 +338,7 @@ A sequence number representing a specific generation of the desired state. Popul
 withLabels(labels)
 ```
 
-Map of string keys and values that can be used to organize and categorize (scope and select) objects. May match selectors of replication controllers and services. More info: http://kubernetes.io/docs/user-guide/labels
+"Map of string keys and values that can be used to organize and categorize (scope and select) objects. May match selectors of replication controllers and services. More info: http://kubernetes.io/docs/user-guide/labels"
 
 ### fn metadata.withLabelsMixin
 
@@ -350,7 +346,7 @@ Map of string keys and values that can be used to organize and categorize (scope
 withLabelsMixin(labels)
 ```
 
-Map of string keys and values that can be used to organize and categorize (scope and select) objects. May match selectors of replication controllers and services. More info: http://kubernetes.io/docs/user-guide/labels
+"Map of string keys and values that can be used to organize and categorize (scope and select) objects. May match selectors of replication controllers and services. More info: http://kubernetes.io/docs/user-guide/labels"
 
 **Note:** This function appends passed data to existing values
 
@@ -360,9 +356,7 @@ Map of string keys and values that can be used to organize and categorize (scope
 withManagedFields(managedFields)
 ```
 
-ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like 'ci-cd'. The set of fields is always in the version that the workflow used when modifying the object.
-
-This field is alpha and can be changed or removed without notice.
+"ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like \"ci-cd\". The set of fields is always in the version that the workflow used when modifying the object.\n\nThis field is alpha and can be changed or removed without notice."
 
 ### fn metadata.withManagedFieldsMixin
 
@@ -370,9 +364,7 @@ This field is alpha and can be changed or removed without notice.
 withManagedFieldsMixin(managedFields)
 ```
 
-ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like 'ci-cd'. The set of fields is always in the version that the workflow used when modifying the object.
-
-This field is alpha and can be changed or removed without notice.
+"ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like \"ci-cd\". The set of fields is always in the version that the workflow used when modifying the object.\n\nThis field is alpha and can be changed or removed without notice."
 
 **Note:** This function appends passed data to existing values
 
@@ -382,7 +374,7 @@ This field is alpha and can be changed or removed without notice.
 withName(name)
 ```
 
-Name must be unique within a namespace. Is required when creating resources, although some resources may allow a client to request the generation of an appropriate name automatically. Name is primarily intended for creation idempotence and configuration definition. Cannot be updated. More info: http://kubernetes.io/docs/user-guide/identifiers#names
+"Name must be unique within a namespace. Is required when creating resources, although some resources may allow a client to request the generation of an appropriate name automatically. Name is primarily intended for creation idempotence and configuration definition. Cannot be updated. More info: http://kubernetes.io/docs/user-guide/identifiers#names"
 
 ### fn metadata.withNamespace
 
@@ -390,9 +382,7 @@ Name must be unique within a namespace. Is required when creating resources, alt
 withNamespace(namespace)
 ```
 
-Namespace defines the space within each name must be unique. An empty namespace is equivalent to the "default" namespace, but "default" is the canonical representation. Not all objects are required to be scoped to a namespace - the value of this field for those objects will be empty.
-
-Must be a DNS_LABEL. Cannot be updated. More info: http://kubernetes.io/docs/user-guide/namespaces
+"Namespace defines the space within each name must be unique. An empty namespace is equivalent to the \"default\" namespace, but \"default\" is the canonical representation. Not all objects are required to be scoped to a namespace - the value of this field for those objects will be empty.\n\nMust be a DNS_LABEL. Cannot be updated. More info: http://kubernetes.io/docs/user-guide/namespaces"
 
 ### fn metadata.withOwnerReferences
 
@@ -400,7 +390,7 @@ Must be a DNS_LABEL. Cannot be updated. More info: http://kubernetes.io/docs/use
 withOwnerReferences(ownerReferences)
 ```
 
-List of objects depended by this object. If ALL objects in the list have been deleted, this object will be garbage collected. If this object is managed by a controller, then an entry in this list will point to this controller, with the controller field set to true. There cannot be more than one managing controller.
+"List of objects depended by this object. If ALL objects in the list have been deleted, this object will be garbage collected. If this object is managed by a controller, then an entry in this list will point to this controller, with the controller field set to true. There cannot be more than one managing controller."
 
 ### fn metadata.withOwnerReferencesMixin
 
@@ -408,7 +398,7 @@ List of objects depended by this object. If ALL objects in the list have been de
 withOwnerReferencesMixin(ownerReferences)
 ```
 
-List of objects depended by this object. If ALL objects in the list have been deleted, this object will be garbage collected. If this object is managed by a controller, then an entry in this list will point to this controller, with the controller field set to true. There cannot be more than one managing controller.
+"List of objects depended by this object. If ALL objects in the list have been deleted, this object will be garbage collected. If this object is managed by a controller, then an entry in this list will point to this controller, with the controller field set to true. There cannot be more than one managing controller."
 
 **Note:** This function appends passed data to existing values
 
@@ -418,9 +408,7 @@ List of objects depended by this object. If ALL objects in the list have been de
 withResourceVersion(resourceVersion)
 ```
 
-An opaque value that represents the internal version of this object that can be used by clients to determine when objects have changed. May be used for optimistic concurrency, change detection, and the watch operation on a resource or set of resources. Clients must treat these values as opaque and passed unmodified back to the server. They may only be valid for a particular resource or set of resources.
-
-Populated by the system. Read-only. Value must be treated as opaque by clients and . More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#concurrency-control-and-consistency
+"An opaque value that represents the internal version of this object that can be used by clients to determine when objects have changed. May be used for optimistic concurrency, change detection, and the watch operation on a resource or set of resources. Clients must treat these values as opaque and passed unmodified back to the server. They may only be valid for a particular resource or set of resources.\n\nPopulated by the system. Read-only. Value must be treated as opaque by clients and . More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#concurrency-control-and-consistency"
 
 ### fn metadata.withSelfLink
 
@@ -428,7 +416,7 @@ Populated by the system. Read-only. Value must be treated as opaque by clients a
 withSelfLink(selfLink)
 ```
 
-SelfLink is a URL representing this object. Populated by the system. Read-only.
+"SelfLink is a URL representing this object. Populated by the system. Read-only."
 
 ### fn metadata.withUid
 
@@ -436,13 +424,11 @@ SelfLink is a URL representing this object. Populated by the system. Read-only.
 withUid(uid)
 ```
 
-UID is the unique in time and space value for this object. It is typically generated by the server on successful creation of a resource and is not allowed to change on PUT operations.
-
-Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-guide/identifiers#uids
+"UID is the unique in time and space value for this object. It is typically generated by the server on successful creation of a resource and is not allowed to change on PUT operations.\n\nPopulated by the system. Read-only. More info: http://kubernetes.io/docs/user-guide/identifiers#uids"
 
 ## obj metadata.initializers
 
-Initializers tracks the progress of initialization.
+"Initializers tracks the progress of initialization."
 
 ### fn metadata.initializers.withPending
 
@@ -450,7 +436,7 @@ Initializers tracks the progress of initialization.
 withPending(pending)
 ```
 
-Pending is a list of initializers that must execute in order before this object is visible. When the last pending initializer is removed, and no failing result is set, the initializers struct will be set to nil and the object is considered as initialized and visible to all clients.
+"Pending is a list of initializers that must execute in order before this object is visible. When the last pending initializer is removed, and no failing result is set, the initializers struct will be set to nil and the object is considered as initialized and visible to all clients."
 
 ### fn metadata.initializers.withPendingMixin
 
@@ -458,13 +444,13 @@ Pending is a list of initializers that must execute in order before this object 
 withPendingMixin(pending)
 ```
 
-Pending is a list of initializers that must execute in order before this object is visible. When the last pending initializer is removed, and no failing result is set, the initializers struct will be set to nil and the object is considered as initialized and visible to all clients.
+"Pending is a list of initializers that must execute in order before this object is visible. When the last pending initializer is removed, and no failing result is set, the initializers struct will be set to nil and the object is considered as initialized and visible to all clients."
 
 **Note:** This function appends passed data to existing values
 
 ## obj metadata.initializers.result
 
-Status is a return value for calls that don't return other objects.
+"Status is a return value for calls that don't return other objects."
 
 ### fn metadata.initializers.result.withApiVersion
 
@@ -472,7 +458,7 @@ Status is a return value for calls that don't return other objects.
 withApiVersion(apiVersion)
 ```
 
-APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+"APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#resources"
 
 ### fn metadata.initializers.result.withCode
 
@@ -480,7 +466,7 @@ APIVersion defines the versioned schema of this representation of an object. Ser
 withCode(code)
 ```
 
-Suggested HTTP return code for this status, 0 if not set.
+"Suggested HTTP return code for this status, 0 if not set."
 
 ### fn metadata.initializers.result.withKind
 
@@ -488,7 +474,7 @@ Suggested HTTP return code for this status, 0 if not set.
 withKind(kind)
 ```
 
-Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+"Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds"
 
 ### fn metadata.initializers.result.withMessage
 
@@ -496,7 +482,7 @@ Kind is a string value representing the REST resource this object represents. Se
 withMessage(message)
 ```
 
-A human-readable description of the status of this operation.
+"A human-readable description of the status of this operation."
 
 ### fn metadata.initializers.result.withMetadata
 
@@ -504,7 +490,7 @@ A human-readable description of the status of this operation.
 withMetadata(metadata)
 ```
 
-Standard list metadata. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+"Standard list metadata. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds"
 
 ### fn metadata.initializers.result.withReason
 
@@ -512,11 +498,11 @@ Standard list metadata. More info: https://git.k8s.io/community/contributors/dev
 withReason(reason)
 ```
 
-A machine-readable description of why this operation is in the "Failure" status. If this value is empty there is no information available. A Reason clarifies an HTTP status code but does not override it.
+"A machine-readable description of why this operation is in the \"Failure\" status. If this value is empty there is no information available. A Reason clarifies an HTTP status code but does not override it."
 
 ## obj metadata.initializers.result.details
 
-StatusDetails is a set of additional properties that MAY be set by the server to provide additional information about a response. The Reason field of a Status object defines what attributes will be set. Clients must ignore fields that do not match the defined type of each attribute, and should assume that any attribute may be empty, invalid, or under defined.
+"StatusDetails is a set of additional properties that MAY be set by the server to provide additional information about a response. The Reason field of a Status object defines what attributes will be set. Clients must ignore fields that do not match the defined type of each attribute, and should assume that any attribute may be empty, invalid, or under defined."
 
 ### fn metadata.initializers.result.details.withCauses
 
@@ -524,7 +510,7 @@ StatusDetails is a set of additional properties that MAY be set by the server to
 withCauses(causes)
 ```
 
-The Causes array includes more details associated with the StatusReason failure. Not all StatusReasons may provide detailed causes.
+"The Causes array includes more details associated with the StatusReason failure. Not all StatusReasons may provide detailed causes."
 
 ### fn metadata.initializers.result.details.withCausesMixin
 
@@ -532,7 +518,7 @@ The Causes array includes more details associated with the StatusReason failure.
 withCausesMixin(causes)
 ```
 
-The Causes array includes more details associated with the StatusReason failure. Not all StatusReasons may provide detailed causes.
+"The Causes array includes more details associated with the StatusReason failure. Not all StatusReasons may provide detailed causes."
 
 **Note:** This function appends passed data to existing values
 
@@ -542,7 +528,7 @@ The Causes array includes more details associated with the StatusReason failure.
 withGroup(group)
 ```
 
-The group attribute of the resource associated with the status StatusReason.
+"The group attribute of the resource associated with the status StatusReason."
 
 ### fn metadata.initializers.result.details.withKind
 
@@ -550,7 +536,7 @@ The group attribute of the resource associated with the status StatusReason.
 withKind(kind)
 ```
 
-The kind attribute of the resource associated with the status StatusReason. On some operations may differ from the requested resource Kind. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+"The kind attribute of the resource associated with the status StatusReason. On some operations may differ from the requested resource Kind. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds"
 
 ### fn metadata.initializers.result.details.withName
 
@@ -558,7 +544,7 @@ The kind attribute of the resource associated with the status StatusReason. On s
 withName(name)
 ```
 
-The name attribute of the resource associated with the status StatusReason (when there is a single name which can be described).
+"The name attribute of the resource associated with the status StatusReason (when there is a single name which can be described)."
 
 ### fn metadata.initializers.result.details.withRetryAfterSeconds
 
@@ -566,7 +552,7 @@ The name attribute of the resource associated with the status StatusReason (when
 withRetryAfterSeconds(retryAfterSeconds)
 ```
 
-If specified, the time in seconds before the operation should be retried. Some errors may indicate the client must take an alternate action - for those errors this field may indicate how long to wait before taking the alternate action.
+"If specified, the time in seconds before the operation should be retried. Some errors may indicate the client must take an alternate action - for those errors this field may indicate how long to wait before taking the alternate action."
 
 ### fn metadata.initializers.result.details.withUid
 
@@ -574,11 +560,11 @@ If specified, the time in seconds before the operation should be retried. Some e
 withUid(uid)
 ```
 
-UID of the resource. (when there is a single resource which can be described). More info: http://kubernetes.io/docs/user-guide/identifiers#uids
+"UID of the resource. (when there is a single resource which can be described). More info: http://kubernetes.io/docs/user-guide/identifiers#uids"
 
 ## obj spec
 
-PersistentVolumeSpec is the specification of a persistent volume.
+"PersistentVolumeSpec is the specification of a persistent volume."
 
 ### fn spec.withAccessModes
 
@@ -586,7 +572,7 @@ PersistentVolumeSpec is the specification of a persistent volume.
 withAccessModes(accessModes)
 ```
 
-AccessModes contains all ways the volume can be mounted. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#access-modes
+"AccessModes contains all ways the volume can be mounted. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#access-modes"
 
 ### fn spec.withAccessModesMixin
 
@@ -594,7 +580,7 @@ AccessModes contains all ways the volume can be mounted. More info: https://kube
 withAccessModesMixin(accessModes)
 ```
 
-AccessModes contains all ways the volume can be mounted. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#access-modes
+"AccessModes contains all ways the volume can be mounted. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#access-modes"
 
 **Note:** This function appends passed data to existing values
 
@@ -604,7 +590,7 @@ AccessModes contains all ways the volume can be mounted. More info: https://kube
 withCapacity(capacity)
 ```
 
-A description of the persistent volume's resources and capacity. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#capacity
+"A description of the persistent volume's resources and capacity. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#capacity"
 
 ### fn spec.withCapacityMixin
 
@@ -612,7 +598,7 @@ A description of the persistent volume's resources and capacity. More info: http
 withCapacityMixin(capacity)
 ```
 
-A description of the persistent volume's resources and capacity. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#capacity
+"A description of the persistent volume's resources and capacity. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#capacity"
 
 **Note:** This function appends passed data to existing values
 
@@ -622,7 +608,7 @@ A description of the persistent volume's resources and capacity. More info: http
 withMountOptions(mountOptions)
 ```
 
-A list of mount options, e.g. ["ro", "soft"]. Not validated - mount will simply fail if one is invalid. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes/#mount-options
+"A list of mount options, e.g. [\"ro\", \"soft\"]. Not validated - mount will simply fail if one is invalid. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes/#mount-options"
 
 ### fn spec.withMountOptionsMixin
 
@@ -630,7 +616,7 @@ A list of mount options, e.g. ["ro", "soft"]. Not validated - mount will simply 
 withMountOptionsMixin(mountOptions)
 ```
 
-A list of mount options, e.g. ["ro", "soft"]. Not validated - mount will simply fail if one is invalid. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes/#mount-options
+"A list of mount options, e.g. [\"ro\", \"soft\"]. Not validated - mount will simply fail if one is invalid. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes/#mount-options"
 
 **Note:** This function appends passed data to existing values
 
@@ -640,7 +626,7 @@ A list of mount options, e.g. ["ro", "soft"]. Not validated - mount will simply 
 withPersistentVolumeReclaimPolicy(persistentVolumeReclaimPolicy)
 ```
 
-What happens to a persistent volume when released from its claim. Valid options are Retain (default for manually created PersistentVolumes), Delete (default for dynamically provisioned PersistentVolumes), and Recycle (deprecated). Recycle must be supported by the volume plugin underlying this PersistentVolume. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#reclaiming
+"What happens to a persistent volume when released from its claim. Valid options are Retain (default for manually created PersistentVolumes), Delete (default for dynamically provisioned PersistentVolumes), and Recycle (deprecated). Recycle must be supported by the volume plugin underlying this PersistentVolume. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#reclaiming"
 
 ### fn spec.withStorageClassName
 
@@ -648,7 +634,7 @@ What happens to a persistent volume when released from its claim. Valid options 
 withStorageClassName(storageClassName)
 ```
 
-Name of StorageClass to which this persistent volume belongs. Empty value means that this volume does not belong to any StorageClass.
+"Name of StorageClass to which this persistent volume belongs. Empty value means that this volume does not belong to any StorageClass."
 
 ### fn spec.withVolumeMode
 
@@ -656,13 +642,11 @@ Name of StorageClass to which this persistent volume belongs. Empty value means 
 withVolumeMode(volumeMode)
 ```
 
-volumeMode defines if a volume is intended to be used with a formatted filesystem or to remain in raw block state. Value of Filesystem is implied when not included in spec. This is a beta feature.
+"volumeMode defines if a volume is intended to be used with a formatted filesystem or to remain in raw block state. Value of Filesystem is implied when not included in spec. This is a beta feature."
 
 ## obj spec.awsElasticBlockStore
 
-Represents a Persistent Disk resource in AWS.
-
-An AWS EBS disk must exist before mounting to a container. The disk must also be in the same AWS zone as the kubelet. An AWS EBS disk can only be mounted as read/write once. AWS EBS volumes support ownership management and SELinux relabeling.
+"Represents a Persistent Disk resource in AWS.\n\nAn AWS EBS disk must exist before mounting to a container. The disk must also be in the same AWS zone as the kubelet. An AWS EBS disk can only be mounted as read/write once. AWS EBS volumes support ownership management and SELinux relabeling."
 
 ### fn spec.awsElasticBlockStore.withFsType
 
@@ -670,7 +654,7 @@ An AWS EBS disk must exist before mounting to a container. The disk must also be
 withFsType(fsType)
 ```
 
-Filesystem type of the volume that you want to mount. Tip: Ensure that the filesystem type is supported by the host operating system. Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. More info: https://kubernetes.io/docs/concepts/storage/volumes#awselasticblockstore
+"Filesystem type of the volume that you want to mount. Tip: Ensure that the filesystem type is supported by the host operating system. Examples: \"ext4\", \"xfs\", \"ntfs\". Implicitly inferred to be \"ext4\" if unspecified. More info: https://kubernetes.io/docs/concepts/storage/volumes#awselasticblockstore"
 
 ### fn spec.awsElasticBlockStore.withPartition
 
@@ -678,7 +662,7 @@ Filesystem type of the volume that you want to mount. Tip: Ensure that the files
 withPartition(partition)
 ```
 
-The partition in the volume that you want to mount. If omitted, the default is to mount by volume name. Examples: For volume /dev/sda1, you specify the partition as "1". Similarly, the volume partition for /dev/sda is "0" (or you can leave the property empty).
+"The partition in the volume that you want to mount. If omitted, the default is to mount by volume name. Examples: For volume /dev/sda1, you specify the partition as \"1\". Similarly, the volume partition for /dev/sda is \"0\" (or you can leave the property empty)."
 
 ### fn spec.awsElasticBlockStore.withReadOnly
 
@@ -686,7 +670,7 @@ The partition in the volume that you want to mount. If omitted, the default is t
 withReadOnly(readOnly)
 ```
 
-Specify "true" to force and set the ReadOnly property in VolumeMounts to "true". If omitted, the default is "false". More info: https://kubernetes.io/docs/concepts/storage/volumes#awselasticblockstore
+"Specify \"true\" to force and set the ReadOnly property in VolumeMounts to \"true\". If omitted, the default is \"false\". More info: https://kubernetes.io/docs/concepts/storage/volumes#awselasticblockstore"
 
 ### fn spec.awsElasticBlockStore.withVolumeID
 
@@ -694,11 +678,11 @@ Specify "true" to force and set the ReadOnly property in VolumeMounts to "true".
 withVolumeID(volumeID)
 ```
 
-Unique ID of the persistent disk resource in AWS (Amazon EBS volume). More info: https://kubernetes.io/docs/concepts/storage/volumes#awselasticblockstore
+"Unique ID of the persistent disk resource in AWS (Amazon EBS volume). More info: https://kubernetes.io/docs/concepts/storage/volumes#awselasticblockstore"
 
 ## obj spec.azureDisk
 
-AzureDisk represents an Azure Data Disk mount on the host and bind mount to the pod.
+"AzureDisk represents an Azure Data Disk mount on the host and bind mount to the pod."
 
 ### fn spec.azureDisk.withCachingMode
 
@@ -706,7 +690,7 @@ AzureDisk represents an Azure Data Disk mount on the host and bind mount to the 
 withCachingMode(cachingMode)
 ```
 
-Host Caching mode: None, Read Only, Read Write.
+"Host Caching mode: None, Read Only, Read Write."
 
 ### fn spec.azureDisk.withDiskName
 
@@ -714,7 +698,7 @@ Host Caching mode: None, Read Only, Read Write.
 withDiskName(diskName)
 ```
 
-The Name of the data disk in the blob storage
+"The Name of the data disk in the blob storage"
 
 ### fn spec.azureDisk.withDiskURI
 
@@ -722,7 +706,7 @@ The Name of the data disk in the blob storage
 withDiskURI(diskURI)
 ```
 
-The URI the data disk in the blob storage
+"The URI the data disk in the blob storage"
 
 ### fn spec.azureDisk.withFsType
 
@@ -730,7 +714,7 @@ The URI the data disk in the blob storage
 withFsType(fsType)
 ```
 
-Filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
+"Filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. \"ext4\", \"xfs\", \"ntfs\". Implicitly inferred to be \"ext4\" if unspecified."
 
 ### fn spec.azureDisk.withKind
 
@@ -738,7 +722,7 @@ Filesystem type to mount. Must be a filesystem type supported by the host operat
 withKind(kind)
 ```
 
-Expected values Shared: multiple blob disks per storage account  Dedicated: single blob disk per storage account  Managed: azure managed data disk (only in managed availability set). defaults to shared
+"Expected values Shared: multiple blob disks per storage account  Dedicated: single blob disk per storage account  Managed: azure managed data disk (only in managed availability set). defaults to shared"
 
 ### fn spec.azureDisk.withReadOnly
 
@@ -746,11 +730,11 @@ Expected values Shared: multiple blob disks per storage account  Dedicated: sing
 withReadOnly(readOnly)
 ```
 
-Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts.
+"Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts."
 
 ## obj spec.azureFile
 
-AzureFile represents an Azure File Service mount on the host and bind mount to the pod.
+"AzureFile represents an Azure File Service mount on the host and bind mount to the pod."
 
 ### fn spec.azureFile.withReadOnly
 
@@ -758,7 +742,7 @@ AzureFile represents an Azure File Service mount on the host and bind mount to t
 withReadOnly(readOnly)
 ```
 
-Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts.
+"Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts."
 
 ### fn spec.azureFile.withSecretName
 
@@ -766,7 +750,7 @@ Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in
 withSecretName(secretName)
 ```
 
-the name of secret that contains Azure Storage Account Name and Key
+"the name of secret that contains Azure Storage Account Name and Key"
 
 ### fn spec.azureFile.withSecretNamespace
 
@@ -774,7 +758,7 @@ the name of secret that contains Azure Storage Account Name and Key
 withSecretNamespace(secretNamespace)
 ```
 
-the namespace of the secret that contains Azure Storage Account Name and Key default is the same as the Pod
+"the namespace of the secret that contains Azure Storage Account Name and Key default is the same as the Pod"
 
 ### fn spec.azureFile.withShareName
 
@@ -782,11 +766,11 @@ the namespace of the secret that contains Azure Storage Account Name and Key def
 withShareName(shareName)
 ```
 
-Share Name
+"Share Name"
 
 ## obj spec.cephfs
 
-Represents a Ceph Filesystem mount that lasts the lifetime of a pod Cephfs volumes do not support ownership management or SELinux relabeling.
+"Represents a Ceph Filesystem mount that lasts the lifetime of a pod Cephfs volumes do not support ownership management or SELinux relabeling."
 
 ### fn spec.cephfs.withMonitors
 
@@ -794,7 +778,7 @@ Represents a Ceph Filesystem mount that lasts the lifetime of a pod Cephfs volum
 withMonitors(monitors)
 ```
 
-Required: Monitors is a collection of Ceph monitors More info: https://releases.k8s.io/HEAD/examples/volumes/cephfs/README.md#how-to-use-it
+"Required: Monitors is a collection of Ceph monitors More info: https://releases.k8s.io/HEAD/examples/volumes/cephfs/README.md#how-to-use-it"
 
 ### fn spec.cephfs.withMonitorsMixin
 
@@ -802,7 +786,7 @@ Required: Monitors is a collection of Ceph monitors More info: https://releases.
 withMonitorsMixin(monitors)
 ```
 
-Required: Monitors is a collection of Ceph monitors More info: https://releases.k8s.io/HEAD/examples/volumes/cephfs/README.md#how-to-use-it
+"Required: Monitors is a collection of Ceph monitors More info: https://releases.k8s.io/HEAD/examples/volumes/cephfs/README.md#how-to-use-it"
 
 **Note:** This function appends passed data to existing values
 
@@ -812,7 +796,7 @@ Required: Monitors is a collection of Ceph monitors More info: https://releases.
 withPath(path)
 ```
 
-Optional: Used as the mounted root, rather than the full Ceph tree, default is /
+"Optional: Used as the mounted root, rather than the full Ceph tree, default is /"
 
 ### fn spec.cephfs.withReadOnly
 
@@ -820,7 +804,7 @@ Optional: Used as the mounted root, rather than the full Ceph tree, default is /
 withReadOnly(readOnly)
 ```
 
-Optional: Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts. More info: https://releases.k8s.io/HEAD/examples/volumes/cephfs/README.md#how-to-use-it
+"Optional: Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts. More info: https://releases.k8s.io/HEAD/examples/volumes/cephfs/README.md#how-to-use-it"
 
 ### fn spec.cephfs.withSecretFile
 
@@ -828,7 +812,7 @@ Optional: Defaults to false (read/write). ReadOnly here will force the ReadOnly 
 withSecretFile(secretFile)
 ```
 
-Optional: SecretFile is the path to key ring for User, default is /etc/ceph/user.secret More info: https://releases.k8s.io/HEAD/examples/volumes/cephfs/README.md#how-to-use-it
+"Optional: SecretFile is the path to key ring for User, default is /etc/ceph/user.secret More info: https://releases.k8s.io/HEAD/examples/volumes/cephfs/README.md#how-to-use-it"
 
 ### fn spec.cephfs.withUser
 
@@ -836,11 +820,11 @@ Optional: SecretFile is the path to key ring for User, default is /etc/ceph/user
 withUser(user)
 ```
 
-Optional: User is the rados user name, default is admin More info: https://releases.k8s.io/HEAD/examples/volumes/cephfs/README.md#how-to-use-it
+"Optional: User is the rados user name, default is admin More info: https://releases.k8s.io/HEAD/examples/volumes/cephfs/README.md#how-to-use-it"
 
 ## obj spec.cephfs.secretRef
 
-SecretReference represents a Secret Reference. It has enough information to retrieve secret in any namespace
+"SecretReference represents a Secret Reference. It has enough information to retrieve secret in any namespace"
 
 ### fn spec.cephfs.secretRef.withName
 
@@ -848,7 +832,7 @@ SecretReference represents a Secret Reference. It has enough information to retr
 withName(name)
 ```
 
-Name is unique within a namespace to reference a secret resource.
+"Name is unique within a namespace to reference a secret resource."
 
 ### fn spec.cephfs.secretRef.withNamespace
 
@@ -856,11 +840,11 @@ Name is unique within a namespace to reference a secret resource.
 withNamespace(namespace)
 ```
 
-Namespace defines the space within which the secret name must be unique.
+"Namespace defines the space within which the secret name must be unique."
 
 ## obj spec.cinder
 
-Represents a cinder volume resource in Openstack. A Cinder volume must exist before mounting to a container. The volume must also be in the same region as the kubelet. Cinder volumes support ownership management and SELinux relabeling.
+"Represents a cinder volume resource in Openstack. A Cinder volume must exist before mounting to a container. The volume must also be in the same region as the kubelet. Cinder volumes support ownership management and SELinux relabeling."
 
 ### fn spec.cinder.withFsType
 
@@ -868,7 +852,7 @@ Represents a cinder volume resource in Openstack. A Cinder volume must exist bef
 withFsType(fsType)
 ```
 
-Filesystem type to mount. Must be a filesystem type supported by the host operating system. Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. More info: https://releases.k8s.io/HEAD/examples/mysql-cinder-pd/README.md
+"Filesystem type to mount. Must be a filesystem type supported by the host operating system. Examples: \"ext4\", \"xfs\", \"ntfs\". Implicitly inferred to be \"ext4\" if unspecified. More info: https://releases.k8s.io/HEAD/examples/mysql-cinder-pd/README.md"
 
 ### fn spec.cinder.withReadOnly
 
@@ -876,7 +860,7 @@ Filesystem type to mount. Must be a filesystem type supported by the host operat
 withReadOnly(readOnly)
 ```
 
-Optional: Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts. More info: https://releases.k8s.io/HEAD/examples/mysql-cinder-pd/README.md
+"Optional: Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts. More info: https://releases.k8s.io/HEAD/examples/mysql-cinder-pd/README.md"
 
 ### fn spec.cinder.withVolumeID
 
@@ -884,11 +868,11 @@ Optional: Defaults to false (read/write). ReadOnly here will force the ReadOnly 
 withVolumeID(volumeID)
 ```
 
-volume id used to identify the volume in cinder More info: https://releases.k8s.io/HEAD/examples/mysql-cinder-pd/README.md
+"volume id used to identify the volume in cinder More info: https://releases.k8s.io/HEAD/examples/mysql-cinder-pd/README.md"
 
 ## obj spec.cinder.secretRef
 
-SecretReference represents a Secret Reference. It has enough information to retrieve secret in any namespace
+"SecretReference represents a Secret Reference. It has enough information to retrieve secret in any namespace"
 
 ### fn spec.cinder.secretRef.withName
 
@@ -896,7 +880,7 @@ SecretReference represents a Secret Reference. It has enough information to retr
 withName(name)
 ```
 
-Name is unique within a namespace to reference a secret resource.
+"Name is unique within a namespace to reference a secret resource."
 
 ### fn spec.cinder.secretRef.withNamespace
 
@@ -904,11 +888,11 @@ Name is unique within a namespace to reference a secret resource.
 withNamespace(namespace)
 ```
 
-Namespace defines the space within which the secret name must be unique.
+"Namespace defines the space within which the secret name must be unique."
 
 ## obj spec.claimRef
 
-ObjectReference contains enough information to let you inspect or modify the referred object.
+"ObjectReference contains enough information to let you inspect or modify the referred object."
 
 ### fn spec.claimRef.withApiVersion
 
@@ -916,7 +900,7 @@ ObjectReference contains enough information to let you inspect or modify the ref
 withApiVersion(apiVersion)
 ```
 
-API version of the referent.
+"API version of the referent."
 
 ### fn spec.claimRef.withFieldPath
 
@@ -924,7 +908,7 @@ API version of the referent.
 withFieldPath(fieldPath)
 ```
 
-If referring to a piece of an object instead of an entire object, this string should contain a valid JSON/Go field access statement, such as desiredState.manifest.containers[2]. For example, if the object reference is to a container within a pod, this would take on a value like: "spec.containers{name}" (where "name" refers to the name of the container that triggered the event) or if no container name is specified "spec.containers[2]" (container with index 2 in this pod). This syntax is chosen only to have some well-defined way of referencing a part of an object.
+"If referring to a piece of an object instead of an entire object, this string should contain a valid JSON/Go field access statement, such as desiredState.manifest.containers[2]. For example, if the object reference is to a container within a pod, this would take on a value like: \"spec.containers{name}\" (where \"name\" refers to the name of the container that triggered the event) or if no container name is specified \"spec.containers[2]\" (container with index 2 in this pod). This syntax is chosen only to have some well-defined way of referencing a part of an object."
 
 ### fn spec.claimRef.withKind
 
@@ -932,7 +916,7 @@ If referring to a piece of an object instead of an entire object, this string sh
 withKind(kind)
 ```
 
-Kind of the referent. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+"Kind of the referent. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds"
 
 ### fn spec.claimRef.withName
 
@@ -940,7 +924,7 @@ Kind of the referent. More info: https://git.k8s.io/community/contributors/devel
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn spec.claimRef.withNamespace
 
@@ -948,7 +932,7 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withNamespace(namespace)
 ```
 
-Namespace of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/
+"Namespace of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/"
 
 ### fn spec.claimRef.withResourceVersion
 
@@ -956,7 +940,7 @@ Namespace of the referent. More info: https://kubernetes.io/docs/concepts/overvi
 withResourceVersion(resourceVersion)
 ```
 
-Specific resourceVersion to which this reference is made, if any. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#concurrency-control-and-consistency
+"Specific resourceVersion to which this reference is made, if any. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#concurrency-control-and-consistency"
 
 ### fn spec.claimRef.withUid
 
@@ -964,11 +948,11 @@ Specific resourceVersion to which this reference is made, if any. More info: htt
 withUid(uid)
 ```
 
-UID of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#uids
+"UID of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#uids"
 
 ## obj spec.csi
 
-Represents storage that is managed by an external CSI volume driver (Beta feature)
+"Represents storage that is managed by an external CSI volume driver (Beta feature)"
 
 ### fn spec.csi.withDriver
 
@@ -976,7 +960,7 @@ Represents storage that is managed by an external CSI volume driver (Beta featur
 withDriver(driver)
 ```
 
-Driver is the name of the driver to use for this volume. Required.
+"Driver is the name of the driver to use for this volume. Required."
 
 ### fn spec.csi.withFsType
 
@@ -984,7 +968,7 @@ Driver is the name of the driver to use for this volume. Required.
 withFsType(fsType)
 ```
 
-Filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs".
+"Filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. \"ext4\", \"xfs\", \"ntfs\"."
 
 ### fn spec.csi.withReadOnly
 
@@ -992,7 +976,7 @@ Filesystem type to mount. Must be a filesystem type supported by the host operat
 withReadOnly(readOnly)
 ```
 
-Optional: The value to pass to ControllerPublishVolumeRequest. Defaults to false (read/write).
+"Optional: The value to pass to ControllerPublishVolumeRequest. Defaults to false (read/write)."
 
 ### fn spec.csi.withVolumeAttributes
 
@@ -1000,7 +984,7 @@ Optional: The value to pass to ControllerPublishVolumeRequest. Defaults to false
 withVolumeAttributes(volumeAttributes)
 ```
 
-Attributes of the volume to publish.
+"Attributes of the volume to publish."
 
 ### fn spec.csi.withVolumeAttributesMixin
 
@@ -1008,7 +992,7 @@ Attributes of the volume to publish.
 withVolumeAttributesMixin(volumeAttributes)
 ```
 
-Attributes of the volume to publish.
+"Attributes of the volume to publish."
 
 **Note:** This function appends passed data to existing values
 
@@ -1018,11 +1002,11 @@ Attributes of the volume to publish.
 withVolumeHandle(volumeHandle)
 ```
 
-VolumeHandle is the unique volume name returned by the CSI volume plugin’s CreateVolume to refer to the volume on all subsequent calls. Required.
+"VolumeHandle is the unique volume name returned by the CSI volume plugin’s CreateVolume to refer to the volume on all subsequent calls. Required."
 
 ## obj spec.csi.controllerPublishSecretRef
 
-SecretReference represents a Secret Reference. It has enough information to retrieve secret in any namespace
+"SecretReference represents a Secret Reference. It has enough information to retrieve secret in any namespace"
 
 ### fn spec.csi.controllerPublishSecretRef.withName
 
@@ -1030,7 +1014,7 @@ SecretReference represents a Secret Reference. It has enough information to retr
 withName(name)
 ```
 
-Name is unique within a namespace to reference a secret resource.
+"Name is unique within a namespace to reference a secret resource."
 
 ### fn spec.csi.controllerPublishSecretRef.withNamespace
 
@@ -1038,11 +1022,11 @@ Name is unique within a namespace to reference a secret resource.
 withNamespace(namespace)
 ```
 
-Namespace defines the space within which the secret name must be unique.
+"Namespace defines the space within which the secret name must be unique."
 
 ## obj spec.csi.nodePublishSecretRef
 
-SecretReference represents a Secret Reference. It has enough information to retrieve secret in any namespace
+"SecretReference represents a Secret Reference. It has enough information to retrieve secret in any namespace"
 
 ### fn spec.csi.nodePublishSecretRef.withName
 
@@ -1050,7 +1034,7 @@ SecretReference represents a Secret Reference. It has enough information to retr
 withName(name)
 ```
 
-Name is unique within a namespace to reference a secret resource.
+"Name is unique within a namespace to reference a secret resource."
 
 ### fn spec.csi.nodePublishSecretRef.withNamespace
 
@@ -1058,11 +1042,11 @@ Name is unique within a namespace to reference a secret resource.
 withNamespace(namespace)
 ```
 
-Namespace defines the space within which the secret name must be unique.
+"Namespace defines the space within which the secret name must be unique."
 
 ## obj spec.csi.nodeStageSecretRef
 
-SecretReference represents a Secret Reference. It has enough information to retrieve secret in any namespace
+"SecretReference represents a Secret Reference. It has enough information to retrieve secret in any namespace"
 
 ### fn spec.csi.nodeStageSecretRef.withName
 
@@ -1070,7 +1054,7 @@ SecretReference represents a Secret Reference. It has enough information to retr
 withName(name)
 ```
 
-Name is unique within a namespace to reference a secret resource.
+"Name is unique within a namespace to reference a secret resource."
 
 ### fn spec.csi.nodeStageSecretRef.withNamespace
 
@@ -1078,11 +1062,11 @@ Name is unique within a namespace to reference a secret resource.
 withNamespace(namespace)
 ```
 
-Namespace defines the space within which the secret name must be unique.
+"Namespace defines the space within which the secret name must be unique."
 
 ## obj spec.fc
 
-Represents a Fibre Channel volume. Fibre Channel volumes can only be mounted as read/write once. Fibre Channel volumes support ownership management and SELinux relabeling.
+"Represents a Fibre Channel volume. Fibre Channel volumes can only be mounted as read/write once. Fibre Channel volumes support ownership management and SELinux relabeling."
 
 ### fn spec.fc.withFsType
 
@@ -1090,7 +1074,7 @@ Represents a Fibre Channel volume. Fibre Channel volumes can only be mounted as 
 withFsType(fsType)
 ```
 
-Filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
+"Filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. \"ext4\", \"xfs\", \"ntfs\". Implicitly inferred to be \"ext4\" if unspecified."
 
 ### fn spec.fc.withLun
 
@@ -1098,7 +1082,7 @@ Filesystem type to mount. Must be a filesystem type supported by the host operat
 withLun(lun)
 ```
 
-Optional: FC target lun number
+"Optional: FC target lun number"
 
 ### fn spec.fc.withReadOnly
 
@@ -1106,7 +1090,7 @@ Optional: FC target lun number
 withReadOnly(readOnly)
 ```
 
-Optional: Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts.
+"Optional: Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts."
 
 ### fn spec.fc.withTargetWWNs
 
@@ -1114,7 +1098,7 @@ Optional: Defaults to false (read/write). ReadOnly here will force the ReadOnly 
 withTargetWWNs(targetWWNs)
 ```
 
-Optional: FC target worldwide names (WWNs)
+"Optional: FC target worldwide names (WWNs)"
 
 ### fn spec.fc.withTargetWWNsMixin
 
@@ -1122,7 +1106,7 @@ Optional: FC target worldwide names (WWNs)
 withTargetWWNsMixin(targetWWNs)
 ```
 
-Optional: FC target worldwide names (WWNs)
+"Optional: FC target worldwide names (WWNs)"
 
 **Note:** This function appends passed data to existing values
 
@@ -1132,7 +1116,7 @@ Optional: FC target worldwide names (WWNs)
 withWwids(wwids)
 ```
 
-Optional: FC volume world wide identifiers (wwids) Either wwids or combination of targetWWNs and lun must be set, but not both simultaneously.
+"Optional: FC volume world wide identifiers (wwids) Either wwids or combination of targetWWNs and lun must be set, but not both simultaneously."
 
 ### fn spec.fc.withWwidsMixin
 
@@ -1140,13 +1124,13 @@ Optional: FC volume world wide identifiers (wwids) Either wwids or combination o
 withWwidsMixin(wwids)
 ```
 
-Optional: FC volume world wide identifiers (wwids) Either wwids or combination of targetWWNs and lun must be set, but not both simultaneously.
+"Optional: FC volume world wide identifiers (wwids) Either wwids or combination of targetWWNs and lun must be set, but not both simultaneously."
 
 **Note:** This function appends passed data to existing values
 
 ## obj spec.flexVolume
 
-FlexPersistentVolumeSource represents a generic persistent volume resource that is provisioned/attached using an exec based plugin.
+"FlexPersistentVolumeSource represents a generic persistent volume resource that is provisioned/attached using an exec based plugin."
 
 ### fn spec.flexVolume.withDriver
 
@@ -1154,7 +1138,7 @@ FlexPersistentVolumeSource represents a generic persistent volume resource that 
 withDriver(driver)
 ```
 
-Driver is the name of the driver to use for this volume.
+"Driver is the name of the driver to use for this volume."
 
 ### fn spec.flexVolume.withFsType
 
@@ -1162,7 +1146,7 @@ Driver is the name of the driver to use for this volume.
 withFsType(fsType)
 ```
 
-Filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". The default filesystem depends on FlexVolume script.
+"Filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. \"ext4\", \"xfs\", \"ntfs\". The default filesystem depends on FlexVolume script."
 
 ### fn spec.flexVolume.withOptions
 
@@ -1170,7 +1154,7 @@ Filesystem type to mount. Must be a filesystem type supported by the host operat
 withOptions(options)
 ```
 
-Optional: Extra command options if any.
+"Optional: Extra command options if any."
 
 ### fn spec.flexVolume.withOptionsMixin
 
@@ -1178,7 +1162,7 @@ Optional: Extra command options if any.
 withOptionsMixin(options)
 ```
 
-Optional: Extra command options if any.
+"Optional: Extra command options if any."
 
 **Note:** This function appends passed data to existing values
 
@@ -1188,11 +1172,11 @@ Optional: Extra command options if any.
 withReadOnly(readOnly)
 ```
 
-Optional: Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts.
+"Optional: Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts."
 
 ## obj spec.flexVolume.secretRef
 
-SecretReference represents a Secret Reference. It has enough information to retrieve secret in any namespace
+"SecretReference represents a Secret Reference. It has enough information to retrieve secret in any namespace"
 
 ### fn spec.flexVolume.secretRef.withName
 
@@ -1200,7 +1184,7 @@ SecretReference represents a Secret Reference. It has enough information to retr
 withName(name)
 ```
 
-Name is unique within a namespace to reference a secret resource.
+"Name is unique within a namespace to reference a secret resource."
 
 ### fn spec.flexVolume.secretRef.withNamespace
 
@@ -1208,11 +1192,11 @@ Name is unique within a namespace to reference a secret resource.
 withNamespace(namespace)
 ```
 
-Namespace defines the space within which the secret name must be unique.
+"Namespace defines the space within which the secret name must be unique."
 
 ## obj spec.flocker
 
-Represents a Flocker volume mounted by the Flocker agent. One and only one of datasetName and datasetUUID should be set. Flocker volumes do not support ownership management or SELinux relabeling.
+"Represents a Flocker volume mounted by the Flocker agent. One and only one of datasetName and datasetUUID should be set. Flocker volumes do not support ownership management or SELinux relabeling."
 
 ### fn spec.flocker.withDatasetName
 
@@ -1220,7 +1204,7 @@ Represents a Flocker volume mounted by the Flocker agent. One and only one of da
 withDatasetName(datasetName)
 ```
 
-Name of the dataset stored as metadata -> name on the dataset for Flocker should be considered as deprecated
+"Name of the dataset stored as metadata -> name on the dataset for Flocker should be considered as deprecated"
 
 ### fn spec.flocker.withDatasetUUID
 
@@ -1228,13 +1212,11 @@ Name of the dataset stored as metadata -> name on the dataset for Flocker should
 withDatasetUUID(datasetUUID)
 ```
 
-UUID of the dataset. This is unique identifier of a Flocker dataset
+"UUID of the dataset. This is unique identifier of a Flocker dataset"
 
 ## obj spec.gcePersistentDisk
 
-Represents a Persistent Disk resource in Google Compute Engine.
-
-A GCE PD must exist before mounting to a container. The disk must also be in the same GCE project and zone as the kubelet. A GCE PD can only be mounted as read/write once or read-only many times. GCE PDs support ownership management and SELinux relabeling.
+"Represents a Persistent Disk resource in Google Compute Engine.\n\nA GCE PD must exist before mounting to a container. The disk must also be in the same GCE project and zone as the kubelet. A GCE PD can only be mounted as read/write once or read-only many times. GCE PDs support ownership management and SELinux relabeling."
 
 ### fn spec.gcePersistentDisk.withFsType
 
@@ -1242,7 +1224,7 @@ A GCE PD must exist before mounting to a container. The disk must also be in the
 withFsType(fsType)
 ```
 
-Filesystem type of the volume that you want to mount. Tip: Ensure that the filesystem type is supported by the host operating system. Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. More info: https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk
+"Filesystem type of the volume that you want to mount. Tip: Ensure that the filesystem type is supported by the host operating system. Examples: \"ext4\", \"xfs\", \"ntfs\". Implicitly inferred to be \"ext4\" if unspecified. More info: https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk"
 
 ### fn spec.gcePersistentDisk.withPartition
 
@@ -1250,7 +1232,7 @@ Filesystem type of the volume that you want to mount. Tip: Ensure that the files
 withPartition(partition)
 ```
 
-The partition in the volume that you want to mount. If omitted, the default is to mount by volume name. Examples: For volume /dev/sda1, you specify the partition as "1". Similarly, the volume partition for /dev/sda is "0" (or you can leave the property empty). More info: https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk
+"The partition in the volume that you want to mount. If omitted, the default is to mount by volume name. Examples: For volume /dev/sda1, you specify the partition as \"1\". Similarly, the volume partition for /dev/sda is \"0\" (or you can leave the property empty). More info: https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk"
 
 ### fn spec.gcePersistentDisk.withPdName
 
@@ -1258,7 +1240,7 @@ The partition in the volume that you want to mount. If omitted, the default is t
 withPdName(pdName)
 ```
 
-Unique name of the PD resource in GCE. Used to identify the disk in GCE. More info: https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk
+"Unique name of the PD resource in GCE. Used to identify the disk in GCE. More info: https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk"
 
 ### fn spec.gcePersistentDisk.withReadOnly
 
@@ -1266,11 +1248,11 @@ Unique name of the PD resource in GCE. Used to identify the disk in GCE. More in
 withReadOnly(readOnly)
 ```
 
-ReadOnly here will force the ReadOnly setting in VolumeMounts. Defaults to false. More info: https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk
+"ReadOnly here will force the ReadOnly setting in VolumeMounts. Defaults to false. More info: https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk"
 
 ## obj spec.glusterfs
 
-Represents a Glusterfs mount that lasts the lifetime of a pod. Glusterfs volumes do not support ownership management or SELinux relabeling.
+"Represents a Glusterfs mount that lasts the lifetime of a pod. Glusterfs volumes do not support ownership management or SELinux relabeling."
 
 ### fn spec.glusterfs.withEndpoints
 
@@ -1278,7 +1260,7 @@ Represents a Glusterfs mount that lasts the lifetime of a pod. Glusterfs volumes
 withEndpoints(endpoints)
 ```
 
-EndpointsName is the endpoint name that details Glusterfs topology. More info: https://releases.k8s.io/HEAD/examples/volumes/glusterfs/README.md#create-a-pod
+"EndpointsName is the endpoint name that details Glusterfs topology. More info: https://releases.k8s.io/HEAD/examples/volumes/glusterfs/README.md#create-a-pod"
 
 ### fn spec.glusterfs.withEndpointsNamespace
 
@@ -1286,7 +1268,7 @@ EndpointsName is the endpoint name that details Glusterfs topology. More info: h
 withEndpointsNamespace(endpointsNamespace)
 ```
 
-EndpointsNamespace is the namespace that contains Glusterfs endpoint. If this field is empty, the EndpointNamespace defaults to the same namespace as the bound PVC. More info: https://releases.k8s.io/HEAD/examples/volumes/glusterfs/README.md#create-a-pod
+"EndpointsNamespace is the namespace that contains Glusterfs endpoint. If this field is empty, the EndpointNamespace defaults to the same namespace as the bound PVC. More info: https://releases.k8s.io/HEAD/examples/volumes/glusterfs/README.md#create-a-pod"
 
 ### fn spec.glusterfs.withPath
 
@@ -1294,7 +1276,7 @@ EndpointsNamespace is the namespace that contains Glusterfs endpoint. If this fi
 withPath(path)
 ```
 
-Path is the Glusterfs volume path. More info: https://releases.k8s.io/HEAD/examples/volumes/glusterfs/README.md#create-a-pod
+"Path is the Glusterfs volume path. More info: https://releases.k8s.io/HEAD/examples/volumes/glusterfs/README.md#create-a-pod"
 
 ### fn spec.glusterfs.withReadOnly
 
@@ -1302,11 +1284,11 @@ Path is the Glusterfs volume path. More info: https://releases.k8s.io/HEAD/examp
 withReadOnly(readOnly)
 ```
 
-ReadOnly here will force the Glusterfs volume to be mounted with read-only permissions. Defaults to false. More info: https://releases.k8s.io/HEAD/examples/volumes/glusterfs/README.md#create-a-pod
+"ReadOnly here will force the Glusterfs volume to be mounted with read-only permissions. Defaults to false. More info: https://releases.k8s.io/HEAD/examples/volumes/glusterfs/README.md#create-a-pod"
 
 ## obj spec.hostPath
 
-Represents a host path mapped into a pod. Host path volumes do not support ownership management or SELinux relabeling.
+"Represents a host path mapped into a pod. Host path volumes do not support ownership management or SELinux relabeling."
 
 ### fn spec.hostPath.withPath
 
@@ -1314,7 +1296,7 @@ Represents a host path mapped into a pod. Host path volumes do not support owner
 withPath(path)
 ```
 
-Path of the directory on the host. If the path is a symlink, it will follow the link to the real path. More info: https://kubernetes.io/docs/concepts/storage/volumes#hostpath
+"Path of the directory on the host. If the path is a symlink, it will follow the link to the real path. More info: https://kubernetes.io/docs/concepts/storage/volumes#hostpath"
 
 ### fn spec.hostPath.withType
 
@@ -1322,11 +1304,11 @@ Path of the directory on the host. If the path is a symlink, it will follow the 
 withType(type)
 ```
 
-Type for HostPath Volume Defaults to "" More info: https://kubernetes.io/docs/concepts/storage/volumes#hostpath
+"Type for HostPath Volume Defaults to \"\" More info: https://kubernetes.io/docs/concepts/storage/volumes#hostpath"
 
 ## obj spec.iscsi
 
-ISCSIPersistentVolumeSource represents an ISCSI disk. ISCSI volumes can only be mounted as read/write once. ISCSI volumes support ownership management and SELinux relabeling.
+"ISCSIPersistentVolumeSource represents an ISCSI disk. ISCSI volumes can only be mounted as read/write once. ISCSI volumes support ownership management and SELinux relabeling."
 
 ### fn spec.iscsi.withChapAuthDiscovery
 
@@ -1334,7 +1316,7 @@ ISCSIPersistentVolumeSource represents an ISCSI disk. ISCSI volumes can only be 
 withChapAuthDiscovery(chapAuthDiscovery)
 ```
 
-whether support iSCSI Discovery CHAP authentication
+"whether support iSCSI Discovery CHAP authentication"
 
 ### fn spec.iscsi.withChapAuthSession
 
@@ -1342,7 +1324,7 @@ whether support iSCSI Discovery CHAP authentication
 withChapAuthSession(chapAuthSession)
 ```
 
-whether support iSCSI Session CHAP authentication
+"whether support iSCSI Session CHAP authentication"
 
 ### fn spec.iscsi.withFsType
 
@@ -1350,7 +1332,7 @@ whether support iSCSI Session CHAP authentication
 withFsType(fsType)
 ```
 
-Filesystem type of the volume that you want to mount. Tip: Ensure that the filesystem type is supported by the host operating system. Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. More info: https://kubernetes.io/docs/concepts/storage/volumes#iscsi
+"Filesystem type of the volume that you want to mount. Tip: Ensure that the filesystem type is supported by the host operating system. Examples: \"ext4\", \"xfs\", \"ntfs\". Implicitly inferred to be \"ext4\" if unspecified. More info: https://kubernetes.io/docs/concepts/storage/volumes#iscsi"
 
 ### fn spec.iscsi.withInitiatorName
 
@@ -1358,7 +1340,7 @@ Filesystem type of the volume that you want to mount. Tip: Ensure that the files
 withInitiatorName(initiatorName)
 ```
 
-Custom iSCSI Initiator Name. If initiatorName is specified with iscsiInterface simultaneously, new iSCSI interface <target portal>:<volume name> will be created for the connection.
+"Custom iSCSI Initiator Name. If initiatorName is specified with iscsiInterface simultaneously, new iSCSI interface <target portal>:<volume name> will be created for the connection."
 
 ### fn spec.iscsi.withIqn
 
@@ -1366,7 +1348,7 @@ Custom iSCSI Initiator Name. If initiatorName is specified with iscsiInterface s
 withIqn(iqn)
 ```
 
-Target iSCSI Qualified Name.
+"Target iSCSI Qualified Name."
 
 ### fn spec.iscsi.withIscsiInterface
 
@@ -1374,7 +1356,7 @@ Target iSCSI Qualified Name.
 withIscsiInterface(iscsiInterface)
 ```
 
-iSCSI Interface Name that uses an iSCSI transport. Defaults to 'default' (tcp).
+"iSCSI Interface Name that uses an iSCSI transport. Defaults to 'default' (tcp)."
 
 ### fn spec.iscsi.withLun
 
@@ -1382,7 +1364,7 @@ iSCSI Interface Name that uses an iSCSI transport. Defaults to 'default' (tcp).
 withLun(lun)
 ```
 
-iSCSI Target Lun number.
+"iSCSI Target Lun number."
 
 ### fn spec.iscsi.withPortals
 
@@ -1390,7 +1372,7 @@ iSCSI Target Lun number.
 withPortals(portals)
 ```
 
-iSCSI Target Portal List. The Portal is either an IP or ip_addr:port if the port is other than default (typically TCP ports 860 and 3260).
+"iSCSI Target Portal List. The Portal is either an IP or ip_addr:port if the port is other than default (typically TCP ports 860 and 3260)."
 
 ### fn spec.iscsi.withPortalsMixin
 
@@ -1398,7 +1380,7 @@ iSCSI Target Portal List. The Portal is either an IP or ip_addr:port if the port
 withPortalsMixin(portals)
 ```
 
-iSCSI Target Portal List. The Portal is either an IP or ip_addr:port if the port is other than default (typically TCP ports 860 and 3260).
+"iSCSI Target Portal List. The Portal is either an IP or ip_addr:port if the port is other than default (typically TCP ports 860 and 3260)."
 
 **Note:** This function appends passed data to existing values
 
@@ -1408,7 +1390,7 @@ iSCSI Target Portal List. The Portal is either an IP or ip_addr:port if the port
 withReadOnly(readOnly)
 ```
 
-ReadOnly here will force the ReadOnly setting in VolumeMounts. Defaults to false.
+"ReadOnly here will force the ReadOnly setting in VolumeMounts. Defaults to false."
 
 ### fn spec.iscsi.withTargetPortal
 
@@ -1416,11 +1398,11 @@ ReadOnly here will force the ReadOnly setting in VolumeMounts. Defaults to false
 withTargetPortal(targetPortal)
 ```
 
-iSCSI Target Portal. The Portal is either an IP or ip_addr:port if the port is other than default (typically TCP ports 860 and 3260).
+"iSCSI Target Portal. The Portal is either an IP or ip_addr:port if the port is other than default (typically TCP ports 860 and 3260)."
 
 ## obj spec.iscsi.secretRef
 
-SecretReference represents a Secret Reference. It has enough information to retrieve secret in any namespace
+"SecretReference represents a Secret Reference. It has enough information to retrieve secret in any namespace"
 
 ### fn spec.iscsi.secretRef.withName
 
@@ -1428,7 +1410,7 @@ SecretReference represents a Secret Reference. It has enough information to retr
 withName(name)
 ```
 
-Name is unique within a namespace to reference a secret resource.
+"Name is unique within a namespace to reference a secret resource."
 
 ### fn spec.iscsi.secretRef.withNamespace
 
@@ -1436,11 +1418,11 @@ Name is unique within a namespace to reference a secret resource.
 withNamespace(namespace)
 ```
 
-Namespace defines the space within which the secret name must be unique.
+"Namespace defines the space within which the secret name must be unique."
 
 ## obj spec.local
 
-Local represents directly-attached storage with node affinity (Beta feature)
+"Local represents directly-attached storage with node affinity (Beta feature)"
 
 ### fn spec.local.withFsType
 
@@ -1448,7 +1430,7 @@ Local represents directly-attached storage with node affinity (Beta feature)
 withFsType(fsType)
 ```
 
-Filesystem type to mount. It applies only when the Path is a block device. Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". The default value is to auto-select a fileystem if unspecified.
+"Filesystem type to mount. It applies only when the Path is a block device. Must be a filesystem type supported by the host operating system. Ex. \"ext4\", \"xfs\", \"ntfs\". The default value is to auto-select a fileystem if unspecified."
 
 ### fn spec.local.withPath
 
@@ -1456,11 +1438,11 @@ Filesystem type to mount. It applies only when the Path is a block device. Must 
 withPath(path)
 ```
 
-The full path to the volume on the node. It can be either a directory or block device (disk, partition, ...).
+"The full path to the volume on the node. It can be either a directory or block device (disk, partition, ...)."
 
 ## obj spec.nfs
 
-Represents an NFS mount that lasts the lifetime of a pod. NFS volumes do not support ownership management or SELinux relabeling.
+"Represents an NFS mount that lasts the lifetime of a pod. NFS volumes do not support ownership management or SELinux relabeling."
 
 ### fn spec.nfs.withPath
 
@@ -1468,7 +1450,7 @@ Represents an NFS mount that lasts the lifetime of a pod. NFS volumes do not sup
 withPath(path)
 ```
 
-Path that is exported by the NFS server. More info: https://kubernetes.io/docs/concepts/storage/volumes#nfs
+"Path that is exported by the NFS server. More info: https://kubernetes.io/docs/concepts/storage/volumes#nfs"
 
 ### fn spec.nfs.withReadOnly
 
@@ -1476,7 +1458,7 @@ Path that is exported by the NFS server. More info: https://kubernetes.io/docs/c
 withReadOnly(readOnly)
 ```
 
-ReadOnly here will force the NFS export to be mounted with read-only permissions. Defaults to false. More info: https://kubernetes.io/docs/concepts/storage/volumes#nfs
+"ReadOnly here will force the NFS export to be mounted with read-only permissions. Defaults to false. More info: https://kubernetes.io/docs/concepts/storage/volumes#nfs"
 
 ### fn spec.nfs.withServer
 
@@ -1484,15 +1466,15 @@ ReadOnly here will force the NFS export to be mounted with read-only permissions
 withServer(server)
 ```
 
-Server is the hostname or IP address of the NFS server. More info: https://kubernetes.io/docs/concepts/storage/volumes#nfs
+"Server is the hostname or IP address of the NFS server. More info: https://kubernetes.io/docs/concepts/storage/volumes#nfs"
 
 ## obj spec.nodeAffinity
 
-VolumeNodeAffinity defines constraints that limit what nodes this volume can be accessed from.
+"VolumeNodeAffinity defines constraints that limit what nodes this volume can be accessed from."
 
 ## obj spec.nodeAffinity.required
 
-A node selector represents the union of the results of one or more label queries over a set of nodes; that is, it represents the OR of the selectors represented by the node selector terms.
+"A node selector represents the union of the results of one or more label queries over a set of nodes; that is, it represents the OR of the selectors represented by the node selector terms."
 
 ### fn spec.nodeAffinity.required.withNodeSelectorTerms
 
@@ -1500,7 +1482,7 @@ A node selector represents the union of the results of one or more label queries
 withNodeSelectorTerms(nodeSelectorTerms)
 ```
 
-Required. A list of node selector terms. The terms are ORed.
+"Required. A list of node selector terms. The terms are ORed."
 
 ### fn spec.nodeAffinity.required.withNodeSelectorTermsMixin
 
@@ -1508,13 +1490,13 @@ Required. A list of node selector terms. The terms are ORed.
 withNodeSelectorTermsMixin(nodeSelectorTerms)
 ```
 
-Required. A list of node selector terms. The terms are ORed.
+"Required. A list of node selector terms. The terms are ORed."
 
 **Note:** This function appends passed data to existing values
 
 ## obj spec.photonPersistentDisk
 
-Represents a Photon Controller persistent disk resource.
+"Represents a Photon Controller persistent disk resource."
 
 ### fn spec.photonPersistentDisk.withFsType
 
@@ -1522,7 +1504,7 @@ Represents a Photon Controller persistent disk resource.
 withFsType(fsType)
 ```
 
-Filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
+"Filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. \"ext4\", \"xfs\", \"ntfs\". Implicitly inferred to be \"ext4\" if unspecified."
 
 ### fn spec.photonPersistentDisk.withPdID
 
@@ -1530,11 +1512,11 @@ Filesystem type to mount. Must be a filesystem type supported by the host operat
 withPdID(pdID)
 ```
 
-ID that identifies Photon Controller persistent disk
+"ID that identifies Photon Controller persistent disk"
 
 ## obj spec.portworxVolume
 
-PortworxVolumeSource represents a Portworx volume resource.
+"PortworxVolumeSource represents a Portworx volume resource."
 
 ### fn spec.portworxVolume.withFsType
 
@@ -1542,7 +1524,7 @@ PortworxVolumeSource represents a Portworx volume resource.
 withFsType(fsType)
 ```
 
-FSType represents the filesystem type to mount Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs". Implicitly inferred to be "ext4" if unspecified.
+"FSType represents the filesystem type to mount Must be a filesystem type supported by the host operating system. Ex. \"ext4\", \"xfs\". Implicitly inferred to be \"ext4\" if unspecified."
 
 ### fn spec.portworxVolume.withReadOnly
 
@@ -1550,7 +1532,7 @@ FSType represents the filesystem type to mount Must be a filesystem type support
 withReadOnly(readOnly)
 ```
 
-Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts.
+"Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts."
 
 ### fn spec.portworxVolume.withVolumeID
 
@@ -1558,11 +1540,11 @@ Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in
 withVolumeID(volumeID)
 ```
 
-VolumeID uniquely identifies a Portworx volume
+"VolumeID uniquely identifies a Portworx volume"
 
 ## obj spec.quobyte
 
-Represents a Quobyte mount that lasts the lifetime of a pod. Quobyte volumes do not support ownership management or SELinux relabeling.
+"Represents a Quobyte mount that lasts the lifetime of a pod. Quobyte volumes do not support ownership management or SELinux relabeling."
 
 ### fn spec.quobyte.withGroup
 
@@ -1570,7 +1552,7 @@ Represents a Quobyte mount that lasts the lifetime of a pod. Quobyte volumes do 
 withGroup(group)
 ```
 
-Group to map volume access to Default is no group
+"Group to map volume access to Default is no group"
 
 ### fn spec.quobyte.withReadOnly
 
@@ -1578,7 +1560,7 @@ Group to map volume access to Default is no group
 withReadOnly(readOnly)
 ```
 
-ReadOnly here will force the Quobyte volume to be mounted with read-only permissions. Defaults to false.
+"ReadOnly here will force the Quobyte volume to be mounted with read-only permissions. Defaults to false."
 
 ### fn spec.quobyte.withRegistry
 
@@ -1586,7 +1568,7 @@ ReadOnly here will force the Quobyte volume to be mounted with read-only permiss
 withRegistry(registry)
 ```
 
-Registry represents a single or multiple Quobyte Registry services specified as a string as host:port pair (multiple entries are separated with commas) which acts as the central registry for volumes
+"Registry represents a single or multiple Quobyte Registry services specified as a string as host:port pair (multiple entries are separated with commas) which acts as the central registry for volumes"
 
 ### fn spec.quobyte.withTenant
 
@@ -1594,7 +1576,7 @@ Registry represents a single or multiple Quobyte Registry services specified as 
 withTenant(tenant)
 ```
 
-Tenant owning the given Quobyte volume in the Backend Used with dynamically provisioned Quobyte volumes, value is set by the plugin
+"Tenant owning the given Quobyte volume in the Backend Used with dynamically provisioned Quobyte volumes, value is set by the plugin"
 
 ### fn spec.quobyte.withUser
 
@@ -1602,7 +1584,7 @@ Tenant owning the given Quobyte volume in the Backend Used with dynamically prov
 withUser(user)
 ```
 
-User to map volume access to Defaults to serivceaccount user
+"User to map volume access to Defaults to serivceaccount user"
 
 ### fn spec.quobyte.withVolume
 
@@ -1610,11 +1592,11 @@ User to map volume access to Defaults to serivceaccount user
 withVolume(volume)
 ```
 
-Volume is a string that references an already created Quobyte volume by name.
+"Volume is a string that references an already created Quobyte volume by name."
 
 ## obj spec.rbd
 
-Represents a Rados Block Device mount that lasts the lifetime of a pod. RBD volumes support ownership management and SELinux relabeling.
+"Represents a Rados Block Device mount that lasts the lifetime of a pod. RBD volumes support ownership management and SELinux relabeling."
 
 ### fn spec.rbd.withFsType
 
@@ -1622,7 +1604,7 @@ Represents a Rados Block Device mount that lasts the lifetime of a pod. RBD volu
 withFsType(fsType)
 ```
 
-Filesystem type of the volume that you want to mount. Tip: Ensure that the filesystem type is supported by the host operating system. Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. More info: https://kubernetes.io/docs/concepts/storage/volumes#rbd
+"Filesystem type of the volume that you want to mount. Tip: Ensure that the filesystem type is supported by the host operating system. Examples: \"ext4\", \"xfs\", \"ntfs\". Implicitly inferred to be \"ext4\" if unspecified. More info: https://kubernetes.io/docs/concepts/storage/volumes#rbd"
 
 ### fn spec.rbd.withImage
 
@@ -1630,7 +1612,7 @@ Filesystem type of the volume that you want to mount. Tip: Ensure that the files
 withImage(image)
 ```
 
-The rados image name. More info: https://releases.k8s.io/HEAD/examples/volumes/rbd/README.md#how-to-use-it
+"The rados image name. More info: https://releases.k8s.io/HEAD/examples/volumes/rbd/README.md#how-to-use-it"
 
 ### fn spec.rbd.withKeyring
 
@@ -1638,7 +1620,7 @@ The rados image name. More info: https://releases.k8s.io/HEAD/examples/volumes/r
 withKeyring(keyring)
 ```
 
-Keyring is the path to key ring for RBDUser. Default is /etc/ceph/keyring. More info: https://releases.k8s.io/HEAD/examples/volumes/rbd/README.md#how-to-use-it
+"Keyring is the path to key ring for RBDUser. Default is /etc/ceph/keyring. More info: https://releases.k8s.io/HEAD/examples/volumes/rbd/README.md#how-to-use-it"
 
 ### fn spec.rbd.withMonitors
 
@@ -1646,7 +1628,7 @@ Keyring is the path to key ring for RBDUser. Default is /etc/ceph/keyring. More 
 withMonitors(monitors)
 ```
 
-A collection of Ceph monitors. More info: https://releases.k8s.io/HEAD/examples/volumes/rbd/README.md#how-to-use-it
+"A collection of Ceph monitors. More info: https://releases.k8s.io/HEAD/examples/volumes/rbd/README.md#how-to-use-it"
 
 ### fn spec.rbd.withMonitorsMixin
 
@@ -1654,7 +1636,7 @@ A collection of Ceph monitors. More info: https://releases.k8s.io/HEAD/examples/
 withMonitorsMixin(monitors)
 ```
 
-A collection of Ceph monitors. More info: https://releases.k8s.io/HEAD/examples/volumes/rbd/README.md#how-to-use-it
+"A collection of Ceph monitors. More info: https://releases.k8s.io/HEAD/examples/volumes/rbd/README.md#how-to-use-it"
 
 **Note:** This function appends passed data to existing values
 
@@ -1664,7 +1646,7 @@ A collection of Ceph monitors. More info: https://releases.k8s.io/HEAD/examples/
 withPool(pool)
 ```
 
-The rados pool name. Default is rbd. More info: https://releases.k8s.io/HEAD/examples/volumes/rbd/README.md#how-to-use-it
+"The rados pool name. Default is rbd. More info: https://releases.k8s.io/HEAD/examples/volumes/rbd/README.md#how-to-use-it"
 
 ### fn spec.rbd.withReadOnly
 
@@ -1672,7 +1654,7 @@ The rados pool name. Default is rbd. More info: https://releases.k8s.io/HEAD/exa
 withReadOnly(readOnly)
 ```
 
-ReadOnly here will force the ReadOnly setting in VolumeMounts. Defaults to false. More info: https://releases.k8s.io/HEAD/examples/volumes/rbd/README.md#how-to-use-it
+"ReadOnly here will force the ReadOnly setting in VolumeMounts. Defaults to false. More info: https://releases.k8s.io/HEAD/examples/volumes/rbd/README.md#how-to-use-it"
 
 ### fn spec.rbd.withUser
 
@@ -1680,11 +1662,11 @@ ReadOnly here will force the ReadOnly setting in VolumeMounts. Defaults to false
 withUser(user)
 ```
 
-The rados user name. Default is admin. More info: https://releases.k8s.io/HEAD/examples/volumes/rbd/README.md#how-to-use-it
+"The rados user name. Default is admin. More info: https://releases.k8s.io/HEAD/examples/volumes/rbd/README.md#how-to-use-it"
 
 ## obj spec.rbd.secretRef
 
-SecretReference represents a Secret Reference. It has enough information to retrieve secret in any namespace
+"SecretReference represents a Secret Reference. It has enough information to retrieve secret in any namespace"
 
 ### fn spec.rbd.secretRef.withName
 
@@ -1692,7 +1674,7 @@ SecretReference represents a Secret Reference. It has enough information to retr
 withName(name)
 ```
 
-Name is unique within a namespace to reference a secret resource.
+"Name is unique within a namespace to reference a secret resource."
 
 ### fn spec.rbd.secretRef.withNamespace
 
@@ -1700,11 +1682,11 @@ Name is unique within a namespace to reference a secret resource.
 withNamespace(namespace)
 ```
 
-Namespace defines the space within which the secret name must be unique.
+"Namespace defines the space within which the secret name must be unique."
 
 ## obj spec.scaleIO
 
-ScaleIOPersistentVolumeSource represents a persistent ScaleIO volume
+"ScaleIOPersistentVolumeSource represents a persistent ScaleIO volume"
 
 ### fn spec.scaleIO.withFsType
 
@@ -1712,7 +1694,7 @@ ScaleIOPersistentVolumeSource represents a persistent ScaleIO volume
 withFsType(fsType)
 ```
 
-Filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Default is "xfs"
+"Filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. \"ext4\", \"xfs\", \"ntfs\". Default is \"xfs\
 
 ### fn spec.scaleIO.withGateway
 
@@ -1720,7 +1702,7 @@ Filesystem type to mount. Must be a filesystem type supported by the host operat
 withGateway(gateway)
 ```
 
-The host address of the ScaleIO API Gateway.
+"The host address of the ScaleIO API Gateway."
 
 ### fn spec.scaleIO.withProtectionDomain
 
@@ -1728,7 +1710,7 @@ The host address of the ScaleIO API Gateway.
 withProtectionDomain(protectionDomain)
 ```
 
-The name of the ScaleIO Protection Domain for the configured storage.
+"The name of the ScaleIO Protection Domain for the configured storage."
 
 ### fn spec.scaleIO.withReadOnly
 
@@ -1736,7 +1718,7 @@ The name of the ScaleIO Protection Domain for the configured storage.
 withReadOnly(readOnly)
 ```
 
-Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts.
+"Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts."
 
 ### fn spec.scaleIO.withSslEnabled
 
@@ -1744,7 +1726,7 @@ Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in
 withSslEnabled(sslEnabled)
 ```
 
-Flag to enable/disable SSL communication with Gateway, default false
+"Flag to enable/disable SSL communication with Gateway, default false"
 
 ### fn spec.scaleIO.withStorageMode
 
@@ -1752,7 +1734,7 @@ Flag to enable/disable SSL communication with Gateway, default false
 withStorageMode(storageMode)
 ```
 
-Indicates whether the storage for a volume should be ThickProvisioned or ThinProvisioned. Default is ThinProvisioned.
+"Indicates whether the storage for a volume should be ThickProvisioned or ThinProvisioned. Default is ThinProvisioned."
 
 ### fn spec.scaleIO.withStoragePool
 
@@ -1760,7 +1742,7 @@ Indicates whether the storage for a volume should be ThickProvisioned or ThinPro
 withStoragePool(storagePool)
 ```
 
-The ScaleIO Storage Pool associated with the protection domain.
+"The ScaleIO Storage Pool associated with the protection domain."
 
 ### fn spec.scaleIO.withSystem
 
@@ -1768,7 +1750,7 @@ The ScaleIO Storage Pool associated with the protection domain.
 withSystem(system)
 ```
 
-The name of the storage system as configured in ScaleIO.
+"The name of the storage system as configured in ScaleIO."
 
 ### fn spec.scaleIO.withVolumeName
 
@@ -1776,11 +1758,11 @@ The name of the storage system as configured in ScaleIO.
 withVolumeName(volumeName)
 ```
 
-The name of a volume already created in the ScaleIO system that is associated with this volume source.
+"The name of a volume already created in the ScaleIO system that is associated with this volume source."
 
 ## obj spec.scaleIO.secretRef
 
-SecretReference represents a Secret Reference. It has enough information to retrieve secret in any namespace
+"SecretReference represents a Secret Reference. It has enough information to retrieve secret in any namespace"
 
 ### fn spec.scaleIO.secretRef.withName
 
@@ -1788,7 +1770,7 @@ SecretReference represents a Secret Reference. It has enough information to retr
 withName(name)
 ```
 
-Name is unique within a namespace to reference a secret resource.
+"Name is unique within a namespace to reference a secret resource."
 
 ### fn spec.scaleIO.secretRef.withNamespace
 
@@ -1796,11 +1778,11 @@ Name is unique within a namespace to reference a secret resource.
 withNamespace(namespace)
 ```
 
-Namespace defines the space within which the secret name must be unique.
+"Namespace defines the space within which the secret name must be unique."
 
 ## obj spec.storageos
 
-Represents a StorageOS persistent volume resource.
+"Represents a StorageOS persistent volume resource."
 
 ### fn spec.storageos.withFsType
 
@@ -1808,7 +1790,7 @@ Represents a StorageOS persistent volume resource.
 withFsType(fsType)
 ```
 
-Filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
+"Filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. \"ext4\", \"xfs\", \"ntfs\". Implicitly inferred to be \"ext4\" if unspecified."
 
 ### fn spec.storageos.withReadOnly
 
@@ -1816,7 +1798,7 @@ Filesystem type to mount. Must be a filesystem type supported by the host operat
 withReadOnly(readOnly)
 ```
 
-Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts.
+"Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts."
 
 ### fn spec.storageos.withVolumeName
 
@@ -1824,7 +1806,7 @@ Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in
 withVolumeName(volumeName)
 ```
 
-VolumeName is the human-readable name of the StorageOS volume.  Volume names are only unique within a namespace.
+"VolumeName is the human-readable name of the StorageOS volume.  Volume names are only unique within a namespace."
 
 ### fn spec.storageos.withVolumeNamespace
 
@@ -1832,11 +1814,11 @@ VolumeName is the human-readable name of the StorageOS volume.  Volume names are
 withVolumeNamespace(volumeNamespace)
 ```
 
-VolumeNamespace specifies the scope of the volume within StorageOS.  If no namespace is specified then the Pod's namespace will be used.  This allows the Kubernetes name scoping to be mirrored within StorageOS for tighter integration. Set VolumeName to any name to override the default behaviour. Set to 'default' if you are not using namespaces within StorageOS. Namespaces that do not pre-exist within StorageOS will be created.
+"VolumeNamespace specifies the scope of the volume within StorageOS.  If no namespace is specified then the Pod's namespace will be used.  This allows the Kubernetes name scoping to be mirrored within StorageOS for tighter integration. Set VolumeName to any name to override the default behaviour. Set to \"default\" if you are not using namespaces within StorageOS. Namespaces that do not pre-exist within StorageOS will be created."
 
 ## obj spec.storageos.secretRef
 
-ObjectReference contains enough information to let you inspect or modify the referred object.
+"ObjectReference contains enough information to let you inspect or modify the referred object."
 
 ### fn spec.storageos.secretRef.withApiVersion
 
@@ -1844,7 +1826,7 @@ ObjectReference contains enough information to let you inspect or modify the ref
 withApiVersion(apiVersion)
 ```
 
-API version of the referent.
+"API version of the referent."
 
 ### fn spec.storageos.secretRef.withFieldPath
 
@@ -1852,7 +1834,7 @@ API version of the referent.
 withFieldPath(fieldPath)
 ```
 
-If referring to a piece of an object instead of an entire object, this string should contain a valid JSON/Go field access statement, such as desiredState.manifest.containers[2]. For example, if the object reference is to a container within a pod, this would take on a value like: "spec.containers{name}" (where "name" refers to the name of the container that triggered the event) or if no container name is specified "spec.containers[2]" (container with index 2 in this pod). This syntax is chosen only to have some well-defined way of referencing a part of an object.
+"If referring to a piece of an object instead of an entire object, this string should contain a valid JSON/Go field access statement, such as desiredState.manifest.containers[2]. For example, if the object reference is to a container within a pod, this would take on a value like: \"spec.containers{name}\" (where \"name\" refers to the name of the container that triggered the event) or if no container name is specified \"spec.containers[2]\" (container with index 2 in this pod). This syntax is chosen only to have some well-defined way of referencing a part of an object."
 
 ### fn spec.storageos.secretRef.withKind
 
@@ -1860,7 +1842,7 @@ If referring to a piece of an object instead of an entire object, this string sh
 withKind(kind)
 ```
 
-Kind of the referent. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+"Kind of the referent. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds"
 
 ### fn spec.storageos.secretRef.withName
 
@@ -1868,7 +1850,7 @@ Kind of the referent. More info: https://git.k8s.io/community/contributors/devel
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn spec.storageos.secretRef.withNamespace
 
@@ -1876,7 +1858,7 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withNamespace(namespace)
 ```
 
-Namespace of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/
+"Namespace of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/"
 
 ### fn spec.storageos.secretRef.withResourceVersion
 
@@ -1884,7 +1866,7 @@ Namespace of the referent. More info: https://kubernetes.io/docs/concepts/overvi
 withResourceVersion(resourceVersion)
 ```
 
-Specific resourceVersion to which this reference is made, if any. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#concurrency-control-and-consistency
+"Specific resourceVersion to which this reference is made, if any. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#concurrency-control-and-consistency"
 
 ### fn spec.storageos.secretRef.withUid
 
@@ -1892,11 +1874,11 @@ Specific resourceVersion to which this reference is made, if any. More info: htt
 withUid(uid)
 ```
 
-UID of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#uids
+"UID of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#uids"
 
 ## obj spec.vsphereVolume
 
-Represents a vSphere volume resource.
+"Represents a vSphere volume resource."
 
 ### fn spec.vsphereVolume.withFsType
 
@@ -1904,7 +1886,7 @@ Represents a vSphere volume resource.
 withFsType(fsType)
 ```
 
-Filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
+"Filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. \"ext4\", \"xfs\", \"ntfs\". Implicitly inferred to be \"ext4\" if unspecified."
 
 ### fn spec.vsphereVolume.withStoragePolicyID
 
@@ -1912,7 +1894,7 @@ Filesystem type to mount. Must be a filesystem type supported by the host operat
 withStoragePolicyID(storagePolicyID)
 ```
 
-Storage Policy Based Management (SPBM) profile ID associated with the StoragePolicyName.
+"Storage Policy Based Management (SPBM) profile ID associated with the StoragePolicyName."
 
 ### fn spec.vsphereVolume.withStoragePolicyName
 
@@ -1920,7 +1902,7 @@ Storage Policy Based Management (SPBM) profile ID associated with the StoragePol
 withStoragePolicyName(storagePolicyName)
 ```
 
-Storage Policy Based Management (SPBM) profile name.
+"Storage Policy Based Management (SPBM) profile name."
 
 ### fn spec.vsphereVolume.withVolumePath
 
@@ -1928,4 +1910,4 @@ Storage Policy Based Management (SPBM) profile name.
 withVolumePath(volumePath)
 ```
 
-Path that identifies vSphere volume vmdk
+"Path that identifies vSphere volume vmdk"

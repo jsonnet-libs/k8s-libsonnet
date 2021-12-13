@@ -4,7 +4,7 @@ permalink: /1.18/core/v1/containerStateTerminated/
 
 # core.v1.containerStateTerminated
 
-ContainerStateTerminated is a terminated state of a container.
+"ContainerStateTerminated is a terminated state of a container."
 
 ## Index
 
@@ -24,7 +24,7 @@ ContainerStateTerminated is a terminated state of a container.
 withContainerID(containerID)
 ```
 
-Container's ID in the format 'docker://<container_id>'
+"Container's ID in the format 'docker://<container_id>'"
 
 ### fn withExitCode
 
@@ -32,7 +32,7 @@ Container's ID in the format 'docker://<container_id>'
 withExitCode(exitCode)
 ```
 
-Exit status from the last termination of the container
+"Exit status from the last termination of the container"
 
 ### fn withFinishedAt
 
@@ -40,7 +40,7 @@ Exit status from the last termination of the container
 withFinishedAt(finishedAt)
 ```
 
-Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.
+"Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers."
 
 ### fn withMessage
 
@@ -48,7 +48,7 @@ Time is a wrapper around time.Time which supports correct marshaling to YAML and
 withMessage(message)
 ```
 
-Message regarding the last termination of the container
+"Message regarding the last termination of the container"
 
 ### fn withReason
 
@@ -56,7 +56,7 @@ Message regarding the last termination of the container
 withReason(reason)
 ```
 
-(brief) reason from the last termination of the container
+"(brief) reason from the last termination of the container"
 
 ### fn withSignal
 
@@ -64,7 +64,7 @@ withReason(reason)
 withSignal(signal)
 ```
 
-Signal from the last termination of the container
+"Signal from the last termination of the container"
 
 ### fn withStartedAt
 
@@ -72,4 +72,4 @@ Signal from the last termination of the container
 withStartedAt(startedAt)
 ```
 
-Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.
+"Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers."

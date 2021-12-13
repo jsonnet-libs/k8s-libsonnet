@@ -4,7 +4,7 @@ permalink: /1.17/core/v1/endpointPort/
 
 # core.v1.endpointPort
 
-EndpointPort is a tuple that describes a single port.
+"EndpointPort is a tuple that describes a single port."
 
 ## Index
 
@@ -20,7 +20,7 @@ EndpointPort is a tuple that describes a single port.
 withName(name)
 ```
 
-The name of this port.  This must match the 'name' field in the corresponding ServicePort. Must be a DNS_LABEL. Optional only if one port is defined.
+"The name of this port.  This must match the 'name' field in the corresponding ServicePort. Must be a DNS_LABEL. Optional only if one port is defined."
 
 ### fn withPort
 
@@ -28,7 +28,7 @@ The name of this port.  This must match the 'name' field in the corresponding Se
 withPort(port)
 ```
 
-The port number of the endpoint.
+"The port number of the endpoint."
 
 ### fn withProtocol
 
@@ -36,4 +36,4 @@ The port number of the endpoint.
 withProtocol(protocol)
 ```
 
-The IP protocol for this port. Must be UDP, TCP, or SCTP. Default is TCP.
+"The IP protocol for this port. Must be UDP, TCP, or SCTP. Default is TCP."
