@@ -15,6 +15,7 @@
   discovery:: (import '_gen/discovery/main.libsonnet'),
   events:: (import '_gen/events/main.libsonnet'),
   flowcontrol:: (import '_gen/flowcontrol/main.libsonnet'),
+  meta:: (import '_gen/meta/main.libsonnet'),
   networking:: (import '_gen/networking/main.libsonnet'),
   node:: (import '_gen/node/main.libsonnet'),
   policy:: (import '_gen/policy/main.libsonnet'),

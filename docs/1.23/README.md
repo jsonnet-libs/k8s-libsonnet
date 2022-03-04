@@ -24,6 +24,7 @@ Generated Jsonnet library for Kubernetes v1.23
 * [discovery](discovery/index.md)
 * [events](events/index.md)
 * [flowcontrol](flowcontrol/index.md)
+* [meta](meta/index.md)
 * [networking](networking/index.md)
 * [node](node/index.md)
 * [policy](policy/index.md)

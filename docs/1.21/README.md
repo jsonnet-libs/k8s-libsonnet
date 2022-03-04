@@ -25,6 +25,7 @@ Generated Jsonnet library for Kubernetes v1.21
 * [events](events/index.md)
 * [extensions](extensions/index.md)
 * [flowcontrol](flowcontrol/index.md)
+* [meta](meta/index.md)
 * [networking](networking/index.md)
 * [node](node/index.md)
 * [policy](policy/index.md)
