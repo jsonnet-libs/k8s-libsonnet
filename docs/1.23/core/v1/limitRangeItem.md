@@ -118,4 +118,4 @@ withMinMixin(min)
 withType(type)
 ```
 
-"Type of resource that this limit applies to.\n\nPossible enum values:\n - `\"Container\"` Limit that applies to all containers in a namespace\n - `\"PersistentVolumeClaim\"` Limit that applies to all persistent volume claims in a namespace\n - `\"Pod\"` Limit that applies to all pods in a namespace"
+"Type of resource that this limit applies to."

@@ -9,7 +9,7 @@
   withMessage(message): { message: message },
   '#withReason':: d.fn(help="\"(brief) reason for the condition's last transition.\"", args=[d.arg(name='reason', type=d.T.string)]),
   withReason(reason): { reason: reason },
-  '#withType':: d.fn(help='"Type of job condition, Complete or Failed.\\n\\nPossible enum values:\\n - `\\"Complete\\"` means the job has completed its execution.\\n - `\\"Failed\\"` means the job has failed its execution.\\n - `\\"Suspended\\"` means the job has been suspended."', args=[d.arg(name='type', type=d.T.string)]),
+  '#withType':: d.fn(help='"Type of job condition, Complete or Failed."', args=[d.arg(name='type', type=d.T.string)]),
   withType(type): { type: type },
   '#mixin': 'ignore',
   mixin: self,

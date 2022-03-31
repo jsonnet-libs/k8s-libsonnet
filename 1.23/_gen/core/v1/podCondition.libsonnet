@@ -9,7 +9,7 @@
   withMessage(message): { message: message },
   '#withReason':: d.fn(help="\"Unique, one-word, CamelCase reason for the condition's last transition.\"", args=[d.arg(name='reason', type=d.T.string)]),
   withReason(reason): { reason: reason },
-  '#withType':: d.fn(help='"Type is the type of the condition. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#pod-conditions\\n\\nPossible enum values:\\n - `\\"ContainersReady\\"` indicates whether all containers in the pod are ready.\\n - `\\"Initialized\\"` means that all init containers in the pod have started successfully.\\n - `\\"PodScheduled\\"` represents status of the scheduling process for this pod.\\n - `\\"Ready\\"` means the pod is able to service requests and should be added to the load balancing pools of all matching services."', args=[d.arg(name='type', type=d.T.string)]),
+  '#withType':: d.fn(help='"Type is the type of the condition. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#pod-conditions"', args=[d.arg(name='type', type=d.T.string)]),
   withType(type): { type: type },
   '#mixin': 'ignore',
   mixin: self,

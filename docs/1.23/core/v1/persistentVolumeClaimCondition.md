@@ -54,4 +54,3 @@ withReason(reason)
 withType(type)
 ```
 
-"\n\n\nPossible enum values:\n - `\"FileSystemResizePending\"` - controller resize is finished and a file system resize is pending on node\n - `\"Resizing\"` - a user trigger resize of pvc has been started"

@@ -9,7 +9,7 @@
   withMessage(message): { message: message },
   '#withReason':: d.fn(help="\"(brief) reason for the condition's last transition.\"", args=[d.arg(name='reason', type=d.T.string)]),
   withReason(reason): { reason: reason },
-  '#withType':: d.fn(help='"Type of node condition.\\n\\nPossible enum values:\\n - `\\"DiskPressure\\"` means the kubelet is under pressure due to insufficient available disk.\\n - `\\"MemoryPressure\\"` means the kubelet is under pressure due to insufficient available memory.\\n - `\\"NetworkUnavailable\\"` means that network for the node is not correctly configured.\\n - `\\"PIDPressure\\"` means the kubelet is under pressure due to insufficient available PID.\\n - `\\"Ready\\"` means kubelet is healthy and ready to accept pods."', args=[d.arg(name='type', type=d.T.string)]),
+  '#withType':: d.fn(help='"Type of node condition."', args=[d.arg(name='type', type=d.T.string)]),
   withType(type): { type: type },
   '#mixin': 'ignore',
   mixin: self,

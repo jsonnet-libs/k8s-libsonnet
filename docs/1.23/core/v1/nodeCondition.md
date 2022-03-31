@@ -54,4 +54,4 @@ withReason(reason)
 withType(type)
 ```
 
-"Type of node condition.\n\nPossible enum values:\n - `\"DiskPressure\"` means the kubelet is under pressure due to insufficient available disk.\n - `\"MemoryPressure\"` means the kubelet is under pressure due to insufficient available memory.\n - `\"NetworkUnavailable\"` means that network for the node is not correctly configured.\n - `\"PIDPressure\"` means the kubelet is under pressure due to insufficient available PID.\n - `\"Ready\"` means kubelet is healthy and ready to accept pods."
+"Type of node condition."

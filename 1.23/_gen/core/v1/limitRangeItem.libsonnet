@@ -21,7 +21,7 @@
   withMin(min): { min: min },
   '#withMinMixin':: d.fn(help='"Min usage constraints on this kind by resource name."\n\n**Note:** This function appends passed data to existing values', args=[d.arg(name='min', type=d.T.object)]),
   withMinMixin(min): { min+: min },
-  '#withType':: d.fn(help='"Type of resource that this limit applies to.\\n\\nPossible enum values:\\n - `\\"Container\\"` Limit that applies to all containers in a namespace\\n - `\\"PersistentVolumeClaim\\"` Limit that applies to all persistent volume claims in a namespace\\n - `\\"Pod\\"` Limit that applies to all pods in a namespace"', args=[d.arg(name='type', type=d.T.string)]),
+  '#withType':: d.fn(help='"Type of resource that this limit applies to."', args=[d.arg(name='type', type=d.T.string)]),
   withType(type): { type: type },
   '#mixin': 'ignore',
   mixin: self,

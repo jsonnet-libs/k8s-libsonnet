@@ -45,4 +45,4 @@ withReason(reason)
 withType(type)
 ```
 
-"Type of namespace controller condition.\n\nPossible enum values:\n - `\"NamespaceContentRemaining\"` contains information about resources remaining in a namespace.\n - `\"NamespaceDeletionContentFailure\"` contains information about namespace deleter errors during deletion of resources.\n - `\"NamespaceDeletionDiscoveryFailure\"` contains information about namespace deleter errors during resource discovery.\n - `\"NamespaceDeletionGroupVersionParsingFailure\"` contains information about namespace deleter errors parsing GV for legacy types.\n - `\"NamespaceFinalizersRemaining\"` contains information about which finalizers are on resources remaining in a namespace."
+"Type of namespace controller condition."

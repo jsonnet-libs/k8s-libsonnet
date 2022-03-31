@@ -9,7 +9,7 @@
   withMessage(message): { message: message },
   '#withReason':: d.fn(help="\"Unique, this should be a short, machine understandable string that gives the reason for condition's last transition. If it reports \\\"ResizeStarted\\\" that means the underlying persistent volume is being resized.\"", args=[d.arg(name='reason', type=d.T.string)]),
   withReason(reason): { reason: reason },
-  '#withType':: d.fn(help='"\\n\\n\\nPossible enum values:\\n - `\\"FileSystemResizePending\\"` - controller resize is finished and a file system resize is pending on node\\n - `\\"Resizing\\"` - a user trigger resize of pvc has been started"', args=[d.arg(name='type', type=d.T.string)]),
+  '#withType':: d.fn(help='', args=[d.arg(name='type', type=d.T.string)]),
   withType(type): { type: type },
   '#mixin': 'ignore',
   mixin: self,

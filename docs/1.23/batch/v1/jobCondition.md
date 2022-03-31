@@ -54,4 +54,4 @@ withReason(reason)
 withType(type)
 ```
 
-"Type of job condition, Complete or Failed.\n\nPossible enum values:\n - `\"Complete\"` means the job has completed its execution.\n - `\"Failed\"` means the job has failed its execution.\n - `\"Suspended\"` means the job has been suspended."
+"Type of job condition, Complete or Failed."
