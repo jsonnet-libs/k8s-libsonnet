@@ -1,7 +1,5 @@
-# For mkdocs
-
-# Use newer mkdocs so indexing can be done on titles only
-git+https://github.com/mkdocs/mkdocs.git@57b5ccd7d63e5b7067d37d0433111e9a5278fb6d
+# mkdocs
+mkdocs>=1.3.0
 
 # To limit search to a subset
 mkdocs-exclude-search>=0.5
