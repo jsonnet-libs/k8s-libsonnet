@@ -9,7 +9,7 @@
   withHostPort(hostPort): { hostPort: hostPort },
   '#withName':: d.fn(help='"If specified, this must be an IANA_SVC_NAME and unique within the pod. Each named port in a pod must have a unique name. Name for the port that can be referred to by services."', args=[d.arg(name='name', type=d.T.string)]),
   withName(name): { name: name },
-  '#withProtocol':: d.fn(help='"Protocol for port. Must be UDP, TCP, or SCTP. Defaults to \\"TCP\\".\\n\\nPossible enum values:\\n - `\\"SCTP\\"` is the SCTP protocol.\\n - `\\"TCP\\"` is the TCP protocol.\\n - `\\"UDP\\"` is the UDP protocol."', args=[d.arg(name='protocol', type=d.T.string)]),
+  '#withProtocol':: d.fn(help='"Protocol for port. Must be UDP, TCP, or SCTP. Defaults to \\"TCP\\".\\n\\n"', args=[d.arg(name='protocol', type=d.T.string)]),
   withProtocol(protocol): { protocol: protocol },
   '#mixin': 'ignore',
   mixin: self,

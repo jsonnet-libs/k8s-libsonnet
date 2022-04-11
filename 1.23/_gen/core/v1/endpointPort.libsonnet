@@ -7,7 +7,7 @@
   withName(name): { name: name },
   '#withPort':: d.fn(help='"The port number of the endpoint."', args=[d.arg(name='port', type=d.T.integer)]),
   withPort(port): { port: port },
-  '#withProtocol':: d.fn(help='"The IP protocol for this port. Must be UDP, TCP, or SCTP. Default is TCP.\\n\\nPossible enum values:\\n - `\\"SCTP\\"` is the SCTP protocol.\\n - `\\"TCP\\"` is the TCP protocol.\\n - `\\"UDP\\"` is the UDP protocol."', args=[d.arg(name='protocol', type=d.T.string)]),
+  '#withProtocol':: d.fn(help='"The IP protocol for this port. Must be UDP, TCP, or SCTP. Default is TCP.\\n\\n"', args=[d.arg(name='protocol', type=d.T.string)]),
   withProtocol(protocol): { protocol: protocol },
   '#mixin': 'ignore',
   mixin: self,

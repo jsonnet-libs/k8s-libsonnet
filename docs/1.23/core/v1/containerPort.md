@@ -90,4 +90,4 @@ withName(name)
 withProtocol(protocol)
 ```
 
-"Protocol for port. Must be UDP, TCP, or SCTP. Defaults to \"TCP\".\n\nPossible enum values:\n - `\"SCTP\"` is the SCTP protocol.\n - `\"TCP\"` is the TCP protocol.\n - `\"UDP\"` is the UDP protocol."
+"Protocol for port. Must be UDP, TCP, or SCTP. Defaults to \"TCP\".\n\n"

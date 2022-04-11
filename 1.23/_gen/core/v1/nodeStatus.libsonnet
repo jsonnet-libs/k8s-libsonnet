@@ -105,7 +105,7 @@
   withImages(images): { images: if std.isArray(v=images) then images else [images] },
   '#withImagesMixin':: d.fn(help='"List of container images on this node"\n\n**Note:** This function appends passed data to existing values', args=[d.arg(name='images', type=d.T.array)]),
   withImagesMixin(images): { images+: if std.isArray(v=images) then images else [images] },
-  '#withPhase':: d.fn(help='"NodePhase is the recently observed lifecycle phase of the node. More info: https://kubernetes.io/docs/concepts/nodes/node/#phase The field is never populated, and now is deprecated.\\n\\nPossible enum values:\\n - `\\"Pending\\"` means the node has been created/added by the system, but not configured.\\n - `\\"Running\\"` means the node has been configured and has Kubernetes components running.\\n - `\\"Terminated\\"` means the node has been removed from the cluster."', args=[d.arg(name='phase', type=d.T.string)]),
+  '#withPhase':: d.fn(help='"NodePhase is the recently observed lifecycle phase of the node. More info: https://kubernetes.io/docs/concepts/nodes/node/#phase The field is never populated, and now is deprecated.\\n\\n"', args=[d.arg(name='phase', type=d.T.string)]),
   withPhase(phase): { phase: phase },
   '#withVolumesAttached':: d.fn(help='"List of volumes that are attached to the node."', args=[d.arg(name='volumesAttached', type=d.T.array)]),
   withVolumesAttached(volumesAttached): { volumesAttached: if std.isArray(v=volumesAttached) then volumesAttached else [volumesAttached] },

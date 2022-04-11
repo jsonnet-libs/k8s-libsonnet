@@ -9,7 +9,7 @@
   withNodePort(nodePort): { nodePort: nodePort },
   '#withPort':: d.fn(help='"The port that will be exposed by this service."', args=[d.arg(name='port', type=d.T.integer)]),
   withPort(port): { port: port },
-  '#withProtocol':: d.fn(help='"The IP protocol for this port. Supports \\"TCP\\", \\"UDP\\", and \\"SCTP\\". Default is TCP.\\n\\nPossible enum values:\\n - `\\"SCTP\\"` is the SCTP protocol.\\n - `\\"TCP\\"` is the TCP protocol.\\n - `\\"UDP\\"` is the UDP protocol."', args=[d.arg(name='protocol', type=d.T.string)]),
+  '#withProtocol':: d.fn(help='"The IP protocol for this port. Supports \\"TCP\\", \\"UDP\\", and \\"SCTP\\". Default is TCP.\\n\\n"', args=[d.arg(name='protocol', type=d.T.string)]),
   withProtocol(protocol): { protocol: protocol },
   '#withTargetPort':: d.fn(help='"IntOrString is a type that can hold an int32 or a string.  When used in JSON or YAML marshalling and unmarshalling, it produces or consumes the inner type.  This allows you to have, for example, a JSON field that can accept a name or number."', args=[d.arg(name='targetPort', type=d.T.string)]),
   withTargetPort(targetPort): { targetPort: targetPort },

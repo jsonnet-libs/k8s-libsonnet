@@ -21,7 +21,7 @@ permalink: /1.23/apps/v1/deploymentStrategy/
 withType(type)
 ```
 
-"Type of deployment. Can be \"Recreate\" or \"RollingUpdate\". Default is RollingUpdate.\n\nPossible enum values:\n - `\"Recreate\"` Kill all existing pods before creating new ones.\n - `\"RollingUpdate\"` Replace the old ReplicaSets by new one using rolling update i.e gradually scale down the old ReplicaSets and scale up the new one."
+"Type of deployment. Can be \"Recreate\" or \"RollingUpdate\". Default is RollingUpdate.\n\n"
 
 ## obj rollingUpdate
 

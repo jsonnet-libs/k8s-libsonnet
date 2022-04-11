@@ -21,7 +21,7 @@ permalink: /1.23/core/v1/scopedResourceSelectorRequirement/
 withOperator(operator)
 ```
 
-"Represents a scope's relationship to a set of values. Valid operators are In, NotIn, Exists, DoesNotExist.\n\nPossible enum values:\n - `\"DoesNotExist\"`\n - `\"Exists\"`\n - `\"In\"`\n - `\"NotIn\"`"
+"Represents a scope's relationship to a set of values. Valid operators are In, NotIn, Exists, DoesNotExist.\n\n"
 
 ### fn withScopeName
 
@@ -29,7 +29,7 @@ withOperator(operator)
 withScopeName(scopeName)
 ```
 
-"The name of the scope that the selector applies to.\n\nPossible enum values:\n - `\"BestEffort\"` Match all pod objects that have best effort quality of service\n - `\"CrossNamespacePodAffinity\"` Match all pod objects that have cross-namespace pod (anti)affinity mentioned. This is a beta feature enabled by the PodAffinityNamespaceSelector feature flag.\n - `\"NotBestEffort\"` Match all pod objects that do not have best effort quality of service\n - `\"NotTerminating\"` Match all pod objects where spec.activeDeadlineSeconds is nil\n - `\"PriorityClass\"` Match all pod objects that have priority class mentioned\n - `\"Terminating\"` Match all pod objects where spec.activeDeadlineSeconds >=0"
+"The name of the scope that the selector applies to.\n\n"
 
 ### fn withValues
 

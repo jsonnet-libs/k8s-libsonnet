@@ -99,7 +99,7 @@ withConditionsMixin(conditions)
 withPhase(phase)
 ```
 
-"Phase represents the current phase of PersistentVolumeClaim.\n\nPossible enum values:\n - `\"Bound\"` used for PersistentVolumeClaims that are bound\n - `\"Lost\"` used for PersistentVolumeClaims that lost their underlying PersistentVolume. The claim was bound to a PersistentVolume and this volume does not exist any longer and all data on it was lost.\n - `\"Pending\"` used for PersistentVolumeClaims that are not yet bound"
+"Phase represents the current phase of PersistentVolumeClaim.\n\n"
 
 ### fn withResizeStatus
 

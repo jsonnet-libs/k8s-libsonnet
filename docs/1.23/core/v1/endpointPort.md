@@ -45,4 +45,4 @@ withPort(port)
 withProtocol(protocol)
 ```
 
-"The IP protocol for this port. Must be UDP, TCP, or SCTP. Default is TCP.\n\nPossible enum values:\n - `\"SCTP\"` is the SCTP protocol.\n - `\"TCP\"` is the TCP protocol.\n - `\"UDP\"` is the UDP protocol."
+"The IP protocol for this port. Must be UDP, TCP, or SCTP. Default is TCP.\n\n"

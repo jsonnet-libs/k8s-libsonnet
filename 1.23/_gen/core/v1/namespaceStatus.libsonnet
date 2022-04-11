@@ -5,7 +5,7 @@
   withConditions(conditions): { conditions: if std.isArray(v=conditions) then conditions else [conditions] },
   '#withConditionsMixin':: d.fn(help="\"Represents the latest available observations of a namespace's current state.\"\n\n**Note:** This function appends passed data to existing values", args=[d.arg(name='conditions', type=d.T.array)]),
   withConditionsMixin(conditions): { conditions+: if std.isArray(v=conditions) then conditions else [conditions] },
-  '#withPhase':: d.fn(help='"Phase is the current lifecycle phase of the namespace. More info: https://kubernetes.io/docs/tasks/administer-cluster/namespaces/\\n\\nPossible enum values:\\n - `\\"Active\\"` means the namespace is available for use in the system\\n - `\\"Terminating\\"` means the namespace is undergoing graceful termination"', args=[d.arg(name='phase', type=d.T.string)]),
+  '#withPhase':: d.fn(help='"Phase is the current lifecycle phase of the namespace. More info: https://kubernetes.io/docs/tasks/administer-cluster/namespaces/\\n\\n"', args=[d.arg(name='phase', type=d.T.string)]),
   withPhase(phase): { phase: phase },
   '#mixin': 'ignore',
   mixin: self,

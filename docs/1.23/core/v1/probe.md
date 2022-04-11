@@ -175,7 +175,7 @@ withPort(port)
 withScheme(scheme)
 ```
 
-"Scheme to use for connecting to the host. Defaults to HTTP.\n\nPossible enum values:\n - `\"HTTP\"` means that the scheme used will be http://\n - `\"HTTPS\"` means that the scheme used will be https://"
+"Scheme to use for connecting to the host. Defaults to HTTP.\n\n"
 
 ## obj tcpSocket
 

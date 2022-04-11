@@ -51,7 +51,7 @@
     apiVersion: 'discovery.k8s.io/v1',
     kind: 'EndpointSlice',
   } + self.metadata.withName(name=name),
-  '#withAddressType':: d.fn(help='"addressType specifies the type of address carried by this EndpointSlice. All addresses in this slice must be the same type. This field is immutable after creation. The following address types are currently supported: * IPv4: Represents an IPv4 Address. * IPv6: Represents an IPv6 Address. * FQDN: Represents a Fully Qualified Domain Name.\\n\\nPossible enum values:\\n - `\\"FQDN\\"` represents a FQDN.\\n - `\\"IPv4\\"` represents an IPv4 Address.\\n - `\\"IPv6\\"` represents an IPv6 Address."', args=[d.arg(name='addressType', type=d.T.string)]),
+  '#withAddressType':: d.fn(help='"addressType specifies the type of address carried by this EndpointSlice. All addresses in this slice must be the same type. This field is immutable after creation. The following address types are currently supported: * IPv4: Represents an IPv4 Address. * IPv6: Represents an IPv6 Address. * FQDN: Represents a Fully Qualified Domain Name.\\n\\n"', args=[d.arg(name='addressType', type=d.T.string)]),
   withAddressType(addressType): { addressType: addressType },
   '#withEndpoints':: d.fn(help='"endpoints is a list of unique endpoints in this slice. Each slice may include a maximum of 1000 endpoints."', args=[d.arg(name='endpoints', type=d.T.array)]),
   withEndpoints(endpoints): { endpoints: if std.isArray(v=endpoints) then endpoints else [endpoints] },

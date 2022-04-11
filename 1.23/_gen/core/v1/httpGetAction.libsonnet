@@ -11,7 +11,7 @@
   withPath(path): { path: path },
   '#withPort':: d.fn(help='"IntOrString is a type that can hold an int32 or a string.  When used in JSON or YAML marshalling and unmarshalling, it produces or consumes the inner type.  This allows you to have, for example, a JSON field that can accept a name or number."', args=[d.arg(name='port', type=d.T.string)]),
   withPort(port): { port: port },
-  '#withScheme':: d.fn(help='"Scheme to use for connecting to the host. Defaults to HTTP.\\n\\nPossible enum values:\\n - `\\"HTTP\\"` means that the scheme used will be http://\\n - `\\"HTTPS\\"` means that the scheme used will be https://"', args=[d.arg(name='scheme', type=d.T.string)]),
+  '#withScheme':: d.fn(help='"Scheme to use for connecting to the host. Defaults to HTTP.\\n\\n"', args=[d.arg(name='scheme', type=d.T.string)]),
   withScheme(scheme): { scheme: scheme },
   '#mixin': 'ignore',
   mixin: self,

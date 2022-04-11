@@ -5,7 +5,7 @@
   withError(err): { 'error': err },
   '#withPort':: d.fn(help='"Port is the port number of the service port of which status is recorded here"', args=[d.arg(name='port', type=d.T.integer)]),
   withPort(port): { port: port },
-  '#withProtocol':: d.fn(help='"Protocol is the protocol of the service port of which status is recorded here The supported values are: \\"TCP\\", \\"UDP\\", \\"SCTP\\"\\n\\nPossible enum values:\\n - `\\"SCTP\\"` is the SCTP protocol.\\n - `\\"TCP\\"` is the TCP protocol.\\n - `\\"UDP\\"` is the UDP protocol."', args=[d.arg(name='protocol', type=d.T.string)]),
+  '#withProtocol':: d.fn(help='"Protocol is the protocol of the service port of which status is recorded here The supported values are: \\"TCP\\", \\"UDP\\", \\"SCTP\\"\\n\\n"', args=[d.arg(name='protocol', type=d.T.string)]),
   withProtocol(protocol): { protocol: protocol },
   '#mixin': 'ignore',
   mixin: self,

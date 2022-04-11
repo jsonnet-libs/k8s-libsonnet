@@ -250,7 +250,7 @@ withImage(image)
 withImagePullPolicy(imagePullPolicy)
 ```
 
-"Image pull policy. One of Always, Never, IfNotPresent. Defaults to Always if :latest tag is specified, or IfNotPresent otherwise. Cannot be updated. More info: https://kubernetes.io/docs/concepts/containers/images#updating-images\n\nPossible enum values:\n - `\"Always\"` means that kubelet always attempts to pull the latest image. Container will fail If the pull fails.\n - `\"IfNotPresent\"` means that kubelet pulls if the image isn't present on disk. Container will fail if the image isn't present and the pull fails.\n - `\"Never\"` means that kubelet never pulls an image, but only uses a local image. Container will fail if the image isn't present"
+"Image pull policy. One of Always, Never, IfNotPresent. Defaults to Always if :latest tag is specified, or IfNotPresent otherwise. Cannot be updated. More info: https://kubernetes.io/docs/concepts/containers/images#updating-images\n\n"
 
 ### fn withName
 
@@ -316,7 +316,7 @@ withTerminationMessagePath(terminationMessagePath)
 withTerminationMessagePolicy(terminationMessagePolicy)
 ```
 
-"Indicate how the termination message should be populated. File will use the contents of terminationMessagePath to populate the container status message on both success and failure. FallbackToLogsOnError will use the last chunk of container log output if the termination message file is empty and the container exited with an error. The log output is limited to 2048 bytes or 80 lines, whichever is smaller. Defaults to File. Cannot be updated.\n\nPossible enum values:\n - `\"FallbackToLogsOnError\"` will read the most recent contents of the container logs for the container status message when the container exits with an error and the terminationMessagePath has no contents.\n - `\"File\"` is the default behavior and will set the container status message to the contents of the container's terminationMessagePath when the container exits."
+"Indicate how the termination message should be populated. File will use the contents of terminationMessagePath to populate the container status message on both success and failure. FallbackToLogsOnError will use the last chunk of container log output if the termination message file is empty and the container exited with an error. The log output is limited to 2048 bytes or 80 lines, whichever is smaller. Defaults to File. Cannot be updated.\n\n"
 
 ### fn withTty
 
@@ -452,7 +452,7 @@ withPort(port)
 withScheme(scheme)
 ```
 
-"Scheme to use for connecting to the host. Defaults to HTTP.\n\nPossible enum values:\n - `\"HTTP\"` means that the scheme used will be http://\n - `\"HTTPS\"` means that the scheme used will be https://"
+"Scheme to use for connecting to the host. Defaults to HTTP.\n\n"
 
 ## obj lifecycle.postStart.tcpSocket
 
@@ -552,7 +552,7 @@ withPort(port)
 withScheme(scheme)
 ```
 
-"Scheme to use for connecting to the host. Defaults to HTTP.\n\nPossible enum values:\n - `\"HTTP\"` means that the scheme used will be http://\n - `\"HTTPS\"` means that the scheme used will be https://"
+"Scheme to use for connecting to the host. Defaults to HTTP.\n\n"
 
 ## obj lifecycle.preStop.tcpSocket
 
@@ -720,7 +720,7 @@ withPort(port)
 withScheme(scheme)
 ```
 
-"Scheme to use for connecting to the host. Defaults to HTTP.\n\nPossible enum values:\n - `\"HTTP\"` means that the scheme used will be http://\n - `\"HTTPS\"` means that the scheme used will be https://"
+"Scheme to use for connecting to the host. Defaults to HTTP.\n\n"
 
 ## obj livenessProbe.tcpSocket
 
@@ -888,7 +888,7 @@ withPort(port)
 withScheme(scheme)
 ```
 
-"Scheme to use for connecting to the host. Defaults to HTTP.\n\nPossible enum values:\n - `\"HTTP\"` means that the scheme used will be http://\n - `\"HTTPS\"` means that the scheme used will be https://"
+"Scheme to use for connecting to the host. Defaults to HTTP.\n\n"
 
 ## obj readinessProbe.tcpSocket
 
@@ -1104,7 +1104,7 @@ withLocalhostProfile(localhostProfile)
 withType(type)
 ```
 
-"type indicates which kind of seccomp profile will be applied. Valid options are:\n\nLocalhost - a profile defined in a file on the node should be used. RuntimeDefault - the container runtime default profile should be used. Unconfined - no profile should be applied.\n\nPossible enum values:\n - `\"Localhost\"` indicates a profile defined in a file on the node should be used. The file's location relative to <kubelet-root-dir>/seccomp.\n - `\"RuntimeDefault\"` represents the default container runtime seccomp profile.\n - `\"Unconfined\"` indicates no seccomp profile is applied (A.K.A. unconfined)."
+"type indicates which kind of seccomp profile will be applied. Valid options are:\n\nLocalhost - a profile defined in a file on the node should be used. RuntimeDefault - the container runtime default profile should be used. Unconfined - no profile should be applied.\n\n"
 
 ## obj securityContext.windowsOptions
 
@@ -1288,7 +1288,7 @@ withPort(port)
 withScheme(scheme)
 ```
 
-"Scheme to use for connecting to the host. Defaults to HTTP.\n\nPossible enum values:\n - `\"HTTP\"` means that the scheme used will be http://\n - `\"HTTPS\"` means that the scheme used will be https://"
+"Scheme to use for connecting to the host. Defaults to HTTP.\n\n"
 
 ## obj startupProbe.tcpSocket
 

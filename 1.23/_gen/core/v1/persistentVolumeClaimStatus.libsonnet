@@ -17,7 +17,7 @@
   withConditions(conditions): { conditions: if std.isArray(v=conditions) then conditions else [conditions] },
   '#withConditionsMixin':: d.fn(help="\"Current Condition of persistent volume claim. If underlying persistent volume is being resized then the Condition will be set to 'ResizeStarted'.\"\n\n**Note:** This function appends passed data to existing values", args=[d.arg(name='conditions', type=d.T.array)]),
   withConditionsMixin(conditions): { conditions+: if std.isArray(v=conditions) then conditions else [conditions] },
-  '#withPhase':: d.fn(help='"Phase represents the current phase of PersistentVolumeClaim.\\n\\nPossible enum values:\\n - `\\"Bound\\"` used for PersistentVolumeClaims that are bound\\n - `\\"Lost\\"` used for PersistentVolumeClaims that lost their underlying PersistentVolume. The claim was bound to a PersistentVolume and this volume does not exist any longer and all data on it was lost.\\n - `\\"Pending\\"` used for PersistentVolumeClaims that are not yet bound"', args=[d.arg(name='phase', type=d.T.string)]),
+  '#withPhase':: d.fn(help='"Phase represents the current phase of PersistentVolumeClaim.\\n\\n"', args=[d.arg(name='phase', type=d.T.string)]),
   withPhase(phase): { phase: phase },
   '#withResizeStatus':: d.fn(help='"ResizeStatus stores status of resize operation. ResizeStatus is not set by default but when expansion is complete resizeStatus is set to empty string by resize controller or kubelet. This is an alpha field and requires enabling RecoverVolumeExpansionFailure feature."', args=[d.arg(name='resizeStatus', type=d.T.string)]),
   withResizeStatus(resizeStatus): { resizeStatus: resizeStatus },
