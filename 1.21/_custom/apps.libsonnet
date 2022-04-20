@@ -1,4 +1,5 @@
 local d = import 'doc-util/main.libsonnet';
+local gen = import '../gen.libsonnet';
 
 local patch = {
   daemonSet+: {
@@ -72,8 +73,8 @@ local patch = {
 };
 
 {
-  extensions+: {  // old, remove asap
-    v1beta1+: patch,
+  [if std.objectHas(gen, 'extensions') then 'extensions']+: { // This was removed in v1.22
+    [if std.objectHas(gen.extensions, 'v1beta1') then 'v1beta1']+: patch,
   },
   apps+: {
     v1+: patch,
