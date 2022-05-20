@@ -21,6 +21,7 @@ local patch = {
 
 {
   batch+: {
+    v1+: patch,
     v1beta1+: patch,
     v2alpha1+: patch,
   },
