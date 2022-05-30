@@ -127,6 +127,8 @@ local d = import 'doc-util/main.libsonnet';
           super.new(name)
           + super.spec.withSelector(selector)
           + super.spec.withPorts(ports),
+        newWithoutSelector(name)::
+          super.new(name)
       },
 
       servicePort+:: {
