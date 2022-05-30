@@ -127,6 +127,9 @@ local d = import 'doc-util/main.libsonnet';
           super.new(name)
           + super.spec.withSelector(selector)
           + super.spec.withPorts(ports),
+        '#newWithoutSelector'+: d.fn('newWithoutSelector works like `new`, but creates a Service without ports and selector', [
+          d.arg('name', d.T.string),
+        ]),
         newWithoutSelector(name)::
           super.new(name)
       },

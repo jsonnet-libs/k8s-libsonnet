@@ -9,6 +9,7 @@ permalink: /1.19/core/v1/service/
 ## Index
 
 * [`fn new(name, selector, ports)`](#fn-new)
+* [`fn newWithoutSelector(name)`](#fn-newwithoutselector)
 * [`obj metadata`](#obj-metadata)
   * [`fn withAnnotations(annotations)`](#fn-metadatawithannotations)
   * [`fn withAnnotationsMixin(annotations)`](#fn-metadatawithannotationsmixin)
@@ -64,6 +65,14 @@ new(name, selector, ports)
 ```
 
 new returns an instance of Service
+
+### fn newWithoutSelector
+
+```ts
+newWithoutSelector(name)
+```
+
+newWithoutSelector works like `new`, but creates a Service without ports and selector
 
 ## obj metadata
 
