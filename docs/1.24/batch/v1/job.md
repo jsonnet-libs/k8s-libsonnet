@@ -17,6 +17,7 @@ permalink: /1.24/batch/v1/job/
 * [`fn mapContainersWithName(names, f)`](#fn-mapcontainerswithname)
 * [`fn pvcVolumeMount(name, path, readOnly, volumeMountMixin)`](#fn-pvcvolumemount)
 * [`fn secretVolumeMount(name, path, defaultMode, volumeMountMixin)`](#fn-secretvolumemount)
+* [`fn secretVolumeMountAnnotated(name, path, defaultMode, volumeMountMixin)`](#fn-secretvolumemountannotated)
 * [`obj metadata`](#obj-metadata)
   * [`fn withAnnotations(annotations)`](#fn-metadatawithannotations)
   * [`fn withAnnotationsMixin(annotations)`](#fn-metadatawithannotationsmixin)
@@ -268,6 +269,17 @@ secretVolumeMount(name, path, defaultMode, volumeMountMixin)
 ```
 
 `secretVolumeMount` mounts a Secret by `name` into all container on `path`.This helper function can be augmented with a `volumeMountsMixin. For example,
+passing "k.core.v1.volumeMount.withSubPath(subpath)" will result in a subpath
+mixin.
+
+
+### fn secretVolumeMountAnnotated
+
+```ts
+secretVolumeMountAnnotated(name, path, defaultMode, volumeMountMixin)
+```
+
+same as `secretVolumeMount`, adding an annotation to force redeploy on change.This helper function can be augmented with a `volumeMountsMixin. For example,
 passing "k.core.v1.volumeMount.withSubPath(subpath)" will result in a subpath
 mixin.
 

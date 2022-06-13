@@ -132,6 +132,21 @@ local d = import 'doc-util/main.libsonnet';
         volume.secret.withDefaultMode(defaultMode),
       ]),
 
+    '#secretVolumeMountAnnotated': d.fn(
+      'same as `secretVolumeMount`, adding an annotation to force redeploy on change.'
+      + volumeMountDescription,
+      [
+        d.arg('name', d.T.string),
+        d.arg('path', d.T.string),
+        d.arg('defaultMode', d.T.string),
+        d.arg('volumeMountMixin', d.T.object),
+      ]
+    ),
+    secretVolumeMountAnnotated(name, path, defaultMode=256, volumeMountMixin={})::
+      local annotations = { ['%s-secret-hash' % name]: std.md5(std.toString(name)) };
+
+      self.secretVolumeMount(name, path, defaultMode, volumeMountMixin)
+      + super.spec.template.metadata.withAnnotationsMixin(annotations),
 
     '#emptyVolumeMount': d.fn(
       '`emptyVolumeMount` mounts empty volume by `name` into all container on `path`.'
