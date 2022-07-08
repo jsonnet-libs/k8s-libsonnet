@@ -9,7 +9,7 @@ local withApiVersion = {
 local withScaleTargetRef = {
   '#withScaleTargetRef':: d.fn(help='Set spec.ScaleTargetRef to `object`', args=[d.arg(name='object', type=d.T.object)]),
   withScaleTargetRef(object):
-    { spec+: { scaleTargetRef+: withApiVersion {
+    { spec+: { scaleTargetRef+: {
       apiVersion: object.apiVersion,
       kind: object.kind,
       name: object.metadata.name,
