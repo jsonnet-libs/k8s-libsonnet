@@ -34,7 +34,7 @@ local patch = {
     )::
       local labels = { name: name } + podLabels;
       super.new(name)
-      + super.spec.withReplicas(replicas)
+      + if replicas == null then {} else super.spec.withReplicas(replicas)
       + super.spec.template.spec.withContainers(containers)
       + super.spec.template.metadata.withLabels(labels)
       + super.spec.selector.withMatchLabels(labels),
