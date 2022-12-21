@@ -9,6 +9,7 @@ permalink: /1.22/core/v1/volume/
 ## Index
 
 * [`fn fromConfigMap(name, configMapName, configMapItems)`](#fn-fromconfigmap)
+* [`fn fromCsi(name, driver, volumeAttributes={})`](#fn-fromcsi)
 * [`fn fromEmptyDir(name, emptyDir={})`](#fn-fromemptydir)
 * [`fn fromHostPath(name, hostPath)`](#fn-fromhostpath)
 * [`fn fromPersistentVolumeClaim(name, claimName)`](#fn-frompersistentvolumeclaim)
@@ -239,6 +240,14 @@ fromConfigMap(name, configMapName, configMapItems)
 ```
 
 Creates a new volume from a `ConfigMap`
+
+### fn fromCsi
+
+```ts
+fromCsi(name, driver, volumeAttributes={})
+```
+
+Creates a new volume of type `csi`
 
 ### fn fromEmptyDir
 

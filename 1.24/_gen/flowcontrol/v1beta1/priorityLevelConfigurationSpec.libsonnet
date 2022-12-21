@@ -1,7 +1,7 @@
 {
   local d = (import 'doc-util/main.libsonnet'),
   '#':: d.pkg(name='priorityLevelConfigurationSpec', url='', help='"PriorityLevelConfigurationSpec specifies the configuration of a priority level."'),
-  '#limited':: d.obj(help='"LimitedPriorityLevelConfiguration specifies how to handle requests that are subject to limits. It addresses two issues:\\n * How are requests for this priority level limited?\\n * What should be done with requests that exceed the limit?"'),
+  '#limited':: d.obj(help='"LimitedPriorityLevelConfiguration specifies how to handle requests that are subject to limits. It addresses two issues:\\n  - How are requests for this priority level limited?\\n  - What should be done with requests that exceed the limit?"'),
   limited: {
     '#limitResponse':: d.obj(help='"LimitResponse defines how to handle requests that can not be executed right now."'),
     limitResponse: {

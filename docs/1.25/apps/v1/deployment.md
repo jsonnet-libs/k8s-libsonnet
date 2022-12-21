@@ -11,6 +11,7 @@ permalink: /1.25/apps/v1/deployment/
 * [`fn new(name, replicas=1, containers, podLabels={})`](#fn-new)
 * [`fn configMapVolumeMount(configMap, path, volumeMountMixin, volumeMixin, containers)`](#fn-configmapvolumemount)
 * [`fn configVolumeMount(name, path, volumeMountMixin, volumeMixin, containers)`](#fn-configvolumemount)
+* [`fn csiVolumeMount(name, path, driver, volumeAttributes={}, volumeMountMixin, volumeMixin, containers)`](#fn-csivolumemount)
 * [`fn emptyVolumeMount(name, path, volumeMountMixin, volumeMixin, containers)`](#fn-emptyvolumemount)
 * [`fn hostVolumeMount(name, hostPath, path, readOnly, volumeMountMixin, volumeMixin, containers)`](#fn-hostvolumemount)
 * [`fn mapContainers(f)`](#fn-mapcontainers)
@@ -217,6 +218,23 @@ to those containers, otherwise it will be mounted on all containers.
 This helper function can be augmented with a `volumeMixin`. For example,
 passing "k.core.v1.volume.configMap.withDefaultMode(420)" will result in a 
 default mode mixin.
+This helper function can be augmented with a `volumeMountsMixin`. For example,
+passing "k.core.v1.volumeMount.withSubPath(subpath)" will result in a subpath
+mixin.
+
+
+### fn csiVolumeMount
+
+```ts
+csiVolumeMount(name, path, driver, volumeAttributes={}, volumeMountMixin, volumeMixin, containers)
+```
+
+`csiVolumeMount` mounts CSI volume by `name` into all container on `path`.
+If `containers` is specified as an array of container names it will only be mounted
+to those containers, otherwise it will be mounted on all containers.
+This helper function can be augmented with a `volumeMixin`. For example,
+passing "k.core.v1.volume.csi.withReadOnly(false)" will result in a 
+mixin that makes the volume writeable.
 This helper function can be augmented with a `volumeMountsMixin`. For example,
 passing "k.core.v1.volumeMount.withSubPath(subpath)" will result in a subpath
 mixin.

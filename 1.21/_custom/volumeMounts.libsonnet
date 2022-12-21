@@ -262,6 +262,40 @@ local d = import 'doc-util/main.libsonnet';
       super.spec.template.spec.withVolumesMixin([
         volume.fromEmptyDir(name) + volumeMixin,
       ]),
+    
+    '#csiVolumeMount': d.fn(
+      |||
+        `csiVolumeMount` mounts CSI volume by `name` into all container on `path`.
+        If `containers` is specified as an array of container names it will only be mounted
+        to those containers, otherwise it will be mounted on all containers.
+        This helper function can be augmented with a `volumeMixin`. For example,
+        passing "k.core.v1.volume.csi.withReadOnly(false)" will result in a 
+        mixin that makes the volume writeable.
+      |||
+      + volumeMountDescription,
+      [
+        d.arg('name', d.T.string),
+        d.arg('path', d.T.string),
+        d.arg('driver', d.T.string),
+        d.arg('volumeAttributes', d.T.object, {}),
+        d.arg('volumeMountMixin', d.T.object),
+        d.arg('volumeMixin', d.T.object),
+        d.arg('containers', d.T.array),
+      ]
+    ),
+    csiVolumeMount(name, path, driver, volumeAttributes, volumeMountMixin={}, volumeMixin={}, containers=null)::
+      local addMount(c) = c + (
+        if containers == null || std.member(containers, c.name)
+        then container.withVolumeMountsMixin(
+          volumeMount.new(name, path) +
+          volumeMountMixin,
+        )
+        else {}
+      );
+      super.mapContainers(addMount) +
+      super.spec.template.spec.withVolumesMixin([
+        volume.fromCsi(name, driver, volumeAttributes) + volumeMixin,
+      ]),
   },
 
   batch+: {
