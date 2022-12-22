@@ -4,7 +4,7 @@ permalink: /1.23/apiserverinternal/v1alpha1/storageVersion/
 
 # apiserverinternal.v1alpha1.storageVersion
 
-"\n Storage version of a specific resource."
+"Storage version of a specific resource."
 
 ## Index
 

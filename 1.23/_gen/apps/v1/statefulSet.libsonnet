@@ -1,6 +1,6 @@
 {
   local d = (import 'doc-util/main.libsonnet'),
-  '#':: d.pkg(name='statefulSet', url='', help='"StatefulSet represents a set of pods with consistent identities. Identities are defined as:\\n - Network: A single stable DNS and hostname.\\n - Storage: As many VolumeClaims as requested.\\nThe StatefulSet guarantees that a given network identity will always map to the same storage identity."'),
+  '#':: d.pkg(name='statefulSet', url='', help='"StatefulSet represents a set of pods with consistent identities. Identities are defined as:\\n  - Network: A single stable DNS and hostname.\\n  - Storage: As many VolumeClaims as requested.\\n\\nThe StatefulSet guarantees that a given network identity will always map to the same storage identity."'),
   '#metadata':: d.obj(help='"ObjectMeta is metadata that all persisted resources must have, which includes all objects users must create."'),
   metadata: {
     '#withAnnotations':: d.fn(help='"Annotations is an unstructured key value map stored with a resource that may be set by external tools to store and retrieve arbitrary metadata. They are not queryable and should be preserved when modifying objects. More info: http://kubernetes.io/docs/user-guide/annotations"', args=[d.arg(name='annotations', type=d.T.object)]),

@@ -4,7 +4,7 @@ permalink: /1.23/flowcontrol/v1beta1/limitedPriorityLevelConfiguration/
 
 # flowcontrol.v1beta1.limitedPriorityLevelConfiguration
 
-"LimitedPriorityLevelConfiguration specifies how to handle requests that are subject to limits. It addresses two issues:\n * How are requests for this priority level limited?\n * What should be done with requests that exceed the limit?"
+"LimitedPriorityLevelConfiguration specifies how to handle requests that are subject to limits. It addresses two issues:\n  - How are requests for this priority level limited?\n  - What should be done with requests that exceed the limit?"
 
 ## Index
 

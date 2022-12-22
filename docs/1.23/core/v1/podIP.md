@@ -4,7 +4,7 @@ permalink: /1.23/core/v1/podIP/
 
 # core.v1.podIP
 
-"IP address information for entries in the (plural) PodIPs field. Each entry includes:\n   IP: An IP address allocated to the pod. Routable at least within the cluster."
+"IP address information for entries in the (plural) PodIPs field. Each entry includes:\n\n\tIP: An IP address allocated to the pod. Routable at least within the cluster."
 
 ## Index
 
