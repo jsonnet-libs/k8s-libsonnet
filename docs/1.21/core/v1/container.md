@@ -231,7 +231,14 @@ withEnvFromMixin(envFrom)
 withEnvMap(env)
 ```
 
-`withEnvMap` works like `withEnvMixin` but accepts a key/value map, this map is converted a list of core.v1.envVar(key, value)`
+
+`withEnvMap` works like `withEnvMixin` but accepts a key/value map,
+this map is converted a list of core.v1.envVar(key, value)`.
+
+If the value is an object instead of a string, it is placed under
+the `valueFrom` key.
+
+
 
 ### fn withEnvMixin
 
