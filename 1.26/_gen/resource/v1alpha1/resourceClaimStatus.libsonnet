@@ -1,0 +1,28 @@
+{
+  local d = (import 'doc-util/main.libsonnet'),
+  '#':: d.pkg(name='resourceClaimStatus', url='', help='"ResourceClaimStatus tracks whether the resource has been allocated and what the resulting attributes are."'),
+  '#allocation':: d.obj(help='"AllocationResult contains attributed of an allocated resource."'),
+  allocation: {
+    '#availableOnNodes':: d.obj(help='"A node selector represents the union of the results of one or more label queries over a set of nodes; that is, it represents the OR of the selectors represented by the node selector terms."'),
+    availableOnNodes: {
+      '#withNodeSelectorTerms':: d.fn(help='"Required. A list of node selector terms. The terms are ORed."', args=[d.arg(name='nodeSelectorTerms', type=d.T.array)]),
+      withNodeSelectorTerms(nodeSelectorTerms): { allocation+: { availableOnNodes+: { nodeSelectorTerms: if std.isArray(v=nodeSelectorTerms) then nodeSelectorTerms else [nodeSelectorTerms] } } },
+      '#withNodeSelectorTermsMixin':: d.fn(help='"Required. A list of node selector terms. The terms are ORed."\n\n**Note:** This function appends passed data to existing values', args=[d.arg(name='nodeSelectorTerms', type=d.T.array)]),
+      withNodeSelectorTermsMixin(nodeSelectorTerms): { allocation+: { availableOnNodes+: { nodeSelectorTerms+: if std.isArray(v=nodeSelectorTerms) then nodeSelectorTerms else [nodeSelectorTerms] } } },
+    },
+    '#withResourceHandle':: d.fn(help='"ResourceHandle contains arbitrary data returned by the driver after a successful allocation. This is opaque for Kubernetes. Driver documentation may explain to users how to interpret this data if needed.\\n\\nThe maximum size of this field is 16KiB. This may get increased in the future, but not reduced."', args=[d.arg(name='resourceHandle', type=d.T.string)]),
+    withResourceHandle(resourceHandle): { allocation+: { resourceHandle: resourceHandle } },
+    '#withShareable':: d.fn(help='"Shareable determines whether the resource supports more than one consumer at a time."', args=[d.arg(name='shareable', type=d.T.boolean)]),
+    withShareable(shareable): { allocation+: { shareable: shareable } },
+  },
+  '#withDeallocationRequested':: d.fn(help='"DeallocationRequested indicates that a ResourceClaim is to be deallocated.\\n\\nThe driver then must deallocate this claim and reset the field together with clearing the Allocation field.\\n\\nWhile DeallocationRequested is set, no new consumers may be added to ReservedFor."', args=[d.arg(name='deallocationRequested', type=d.T.boolean)]),
+  withDeallocationRequested(deallocationRequested): { deallocationRequested: deallocationRequested },
+  '#withDriverName':: d.fn(help='"DriverName is a copy of the driver name from the ResourceClass at the time when allocation started."', args=[d.arg(name='driverName', type=d.T.string)]),
+  withDriverName(driverName): { driverName: driverName },
+  '#withReservedFor':: d.fn(help='"ReservedFor indicates which entities are currently allowed to use the claim. A Pod which references a ResourceClaim which is not reserved for that Pod will not be started.\\n\\nThere can be at most 32 such reservations. This may get increased in the future, but not reduced."', args=[d.arg(name='reservedFor', type=d.T.array)]),
+  withReservedFor(reservedFor): { reservedFor: if std.isArray(v=reservedFor) then reservedFor else [reservedFor] },
+  '#withReservedForMixin':: d.fn(help='"ReservedFor indicates which entities are currently allowed to use the claim. A Pod which references a ResourceClaim which is not reserved for that Pod will not be started.\\n\\nThere can be at most 32 such reservations. This may get increased in the future, but not reduced."\n\n**Note:** This function appends passed data to existing values', args=[d.arg(name='reservedFor', type=d.T.array)]),
+  withReservedForMixin(reservedFor): { reservedFor+: if std.isArray(v=reservedFor) then reservedFor else [reservedFor] },
+  '#mixin': 'ignore',
+  mixin: self,
+}

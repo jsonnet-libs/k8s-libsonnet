@@ -1,0 +1,18 @@
+{
+  local d = (import 'doc-util/main.libsonnet'),
+  '#':: d.pkg(name='v1alpha1', url='', help=''),
+  allocationResult: (import 'allocationResult.libsonnet'),
+  podScheduling: (import 'podScheduling.libsonnet'),
+  podSchedulingSpec: (import 'podSchedulingSpec.libsonnet'),
+  podSchedulingStatus: (import 'podSchedulingStatus.libsonnet'),
+  resourceClaim: (import 'resourceClaim.libsonnet'),
+  resourceClaimConsumerReference: (import 'resourceClaimConsumerReference.libsonnet'),
+  resourceClaimParametersReference: (import 'resourceClaimParametersReference.libsonnet'),
+  resourceClaimSchedulingStatus: (import 'resourceClaimSchedulingStatus.libsonnet'),
+  resourceClaimSpec: (import 'resourceClaimSpec.libsonnet'),
+  resourceClaimStatus: (import 'resourceClaimStatus.libsonnet'),
+  resourceClaimTemplate: (import 'resourceClaimTemplate.libsonnet'),
+  resourceClaimTemplateSpec: (import 'resourceClaimTemplateSpec.libsonnet'),
+  resourceClass: (import 'resourceClass.libsonnet'),
+  resourceClassParametersReference: (import 'resourceClassParametersReference.libsonnet'),
+}
