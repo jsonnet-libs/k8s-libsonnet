@@ -26,6 +26,7 @@ local patch = {
 {
   autoscaling+: {
     v1+: patch,
+    v2+: patch,
     v2beta1+: patch,
     v2beta2+: patch,
   },

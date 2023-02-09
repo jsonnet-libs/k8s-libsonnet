@@ -35,6 +35,7 @@ permalink: /1.26/autoscaling/v2/horizontalPodAutoscaler/
   * [`fn withMetrics(metrics)`](#fn-specwithmetrics)
   * [`fn withMetricsMixin(metrics)`](#fn-specwithmetricsmixin)
   * [`fn withMinReplicas(minReplicas)`](#fn-specwithminreplicas)
+  * [`fn withScaleTargetRef(object)`](#fn-specwithscaletargetref)
   * [`obj spec.behavior`](#obj-specbehavior)
     * [`obj spec.behavior.scaleDown`](#obj-specbehaviorscaledown)
       * [`fn withPolicies(policies)`](#fn-specbehaviorscaledownwithpolicies)
@@ -272,6 +273,14 @@ withMinReplicas(minReplicas)
 ```
 
 "minReplicas is the lower limit for the number of replicas to which the autoscaler can scale down.  It defaults to 1 pod.  minReplicas is allowed to be 0 if the alpha feature gate HPAScaleToZero is enabled and at least one Object or External metric is configured.  Scaling is active as long as at least one metric value is available."
+
+### fn spec.withScaleTargetRef
+
+```ts
+withScaleTargetRef(object)
+```
+
+Set spec.ScaleTargetRef to `object`
 
 ## obj spec.behavior
 
