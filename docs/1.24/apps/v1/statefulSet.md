@@ -203,7 +203,7 @@ If `containers` is specified as an array of container names it will only be moun
 to those containers, otherwise it will be mounted on all containers.
 
 This helper function can be augmented with a `volumeMixin`. For example,
-passing "k.core.v1.volume.configMap.withDefaultMode(420)" will result in a 
+passing "k.core.v1.volume.configMap.withDefaultMode(420)" will result in a
 default mode mixin.
 This helper function can be augmented with a `volumeMountsMixin`. For example,
 passing "k.core.v1.volumeMount.withSubPath(subpath)" will result in a subpath
@@ -222,7 +222,7 @@ If `containers` is specified as an array of container names it will only be moun
 to those containers, otherwise it will be mounted on all containers.
 
 This helper function can be augmented with a `volumeMixin`. For example,
-passing "k.core.v1.volume.configMap.withDefaultMode(420)" will result in a 
+passing "k.core.v1.volume.configMap.withDefaultMode(420)" will result in a
 default mode mixin.
 This helper function can be augmented with a `volumeMountsMixin`. For example,
 passing "k.core.v1.volumeMount.withSubPath(subpath)" will result in a subpath
@@ -239,7 +239,7 @@ csiVolumeMount(name, path, driver, volumeAttributes={}, volumeMountMixin, volume
 If `containers` is specified as an array of container names it will only be mounted
 to those containers, otherwise it will be mounted on all containers.
 This helper function can be augmented with a `volumeMixin`. For example,
-passing "k.core.v1.volume.csi.withReadOnly(false)" will result in a 
+passing "k.core.v1.volume.csi.withReadOnly(false)" will result in a
 mixin that makes the volume writeable.
 This helper function can be augmented with a `volumeMountsMixin`. For example,
 passing "k.core.v1.volumeMount.withSubPath(subpath)" will result in a subpath
@@ -258,7 +258,7 @@ If `containers` is specified as an array of container names it will only be moun
 to those containers, otherwise it will be mounted on all containers.
 
 This helper function can be augmented with a `volumeMixin`. For example,
-passing "k.core.v1.volume.emptyDir.withSizeLimit('100Mi')" will result in a 
+passing "k.core.v1.volume.emptyDir.withSizeLimit('100Mi')" will result in a
 mixin that limits the size of the volume to 100Mi.
 This helper function can be augmented with a `volumeMountsMixin`. For example,
 passing "k.core.v1.volumeMount.withSubPath(subpath)" will result in a subpath
@@ -277,7 +277,7 @@ If `containers` is specified as an array of container names it will only be moun
 to those containers, otherwise it will be mounted on all containers.
 
 This helper function can be augmented with a `volumeMixin`. For example,
-passing "k.core.v1.volume.hostPath.withType('Socket')" will result in a 
+passing "k.core.v1.volume.hostPath.withType('Socket')" will result in a
 socket type mixin.
 This helper function can be augmented with a `volumeMountsMixin`. For example,
 passing "k.core.v1.volumeMount.withSubPath(subpath)" will result in a subpath
@@ -319,7 +319,7 @@ If `containers` is specified as an array of container names it will only be moun
 to those containers, otherwise it will be mounted on all containers.
 
 This helper function can be augmented with a `volumeMixin`. For example,
-passing "k.core.v1.volume.persistentVolumeClaim.withReadOnly(true)" will result in a 
+passing "k.core.v1.volume.persistentVolumeClaim.withReadOnly(true)" will result in a
 mixin that forces all container mounts to be read-only.
 This helper function can be augmented with a `volumeMountsMixin`. For example,
 passing "k.core.v1.volumeMount.withSubPath(subpath)" will result in a subpath
@@ -338,7 +338,7 @@ If `containers` is specified as an array of container names it will only be moun
 to those containers, otherwise it will be mounted on all containers.
 
 This helper function can be augmented with a `volumeMixin`. For example,
-passing "k.core.v1.volume.secret.withOptional(true)" will result in a 
+passing "k.core.v1.volume.secret.withOptional(true)" will result in a
 mixin that allows the secret to be optional.
 This helper function can be augmented with a `volumeMountsMixin`. For example,
 passing "k.core.v1.volumeMount.withSubPath(subpath)" will result in a subpath
