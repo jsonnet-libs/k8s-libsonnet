@@ -19,7 +19,7 @@ permalink: /1.26/core/v1/httpHeader/
 withName(name)
 ```
 
-"The header field name"
+"The header field name. This will be canonicalized upon output, so case-variant names will be understood as the same header."
 
 ### fn withValue
 
