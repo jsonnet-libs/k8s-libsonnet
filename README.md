@@ -17,13 +17,13 @@ For more info, refer to the Tanka tutorial at https://tanka.dev/tutorial/k-lib.
 #### Standalone
 
 ```bash
-$ jb install github.com/jsonnet-libs/k8s-libsonnet/1.26@main
+$ jb install github.com/jsonnet-libs/k8s-libsonnet/1.27@main
 ```
 
 Then import it in your project:
 
 ```jsonnet
-local k = import "github.com/jsonnet-libs/k8s-libsonnet/1.26/main.libsonnet"
+local k = import "github.com/jsonnet-libs/k8s-libsonnet/1.27/main.libsonnet"
 ```
 
 ## FAQ
