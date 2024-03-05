@@ -4,11 +4,11 @@
 "markdown_extensions":
   - "pymdownx.highlight"
   - "pymdownx.superfences"
+  - "mdx_truly_sane_lists":
+      "nested_indent": 2
+      "truly_sane": true
 "plugins":
   - "search":
-      "indexing": "titles"
-      "min_search_length": 2
-      "prebuild_index": true
       "separator": "[\\s\\-\\.]+"
   - "minify":
       "minify_html": true
@@ -27,6 +27,9 @@
 "site_name": "k8s jsonnet library"
 "site_url": "https://jsonnet-libs.github.io/k8s-libsonnet"
 "theme":
+  "features":
+    - "navigation.tabs"
+    - "navigation.indexes"
   "name": "material"
   "palette":
     - "accent": "indigo"
