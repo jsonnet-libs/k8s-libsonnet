@@ -85,7 +85,7 @@ local d = import 'doc-util/main.libsonnet';
         else {}
       );
       local volumeMixins = [volume.fromConfigMap(name, name) + volumeMixin];
-      local annotations = {['%s-hash' % name]: hash};
+      local annotations = { ['%s-hash' % name]: hash };
 
       super.mapContainers(addMount, includeInitContainers=includeInitContainers) +
       if std.objectHas(super.spec, 'template')
@@ -311,14 +311,13 @@ local d = import 'doc-util/main.libsonnet';
       job+: patch,
       cronJob+: patch,
     },
-    v1beta1+: {
-      cronJob+: patch,
+  },
+  apps+: {
+    v1+: {
+      daemonSet+: patch,
+      deployment+: patch,
+      replicaSet+: patch,
+      statefulSet+: patch,
     },
   },
-  apps+: { v1+: {
-    daemonSet+: patch,
-    deployment+: patch,
-    replicaSet+: patch,
-    statefulSet+: patch,
-  } },
 }

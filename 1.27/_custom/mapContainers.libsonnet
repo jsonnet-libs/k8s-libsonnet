@@ -27,7 +27,7 @@ local patch = {
   },
 
   '#mapContainersWithName': d.fn('`mapContainersWithName` is like `mapContainers`, but only applies to those containers in the `names` array',
-    [d.arg('names', d.T.array), d.arg('f', d.T.func)]),
+                                 [d.arg('names', d.T.array), d.arg('f', d.T.func)]),
   mapContainersWithName(names, f, includeInitContainers=false)::
     local nameSet = if std.type(names) == 'array' then std.set(names) else std.set([names]);
     local inNameSet(name) = std.length(std.setInter(nameSet, std.set([name]))) > 0;
@@ -56,24 +56,25 @@ local cronPatch = patch {
 };
 
 {
-  core+: { v1+: {
-    pod+: patch,
-    podTemplate+: patch,
-    replicationController+: patch,
-  } },
+  core+: {
+    v1+: {
+      pod+: patch,
+      podTemplate+: patch,
+      replicationController+: patch,
+    },
+  },
   batch+: {
     v1+: {
       job+: patch,
       cronJob+: cronPatch,
     },
-    v1beta1+: {
-      cronJob+: cronPatch,
+  },
+  apps+: {
+    v1+: {
+      daemonSet+: patch,
+      deployment+: patch,
+      replicaSet+: patch,
+      statefulSet+: patch,
     },
   },
-  apps+: { v1+: {
-    daemonSet+: patch,
-    deployment+: patch,
-    replicaSet+: patch,
-    statefulSet+: patch,
-  } },
 }
