@@ -1,0 +1,28 @@
+name: build
+
+on:
+  push:
+    branches:
+      - main
+      - release/**
+  pull_request:
+
+jobs:
+  dist:
+    name: Create wheel and source distribution
+    timeout-minutes: 10
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+      - name: "Prepare artifacts"
+        run: |
+          pip install wheel
+          pip install build
+          python -m build --wheel
+      - uses: actions/upload-artifact@v3.1.1
+        with:
+          name: ${{ github.sha }}
+          path: dist/*
