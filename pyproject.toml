@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "sentry-k8s-libsonnet"
-version = "0.0.3"
+version = "0.0.4"
 description = "k8s-libsonnet repackaged as a python package"
 readme = "README.md"
 classifiers = [
