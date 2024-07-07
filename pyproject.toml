@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sentry-k8s-libsonnet"
+version = "0.0.3"
+description = "k8s-libsonnet repackaged as a python package"
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+dependencies = []
+
+[tool.setuptools]
+packages = ["k8slibsonnet"]
+include-package-data = true
+
+[tool.setuptools.package-data]
+k8slibsonnet = [
+    "1.26/**/*",
+    "1.27/**/*",
+    "1.28/**/*",
+    "1.29/**/*",
+    "1.30/**/*",
+]
+
+[tool.black]
+line-length = 79
+target-version = ['py38']
+skip-magic-trailing-comma = true
+
+[tool.isort]
+profile = "black"
+line_length = 79
+
+pythonVersion = "3.11"
+
