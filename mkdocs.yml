@@ -14,10 +14,10 @@
       "minify_html": true
   - "exclude-search":
       "exclude":
+        - "1.31/*"
+        - "1.30/*"
         - "1.29/*"
         - "1.28/*"
-        - "1.27/*"
-        - "1.26/*"
 "repo_name": "jsonnet-libs/k8s-libsonnet"
 "repo_url": "https://github.com/jsonnet-libs/k8s-libsonnet"
 "site_name": "k8s jsonnet library"
