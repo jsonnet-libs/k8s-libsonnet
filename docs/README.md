@@ -10,6 +10,7 @@ The Jsonnet Kubernetes library is a generated with
 
 Currently, artifacts for the following Kubernetes versions are provided:
 
+- [v1.33](1.33/README.md)
 - [v1.32](1.32/README.md)
 - [v1.31](1.31/README.md)
 - [v1.30](1.30/README.md)
