@@ -1,0 +1,16 @@
+{
+  local d = (import 'doc-util/main.libsonnet'),
+  '#':: d.pkg(name='nodeAllocatableResourceClaimStatus', url='', help='"NodeAllocatableResourceClaimStatus describes the status of node allocatable resources allocated via DRA."'),
+  '#withContainers':: d.fn(help='"Containers lists the names of all containers in this pod that reference the claim."', args=[d.arg(name='containers', type=d.T.array)]),
+  withContainers(containers): { containers: if std.isArray(v=containers) then containers else [containers] },
+  '#withContainersMixin':: d.fn(help='"Containers lists the names of all containers in this pod that reference the claim."\n\n**Note:** This function appends passed data to existing values', args=[d.arg(name='containers', type=d.T.array)]),
+  withContainersMixin(containers): { containers+: if std.isArray(v=containers) then containers else [containers] },
+  '#withResourceClaimName':: d.fn(help='"ResourceClaimName is the resource claim referenced by the pod that resulted in this node allocatable resource allocation."', args=[d.arg(name='resourceClaimName', type=d.T.string)]),
+  withResourceClaimName(resourceClaimName): { resourceClaimName: resourceClaimName },
+  '#withResources':: d.fn(help='"Resources is a map of the node-allocatable resource name to the aggregate quantity allocated to the claim."', args=[d.arg(name='resources', type=d.T.object)]),
+  withResources(resources): { resources: resources },
+  '#withResourcesMixin':: d.fn(help='"Resources is a map of the node-allocatable resource name to the aggregate quantity allocated to the claim."\n\n**Note:** This function appends passed data to existing values', args=[d.arg(name='resources', type=d.T.object)]),
+  withResourcesMixin(resources): { resources+: resources },
+  '#mixin': 'ignore',
+  mixin: self,
+}

@@ -1,0 +1,16 @@
+{
+  local d = (import 'doc-util/main.libsonnet'),
+  '#':: d.pkg(name='resourcePoolStatusRequestStatus', url='', help='"ResourcePoolStatusRequestStatus contains the calculated pool status information."'),
+  '#withConditions':: d.fn(help='"Conditions provide information about the state of the request. A condition with type=Complete or type=Failed will always be set when the status is populated.\\n\\nKnown condition types: - \\"Complete\\": True when the request has been processed successfully - \\"Failed\\": True when the request could not be processed"', args=[d.arg(name='conditions', type=d.T.array)]),
+  withConditions(conditions): { conditions: if std.isArray(v=conditions) then conditions else [conditions] },
+  '#withConditionsMixin':: d.fn(help='"Conditions provide information about the state of the request. A condition with type=Complete or type=Failed will always be set when the status is populated.\\n\\nKnown condition types: - \\"Complete\\": True when the request has been processed successfully - \\"Failed\\": True when the request could not be processed"\n\n**Note:** This function appends passed data to existing values', args=[d.arg(name='conditions', type=d.T.array)]),
+  withConditionsMixin(conditions): { conditions+: if std.isArray(v=conditions) then conditions else [conditions] },
+  '#withPoolCount':: d.fn(help='"PoolCount is the total number of pools that matched the filter criteria, regardless of truncation. This helps users understand how many pools exist even when the response is truncated. A value of 0 means no pools matched the filter criteria."', args=[d.arg(name='poolCount', type=d.T.integer)]),
+  withPoolCount(poolCount): { poolCount: poolCount },
+  '#withPools':: d.fn(help='"Pools contains the first `spec.limit` matching pools, sorted by driver then pool name. If `len(pools) < poolCount`, the list was truncated. When omitted, no pools matched the request filters."', args=[d.arg(name='pools', type=d.T.array)]),
+  withPools(pools): { pools: if std.isArray(v=pools) then pools else [pools] },
+  '#withPoolsMixin':: d.fn(help='"Pools contains the first `spec.limit` matching pools, sorted by driver then pool name. If `len(pools) < poolCount`, the list was truncated. When omitted, no pools matched the request filters."\n\n**Note:** This function appends passed data to existing values', args=[d.arg(name='pools', type=d.T.array)]),
+  withPoolsMixin(pools): { pools+: if std.isArray(v=pools) then pools else [pools] },
+  '#mixin': 'ignore',
+  mixin: self,
+}
