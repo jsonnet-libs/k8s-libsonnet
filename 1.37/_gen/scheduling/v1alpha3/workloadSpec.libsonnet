@@ -1,0 +1,23 @@
+{
+  local d = (import 'doc-util/main.libsonnet'),
+  '#':: d.pkg(name='workloadSpec', url='', help='"WorkloadSpec defines the desired state of a Workload."'),
+  '#controllerRef':: d.obj(help='"TypedLocalObjectReference allows to reference typed object inside the same namespace."'),
+  controllerRef: {
+    '#withApiGroup':: d.fn(help='"apiGroup is the group for the resource being referenced. If APIGroup is empty, the specified Kind must be in the core API group. For any other third-party types, setting APIGroup is required. It must be a DNS subdomain."', args=[d.arg(name='apiGroup', type=d.T.string)]),
+    withApiGroup(apiGroup): { controllerRef+: { apiGroup: apiGroup } },
+    '#withKind':: d.fn(help='"kind is the type of resource being referenced. It must be a path segment name."', args=[d.arg(name='kind', type=d.T.string)]),
+    withKind(kind): { controllerRef+: { kind: kind } },
+    '#withName':: d.fn(help='"name is the name of resource being referenced. It must be a path segment name."', args=[d.arg(name='name', type=d.T.string)]),
+    withName(name): { controllerRef+: { name: name } },
+  },
+  '#withCompositePodGroupTemplates':: d.fn(help='"compositePodGroupTemplates is the list of CompositePodGroup templates that make up the Workload. The maximum number of templates is 8. This field is immutable. Exactly one of CompositePodGroupTemplates and PodGroupTemplates must be set.\\n\\nThis field is used only when the CompositePodGroup feature gate is enabled."', args=[d.arg(name='compositePodGroupTemplates', type=d.T.array)]),
+  withCompositePodGroupTemplates(compositePodGroupTemplates): { compositePodGroupTemplates: if std.isArray(v=compositePodGroupTemplates) then compositePodGroupTemplates else [compositePodGroupTemplates] },
+  '#withCompositePodGroupTemplatesMixin':: d.fn(help='"compositePodGroupTemplates is the list of CompositePodGroup templates that make up the Workload. The maximum number of templates is 8. This field is immutable. Exactly one of CompositePodGroupTemplates and PodGroupTemplates must be set.\\n\\nThis field is used only when the CompositePodGroup feature gate is enabled."\n\n**Note:** This function appends passed data to existing values', args=[d.arg(name='compositePodGroupTemplates', type=d.T.array)]),
+  withCompositePodGroupTemplatesMixin(compositePodGroupTemplates): { compositePodGroupTemplates+: if std.isArray(v=compositePodGroupTemplates) then compositePodGroupTemplates else [compositePodGroupTemplates] },
+  '#withPodGroupTemplates':: d.fn(help='"podGroupTemplates is the list of templates that make up the Workload. The maximum number of templates is 8. Templates cannot be added or removed after the workload is created. Existing templates may still be updated where their individual fields allow it. Exactly one of CompositePodGroupTemplates and PodGroupTemplates must be set."', args=[d.arg(name='podGroupTemplates', type=d.T.array)]),
+  withPodGroupTemplates(podGroupTemplates): { podGroupTemplates: if std.isArray(v=podGroupTemplates) then podGroupTemplates else [podGroupTemplates] },
+  '#withPodGroupTemplatesMixin':: d.fn(help='"podGroupTemplates is the list of templates that make up the Workload. The maximum number of templates is 8. Templates cannot be added or removed after the workload is created. Existing templates may still be updated where their individual fields allow it. Exactly one of CompositePodGroupTemplates and PodGroupTemplates must be set."\n\n**Note:** This function appends passed data to existing values', args=[d.arg(name='podGroupTemplates', type=d.T.array)]),
+  withPodGroupTemplatesMixin(podGroupTemplates): { podGroupTemplates+: if std.isArray(v=podGroupTemplates) then podGroupTemplates else [podGroupTemplates] },
+  '#mixin': 'ignore',
+  mixin: self,
+}

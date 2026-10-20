@@ -1,0 +1,18 @@
+{
+  local d = (import 'doc-util/main.libsonnet'),
+  '#':: d.pkg(name='responderStatus', url='', help='"ResponderStatus represents the last observed status of the eviction process of the responder. It should be only updated by the designated responder whose name is .name field."'),
+  '#withCompletionTime':: d.fn(help='"Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers."', args=[d.arg(name='completionTime', type=d.T.string)]),
+  withCompletionTime(completionTime): { completionTime: completionTime },
+  '#withExpectedCompletionTime':: d.fn(help='"Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers."', args=[d.arg(name='expectedCompletionTime', type=d.T.string)]),
+  withExpectedCompletionTime(expectedCompletionTime): { expectedCompletionTime: expectedCompletionTime },
+  '#withHeartbeatTime':: d.fn(help='"Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers."', args=[d.arg(name='heartbeatTime', type=d.T.string)]),
+  withHeartbeatTime(heartbeatTime): { heartbeatTime: heartbeatTime },
+  '#withMessage':: d.fn(help='"message provides human-readable details about the state of the responder and the eviction process. Maximum length is 4000 characters."', args=[d.arg(name='message', type=d.T.string)]),
+  withMessage(message): { message: message },
+  '#withName':: d.fn(help='"name allows you to identify the responder reacting to the Eviction.\\n\\nIt must be a valid domain-prefixed key (such as \\"acme.io/foo\\"). This field is initialized by Kubernetes and must be unique for each responder. This field is required."', args=[d.arg(name='name', type=d.T.string)]),
+  withName(name): { name: name },
+  '#withStartTime':: d.fn(help='"Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers."', args=[d.arg(name='startTime', type=d.T.string)]),
+  withStartTime(startTime): { startTime: startTime },
+  '#mixin': 'ignore',
+  mixin: self,
+}

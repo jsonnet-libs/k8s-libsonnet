@@ -1,0 +1,16 @@
+{
+  local d = (import 'doc-util/main.libsonnet'),
+  '#':: d.pkg(name='storageHealthCondition', url='', help='"StorageHealthCondition represents an adverse health condition reported by a CSI driver for its storage backend on a node."'),
+  '#withAccessMode':: d.fn(help='"accessMode is the access mode affected. Nil means all access modes are affected."', args=[d.arg(name='accessMode', type=d.T.string)]),
+  withAccessMode(accessMode): { accessMode: accessMode },
+  '#withLastTransitionTime':: d.fn(help='"Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers."', args=[d.arg(name='lastTransitionTime', type=d.T.string)]),
+  withLastTransitionTime(lastTransitionTime): { lastTransitionTime: lastTransitionTime },
+  '#withMessage':: d.fn(help='"message is a human-readable description. Maximum permitted length of a message is 1024 characters."', args=[d.arg(name='message', type=d.T.string)]),
+  withMessage(message): { message: message },
+  '#withReason':: d.fn(help='"reason is a brief CamelCase machine-parseable reason. Maximum permitted length of a reason is 256 characters."', args=[d.arg(name='reason', type=d.T.string)]),
+  withReason(reason): { reason: reason },
+  '#withVolumeMode':: d.fn(help='"volumeMode is the volume mode affected. Nil means both are affected."', args=[d.arg(name='volumeMode', type=d.T.string)]),
+  withVolumeMode(volumeMode): { volumeMode: volumeMode },
+  '#mixin': 'ignore',
+  mixin: self,
+}

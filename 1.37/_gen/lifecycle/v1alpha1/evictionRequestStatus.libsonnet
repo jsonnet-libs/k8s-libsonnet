@@ -1,0 +1,12 @@
+{
+  local d = (import 'doc-util/main.libsonnet'),
+  '#':: d.pkg(name='evictionRequestStatus', url='', help='"EvictionRequestStatus represents the last observed status of the eviction request."'),
+  '#withConditions':: d.fn(help='"conditions contain information about the eviction request.\\n\\nEvictionRequest specific conditions are: TargetEvicted or Failed (managed by evictionrequest-controller). - Failed means that the eviction request is no longer being processed\\n  by any eviction responder. This can happen if the request is canceled or if no responder\\n  managed to evict the target (e.g. terminate or delete a pod).\\n- TargetEvicted means that the target has been evicted (e.g. a pod has been terminated or deleted).\\n\\nThese conditions can be reset if the eviction was unsuccessful and a new Eviction intent has been submitted.\\n\\nThe maximum length of the conditions list is 100."', args=[d.arg(name='conditions', type=d.T.array)]),
+  withConditions(conditions): { conditions: if std.isArray(v=conditions) then conditions else [conditions] },
+  '#withConditionsMixin':: d.fn(help='"conditions contain information about the eviction request.\\n\\nEvictionRequest specific conditions are: TargetEvicted or Failed (managed by evictionrequest-controller). - Failed means that the eviction request is no longer being processed\\n  by any eviction responder. This can happen if the request is canceled or if no responder\\n  managed to evict the target (e.g. terminate or delete a pod).\\n- TargetEvicted means that the target has been evicted (e.g. a pod has been terminated or deleted).\\n\\nThese conditions can be reset if the eviction was unsuccessful and a new Eviction intent has been submitted.\\n\\nThe maximum length of the conditions list is 100."\n\n**Note:** This function appends passed data to existing values', args=[d.arg(name='conditions', type=d.T.array)]),
+  withConditionsMixin(conditions): { conditions+: if std.isArray(v=conditions) then conditions else [conditions] },
+  '#withObservedGeneration':: d.fn(help="\"observedGeneration is EvictionRequest's .metadata.generation observed by the evictionrequest-controller. The observed generation value cannot be negative and can only be incremented. The minimum value is 1. This field is managed by evictionrequest-controller.\"", args=[d.arg(name='observedGeneration', type=d.T.integer)]),
+  withObservedGeneration(observedGeneration): { observedGeneration: observedGeneration },
+  '#mixin': 'ignore',
+  mixin: self,
+}

@@ -1,0 +1,17 @@
+{
+  local d = (import 'doc-util/main.libsonnet'),
+  '#':: d.pkg(name='v1alpha1', url='', help=''),
+  eviction: (import 'eviction.libsonnet'),
+  evictionPodReference: (import 'evictionPodReference.libsonnet'),
+  evictionRequest: (import 'evictionRequest.libsonnet'),
+  evictionRequestPodReference: (import 'evictionRequestPodReference.libsonnet'),
+  evictionRequestSpec: (import 'evictionRequestSpec.libsonnet'),
+  evictionRequestStatus: (import 'evictionRequestStatus.libsonnet'),
+  evictionRequestTarget: (import 'evictionRequestTarget.libsonnet'),
+  evictionSpec: (import 'evictionSpec.libsonnet'),
+  evictionStatus: (import 'evictionStatus.libsonnet'),
+  evictionTarget: (import 'evictionTarget.libsonnet'),
+  requester: (import 'requester.libsonnet'),
+  responderStatus: (import 'responderStatus.libsonnet'),
+  targetResponder: (import 'targetResponder.libsonnet'),
+}
